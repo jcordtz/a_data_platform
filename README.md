@@ -39,6 +39,8 @@ When the term data is used, it refers to a single data object like a table or fi
 
 This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
 
+![Figure 1](images/Slide1.JPG)
+
 Figure 1
 
 As shown on Figure 1 using cloud technologies, gives access to different types of services.   Infrastructure as a Service (IaaS) – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system.  In the IaaS setup we are focused on which products we want to use and thereby providing the right “machines” for this.
