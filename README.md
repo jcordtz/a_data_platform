@@ -347,11 +347,13 @@ Important to EU-notice: pseudonymous *data* and anonymous *data* are treated dif
 #### Copy of production data
 
 Even though this is not a recommended approach sometimes it is possible and allowed to use (a subset of) production *data* in a non-production environment. These *datasets*  will then most likely be marked as read-only.
-An Azure service suitable for this task could be *data* Factory copy pipelines.
+
+- An Azure service suitable for this task would be Azure Data Factory copy pipelines.
 
 #### Data generation of fake data
 
 In this task you will create fake *data* based on the information of what datatype, length, pattern, content etc your *data* need to adhere to. It is important that this is real fake *data* and not *data* that is made fake from a production dataset.
+
 Creating a fake *data* set is most often a difficult task, so it is worth making sure that the process being established has some of the characteristics of being re-useable, automatic, scalable and parameterized.
 
 Tools to create fake *data* within a Python environment.
@@ -361,73 +363,76 @@ Tools to create fake *data* within a Python environment.
 
 #### Anonymization
 
-Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous *data* is *data* that has been changed so that re-identification of the individual is impossible.
+Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous data is *data* that has been changed so that re-identification of the individual is impossible.
 The scrambling can be done in many ways, using different technics like noise addition, substitution, and aggregation.
-It is important to notice that anonymization is a “one-way process”, where you will - and must - lose the ability to trace back to the original data. You must also not be able to use this *data* to connect and use *data* from other production *datasets* .
-Data Factory *data* flows/Azure Databricks can be used for this, with the extension of Microsoft Presidio.
-Pseudonymization
-Pseudonymization is in essence the same process as Anonymization, with one big difference. Pseudonymous *data* is *data* that has been de-identified from the data’s origin but can be re-identified if needed.
-Tokenization and hash functions can be used to pseudonymize data.
-Data Factory *data* flows/Azure Databricks can be used for this.
-Encryption + Dictionary
-In this case you protect your *data* with an encryption key and only the people within the Dictionary of this *data* storage will be able to use the key. This key could be held in an Azure Key Vault.
-**NOTE: This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
-“No relations” *datasets* 
-In this approach you create *datasets*  that contain “real” *data* at a column level, so i.e., if you have a postal-code column then the postal-codes would be real, as well if you in the same record have a street name, that would also be real street names.
-The “no relations” approach comes into play when *data* is being looked at from a row level perspective. In the above case the street name, house number and the postal code would logically make sense, but it will not exist physically.
-So, an approach could be to build a set of different *datasets*  representing items that is person related from open-source *datasets*  - could be a database with street names in one dataset, all postal codes in another dataset, the 20 most common first names in a third dataset, the 20 most used last names in a fourth *datasets*  and so on.
-And when creating a new row, random values are taken from these *datasets*  and use these to create items like “persons”.
-Data Factory *data* flows/Azure Databricks can be used for this.
 
-CI/CD example
+It is important to notice that anonymization is a “one-way process”, where you will - and must - lose the ability to trace back to the original data. You must also not be able to use this data to connect and use *data* from other production *datasets*.
+
+- Azure Data Factory data flows/Azure Databricks can be used for this, with the extension of Microsoft Presidio.
+
+#### Pseudonymization
+
+Pseudonymization is in essence the same process as Anonymization, with one big difference. Pseudonymous *data* is data that has been de-identified from the data’s origin but can be re-identified if needed.
+Tokenization and hash functions can be used to pseudonymize data.
+
+- Azure Data Factory data flows/Azure Databricks can be used for this.
+
+#### Encryption + Dictionary
+
+In this case you protect your *data* with an encryption key and only the people within the Dictionary of this data storage will be able to use the key. This key could be held in an Azure Key Vault.
+
+**NOTE**: This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
+
+#### “No relations” *datasets* 
+
+In this approach you create *datasets*  that contain “real” data at a column level, so i.e., if you have a postal-code column then the postal-codes would be real, as well if you in the same record have a street name, that would also be real street names.
+
+The “no relations” approach comes into play when data is being looked at from a row level perspective. In the above case the street name, house number and the postal code would logically make sense, but it will not exist physically.
+
+So, an approach could be to build a set of different *datasets* representing items that is person related from open-source datasets - could be a database with street names in one *dataset*, all postal codes in another *dataset*, the 20 most common first names in a third *dataset*, the 20 most used last names in a fourth *datasets*  and so on.
+And when creating a new row, random values are taken from these *datasets* and use these to create items like “persons”.
+
+- Azure Data Factory *data* flows/Azure Databricks can be used for this.
+
+## CI/CD example
+
 As mentioned above, a way of making sure coding in the data platform is done the “right away” you should consider using Continuous Integration/Continuous Deployment (CI/CD) principles. Such processes have pipeline workflow that describes what processes code goes through when being deployed to production.
 The following Figure 5 show a simplified workflow.
- 
+
+![figure 5](images/CI_CD.bmp)
+
 Figure 5
-In connection with the continuous development and testing you often need to be able to handle *data* in non-production environments. Most likely you are not allowed to or do not want to use production *data* in these environments. Also, for testing purposes you may want to introduce faulty *data* in your *datasets*  to be able to handle any exception handling scenarios.
 
-A practical approach
-Based on the discussions in this document Figure 6 shows what this could look like in “real life”. On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3. 
+In connection with the continuous development and testing you often need to be able to handle data in non-production environments. Most likely you are not allowed to or do not want to use production data in these environments. Also, for testing purposes you may want to introduce faulty data in your 
+datasets to be able to handle any exception handling scenarios.
 
-In the middle we find the data platform with the Ingest, Transform and **publish area**. In the **ingest area** you see that *data* is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw *data* into their usable state. 
+## A practical approach
+
+Based on the discussions in this document Figure 6 shows what this could look like in “real life”. 
+
+On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
+
+In the middle we find the data platform with the Ingest, Transform and **publish area**. In the **ingest area** you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
+
 Then on the right side of the figure we see what is required by the end-users in the **consume area**. The first user called *data* User 1 needs *data* that only comes from App 1, so the dataset needed called *data* Product A is a straightforward process. 
 
-The *data* User 2 needs *data* that comes from both App 1 and 2, but *data* present in App 3 most be excluded from that *data* set, so in this case the process is a little more complicated, but because the **transform area** represents an area where easily can combine (and also exclude) *data* the fundamentals for doing this is in place, hence it be done rather smoothly.
+The Data User 2 needs data that comes from both App 1 and 2, but data present in App 3 most be excluded from that dataset, so in this case the process is a little more complicated, but because the **transform area** represents an area where easily can combine (and also exclude) data the fundamentals for doing this is in place, hence it be done rather smoothly.
 
-The same goes for the *data* Product C which represents *data* from App 2 excluding *data* present in App 3.
- 
+The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
+
+![figure 6](images/Slide14.JPG)
+
 Figure 6
-This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – if it is not available today, it will be tomorrow.
+
+This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
  
-Examples of implementations
+# Examples of implementations
+
 The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
-Azure services based.
-Implementing the data platform using Azure services results in a very flexible and agile approach. This will fulfill all topics listed in the chapter “Overall paradigm”.
-Figure 7 shows the Azure services normally being used in this approach.
- 
-Figure 7
-In the **ingest area** you have Azure Event Hub and Real time analytics to handle incoming messages as well as *data* Factory for handling the batch copy process. The storage layer is Azure *data* Lake.
-In the **transform area** the process would then be *data* Factory *data* Flow and the storage layer would also be Azure *data* Lake. If you want to create an Enterprise *data* Warehouse this would be handled by Synapse DW.
-In the **publish area** you will find different Azure database technologies being the relational databases Azure SQL Database, Azure PostgresDB and Azure MySQL. Also databases like Azure Cosmos DB, Azure Analytical Services and Azure *data* Explorer is candidates along with Azure *data* Lake.
-In the **consume area** you will find PowerBI along with Azure Machine Learning and Azure AI studio.
-Databricks based.
-The same as for the Azure Based approach, except that Databricks is being used instead of *data* Factory *data* Flow and maybe Synapse DW. You can also use Databricks instead of SQL Server if you want. Technological independence is in the fact that Databricks is based on Python and Spark. But you will have an approach where more of the “programming” is done in the same tool.
- 
-Figure 8
-Figure 8 shows where Databricks most likely would fit in. This approach also fits very well with the medallion approach very often used in a Databricks Lakehouse approach.
 
-Synapse based.
-In this case you are not technologically independent in the ingest, transform and **publish area** because you will do the all the “programming” in the Synapse service.
+**Note** these folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
-Fabric based.
-Microsoft Fabric is an all-in-one analytics solution that covers everything from *data* movement to *data* science, Real-Time Analytics, and business intelligence. 
-The platform is built on a foundation of Software as a Service (SaaS), which handles all integration between the different components being used in the data platform.
-Microsoft Fabric brings together new and existing components from Power BI, Azure Synapse, and Azure *data* Factory into a single integrated environment. These components are then presented in various customized user experiences.
-
- 
-Figure 9
-You can build a data platform using Fabric but due to the nature of Fabric being a SaaS solution this will not provide you with a technology independent solution.
-Fabric could fit very well in the **consume area** where it could be used as a “copy-cat” of the data platform itself. Hence you could provide similar functionality to organizations that would like to do more advanced analytics and be able to bring their own data, but still having this in a “controlled” environment.
-
-
-
+[Azure Based](Azure/Azure_based.md)
+[Synapse based](Synapse/Synapse_based.md) 
+[DataBricks based](Databricks/Databricks_based.md)
+[Fabric based](Fabric/Fabric_based.md)
