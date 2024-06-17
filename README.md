@@ -26,20 +26,26 @@ To ensure that the data platform can handle “whatever might come” it is impo
 
 ## *data* and *datasets* 
 
-The concepts of *data* and *datasets*  are the "core components" of the data platform. 
-When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* of that object. For example, a source table like customers or invoices.   On the other hand, when the term dataset is used, it implies a collection of tables or files that are connected to each other. This could be a *data* Mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.   The dataset is the key component of the data platform, and it has some specific characteristics:
-• The dataset is self-sufficient, meaning it does not depend on any other *data* sources. It contains all the *data* it requires.
-• Only the columns/rows that are relevant for the task being performed are included.
-• A dataset belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
-• A dataset should have two more groups associated with it, one for creating the content and another for read-only access.
-• Access to a dataset is granted by adding individuals to the group(s) depending on the task they need to perform.
-• A dataset is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based. It can then be provided with the appropriate technology for the task in question – like a relational database.
+The concepts of *data* and *datasets*  are the "core components" of the data platform.
+
+When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* of that object. For example, a source table like customers or invoices.
+
+On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
+
+The *dataset* is the key component of the data platform, and it has some specific characteristics:
+
+- The *dataset* is self-sufficient, meaning it does not depend on any other *data* sources. It contains all the *data* it requires.
+- Only the columns/rows that are relevant for the task being performed are included.
+- A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
+- A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
+- Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
+- A *dataset* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based. It can then be provided with the appropriate technology for the task in question – like a relational database.
 
 ## Cloud aspects
 
 This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
 
-![Figure 1](images/Slide1.JPG)
+|[Figure 1](images/Slide1.JPG)
 
 Figure 1
 
@@ -58,7 +64,7 @@ This is known as infrastructure as code (IaC). In the data platform, this is use
 The data platform arranges *data* and *datasets*  in different areas according to the logical architecture shown on Figure 2. 
 This is to make sure that we can comply with the "rules" of the paradigm as mentioned previously.
 
-![Figure 2](images/Slide3.JPG)
+|[Figure 2](images/Slide3.JPG)
 
 Figure 2
 
@@ -81,31 +87,33 @@ These interfaces must ensure the technology independency we want in the platform
 
 Most of the customers we work with prefer these three interface options.
 
-REST API – the “basic” interface that most (all) new services use to offer their functionalities. This level is highly technical and is not suitable for low/no-code.
+**REST API** – the “basic” interface that most (all) new services use to offer their functionalities. This level is highly technical and is not suitable for low/no-code.
 
-SQL – the standard data query language that is widely used and supported by different data storage systems. Many people are familiar with SQL from its use in relational databases, but it is also available in other database systems.
+**SQL** – the standard data query language that is widely used and supported by different data storage systems. Many people are familiar with SQL from its use in relational databases, but it is also available in other database systems.
 
 If you “only” use the SQL standard language functionalities, this will give you a high degree of flexibility. This means that you will not use any specific capability that the vendor of the underlying technology has implemented – especially the use of the procedural languages provided in i.e. MS SQL Server or Oracle DB.
 
-Python – the “new” data processing language. Python is widely used and reflects the current way of handling data. Python is a high-level programming language that can be interpreted. It has built-in data structures that are high-level, and it allows dynamic typing and binding, which make it ideal for Rapid Application Development, as well as for using it as a scripting or glue language to link existing components together.
+**Python** – the “new” data processing language. Python is widely used and reflects the current way of handling data. Python is a high-level programming language that can be interpreted. It has built-in data structures that are high-level, and it allows dynamic typing and binding, which make it ideal for Rapid Application Development, as well as for using it as a scripting or glue language to link existing components together.
 
 Python's syntax is simple, easy to learn and emphasizes readability, which lowers the cost of program maintenance. Python supports modules and packages, which promotes program modularity and code reuse. The Python interpreter and the extensive standard library are free to obtain and distribute in source or binary form for all major platforms.  Many programmers love Python because it makes them more productive.
+
 
 One more component of the implementation that Figure 2 displays are some Supporting data Services. 
 
 These include:
 
-Data Catalog – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
+**Data Catalog** – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
-Common data Model – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
+**Common data Model** – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
 
-Data Discovery – A data science process oriented to business users that allows them to visually explore *data* and apply advanced analytics to find patterns, gain insight and answer specific business questions.
+**Data Discovery** – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
 
-Data Lineage – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
+**Data Lineage** – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
 
-Data Governance – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
+**Data Governance** – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
 
-Master data – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+**Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+
 
 Note: The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform** and **publish** as this reflects what has been used at the customers that is the inspiration for this document.
 
@@ -129,162 +137,230 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-![figure 3](images/Slide4.JPG)
+|[figure 3](images/Slide4.JPG)
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
  
  
-Roles
+## Roles
 We will use roles as a mechanism of controlling access to the *data* and *datasets*  in the data platform as well as assigning the right responsibilities to persons having these roles.
-Of course, the roles must be delegated to people. How the roles are connected to people, and if certain people have more than one role, doesn't really matter. The most important thing is that the *data* processes comply with the "rules" of the paradigm.
+
+Of course, the roles must be delegated to people. How the roles are connected to people, and if certain people have more than one role, doesn't really matter. The most important thing is that the processes comply with the "rules" of the data platform paradigm.
+
 This is a list of common roles seen with our clients:
-•	Project owner
-o	Interface to a steering group/management.
-o	Most like likely coming from “Business”
-•	Project Leader
-o	Leads the specific project	
-o	Most like likely coming from “IT”
-•	Data Engineer
-o	Creates the integration between a source system and the ingest lake.
-o	Most likely coming from “IT”
-•	Designer
-o	Designs (and creates) the different dataset to be used by the business
-o	Most likely coming from “Business”
-•	Transform engineer
-o	Creates the transformation processes used in the transform and **publish area**
-o	Most likely coming from “IT”
-•	Data Governance
-o	Ensures that the understanding between IT and Business are aligned and that governance principles are followed
-o	Most likely coming from “IT/Business”
-•	Superuser/Ambassador	
-o	Defines (and creates) reports/dashboard and other usage patterns
-o	Most likely coming from “Business”
-•	System owner	
-o	Provides understanding about how a source system is being used
-o	Most likely coming from “Business”
-•	Architect	
-o	Ensures that the architectural principles are being followed
-o	Most likely coming from “IT”
+
+1. Project owner
+- Interface to a steering group/management.
+- Most like likely coming from “Business”
+
+2. Project Leader
+- Leads the specific project	
+- Most like likely coming from “IT”
+
+3. Data Engineer
+- Creates the integration between a source system and the ingest lake.
+- Most likely coming from “IT”
+
+4. Designer
+- Designs (and creates) the different dataset to be used by the business
+- Most likely coming from “Business”
+
+5. Transform engineer
+- Creates the transformation processes used in the transform and **publish area**
+- Most likely coming from “IT”
+
+6. Data Governance
+- Ensures that the understanding between IT and Business are aligned and that governance principles are followed
+- Most likely coming from “IT/Business”
+
+7. Superuser/Ambassador	
+- Defines (and creates) reports/dashboard and other usage patterns
+- Most likely coming from “Business”
+
+8. System owner	
+- Provides understanding about how a source system is being used
+- Most likely coming from “Business”
+
+9. Architect	
+- Ensures that the architectural principles are being followed
+- Most likely coming from “IT”
+
 Depending on the size of project, size of company and/or framework being used you could also meet roles like Scrum Master, Product Owner, Program Owner, Steering Committee member etc.
 The needs of the different roles will naturally differ through a project. The following is an example of what the “workload” could look like:
 
-Role	Ideation	Iteration 1	Iteration 2	Iteration 3	Iteration 4	Iteration ….	Vision state
-Project Owner	100 %	25%	25%	25%	25%	25%	100%
-Project Leader	100%	100%	100%	100%	100%	100%	100%
-Data Engineer	100%	50%	25%	5%	5%	5%	0%
-Designer	100%	10%	10%	25%	25%	40%	0%
-Transform Engineer	100%	30%	30%	30%	30%	30%	0%
-Data Governance	100%	25%	25%	10%	10%	10%	10%
-Superuser/
-Ambassador	100%	5%	5%	20%	20%	50%	100%
-System owner	100%	25%	10%	0%	0%	0%	10%
-Architect	100%	50%	25%	10%	10%	10%	10%
-•	Ideation – Project start including ideas to be listed (backlogged)
-•	Iteration X – the individual “versions” – most likely in 3-month timespans
-•	Vision State – overall what is the projects going to accomplish
+|Role|Ideation|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ….|Vision state|
+|----|--------|-----------|-----------|-----------|-----------|------------|------------|
+|Project Owner|100 %|25%|25%|25%|25%|25%|100%|
+|Project Leader|100%|100%|100%|100%|100%|100%|100%|
+|Data Engineer|100%|50%|25%|5%|5%|5%|0%|
+|Designer|100%|10%|10%|25%|25%|40%|0%|
+|Transform Engineer|100%|30%|30%|30%|30%|30%|0%|
+|Data Governance|100%|25%|25%|10%|10%|10%|10%|
+|Superuser/Ambassador|100%|5%|5%|20%|20%|50%|100%|
+|System owner|100%|25%|10%|0%|0%|0%|10%|
+|Architect|100%|50%|25%|10%|10%|10%|10%|
 
-Environments 
+1. Ideation – Project start including ideas to be listed (backlogged)
+2. Iteration X – the individual “versions” – most likely in 3-month timespans
+3. Vision State – overall what is the projects going to accomplish
+
+## Environments 
+
 In this section, we will explore how to use the six environments for implementing a data platform project. Depending on your preferences, you can of course decide how many of these environments you want to have and how you want to distribute the tasks that we will describe among fewer or more environments.
-Sandbox – this environment is used for MVP testing.
-Project room - development environments.
-Development - code repository.
-Testing - functional testing.
-Quality Assurance - code review.
-Pre-production - test on production data.
-Production - production data.
-Data Policies
+
+1. Sandbox – this environment is used for MVP testing.
+2. Project room - development environments.
+3. Development - code repository.
+4. Testing - functional testing.
+5. Quality Assurance - code review.
+6. Pre-production - test on production data.
+7. Production - production data.
+
+### Data Policies
+
 To control the *data* policies, we need to understand which environment we are working in. This document uses 5 environment types in the discussing of the processes.
-•	Sandbox – environment used to test functionality in each service. These environments do NOT contain any business/company data.
-•	Project rooms - These environments are used for establishing environments containing tools and *data* used to fulfill a development task.
-•	Non-Production – environments that contain development, quality assurance and test scenarios.
-•	Production – environments supporting pre-production and production scenarios.
-•	Confidential – environments supporting *data* processing of highly confidential data.
+
+1. Sandbox – environment used to test functionality in each service. These environments do NOT contain any business/company data.
+2. Project rooms - These environments are used for establishing environments containing tools and *data* used to fulfill a development task.
+3. Non-Production – environments that contain development, quality assurance and test scenarios.
+4. Production – environments supporting pre-production and production scenarios.
+5. Confidential – environments supporting data processing of highly confidential data.
 As mentioned you can find a project handling the establishment of such environments in a secure setup - see here for more information.
-Data and security
+
+### Data and security
+
 Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle. By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
-Data security is important because it helps organizations guard against cyberattacks, insider threats, and human error, all of which can lead to *data* breaches. The four key issues in *data* security are confidentiality, integrity, availability, and compliance. As *data* is increasingly the target of attackers, organizations need security at the point of *data* to keep *data* safe and recover it faster. The goal of *data* security is to make your *data* resilient against any kind of misuse that being attacks, errors etc.
-In summary, *data* security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
-In Figure 3 you will find several ways to protect *data* which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
- 
+Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and recover it faster. The goal of data security is to make your data resilient against any kind of misuse that being attacks, errors etc.
+
+In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
+In Figure 3 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
+
+![figure 3](images/Slide16.JPG)
+
 Figure 3
-Application Based Access Control – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying *data* used in the application. Often the underlying *data* Store is a (relational) database, which is accessed from the application using a service account. 
-Role Based Access Control – also known as RBAC. This controls the access to a given resource and how it can be used. So popular said – can one get to the storage account?
-Attribute Based Access Control – also known as ABAC. ABAC provides in often extra mechanism for granting access making a “lookup” in another system. For example, you might be able to get to a storge account but their might a directory that requires that you are part of a given project. In this case you can make an ABAC “lookup” that checks this before providing access – depending on this result.
-Identity Based Access Control – covers the capability that a given resource can be assigned an identity (becoming “a human”). And then you make sure that access to a given storage account is only provided to this “human” and hence you need to use this application to get to the data.
-Encryption Based Access Control – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defence.
-Removal Based Access Control – this approach is only feasible in the **consume area**. This approach uses the aspect of the **consume area** that a *data* store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *data* store, this can also be used as a defence mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *data* loss.
-Data Operations
-According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of *data* with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around *data* analytics. 
-While DataOps started as a set of best practices, it has now evolved to become a new and distinct approach to *data* analytics. DataOps covers the whole *data* lifecycle from *data* preparation to reporting and acknowledges the interdependent nature of the *data* analytics team and information technology operations. 
-In software development, DevOps emphasizes continuous delivery by using on-demand IT resources and by automating test and deployment of software. This way of software development and IT operations has improved velocity, quality, predictability and scale of software engineering and deployment. 
-Taking methods from DevOps, DataOps aims to bring these same improvements to *data* analytics. DataOps should not be linked to a specific technology, architecture, tool, language, or framework.
-Environments and encryption policies
-In different environments certain politics regarding encryption could be enforced. The following table is an example of what this could look like.
-Environment/Policy	Sandbox	Project room	Non-Production	Production	Confidential
-Encryption at Rest	Audit	Audit	Audit	Required	Required
-Encryption in Transit	Audit	Audit	Audit	Required	Required
-Encryption in Processing	N/A	N/A	N/A	N/A	Required
 
-•	Audit – it is required that a policy audit if encryption is in place, but does not require it. This can be used for risk-assessment.
-•	Required – the policy will prevent creating *data* storage of any kind without encryption.
-•	N/A – Not applicable.
-Environments and Tags
+**Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
+
+**Role Based Access Control** – also known as RBAC. This controls the access to a given resource and how it can be used. So popular said – can one get to the storage account?
+
+**Attribute Based Access Control** – also known as ABAC - provides an often extra mechanism for granting access making a “lookup” in another system. For example, you might be able to get to a storage account but their might a directory that requires that you are part of a given project. In this case you can make an ABAC “lookup” that checks this before providing access – depending on this result.
+
+**Identity Based Access Control** – covers the capability that a given resource can be assigned an identity (becoming “a human”). And then you make sure that access to a given storage account is only provided to this “human” and hence you need to use this application to get to the data.
+
+**Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
+
+**Removal Based Access Control** – this approach is only feasible in the **consume area**. This approach uses the aspect of the **consume area** that a data store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *data* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *data* loss.
+
+## Data Operations
+
+According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around *data* analytics.
+
+While DataOps started as a set of best practices, it has now evolved to become a new and distinct approach to data analytics. DataOps covers the whole data lifecycle from data preparation to reporting and acknowledges the interdependent nature of the data analytics team and information technology operations.
+
+In software development, DevOps emphasizes continuous delivery by using on-demand IT resources and by automating test and deployment of software. This way of software development and IT operations has improved velocity, quality, predictability and scale of software engineering and deployment.
+
+Taking methods from DevOps, DataOps aims to bring these same improvements to data analytics. DataOps should not be linked to a specific technology, architecture, tool, language, or framework.
+
+### Environments and encryption policies
+
+In different environments certain politics regarding encryption could be enforced. The following table is an example of what this could look like.
+
+|Environment/Policy|Sandbox|Project room|Non-Production|Production|Confidential|
+|------------------|-------|------------|--------------|----------|------------|
+|Encryption at Rest|Audit|Audit|Audit|Required|Required|
+|Encryption in Transit|Audit|Audit|Audit|Required|Required|
+|Encryption in Processing|N/A|N/A|N/A|N/A|Required|
+
+- Audit – it is required that a policy audit if encryption is in place, but does not require it. This can be used for risk-assessment.
+- Required – the policy will prevent creating *data* storage of any kind without encryption.
+- N/A – Not applicable.
+
+### Environments and Tags
+
 In the different environments different tags should be used to identify the nature of environment. The following table are examples of tags that could be attached to the different environments.
-Environment
-Tag	Sandbox	Project room	Non-Production	Production	Confidential	Values
-DataOwner	Audit	Required	Required	Required	Required	name of owner
-Environment	Required	Required	Required	Required	Required	The type of environment like “Sandbox”
-CostCenter	Required	Required	Required	Required	Required	Cost Center
-•	Audit – tag should be in place.
-•	Required – tag must be present, if not the deployment will be denied.
-•	N/A – Not applicable.
-Development environment - Project room
-A way of establishing a secure development environment could be to use what is called a Project room in this document. These project rooms represent an isolated environment normally owned by a unique AD-Group (one or more). 
+
+|Environment/Tag|Sandbox|Project room|Non-Production|Production|Confidential|Values|
+|---------------|-------|------------|--------------|----------|------------|------|
+|DataOwner|Audit|Required|Required|Required|Required|name of owner|
+|Environment|Required|Required|Required|Required|Required|The type of environment like “Sandbox”|
+|CostCenter|Required|Required|Required|Required|Required|Cost Center|
+
+- Audit – tag should be in place.
+- Required – tag must be present, if not the deployment will be denied.
+- N/A – Not applicable.
+
+### Development environment - Project room
+
+A way of establishing a secure development environment could be to use what is called a Project room in this document. These project rooms represent an isolated environment normally owned by a unique AD-Group (one or more).
+
 In the project room data, tools and code are established/maintained completely isolated. Access to a project room is done by adding or revoking people from the corresponding AD-Groups.
+
 The following figure shows an example of a project room in the data platform environment.
- 
+
+![figure 4](images/Slide8.JPG)
+
 Figure 4
-Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any *data* needed for doing the development could/should undergo a process that makes it a “non-production” data/dataset.
-In case data/*datasets*  in these project rooms need to be read-only, the ownership should be assigned to a second yet still unique AD-group.
+
+Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any *data* needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
+
+In case *data*/*datasets*  in these project rooms need to be read-only, the ownership should be assigned to a second yet still unique AD-group.
+
 In the rare situations where an integration connection between project rooms is needed, the ownership should be set to a third AD-group, still being unique to the project-room.
  
-Data Establishment
+## Data Establishment
+
 Guiding principles
-1.	Legislation like the European GDPR or the CCPA from California must be adhered to.
-2.	Data can only be used in the context of which they are collected.
-3.	Development cannot be done on production data.
-4.	Distinguish between the storage of *data* - “security” - and the usage of *data* - “privacy”.
+
+1. Legislation like the European GDPR or the CCPA from California must be adhered to.
+2. Data can only be used in the context of which they are collected.
+3. Development cannot be done on production data.
+4. Distinguish between the storage of *data* - “security” - and the usage of *data* - “privacy”.
+
 The main technical mechanisms we use in the Azure platform to ensure right handling in the environments will be the following:
-1.	Data classification - makes it possible to understand the nature of the *data* we are dealing with.
-2.	Environment separation - by separating the environments mixture of *data* can be avoided. This enables a much simpler governance process.
-3.	Azure politics - using politics ensures that general paradigms like ISO27XXX, NIST or the like are being followed in all environments.
-4.	Tagging - helps identify important elements in each environment, like owner and environment type.
-5.	Encryption - using encryption, maybe using own keys, can be a mechanism security wise.
-Process for creating non-production *datasets* 
+
+1. Data classification - makes it possible to understand the nature of the *data* we are dealing with.
+2. Environment separation - by separating the environments mixture of *data* can be avoided. This enables a much simpler governance process.
+3. Azure politics - using politics ensures that general paradigms like ISO27XXX, NIST or the like are being followed in all environments.
+4. Tagging - helps identify important elements in each environment, like owner and environment type.
+5. Encryption - using encryption, maybe using own keys, can be a mechanism security wise.
+
+### Process for creating non-production *data*
+
 The process of creating *data* that can be used in the non-production environments can be one (or more) of the following:
-•	Copy of production data.
-•	Data generation of fake data.
-•	Anonymization.
-•	Pseudonymization.
-•	Encryption + Dictionary.
-•	“No relations” *datasets* .
+
+- Copy of production data.
+- Data generation of fake data.
+- Anonymization.
+- Pseudonymization.
+- Encryption + Dictionary.
+- “No relations” *data* .
+
 The method or methods being used will normally depend on the classification of the different *data* elements. For the purpose of establishing the classification of different data/*datasets*  a “database” should be maintained carrying this information. This should then be the “lookup” place to establish the right *data* processing.
-Data processing in detail
+
+### Data processing in detail
+
 In this section we discuss the different possibilities that can be used to establish one or more *datasets*  in a non-production environment. You will most likely use a combination of these.
-Important to EU-notice: pseudonymous *data* and anonymous *data* are treated differently under GDPR, the European Union *data* protection act.
-Reference EU-document
-Copy of production data
+
+Important to EU-notice: pseudonymous *data* and anonymous *data* are treated differently under GDPR, the European Union *data* protection act. Reference EU-document
+
+#### Copy of production data
+
 Even though this is not a recommended approach sometimes it is possible and allowed to use (a subset of) production *data* in a non-production environment. These *datasets*  will then most likely be marked as read-only.
 An Azure service suitable for this task could be *data* Factory copy pipelines.
-Data generation of fake data
+
+#### Data generation of fake data
+
 In this task you will create fake *data* based on the information of what datatype, length, pattern, content etc your *data* need to adhere to. It is important that this is real fake *data* and not *data* that is made fake from a production dataset.
 Creating a fake *data* set is most often a difficult task, so it is worth making sure that the process being established has some of the characteristics of being re-useable, automatic, scalable and parameterized.
+
 Tools to create fake *data* within a Python environment.
-•	Faker
-•	SDV
-•	Gretel
-Anonymization
+- Faker
+- SDV
+- Gretel
+
+#### Anonymization
+
 Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous *data* is *data* that has been changed so that re-identification of the individual is impossible.
 The scrambling can be done in many ways, using different technics like noise addition, substitution, and aggregation.
 It is important to notice that anonymization is a “one-way process”, where you will - and must - lose the ability to trace back to the original data. You must also not be able to use this *data* to connect and use *data* from other production *datasets* .
