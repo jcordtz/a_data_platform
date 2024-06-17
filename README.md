@@ -433,6 +433,9 @@ The following are some examples of ways to implement a data platform using diffe
 **Note** these folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
 [Azure Based](Azure/Azure_based.md)
-[Synapse based](Synapse/Synapse_based.md) 
+
+[Synapse based](Synapse/Synapse_based.md)
+
 [DataBricks based](Databricks/Databricks_based.md)
+
 [Fabric based](Fabric/Fabric_based.md)
