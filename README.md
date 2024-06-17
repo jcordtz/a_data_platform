@@ -45,7 +45,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
 
-|[Figure 1](images/Slide1.JPG)
+![Figure 1](images/Slide1.JPG)
 
 Figure 1
 
@@ -64,7 +64,7 @@ This is known as infrastructure as code (IaC). In the data platform, this is use
 The data platform arranges *data* and *datasets*  in different areas according to the logical architecture shown on Figure 2. 
 This is to make sure that we can comply with the "rules" of the paradigm as mentioned previously.
 
-|[Figure 2](images/Slide3.JPG)
+![Figure 2](images/Slide3.JPG)
 
 Figure 2
 
@@ -137,7 +137,7 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-|[figure 3](images/Slide4.JPG)
+![figure 3](images/Slide4.JPG)
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
  
