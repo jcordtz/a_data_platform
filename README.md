@@ -149,7 +149,7 @@ Real Time comes in different flavours, in this document we will use the followin
 - Near Real Time – *data* that is “delayed” due to communication or processing.
 - Dynamic data – *data* that is updated and needs attention.
 
-The data platform method in this document is not suitable for the Real Time situation, but it works well for Near Real Time and Dynamic Data. Dynamic data – which is based on events – is processed in the same manner as Near Real Time data in the data platform.
+The data platform method in this document is **not** suitable for the Real Time situation, but it works well for Near Real Time and Dynamic Data. Dynamic data – which is based on events – is processed in the same manner as Near Real Time data in the data platform.
 
 The general approach is that any or all real time *data* is also kept in the **ingest area** for more processing.
 This enables the data platform to have features that can support a Real Time process where appropriate, but also to manage all knowledge that can be generated over time from the Real Time situations.
@@ -162,8 +162,8 @@ To illustrate this, imagine a train that is delayed. The system that displays th
 ![figure 3](images/Slide4.JPG)
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
- 
- 
+
+
 ## Roles
 We will use roles as a mechanism of controlling access to the *data* and *datasets*  in the data platform as well as assigning the right responsibilities to persons having these roles.
 
