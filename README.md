@@ -1,5 +1,7 @@
 # A data platform - *future proof*
 
+![tiger](images/tiger.jpg)
+
 ## Introduction
 
 The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right *data* with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
@@ -442,7 +444,7 @@ The same goes for the Data Product C which represents data from App 2 excluding 
 Figure 6
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
- 
+
 # Examples of implementations
 
 The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
