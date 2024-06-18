@@ -1,38 +1,43 @@
 # A data platform - *future proof*
 
-![tiger](images/tiger.jpg)
+![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
 ## Introduction
 
 The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right data with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
 
-And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.   This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a *data* perspective navigate these opportunities/challenges.
+And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.
+
+This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a data perspective navigate these opportunities/challenges.
 
 ## Background
 
-This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks. 
+This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
+
 This concept of a data platform can basically be applied on any data platform setup, but that is (currently) not covered.
+
+It is based on Microsoft technology components.
 
 ## Overall paradigm
 
 To ensure that the data platform can handle “whatever might come” it is important what establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
 
-1. Consistency - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any *data* object is always clear. This is to make sure that the value of the data can always be conveyed.
-2. Data Encapsulation - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
-3. Modularity - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to replace, add or remove resources and services.
-4. Technology Independent - Architecture does not depend on the technology being used. This means that the processes, functionalities, and layers remain the same no matter what technology is used.
-5. Scalability - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
-6. Restartability - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/recreated. And this without any data loss or change in functionality.
-7. Accountability - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the data flow.
-8. Security - Security must be integrated into the general architecture and the specific solution designs, both for information security and privacy. A change in components must not affect any security aspects. Compliance and governance must be maintained across the different layers over time.
-9. Reuse - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up time-to-market and ensure standardization.
-10. Feedback - The architecture should be continuously adjusted and improved based on feedback from the usage of the data platform.
+1. **Consistency** - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any data object is always clear. This is to make sure that the value of the data can always be conveyed.
+2. **Data Encapsulation** - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
+3. **Modularity** - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to replace, add or remove resources and services.
+4. **Technology Independent** - Architecture does not depend on the technology being used. This means that the processes, functionalities, and layers remain the same no matter what technology is used.
+5. **Scalability** - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
+6. **Restartability** - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/recreated. And this without any data loss or change in functionality.
+7. **Accountability** - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the data flow.
+8. **Security** - Security must be integrated into the general architecture and the specific solution designs, both for information security and privacy. A change in components must not affect any security aspects. Compliance and governance must be maintained across the different layers over time.
+9. **Reuse** - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up time-to-market and ensure standardization.
+10. **Feedback** - The architecture should be continuously adjusted and improved based on feedback from the usage of the data platform.
 
 ## *Data* and *Datasets*
 
 The concepts of *data* and *datasets* are **core components** of the data platform.
 
-When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
+When the term *data* is used, it refers to a single data object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
 
 On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
 
