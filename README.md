@@ -16,7 +16,8 @@ This document is based on the experiences of various Microsoft customers who wan
 
 This concept of a data platform can basically be applied on any data platform setup, but that is (currently) not covered.
 
-It is based on Microsoft technology components.
+> [!NOTE]
+> The document is based on Microsoft technology components.
 
 ## Overall paradigm
 
