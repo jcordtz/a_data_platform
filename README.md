@@ -135,7 +135,9 @@ These include:
 
 **Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
-Note: The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform** and **publish** as this reflects what has been used at the customers that is the inspiration for this document.
+> [!NOTE]
+> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver
+  is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform** and **publish** as this reflects what has been used at the customers that is the inspiration for this document.
 
 ## A special case – Real Time 
 
