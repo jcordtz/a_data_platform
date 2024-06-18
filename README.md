@@ -16,7 +16,7 @@ This concept of a data platform can basically be applied on any data platform se
 To ensure that the data platform can handle “whatever might come” it is important what establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
 
 1. Consistency - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any *data* object is always clear. This is to make sure that the value of the data can always be conveyed.
-2. *data* Encapsulation - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
+2. Data Encapsulation - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
 3. Modularity - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to replace, add or remove resources and services.
 4. Technology Independent - Architecture does not depend on the technology being used. This means that the processes, functionalities, and layers remain the same no matter what technology is used.
 5. Scalability - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
@@ -49,9 +49,9 @@ This document explains how to create a data platform using cloud technology. And
 
 ![Figure 1](images/Slide1.JPG)
 
-Figure 1
+*Figure 1*
 
-As shown on Figure 1 using cloud technologies, gives access to different types of services.   
+As shown on Figure 1 using cloud technologies, gives access to different types of services.
 
 **Infrastructure as a Service (IaaS)** – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system. In the IaaS setup the focus is on which products should be used and hence providing the right “machines” for this.
 
@@ -67,13 +67,15 @@ This is known as infrastructure as code (IaC). In the data platform, this is use
 
 ## Logical architecture
 
-The data platform arranges *data* and *datasets* in different areas according to the logical architecture shown on Figure 2. 
+The data platform arranges *data* and *datasets* in different areas according
+to the logical architecture shown on Figure 2.
 
-This is to ensure that we can comply with the "rules" of the paradigm as mentioned previously.
+This is to ensure that the approach can comply with the "rules" of the paradigm
+as mentioned previously.
 
 ![Figure 2](images/Slide3.JPG)
 
-Figure 2
+*Figure 2*
 
 The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
 
@@ -109,8 +111,7 @@ If you “only” use the SQL standard language functionalities, this will give 
 
 Python's syntax is simple, easy to learn and emphasizes readability, which lowers the cost of program maintenance. Python supports modules and packages, which promotes program modularity and code reuse. The Python interpreter and the extensive standard library are free to obtain and distribute in source or binary form for all major platforms.  Many programmers love Python because it makes them more productive.
 
-
-One more component of the implementation that Figure 2 displays are some Supporting data Services. 
+One more component of the implementation that Figure 2 displays are some Supporting data Services.
 
 These include:
 
@@ -162,40 +163,40 @@ Of course, the roles must be delegated to people. How the roles are connected to
 This is a list of common roles seen with our clients:
 
 1. Project owner
-- Interface to a steering group/management.
-- Most like likely coming from “Business”
+   - Interface to a steering group/management.
+   - Most like likely coming from “Business”
 
 2. Project Leader
-- Leads the specific project	
-- Most like likely coming from “IT”
+   - Leads the specific project	
+   - Most like likely coming from “IT”
 
 3. Data Engineer
-- Creates the integration between a source system and the ingest lake.
-- Most likely coming from “IT”
+   - Creates the integration between a source system and the ingest lake.
+   - Most likely coming from “IT”
 
 4. Designer
-- Designs (and creates) the different dataset to be used by the business
-- Most likely coming from “Business”
+   - Designs (and creates) the different dataset to be used by the business
+   - Most likely coming from “Business”
 
 5. Transform engineer
-- Creates the transformation processes used in the transform and **publish area**
-- Most likely coming from “IT”
+   - Creates the transformation processes used in the transform and **publish area**
+   - Most likely coming from “IT”
 
 6. Data Governance
-- Ensures that the understanding between IT and Business are aligned and that governance principles are followed
-- Most likely coming from “IT/Business”
+   - Ensures that the understanding between IT and Business are aligned and that governance principles are followed
+   - Most likely coming from “IT/Business”
 
 7. Superuser/Ambassador	
-- Defines (and creates) reports/dashboard and other usage patterns
-- Most likely coming from “Business”
+   - Defines (and creates) reports/dashboard and other usage patterns
+   - Most likely coming from “Business”
 
 8. System owner	
-- Provides understanding about how a source system is being used
-- Most likely coming from “Business”
+   - Provides understanding about how a source system is being used
+   - Most likely coming from “Business”
 
 9. Architect	
-- Ensures that the architectural principles are being followed
-- Most likely coming from “IT”
+   - Ensures that the architectural principles are being followed
+   - Most likely coming from “IT”
 
 Depending on the size of project, size of company and/or framework being used you could also meet roles like Scrum Master, Product Owner, Program Owner, Steering Committee member etc.
 The needs of the different roles will naturally differ through a project. The following is an example of what the “workload” could look like:
