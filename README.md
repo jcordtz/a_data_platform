@@ -1,41 +1,43 @@
-# A data platform - future proof    
+# A data platform - *future proof*
 
 ## Introduction
-The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right *data* with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't. 
+
+The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right *data* with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
+
 And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.   This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a *data* perspective navigate these opportunities/challenges.
 
 ## Background
 
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks. 
-This concept of a data platform can be applied on any data platform setup, but that is (currently) not covered.
+This concept of a data platform can basically be applied on any data platform setup, but that is (currently) not covered.
 
 ## Overall paradigm
 
 To ensure that the data platform can handle “whatever might come” it is important what establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
 
-1. Consistency - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any *data* object is always clear. This is to make sure that the value of the *data* can always be conveyed.
-2. *data* Encapsulation - The *data* in the *data* infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the *data* infrastructure without affecting external systems.
+1. Consistency - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any *data* object is always clear. This is to make sure that the value of the data can always be conveyed.
+2. *data* Encapsulation - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
 3. Modularity - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to replace, add or remove resources and services.
 4. Technology Independent - Architecture does not depend on the technology being used. This means that the processes, functionalities, and layers remain the same no matter what technology is used.
 5. Scalability - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
-6. Restartability - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/recreated. And this without any *data* loss or change in functionality.
-7. Accountability - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the *data* flow.
+6. Restartability - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/recreated. And this without any data loss or change in functionality.
+7. Accountability - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the data flow.
 8. Security - Security must be integrated into the general architecture and the specific solution designs, both for information security and privacy. A change in components must not affect any security aspects. Compliance and governance must be maintained across the different layers over time.
 9. Reuse - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up time-to-market and ensure standardization.
 10. Feedback - The architecture should be continuously adjusted and improved based on feedback from the usage of the data platform.
 
-## *data* and *datasets* 
+## *Data* and *Datasets*
 
-The concepts of *data* and *datasets*  are the "core components" of the data platform.
+The concepts of *data* and *datasets* are "core components" of the data platform.
 
-When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* of that object. For example, a source table like customers or invoices.
+When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
 
 On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
 
 The *dataset* is the key component of the data platform, and it has some specific characteristics:
 
-- The *dataset* is self-sufficient, meaning it does not depend on any other *data* sources. It contains all the *data* it requires.
-- Only the columns/rows that are relevant for the task being performed are included.
+- The *dataset* is self-sufficient, meaning it does not depend on any other *data* sources. It contains all the information needed.
+- Only the columns/rows that are relevant for the task being supported are included.
 - A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
 - A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
 - Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
@@ -43,39 +45,49 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 ## Cloud aspects
 
-This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
+This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that is only achievable with a cloud approach.
 
 ![Figure 1](images/Slide1.JPG)
 
 Figure 1
 
-As shown on Figure 1 using cloud technologies, gives access to different types of services.   Infrastructure as a Service (IaaS) – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system.  In the IaaS setup we are focused on which products we want to use and thereby providing the right “machines” for this.
+As shown on Figure 1 using cloud technologies, gives access to different types of services.   
 
-Platform as a Service (PaaS) – this is for services like databases. We don't have to care about the infrastructure behind these services. The cloud vendor ensures all the required components behind the service itself. This includes updates, new versions and availability. In the PaaS setup we focus only on what functionality we need and not on which “product” we need to do this.   Software as a Service (SaaS) – a SaaS service is a complete solution like an ERP or a HR system. Here the cloud vendor assures access to a full package of applications, databases, and infrastructure needed for the SaaS service to work.
+**Infrastructure as a Service (IaaS)** – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system. In the IaaS setup the focus is on which products should be used and hence providing the right “machines” for this.
 
-The data platform discussed is based on PaaS and/or SaaS services. In the chapter “Implementations”, you can see different ways of doing this with different PaaS or SaaS services.
+**Platform as a Service (PaaS)** – this is for services like databases. We don't have to care about the infrastructure behind these services. The cloud vendor ensures all the required components behind the service itself. This includes updates, new versions and availability. In the PaaS setup the focus is only on what functionality is needed and not on which “product” could do this.
 
-A key aspect of the cloud is that "everything is software". This means that when we need, for example, to set up a new server, the various components that the server uses - like disks, network cards etc. - these components are generated by sending commands to the cloud infrastructure. So, we rely on software to produce these components.
+**Software as a Service (SaaS)** – is a "complete" solution like an ERP or a HR system. Here the cloud vendor assures access to a full package of applications, databases, and infrastructure needed for the SaaS service to work.
 
-This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a dataset into this database using code.
+The data platform discussed is based on PaaS and/or SaaS services. In the chapter “Implementations”, different ways of doing this discussed with the usage of different PaaS or SaaS services.
+
+A key aspect of the cloud is that "everything is software". This means that when the need is - lets say - for a new Linux server, the various components that the server uses - like disks, network cards etc. - these components are generated by sending commands to the cloud infrastructure. So, we rely on software to "produce" these components.
+
+This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a *dataset* into this database using code.
 
 ## Logical architecture
 
-The data platform arranges *data* and *datasets*  in different areas according to the logical architecture shown on Figure 2. 
-This is to make sure that we can comply with the "rules" of the paradigm as mentioned previously.
+The data platform arranges *data* and *datasets* in different areas according to the logical architecture shown on Figure 2. 
+
+This is to ensure that we can comply with the "rules" of the paradigm as mentioned previously.
 
 ![Figure 2](images/Slide3.JPG)
 
 Figure 2
 
-The areas represent different states of the journey from *data* to *datasets*  and thereby to reporting and analytics.
+The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
+
 Referring to Figure 2 the characteristics of different areas are as follows:
 
-**Source systems** are any system where *data* must be extracted (batch) or where *data* is sent from (streamed).
+**Source systems** are any system where *data* must be extracted from (batch) or where *data* is sent from (streamed).
 
-The **ingest area** is where *data* from the source systems arrives. *data* is kept in its original format. If the *data* is "table" data, no changes are made to any rows or columns, not even the format of the data. *data* is stored in files - usually csv or parquet or in their binary format - like for video, picture, or sound. The **ingest area** should have a directory structure that makes it easy to identify the source of the data. Also, there is no updating or overwriting of existing files - meaning that a new load creates new files. Over time, files in the **ingest area** should be archived or deleted if legal requirements demand this (such as GDPR).
+The **ingest area** is where *data* from the source systems arrives. *data* is kept with its original content. If the *data* is "table" data, no changes are made to any rows or columns, not even the format of the data. *Data* is stored in files - usually csv or parquet or in their binary format - like for videos, pictures, or sound. The **ingest area** should have a directory structure that makes it easy to identify the source of the data.
 
-Data is technically modified to comply with usable standards in the **transform area**. The *data* objects in this area are independent. This means that they do not have a mix of *data* from the source system, are not changed to be a golden record and do not restrict the number of rows or columns. They are "clean" objects that are convenient to work with when used for creating *datasets* .  From a technical perspective, the main task for transforming *data* is to make sure they have the same format for some of the "difficult" *data* types, such as dates (e.g. splitting time from the date into a separate column) and decimal number (".," or ",." as separators). The second main task is to ensure that the different *data* we want to have available in this area are easily joinable, meaning that the individual *data* object has the "reference keys" needed to be able to join with other *data* objects.
+Also, there is no updating or overwriting of existing files - meaning that a new load creates new files. Over time, files in the **ingest area** should be archived or deleted if legal requirements demand this (such as GDPR).
+
+*Data* is technically modified to comply with usable standards in the **transform area**. The *data* objects in this area are independent. This means that they do not have a mix of *data* from the source system, are not changed to be a golden record and do not restrict the number of rows or columns. They are "clean" objects that are convenient to work with when used for creating *datasets*.
+
+From a technical perspective, the main task for transforming *data* is to make sure they have the same format for some of the "difficult" *data* types, such as dates (e.g. splitting time from the date into a separate column) and decimal number (".," or ",." as separators). The second main task is to ensure that the different *data* we want to have available in this area are easily joinable, meaning that the individual *data* object has the "reference keys" needed to be able to join with other *data* objects.
 
 In the **publish area**, we create the *datasets* that are needed to meet the various business needs that require *data* from the data platform. We will apply techniques like star schemas and deliver these *datasets*  in what are commonly called *data* marts. 
 
