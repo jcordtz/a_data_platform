@@ -167,34 +167,34 @@ This is a list of common roles seen with our clients:
    - Most like likely coming from “Business”
 
 2. Project Leader
-   - Leads the specific project	
+   - Leads the specific project
    - Most like likely coming from “IT”
 
 3. Data Engineer
-   - Creates the integration between a source system and the ingest lake.
+   - Creates the integration between a source system and the **ingest area**.
    - Most likely coming from “IT”
 
 4. Designer
-   - Designs (and creates) the different dataset to be used by the business
+   - Designs (and creates) the different *dataset* to be used by the business
    - Most likely coming from “Business”
 
 5. Transform engineer
-   - Creates the transformation processes used in the transform and **publish area**
+   - Creates the transformation processes used in the **transform** and **publish area**
    - Most likely coming from “IT”
 
 6. Data Governance
    - Ensures that the understanding between IT and Business are aligned and that governance principles are followed
    - Most likely coming from “IT/Business”
 
-7. Superuser/Ambassador	
+7. Superuser/Ambassador
    - Defines (and creates) reports/dashboard and other usage patterns
    - Most likely coming from “Business”
 
-8. System owner	
+8. System owner
    - Provides understanding about how a source system is being used
    - Most likely coming from “Business”
 
-9. Architect	
+9. Architect
    - Ensures that the architectural principles are being followed
    - Most likely coming from “IT”
 
@@ -234,11 +234,12 @@ In this section, we will explore how to use the six environments for implementin
 To control the *data* policies, we need to understand which environment we are working in. This document uses 5 environment types in the discussing of the processes.
 
 1. Sandbox – environment used to test functionality in each service. These environments do NOT contain any business/company data.
-2. Project rooms - These environments are used for establishing environments containing tools and *data* used to fulfill a development task.
+2. Project rooms - These environments are used for establishing environments containing tools and data used to fulfill a development task.
 3. Non-Production – environments that contain development, quality assurance and test scenarios.
 4. Production – environments supporting pre-production and production scenarios.
 5. Confidential – environments supporting data processing of highly confidential data.
-As mentioned you can find a project handling the establishment of such environments in a secure setup - see here for more information.
+
+As mentioned you can find projects handling the establishment of such environments in a secure setup - see "here" for more information.
 
 ### Data and security
 
@@ -247,6 +248,7 @@ Data security is a crucial aspect of any organization's operations. It involves 
 Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and recover it faster. The goal of data security is to make your data resilient against any kind of misuse that being attacks, errors etc.
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
+
 In Figure 3 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
 ![figure 3](images/Slide16.JPG)
@@ -267,7 +269,7 @@ Figure 3
 
 ## Data Operations
 
-According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around *data* analytics.
+According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around data analytics.
 
 While DataOps started as a set of best practices, it has now evolved to become a new and distinct approach to data analytics. DataOps covers the whole data lifecycle from data preparation to reporting and acknowledges the interdependent nature of the data analytics team and information technology operations.
 
@@ -286,7 +288,7 @@ In different environments certain politics regarding encryption could be enforce
 |Encryption in Processing|N/A|N/A|N/A|N/A|Required|
 
 - Audit – it is required that a policy audit if encryption is in place, but does not require it. This can be used for risk-assessment.
-- Required – the policy will prevent creating *data* storage of any kind without encryption.
+- Required – the policy will prevent creating data storage of any kind without encryption.
 - N/A – Not applicable.
 
 ### Environments and Tags
@@ -315,12 +317,12 @@ The following figure shows an example of a project room in the data platform env
 
 Figure 4
 
-Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any *data* needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
+Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any data needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
 
-In case *data*/*datasets*  in these project rooms need to be read-only, the ownership should be assigned to a second yet still unique AD-group.
+In case *data*/*datasets* in these project rooms need to be read-only, the ownership should be assigned to a second yet still unique AD-group.
 
 In the rare situations where an integration connection between project rooms is needed, the ownership should be set to a third AD-group, still being unique to the project-room.
- 
+
 ## Data Establishment
 
 Guiding principles
@@ -328,12 +330,12 @@ Guiding principles
 1. Legislation like the European GDPR or the CCPA from California must be adhered to.
 2. Data can only be used in the context of which they are collected.
 3. Development cannot be done on production data.
-4. Distinguish between the storage of *data* - “security” - and the usage of *data* - “privacy”.
+4. Distinguish between the storage of data - “security” - and the usage of data - “privacy”.
 
 The main technical mechanisms we use in the Azure platform to ensure right handling in the environments will be the following:
 
-1. Data classification - makes it possible to understand the nature of the *data* we are dealing with.
-2. Environment separation - by separating the environments mixture of *data* can be avoided. This enables a much simpler governance process.
+1. Data classification - makes it possible to understand the nature of the data we are dealing with.
+2. Environment separation - by separating the environments mixture of data can be avoided. This enables a much simpler governance process.
 3. Azure politics - using politics ensures that general paradigms like ISO27XXX, NIST or the like are being followed in all environments.
 4. Tagging - helps identify important elements in each environment, like owner and environment type.
 5. Encryption - using encryption, maybe using own keys, can be a mechanism security wise.
@@ -349,34 +351,35 @@ The process of creating *data* that can be used in the non-production environmen
 - Encryption + Dictionary.
 - “No relations” *data* .
 
-The method or methods being used will normally depend on the classification of the different *data* elements. For the purpose of establishing the classification of different data/*datasets*  a “database” should be maintained carrying this information. This should then be the “lookup” place to establish the right *data* processing.
+The method or methods being used will normally depend on the classification of the different data elements. For the purpose of establishing the classification of different *data*/*datasets*  a “database” should be maintained carrying this information. This should then be the “lookup” place to establish the right data processing.
 
 ### Data processing in detail
 
 In this section we discuss the different possibilities that can be used to establish one or more *datasets*  in a non-production environment. You will most likely use a combination of these.
 
-Important to EU-notice: pseudonymous *data* and anonymous *data* are treated differently under GDPR, the European Union *data* protection act. Reference EU-document
+Important to EU-notice: pseudonymous data and anonymous data are treated differently under GDPR, the European Union data protection act. Reference EU-document
 
 #### Copy of production data
 
-Even though this is not a recommended approach sometimes it is possible and allowed to use (a subset of) production *data* in a non-production environment. These *datasets*  will then most likely be marked as read-only.
+Even though this is not a recommended approach sometimes it is possible and allowed to use (a subset of) production data in a non-production environment. These data will then most likely be marked as read-only.
 
 - An Azure service suitable for this task would be Azure Data Factory copy pipelines.
 
 #### Data generation of fake data
 
-In this task you will create fake *data* based on the information of what datatype, length, pattern, content etc your *data* need to adhere to. It is important that this is real fake *data* and not *data* that is made fake from a production dataset.
+In this task you will create fake *data* based on the information of what datatype, length, pattern, content etc your *data* need to adhere to. It is important that this is real fake data and not data that is made fake from a production dataset.
 
-Creating a fake *data* set is most often a difficult task, so it is worth making sure that the process being established has some of the characteristics of being re-useable, automatic, scalable and parameterized.
+Creating a fake set of data is most often a difficult task, so it is worth making sure that the process being established has some of the characteristics of being re-useable, automatic, scalable and parameterized.
 
-Tools to create fake *data* within a Python environment.
+Tools to create fake data within a Python environment, could be:
 - Faker
 - SDV
 - Gretel
 
 #### Anonymization
 
-Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous data is *data* that has been changed so that re-identification of the individual is impossible.
+Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous data is data that has been changed so that re-identification of the individual is impossible.
+
 The scrambling can be done in many ways, using different technics like noise addition, substitution, and aggregation.
 
 It is important to notice that anonymization is a “one-way process”, where you will - and must - lose the ability to trace back to the original data. You must also not be able to use this data to connect and use *data* from other production *datasets*.
@@ -385,7 +388,7 @@ It is important to notice that anonymization is a “one-way process”, where y
 
 #### Pseudonymization
 
-Pseudonymization is in essence the same process as Anonymization, with one big difference. Pseudonymous *data* is data that has been de-identified from the data’s origin but can be re-identified if needed.
+Pseudonymization is in essence the same process as Anonymization, with one big difference. Pseudonymous data is data that has been de-identified from the data’s origin but can be re-identified if needed.
 Tokenization and hash functions can be used to pseudonymize data.
 
 - Azure Data Factory data flows/Azure Databricks can be used for this.
@@ -396,9 +399,9 @@ In this case you protect your *data* with an encryption key and only the people 
 
 **NOTE**: This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
 
-#### “No relations” *datasets* 
+#### “No relations” *datasets*
 
-In this approach you create *datasets*  that contain “real” data at a column level, so i.e., if you have a postal-code column then the postal-codes would be real, as well if you in the same record have a street name, that would also be real street names.
+In this approach you create *datasets* that contain “real” data at a column level, so i.e., if you have a postal-code column then the postal-codes would be real, as well if you in the same record have a street name, that would also be real street names.
 
 The “no relations” approach comes into play when data is being looked at from a row level perspective. In the above case the street name, house number and the postal code would logically make sense, but it will not exist physically.
 
@@ -410,6 +413,7 @@ And when creating a new row, random values are taken from these *datasets* and u
 ## CI/CD example
 
 As mentioned above, a way of making sure coding in the data platform is done the “right away” you should consider using Continuous Integration/Continuous Deployment (CI/CD) principles. Such processes have pipeline workflow that describes what processes code goes through when being deployed to production.
+
 The following Figure 5 show a simplified workflow.
 
 ![figure 5](images/CI_CD.bmp)
