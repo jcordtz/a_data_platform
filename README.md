@@ -30,7 +30,7 @@ To ensure that the data platform can handle “whatever might come” it is impo
 
 ## *Data* and *Datasets*
 
-The concepts of *data* and *datasets* are "core components" of the data platform.
+The concepts of *data* and *datasets* are **core components** of the data platform.
 
 When the term *data* is used, it refers to a single *data* object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
 
@@ -128,7 +128,6 @@ These include:
 **Data Governance** – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
 
 **Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
-
 
 Note: The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform** and **publish** as this reflects what has been used at the customers that is the inspiration for this document.
 
