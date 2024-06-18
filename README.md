@@ -4,7 +4,9 @@
 
 ## Introduction
 
-The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right data with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
+The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.
+
+Therefore, it is more crucial than ever to ensure that the right data with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
 
 And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.
 
@@ -87,11 +89,11 @@ as mentioned previously.
 
 The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
 
-Referring to Figure 2 the characteristics of different areas are as follows:
+Referring to Figure 2 the characteristics of the different areas are as follows:
 
 **Source systems** are any system where *data* must be extracted from (batch) or where *data* is sent from (streamed).
 
-The **ingest area** is where *data* from the source systems arrives. *data* is kept with its original content. If the *data* is "table" data, no changes are made to any rows or columns, not even the format of the data. *Data* is stored in files - usually csv or parquet or in their binary format - like for videos, pictures, or sound. The **ingest area** should have a directory structure that makes it easy to identify the source of the data.
+The **ingest area** is where *data* from the source systems arrives. *Data* is kept with its original content. If the *data* is "table" data, no changes are made to any rows or columns, not even the format of the data. *Data* is stored in files - usually csv or parquet or in their binary format - like for videos, pictures, or sound. The **ingest area** should have a directory structure that makes it easy to identify the source of the data.
 
 Also, there is no updating or overwriting of existing files - meaning that a new load creates new files. Over time, files in the **ingest area** should be archived or deleted if legal requirements demand this (such as GDPR).
 
@@ -137,7 +139,7 @@ These include:
 
 > [!NOTE]
 > The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver
-  is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform** and **publish** as this reflects what has been used at the customers that is the inspiration for this document.
+  is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document.
 
 ## A special case – Real Time 
 
