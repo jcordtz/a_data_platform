@@ -425,13 +425,13 @@ datasets to be able to handle any exception handling scenarios.
 
 ## A practical approach
 
-Based on the discussions in this document Figure 6 shows what this could look like in “real life”. 
+Based on the discussions in this document Figure 6 shows what this could look like in “real life”.
 
 On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
 
 In the middle we find the data platform with the Ingest, Transform and **publish area**. In the **ingest area** you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
 
-Then on the right side of the figure we see what is required by the end-users in the **consume area**. The first user called *data* User 1 needs *data* that only comes from App 1, so the dataset needed called *data* Product A is a straightforward process. 
+Then on the right side of the figure we see what is required by the end-users in the **consume area**. The first user called data User 1 needs *data* that only comes from App 1, so the dataset needed called *data* Product A is a straightforward process.
 
 The Data User 2 needs data that comes from both App 1 and 2, but data present in App 3 most be excluded from that dataset, so in this case the process is a little more complicated, but because the **transform area** represents an area where easily can combine (and also exclude) data the fundamentals for doing this is in place, hence it be done rather smoothly.
 
