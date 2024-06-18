@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right *data* with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
+The IT world is undergoing significant changes in these times (2024) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.   Therefore, it is more crucial than ever to ensure that the right data with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
 
 And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.   This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a *data* perspective navigate these opportunities/challenges.
 
