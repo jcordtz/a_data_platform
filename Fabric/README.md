@@ -16,7 +16,7 @@ These are possible ways of using Microsoft Fabric within the data platform conce
 
 ![Fabric](../images/Slide18.JPG)
 
-At the top of the figure Microsoft Fabric fits very well in the **consume area** where it could be used as a “copy-cat” of the data platform itself. Hence you could provide similar functionality to organizations that would like to do more advanced analytics and be able to bring their own data, but still having this in a “controlled” environment.
+At the top of the figure Microsoft Fabric fits very well in the **consume area** where it could be used as a “copy-cat” of the data platform itself. Hence you could provide similar functionality to departments/projects/organizations that would like to do more advanced analytics and be able to bring their own data, but still having this in a “controlled” environment.
 
 And to the bottom of the figure where Microsoft Fabric is the data platform itself.
 
