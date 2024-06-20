@@ -423,7 +423,7 @@ Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode
 
 Figur 5 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figure 6](images/english/Slide20.JPG) 
+![figure 6](images/danish/Slide20.JPG) 
 
 *Figur 6*
 
@@ -440,7 +440,7 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figure 7](images/english/Slide14.JPG)
+![figure 7](images/danish/Slide14.JPG)
 
 *Figure 7*
 
