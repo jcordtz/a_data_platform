@@ -63,7 +63,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
 
-![Figure 1](images/Slide1.JPG)
+![Figure 1](images/english/Slide1.JPG)
 
 *Figure 1*
 
@@ -89,7 +89,7 @@ to the logical architecture shown on Figure 2.
 This is to ensure that the approach can comply with the "rules" of the paradigm
 as mentioned previously.
 
-![Figure 2](images/Slide3.JPG)
+![Figure 2](images/english/Slide3.JPG)
 
 *Figure 2*
 
@@ -167,7 +167,7 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-![figure 3](images/Slide4.JPG)
+![figure 3](images/english/Slide5.JPG)
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
 
@@ -234,7 +234,7 @@ The needs of the different roles will naturally differ through a project. The fo
 2. Iteration X – the individual “versions” – most likely in 3-month timespans
 3. Vision State – overall what is the projects going to accomplish
 
-## Environments 
+## Environments
 
 In this section, we will explore how to use the six environments for implementing a data platform project. Depending on your preferences, you can of course decide how many of these environments you want to have and how you want to distribute the tasks that we will describe among fewer or more environments.
 
@@ -268,9 +268,9 @@ In summary, data security is essential for maintaining the confidentiality, inte
 
 In Figure 3 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 3](images/Slide16.JPG)
+![figure 4](images/english/Slide15.JPG)
 
-Figure 3
+*Figure 4*
 
 **Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
 
@@ -330,9 +330,9 @@ In the project room data, tools and code are established/maintained completely i
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 4](images/Slide8.JPG)
+![figure 5](images/english/Slide7.JPG)
 
-Figure 4
+*Figure 5*
 
 Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any data needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
 
@@ -431,11 +431,11 @@ And when creating a new row, random values are taken from these *datasets* and u
 
 As mentioned above, a way of making sure coding in the data platform is done the “right away” you should consider using Continuous Integration/Continuous Deployment (CI/CD) principles. Such processes have pipeline workflow that describes what processes code goes through when being deployed to production.
 
-The following Figure 5 show a simplified workflow.
+The following Figure 6 show a simplified workflow.
 
-![figure 5](images/CI_CD.bmp)
+![figure 6](images/english/Slide19.JPG)
 
-Figure 5
+*Figure 6*
 
 In connection with the continuous development and testing you often need to be able to handle data in non-production environments. Most likely you are not allowed to or do not want to use production data in these environments. Also, for testing purposes you may want to introduce faulty data in your 
 datasets to be able to handle any exception handling scenarios.
@@ -454,9 +454,9 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 6](images/Slide14.JPG)
+![figure 7](images/english/Slide13.JPG)
 
-Figure 6
+*Figure 7*
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
 
