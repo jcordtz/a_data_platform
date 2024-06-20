@@ -15,6 +15,9 @@ And what new "challenges" will tomorrow bring. Well, we really don't know, the o
 
 This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a data perspective navigate these opportunities/challenges.
 
+> [!NOTE]
+> This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
+
 ## Background
 
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
