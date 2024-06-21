@@ -451,7 +451,7 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
 
 > [!Note]
-> Disse områder indeholder pt kun yderligere beskrivende information men vil senere ligeledes ineholder eksempler på Infrastructure-as-Code.
+> Disse områder indeholder pt kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
 [Azure Based](Azure/README-da.md)
 
