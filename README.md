@@ -111,6 +111,11 @@ In the **publish area**, we create the *datasets* that are needed to meet the va
 
 The **consume area** is where the end users of the data platform will access the *datasets*  from the **publish area** using the tools they find most suitable.
 
+> [!NOTE]
+> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
+
+### Interfaces
+
 Figure 2 indicates that the interface between the different areas is as important as the content of the areas.
 
 These interfaces must ensure the technology independency we want in the platform – it must be easy to change/add new services – as well as ensuring that we know the data pathways.
@@ -126,6 +131,8 @@ If you “only” use the SQL standard language functionalities, this will give 
 **Python** – the “new” data processing language. Python is widely used and reflects the current way of handling data. Python is a high-level programming language that can be interpreted. It has built-in data structures that are high-level, and it allows dynamic typing and binding, which make it ideal for Rapid Application Development, as well as for using it as a scripting or glue language to link existing components together.
 
 Python's syntax is simple, easy to learn and emphasizes readability, which lowers the cost of program maintenance. Python supports modules and packages, which promotes program modularity and code reuse. The Python interpreter and the extensive standard library are free to obtain and distribute in source or binary form for all major platforms.  Many programmers love Python because it makes them more productive.
+
+### Supporting Data Services
 
 One more component of the implementation that Figure 2 displays are some Supporting data Services.
 
@@ -144,7 +151,7 @@ These include:
 **Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
 > [!NOTE]
-> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document.
+> The document will be enhanced over time to include further description of these services.
 
 ## A special case – Real Time 
 
@@ -172,8 +179,8 @@ To illustrate this, imagine a train that is delayed. The system that displays th
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
 
-
 ## Roles
+
 We will use roles as a mechanism of controlling access to the *data* and *datasets*  in the data platform as well as assigning the right responsibilities to persons having these roles.
 
 Of course, the roles must be delegated to people. How the roles are connected to people, and if certain people have more than one role, doesn't really matter. The most important thing is that the processes comply with the "rules" of the data platform paradigm.
@@ -463,7 +470,7 @@ The same goes for the Data Product C which represents data from App 2 excluding 
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
 
-# Examples of implementations
+## Examples of implementations
 
 The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
 
