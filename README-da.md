@@ -449,33 +449,21 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 # Eksempler på implementeringer
 
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
-Baseret på Azure-tjenester.
-Implementering af dataplatformen ved hjælp af Azure-tjenester resulterer i en meget fleksibel og agil tilgang. Dette vil opfylde alle emner, der er anført i kapitlet ”Overordnet paradigme".
-Figur 7 viser de Azure-tjenester, der normalt bruges i denne tilgang.
- 
-Figur 7
-I Ingest området finder man Azure Event Hub og Real-Time Analytics til håndtering af indgående meddelelser samt Data Factory til håndtering af batch kopierings-processen. Som datalager bruges Azure Data Lake.
-I Transform området vil ETL-processen håndteres af Data Factory Data Flow, og datalager vil også være Azure Data Lake. Ønsker man eventuelt at oprette et Enterprise Data Warehouse, kan dette håndteres af Synapse DW.
-I publish området finder man forskellige Azure-databaseteknologier, for eksempel relations databaserne Azure SQL Database, Azure PostgresDB og Azure MySQL. Også databaser som Azure Cosmos DB, Azure Analytical Services og Azure Data Explorer er kandidater sammen med Azure Data Lake.
-I consume området finder man PowerBI sammen med Azure Machine Learning og Azure AI Studio.
-Baseret på databricks.
-Tilgangen er den samme som for den Azure-baserede tilgang, bortset fra at Databricks bruges i stedet for Data Factory Data Flow og Synapse DW. Man kan også bruge Databricks i stedet for SQL Server. Teknologisk uafhængighed ligger i, at Databricks er baseret på Python og Spark. Databricks tilgangen er mere programmerings-tung.
- 
-Figur 8
-Figur 8 viser hvor Databricks kunne passe ind i data platformen. Denne tilgang passer også meget fint med den ”medallion” arkitektur som meget ofte bruger i en Databricks Lakehouse arkitektur.
 
-Synapse baseret.
-I dette tilfælde er man ikke teknologisk uafhængig i Ingest -, transform- og publish områderne, fordi man vil udføre al "programmering" i Synapse-tjenesten.
+# Examples of implementations
 
-Fabric baseret.
-Microsoft Fabric er en alt-i-en-analyseløsning, der dækker alt fra dataflytning til data-science, realtidsanalyse og Business Intelligence. 
-Platformen er Software as a Service (SaaS) produkt, som håndterer al integration mellem de forskellige komponenter, der anvendes i dataplatformen.
-Microsoft Fabric samler nye og eksisterende komponenter fra Power BI, Azure Synapse og Azure Data Factory i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
- 
-Figur 9
-Man kan sagtens bygge en data platform ved hjælp af Fabric, men da Fabric er en SaaS-løsning, vil dette ikke give en teknologi-uafhængig løsning.
-Følgende figur viser hvorledes Fabric for eksempel kunne bruges i data platformen.
- 
-I toppen af diagrammet placerer Microsoft Fabric sig ideelt i consume area, som en mulig direkte kloning af data platformen. Dette kan tilbyde avancerede analytiske funktioner til teams/projekter/organisationer, der ønsker at introducere deres egne datasæt, samtidig med at de opererer inden for et "kontrolleret" rammearbejde.
-Og i bunden af figuren, er Microsoft Fabric selve data platformen.
-Mere information om Microsoft Fabric kan findes her Microsoft Fabric Info
+The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
+
+**Note** these folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
+
+[Azure Based](Azure/README-da.md)
+
+[Synapse based](Synapse/README-da.md)
+
+[DataBricks based](Databricks/README-da.md)
+
+[Fabric based](Fabric/README-da.md)
+
+
+
+
