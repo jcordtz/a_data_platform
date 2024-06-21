@@ -14,7 +14,7 @@ Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikk
 
 Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at navigere i disse muligheder / udfordringer.
 
-> [!NOTE]
+> [!Note]
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
 
 # Baggrund
@@ -23,7 +23,7 @@ Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der
 
 Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange, men det er (i øjeblikket) ikke dækket.
 
-> [!NOTE]
+> [!Note]
 > Dokumentet er baseret på Microsoft teknologi komponenter.
 
 # Overordnet paradigme
@@ -450,11 +450,8 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
 
-# Examples of implementations
-
-The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
-
-**Note** these folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
+> [!Note]
+> Disse områder indeholder pt kun yderligere beskrivende information men vil senere ligeledes ineholder eksempler på Infrastructure-as-Code.
 
 [Azure Based](Azure/README-da.md)
 
