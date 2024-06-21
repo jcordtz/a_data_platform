@@ -5,7 +5,7 @@
 
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
-# Introduktion
+## Introduktion
 
 IT-verdenen gennemgår betydelige ændringer i disse tider (2024) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer under overskriften Generativ AI - eller simpelthen GenAI.   Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester for at drage fuld fordel af disse funktioner. 
 
