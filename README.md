@@ -144,8 +144,7 @@ These include:
 **Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
 > [!NOTE]
-> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver
-  is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document.
+> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document.
 
 ## A special case – Real Time 
 
@@ -168,6 +167,8 @@ Or give more detailed information about a goal event in a football match and the
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
 ![figure 3](images/english/Slide5.JPG)
+
+*Figure 3*
 
 However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
 
@@ -216,6 +217,7 @@ This is a list of common roles seen with our clients:
    - Most likely coming from “IT”
 
 Depending on the size of project, size of company and/or framework being used you could also meet roles like Scrum Master, Product Owner, Program Owner, Steering Committee member etc.
+
 The needs of the different roles will naturally differ through a project. The following is an example of what the “workload” could look like:
 
 |Role|Ideation|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ….|Vision state|
@@ -276,7 +278,7 @@ In Figure 4 you will find several ways to protect data which are available in Az
 
 **Role Based Access Control** – also known as RBAC. This controls the access to a given resource and how it can be used. So popular said – can one get to the storage account?
 
-**Attribute Based Access Control** – also known as ABAC - provides an often extra mechanism for granting access making a “lookup” in another system. For example, you might be able to get to a storage account but their might a directory that requires that you are part of a given project. In this case you can make an ABAC “lookup” that checks this before providing access – depending on this result.
+**Attribute Based Access Control** – also known as ABAC - provides an extra mechanism for granting access making a “lookup” in another system. For example, you might be able to get to a storage account but their might a directory that requires that you are part of a given project. In this case you can make an ABAC “lookup” that checks this before providing access – depending on this result.
 
 **Identity Based Access Control** – covers the capability that a given resource can be assigned an identity (becoming “a human”). And then you make sure that access to a given storage account is only provided to this “human” and hence you need to use this application to get to the data.
 
@@ -414,7 +416,8 @@ Tokenization and hash functions can be used to pseudonymize data.
 
 In this case you protect your *data* with an encryption key and only the people within the Dictionary of this data storage will be able to use the key. This key could be held in an Azure Key Vault.
 
-**NOTE**: This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
+> [!NOTE]
+> This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
 
 #### “No relations” *datasets*
 
@@ -464,7 +467,8 @@ This also represents how the data platform should be able to exactly support the
 
 The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
 
-**Note** these folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
+> [!NOTE]
+> These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
 [Azure Based](Azure/README.md)
 

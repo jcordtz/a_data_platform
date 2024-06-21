@@ -100,7 +100,7 @@ Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform 
 Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på Figur 2. 
 Dette er for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt. 
  
-![figur2](images/danish/Slide4.JPG)
+![figur 2](images/danish/Slide4.JPG)
 
 *Figur 2*
 
@@ -257,9 +257,9 @@ For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden,
 Figur 3 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
 
-![figure 3](images/danish/Slide16.JPG)
+![figur 4](images/danish/Slide16.JPG)
  
-*Figure 3*
+*Figur 4*
 
 **Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto. 
 Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
@@ -318,7 +318,7 @@ I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig i
 
 I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
 
-![figure 5](images/danish/Slide8.JPG) 
+![figur 5](images/danish/Slide8.JPG) 
 
 *Figur 5*
 
@@ -421,9 +421,9 @@ Data Factory-dataflows/Azure Databricks kan bruges til dette.
 Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet. 
 Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
 
-Figur 5 viser et – forenklet- eksempel på en sådan arbejdsgang.
+Figur 6 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figure 6](images/danish/Slide20.JPG) 
+![figur 6](images/danish/Slide20.JPG) 
 
 *Figur 6*
 
@@ -440,9 +440,9 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figure 7](images/danish/Slide14.JPG)
+![figur 7](images/danish/Slide14.JPG)
 
-*Figure 7*
+*Figur 7*
 
 Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit. Så den samlede tilgang kunne være - hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen.
 
@@ -451,7 +451,7 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
 
 > [!Note]
-> Disse områder indeholder pt kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
+> Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
 [Azure Based](Azure/README-da.md)
 
