@@ -14,13 +14,15 @@ Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikk
 
 Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at navigere i disse muligheder / udfordringer.
 
+Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som "det bør man overveje", hvis man vil lave en dataplatform.
+
 > [!Note]
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
 > De næste emner bliver nok Governance/Compliance og GenAI, da vi begynder at have bedre viden om disse i forbindelse med en dataplatform
 
 ## Baggrund
 
-Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der har et ønske om at strømline oprettelsen af en dataplatform ved hjælp af cloud tjenester til analytiske opgaver. 
+Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der har et ønske om at strømline oprettelsen af en dataplatform ved hjælp af cloud tjenester til analytiske opgaver.
 
 Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange, men det er (i øjeblikket) ikke dækket.
 
@@ -29,7 +31,7 @@ Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange,
 
 ## Overordnet paradigme
 
-For at sikre at en dataplatform kan understøtte ”hvad der end måtte komme”, er det vigtigt at vi sætter nogle retningslinjer for, hvad der skal være gældende. 
+For at sikre at en dataplatform kan understøtte ”hvad der end måtte komme”, er det vigtigt at vi sætter nogle retningslinjer for, hvad der skal være gældende.
 
 Dette overordnede paradigme skal sikre at en dataplatform opfylder følgende egenskaber.
 
@@ -73,7 +75,7 @@ På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af 
 
 Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologier.
 
-Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.   
+Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
 
 ![figur 1](images/danish/Slide2.JPG)
 
@@ -95,7 +97,6 @@ Et andet centralt aspekt af skyen er, at "alt er software". Det betyder, at når
 
 Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform bruges dette til for eksempel at oprette en relations database og herefter indlæse et givent datasæt i denne database, alt samme ved hjælp af kode.
 
-
 ## Logisk arkitektur
 
 Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på Figur 2. 
@@ -114,7 +115,7 @@ Med henvisning til Figur 2 kan de forskellige områder beskrives som følger:
 
 Over tid skal filer i Ingest området arkiveres eller slettes, hvis lovkrav kræver dette (såsom GDPR).
 
-I **Transform området** hentes data fra Ingest området og ændres til et ”teknisk brugbart” format. 
+I **Transform området** hentes data fra Ingest området og ændres til et ”teknisk brugbart” format.
 
 En opgave er derfor at transformere data således at de har det samme format – det kan for eksempel være at ”standardisere” de "vanskelige" datatyper, såsom datoer (f.eks. opdeling af tid fra datoen i en separat kolonne) og decimaltal ("." eller ",." som separatorer).
 

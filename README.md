@@ -15,6 +15,8 @@ And what new "challenges" will tomorrow bring. Well, we really don't know, the o
 
 This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a data perspective navigate these opportunities/challenges.
 
+The content of this document is not a "this is best practice", but a "you ought to consider this" when establishing your data platform.
+
 > [!NOTE]
 > This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
 > The next topics will most likely be Governance/Compliance and GenAI, as vi start getting better knowledge about this in connection with a dataplatform
@@ -30,7 +32,7 @@ This concept of a data platform can basically be applied on any data platform se
 
 ## Overall paradigm
 
-To ensure that the data platform can handle “whatever might come” it is important what establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
+To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
 
 1. **Consistency** - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any data object is always clear. This is to make sure that the value of the data can always be conveyed.
 2. **Data Encapsulation** - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
