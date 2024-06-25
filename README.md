@@ -1,4 +1,4 @@
-# A data platform - *future proof*
+# A data platform - *"future proof"*
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
@@ -17,6 +17,7 @@ This document explains how you could create a data platform that will be able to
 
 > [!NOTE]
 > This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
+> The next topics will most likely be Governance/Compliance and GenAI, as vi start getting better knowledge about this in connection with a dataplatform
 
 ## Background
 

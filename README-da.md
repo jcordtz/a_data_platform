@@ -1,4 +1,4 @@
-# En data platform - *fremtidssikret*
+# En data platform - *"fremtidssikret"*
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
@@ -7,15 +7,16 @@
 
 ## Introduktion
 
-IT-verdenen gennemgår betydelige ændringer i disse tider (2024) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer under overskriften Generativ AI - eller simpelthen GenAI.   Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester for at drage fuld fordel af disse funktioner. 
+IT-verdenen gennemgår betydelige ændringer i disse tider (2024) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer under overskriften Generativ AI - eller simpelthen GenAI.   Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester for at drage fuld fordel af disse funktioner.
 
-Men hvordan kunne man for et år siden forudsige, hvad er muligt i dag, og hvilken stor forandring det rent faktisk er, og dermed planlægge at kunne støtte dette. Det korte svar er - det kunne man ikke. 
-Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikke, det eneste, vi ved, er, at der vil være ændringer, og de vil sandsynligvis vil ske før snarere end senere. 
+Men hvordan kunne man for et år siden forudsige, hvad er muligt i dag, og hvilken stor forandring det rent faktisk er, og dermed planlægge at kunne støtte dette. Det korte svar er - det kunne man ikke.
+Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikke, det eneste, vi ved, er, at der vil være ændringer, og de vil sandsynligvis vil ske før snarere end senere.
 
 Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at navigere i disse muligheder / udfordringer.
 
 > [!Note]
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
+> De næste emner bliver nok Governance/Compliance og GenAI, da vi begynder at have bedre viden om disse i forbindelse med en dataplatform
 
 ## Baggrund
 
