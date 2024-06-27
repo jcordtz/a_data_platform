@@ -153,17 +153,17 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 En yderligere komponent i implementeringen, som figur 2 viser, er nogle understøttende datatjenester. Det drejer sig blandt andet om:
 
-**Datakatalog** – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv. [Datakatalog](Supporting_Data_Services/Data_Catalog/README-da.md)
+[Datakatalog](Supporting_Data_Services/Data_Catalog/README-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
 
-**Fælles datamodel** – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. [Fælles datamodel](Supporting_Data_Services/Common_Data_Model/README-da.md)
+[Fælles datamodel](Supporting_Data_Services/Common_Data_Model/README-da.md) – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. 
 
-**Data Discovery** - En videns-proces orienteret mod forretningsbrugere, der giver dem mulighed for visuelt at udforske data og anvende avanceret analyse for at finde mønstre, få indsigt og besvare specifikke forretningsspørgsmål. [Data Discovery](Supporting_Data_Services/Data_Discovery/README-da.md)
+[Data Discovery](Supporting_Data_Services/Data_Discovery/README-da.md) - En videns-proces orienteret mod forretningsbrugere, der giver dem mulighed for visuelt at udforske data og anvende avanceret analyse for at finde mønstre, få indsigt og besvare specifikke forretningsspørgsmål.
 
-**Data-lineage** – Dokumentation af, hvordan data bliver "overført" og transformeret mellem de forskellige områder. Det kan både være den teknisk forarbejdning der er sket - "hvilke handlinger blev udført på dataene" - såvel som dokumentation til ens forretningsbrugere - "hvor stammer disse data fra?". [Data Lineage](Supporting_Data_Services/Data_Lineage/README-da.md)
+[Data Lineage](Supporting_Data_Services/Data_Lineage/README-da.md) – Dokumentation af, hvordan data bliver "overført" og transformeret mellem de forskellige områder. Det kan både være den teknisk forarbejdning der er sket - "hvilke handlinger blev udført på dataene" - såvel som dokumentation til ens forretningsbrugere - "hvor stammer disse data fra?".
 
-**Datastyring** – Processer, politikker, regler og rapporter for at sikre, at dataene styres korrekt. Ofte baseret på rammer som ISO27x eller NIST. [Datastyring](Supporting_Data_Services/Data_Governance/README-da.md)
+[Datastyring](Supporting_Data_Services/Data_Governance/README-da.md) – Processer, politikker, regler og rapporter for at sikre, at dataene styres korrekt. Ofte baseret på rammer som ISO27x eller NIST.
 
-**Master Data** – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde. [Master Data](Supporting_Data_Services/Master_Data/README-da.md)
+[Master Data](Supporting_Data_Services/Master_Data/README-da.md) – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde.
 
 > [!Note]
 > Dokumentet vil løbende blive udvidet med beskrivelse af disse.
