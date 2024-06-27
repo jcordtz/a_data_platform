@@ -480,10 +480,10 @@ The following are some examples of ways to implement a data platform using diffe
 > [!NOTE]
 > These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
-[Azure Based](Azure/README.md)
+[Azure Based](Microsoft/Azure/README.md)
 
-[Synapse based](Synapse/README.md)
+[Synapse based](Microsoft/Synapse/README.md)
 
-[DataBricks based](Databricks/README.md)
+[DataBricks based](Microsoft/Databricks/README.md)
 
-[Fabric based](Fabric/README.md)
+[Fabric based](Microsoft/Azure/Fabric/README.md)

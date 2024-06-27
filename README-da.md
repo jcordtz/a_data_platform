@@ -464,14 +464,10 @@ Følgende er eksempler på måder man kan implementere en dataplatform ved hjæl
 > [!Note]
 > Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
-[Azure Based](Azure/README-da.md)
+[Azure Based](Microsoft/Azure/README-da.md)
 
-[Synapse based](Synapse/README-da.md)
+[Synapse based](Microsoft/Synapse/README-da.md)
 
-[DataBricks based](Databricks/README-da.md)
+[DataBricks based](Microsoft/Databricks/README-da.md)
 
-[Fabric based](Fabric/README-da.md)
-
-
-
-
+[Fabric based](Microsoft/Fabric/README-da.md)
