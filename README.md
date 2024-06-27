@@ -19,7 +19,7 @@ The content of this document is not a "this is best practice", but a "you ought 
 
 > [!NOTE]
 > This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
-> The next topics will most likely be Governance/Compliance and GenAI, as vi start getting better knowledge about this in connection with a dataplatform
+> The next topics will most likely be Governance/Compliance and GenAI, as we start getting better knowledge about this in connection with a dataplatform
 
 ## Background
 

@@ -6,7 +6,7 @@ You can also use Databricks instead of SQL Server if you want.
 
 Technological independence is in the fact that Databricks is based on Python and Spark. But you will have an approach where more of the “programming” is done in the same tool.
 
-![figure1](../images/Slide12.JPG)
+![figure1](../images/english/Slide11.JPG)
 
 Figure 1
 

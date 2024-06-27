@@ -6,7 +6,7 @@ The platform is built on a foundation of Software as a Service (SaaS), which han
 
 Microsoft Fabric brings together new and existing components from Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences.
 
-![figure1](../images/Fabric.bmp)
+![figur1](../images/english/Slide21.jpg) 
  
 Figure 1
 
