@@ -1,26 +1,27 @@
-# En data platform - *"fremtidssikret"*
+# Eine Datenplattform - *"zukunftssicher"*
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
 
-
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
-## Introduktion
+## Einführung
 
-IT-verdenen gennemgår betydelige ændringer i disse tider (2024) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer under overskriften Generativ AI - eller simpelthen GenAI.   Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester for at drage fuld fordel af disse funktioner.
+Die IT-Welt befindet sich in diesen Zeiten (2024) in einem erheblichen Wandel, vor allem aufgrund der "ChatGPTs", die unter der Überschrift Generative AI – oder einfach GenAI – eine breite Palette neuer Funktionen rund um Text, Audio, Bilder und sogar Videos bieten.   Daher ist es wichtiger denn je, sicherzustellen, dass die richtigen Daten mit der richtigen Qualität neben solchen Diensten verwendet werden, um diese Funktionen voll auszuschöpfen.
 
-Men hvordan kunne man for et år siden forudsige, hvad er muligt i dag, og hvilken stor forandring det rent faktisk er, og dermed planlægge at kunne støtte dette. Det korte svar er - det kunne man ikke.
-Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikke, det eneste, vi ved, er, at der vil være ændringer, og de vil sandsynligvis vil ske før snarere end senere.
+Aber wie konnte man vor einem Jahr vorhersagen, was heute möglich ist und was für eine große Veränderung es tatsächlich ist, und damit planen, dies unterstützen zu können? Die kurze Antwort lautet: Sie könnten es nicht.
+Und welche neuen "Herausforderungen" morgen mit sich bringen. Wir wissen es wahrscheinlich wirklich nicht, wir wissen nur, dass es Veränderungen geben wird, und sie werden wahrscheinlich eher früher als später eintreten.
 
-Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at navigere i disse muligheder / udfordringer.
+In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden kann, die in der Lage ist, "was auch immer kommen mag" zu bewältigen und somit zumindest aus Datensicht zu ermöglichen, diese Chancen/Herausforderungen zu bewältigen.
 
-Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som "det bør man overveje", hvis man vil lave en dataplatform.
+Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
+
 
 > [!Note]
-> Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
-> De næste emner bliver nok Governance/Compliance og GenAI, da vi begynder at have bedre viden om disse i forbindelse med en dataplatform
+> Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
+> Die nächsten Themen werden wohl Governance/Compliance und GenAI sein, da wir diese im Zusammenhang mit einer Datenplattform allmählich besser kennen
+
 
 ## Baggrund
 
