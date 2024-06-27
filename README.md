@@ -141,17 +141,17 @@ One more component of the implementation that Figure 2 displays are some Support
 
 These include:
 
-**Data Catalog** – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
+**Data Catalog** – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc. [Data Catalog](Supporting_Data_Services/Data_Catalog/README.md)
 
-**Common data Model** – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
+**Common Data Model** – Especially for the **publish area**, existing industry *data* models could be useful/relevant. [Common Data Model](Supporting_Data_Services/Common_Data_Model/README.md)
 
-**Data Discovery** – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
+**Data Discovery** – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions. [Data Discovery](Supporting_Data_Services/Data_Discovery/README.md)
 
-**Data Lineage** – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
+**Data Lineage** – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”. [Data Lineage](Supporting_Data_Services/Data_Lineage/README.md)
 
-**Data Governance** – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
+**Data Governance** – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST. [Data Governance](Supporting_Data_Services/Data_Governance/README.md)
 
-**Master data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+**Master Data** – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer. [Master Data](Supporting_Data_Services/Master_Data/README.md)
 
 > [!NOTE]
 > The document will be enhanced over time to include further description of these services.

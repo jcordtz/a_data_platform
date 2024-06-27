@@ -1,3 +1,3 @@
-# Synapse baseret
+# Master Data
 
-I dette tilfælde er man ikke teknologisk uafhængig i **Ingest**-, **transform**- og **publish** områderne, fordi man vil udføre al "programmering" i Synapse-tjenesten.
+Placeholder
