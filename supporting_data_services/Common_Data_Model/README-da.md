@@ -1,3 +1,0 @@
-# Common Data Model
-
-Placeholder
