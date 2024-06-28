@@ -18,459 +18,459 @@ In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden k
 Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
 
 
-> [!Note]
+> [!Hinweis]
 > Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
 > Die nächsten Themen werden wohl Governance/Compliance und GenAI sein, da wir diese im Zusammenhang mit einer Datenplattform allmählich besser kennen
 
+## Hintergrund
 
-## Baggrund
+Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren möchten.
 
-Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der har et ønske om at strømline oprettelsen af en dataplatform ved hjælp af cloud tjenester til analytiske opgaver.
+Dieses Konzept einer Datenplattform kann auf andere Datenplattformansätze angewendet werden, ist aber (derzeit) nicht abgedeckt.
 
-Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange, men det er (i øjeblikket) ikke dækket.
+> [!Hinweis]
+> Das Dokument basiert auf Microsoft-Technologiekomponenten.
 
-> [!Note]
-> Dokumentet er baseret på Microsoft teknologi komponenter.
+## Gesamtparadigma
 
-## Overordnet paradigme
+Um sicherzustellen, dass eine Datenplattform "was auch immer kommen mag" unterstützen kann, ist es wichtig, dass wir einige Richtlinien festlegen, was gelten sollte.
 
-For at sikre at en dataplatform kan understøtte ”hvad der end måtte komme”, er det vigtigt at vi sætter nogle retningslinjer for, hvad der skal være gældende.
+Dieses übergeordnete Paradigma soll sicherstellen, dass eine Datenplattform die folgenden Merkmale erfüllt.
 
-Dette overordnede paradigme skal sikre at en dataplatform opfylder følgende egenskaber.
+1. **Konsistenz** - Das Lösungsdesign ist konsistent, um die Bedienung und Weiterentwicklung von Lösungen zu vereinfachen. Der Konsistenzgrad eines Datenobjekts ist immer klar. Damit soll sichergestellt werden, dass der Wert der Daten immer kommuniziert werden kann.
 
-1. **Konsistens** - Løsningsdesignet er konsistent for at gøre det nemt at betjene og udvikle løsninger yderligere. Konsistensniveauet for ethvert dataobjekt er altid klart. Dette er for at sikre, at værdien af dataene altid kan formidles.
+2. **Datenkapselung** - Auf die Daten in der Dateninfrastruktur kann nur über eine Schnittstelle zugegriffen werden, die steuert, wer wann Zugriff auf was hat. Die Schnittstelle sollte es Ihnen ermöglichen, die Dateninfrastruktur zu modifizieren, ohne externe Systeme zu beeinträchtigen.
 
-2. **Dataindkapsling** - Dataene i datainfrastrukturen kan kun tilgås via en grænseflade, der styrer, hvem der har adgang til hvad og hvornår. Grænsefladen skal give dig mulighed for at ændre datainfrastrukturen uden at påvirke eksterne systemer.
+3. **Moduliert** - Die Lösungen in der Datenplattform sollten als Module mit einer klar definierten Schnittstelle aufgebaut sein, damit es einfach ist, Ressourcen und Dienste zu ersetzen, hinzuzufügen oder zu entfernen.
 
-3. **Moduleret** - Løsningerne i dataplatformen skal bygges som moduler med en klart defineret grænseflade, således det er nemt at erstatte, tilføje eller fjerne ressourcer og tjenester.
+4. **Technologieunabhängig** - Die Architektur hängt nicht von der verwendeten Technologie ab. Das bedeutet, dass die Prozesse, Funktionen und Schichten unabhängig von der verwendeten Technologie gleich bleiben.
 
-4. **Teknologiuafhængig** - Arkitekturen afhænger ikke af den anvendte teknologi. Det betyder, at processerne, funktionaliteten og lagene forbliver de samme, uanset hvilken teknologi der bruges.
+5. **Skalierbarkeit** - Skalierbarkeit (horizontal/vertikal) ist von Anfang an Teil des Lösungsdesigns, sodass Implementierung und Betrieb nicht durch Engpässe, Ausfallzeiten oder unerwartete Lizenzkäufe beeinträchtigt werden.
 
-5. **Skalerbarhed** - Skalerbarhed (vandret/lodret) er en del af løsningsdesignet fra starten, så implementeringen og driften ikke påvirkes af flaskehalse, nedetid eller uventede licenskøb.
+6. **Muss wiederherstellbar sein** - Alle in der Lösung verwendeten Dienste müssen angehalten/gestoppt und sogar gelöscht werden können. Und daher auch gestartet/neu erstellt werden können. Und das ohne Datenverlust, Änderung der Funktionalität und des Zugriffs (APIs).
 
-6. **Skal kunne genskabes** - Alle tjenester, der bruges i løsningen, skal kunne sættes på pause/stoppes og endda slettes. Og derfor også kunne startes/genskabes. Og dette uden datatab, ændring i funktionalitet samt tilgang (api’er).
+7. **Nachvollziehbarkeit** - Alle in der Lösung verwendeten Dienste müssen für die Nutzung einzeln nachvollziehbar sein - sowohl aus Sicherheits- als auch aus Kostengründen.  Agilität - Der Fokus muss auf einem Ansatz liegen, der auf Minimal Viable Product (MVP) basiert, sowie auf kontinuierlichem Feedback zu früheren Schritten im Datenfluss.
 
-7. **Sporbarhed** - Alle tjenester, der bruges i løsningen, skal kunne spores individuelt til brug - både af sikkerhedsmæssige og omkostningsmæssige årsager.  Agility - Fokus skal være på en tilgang baseret på Minimal Viable product (MVP) samt løbende feedback til tidligere trin i data flowet.
+8. Sicherheit – Sicherheit muss in die Gesamtarchitektur und spezifische Lösungsdesigns integriert werden, sowohl für die Informationssicherheit als auch für den Datenschutz. Der Austausch von Komponenten darf die Sicherheitsaspekte nicht beeinträchtigen. Compliance und Governance müssen im Laufe der Zeit über die verschiedenen Ebenen hinweg aufrechterhalten werden.
 
-8. **Sikkerhed** - Sikkerhed skal integreres i den generelle arkitektur og de specifikke løsningsdesign, både for informationssikkerhed og privatliv. Udskiftning af komponenter må ikke berøre sikkerhedsaspekterne. Overholdelse og styring skal opretholdes på tværs af de forskellige lag over tid.
+9. **Recycling** - Lösungen müssen für das Recycling konzipiert sein. Die Architektur sollte Vorlagen für das Lösungsdesign enthalten, die die Markteinführung beschleunigen und die Standardisierung gewährleisten.
 
-9. **Genbrug** - Løsninger skal designes til genbrug. Arkitekturen bør indeholde skabeloner til løsningsdesign, der fremskynder time-to-market og sikrer standardisering.
+10. Feedback - Die Architektur muss basierend auf dem Feedback aus der Nutzung der Datenplattform kontinuierlich angepasst und verbessert werden.
 
-10. **Feedback** - Arkitekturen skal løbende justeres og forbedres baseret på feedback fra brugen af dataplatformen.
+## *Daten* und *Datensatz*
 
-## *Data* og *datasæt*
+Die Konzepte *data* und *dataset* sind die "Kernkomponenten" der Datenplattform.
 
-Begreberne *data* og *datasæt* er dataplatformens "kernekomponenter".
+Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
 
-Når udtrykket *data* bruges, refererer det til et enkelt dataobjekt som en tabel eller fil, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
+Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt.   Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
 
-På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.   *Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
+- Der Datensatz ist in sich geschlossen, d. h. er ist nicht von anderen Datenquellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
+- Nur die Spalten/Zeilen, die für die ausgeführte Aufgabe relevant sind, sind im *Datensatz* vorhanden.
+- Ein *Datensatz* gehört zu einer Gruppe und nicht zu bestimmten Personen – daher ist der Besitzer in einer Azure-Konfiguration eine Gruppe mit einer Entra ID.
+- Einem *Datensatz* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
+- Der Zugriff auf einen *Datensatz* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
+- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das Dataset wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. Es kann dann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank sein.
 
-- *Datasættet* er selvforsynende, hvilket betyder, at det ikke afhænger af andre datakilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
-- Kun de kolonner/rækker, der er relevante for den opgave, der udføres, er til stede i *datasættet*.
-- Et *datasæt* tilhører en gruppe og ikke bestemte personer – i en Azure-konfiguration vil ejeren derfor være en gruppe med et Entra-id.
-- Et *datasæt* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
-- Adgang til et *datasæt* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
-- Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer. Det kan derefter leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database.
+## Cloud-Zugang
 
+Die in diesem Dokument beschriebene Datenplattform basiert auf Cloud-Technologien.
 
-## Cloud-tilgang
+Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit einem solchen Cloud-Ansatz erreicht werden können.
 
-Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologier.
+![Abbildung 1](Bilder/dänisch/Slide2.JPG)
 
-Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
+*Abbildung 1*
 
-![figur 1](images/danish/Slide2.JPG)
+Wie in Abbildung 1 dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
 
-*Figur 1*
+Infrastructure as a Service (IaaS) – Dies ermöglicht die Erstellung verschiedener Arten von virtuellen Maschinen und die Installation der gesamten darauf benötigten Software. Dabei garantiert der Cloud-Anbieter den Service bis auf Betriebssystemebene.  Beim IaaS-Ansatz fokussieren wir uns darauf, welche Produkte wir einsetzen wollen und liefern so die passenden "Maschinen" dafür.
 
-Som vist på figur 1 giver brug af cloud teknologier adgang til forskellige typer tjenester.
+Platform-as-a-Service (PaaS): Dies gilt für Dienste wie Datenbanken. Wir müssen uns keine Sorgen um die Infrastruktur hinter diesen Diensten machen. Der Cloud-Anbieter stellt alle notwendigen Komponenten hinter dem Service selbst sicher. Dazu gehören Updates, neue Versionen und Verfügbarkeit. Im PaaS-Setup konzentrieren wir uns nur darauf, welche Funktionalität wir benötigen, und nicht darauf, welches "Produkt" wir dafür benötigen.
 
-**Infrastruktur som en service** (IaaS) - Dette giver mulighed for at oprette forskellige typer tilgangen virtuelle maskiner og installere al software, der er nødvendig på dem. I dette garanterer cloud-leverandøren tjenesten op til operativsystemets niveau.  I IaaS tilgangen har vi fokus på, hvilke produkter vi ønsker at bruge og dermed levere de rigtige "maskiner" til dette.
+Software as a Service (SaaS) – Ein SaaS-Service ist eine Komplettlösung wie ein ERP- oder HR-System. Hier stellt der Cloud-Anbieter den Zugriff auf eine vollständige Suite von Anwendungen, Datenbanken und Infrastrukturen sicher, die für das Funktionieren des SaaS-Dienstes erforderlich sind.
 
-**Platform som en service** (PaaS) - Dette er til tjenester som databaser. Vi behøver ikke bekymre os om infrastrukturen bag disse tjenester. Cloud-leverandøren sikrer alle de nødvendige komponenter bag selve tjenesten. Dette inkluderer opdateringer, nye versioner og tilgængelighed. I PaaS-opsætningen fokuserer vi kun på, hvilken funktionalitet vi har brug for, og ikke på hvilket "produkt" vi har brug for at gøre dette.
+Die diskutierte Datenplattform basiert "nur" auf PaaS- und/oder SaaS-Diensten und damit in sehr begrenztem Umfang auf IaaS. 
 
-**Software som en service** (SaaS) – en SaaS-service er en komplet løsning som et ERP- eller HR-system. Her sikrer cloud-leverandøren adgang til en komplet pakke af applikationer, databaser og infrastruktur, der er nødvendig for, at SaaS-tjenesten kan fungere.
+Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten beschrieben, dies mit verschiedenen PaaS- oder SaaS-Diensten zu tun.
 
-Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS. 
+Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bedeutet, dass beim Erstellen eines neuen Servers beispielsweise die verschiedenen Komponenten, die der Server verwendet - wie Festplatten, Netzwerkkarten usw. - durch Senden von Befehlen an die Cloud-Infrastruktur generiert werden. Wir können also Software verwenden, um diese Komponenten herzustellen.
 
-I kapitlet "Eksempler på Implementeringer" er der beskrevet forskellige måder at gøre dette på med forskellige PaaS- eller SaaS-tjenester.
+Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten Datensatz mithilfe von Code in diese Datenbank zu laden.
 
-Et andet centralt aspekt af skyen er, at "alt er software". Det betyder, at når vi for eksempel skal oprette en ny server, genereres de forskellige komponenter, som serveren bruger - som diske, netværkskort osv. - ved at sende kommandoer til cloud-infrastrukturen. Så vi kan altså bruge software til at producere disse komponenter.
+## Logische Architektur
 
-Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform bruges dette til for eksempel at oprette en relations database og herefter indlæse et givent datasæt i denne database, alt samme ved hjælp af kode.
-
-## Logisk arkitektur
-
-Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på Figur 2. 
-Dette er for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt. 
+Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in Abbildung 2 dargestellt. 
+Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt. 
  
-![figur 2](images/danish/Slide4.JPG)
+![Abbildung 2](Bilder/dänisch/Slide4.JPG)
 
-*Figur 2*
+*Abbildung 2*
 
-Områderne repræsenterer forskellige tilstande af rejsen fra data til datasæt og dermed til rapportering og analyse.
-Med henvisning til Figur 2 kan de forskellige områder beskrives som følger:
+Die Bereiche repräsentieren verschiedene Zustände der Reise von Daten zu Datensätzen und damit zu Berichten und Analysen.
+In Bezug auf Abbildung 2 können die verschiedenen Bereiche wie folgt beschrieben werden:
 
-**Kildesystemer** er ethvert system, hvor data skal udtrækkes (batch) fra, eller hvor data sendes fra (streames).
+Quellsysteme sind alle Systeme, aus denen Daten extrahiert (gebatcht) oder von denen Daten gesendet (gestreamt) werden sollen.
 
-**Ingest området** er der, hvor data fra kildesystemerne placeres. Data opbevares i deres oprindelige format. Hvis dataene er "tabeldata", foretages der ingen ændringer i nogen rækker eller kolonner, ikke engang af selve dataformatet. Data gemmes i filer - normalt i komma separeret eller parquet eventuel i deres binære format - som for eksempel vil gælde video, billede eller lyd. Ingest området vil have en mappestruktur, der gør det nemt at identificere datakilden. Der sker ikke en opdatering eller overskrivning af eksisterende filer - hvilket betyder, at et nyt load vil oprette nye filer. Om dette load er et ”full load” eller der hentes ”ændringer siden sidst” afhænger af behov samt muligheder i de givne kilder.
+Der Aufnahmebereich ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parkett möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der Aufnahmebereich verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
 
-Over tid skal filer i Ingest området arkiveres eller slettes, hvis lovkrav kræver dette (såsom GDPR).
+Im Laufe der Zeit müssen Dateien im Ingest-Bereich archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
 
-I **Transform området** hentes data fra Ingest området og ændres til et ”teknisk brugbart” format.
+Im Bereich **Transformieren** werden Daten aus dem Bereich Ingest abgerufen und in ein "technisch nutzbares" Format geändert.
 
-En opgave er derfor at transformere data således at de har det samme format – det kan for eksempel være at ”standardisere” de "vanskelige" datatyper, såsom datoer (f.eks. opdeling af tid fra datoen i en separat kolonne) og decimaltal ("." eller ",." som separatorer).
+Eine Aufgabe besteht daher darin, Daten so zu transformieren, dass sie das gleiche Format haben – zum Beispiel könnte es sein, die "schwierigen" Datentypen wie Datumsangaben (z. B. das Teilen der Uhrzeit vom Datum in eine separate Spalte) und Dezimalzahlen ("." oder ",." als Trennzeichen) zu "standardisieren".
 
-De enkelte data elementer i *Transform* området er ”selvstændige objekter”. Det betyder, at de ikke har en blanding af data fra et eller flere kildesystemer, ikke forfines på en måde så den oprindelige information ikke er til stede og at der ikke laves en begrænsning i antallet af rækker eller kolonner. Man kan dog evt. overveje at adskille ”dårlige rækker” i et selvstændigt data objekt.  
 
-*Data* i **Transform** området forefindes således som "rene" objekter, der er praktiske at arbejde med, når de bruges til at danne *datasæt*.
 
-En anden opgave er at sikre, at de forskellige data, vi ønsker at have tilgængelige på dette område, let kan sammenføjes, hvilket betyder, at det enkelte dataobjekt har de "referencenøgler", der er nødvendige for at kunne forbinde med andre dataobjekter.
+Die einzelnen Datenelemente im Bereich *Transform* sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
 
-I *publish* området skabes de *datasæt*, der er nødvendige for at opfylde de forskellige forretningsbehov, der har behov for data fra dataplatformen. Her anvendes modeller som for eksempel stjerneskemaer og leverance af disse datasæt sker oftest via data marts (relations databaser).
+*Daten* im Bereich **Transformieren** existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
 
-*Publish* området er det sted, hvor slutbrugerne af dataplatformen får adgang til de datasæt de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
+Eine weitere Aufgabe besteht darin, sicherzustellen, dass die verschiedenen Daten, die wir in diesem Bereich zur Verfügung haben möchten, einfach zusammengeführt werden können, was bedeutet, dass jedes Datenobjekt über die "Referenzschlüssel" verfügt, die erforderlich sind, um sich mit anderen Datenobjekten verbinden zu können.
 
-> [!NOTE]
-> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document.
+Im Bereich *veröffentlichen* werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
 
-### Grænseflader
+Im Bereich "Veröffentlichen" können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
-Figur 2 angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
+> [!Hinweis]
+> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Ingest-Bereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Konsumbereich**. In diesem Dokument werden die Begriffe **Ingest**, **Transformieren**, **Veröffentlichen** und **Consume** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
-De fleste virksomheder/institutioner foretrækker at bruge en eller flere af følgende muligheder for grænseflade.  
+### Schnittstellen
 
-**REST API** - den "grundlæggende" grænseflade, som de fleste (alle) nye tjenester bruger til at tilbyde deres funktionalitet. Dette niveau er meget teknisk og er ikke egnet til low code/no-code tilgange.
+Abbildung 2 zeigt, dass die Schnittstelle zwischen den verschiedenen Bereichen genauso wichtig ist wie der Inhalt der Bereiche. Diese Schnittstellen müssen die technologische Unabhängigkeit gewährleisten, die wir in der Plattform wünschen – es muss einfach sein, neue Dienste zu ändern/hinzuzufügen – und sicherstellen, dass wir die Wege des Datenflusses kennen.
 
-**SQL** – standard dataforespørgsels sprog, der er meget udbredt og understøttet af mange forskellige database systemer. Mange er bekendt med SQL fra dets anvendelse i relationelle databaser, men det er også tilgængeligt i andre typer af databasesystemer som for eksempel NoSQL databaser.
+Die meisten Unternehmen/Institutionen bevorzugen die Verwendung einer oder mehrerer der folgenden Schnittstellenoptionen.  
 
-Hvis man "kun" bruger de funktioner i SQL som er en del af SQL-sprog standarden, vil det give en høj grad af fleksibilitet. Det betyder, at man ikke vil bruge specifikke funktioner, som et givent databaseprodukt har udvidet en SQL-implementering med – især brugen af de proceduresprog, der findes i for eksempel MS SQL Server eller Oracle DB.
+**REST-API** - die "grundlegende" Schnittstelle, die die meisten (alle) neuen Dienste verwenden, um ihre Funktionalität anzubieten. Diese Stufe ist hochtechnisch und eignet sich nicht für Low-Code/No-Code-Ansätze.
 
-**Python** – det "nye" databehandlingssprog. Python er meget udbredt og afspejler den nuværende måde at håndtere data på. Python er et programmeringssprog på højt niveau, der fortolkes ved afvikling.
-Pythons syntaks er relativ enkel og dermed nem at lære og giver også en god grad af læsbarhed, hvilket bør sænke omkostningerne ved programvedligeholdelse. Python understøtter brugen af moduler og pakker, hvilket fremmer en modul til gang til programmering og genbrug af kode.
+SQL – die Standard-Datenabfragesprache, die von vielen verschiedenen Datenbanksystemen weit verbreitet ist und unterstützt wird. Viele kennen SQL von der Verwendung in relationalen Datenbanken, aber es ist auch in anderen Arten von Datenbanksystemen wie NoSQL-Datenbanken verfügbar.
 
-Pythons virkelig gode understøttelse af data samt et omfattende standardbibliotek gør det meget populært i forbindelse med dataplatforme.  Desuden elsker programmører Python, fordi de føler det gør dem mere produktive. 
+Wenn Sie in SQL "nur" die Funktionen verwenden, die Teil des SQL-Sprachstandards sind, bietet dies ein hohes Maß an Flexibilität. Das bedeutet, dass Sie keine spezifischen Funktionen verwenden, mit denen ein bestimmtes Datenbankprodukt eine SQL-Implementierung erweitert hat – insbesondere die Verwendung der prozeduralen Sprachen, die beispielsweise in MS SQL Server oder Oracle DB zu finden sind.
 
-### Understøttende datatjenester
+**Python** – die "neue" Datenverarbeitungssprache. Python ist weit verbreitet und spiegelt die aktuelle Art des Umgangs mit Daten wider. Python ist eine allgemeine Programmiersprache, die zur Laufzeit interpretiert wird.
+Die Syntax von Python ist relativ einfach und daher leicht zu erlernen und bietet auch ein gutes Maß an Lesbarkeit, was die Kosten für die Programmwartung senken sollte. Python unterstützt die Verwendung von Modulen und Paketen und fördert ein Modul zum Programmieren und Wiederverwenden von Code.
 
-En yderligere komponent i implementeringen, som figur 2 viser, er nogle understøttende datatjenester. Det drejer sig blandt andet om:
+Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibliothek machen Python im Kontext von Datenplattformen sehr beliebt.  Darüber hinaus lieben Programmierer Python, weil sie das Gefühl haben, dass es sie produktiver macht.
+### Unterstützende Datendienste
 
-[Datakatalog](Supporting_Data_Services/Data_Catalog/README-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
+Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Dazu gehören:
 
-[Fælles datamodel](Supporting_Data_Services/Common_Data_Model/README-da.md) – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. 
+[Datenkatalog] (Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
-[Data Discovery](Supporting_Data_Services/Data_Discovery/README-da.md) - En videns-proces orienteret mod forretningsbrugere, der giver dem mulighed for visuelt at udforske data og anvende avanceret analyse for at finde mønstre, få indsigt og besvare specifikke forretningsspørgsmål.
+[Gemeinsames Datenmodell] (Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **publish**-Bereich können bestehende Branchendatenmodelle nützlich/relevant sein. 
 
-[Data Lineage](Supporting_Data_Services/Data_Lineage/README-da.md) – Dokumentation af, hvordan data bliver "overført" og transformeret mellem de forskellige områder. Det kan både være den teknisk forarbejdning der er sket - "hvilke handlinger blev udført på dataene" - såvel som dokumentation til ens forretningsbrugere - "hvor stammer disse data fra?".
+[Datenermittlung] (Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
 
-[Datastyring](Supporting_Data_Services/Data_Governance/README-da.md) – Processer, politikker, regler og rapporter for at sikre, at dataene styres korrekt. Ofte baseret på rammer som ISO27x eller NIST.
+[Datenherkunft] (Supporting_Data_Services/Data_Lineage/README-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
 
-[Master Data](Supporting_Data_Services/Master_Data/README-da.md) – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde.
+[Datenverwaltung] (Supporting_Data_Services/Data_Governance/README-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
 
-> [!Note]
-> Dokumentet vil løbende blive udvidet med beskrivelse af disse.
+[Stammdaten] (Supporting_Data_Services/Master_Data/README-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
 
-## Roller
+> [!Hinweis]
+> Das Dokument wird laufend um eine Beschreibung dieser erweitert.
 
-Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og datasæt i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.
+## Rollen
 
-Hvordan rollerne er forbundet med de enkelte personer og on nogle af disse har mere end én rolle, er op til den enkelte virksomhed/institution samt det givne behov og tilgængelige ressourcer.
+Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.
 
-Det vigtigste er, at processerne ved håndtering af data overholder "reglerne" i paradigmet.
+Wie die Rollen mit den einzelnen Personen verbunden sind und ob einige von ihnen mehr als eine Rolle haben, hängt vom einzelnen Unternehmen/der Institution sowie den gegebenen Bedürfnissen und verfügbaren Ressourcen ab.
 
-Dette er en liste over mulige roller, baseret på hvad virksomheder/institutioner, der har bygget en dataplatform som beskrevet, har benyttet:
+Das Wichtigste ist, dass sich die Prozesse des Umgangs mit Daten an die "Regeln" des Paradigmas halten.
 
-1. Projekt ejer
-   - Interface til styregruppe/ledelse.
-   - Kommer typisk fra "Forretningen"
+Dies ist eine Liste möglicher Rollen, basierend auf dem, was Unternehmen/Institutionen, die eine Datenplattform wie beschrieben aufgebaut haben, verwendet haben:
 
-2. Projekt leder
-   - Leder af det enkelte projekt.
-   - Kommer typisk fra “IT”
+1. Projektinhaber
+   - Schnittstelle zum Lenkungsausschuss/Management.
+   - Kommt typischerweise von "The Business"
 
-3. Data Engineer
-   - Definerer og danner de processer der henter data fra kildesystemerne og til ingest området.
-   - Kommer typisk fra “IT”
+2. Projektleiter
+   - Leiter des einzelnen Projekts.
+   - Kommt typischerweise von "IT"
+
+3. Dateningenieur
+   - Definieren und gestalten Sie die Prozesse, die Daten aus den Quellsystemen und in den Ingest-Bereich abrufen.
+   - Kommt typischerweise von "IT"
 
 4. Designer
-   - Definere og danner de datasæts som skal dannes for at understøtte forretningens behov
-   - Kommer typisk fra “Forretningen”
+   - Definieren und formen Sie die Datensätze, die gebildet werden müssen, um die Anforderungen des Unternehmens zu erfüllen
+   - Kommt typischerweise von "The Business"
 
-5. Transform engineer (ETL-programmør)
-   - Danner de transformations-processer (ETL) der anvendes i **transform** og **publish** områderne.
-   - Kommer typisk fra “IT”
+5. Transformationsingenieur (ETL-Programmierer)
+   - Bildet die Transformationsprozesse (ETL), die in den Bereichen **transformieren** und **veröffentlichen** verwendet werden.
+   - Kommt typischerweise von "IT"
 
-6. Data Governance
-   - Sikre en ens forståelse mellem IT og forretningen i forhold til sikkerhed.
-     Samt at disse passer til de overordnede sikkerheds principper virksomheden/institutionen følger.
-   - Kommer typisk fra “IT/Forretningen”
+6. Datenverwaltung
+   - Stellen Sie ein einheitliches Verständnis zwischen IT und Unternehmen in Bezug auf Sicherheit sicher.
+     Und dass diese zu den allgemeinen Sicherheitsprinzipien passen, die das Unternehmen/die Institution befolgt.
+   - Kommt typischerweise aus "IT/Business"
 
-7. Super-bruger/Ambassadør
-   - Definere og danner rapporter/dashboard og andre slut-brugs scenarier
-   - Kommer typisk fra “Forretningen”
+7. Superuser/Botschafter
+   - Definieren und Formen von Berichten/Dashboards und anderen Endanwendungsszenarien
+   - Kommt typischerweise von "The Business"
 
-8. System ejer
-   - Bibringer viden om hvorledes kildesystemerne anvendes/er organiseret
-   - Kommer typisk fra “Forretningen”
+8. Systembesitzer
+   - Vermittelt Wissen darüber, wie die Quellsysteme verwendet/organisiert werden
+   - Kommt typischerweise von "The Business"
 
-9. Arkitekt
-   - Sikrer at principper omkring IT-arkitektur følges
-   - Kommer typisk fra “IT”
+9. Architekt
+   - Stellt sicher, dass die Prinzipien der IT-Architektur eingehalten werden
+   - Kommt typischerweise von "IT"
 
-Afhængigt af projektets størrelse, virksomhedens/institutionens størrelse og/eller et eventuelt anvendt framework kan man også møde roller som Scrum Master, Product Owner, Program Owner, Styregruppe medlem m.fl.
+Abhängig von der Größe des Projekts, der Größe des Unternehmens/der Institution und/oder eines verwendeten Frameworks können Sie auch Rollen wie Scrum Master, Product Owner, Program Owner, Steering Committee Member usw. treffen.
 
-Behovene i de forskellige roller vil naturligvis variere gennem et projekt. Følgende er et eksempel på, hvordan "arbejdsbyrden" kunne se ud:
+Die Anforderungen der verschiedenen Rollen variieren natürlich während eines Projekts. Im Folgenden finden Sie ein Beispiel dafür, wie die "Workload" aussehen könnte:
 
-|Rolle|Ideation|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ….|Vision state|
+|Rolle|Ideenfindung|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ....|Zustand der Vision|
 |----|--------|-----------|-----------|-----------|-----------|------------|------------|
-|Projekt ejer|100 %|25%|25%|25%|25%|25%|100%|
-|Projekt leder|100%|100%|100%|100%|100%|100%|100%|
-|Data Engineer|100%|50%|25%|5%|5%|5%|0%|
+|Bauherr|100%|25%|25%|25%|25%|25%|100%|
+|Projektmanager|100%|100%|100%|100%|100%|100%|100%|100%|
+|Dateningenieur|100%|50%|25%|5%|5%|5%|0%|
 |Designer|100%|10%|10%|25%|25%|40%|0%|
-|Transform Engineer|100%|30%|30%|30%|30%|30%|0%|
-|Data Governance|100%|25%|25%|10%|10%|10%|10%|
-|Super-bruger/Ambassadør|100%|5%|5%|20%|20%|50%|100%|
-|System ejer|100%|25%|10%|0%|0%|0%|10%|
-|Arkitekt|100%|50%|25%|10%|10%|10%|10%|
+|Transformationsingenieur|100%|30%|30%|30%|30%|30%|30%|0%|
+|Data Governance|100%|25%|25%|10%|10%|10%|10%|10%|
+|Superuser/Botschafter|100%|5%|5%|20%|20%|50%|100%|
+|Systembesitzer|100%|25%|10%|0%|0%|0%|0%|10%|
+|Architekt|100%|50%|25%|10%|10%|10%|10%|
 
-1. Ideation – Projekt start der sætter rammerne og ønsket resultat for et projekt.
-2. Iteration X – de individuelle “versioner” – typisk ny version hver 3 måned 
-3. Vision State – Det ønskede endelige resultat.
-
-## Miljøer
-
-Dette afsnit afsøger, hvordan man kunne bruge seks miljøer til implementering af et dataplatformsprojekt. Afhængigt af præferencer kan man selvfølgelig bestemme, hvor mange af disse miljøer man ønsker at have, og hvordan man fordeler de opgaver, som beskrives blandt færre eller flere miljøer.
-
-1. Sandkasse - dette miljø bruges til MVP-test.
-2. Projektrum - udviklingsmiljøer.
-3. Udvikling – kode der ligger til grund for et produktionsmiljø.
-4. Test - funktionel test.
-5. Kvalitetssikring – kode gennemgang.
-6. Pre-produktion - test på produktionsdata.
-7. Produktion - produktionsdata.
-
-## Datapolitikker
-
-For at kontrollere de data-politikker man ønsker at bruge, skal der sikres en forståelse af hvilken type miljø et givent arbejde udføres. Dette dokument bruger 5 miljøtyper i diskussionen af processerne.
-
-1. Sandkasse – miljø, der bruges til at teste funktionaliteten for de enkelte tjenester. Disse miljøer indeholder IKKE nogen forretnings-/virksomhedsdata.
-2. Projektrum – Disse miljøer bruges til at etablere miljøer, der indeholder værktøjer og data, der bruges til at udføre en udviklingsopgave.
-3. Ikke-produktion – miljøer, der indeholder udviklings-, kvalitetssikrings- og testscenarier.
-4. Produktion – miljøer, der understøtter præproduktions- og produktionsscenarier.
-5. Fortroligt – miljøer, der understøtter databehandling af meget fortrolige data.
-
-## Data og sikkerhed
-
-Datasikkerhed er et kritisk element i driften af enhver organisation. Det omhandler beskyttelsen af data mod ulovlig adgang, forringelse eller tyveri over hele dataenes levetid. Med indførelsen af robuste datasikkerhedstiltag kan firmaer sikre deres vigtige ressourcer, opnå overholdelse af regler og fastholde kundetilliden til, hvordan de håndterer data.
-
-Datasikkerhed er kritisk, da den sikrer organisationer mod cyberangreb, insidertrusler og menneskelige fejl, som kan resultere i databrud. De væsentlige faktorer inden for datasikkerhed omfatter fortrolighed, integritet, tilgængelighed og overholdelse. Med voksende trusler mod data skal organisationer beskytte deres data ved kilden for at kunne opretholde datasikkerheden og hurtigt genoprette data efter et angreb. Formålet med datasikkerhed er at beskytte data imod alle former for misbrug, inklusive cyberangreb og menneskelige fejl.
-
-For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden, integriteten og tilgængeligheden af en organisations oplysninger. Det understøtter beskyttelsen af vigtige ressourcer, hjælper med at imødekomme de specificerede standarders compliance krav og fastholder kundetillid.
-
-Figur 3 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+1. Ideenfindung – Projektstart, der den Rahmen und das gewünschte Ergebnis für ein Projekt festlegt.
+2. Iteration X – die einzelnen "Versionen" – in der Regel alle 3 Monate eine neue Version 
+3. Visionszustand – Das gewünschte Endergebnis.
 
 
-![figur 4](images/danish/Slide16.JPG)
+## Umgebungen
+
+In diesem Abschnitt wird erläutert, wie sechs Umgebungen zum Implementieren eines Datenplattformprojekts verwendet werden können. Je nach Vorlieben können Sie natürlich entscheiden, wie viele dieser Umgebungen Sie haben möchten und wie Sie die beschriebenen Aufgaben auf weniger oder mehr Umgebungen verteilen.
+
+1. Sandbox – diese Umgebung wird für MVP-Tests verwendet.
+2. Projekträume - Entwicklungsumgebungen.
+3. Entwicklung – Code, der die Grundlage einer Produktionsumgebung bildet.
+4. Test - Funktionstest.
+5. Qualitätssicherung – Code-Review.
+6. Vorproduktion - Testen von Produktionsdaten.
+7. Produktion - Produktionsdaten.
+
+## Datenrichtlinien
+
+Um die Datenrichtlinien zu steuern, die Sie verwenden möchten, müssen Sie sicherstellen, dass Sie die Art der Umgebung verstehen, die ein bestimmter Auftrag ausführt. In diesem Dokument werden 5 Arten von Umgebungen in der Diskussion der Prozesse verwendet.
+
+1. Sandbox - Umgebung, die zum Testen der Funktionalität jedes Dienstes verwendet wird. Diese Umgebungen enthalten KEINE Geschäfts-/Firmendaten.
+2. Projekträume – Diese Umgebungen werden verwendet, um Umgebungen einzurichten, die Tools und Daten enthalten, die zur Ausführung einer Entwicklungsaufgabe verwendet werden.
+3. Nicht-Produktion – Umgebungen, die Entwicklungs-, Qualitätssicherungs- und Testszenarien enthalten.
+4. Fertigung – Umgebungen, die Vorproduktions- und Produktionsszenarien unterstützen.
+5. Vertraulich – Umgebungen, die die Verarbeitung streng vertraulicher Daten unterstützen.
+
+
+## Daten und Sicherheit
+
+Datensicherheit ist ein kritisches Element des Betriebs eines jeden Unternehmens. Es befasst sich mit dem Schutz von Daten vor unrechtmäßigem Zugriff, Verschlechterung oder Diebstahl über die gesamte Lebensdauer der Daten. Mit der Einführung robuster Datensicherheitsmaßnahmen können Unternehmen ihre kritischen Ressourcen sichern, Compliance erreichen und das Vertrauen der Kunden in den Umgang mit Daten erhalten.
+
+Datensicherheit ist von entscheidender Bedeutung, da sie Unternehmen vor Cyberangriffen, Insider-Bedrohungen und menschlichem Versagen schützt, die zu Datenschutzverletzungen führen können. Zu den wesentlichen Faktoren für die Datensicherheit gehören Vertraulichkeit, Integrität, Verfügbarkeit und Compliance. Angesichts wachsender Bedrohungen für Daten müssen Unternehmen ihre Daten an der Quelle schützen, um die Datensicherheit aufrechtzuerhalten und Daten aus einem Angriff schnell wiederherzustellen. Der Zweck der Datensicherheit besteht darin, Daten vor allen Formen des Missbrauchs, einschließlich Cyberangriffen und menschlichem Versagen, zu schützen.
+
+Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Informationen eines Unternehmens für die Datensicherheit unerlässlich ist. Es unterstützt den Schutz kritischer Ressourcen, hilft bei der Erfüllung der Compliance-Anforderungen bestimmter Standards und erhält das Vertrauen der Kunden.
+
+Abbildung 3 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
+
+
+
+![Abbildung 4] (Bilder/Dänisch/Slide16.JPG)
  
-*Figur 4*
+*Abbildung 4*
 
-**Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto. 
-Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
+**Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
+Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
 
-**Attributbaseret adgangskontrol** – også kendt som ABAC - giver ofte ekstra mekanisme til at give adgang til at foretage et "opslag" i et andet system. For eksempel kan man muligvis komme til en storage-konto, men deres kan være en mappe, der kræver, at man er en del af et givet projekt. I dette tilfælde kan man lave et ABAC "opslag", der kontrollerer dette, før man giver adgang - afhængigt af dette resultat.
+Die attributbasierte Zugriffskontrolle – auch bekannt als ABAC – bietet oft einen zusätzlichen Mechanismus, um Zugriff zu gewähren, um eine "Suche" in einem anderen System durchzuführen. Beispielsweise kann man auf ein Speicherkonto zugreifen, aber es kann sich um einen Ordner handeln, für den man Teil eines bestimmten Projekts sein muss. In diesem Fall können Sie einen ABAC-"Lookup" durchführen, der dies überprüft, bevor Sie den Zugriff gewähren - abhängig von diesem Ergebnis.
 
-**Identitetsbaseret adgangskontrol** - dækker den mulighed, som en given ressource kan tildeles en identitet (bliver "et menneske"). Og så sørger man for, at adgang til en given lagerkonto kun gives til dette "menneske", og derfor skal man bruge denne applikation til at komme til dataene.
+Identitätsbasierte Zugriffskontrolle – umfasst die Möglichkeit, einer bestimmten Ressource eine Identität zuzuweisen ("ein Mensch" zu werden). Und dann stellen Sie sicher, dass nur diesem "Menschen" Zugriff auf ein bestimmtes Speicherkonto gewährt wird, und daher müssen Sie diese Anwendung verwenden, um an die Daten zu gelangen.
 
-**Krypteringsbaseret adgangskontrol** - dette er ikke rigtig adgangskontrol, fordi datalagringen vil være tilgængelig, men man kan kun læse / bruge dataene, hvis man har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
+**Verschlüsselungsbasierte Zugriffskontrolle** - Dies ist keine wirkliche Zugriffskontrolle, da der Datenspeicher verfügbar ist, man die Daten jedoch nur lesen/verwenden kann, wenn man den Schlüssel zur Entschlüsselung hat. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
-**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i **consume** rområdet. Denne tilgang bruger det aspekt af forbrugsområdet, at et datalager kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet datalager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
+Löschbasierte Zugriffssteuerung – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
 
-## DataOps
 
-Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
+[Abbildung 4] (Bilder/Dänisch/Slide16.JPG)
+ 
+*Abbildung 4*
 
-Mens DataOps startede som et sæt bedste praksis, har det nu udviklet sig til at blive en ny og særskilt tilgang til dataanalyse. DataOps dækker hele datalivscyklussen fra dataforberedelse til rapportering og anerkender den indbyrdes afhængige karakter af dataanalyseteamet og informationsteknologioperationer.
+**Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
+Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
 
-Inden for softwareudvikling lægger DevOps vægt på kontinuerlig levering ved hjælp af on-demand it-ressourcer og ved at automatisere test og implementering af software. Denne måde at udvikle software og it-drift på har forbedret hastigheden, kvaliteten, forudsigeligheden og omfanget af softwareudvikling og implementering. 
-Ved at tage metoder fra DevOps sigter DataOps mod at bringe de samme forbedringer til dataanalyse. DataOps bør ikke knyttes til en bestemt teknologi, arkitektur, værktøj, sprog eller struktur.
+Die attributbasierte Zugriffskontrolle – auch bekannt als ABAC – bietet oft einen zusätzlichen Mechanismus, um Zugriff zu gewähren, um eine "Suche" in einem anderen System durchzuführen. Beispielsweise kann man auf ein Speicherkonto zugreifen, aber es kann sich um einen Ordner handeln, für den man Teil eines bestimmten Projekts sein muss. In diesem Fall können Sie einen ABAC-"Lookup" durchführen, der dies überprüft, bevor Sie den Zugriff gewähren - abhängig von diesem Ergebnis.
 
-### Miljøer og krypteringspolitikker
+Identitätsbasierte Zugriffskontrolle – umfasst die Möglichkeit, einer bestimmten Ressource eine Identität zuzuweisen ("ein Mensch" zu werden). Und dann stellen Sie sicher, dass nur diesem "Menschen" Zugriff auf ein bestimmtes Speicherkonto gewährt wird, und daher müssen Sie diese Anwendung verwenden, um an die Daten zu gelangen.
 
-I forskellige miljøer kunne visse politikker vedrørende kryptering håndhæves. Følgende tabel er et eksempel på, hvordan dette kunne se ud.
-|Miljø/politik|Sandkasse|Projektrum|Ikke-produktion|Produktion|Fortrolig|
-|-------------|---------|----------|---------------|----------|---------|
-|Kryptering i hvile|Revision|Revision|Revision|Kræves|Kræves|
-|Kryptering under overførsel|Revision|Revision|Revision|Kræves|Kræves|
-|Kryptering under behandling|Ikke relevant|Ikke relevant|Ikke relevant|Ikke relevant|Kræves|
+**Verschlüsselungsbasierte Zugriffskontrolle** - Dies ist keine wirkliche Zugriffskontrolle, da der Datenspeicher verfügbar ist, man die Daten jedoch nur lesen/verwenden kann, wenn man den Schlüssel zur Entschlüsselung hat. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
-- Revision – krypteringstilstande rapporteres, men brugen af ”ikke krypteret” område forhindres ikke.
-- Kræves - politikken forhindrer oprettelse af datalagring af enhver art uden kryptering.
-- Ikke relevant – Ikke relevant.
+Löschbasierte Zugriffssteuerung – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
 
-### Miljøer og tags
 
-I de forskellige miljøer skal forskellige tags bruges til at identificere miljøets natur. Følgende tabel er eksempler på mærker, der kan knyttes til de forskellige miljøer.
+### Umgebungen und Tags
 
-|Miljø/Tag|Sandkasse|Projektrum|Ikke-produktion|Produktion|Fortrolig|Værdier|
+In den verschiedenen Umgebungen müssen unterschiedliche Tags verwendet werden, um die Art der Umgebung zu identifizieren. Die folgende Tabelle enthält Beispiele für Tags, die verschiedenen Umgebungen zugeordnet werden können.
+
+|Umwelt/Dach|Sandkasten|Projektraum|Nicht-Produktion|Produktion|Vertraulich|Werte|
 |---------|---------|----------|---------------|----------|---------|-------|
-|Data ejer|Revision|Kræves|Kræves|Kræves|Kræves|Ejerens navn|
-|Miljø|Kræves|Kræves|Kræves|Kræves|Kræves|Den type miljø som "Sandkasse"|
-|Kost Center|Kræves|Kræves|Kræves|Kræves|KrævesOmkostningscenter|
+|Eigentümer der Daten|Prüfung|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Name des Eigentümers|
+|Umwelt|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Die Art der Umgebung, die "Sandbox" |
+|Diät-Zentrum|Erforderlich|Erforderlich|Erforderlich|Erforderlich|ErforderlichKostenstelle |
 
-- Revision – tag bær være på plads.
-- Påkrævet – -tagget skal være til stede, hvis ikke, nægtes installationen.
-- Ikke relevant – Ikke relevant.
+- Überarbeitung – Dachbeeren sind an Ort und Stelle.
+- Erforderlich – Tag muss vorhanden sein, andernfalls wird die Installation verweigert.
+- Nicht zutreffend – Nicht zutreffend.
 
-## Udviklingsmiljø - Projektrum
+## Entwicklungsumgebung - Projektraum
 
-En måde at etablere et sikkert udviklingsmiljø på kunne være at bruge et projektrum.
+Eine Möglichkeit, eine sichere Entwicklungsumgebung einzurichten, könnte die Verwendung eines Projektraums sein.
 
-Disse projektrum repræsenterer et isoleret miljø, der normalt ejes af en gruppe.
+Diese Projekträume stellen eine isolierte Umgebung dar, die sich in der Regel im Besitz einer Gruppe befindet.
 
-I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig isoleret. Adgang til et projektrum sker ved at tilføje eller tilbagekalde personer fra de tilsvarende grupper.
+Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepflegt. Der Zugriff auf einen Projektraum erfolgt durch Hinzufügen oder Abrufen von Personen aus den entsprechenden Gruppen.
 
-I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
+Die folgende Abbildung zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
 
-![figur 5](images/danish/Slide8.JPG) 
+! [Abbildung 5] (Bilder/Slide8.JPG) 
 
-*Figur 5*
+*Abbildung 5*
 
-Udvikling, der foregår i et projektrum, kan derefter "checkes ind" i den samlede dataplatform ved hjælp af f.eks. en CI/CD-proces. Et eksempel på dette kan ses i kapitlet ”CI/CD-eksempel”. 
+Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel". 
 
-Alle data, der er nødvendige for at udføre udviklingen, kan/bør gennemgå en proces, der gør det til en "ikke-produktion" data/datasæt.
+Alle Daten, die für die Durchführung der Entwicklung benötigt werden, können/sollten einen Prozess durchlaufen, der sie zu "Nicht-Produktionsdaten/-datensätzen" macht.
 
-Hvis data/datasæt i disse projektrum skal være skrivebeskyttede, skal ejerskabet tildeles en anden, men unik gruppe.
-I de sjældne situationer, hvor der er behov for en integrationsforbindelse mellem forskellige projektrum, bør ejerskabet placeres i en gruppe for sig selv, der stadig er unik for disse projektrum.
+Damit Daten/Datensätze in diesen Projektbereichen schreibgeschützt sind, muss der Besitz einer anderen, aber eindeutigen Gruppe zugewiesen werden.
+In den seltenen Situationen, in denen eine Integrationsverbindung zwischen verschiedenen Projekträumen erforderlich ist, sollte das Eigentum in einer eigenen Gruppe platziert werden, die für diese Projekträume noch einzigartig ist.
 
-## Etablering af data
 
-Vejledende principper
+## Daten ermitteln
 
-1. Lovgivning som den europæiske GDPR eller CCPA fra Californien skal overholdes.
-2. Data kan kun bruges i den sammenhæng, de indsamles i.
-3. Udvikling kan ikke ske på produktionsdata.
-4. Skelne mellem lagring af data - "sikkerhed" - og brugen af data - "privatliv".
+Leitprinzipien
 
-De vigtigste tekniske mekanismer, man kan bruge til at sikre korrekt håndtering i miljøerne, er følgende:
+1. Gesetze wie die europäische DSGVO oder der CCPA aus Kalifornien müssen eingehalten werden.
+2. Daten dürfen nur in dem Kontext verwendet werden, in dem sie erhoben werden.
+3. Die Entwicklung kann nicht auf Produktionsdaten erfolgen.
+4. Unterscheiden Sie zwischen der Speicherung von Daten - "Sicherheit" - und der Verwendung von Daten - "Datenschutz".
 
-1. Dataklassificering - gør det muligt at forstå arten af de data, man har med at gøre.
-2. Miljøadskillelse - ved at adskille miljøerne kan blanding af data undgås. Dette muliggør en enklere styringsproces.
-3. Datapolitikker - brug af politikker sikrer, at generelle rammeværk som ISO27XXX, NIST eller lignende følges i alle miljøer.
-4. Mærkning – hjælper med at identificere vigtige elementer i hvert miljø, f.eks. ejer og miljøtype.
-5. Kryptering - brugen af kryptering, måske ved hjælp af egne nøgler, kan være en metode sikkerhedsmæssigt.
+Die wichtigsten technischen Mechanismen, die verwendet werden können, um eine ordnungsgemäße Handhabung in den Umgebungen zu gewährleisten, sind die folgenden:
 
-Proces til oprettelse af datasæt, der ikke er til produktion
+1. Datenklassifizierung - ermöglicht es, die Art der Daten zu verstehen, mit denen Sie es zu tun haben.
+2. Trennung der Umgebung – Durch die Trennung der Umgebungen kann eine Vermischung von Daten vermieden werden. Dies ermöglicht einen einfacheren Verwaltungsprozess.
+3. Datenrichtlinien – Die Verwendung von Richtlinien stellt sicher, dass allgemeine Rahmenbedingungen wie ISO27XXX, NIST oder ähnliches in allen Umgebungen befolgt werden.
+4. Beschriftung – hilft bei der Identifizierung wichtiger Elemente jeder Umgebung, z. B. Besitzer und Umgebungstyp.
+5. Verschlüsselung - Die Verwendung von Verschlüsselung, möglicherweise mit Ihren eigenen Schlüsseln, kann eine Sicherheitsmethode sein.
 
-Processen med at oprette data, der kan bruges i ikke-produktionsmiljøer, kan være en (eller flere) af følgende:
-1. Kopi af produktionsdata.
-2. Datagenerering af falske data.
-3. Anonymisering.
-4. Pseudonymisering.
-5. Kryptering + ordbog.
-6. Datasæt af typen "Ingen relationer".
+Nicht-Produktions-Datensatzerstellungsprozess
 
-Den eller de metoder, der anvendes, vil normalt afhænge af klassificeringen af de forskellige dataelementer. Med henblik på at fastlægge klassificeringen af forskellige data/datasæt bør der føres en "database" med disse oplysninger. Dette skal derefter være "opslagsstedet" for at etablere den rigtige databehandling.
+Der Prozess der Erstellung von Daten, die in Nicht-Produktionsumgebungen verwendet werden können, kann einer (oder mehrere) der folgenden sein:
+1. Kopie der Produktionsdaten.
+2. Datengenerierung von gefälschten Daten.
+3. Anonymisierung.
+4. Pseudonymisierung.
+5. Verschlüsselung + Wörterbuch.
+6. Datensatz "Keine Beziehungen".
 
-### Databehandling i detaljer
+Die verwendete(n) Methode(n) hängt in der Regel von der Klassifizierung der verschiedenen Datenelemente ab. Um die Klassifizierung verschiedener Daten/Datensätze zu bestimmen, sollte eine "Datenbank" dieser Informationen geführt werden. Dies sollte dann der "Nachschlagepunkt" sein, um die richtige Datenverarbeitung zu etablieren.
 
-I dette afsnit diskuterer vi de forskellige muligheder, der kan bruges til at etablere et eller flere datasæt i et ikke-produktionsmiljø. Man vil højst sandsynligt skulle bruge en kombination af disse.
-Vigtigt for EU-reglement: pseudonymisering og anonymisering af data behandles forskelligt i henhold til GDPR, EU's databeskyttelseslov.
-Henvisning til EU-dokument
+### Datenverarbeitung im Detail
 
-#### Kopi af produktionsdata
+In diesem Abschnitt werden die verschiedenen Optionen erläutert, mit denen ein oder mehrere Datensätze in einer Nicht-Produktionsumgebung erstellt werden können. Sie werden höchstwahrscheinlich eine Kombination davon benötigen.
+Wichtig für EU-Vorschriften: Pseudonymisierung und Anonymisierung von Daten werden nach DSGVO, dem Datenschutzgesetz der EU, unterschiedlich behandelt.
+Verweis auf EU-Dokument
 
-Selvom dette ikke er en anbefalet fremgangsmåde, er det nogle gange muligt og tilladt at bruge (eventuel en delmængde af) produktionsdata i et ikke-produktionsmiljø. Disse datasæt vil sandsynligvis blive markeret som skrivebeskyttede.
-En Azure-tjeneste, der er egnet til denne opgave, kan være Data Factory-Copy Pipelines.
 
-#### Datagenerering af falske data
+#### Kopie der Produktionsdaten
 
-I denne proces opretter man falske data baseret på oplysningerne om datatype, længde, mønster, indhold osv., disse data skal overholde. Det er vigtigt, at dette er ægte falske data og ikke data, der er et forfalsket produktionsdatasæt.
-Oprettelse af et falsk datasæt er oftest en vanskelig opgave, så det er værd at sørge for, at processen, der etableres, kan genanvendes, automatiseres, skaleres og er parameterstyret.
+Dies ist zwar keine empfohlene Vorgehensweise, aber manchmal ist es möglich und erlaubt, Produktionsdaten (möglicherweise eine Teilmenge von) in einer Nicht-Produktionsumgebung zu verwenden. Diese Datasets sind wahrscheinlich als schreibgeschützt markiert.
+Ein Azure-Dienst, der für diese Aufgabe geeignet ist, können Data Factory-Copy-Pipelines sein.
 
-Værktøjer til at oprette falske data ved brug af Python kan være
-- Faker
-- SDV
-- Gretel
+#### Datengenerierung gefälschte Daten
 
-#### Anonymisering
+In diesem Prozess erstellt man gefälschte Daten basierend auf den Informationen über Datentyp, Länge, Muster, Inhalt usw., denen diese Daten entsprechen müssen. Wichtig ist, dass es sich um echte gefälschte Daten handelt und nicht um Daten, die ein gefälschter Produktionsdatensatz sind.
+Das Erstellen eines gefälschten Datensatzes ist oft eine schwierige Aufgabe, daher lohnt es sich, sicherzustellen, dass der etablierte Prozess wiederverwendet, automatisiert, skaliert und parametrisiert werden kann.
 
-Anonymisering kan bruges, når man kan kryptere et produktionsdatasæt og overføre det til et ikke-produktionsmiljø. Anonyme data er data, der er blevet ændret, så genidentifikation af data ikke er mulig.
-Krypteringen kan udføres på mange måder ved hjælp af forskellige teknikker som støj i data, substitution og aggregering.
+Tools zum Erstellen gefälschter Daten mit Python können sein
+-Fälscher
+-SDV
+-Gretel
 
-Det er vigtigt at bemærke, at anonymisering er en "envejsproces", hvor man vil - og skal - miste evnen til at spore tilbage til de oprindelige data. Man må heller ikke kunne bruge disse data til at oprette forbindelse til og bruge data fra andre produktionsdatasæt.
+#### Anonymisierung
 
-Data Factory-dataflows/Azure Databricks kan bruges til dette med udvidelsen af Microsoft Presidio.
+Die Anonymisierung kann verwendet werden, wenn Sie ein Produktionsdataset verschlüsseln und in eine Nicht-Produktionsumgebung übertragen können. Anonyme Daten sind Daten, die so verändert wurden, dass eine erneute Identifizierung von Daten nicht möglich ist.
+Die Verschlüsselung kann auf viele Arten mit verschiedenen Techniken wie Datenrauschen, Substitution und Aggregation erfolgen.
 
-#### Pseudonymisering
+Es ist wichtig zu beachten, dass die Anonymisierung ein "einseitiger Prozess" ist, bei dem man die Möglichkeit verliert, bis zu den Originaldaten zurückzuverfolgen. Sie können diese Daten auch nicht verwenden, um eine Verbindung mit anderen Produktionsdatasets herzustellen und diese zu verwenden.
 
-Pseudonymisering er i det væsentlige den samme proces som anonymisering, med en stor forskel. Pseudonyme data er data, der er blevet afidentificeret fra dataenes oprindelse, men som kan identificeres igen, hvis det er nødvendigt.
-Tokeniserings- og hashfunktioner kan bruges til at pseudonymisere data.
+Data Factory-Dataflows/Azure Databricks können dafür mit der Microsoft Presidio-Erweiterung verwendet werden.
 
-Data Factory-dataflows/Azure Databricks kan bruges til dette.
+#### Pseudonymisierung
 
-#### Kryptering med nøgle
+Die Pseudonymisierung ist im Wesentlichen derselbe Prozess wie die Anonymisierung, mit einem großen Unterschied. Pseudonyme Daten sind Daten, die vom Ursprung der Daten anonymisiert wurden, aber bei Bedarf erneut identifiziert werden können.
+Tokenisierungs- und Hashing-Funktionen können zur Pseudonymisierung von Daten verwendet werden.
 
-I dette tilfælde beskytter man ens data med en krypteringsnøgle, og kun personerne der har adgang til nøglen kan anvende data.
+Hierfür können Data Factory-Dataflows/Azure Databricks verwendet werden.
 
-Denne nøgle kan opbevares i en Azure Key Vault.
+#### Verschlüsselung mit Schlüssel
 
-**BEMÆRK: Dette er ikke en gyldig GDPR "beskyttelsesmekanisme", fordi den "kun" beskytter adgangen til dataene, ikke brugen af dataene.
+In diesem Fall schützen Sie Ihre Daten mit einem Verschlüsselungsschlüssel, und nur die Personen, die Zugriff auf den Schlüssel haben, können die Daten verwenden.
 
-#### Datasæt af typen "Ingen relationer"
+Dieser Schlüssel kann in einem Azure Key Vault gespeichert werden.
 
-I denne tilgang opretter man datasæt, der indeholder "rigtige" data på kolonneniveau. 
+**HINWEIS: Dies ist kein gültiger DSGVO-"Schutzmechanismus", da er "nur" den Zugriff auf die Daten schützt, nicht die Verwendung der Daten.
 
-For eksempel hvis man har en postnummerkolonne, ville postnumrene her være ægte, og hvis man i samme post har et gadenavn, ville det også være ægte gadenavne.
 
-Tilgangen "ingen relationer" kommer i spil, når data ses fra ud fra den enkelte række. I ovenstående tilfælde ville gadenavn, husnummer og postnummer logisk set give mening, men det vil ikke eksistere ”i virkeligheden”.
-Så en tilgang kunne være at opbygge sæt af forskellige data, der repræsenterer elementer, der er personrelateret - kunne være en database med gadenavne i et sæt, alle postnumre i et andet sæt, de 20 mest almindelige fornavne i et tredje, de 20 mest anvendte efternavne i et fjerde og så videre.
+#### Datensatz "Keine Beziehungen"
 
-Og når man opretter en ny række, tages tilfældige værdier fra de enkelte sæt og bruges til at oprette disse elementer i forbindelse med en "person".
+Bei diesem Ansatz erstellen Sie Datasets, die "echte" Daten auf Spaltenebene enthalten. 
 
-Data Factory-dataflows/Azure Databricks kan bruges til dette.
+Wenn Sie beispielsweise eine Postleitzahlenspalte haben, wären die Postleitzahlen hier echt, und wenn Sie einen Straßennamen im selben Datensatz haben, wären es auch echte Straßennamen.
 
-## CI/CD-eksempel
+Der Ansatz "Keine Beziehungen" kommt ins Spiel, wenn Daten aus der einzelnen Zeile angezeigt werden. Im obigen Fall wären der Straßenname, die Hausnummer und die Postleitzahl logisch sinnvoll, aber sie würden "in Wirklichkeit" nicht existieren.
+Ein Ansatz könnte also darin bestehen, Sätze verschiedener Daten zu erstellen, die Elemente darstellen, die personenbezogen sind – könnte eine Datenbank mit Straßennamen in einem Satz sein, alle Postleitzahlen in einem anderen Satz, die 20 häufigsten Vornamen in einem dritten, die 20 am häufigsten verwendeten Nachnamen in einem vierten und so weiter.
 
-Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet. 
-Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
+Und beim Erstellen einer neuen Zeile werden Zufallswerte aus den einzelnen Sätzen entnommen und verwendet, um diese Elemente im Kontext einer "Person" zu erstellen.
 
-Figur 6 viser et – forenklet- eksempel på en sådan arbejdsgang.
+Hierfür können Data Factory-Dataflows/Azure Databricks verwendet werden.
 
-![figur 6](images/danish/Slide20.JPG) 
+## CI/CD-Beispiel
 
-*Figur 6*
+Wie oben erwähnt, sollte die Verwendung von CI/CD-Prinzipien (Continuous Integration/Continuous Deployment) in Betracht gezogen werden, um sicherzustellen, dass die Codierung in der Datenplattform konsistent gehandhabt wird. 
+Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Prozesse Code durchläuft, wenn er in der Produktion bereitgestellt wird.
 
-I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
+Abbildung 6 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-## En praktisk tilgang
+! [Abbildung 6] (Bilder/Slide20.JPG) 
 
-Baseret på diskussionerne i dette dokument viser Figure 6, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
+*Abbildung 6*
 
-I midten finder vi dataplatformen med området ingest, transform og publish. I området ingest ser man, at data tages en-til-en fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. 
-På højre side af figuren ses, hvad der kræves af slutbrugerne i publish området. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces. 
+Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig in der Lage sein, Daten in Nicht-Produktionsumgebungen zu verarbeiten. Wahrscheinlich haben Sie keine Berechtigung oder möchten Produktionsdaten in diesen Umgebungen verwenden. Zu Testzwecken können fehlerhafte Daten auch in Datensätze eingefügt werden, um mögliche Ausnahmeszenarien zu adressieren.
 
-Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, der findes i App 3, skal frasorteres dette datasæt, så i dette tilfælde er processen lidt mere kompliceret, men fordi transform området repræsenterer et område, hvor data let kan kombinere (og også udelukkes), er fundamentet for at gøre dette på plads, derfor gøres det ret nemt.
+## Ein praktischer Ansatz
 
-Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
+Basierend auf den Diskussionen in diesem Dokument zeigt Abbildung 6, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
-![figur 7](images/danish/Slide14.JPG)
+In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Publish. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
+Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
 
-*Figur 7*
+Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem Datensatz herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
 
-Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit. Så den samlede tilgang kunne være - hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen.
+Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-## Eksempler på implementeringer
+! [Abbildung 7] (Bilder/Slide14.JPG)
 
-Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
+*Abbildung 7*
 
-> [!Note]
-> Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
+Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen. Der Gesamtansatz könnte also lauten: Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein.
 
-[Azure Based](Microsoft/Azure/README-da.md)
+## Beispiele für Implementierungen
 
-[Synapse based](Microsoft/Synapse/README-da.md)
+Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Microsoft-Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
 
-[DataBricks based](Microsoft/Databricks/README-da.md)
+> [! Hinweis]
+> Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
-[Fabric based](Microsoft/Fabric/README-da.md)
+[Azure-basiert] (Microsoft/Azure/README-de.md)
+
+[Synapse-basiert] (Microsoft/Synapse/README-de.md)
+
+[DataBricks-basiert] (Microsoft/Databricks/README-de.md)
+
+[Stoffbasiert] (Microsoft/Fabric/README-de.md)
