@@ -121,7 +121,6 @@ Im Bereich **Transformieren** werden Daten aus dem Bereich Ingest abgerufen und 
 Eine Aufgabe besteht daher darin, Daten so zu transformieren, dass sie das gleiche Format haben – zum Beispiel könnte es sein, die "schwierigen" Datentypen wie Datumsangaben (z. B. das Teilen der Uhrzeit vom Datum in eine separate Spalte) und Dezimalzahlen ("." oder ",." als Trennzeichen) zu "standardisieren".
 
 
-
 Die einzelnen Datenelemente im Bereich *Transform* sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
 
 *Daten* im Bereich **Transformieren** existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
@@ -155,13 +154,13 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Dazu gehören:
 
-[Datenkatalog] (Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
+[Datenkatalog](Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
-[Gemeinsames Datenmodell] (Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **publish**-Bereich können bestehende Branchendatenmodelle nützlich/relevant sein. 
+[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **publish**-Bereich können bestehende Branchendatenmodelle nützlich/relevant sein. 
 
-[Datenermittlung] (Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
+[Datenermittlung](Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
 
-[Datenherkunft] (Supporting_Data_Services/Data_Lineage/README-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
+[Datenherkunft](Supporting_Data_Services/Data_Lineage/README-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
 
 [Datenverwaltung] (Supporting_Data_Services/Data_Governance/README-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
 
