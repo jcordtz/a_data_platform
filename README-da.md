@@ -49,13 +49,15 @@ Dette overordnede paradigme skal sikre at en dataplatform opfylder følgende ege
 
 6. **Skal kunne genskabes** - Alle tjenester, der bruges i løsningen, skal kunne sættes på pause/stoppes og endda slettes. Og derfor også kunne startes/genskabes. Og dette uden datatab, ændring i funktionalitet samt tilgang (api’er).
 
-7. **Sporbarhed** - Alle tjenester, der bruges i løsningen, skal kunne spores individuelt til brug - både af sikkerhedsmæssige og omkostningsmæssige årsager.  Agility - Fokus skal være på en tilgang baseret på Minimal Viable product (MVP) samt løbende feedback til tidligere trin i data flowet.
+7. **Sporbarhed** - Alle tjenester, der bruges i løsningen, skal kunne spores individuelt til brug - både af sikkerhedsmæssige og omkostningsmæssige årsager.
 
-8. **Sikkerhed** - Sikkerhed skal integreres i den generelle arkitektur og de specifikke løsningsdesign, både for informationssikkerhed og privatliv. Udskiftning af komponenter må ikke berøre sikkerhedsaspekterne. Overholdelse og styring skal opretholdes på tværs af de forskellige lag over tid.
+8. **Agilitet** - Fokus skal være på en tilgang baseret på Minimal Viable product (MVP) samt løbende feedback til tidligere trin i data flowet.
 
-9. **Genbrug** - Løsninger skal designes til genbrug. Arkitekturen bør indeholde skabeloner til løsningsdesign, der fremskynder time-to-market og sikrer standardisering.
+9. **Sikkerhed** - Sikkerhed skal integreres i den generelle arkitektur og de specifikke løsningsdesign, både for informationssikkerhed og privatliv. Udskiftning af komponenter må ikke berøre sikkerhedsaspekterne. Overholdelse og styring skal opretholdes på tværs af de forskellige lag over tid.
 
-10. **Feedback** - Arkitekturen skal løbende justeres og forbedres baseret på feedback fra brugen af dataplatformen.
+10. **Genbrug** - Løsninger skal designes til genbrug. Arkitekturen bør indeholde skabeloner til løsningsdesign, der fremskynder time-to-market og sikrer standardisering.
+
+11. **Feedback** - Arkitekturen skal løbende justeres og forbedres baseret på feedback fra brugen af dataplatformen.
 
 ## *Data* og *datasæt*
 
