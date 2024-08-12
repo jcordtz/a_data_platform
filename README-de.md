@@ -466,12 +466,12 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 > [! Hinweis]
 > Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
-[Azure-basiert] (Microsoft/Azure/README-de.md)
+[Azure-basiert](Microsoft/Azure/README-de.md)
 
-[Synapse-basiert] (Microsoft/Synapse/README-de.md)
+[Synapse-basiert](Microsoft/Synapse/README-de.md)
 
-[DataBricks-basiert] (Microsoft/Databricks/README-de.md)
+[DataBricks-basiert](Microsoft/Databricks/README-de.md)
 
-[Fabric-basiert] (Microsoft/Fabric/README-de.md)
+[Fabric-basiert](Microsoft/Fabric/README-de.md)
 
 [Microsoft Purview und die data platform](Microsoft/Purview/README-de.md)
