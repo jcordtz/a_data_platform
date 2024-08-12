@@ -488,3 +488,5 @@ The following are some examples of ways to implement a data platform using diffe
 [DataBricks based](Microsoft/Databricks/README.md)
 
 [Fabric based](Microsoft/Azure/Fabric/README.md)
+
+[Microsoft Purview and the data platform](Microsoft/Purview/README.md)

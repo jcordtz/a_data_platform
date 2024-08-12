@@ -472,4 +472,6 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 
 [DataBricks-basiert] (Microsoft/Databricks/README-de.md)
 
-[Stoffbasiert] (Microsoft/Fabric/README-de.md)
+[Fabric-basiert] (Microsoft/Fabric/README-de.md)
+
+[Microsoft Purview und die data platform](Microsoft/Purview/README-de.md)

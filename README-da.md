@@ -74,7 +74,6 @@ På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af 
 - Adgang til et *datasæt* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
 - Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer. Det kan derefter leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database.
 
-
 ## Cloud-tilgang
 
 Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologier.
@@ -468,10 +467,12 @@ Følgende er eksempler på måder man kan implementere en dataplatform ved hjæl
 > [!Note]
 > Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
-[Azure Based](Microsoft/Azure/README-da.md)
+[Azure Baseret](Microsoft/Azure/README-da.md)
 
-[Synapse based](Microsoft/Synapse/README-da.md)
+[Synapse baseret](Microsoft/Synapse/README-da.md)
 
-[DataBricks based](Microsoft/Databricks/README-da.md)
+[DataBricks baseret](Microsoft/Databricks/README-da.md)
 
-[Fabric based](Microsoft/Fabric/README-da.md)
+[Fabric baseret](Microsoft/Fabric/README-da.md)
+
+[Microsoft Purview og data platformen](Microsoft/Purview/README-da.md)
