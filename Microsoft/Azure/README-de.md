@@ -4,7 +4,7 @@ Implementing the data platform using Azure services results in a very flexible a
 
 Figure 1 shows the Azure services normally seen being used in this approach.
 
-![figure 1](../../images/english/Slide9.jpg)
+![figure 1](../../images/english/Slide9.JPG)
 
 Figure 1
 
