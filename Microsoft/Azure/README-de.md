@@ -15,3 +15,5 @@ In the **transform area** the process would then be handled by Data Factory Data
 In the **publish area** you will find different Azure database technologies being the relational databases Azure SQL Database, Azure PostgresDB and Azure MySQL. Also databases like Azure Cosmos DB, Azure Analytical Services and Azure Data Explorer are candidates along with Azure Data Lake.
 
 In the **consume area** you will find PowerBI along with Azure Machine Learning and Azure AI studio.
+
+---
