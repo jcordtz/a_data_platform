@@ -3,7 +3,7 @@
 Tilgangen er den samme som for den Azure-baserede tilgang, bortset fra at Databricks bruges i stedet for Data Factory Data Flow og Synapse DW. Man kan også bruge Databricks i stedet for SQL Server. Teknologisk uafhængighed ligger i, at Databricks er baseret på 
 Python og Spark. Databricks tilgangen er mere programmerings-tung.
 
-![figur 1](../images/danish/Slide12.JPG) 
+![figur 1](../../images/danish/Slide12.JPG) 
 
 *Figur 1*
 

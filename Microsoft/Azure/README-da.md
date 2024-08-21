@@ -4,7 +4,7 @@ Implementering af dataplatformen ved hjælp af Azure-tjenester resulterer i en m
 
 Figur 1 viser de Azure-tjenester, der normalt bruges i denne tilgang.
 
-![firgur1](../images/danish/Slide10.JPG)
+![firgur1](../../images/danish/Slide10.JPG)
 
 Figur 1
 

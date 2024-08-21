@@ -7,7 +7,7 @@ Platformen er Software as a Service (SaaS) produkt, som håndterer al integratio
 
 Microsoft Fabric samler nye og eksisterende komponenter fra Power BI, Azure Synapse og Azure Data Factory i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
 
-![figur1](../images/danish/Slide22.jpg) 
+![figur1](../../images/danish/Slide22.jpg) 
 
 *Figur 1*
 
