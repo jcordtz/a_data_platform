@@ -170,31 +170,31 @@ Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, ei
 > [!Hinweis]
 > Das Dokument wird laufend um eine Beschreibung dieser erweitert.
 
-## A special case – Real Time 
+### Ein Sonderfall – Echtzeit 
 
-We will approach Real Time data processing as a particular case and examine it from that perspective.
+Wir werden uns der Echtzeit-Datenverarbeitung als Einzelfall nähern und sie aus dieser Perspektive betrachten.
 
-Real Time comes in different flavours, in this document we will use the following terms
+Real Time gibt es in verschiedenen Varianten, in diesem Dokument werden wir die folgenden Begriffe verwenden
 
-- Real Time – *data* that is delivered immediately after collection.
-- Near Real Time – *data* that is “delayed” due to communication or processing.
-- Dynamic data – *data* that is updated and needs attention.
+- Echtzeit – *Daten*, die sofort nach der Abholung geliefert werden.
+- Nahezu in Echtzeit – *Daten*, die aufgrund von Kommunikation oder Verarbeitung "verzögert" werden.
+- Dynamische Daten – *Daten*, die aktualisiert werden und Aufmerksamkeit benötigen.
 
-The data platform method in this document is **not** suitable for the Real Time situation, but it works well for Near Real Time and Dynamic Data. Dynamic data – which is based on events – is processed in the same manner as Near Real Time data in the data platform.
+Die Datenplattformmethode in diesem Dokument ist **nicht** für die Echtzeitsituation geeignet, aber sie funktioniert gut für nahezu Echtzeit- und dynamische Daten. Dynamische Daten, die auf Ereignissen basieren, werden auf die gleiche Weise verarbeitet wie Near-Real-Time-Daten in der Datenplattform.
 
-The general approach is that any or all real time *data* is also kept in the **ingest area** for more processing.
-This enables the data platform to have features that can support a Real Time process where appropriate, but also to manage all knowledge that can be generated over time from the Real Time situations.
-This can then help to avoid an undesired event from occurring - such as a train delay.
+Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im **Ingest-Bereich** für eine weitere Verarbeitung gespeichert werden.
+Dies ermöglicht es der Datenplattform, über Funktionen zu verfügen, die gegebenenfalls einen Echtzeitprozess unterstützen können, aber auch das gesamte Wissen zu verwalten, das im Laufe der Zeit aus den Echtzeitsituationen generiert werden kann.
+Dies kann dann dazu beitragen, das Eintreten eines unerwünschten Ereignisses – wie z. B. eine Zugverspätung – zu vermeiden.
 
-Or give more detailed information about a goal event in a football match and then being able to change odds rapidly based on the historical data available in the data platform.
+Oder geben Sie detailliertere Informationen über ein Torereignis in einem Fußballspiel und können Sie dann die Quoten auf der Grundlage der auf der Datenplattform verfügbaren historischen Daten schnell ändern.
 
-To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
+Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat. Das System, das den Fahrgästen am Bahnhof die Informationen anzeigt, erhält sofort die Echtzeitdaten über die Verspätung und aktualisiert die Schilder entsprechend. Dabei werden die Daten selbst nur wenig verarbeitet.
 
-![figure 3](images/german/Slide3.JPG)
+! [Abbildung 3](images/german/Slide3.JPG)
 
-*Figure 3*
+*Abbildung 3*
 
-However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
+Diese *Daten* werden aber auch in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. Dieser Prozess könnte also wie folgt aussehen:
 
 ## Rollen
 
