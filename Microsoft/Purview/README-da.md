@@ -7,7 +7,7 @@ Microsoft Purview kombinerer de tidligere Azure Purview- og Microsoft 365-løsni
 - Få indsigt i data på tværs af ens organisation
 - Beskytte og administrer følsomme data i hele deres livscyklus, uanset hvor de befinder sig
 - Styre data problemfrit på nye, omfattende måder
-- Administre kritiske datarisici og lovkrav
+- Administrer kritiske datarisici og lovkrav
 
 I forbindelse med dataplatformen er Microsoft Purview en af de understøttende datatjenester. Microsoft Purviews hovedopgave er naturligvis at være Governance and Compliance ankerpunkt.
 
