@@ -6,7 +6,7 @@ Den teknologiske uafhængighed ligger i, at Databricks er baseret på Python og 
 
 Databricks tilgangen er mere programmerings-tung.
 
-![figur 1](../../images/danish/Slide12.JPG)
+![figur 1](../../images/danish/Slide6.JPG)
 
 *Figur 1*
 
