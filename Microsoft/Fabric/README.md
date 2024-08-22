@@ -6,7 +6,7 @@ The platform is built on a foundation of Software as a Service (SaaS), which han
 
 Microsoft Fabric brings together new and existing components from Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences.
 
-![figur1](../../images/english/Slide21.jpg)
+![figur1](../../images/english/Slide11.jpg)
 
 Figure 1
 
@@ -14,7 +14,7 @@ You can build a data platform using Fabric but due to the nature of Fabric being
 
 These are different ways of using Microsoft Fabric within the data platform concept.
 
-![Fabric](../images/Slide18.JPG)
+![Fabric](../../images/english/Slide9.JPG)
 
 At the top of the figure Microsoft Fabric fits very well in the **consume area** where it could be used as a “copy-cat” of the data platform itself. Hence you could provide similar functionality to departments/projects/organizations that would like to do more advanced analytics and be able to bring their own data, but still having this in a “controlled” environment.
 
