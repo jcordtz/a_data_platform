@@ -1,23 +1,23 @@
-# Microsoft Fabric based.
+# Microsoft Fabric-basiert.
 
-Microsoft Fabric is an all-in-one analytics solution that covers everything from data movement to data science, Real-Time Analytics, and Business Intelligence.
+Microsoft Fabric ist eine All-in-One-Analyselösung, die alles abdeckt, von Datenbewegungen über Data Science bis hin zu Echtzeitanalysen und Business Intelligence.
 
-The platform is built on a foundation of Software as a Service (SaaS), which handles all integration between the different components being used in the data platform.
+Die Plattform basiert auf einer Software-as-a-Service (SaaS), die die gesamte Integration zwischen den verschiedenen Komponenten übernimmt, die in der Datenplattform verwendet werden.
 
-Microsoft Fabric brings together new and existing components from Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences.
+Microsoft Fabric vereint neue und vorhandene Komponenten aus Power BI, Azure Synapse und Azure Data Factory in einer einzigen integrierten Umgebung. Diese Komponenten werden dann in verschiedenen maßgeschneiderten Benutzererlebnissen präsentiert.
 
 ![figur1](../../images/german/Slide11.jpg) 
  
-Figure 1
+Abbildung 1
 
-You can build a data platform using Fabric but due to the nature of Fabric being a SaaS solution this will - naturally - not provide you with a technology independent solution.
+Sie können mit Fabric eine Datenplattform erstellen, aber da es sich bei Fabric um eine SaaS-Lösung handelt, erhalten Sie dadurch natürlich keine technologieunabhängige Lösung.
 
-These are possible ways of using Microsoft Fabric within the data platform concept.
+Dies sind mögliche Möglichkeiten, Microsoft Fabric innerhalb des Datenplattformkonzepts zu nutzen.
 
 ![Fabric](../../images/german/Slide9.JPG)
 
-At the top of the figure Microsoft Fabric fits very well in the **consume area** where it could be used as a “copy-cat” of the data platform itself. Hence you could provide similar functionality to departments/projects/organizations that would like to do more advanced analytics and be able to bring their own data, but still having this in a “controlled” environment.
+Oben in der Abbildung passt Microsoft Fabric sehr gut in den **Konsumierenbereich**, wo es als "Nachahmer" der Datenplattform selbst verwendet werden könnte. Daher könnten Sie Abteilungen/Projekten/Organisationen, die fortschrittlichere Analysen durchführen und in der Lage sein möchten, ihre eigenen Daten einzubringen, eine ähnliche Funktionalität bereitstellen, diese jedoch immer noch in einer "kontrollierten" Umgebung haben.
 
-And to the bottom of the figure where Microsoft Fabric is the data platform itself.
+Und zum unteren Rand der Abbildung, wo Microsoft Fabric die Datenplattform selbst ist.
 
-More information about Microsoft Fabric can be found here [Microsoft Fabric Info](https://www.microsoft.com/en-us/microsoft-fabric)
+Weitere Informationen zu Microsoft Fabric finden Sie hier [Microsoft Fabric Info](https://www.microsoft.com/de-de/microsoft-fabric)

@@ -110,29 +110,29 @@ Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas ha
 Die Bereiche repräsentieren verschiedene Zustände der Reise von Daten zu Datensätzen und damit zu Berichten und Analysen.
 In Bezug auf Abbildung 2 können die verschiedenen Bereiche wie folgt beschrieben werden:
 
-Quellsysteme sind alle Systeme, aus denen Daten extrahiert (gebatcht) oder von denen Daten gesendet (gestreamt) werden sollen.
+**Quellsysteme** sind alle Systeme, aus denen Daten extrahiert (gebatcht) oder von denen Daten gesendet (gestreamt) werden sollen.
 
-Der Aufnahmebereich ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parkett möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der Aufnahmebereich verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
+Der **Aufnahmebereich** ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parkett möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der **Aufnahmebereich** verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
 
-Im Laufe der Zeit müssen Dateien im Ingest-Bereich archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
+Im Laufe der Zeit müssen Dateien im **Aufnahmebereich** archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
 
-Im Bereich **Transformieren** werden Daten aus dem Bereich Ingest abgerufen und in ein "technisch nutzbares" Format geändert.
+Im Bereich **Transformieren** werden Daten aus dem Bereich **Aufnahmebereich** abgerufen und in ein "technisch nutzbares" Format geändert.
 
 Eine Aufgabe besteht daher darin, Daten so zu transformieren, dass sie das gleiche Format haben – zum Beispiel könnte es sein, die "schwierigen" Datentypen wie Datumsangaben (z. B. das Teilen der Uhrzeit vom Datum in eine separate Spalte) und Dezimalzahlen ("." oder ",." als Trennzeichen) zu "standardisieren".
 
 
-Die einzelnen Datenelemente im Bereich *Transform* sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
+Die einzelnen Datenelemente im Bereich **Transformieren** sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
 
 *Daten* im Bereich **Transformieren** existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
 
 Eine weitere Aufgabe besteht darin, sicherzustellen, dass die verschiedenen Daten, die wir in diesem Bereich zur Verfügung haben möchten, einfach zusammengeführt werden können, was bedeutet, dass jedes Datenobjekt über die "Referenzschlüssel" verfügt, die erforderlich sind, um sich mit anderen Datenobjekten verbinden zu können.
 
-Im Bereich *veröffentlichen* werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
+Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
 
-Im Bereich "Veröffentlichen" können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
+Im Bereich **Konsumireren** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
 > [!Hinweis]
-> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Ingest-Bereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Konsumbereich**. In diesem Dokument werden die Begriffe **Ingest**, **Transformieren**, **Veröffentlichen** und **Consume** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Autnahmebereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Konsumierenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Kosumieren** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Schnittstellen
 
@@ -157,7 +157,7 @@ Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, ei
 
 [Datenkatalog](Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
-[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **publish**-Bereich können bestehende Branchendatenmodelle nützlich/relevant sein. 
+[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **Konsumierenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
 
 [Datenermittlung](Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
 
@@ -170,7 +170,7 @@ Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, ei
 > [!Hinweis]
 > Das Dokument wird laufend um eine Beschreibung dieser erweitert.
 
-### Ein Sonderfall – Echtzeit 
+### Ein Sonderfall – Echtzeit
 
 Wir werden uns der Echtzeit-Datenverarbeitung als Einzelfall nähern und sie aus dieser Perspektive betrachten.
 
@@ -182,7 +182,7 @@ Real Time gibt es in verschiedenen Varianten, in diesem Dokument werden wir die 
 
 Die Datenplattformmethode in diesem Dokument ist **nicht** für die Echtzeitsituation geeignet, aber sie funktioniert gut für nahezu Echtzeit- und dynamische Daten. Dynamische Daten, die auf Ereignissen basieren, werden auf die gleiche Weise verarbeitet wie Near-Real-Time-Daten in der Datenplattform.
 
-Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im **Ingest-Bereich** für eine weitere Verarbeitung gespeichert werden.
+Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im **Aufnahmebereich** für eine weitere Verarbeitung gespeichert werden.
 Dies ermöglicht es der Datenplattform, über Funktionen zu verfügen, die gegebenenfalls einen Echtzeitprozess unterstützen können, aber auch das gesamte Wissen zu verwalten, das im Laufe der Zeit aus den Echtzeitsituationen generiert werden kann.
 Dies kann dann dazu beitragen, das Eintreten eines unerwünschten Ereignisses – wie z. B. eine Zugverspätung – zu vermeiden.
 
@@ -215,7 +215,7 @@ Dies ist eine Liste möglicher Rollen, basierend auf dem, was Unternehmen/Instit
    - Kommt typischerweise von "IT"
 
 3. Dateningenieur
-   - Definieren und gestalten Sie die Prozesse, die Daten aus den Quellsystemen und in den Ingest-Bereich abrufen.
+   - Definieren und gestalten Sie die Prozesse, die Daten aus den Quellsystemen und in den AufnahmeBereich abrufen.
    - Kommt typischerweise von "IT"
 
 4. Designer
@@ -262,7 +262,6 @@ Die Anforderungen der verschiedenen Rollen variieren natürlich während eines P
 1. Ideenfindung – Projektstart, der den Rahmen und das gewünschte Ergebnis für ein Projekt festlegt.
 2. Iteration X – die einzelnen "Versionen" – in der Regel alle 3 Monate eine neue Version 
 3. Visionszustand – Das gewünschte Endergebnis.
-
 
 ## Umgebungen
 
@@ -342,7 +341,7 @@ Die folgende Abbildung zeigt ein Beispiel für einen Projektbereich in der Daten
 
 *Abbildung 5*
 
-Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel". 
+Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel".
 
 Alle Daten, die für die Durchführung der Entwicklung benötigt werden, können/sollten einen Prozess durchlaufen, der sie zu "Nicht-Produktionsdaten/-datensätzen" macht.
 
@@ -370,6 +369,7 @@ Die wichtigsten technischen Mechanismen, die verwendet werden können, um eine o
 Nicht-Produktions-Datensatzerstellungsprozess
 
 Der Prozess der Erstellung von Daten, die in Nicht-Produktionsumgebungen verwendet werden können, kann einer (oder mehrere) der folgenden sein:
+
 1. Kopie der Produktionsdaten.
 2. Datengenerierung von gefälschten Daten.
 3. Anonymisierung.
@@ -456,7 +456,7 @@ Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig
 
 Basierend auf den Diskussionen in diesem Dokument zeigt Abbildung 6, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
-In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Publish. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
+In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Konsumieren. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
 Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
 
 Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem Datensatz herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.

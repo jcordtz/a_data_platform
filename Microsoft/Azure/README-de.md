@@ -1,19 +1,18 @@
-# Azure services based.
+ Basierend auf Azure-Diensten.
 
-Implementing the data platform using Azure services results in a very flexible and agile approach. This will fulfill all topics listed in the chapter “Overall paradigm”.
+Die Implementierung der Datenplattform mithilfe von Azure-Diensten führt zu einem sehr flexiblen und agilen Ansatz. Damit sind alle Themen erfüllt, die im Kapitel "Gesamtparadigma" aufgeführt sind.
 
-Figure 1 shows the Azure services normally seen being used in this approach.
+Abbildung 1 zeigt die Azure-Dienste, die normalerweise bei diesem Ansatz verwendet werden.
 
 ![figure 1](../../images/german/Slide5.JPG)
 
-Figure 1
+Abbildung 1
 
-In the **ingest area** you have Azure Event Hub and Real time analytics to handle incoming messages as well as Data Factory for handling the batch copy process. The storage layer is Azure Data Lake.
+Im Bereich **Aufnahme** befinden sich Azure Event Hub und Echtzeitanalysen zum Verarbeiten eingehender Nachrichten sowie Data Factory zum Verarbeiten des Batchkopiervorgangs. Die Speicherebene ist Azure Data Lake.
 
-In the **transform area** the process would then be handled by Data Factory Data Flow and the storage layer would also be Azure Data Lake. If you want to create an Enterprise Data Warehouse this could be handled by Synapse DW.
+Im Bereich **Transformieren** würde der Prozess dann von Data Factory Data Flow verarbeitet, und die Speicherschicht wäre ebenfalls Azure Data Lake. Wenn Sie ein Enterprise Data Warehouse erstellen möchten, kann dies von Synapse DW verarbeitet werden.
 
-In the **publish area** you will find different Azure database technologies being the relational databases Azure SQL Database, Azure PostgresDB and Azure MySQL. Also databases like Azure Cosmos DB, Azure Analytical Services and Azure Data Explorer are candidates along with Azure Data Lake.
+Im **Veröffentlichungsbereich** finden Sie verschiedene Azure-Datenbanktechnologien, nämlich die relationalen Datenbanken Azure SQL Database, Azure PostgresDB und Azure MySQL. Auch Datenbanken wie Azure Cosmos DB, Azure Analytical Services und Azure Data Explorer sind neben Azure Data Lake Kandidaten.
 
-In the **consume area** you will find PowerBI along with Azure Machine Learning and Azure AI studio.
+Im Bereich **Konsumieren** finden Sie PowerBI zusammen mit Azure Machine Learning und Azure AI Studio.
 
----
