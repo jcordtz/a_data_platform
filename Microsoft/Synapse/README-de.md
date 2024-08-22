@@ -1,3 +1,3 @@
-# Synapse based.
+# Synapse-basiert.
 
-In this case you are not technologically independent in the ingest, transform and **publish area** because you will do the all the “programming” in the Synapse service.
+In diesem Fall sind Sie im Bereich **Ingest**, **Transform** und **Publish** technologisch nicht unabhängig, da Sie die gesamte "Programmierung" im Synapse-Dienst vornehmen werden.
