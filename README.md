@@ -93,7 +93,7 @@ to the logical architecture shown on Figure 2.
 This is to ensure that the approach can comply with the "rules" of the paradigm
 as mentioned previously.
 
-![Figure 2](images/english/Slide3.JPG)
+![Figure 2](images/english/Slide2.JPG)
 
 *Figure 2*
 
@@ -177,7 +177,7 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-![figure 3](images/english/Slide5.JPG)
+![figure 3](images/english/Slide3.JPG)
 
 *Figure 3*
 
@@ -281,7 +281,7 @@ In summary, data security is essential for maintaining the confidentiality, inte
 
 In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 4](images/english/Slide15.JPG)
+![figure 4](images/english/Slide4.JPG)
 
 *Figure 4*
 
@@ -343,7 +343,7 @@ In the project room data, tools and code are established/maintained completely i
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 5](images/english/Slide7.JPG)
+![figure 5](images/english/Slide5.JPG)
 
 *Figure 5*
 
@@ -447,7 +447,7 @@ As mentioned above, a way of making sure coding in the data platform is done the
 
 The following Figure 6 show a simplified workflow.
 
-![figure 6](images/english/Slide19.JPG)
+![figure 6](images/english/Slide10.JPG)
 
 *Figure 6*
 
@@ -468,7 +468,7 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 7](images/english/Slide13.JPG)
+![figure 7](images/english/Slide7.JPG)
 
 *Figure 7*
 

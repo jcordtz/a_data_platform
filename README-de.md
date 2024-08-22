@@ -78,7 +78,7 @@ Die in diesem Dokument beschriebene Datenplattform basiert auf Cloud-Technologie
 
 Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit einem solchen Cloud-Ansatz erreicht werden können.
 
-![Abbildung 1](Bilder/dänisch/Slide2.JPG)
+![Abbildung 1](images/german/Slide1.JPG)
 
 *Abbildung 1*
 
@@ -103,7 +103,7 @@ Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Date
 Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in Abbildung 2 dargestellt. 
 Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt. 
  
-![Abbildung 2](Bilder/dänisch/Slide4.JPG)
+![Abbildung 2](images/german/Slide2.JPG)
 
 *Abbildung 2*
 
@@ -272,9 +272,9 @@ Abbildung 3 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind
 
 
 
-![Abbildung 4] (Bilder/Dänisch/Slide16.JPG)
+![Abbildung 3] (images/german/Slide3.JPG)
  
-*Abbildung 4*
+*Abbildung 3*
 
 **Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
 Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
@@ -288,7 +288,7 @@ Identitätsbasierte Zugriffskontrolle – umfasst die Möglichkeit, einer bestim
 Löschbasierte Zugriffssteuerung – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
 
 
-[Abbildung 4] (Bilder/Dänisch/Slide16.JPG)
+[Abbildung 4] (images/german/Slide4.JPG)
  
 *Abbildung 4*
 
@@ -328,7 +328,7 @@ Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepfl
 
 Die folgende Abbildung zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
 
-! [Abbildung 5] (Bilder/Slide8.JPG) 
+![Abbildung 5](images/german/Slide5.JPG) 
 
 *Abbildung 5*
 
@@ -436,7 +436,7 @@ Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Proz
 
 Abbildung 6 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-! [Abbildung 6] (Bilder/Slide20.JPG) 
+![Abbildung 6](images/german/Slide6.JPG) 
 
 *Abbildung 6*
 
@@ -453,7 +453,7 @@ Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-! [Abbildung 7] (Bilder/Slide14.JPG)
+![Abbildung 7](images/german/Slide7.JPG)
 
 *Abbildung 7*
 

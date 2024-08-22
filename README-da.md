@@ -80,7 +80,7 @@ Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologie
 
 Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
 
-![figur 1](images/danish/Slide2.JPG)
+![figur 1](images/danish/Slide1.JPG)
 
 *Figur 1*
 
@@ -105,7 +105,7 @@ Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform 
 Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på Figur 2. 
 Dette er for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt. 
  
-![figur 2](images/danish/Slide4.JPG)
+![figur 2](images/danish/Slide2.JPG)
 
 *Figur 2*
 
@@ -170,6 +170,32 @@ En yderligere komponent i implementeringen, som figur 2 viser, er nogle underst�
 
 > [!Note]
 > Dokumentet vil løbende blive udvidet med beskrivelse af disse.
+
+## Et særligt tilfælde – Real Time 
+
+Vi vil anse databehandling i realtid som et særligt tilfælde og undersøge det ud fra dette perspektiv.
+
+Realtid kommer i forskellige varianter, i dette dokument vil vi bruge følgende termer
+
+- Realtid – *data*, der leveres umiddelbart efter afhentning.
+- Næsten realtid – *data*, der er "forsinket" på grund af kommunikation eller behandling.
+- Dynamiske data – *data*, der opdateres og kræver opmærksomhed.
+
+Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til næsten realtid og dynamiske data. Dynamiske data – som er baseret på hændelser – behandles på samme måde som Near Real Time-data i dataplatformen.
+
+Den generelle tilgang er, at alle eller alle *data i realtid* også opbevares i **consume** området for mere behandling.
+Dette gør det muligt for dataplatformen at have funktioner, der kan understøtte en realtidsproces, hvor det er relevant, men også at styre al viden, der kan genereres over tid fra realtidssituationer.
+Dette kan så hjælpe med at undgå, at en uønsket hændelse opstår - såsom en togforsinkelse.
+
+Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og derefter være i stand til at ændre odds hurtigt baseret på de historiske data, der er tilgængelige i dataplatformen.
+
+For at illustrere dette kan du forestille dig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen, vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
+
+![Figur 3](images/danish/Slide3.JPG)
+
+*Figur 3*
+
+Disse *data* gemmes dog også i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones. Så denne proces kan se sådan ud:
 
 ## Roller
 
@@ -268,10 +294,10 @@ Datasikkerhed er kritisk, da den sikrer organisationer mod cyberangreb, insidert
 
 For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden, integriteten og tilgængeligheden af en organisations oplysninger. Det understøtter beskyttelsen af vigtige ressourcer, hjælper med at imødekomme de specificerede standarders compliance krav og fastholder kundetillid.
 
-Figur 3 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+Figur 4 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
 
-![figur 4](images/danish/Slide16.JPG)
+![figur 4](images/danish/Slide4.JPG)
  
 *Figur 4*
 
@@ -332,7 +358,7 @@ I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig i
 
 I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
 
-![figur 5](images/danish/Slide8.JPG) 
+![figur 5](images/danish/Slide5.JPG) 
 
 *Figur 5*
 
@@ -437,7 +463,7 @@ Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode
 
 Figur 6 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 6](images/danish/Slide20.JPG) 
+![figur 6](images/danish/Slide10.JPG) 
 
 *Figur 6*
 
@@ -445,7 +471,7 @@ I forbindelse med den løbende udvikling og test har man ofte brug for at kunne 
 
 ## En praktisk tilgang
 
-Baseret på diskussionerne i dette dokument viser Figure 6, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
+Baseret på diskussionerne i dette dokument viser figur 7, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
 
 I midten finder vi dataplatformen med området ingest, transform og publish. I området ingest ser man, at data tages en-til-en fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. 
 På højre side af figuren ses, hvad der kræves af slutbrugerne i publish området. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces. 
@@ -454,7 +480,7 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 7](images/danish/Slide14.JPG)
+![figur 7](images/danish/Slide7.JPG)
 
 *Figur 7*
 
