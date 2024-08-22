@@ -14,4 +14,4 @@ I **Transform** området vil ETL-processen håndteres af Data Factory Data Flow,
 
 I **publish** området finder man forskellige Azure-databaseteknologier, for eksempel relations databaserne Azure SQL Database, Azure PostgresDB og Azure MySQL. Også databaser som Azure Cosmos DB, Azure Analytical Services og Azure Data Explorer er kandidater sammen med Azure Data Lake.
 
-I **consume* området finder man PowerBI sammen med Azure Machine Learning og Azure AI Studio.
+I **consume** området finder man PowerBI sammen med Azure Machine Learning og Azure AI Studio.

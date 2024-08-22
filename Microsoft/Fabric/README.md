@@ -1,4 +1,4 @@
-# Microsoft Fabric based.
+# Microsoft Fabric based
 
 Microsoft Fabric is an all-in-one analytics solution that covers everything from data movement to data science, Real-Time Analytics, and Business Intelligence.
 
@@ -6,13 +6,13 @@ The platform is built on a foundation of Software as a Service (SaaS), which han
 
 Microsoft Fabric brings together new and existing components from Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences.
 
-![figur1](../../images/english/Slide21.jpg) 
- 
+![figur1](../../images/english/Slide21.jpg)
+
 Figure 1
 
 You can build a data platform using Fabric but due to the nature of Fabric being a SaaS solution this will - naturally - not provide you with a technology independent solution.
 
-These are possible ways of using Microsoft Fabric within the data platform concept.
+These are different ways of using Microsoft Fabric within the data platform concept.
 
 ![Fabric](../images/Slide18.JPG)
 
