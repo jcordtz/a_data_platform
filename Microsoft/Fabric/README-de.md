@@ -16,7 +16,7 @@ Dies sind mögliche Möglichkeiten, Microsoft Fabric innerhalb des Datenplattfor
 
 ![Fabric](../../images/german/Slide9.JPG)
 
-Oben in der Abbildung passt Microsoft Fabric sehr gut in den **Konsumierenbereich**, wo es als "Nachahmer" der Datenplattform selbst verwendet werden könnte. Daher könnten Sie Abteilungen/Projekten/Organisationen, die fortschrittlichere Analysen durchführen und in der Lage sein möchten, ihre eigenen Daten einzubringen, eine ähnliche Funktionalität bereitstellen, diese jedoch immer noch in einer "kontrollierten" Umgebung haben.
+Oben in der Abbildung passt Microsoft Fabric sehr gut in den **Verbrauchenbereich**, wo es als "Nachahmer" der Datenplattform selbst verwendet werden könnte. Daher könnten Sie Abteilungen/Projekten/Organisationen, die fortschrittlichere Analysen durchführen und in der Lage sein möchten, ihre eigenen Daten einzubringen, eine ähnliche Funktionalität bereitstellen, diese jedoch immer noch in einer "kontrollierten" Umgebung haben.
 
 Und zum unteren Rand der Abbildung, wo Microsoft Fabric die Datenplattform selbst ist.
 

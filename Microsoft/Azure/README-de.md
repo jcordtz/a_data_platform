@@ -14,5 +14,5 @@ Im Bereich **Transformieren** würde der Prozess dann von Data Factory Data Flow
 
 Im **Veröffentlichungsbereich** finden Sie verschiedene Azure-Datenbanktechnologien, nämlich die relationalen Datenbanken Azure SQL Database, Azure PostgresDB und Azure MySQL. Auch Datenbanken wie Azure Cosmos DB, Azure Analytical Services und Azure Data Explorer sind neben Azure Data Lake Kandidaten.
 
-Im Bereich **Konsumieren** finden Sie PowerBI zusammen mit Azure Machine Learning und Azure AI Studio.
+Im Bereich **Verbrauchen** finden Sie PowerBI zusammen mit Azure Machine Learning und Azure AI Studio.
 

@@ -129,10 +129,10 @@ Eine weitere Aufgabe besteht darin, sicherzustellen, dass die verschiedenen Date
 
 Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
 
-Im Bereich **Konsumireren** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
+Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
 > [!Hinweis]
-> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Autnahmebereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Konsumierenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Kosumieren** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Autnahmebereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Kosumieren** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Schnittstellen
 
@@ -157,7 +157,7 @@ Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, ei
 
 [Datenkatalog](Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
-[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **Konsumierenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
+[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **Verbrauchenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
 
 [Datenermittlung](Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
 
@@ -456,7 +456,7 @@ Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig
 
 Basierend auf den Diskussionen in diesem Dokument zeigt Abbildung 6, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
-In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Konsumieren. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
+In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
 Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
 
 Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem Datensatz herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
