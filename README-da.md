@@ -297,7 +297,7 @@ For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden,
 Figur 4 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
 
-![figur 4](images/danish/Slide4.JPG)
+![figur 4](images/danish/Slide8.JPG)
  
 *Figur 4*
 

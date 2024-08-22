@@ -142,7 +142,7 @@ Die meisten Unternehmen/Institutionen bevorzugen die Verwendung einer oder mehre
 
 **REST-API** - die "grundlegende" Schnittstelle, die die meisten (alle) neuen Dienste verwenden, um ihre Funktionalität anzubieten. Diese Stufe ist hochtechnisch und eignet sich nicht für Low-Code/No-Code-Ansätze.
 
-SQL – die Standard-Datenabfragesprache, die von vielen verschiedenen Datenbanksystemen weit verbreitet ist und unterstützt wird. Viele kennen SQL von der Verwendung in relationalen Datenbanken, aber es ist auch in anderen Arten von Datenbanksystemen wie NoSQL-Datenbanken verfügbar.
+**SQL** – die Standard-Datenabfragesprache, die von vielen verschiedenen Datenbanksystemen weit verbreitet ist und unterstützt wird. Viele kennen SQL von der Verwendung in relationalen Datenbanken, aber es ist auch in anderen Arten von Datenbanksystemen wie NoSQL-Datenbanken verfügbar.
 
 Wenn Sie in SQL "nur" die Funktionen verwenden, die Teil des SQL-Sprachstandards sind, bietet dies ein hohes Maß an Flexibilität. Das bedeutet, dass Sie keine spezifischen Funktionen verwenden, mit denen ein bestimmtes Datenbankprodukt eine SQL-Implementierung erweitert hat – insbesondere die Verwendung der prozeduralen Sprachen, die beispielsweise in MS SQL Server oder Oracle DB zu finden sind.
 
@@ -150,6 +150,7 @@ Wenn Sie in SQL "nur" die Funktionen verwenden, die Teil des SQL-Sprachstandards
 Die Syntax von Python ist relativ einfach und daher leicht zu erlernen und bietet auch ein gutes Maß an Lesbarkeit, was die Kosten für die Programmwartung senken sollte. Python unterstützt die Verwendung von Modulen und Paketen und fördert ein Modul zum Programmieren und Wiederverwenden von Code.
 
 Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibliothek machen Python im Kontext von Datenplattformen sehr beliebt.  Darüber hinaus lieben Programmierer Python, weil sie das Gefühl haben, dass es sie produktiver macht.
+
 ### Unterstützende Datendienste
 
 Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Dazu gehören:
@@ -168,6 +169,32 @@ Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, ei
 
 > [!Hinweis]
 > Das Dokument wird laufend um eine Beschreibung dieser erweitert.
+
+## A special case – Real Time 
+
+We will approach Real Time data processing as a particular case and examine it from that perspective.
+
+Real Time comes in different flavours, in this document we will use the following terms
+
+- Real Time – *data* that is delivered immediately after collection.
+- Near Real Time – *data* that is “delayed” due to communication or processing.
+- Dynamic data – *data* that is updated and needs attention.
+
+The data platform method in this document is **not** suitable for the Real Time situation, but it works well for Near Real Time and Dynamic Data. Dynamic data – which is based on events – is processed in the same manner as Near Real Time data in the data platform.
+
+The general approach is that any or all real time *data* is also kept in the **ingest area** for more processing.
+This enables the data platform to have features that can support a Real Time process where appropriate, but also to manage all knowledge that can be generated over time from the Real Time situations.
+This can then help to avoid an undesired event from occurring - such as a train delay.
+
+Or give more detailed information about a goal event in a football match and then being able to change odds rapidly based on the historical data available in the data platform.
+
+To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
+
+![figure 3](images/german/Slide3.JPG)
+
+*Figure 3*
+
+However, this *data* is also stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones. So, this process could look like this:
 
 ## Rollen
 
@@ -268,40 +295,23 @@ Datensicherheit ist von entscheidender Bedeutung, da sie Unternehmen vor Cyberan
 
 Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Informationen eines Unternehmens für die Datensicherheit unerlässlich ist. Es unterstützt den Schutz kritischer Ressourcen, hilft bei der Erfüllung der Compliance-Anforderungen bestimmter Standards und erhält das Vertrauen der Kunden.
 
-Abbildung 3 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
+Abbildung 4 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 
+![Abbildung 4](images/german/Slide8.JPG)
 
-
-![Abbildung 3] (images/german/Slide3.JPG)
- 
-*Abbildung 3*
-
-**Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
-Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
-
-Die attributbasierte Zugriffskontrolle – auch bekannt als ABAC – bietet oft einen zusätzlichen Mechanismus, um Zugriff zu gewähren, um eine "Suche" in einem anderen System durchzuführen. Beispielsweise kann man auf ein Speicherkonto zugreifen, aber es kann sich um einen Ordner handeln, für den man Teil eines bestimmten Projekts sein muss. In diesem Fall können Sie einen ABAC-"Lookup" durchführen, der dies überprüft, bevor Sie den Zugriff gewähren - abhängig von diesem Ergebnis.
-
-Identitätsbasierte Zugriffskontrolle – umfasst die Möglichkeit, einer bestimmten Ressource eine Identität zuzuweisen ("ein Mensch" zu werden). Und dann stellen Sie sicher, dass nur diesem "Menschen" Zugriff auf ein bestimmtes Speicherkonto gewährt wird, und daher müssen Sie diese Anwendung verwenden, um an die Daten zu gelangen.
-
-**Verschlüsselungsbasierte Zugriffskontrolle** - Dies ist keine wirkliche Zugriffskontrolle, da der Datenspeicher verfügbar ist, man die Daten jedoch nur lesen/verwenden kann, wenn man den Schlüssel zur Entschlüsselung hat. Es kann (sollte) also Teil Ihrer Verteidigung sein.
-
-Löschbasierte Zugriffssteuerung – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
-
-
-[Abbildung 4] (images/german/Slide4.JPG)
- 
 *Abbildung 4*
 
 **Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
 Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
 
-Die attributbasierte Zugriffskontrolle – auch bekannt als ABAC – bietet oft einen zusätzlichen Mechanismus, um Zugriff zu gewähren, um eine "Suche" in einem anderen System durchzuführen. Beispielsweise kann man auf ein Speicherkonto zugreifen, aber es kann sich um einen Ordner handeln, für den man Teil eines bestimmten Projekts sein muss. In diesem Fall können Sie einen ABAC-"Lookup" durchführen, der dies überprüft, bevor Sie den Zugriff gewähren - abhängig von diesem Ergebnis.
+Die **attributbasierte Zugriffskontrolle** – auch bekannt als ABAC – bietet oft einen zusätzlichen Mechanismus, um Zugriff zu gewähren, um eine "Suche" in einem anderen System durchzuführen. Beispielsweise kann man auf ein Speicherkonto zugreifen, aber es kann sich um einen Ordner handeln, für den man Teil eines bestimmten Projekts sein muss. In diesem Fall können Sie einen ABAC-"Lookup" durchführen, der dies überprüft, bevor Sie den Zugriff gewähren - abhängig von diesem Ergebnis.
 
-Identitätsbasierte Zugriffskontrolle – umfasst die Möglichkeit, einer bestimmten Ressource eine Identität zuzuweisen ("ein Mensch" zu werden). Und dann stellen Sie sicher, dass nur diesem "Menschen" Zugriff auf ein bestimmtes Speicherkonto gewährt wird, und daher müssen Sie diese Anwendung verwenden, um an die Daten zu gelangen.
+**Identitätsbasierte Zugriffskontrolle** – umfasst die Möglichkeit, einer bestimmten Ressource eine Identität zuzuweisen ("ein Mensch" zu werden). Und dann stellen Sie sicher, dass nur diesem "Menschen" Zugriff auf ein bestimmtes Speicherkonto gewährt wird, und daher müssen Sie diese Anwendung verwenden, um an die Daten zu gelangen.
 
 **Verschlüsselungsbasierte Zugriffskontrolle** - Dies ist keine wirkliche Zugriffskontrolle, da der Datenspeicher verfügbar ist, man die Daten jedoch nur lesen/verwenden kann, wenn man den Schlüssel zur Entschlüsselung hat. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
-Löschbasierte Zugriffssteuerung – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
+**Löschbasierte Zugriffssteuerung** – dieser Ansatz ist nur im Consume verfügbar. Dieser Ansatz nutzt den Aspekt des Verbrauchsbereichs, dass ein Data Warehouse nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
+
 
 
 ### Umgebungen und Tags
@@ -436,7 +446,7 @@ Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Proz
 
 Abbildung 6 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-![Abbildung 6](images/german/Slide6.JPG) 
+![Abbildung 6](images/german/Slide10.JPG) 
 
 *Abbildung 6*
 

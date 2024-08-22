@@ -281,7 +281,7 @@ In summary, data security is essential for maintaining the confidentiality, inte
 
 In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 4](images/english/Slide4.JPG)
+![figure 4](images/english/Slide8.JPG)
 
 *Figure 4*
 
