@@ -1,6 +1,7 @@
 # Synapse baseret
-Azure Synapse is an enterprise analytics service that accelerates time to insight across data warehouses and big data systems. Azure Synapse brings together the best of SQL technologies used in enterprise data warehousing, Spark technologies used for big data, Data Explorer for log and time series analytics, Pipelines for data integration and ETL/ELT, and deep integration with other Azure services such as Power BI, CosmosDB, and AzureML.
+
+Azure Synapse er en virksomhedsanalysetjeneste, der fremskynder tiden til indsigt på tværs af data warehouses og big data-systemer. Azure Synapse samler det bedste fra SQL-teknologier, der bruges i virksomhedsdatalagring, Spark-teknologier, der bruges til big data, Data Explorer til log- og tidsserieanalyse, pipelines til dataintegration og ETL/ELT samt dyb integration med andre Azure-tjenester som Power BI, CosmosDB og AzureML.
 
 ![Figure 1](../../images/danish/Slide12.JPG)
 
-The usage of Synapse will be in the lines of the Azure based approach, but in this case you are not technologically independent in the **ingest**, **transform** and **publish area** because you will do the all the “programming” within the Synapse service.
+Brugen af Synapse vil være på linje med den Azure-baserede tilgang, men i dette tilfælde er man ikke teknologisk uafhængig i **ingest**, **transform** og **publish** områderne, fordi man kommer til udføre al "programmering" i Synapse-tjenesten.
