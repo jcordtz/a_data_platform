@@ -5,4 +5,4 @@ Azure Synapse ist ein Analysedienst für Unternehmen, der die Zeit bis zum Gewin
 
 ![Figure 1](../../images/german/Slide12.JPG)
 
-Die Verwendung von Synapse wird in den Linien des Azure-basierten Ansatzes liegen, aber in diesem Fall sind Sie im **Ingest**-, **Transformierungs- und **Veröffentlichungsbereich** technologisch nicht unabhängig, da Sie die gesamte "Programmierung" innerhalb des Synapse-Dienstes vornehmen werden.
+Die Verwendung von Synapse wird in den Linien des Azure-basierten Ansatzes liegen, aber in diesem Fall sind Sie im **Aufnahme**, **Transformieren** und **Veröffentlichen** technologisch nicht unabhängig, da Sie die gesamte "Programmierung" innerhalb des Synapse-Dienstes vornehmen werden.
