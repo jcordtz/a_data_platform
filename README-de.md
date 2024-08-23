@@ -29,7 +29,7 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 Dieses Konzept einer Datenplattform kann auf andere Datenplattformansätze angewendet werden, ist aber (derzeit) nicht abgedeckt.
 
 > [!Hinweis]
-> Das Dokument basiert auf Microsoft-Technologiekomponenten.
+> Das Dokument basiert sich auf Microsoft-Technologiekomponenten.
 
 ## Gesamtparadigma
 
@@ -51,11 +51,11 @@ Dieses übergeordnete Paradigma soll sicherstellen, dass eine Datenplattform die
 
 7. **Nachvollziehbarkeit** - Alle in der Lösung verwendeten Dienste müssen für die Nutzung einzeln nachvollziehbar sein - sowohl aus Sicherheits- als auch aus Kostengründen.  Agilität - Der Fokus muss auf einem Ansatz liegen, der auf Minimal Viable Product (MVP) basiert, sowie auf kontinuierlichem Feedback zu früheren Schritten im Datenfluss.
 
-8. Sicherheit – Sicherheit muss in die Gesamtarchitektur und spezifische Lösungsdesigns integriert werden, sowohl für die Informationssicherheit als auch für den Datenschutz. Der Austausch von Komponenten darf die Sicherheitsaspekte nicht beeinträchtigen. Compliance und Governance müssen im Laufe der Zeit über die verschiedenen Ebenen hinweg aufrechterhalten werden.
+8. **Sicherheit** – Sicherheit muss in die Gesamtarchitektur und spezifische Lösungsdesigns integriert werden, sowohl für die Informationssicherheit als auch für den Datenschutz. Der Austausch von Komponenten darf die Sicherheitsaspekte nicht beeinträchtigen. Compliance und Governance müssen im Laufe der Zeit über die verschiedenen Ebenen hinweg aufrechterhalten werden.
 
 9. **Recycling** - Lösungen müssen für das Recycling konzipiert sein. Die Architektur sollte Vorlagen für das Lösungsdesign enthalten, die die Markteinführung beschleunigen und die Standardisierung gewährleisten.
 
-10. Feedback - Die Architektur muss basierend auf dem Feedback aus der Nutzung der Datenplattform kontinuierlich angepasst und verbessert werden.
+10. **Feedback** - Die Architektur muss basierend auf dem Feedback aus der Nutzung der Datenplattform kontinuierlich angepasst und verbessert werden.
 
 ## *Daten* und *Datensatz*
 
