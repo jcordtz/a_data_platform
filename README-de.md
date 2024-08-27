@@ -196,7 +196,7 @@ Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat
 
 *Abbildung 3*
 
-Diese *Daten* werden aber auch in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. Dieser Prozess könnte also wie folgt aussehen:
+Diese *Daten* werden aber **auch** in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. Dieser 
 
 ## Rollen
 

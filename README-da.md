@@ -197,7 +197,7 @@ For at illustrere dette kan du forestille dig et tog, der er forsinket. Systemet
 
 *Figur 3*
 
-Disse *data* gemmes dog også i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones. Så denne proces kan se sådan ud:
+Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
 
 ## Roller
 
