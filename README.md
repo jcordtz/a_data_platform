@@ -50,6 +50,9 @@ To ensure that the data platform can handle “whatever might come” it is impo
 
 The concepts of *data* and *datasets* are **core components** of the data platform.
 
+A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling
+is the overall aspect of this.
+
 When the term *data* is used, it refers to a single data object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
 
 On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.

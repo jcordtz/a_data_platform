@@ -63,6 +63,8 @@ Dette overordnede paradigme skal sikre at en dataplatform opfylder følgende ege
 
 Begreberne *data* og *datasæt* er dataplatformens "kernekomponenter".
 
+Et meget vigtigt aspekt af især *data*, men også til en vis grad *datasæt* er, at et givet objekt skal kunne håndteres, vedligeholdes og sikres i sig selv, det vil sige ikke gennem nogen teknologikomponent som en database, derfor er **fil** håndtering det overordnede aspekt af dette.
+
 Når udtrykket *data* bruges, refererer det til et enkelt dataobjekt som en tabel eller fil, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
 
 På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.   *Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:

@@ -61,6 +61,8 @@ Dieses übergeordnete Paradigma soll sicherstellen, dass eine Datenplattform die
 
 Die Konzepte *data* und *dataset* sind die "Kernkomponenten" der Datenplattform.
 
+Ein sehr wichtiger Aspekt insbesondere von *Daten*, aber auch bis zu einem gewissen Grad *Datensätze* ist, dass ein gegebenes Objekt in der Lage sein muss, von sich selbst gehandhabt, gepflegt und gesichert zu werden, d.h. nicht durch eine Technologiekomponente wie eine Datenbank, daher ist die **file-handhabung** der Gesamtaspekt davon.
+
 Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
 
 Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt.   Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
