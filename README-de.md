@@ -20,7 +20,7 @@ Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "wa
 
 > [!Hinweis]
 > Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
-> Die nächsten Themen werden wohl Governance/Compliance und GenAI sein, da wir diese im Zusammenhang mit einer Datenplattform allmählich besser kennen
+> Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
 
 ## Hintergrund
 

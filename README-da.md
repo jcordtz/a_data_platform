@@ -20,7 +20,8 @@ Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som
 
 > [!Note]
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
-> De næste emner bliver nok Governance/Compliance og GenAI, da vi begynder at have bedre viden om disse i forbindelse med en dataplatform
+> De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
+> med dataplatforme som er i brug.
 
 ## Baggrund
 

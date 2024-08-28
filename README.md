@@ -20,13 +20,14 @@ The content of this document is not a "this is best practice", but a "you ought 
 
 > [!NOTE]
 > This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
-> The next topics will most likely be Governance/Compliance and GenAI, as we start getting better knowledge about this in connection with a dataplatform
+> The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
+> the different implementations we have of dataplatforms in use.
 
 ## Background
 
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
 
-This concept of a data platform can basically be applied on any data platform setup, but that is (currently) not covered.
+This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
 
 > [!NOTE]
 > The document is based on Microsoft technology components.
