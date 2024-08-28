@@ -313,7 +313,7 @@ Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til 
 
 **Krypteringsbaseret adgangskontrol** - dette er ikke rigtig adgangskontrol, fordi datalagringen vil være tilgængelig, men man kan kun læse / bruge dataene, hvis man har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
 
-**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i **consume** rområdet. Denne tilgang bruger det aspekt af forbrugsområdet, at et datalager kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet datalager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
+**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i **publish** rområdet. Denne tilgang bruger det aspekt af **publish** området, at et *datasæt* kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
 
 ## DataOps
 

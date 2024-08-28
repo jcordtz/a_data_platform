@@ -19,7 +19,7 @@ This document explains how you could create a data platform that will be able to
 The content of this document is not a "this is best practice", but a "you ought to consider this" when establishing your data platform.
 
 > [!NOTE]
-> This document will represent a ever lasting *work in progress*, as we learn new stuff all the time.
+> This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
 > The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
 > the different implementations we have of dataplatforms in use.
 
@@ -299,7 +299,7 @@ In Figure 4 you will find several ways to protect data which are available in Az
 
 **Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
 
-**Removal Based Access Control** – this approach is only feasible in the **consume area**. This approach uses the aspect of the **consume area** that a data store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *data* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *data* loss.
+**Removal Based Access Control** – this approach is only feasible in the **publish area**. This approach uses the aspect of the **publish area** that a dataset store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
 
 ## Data Operations
 
