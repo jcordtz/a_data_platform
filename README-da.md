@@ -200,6 +200,33 @@ For at illustrere dette kan du forestille dig et tog, der er forsinket. Systemet
 
 Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
 
+## Endnu et særligt tilfælde - ChatGPT/CoPilot
+
+I takt med at AI/ML/GenAI bliver mere og mere tilgængelige, bliver kravene og dermed udfordringerne på de dataelementer, der bruges i sådanne løsninger, endnu vigtigere.
+
+En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-løsning er at bruge en metode kendt som RAG, der står for Retrieval Augmented Generation.
+
+RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **jordforbindelse** data. Tilføjelse af et informationshentningssystem giver dig kontrol over jordingsdata, der bruges af en LLM, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, at du kan begrænse generativ AI til dit virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis du har integreringsmodeller for det pågældende indhold.
+
+! [Microsoft RAG-arkitektur](images/english/architecture-diagram.png)
+*Microsoft RAG-arkitektur*
+
+Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM. Informationssøgningssystemet skal indeholde:
+
+1. Indekseringsstrategier, der indlæses og opdateres i stor skala for alt dit indhold med den frekvens, du har brug for.
+
+1. Forespørgselsfunktioner og relevansjustering. Systemet bør returnere relevante resultater i de korte formater, der er nødvendige for at opfylde kravene til tokenlængde for LLM-input.
+
+1. Sikkerhed, global rækkevidde og pålidelighed for både data og drift.
+
+1. Integration med indlejringsmodeller til indeksering og chatmodeller eller sprogforståelsesmodeller til hentning.
+
+Azure AI Search er et eksempel på en sådan "database", der giver indekserings- og forespørgselsfunktioner med infrastrukturen og sikkerheden i Azure-cloudmiljøet.
+
+Gennem kode og andre komponenter kan du designe en omfattende RAG-løsning, der inkluderer alle elementerne til generativ AI over dit proprietære indhold.
+
+På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til, så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer datasæt med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes efter brug.
+
 ## Roller
 
 Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og datasæt i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.

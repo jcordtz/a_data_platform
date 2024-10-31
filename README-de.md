@@ -198,6 +198,32 @@ Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat
 
 Diese *Daten* werden aber **auch** in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. Dieser 
 
+## Ein weiterer Sonderfall - ChatGPT/CoPilot
+
+Da KI/ML/GenKI immer zugänglicher wird, werden die Anforderungen und damit Herausforderungen an die Datenelemente, die in solchen Lösungen verwendet werden, noch wichtiger.
+
+Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-Lösung zu bringen, ist die Verwendung einer Methode namens RAG, die für Retrieval Augmented Generation steht.
+
+RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
+
+! [Microsoft RAG-Architektur](images/englisch/architecture-diagram.png)
+*Microsoft RAG-Architektur*
+
+Die Entscheidung, welches Informationsabrufsystem verwendet werden soll, ist entscheidend, da es die Eingaben für das LLM bestimmt. Das Informationsabrufsystem sollte Folgendes bieten:
+
+1. Indizierungsstrategien, die alle Ihre Inhalte in großem Umfang und in der von Ihnen gewünschten Häufigkeit laden und aktualisieren.
+
+1. Abfragefunktionen und Relevanzoptimierung. Das System sollte relevante Ergebnisse in den Kurzformaten zurückgeben, die erforderlich sind, um die Anforderungen an die Tokenlänge von LLM-Eingaben zu erfüllen.
+
+1. Sicherheit, globale Reichweite und Zuverlässigkeit sowohl für Daten als auch für Abläufe.
+
+1. Integration mit Einbettungsmodellen für die Indizierung und Chat-Modellen oder Sprachverständnismodellen für den Abruf.
+
+Azure AI Search ist ein Beispiel für eine solche "Datenbank", die Indizierungs- und Abfragefunktionen mit der Infrastruktur und Sicherheit der Azure-Cloud bietet.
+
+Durch Code und andere Komponenten können Sie eine umfassende RAG-Lösung entwerfen, die alle Elemente für generative KI für Ihre proprietären Inhalte enthält.
+
+Auf der Grundlage des oben Gesagten müssen wir sicherstellen, dass die Daten, die wir den erstellten Lösungen zur Verfügung stellen, genau mit dem übereinstimmen, worauf der Benutzer Zugriff hat, so dass die Erdung und damit die Vektordatenbank nur dies enthält. Dies kann über den Veröffentlichungs-Layer erfolgen, da dieser Layer Datensätze mit dem genauen Inhalt darstellt. Die Aufgabe besteht also darin, die verwendeten Vektordatenbanken zu "laden" - und sicherzustellen, dass diese nach der Verwendung gestoppt/entfernt werden.
 ## Rollen
 
 Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.

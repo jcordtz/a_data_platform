@@ -187,6 +187,33 @@ To illustrate this, imagine a train that is delayed. The system that displays th
 
 However, this *data* is **also** stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones.
 
+## Another special case - ChatGPT/CoPilot
+
+As AI/ML/GenAI is becoming more and more accessible the requirements and hence challenges on the data elements being used in such solutions gets even more important.
+
+A typical approach for bringing your own data in scope of especially a GenAI solution is using a method known as RAG, standing for Retrieval Augmented Generation.
+
+RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data. Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
+
+![Microsoft RAG Architecture](images/english/architecture-diagram.png)
+*Microsoft RAG Architecture*
+
+The decision about which information retrieval system to use is critical because it determines the inputs to the LLM. The information retrieval system should provide:
+
+1. Indexing strategies that load and refresh at scale, for all of your content, at the frequency you require.
+
+1. Query capabilities and relevance tuning. The system should return relevant results, in the short-form formats necessary for meeting the token length requirements of LLM inputs.
+
+1. Security, global reach, and reliability for both data and operations.
+
+1. Integration with embedding models for indexing, and chat models or language understanding models for retrieval.
+
+Azure AI Search is an example of such a "database" which provides indexing and query capabilities, with the infrastructure and security of the Azure cloud.
+
+Through code and other components, you can design a comprehensive RAG solution that includes all of the elements for generative AI over your proprietary content.
+
+Based on the above we must ensure that the data we provide to the solutions created fits exactly what the user has access to, so that the grounding and hence the vector database contains only this. This can be done through the publish layer as this layer represents datasets with the exact content. So the task is to "load" the vector databases being used - and make sure these are stopped/removed after usage.
+
 ## Roles
 
 We will use roles as a mechanism of controlling access to the *data* and *datasets*  in the data platform as well as assigning the right responsibilities to persons having these roles.
