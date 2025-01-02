@@ -339,7 +339,15 @@ Die **Attributbasierte Zugriffskontrolle** – auch bekannt als ABAC – bietet 
 
 **Löschbasierte Zugriffssteuerung** – dieser Ansatz ist nur im bereich **Veröffentlichen** verfügbar. Dieser Ansatz nutzt den Aspekt des **Veröffentlihen** bereichs, dass ein *Datensetz* nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
 
+## Daten operationen
 
+Laut Wikipedia ist DataOps eine Sammlung von Praktiken, Prozessen und Technologien, die eine ganzheitliche und prozessorientierte Sicht auf Daten mit Automatisierung und Methoden aus dem agilen Software-Engineering kombiniert, um Qualität, Geschwindigkeit und Zusammenarbeit zu verbessern und eine Kultur der kontinuierlichen Verbesserung rund um die Datenanalyse zu fördern.
+
+Während DataOps als eine Reihe von Best Practices begann, hat es sich inzwischen zu einem neuen und eigenständigen Ansatz für die Datenanalyse entwickelt. DataOps deckt den gesamten Datenlebenszyklus von der Datenaufbereitung bis zur Berichterstattung ab und erkennt die gegenseitige Abhängigkeit des Datenanalyseteams und der IT-Abläufe an.
+
+In der Softwareentwicklung legt DevOps den Schwerpunkt auf Continuous Delivery durch den Einsatz von On-Demand-IT-Ressourcen und durch die Automatisierung von Test und Bereitstellung von Software. Diese Art der Softwareentwicklung und des IT-Betriebs hat die Geschwindigkeit, Qualität, Vorhersagbarkeit und den Umfang der Softwareentwicklung und -bereitstellung verbessert.
+
+DataOps greift Methoden von DevOps auf und zielt darauf ab, dieselben Verbesserungen in die Datenanalyse zu bringen. DataOps sollten nicht mit einer bestimmten Technologie, Architektur, einem Tool, einer Sprache oder einem Framework verknüpft werden.
 
 ### Umgebungen und Tags
 
