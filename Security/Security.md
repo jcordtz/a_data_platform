@@ -12,18 +12,69 @@ This section focuses on the "mere" security aspect on how to handle data. It cov
 
 This part is also a lot about processes and hence highlighting that you cannot solve data security by "just clicking some boxes in you IT systems".
 
+In regard of scope, this document is in line with the overall Data Platform document and does not hence (yet) describe other aspects of data security than the once supporting this.
+I think the most mechanism are useable for other kinds of data - including also "end-user" document handling like OneDrive.
 
-### Data and security
+## Data and security
 
-Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle. By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
+Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle.
+By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
 
-Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and recover it faster. The goal of data security is to make your data resilient against any kind of misuse that being attacks, errors etc.
+Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data
+security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and
+be able to recover it faster. The goal of data security is to make your data as resilient as possible against any kind of misuse that being attacks, errors etc.
 
-In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
+In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance
+requirements, and maintain customer trust.
 
-### Logical mechanism
+## Legislation
 
-### Technical mechanism
+This document will use the two EU directives NIS2 and GDPR as examples of legislation being implemented.
+GDPR is used because it describes what you can do with personal data and therefor what you should do with valuable data.
+NIS2 is used because it tells what to do if things goes wrong and what need to be considered trying to avoid this.
+
+### GDPR
+
+This Regulation lays down rules relating to the protection of *natural persons* with regard to the processing of **personal** data and rules relating to the free movement of personal data.
+This Regulation protects fundamental rights and freedoms of natural persons and in particular their right to the protection of personal data.
+The free movement of personal data within the Union shall be neither restricted nor prohibited for reasons connected with the protection of natural persons with regard to the processing of personal data.
+
+(Reference: https://gdpr-info.eu/art-1-gdpr/)
+
+So this directive protects individuals data from misusage. One of the main objectives in the GDPR directive is that data need to be **classified**.
+
+### NIS2
+
+The NIS2 Directive (EU Directive 2022/2555) is a legislative framework designed to enhance cybersecurity across the European Union by establishing a high common level of security for network and information systems.
+It builds upon the original NIS Directive, expanding its scope and strengthening requirements to better address evolving cyber threats.
+
+Under NIS2, essential and important entities must adopt appropriate, proportionate technical, operational, and organizational measures to manage cybersecurity risks.
+These measures aim to protect network and information systems, as well as to prevent or minimize the impact of incidents on service recipients and interconnected services.
+
+The directive mandates an "all-hazards" approach, meaning that entities must be prepared to address a wide range of threats, from cyber attacks to physical disruptions, ensuring comprehensive protection and resilience in their operations.
+
+(Reference: https://www.nis-2-directive.com/)
+
+This directive regulates what needs to be in place regarding the usage of data. One of the main objectives is that you need to know where **all** your data is - as described in the most common used framework *behind* NIS 2 being CIS 18.
+
+## Threats
+
+## Logical mechanism
+
+Discover your most valuable asset, your data
+Secure configuration to prevent sophisticated attacks
+Detect how users are interacting with data and identify insider risks
+Ensure your data remains secure from data leakage and data exfiltration activities
+
+### Classification
+
+### Labeling
+
+### Policies
+
+
+
+## Technical mechanism
 
 In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
