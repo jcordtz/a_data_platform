@@ -59,6 +59,10 @@ This directive regulates what needs to be in place regarding the usage of data. 
 
 ## Threats
 
+When discussing security it is also essential to understand what it is we are trying to protect against - what are the threats ?
+
+Their are som obvious threats that comes with the term cybersecurity. We need to protect data against outsider threats. These threats spans from others that wants to steal our data for own use, 
+
 ## Logical mechanism
 
 Discover your most valuable asset, your data
