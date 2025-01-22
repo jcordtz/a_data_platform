@@ -520,4 +520,6 @@ The following are some examples of ways to implement a data platform using diffe
 
 [Fabric based](Microsoft/Azure/Fabric/README.md)
 
+[Snowflake based](Microsoft/Azure/Snowflake/README.md)
+
 [Microsoft Purview and the data platform](Microsoft/Purview/README.md)

@@ -29,9 +29,10 @@ requirements, and maintain customer trust.
 
 ## Legislation
 
-This document will use the two EU directives NIS2 and GDPR as examples of legislation being implemented.
+This document will use the two EU directives NIS2 and GDPR and the US HPIAA rules as examples of legislation being implemented.
 GDPR is used because it describes what you can do with personal data and therefor what you should do with valuable data.
 NIS2 is used because it tells what to do if things goes wrong and what need to be considered trying to avoid this.
+HIPAA is used because it focuses on Health Information, and is actually three laws in one. It consists of the Privacy Rule, the Security Rule and the Data Breach Notification Rule. 
 
 ### GDPR
 
@@ -57,11 +58,23 @@ The directive mandates an "all-hazards" approach, meaning that entities must be 
 
 This directive regulates what needs to be in place regarding the usage of data. One of the main objectives is that you need to know where **all** your data is - as described in the most common used framework *behind* NIS 2 being CIS 18.
 
+### HPIAA
+
+HPIAA's three rules/laws:
+•	The Privacy Rule: The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  
+•	The Security Rule: The HIPAA Security Rule establishes national standards to protect individuals’ electronic personal health information that is created, received, used, or maintained by a covered entity. The Security Rule requires appropriate administrative, physical and technical safeguards to ensure the confidentiality, integrity, and security of electronic protected health information. 
+•	Data Breach Notifications: The Breach Notification Rule requires covered entities and business associates to notify affected individuals, HHS, and, in some cases, the media of a breach of unsecured PHI.
+
+(Reference: https://www.hhs.gov/hipaa/index.html)
+
+HPIAA is in effect together with other rules/laws, so data will live and need to be handled under these different kind of rules. 
+These rules are i.e. Virginia Consumer Data Protection Act, Illinois’ Biometric Information Privacy Act etc. 
+
 ## Threats
 
 When discussing security it is also essential to understand what it is we are trying to protect against - what are the threats ?
 
-Their are som obvious threats that comes with the term cybersecurity. We need to protect data against outsider threats. These threats spans from others that wants to steal our data for own use, 
+Their are som obvious threats that comes with the term cybersecurity. We need to protect data against outsider threats. These threats spans from others that wants to steal our data for own use, over "hijacking" of data to terror acts like deletion/destroying of data.
 
 ## Logical mechanism
 
