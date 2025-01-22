@@ -507,7 +507,7 @@ Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsa
 
 ## Beispiele für Implementierungen
 
-Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Microsoft-Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
+Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
 
 > [! Hinweis]
 > Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
@@ -519,5 +519,7 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 [DataBricks-basiert](Microsoft/Databricks/README-de.md)
 
 [Fabric-basiert](Microsoft/Fabric/README-de.md)
+
+[Snowflake-basiert](Microsoft/Snowflake/README-de.md)
 
 [Microsoft Purview und die data platform](Microsoft/Purview/README-de.md)

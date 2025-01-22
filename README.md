@@ -507,7 +507,8 @@ This also represents how the data platform should be able to exactly support the
 
 ## Examples of implementations
 
-The following are some examples of ways to implement a data platform using different Microsoft services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites your business opportunities and challenges.
+The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites best in
+regards of your business opportunities and challenges.
 
 > [!NOTE]
 > These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.

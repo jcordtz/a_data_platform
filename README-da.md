@@ -518,7 +518,8 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 
 ## Eksempler på implementeringer
 
-Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige Microsoft-tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer til ens forretningsmuligheder og udfordringer.
+Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester. 
+Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer bedst i forhold til de muligheder og udfordringer man måtte have.
 
 > [!Note]
 > Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
@@ -530,5 +531,7 @@ Følgende er eksempler på måder man kan implementere en dataplatform ved hjæl
 [DataBricks baseret](Microsoft/Databricks/README-da.md)
 
 [Fabric baseret](Microsoft/Fabric/README-da.md)
+
+[Snowflake baseret](Microsoft/Snowflake/README-da.md)
 
 [Microsoft Purview og data platformen](Microsoft/Purview/README-da.md)
