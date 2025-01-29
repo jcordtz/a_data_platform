@@ -524,14 +524,14 @@ Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man
 > [!Note]
 > Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
-[Azure Baseret](Microsoft/Azure/README-da.md)
+[Azure Baseret](Microsoft/Azure/README-da.md) - en data platform lavet v.h.a. Azure PaaS Services
 
-[Synapse baseret](Microsoft/Synapse/README-da.md)
+[Synapse baseret](Microsoft/Synapse/README-da.md) - løsningen bygget v.h.a. Azure PaaS servicen Synapse
 
-[Fabric baseret](Microsoft/Fabric/README-da.md)
+[Fabric baseret](Microsoft/Fabric/README-da.md) - en data platform v.h.a. SaaS læsningen Microsoft Fabric
 
-[DataBricks baseret](Partners/Databricks/README-da.md)
+[DataBricks baseret](Partners/Databricks/README-da.md) - Azure Databricks som udgangspunkt for løsningen
 
-[Snowflake baseret](Partners/Snowflake/README-da.md)
+[Snowflake baseret](Partners/Snowflake/README-da.md) - brugen af SaaS løsningen Snowflake sammen med Azure PaaS services
 
-[Microsoft Purview og data platformen](Microsoft/Purview/README-da.md)
+[Microsoft Purview og data platformen](Microsoft/Purview/README-da.md) - Governance og Compliance af løsningen sammen med Microsoft Purview

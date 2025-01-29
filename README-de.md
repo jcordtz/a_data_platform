@@ -512,14 +512,14 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 > [! Hinweis]
 > Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
-[Azure-basiert](Microsoft/Azure/README-de.md)
+[Azure-basiert](Microsoft/Azure/README-de.md) – Verwendung von PaaS-Diensten von Azure
 
-[Synapse-basiert](Microsoft/Synapse/README-de.md)
+[Synapse-basiert](Microsoft/Synapse/README-de.md) – mit Synapse PaaS-Dienst
 
-[Fabric-basiert](Microsoft/Fabric/README-de.md)
+[Stoffbasiert](Microsoft/Azure/Fabric/README-de.md) - unter Verwendung der SaaS-Lösung Microsoft Fabric
 
-[DataBricks-basiert](Partners/Databricks/README-de.md)
+[DataBricks-basiert](Patrners/Databricks/README-de.md) – unter Verwendung des 1st-Party-PaaS-Dienstes Azure DataBricks
 
-[Snowflake-basiert](Partners/Snowflake/README-de.md)
+[Snowflake-basiert](Partners/Snowflake/README-de.md) - Verwendung des SaaS-Dienstes Snowflake zusammen mit Azure-Diensten
 
-[Microsoft Purview und die data platform](Microsoft/Purview/README-de.md)
+[Microsoft Purview und die Datenplattform](Microsoft/Purview/README-de.md) – Governance und Compliance der Datenplattform mit Purview

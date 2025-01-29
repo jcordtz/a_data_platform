@@ -513,14 +513,14 @@ regards of your business opportunities and challenges.
 > [!NOTE]
 > These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
-[Azure Based](Microsoft/Azure/README.md)
+[Azure Based](Microsoft/Azure/README.md) - using PaaS services from Azure
 
-[Synapse based](Microsoft/Synapse/README.md)
+[Synapse based](Microsoft/Synapse/README.md) - using Synapse PaaS service 
 
-[Fabric based](Microsoft/Azure/Fabric/README.md)
+[Fabric based](Microsoft/Azure/Fabric/README.md) - using the SaaS solution Microsoft Fabric
 
-[DataBricks based](Patrners/Databricks/README.md)
+[DataBricks based](Patrners/Databricks/README.md) - using the 1st party PaaS service Azure DataBricks
 
-[Snowflake based](Partners/Snowflake/README.md)
+[Snowflake based](Partners/Snowflake/README.md) - using the SaaS service Snowflake together with Azure services
 
-[Microsoft Purview and the data platform](Microsoft/Purview/README.md)
+[Microsoft Purview and the data platform](Microsoft/Purview/README.md) - governance and compliance of the data paltform using Purview
