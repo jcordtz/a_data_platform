@@ -517,10 +517,10 @@ regards of your business opportunities and challenges.
 
 [Synapse based](Microsoft/Synapse/README.md)
 
-[DataBricks based](Microsoft/Databricks/README.md)
-
 [Fabric based](Microsoft/Azure/Fabric/README.md)
 
-[Snowflake based](Microsoft/Azure/Snowflake/README.md)
+[DataBricks based](Patrners/Databricks/README.md)
+
+[Snowflake based](Partners/Snowflake/README.md)
 
 [Microsoft Purview and the data platform](Microsoft/Purview/README.md)

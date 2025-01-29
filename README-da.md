@@ -528,10 +528,10 @@ Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man
 
 [Synapse baseret](Microsoft/Synapse/README-da.md)
 
-[DataBricks baseret](Microsoft/Databricks/README-da.md)
-
 [Fabric baseret](Microsoft/Fabric/README-da.md)
 
-[Snowflake baseret](Microsoft/Snowflake/README-da.md)
+[DataBricks baseret](Partners/Databricks/README-da.md)
+
+[Snowflake baseret](Partners/Snowflake/README-da.md)
 
 [Microsoft Purview og data platformen](Microsoft/Purview/README-da.md)

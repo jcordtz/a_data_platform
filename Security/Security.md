@@ -58,7 +58,7 @@ The directive mandates an "all-hazards" approach, meaning that entities must be 
 
 This directive regulates what needs to be in place regarding the usage of data. One of the main objectives is that you need to know where **all** your data is - as described in the most common used framework *behind* NIS 2 being CIS 18.
 
-### HPIAA
+### HIPAA
 
 HPIAA's three rules/laws:
 •	The Privacy Rule: The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  

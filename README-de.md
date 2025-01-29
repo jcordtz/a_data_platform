@@ -516,10 +516,10 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 
 [Synapse-basiert](Microsoft/Synapse/README-de.md)
 
-[DataBricks-basiert](Microsoft/Databricks/README-de.md)
-
 [Fabric-basiert](Microsoft/Fabric/README-de.md)
 
-[Snowflake-basiert](Microsoft/Snowflake/README-de.md)
+[DataBricks-basiert](Partners/Databricks/README-de.md)
+
+[Snowflake-basiert](Partners/Snowflake/README-de.md)
 
 [Microsoft Purview und die data platform](Microsoft/Purview/README-de.md)
