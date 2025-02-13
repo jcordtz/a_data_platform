@@ -12,8 +12,9 @@ This section focuses on the "mere" security aspect on how to handle data. It cov
 
 This part is also a lot about processes and hence highlighting that you cannot solve data security by "just clicking some boxes in you IT systems".
 
-In regard of scope, this document is in line with the overall Data Platform document and does not hence (yet) describe other aspects of data security than the once supporting this.
-I think the most mechanism are useable for other kinds of data - including also "end-user" document handling like OneDrive.
+In regard of scope, this section is in line with the overall Data Platform document and does not hence (yet) describe other aspects of data security than the once supporting this.
+
+I think the most mechanism are useable for other kinds of data - including also "end-user" document handling like Microsoft OneDrive.
 
 ## Types of threats
 
@@ -24,7 +25,7 @@ this Wikipedia articel - <https://en.wikipedia.org/wiki/Computer_security>, wher
 
 ### Backdoor
 
-A backdoor in a computer system, a cryptosystem, or an algorithm is any secret method of bypassing normal authentication or security controls. 
+A backdoor in a computer system, a cryptosystem, or an algorithm is any secret method of bypassing normal authentication or security controls.
 
 ### Denial-of-service attack
 
@@ -148,6 +149,26 @@ HIPAA is in effect together with other rules/laws, so data will live and need to
 These rules are i.e. Virginia Consumer Data Protection Act, Illinois’ Biometric Information Privacy Act etc.
 
 Reference: <https://www.hhs.gov/hipaa/index.html>
+
+### EU Artificial intelligence Act
+
+The EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI). It establishes a common regulatory 
+and legal framework for AI within the European Union. It came into force on 1 August 2024, with provisions that shall come into operation gradually over the following 6 to 36 months.
+
+It covers all types of AI across a broad range of sectors, with exceptions for AI systems used solely for military, national security, research and non-professional purposes.
+
+As a piece of product regulation, it does not confer rights on individuals, but regulates the providers of AI systems and entities using AI in a professional context.
+
+The Act classifies non-exempt AI applications by their risk of causing harm. There are four levels – unacceptable, high, limited, minimal – plus an additional category for general-purpose AI.
+
+* Applications with unacceptable risks are banned.
+* High-risk applications must comply with security, transparency and quality obligations, and undergo conformity assessments.
+* Limited-risk applications only have transparency obligations.
+* Minimal-risk applications are not regulated.
+
+For general-purpose AI, transparency requirements are imposed, with reduced requirements for open source models, and additional evaluations for high-capability models.
+
+Reference: <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689>
 
 ## Threats
 
