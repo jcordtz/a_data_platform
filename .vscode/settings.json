@@ -1,5 +1,6 @@
 {
     "cSpell.enableFiletypes": [
         "markdown"
-    ]
+    ],
+    "github.copilot.nextEditSuggestions.enabled": true
 }
