@@ -310,7 +310,7 @@ Data security is important because it helps organizations guard against cyber at
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
 
-In the section [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect. 
+In the section [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect.
 This section will continue with some more technical possibilities.
 
 In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.

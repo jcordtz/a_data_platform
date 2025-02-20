@@ -20,7 +20,7 @@ I think the most mechanism are useable for other kinds of data - including also 
 
 Before looking into how data could be protected we need to have an understanding of what we are protecting against.
 
-Here are a list of common types of threats that could be used against our data estate. This list is "copied in headlines" from
+Here are a list of common types of threats that could occur in our data estate. This list is "copied in headlines" from
 this Wikipedia articel - <https://en.wikipedia.org/wiki/Computer_security>, where much more detailed information can be found.
 
 ### Backdoor
@@ -39,7 +39,8 @@ covert listening devices or using wireless microphones.
 
 ### Eavesdropping
 
-Eavesdropping is the act of surreptitiously listening to a private computer conversation (communication), usually between hosts on a network. It typically occurs when a user connects to a network where traffic is not secured or encrypted and sends sensitive business data to a colleague, which, when listened to by an attacker, could be exploited.
+Eavesdropping is the act of surreptitiously listening to a private computer conversation (communication), usually between hosts on a network. It typically occurs when a user
+connects to a network where traffic is not secured or encrypted and sends sensitive business data to a colleague, which, when listened to by an attacker, could be exploited.
 Data transmitted across an open network allows an attacker to exploit a vulnerability and intercept it via various methods.
 
 ### Malware
@@ -48,7 +49,8 @@ Malicious software (malware) is any software code or computer program "intention
 
 ### Man-in-the-middle attacks
 
-Man-in-the-middle attacks (MITM) involve a malicious attacker trying to intercept, surveil or modify communications between two parties by spoofing one or both party's identities and injecting themselves in-between.
+Man-in-the-middle attacks (MITM) involve a malicious attacker trying to intercept, surveil or modify communications between two parties by spoofing one or both
+party's identities and injecting themselves in-between.
 
 ### Phishing
 
@@ -56,7 +58,7 @@ Phishing is the attempt of acquiring sensitive information such as usernames, pa
 
 ### Privilege escalation
 
-Privilege escalation describes a situation where an attacker with some level of restricted access is able to, without authorization, 
+Privilege escalation describes a situation where an attacker with some level of restricted access is able to, without authorization,
 elevate their privileges or access level.
 
 ### Side-channel attack
@@ -67,20 +69,25 @@ normally should be inaccessible.
 
 ### Social engineering
 
-Social engineering, in the context of computer security, aims to convince a user to disclose secrets such as passwords, card numbers, etc. or grant physical access by, for example, impersonating a senior executive, bank, a contractor, or a customer.[34] This generally involves exploiting people's trust, and relying on their cognitive biases. A common scam involves emails sent to accounting and finance department personnel, impersonating their CEO and urgently requesting some action. One of the main techniques of social engineering are phishing attacks.
+Social engineering, in the context of computer security, aims to convince a user to disclose secrets such as passwords, card numbers, etc. or grant physical access by,
+for example, impersonating a senior executive, bank, a contractor, or a customer.[34] This generally involves exploiting people's trust, and relying on their cognitive biases.
+A common scam involves emails sent to accounting and finance department personnel, impersonating their CEO and urgently requesting some action. One of the main techniques of
+social engineering are phishing attacks.
 
 ### Spoofing
 
-Spoofing is an act of pretending to be a valid entity through the falsification of data (such as an IP address or username), in order to gain access to information or resources that one is otherwise unauthorized to obtain. Spoofing is closely related to phishing.[37][38] There are several types of spoofing, including:
+Spoofing is an act of pretending to be a valid entity through the falsification of data (such as an IP address or username), in order to gain access to information or resources
+that one is otherwise unauthorized to obtain. Spoofing is closely related to phishing.
 
 ### Tampering
 
-Tampering describes a malicious modification or alteration of data. It is an intentional but unauthorized act resulting in the modification of a system, components of systems, its intended behavior, or data. So-called Evil Maid attacks and security services planting of surveillance capability into routers are examples.[41]
+Tampering describes a malicious modification or alteration of data. It is an intentional but unauthorized act resulting in the modification of a system, components of systems, its
+intended behavior, or data. So-called Evil Maid attacks and security services planting of surveillance capability into routers are examples.
 
 ### HTML smuggling
 
-HTML smuggling allows an attacker to smuggle a malicious code inside a particular HTML or web page.[42] HTML files can carry payloads concealed as benign, inert data in order to defeat content filters. These payloads can be reconstructed on the other side of the filter.[43]
-
+HTML smuggling allows an attacker to smuggle a malicious code inside a particular HTML or web page. HTML files can carry payloads concealed as benign, inert data in order to defeat
+content filters. These payloads can be reconstructed on the other side of the filter.
 
 ## Data and security
 
@@ -96,14 +103,16 @@ requirements, and maintain customer trust.
 
 ## Legislation
 
-On a political/legislational level a lot of very good work (I think) has happened over the last years to outline and set requirements (laws) 
+On a political/legislational level a lot of very good work (I think) has happened over the last years to outline and set requirements (laws)
 on what we have to do to protect our data assets. And hence protect our customers, citizens and us self as individuals.
 
 This document will use the two EU directives NIS2 and GDPR and the US HIPAA rules as examples of legislation being implemented.
-GDPR is used because it describes what you can do with personal data and therefor how you should handle personal valuable data (PII).
-NIS2 is used because it tells what to do if things goes wrong and what need to be considered trying to avoid this.
-HIPAA is used because it focuses on Health Information, and is actually three laws in one. It consists of the Privacy Rule, the Security Rule and 
+
+1) GDPR is used because it describes what you can do with personal data and therefor how you should handle personal valuable data (PII).
+2) NIS2 is used because it tells what to do if things goes wrong and what need to be considered trying to avoid this.
+3) HIPAA is used because it focuses on Health Information, and is actually three laws in one. It consists of the Privacy Rule, the Security Rule and
 the Data Breach Notification Rule.
+4) EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI). 
 
 ### GDPR
 

@@ -56,7 +56,7 @@ Phishing ist der Versuch, vertrauliche Informationen wie Benutzernamen, Passwör
 
 ### Ausweitung von Berechtigungen
 
-Privilegienausweitung beschreibt eine Situation, in der ein Angreifer mit einem gewissen Grad an eingeschränktem Zugriff in der Lage ist, 
+Privilegienausweitung beschreibt eine Situation, in der ein Angreifer mit einem gewissen Grad an eingeschränktem Zugriff in der Lage ist,
 Erhöhen Sie ihre Berechtigungen oder Zugriffsebene.
 
 ### Seitenkanal-Angriff
@@ -67,19 +67,19 @@ sollte normalerweise nicht zugänglich sein.
 
 ### Soziales Ingenieurwesen
 
-Social Engineering zielt im Zusammenhang mit der Computersicherheit darauf ab, einen Benutzer davon zu überzeugen, Geheimnisse wie Passwörter, Kartennummern usw. preiszugeben oder physischen Zugang zu gewähren, indem er sich beispielsweise als leitender Angestellter, Bank, Auftragnehmer oder Kunde ausgibt. [34] Dabei geht es in der Regel darum, das Vertrauen der Menschen auszunutzen und sich auf ihre kognitiven Verzerrungen zu verlassen. Ein häufiger Betrug sind E-Mails, die an Mitarbeiter der Buchhaltungs- und Finanzabteilung gesendet werden, sich als deren CEO ausgeben und dringend zum Handeln auffordern. Eine der Haupttechniken des Social Engineering sind Phishing-Angriffe.
+Social Engineering zielt im Zusammenhang mit der Computersicherheit darauf ab, einen Benutzer davon zu überzeugen, Geheimnisse wie Passwörter, Kartennummern usw. preiszugeben oder physischen Zugang zu gewähren, indem er sich beispielsweise als leitender Angestellter, Bank, Auftragnehmer oder Kunde ausgibt. Dabei geht es in der Regel darum, das Vertrauen der Menschen auszunutzen und sich auf ihre kognitiven Verzerrungen zu verlassen. Ein häufiger Betrug sind E-Mails, die an Mitarbeiter der Buchhaltungs- und Finanzabteilung gesendet werden, sich als deren CEO ausgeben und dringend zum Handeln auffordern. Eine der Haupttechniken des Social Engineering sind Phishing-Angriffe.
 
 ### Spoofing
 
-Spoofing ist ein Akt, bei dem durch die Fälschung von Daten (z. B. einer IP-Adresse oder eines Benutzernamens) vorgetäuscht wird, eine gültige Entität zu sein, um Zugang zu Informationen oder Ressourcen zu erhalten, die man sonst nicht erhalten kann. Spoofing ist eng mit Phishing verwandt. [37][38] Es gibt verschiedene Arten von Spoofing, darunter:
+Spoofing ist ein Akt, bei dem durch die Fälschung von Daten (z. B. einer IP-Adresse oder eines Benutzernamens) vorgetäuscht wird, eine gültige Entität zu sein, um Zugang zu Informationen oder Ressourcen zu erhalten, die man sonst nicht erhalten kann. Spoofing ist eng mit Phishing verwandt.
 
 ### Manipulation
 
-Unter Manipulation versteht man eine böswillige Modifikation oder Veränderung von Daten. Es handelt sich um eine vorsätzliche, aber nicht autorisierte Handlung, die zur Änderung eines Systems, von Systemkomponenten, seines beabsichtigten Verhaltens oder von Daten führt. Beispiele dafür sind die sogenannten Evil Maid-Angriffe und die Einschleusung von Überwachungsfunktionen durch Sicherheitsdienste in Router. [41]
+Unter Manipulation versteht man eine böswillige Modifikation oder Veränderung von Daten. Es handelt sich um eine vorsätzliche, aber nicht autorisierte Handlung, die zur Änderung eines Systems, von Systemkomponenten, seines beabsichtigten Verhaltens oder von Daten führt. Beispiele dafür sind die sogenannten Evil Maid-Angriffe und die Einschleusung von Überwachungsfunktionen durch Sicherheitsdienste in Router.
 
 ### HTML-Schmuggel
 
-HTML-Schmuggel ermöglicht es einem Angreifer, einen bösartigen Code in eine bestimmte HTML-Datei oder Webseite einzuschleusen. [42] HTML-Dateien können Payloads enthalten, die als gutartige, inerte Daten getarnt sind, um Inhaltsfilter zu umgehen. Diese Nutzlasten können auf der anderen Seite des Filters rekonstruiert werden. [43]
+HTML-Schmuggel ermöglicht es einem Angreifer, einen bösartigen Code in eine bestimmte HTML-Datei oder Webseite einzuschleusen. HTML-Dateien können Payloads enthalten, die als gutartige, inerte Daten getarnt sind, um Inhaltsfilter zu umgehen. Diese Nutzlasten können auf der anderen Seite des Filters rekonstruiert werden.
 
 ## Daten und Sicherheit
 
@@ -99,10 +99,12 @@ Auf politischer/legislativer Ebene ist in den letzten Jahren (glaube ich) viel s
 darüber, was wir tun müssen, um unsere Datenbestände zu schützen. Und damit unsere Kunden, Bürger und uns selbst als Individuen zu schützen.
 
 In diesem Dokument werden die beiden EU-Richtlinien NIS2 und GDPR sowie die US-amerikanischen HIPAA-Regeln als Beispiele für die Umsetzung von Rechtsvorschriften verwendet.
-Die DSGVO wird verwendet, weil sie beschreibt, was Sie mit personenbezogenen Daten tun können und wie Sie daher mit personenbezogenen wertvollen Daten (PII) umgehen sollten.
-NIS2 wird verwendet, weil es sagt, was zu tun ist, wenn etwas schief geht und was zu beachten ist, um dies zu vermeiden.
-HIPAA wird verwendet, weil es sich auf Gesundheitsinformationen konzentriert und eigentlich drei Gesetze in einem ist. Sie besteht aus der Privacy Rule, der Security Rule und der 
+
+1) Die DSGVO wird verwendet, weil sie beschreibt, was Sie mit personenbezogenen Daten tun können und wie Sie daher mit personenbezogenen wertvollen Daten (PII) umgehen sollten.
+2) NIS2 wird verwendet, weil es sagt, was zu tun ist, wenn etwas schief geht und was zu beachten ist, um dies zu vermeiden.
+3) HIPAA wird verwendet, weil es sich auf Gesundheitsinformationen konzentriert und eigentlich drei Gesetze in einem ist. Sie besteht aus der Privacy Rule, der Security Rule und der 
 die Regel zur Benachrichtigung über Datenschutzverletzungen.
+4) EU Artificial Intelligence Act (EU AI Act) ist eine Verordnung der Europäischen Union in Bezug auf künstliche Intelligenz.
 
 ### DSGVO
 

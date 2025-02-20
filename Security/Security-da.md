@@ -72,15 +72,15 @@ Social engineering har i forbindelse med computersikkerhed til formål at overbe
 
 ### Spoofing
 
-Spoofing er en handling, hvor man udgiver sig for at være en gyldig enhed gennem forfalskning af data (såsom en IP-adresse eller brugernavn) for at få adgang til oplysninger eller ressourcer, som man ellers er uautoriseret til at få. Spoofing er tæt forbundet med phishing. [37][38] Der findes flere typer spoofing, herunder:
+Spoofing er en handling, hvor man udgiver sig for at være en gyldig enhed gennem forfalskning af data (såsom en IP-adresse eller brugernavn) for at få adgang til oplysninger eller ressourcer, som man ellers er uautoriseret til at få. Spoofing er tæt forbundet med phishing.
 
 ### Manipulation
 
-Manipulation beskriver en ondsindet ændring eller ændring af data. Det er en forsætlig, men uautoriseret handling, der resulterer i ændring af et system, komponenter i systemer, dets tilsigtede adfærd eller data. Såkaldte Evil Maid-angreb og sikkerhedstjenester, der planter overvågningskapacitet i routere, er eksempler. [41]
+Manipulation beskriver en ondsindet ændring eller ændring af data. Det er en forsætlig, men uautoriseret handling, der resulterer i ændring af et system, komponenter i systemer, dets tilsigtede adfærd eller data. Såkaldte Evil Maid-angreb og sikkerhedstjenester, der planter overvågningskapacitet i routere, er eksempler.
 
 ### HTML-smugling
 
-HTML-smugling gør det muligt for en angriber at smugle en ondsindet kode ind i en bestemt HTML eller webside. [42] HTML-filer kan indeholde nyttedata, der er skjult som godartede, inaktive data for at besejre indholdsfiltre. Disse nyttelaster kan rekonstrueres på den anden side af filteret. [43]
+HTML-smugling gør det muligt for en angriber at smugle en ondsindet kode ind i en bestemt HTML eller webside. HTML-filer kan indeholde nyttedata, der er skjult som godartede, inaktive data for at besejre indholdsfiltre. Disse nyttelaster kan rekonstrueres på den anden side af filteret.
 
 ## Data og sikkerhed
 
@@ -100,11 +100,12 @@ På et politisk/lovgivningsmæssigt plan er der sket en masse meget godt arbejde
 om, hvad vi skal gøre for at beskytte vores dataaktiver. Og dermed beskytte vores kunder, borgere og os selv som individer.
 
 Dette dokument vil bruge de tre EU-direktiver NIS2, EU AI Act og GDPR og de amerikanske HIPAA-regler som eksempler på lovgivning, der implementeres.
-GDPR bruges, fordi den beskriver, hvad du kan gøre med personoplysninger, og dermed hvordan du skal håndtere personlige værdifulde data (PII).
 
-NIS2 bruges, fordi det fortæller, hvad man skal gøre, hvis tingene går galt, og hvad der skal overvejes for at forsøge at undgå dette.
-HIPAA bruges, fordi det fokuserer på sundhedsoplysninger og faktisk er tre love i én. Den består af reglen om beskyttelse af privatlivets fred, sikkerhedsreglen og 
+1) GDPR bruges, fordi den beskriver, hvad du kan gøre med personoplysninger, og dermed hvordan du skal håndtere personlige værdifulde data (PII).
+2) NIS2 bruges, fordi det fortæller, hvad man skal gøre, hvis tingene går galt, og hvad der skal overvejes for at forsøge at undgå dette.
+3) HIPAA bruges, fordi det fokuserer på sundhedsoplysninger og faktisk er tre love i én. Den består af reglen om beskyttelse af privatlivets fred, sikkerhedsreglen og 
 reglen om anmeldelse af brud på datasikkerheden.
+4) EU's forordning om kunstig intelligens (EU AI Act) er en EU-forordning om kunstig intelligens
 
 ### GDPR
 
