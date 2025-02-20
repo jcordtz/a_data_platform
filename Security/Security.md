@@ -4,11 +4,11 @@
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
 
-![security](../images/security.jpg) ![microsoft](../images/microsoft.png)
+![security](../images/security.png) ![microsoft](../images/microsoft.png)
 
 ## Introduction
 
-This section focuses on the "mere" security aspect on how to handle data. It covers the challenges that need to be addressed as well as some thoughts on how to handle those.
+This section focuses on the "mere" security aspect on how to handle data. It covers the challenges that need to be addressed as well as thoughts on how to handle those.
 
 This part is also a lot about processes and hence highlighting that you cannot solve data security by "just clicking some boxes in you IT systems".
 

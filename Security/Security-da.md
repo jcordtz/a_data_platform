@@ -5,7 +5,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
 
 
-![security](../images/tiger.jpg) ![microsoft](../images/microsoft.png)
+![Sikkerhed](../images/tiger.png) ![microsoft](../images/microsoft.png)
 
 ## Indledning
 
