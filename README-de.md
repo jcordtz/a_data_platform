@@ -313,7 +313,6 @@ Um die Datenrichtlinien zu steuern, die Sie verwenden möchten, müssen Sie sich
 4. Fertigung – Umgebungen, die Vorproduktions- und Produktionsszenarien unterstützen.
 5. Vertraulich – Umgebungen, die die Verarbeitung streng vertraulicher Daten unterstützen.
 
-
 ## Daten und Sicherheit
 
 Datensicherheit ist ein kritisches Element des Betriebs eines jeden Unternehmens. Es befasst sich mit dem Schutz von Daten vor unrechtmäßigem Zugriff, Verschlechterung oder Diebstahl über die gesamte Lebensdauer der Daten. Mit der Einführung robuster Datensicherheitsmaßnahmen können Unternehmen ihre kritischen Ressourcen sichern, Compliance erreichen und das Vertrauen der Kunden in den Umgang mit Daten erhalten.

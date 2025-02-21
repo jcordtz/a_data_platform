@@ -290,7 +290,7 @@ In this section, we will explore how to use the six environments for implementin
 6. Pre-production - test on production data.
 7. Production - production data.
 
-### Data Policies
+## Data Policies
 
 To control the *data* policies, we need to understand which environment we are working in. This document uses 5 environment types in the discussing of the processes.
 
@@ -302,7 +302,7 @@ To control the *data* policies, we need to understand which environment we are w
 
 As mentioned you can find projects handling the establishment of such environments in a secure setup - see "here" for more information.
 
-### Data and security
+## Data and security
 
 Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle. By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
 
