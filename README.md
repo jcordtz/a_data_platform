@@ -32,6 +32,12 @@ This concept of a data platform could most likely be applied on any data platfor
 > [!NOTE]
 > The document is based on Microsoft technology components.
 
+## The Vision
+The vision of the data platform described in this document is to a platform where Governance and Compliance are main drivers. Hence the concept of a self consistent dataset is a key element of this
+approach.
+
+Having said that, the described data platform can be used in any scenario and be adopted to the actual use case.
+
 ## Overall paradigm
 
 To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
