@@ -161,7 +161,7 @@ These include:
 > [!NOTE]
 > The document will be enhanced over time to include further description of these services.
 
-## A special case – Real Time 
+## A special case – Real Time
 
 We will approach Real Time data processing as a particular case and examine it from that perspective.
 
@@ -483,6 +483,8 @@ The following Figure 6 show a simplified workflow.
 
 ![figure 6](images/english/Slide10.JPG)
 
+A deeper discussion on CI/CD and the data platform can be found in this section [DataOps](DataOps/DataOps.md)
+
 *Figure 6*
 
 In connection with the continuous development and testing you often need to be able to handle data in non-production environments. Most likely you are not allowed to or do not want to use production data in these environments. Also, for testing purposes you may want to introduce faulty data in your 
@@ -494,7 +496,7 @@ Based on the discussions in this document Figure 7 shows what this could look li
 
 On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
 
-In the middle we find the data platform with the Ingest, Transform and **publish area**. In the **ingest area** you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
+In the middle we find the data platform with the **Ingest**, **Transform** and **publish area**. In the **ingest area** you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
 
 Then on the right side of the figure we see what is required by the end-users in the **consume area**. The first user called data User 1 needs *data* that only comes from App 1, so the dataset needed called *data* Product A is a straightforward process.
 

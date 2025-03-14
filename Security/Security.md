@@ -112,7 +112,7 @@ This document will use the two EU directives NIS2 and GDPR and the US HIPAA rule
 2) NIS2 is used because it tells what to do if things goes wrong and what need to be considered trying to avoid this.
 3) HIPAA is used because it focuses on Health Information, and is actually three laws in one. It consists of the Privacy Rule, the Security Rule and
 the Data Breach Notification Rule.
-4) EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI). 
+4) EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI).
 
 ### GDPR
 
