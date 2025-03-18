@@ -1,0 +1,1 @@
+pandoc --from markdown -s README.md --to docx --no-highlight -o README.docx

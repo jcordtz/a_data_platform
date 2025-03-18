@@ -1,8 +1,8 @@
 # A data platform - *"future proof"*
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](images/badge/lang-en-red.svg)](README.md)
+[![dk](images/badge/lang-da--dk-green.svg)](README-da.md)
+[![de](images/badge/lang-de-yellow.svg)](README-de.md)
 
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
