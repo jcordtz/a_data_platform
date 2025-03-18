@@ -162,17 +162,17 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Dazu gehören:
 
-[Datenkatalog](Supporting_Data_Services/Data_Catalog/README-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
+[Datenkatalog](Supporting_Data_Services/Data_Catalog/DataCatalog-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
-[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/README-de.md) – Insbesondere für den **Verbrauchenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
+[Gemeinsames Datenmodell](Supporting_Data_Services/Common_Data_Model/CommonDataModel-de.md) – Insbesondere für den **Verbrauchenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
 
-[Datenermittlung](Supporting_Data_Services/Data_Discovery/README-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
+[Datenermittlung](Supporting_Data_Services/Data_Discovery/DataDiscovery-de.md) - Ein Wissensprozess, der sich an Geschäftsanwender richtet und es ihnen ermöglicht, Daten visuell zu untersuchen und erweiterte Analysen anzuwenden, um Muster zu finden, Erkenntnisse zu gewinnen und spezifische Geschäftsfragen zu beantworten.
 
-[Datenherkunft](Supporting_Data_Services/Data_Lineage/README-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
+[Datenherkunft](Supporting_Data_Services/Data_Lineage/DataLineage-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
 
-[Datenverwaltung] (Supporting_Data_Services/Data_Governance/README-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
+[Datenverwaltung] (Supporting_Data_Services/Data_Governance/DataGovernance-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
 
-[Stammdaten] (Supporting_Data_Services/Master_Data/README-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
+[Stammdaten] (Supporting_Data_Services/Master_Data/MasterData-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
 
 > [!Hinweis]
 > Das Dokument wird laufend um eine Beschreibung dieser erweitert.
@@ -516,14 +516,14 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 > [! Hinweis]
 > Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
-[Azure-basiert](Microsoft/Azure/README-de.md) – Verwendung von PaaS-Diensten von Azure
+[Azure-basiert](Microsoft/Azure/Azure-de.md) – Verwendung von PaaS-Diensten von Azure
 
-[Synapse-basiert](Microsoft/Synapse/README-de.md) – mit Synapse PaaS-Dienst
+[Synapse-basiert](Microsoft/Synapse/Synapse-de.md) – mit Synapse PaaS-Dienst
 
-[Stoffbasiert](Microsoft/Azure/Fabric/README-de.md) - unter Verwendung der SaaS-Lösung Microsoft Fabric
+[Fabric-basiert](Microsoft/Azure/Fabric/Fabric-de.md) - unter Verwendung der SaaS-Lösung Microsoft Fabric
 
-[DataBricks-basiert](Patrners/Databricks/README-de.md) – unter Verwendung des 1st-Party-PaaS-Dienstes Azure DataBricks
+[DataBricks-basiert](Patrners/Databricks/Databricks-de.md) – unter Verwendung des 1st-Party-PaaS-Dienstes Azure DataBricks
 
-[Snowflake-basiert](Partners/Snowflake/README-de.md) - Verwendung des SaaS-Dienstes Snowflake zusammen mit Azure-Diensten
+[Snowflake-basiert](Partners/Snowflake/Snowflake-de.md) - Verwendung des SaaS-Dienstes Snowflake zusammen mit Azure-Diensten
 
-[Microsoft Purview und die Datenplattform](Microsoft/Purview/README-de.md) – Governance und Compliance der Datenplattform mit Purview
+[Microsoft Purview und die Datenplattform](Microsoft/Purview/Purview-de.md) – Governance und Compliance der Datenplattform mit Purview

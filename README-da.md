@@ -71,9 +71,11 @@ Begreberne *data* og *datasæt* er dataplatformens "kernekomponenter".
 
 Et meget vigtigt aspekt af især *data*, men også til en vis grad *datasæt* er, at et givet objekt skal kunne håndteres, vedligeholdes og sikres i sig selv, det vil sige ikke gennem nogen teknologikomponent som en database, derfor er **fil** håndtering det overordnede aspekt af dette.
 
-Når udtrykket *data* bruges, refererer det til et enkelt dataobjekt som en tabel eller fil, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
+Når udtrykket *data* bruges, refererer det til et enkelt dataobjekt som en fil eller en tanel, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
 
-På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.   *Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
+På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.
+
+*Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
 
 - *Datasættet* er selvforsynende, hvilket betyder, at det ikke afhænger af andre datakilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
 - Kun de kolonner/rækker, der er relevante for den opgave, der udføres, er til stede i *datasættet*.
@@ -164,17 +166,17 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 En yderligere komponent i implementeringen, som figur 2 viser, er nogle understøttende datatjenester. Det drejer sig blandt andet om:
 
-[Datakatalog](Supporting_Data_Services/Data_Catalog/README-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
+[Datakatalog](Supporting_Data_Services/Data_Catalog/DataCatalog-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
 
-[Fælles datamodel](Supporting_Data_Services/Common_Data_Model/README-da.md) – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. 
+[Fælles datamodel](Supporting_Data_Services/Common_Data_Model/CommonDataModel-da.md) – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. 
 
-[Data Discovery](Supporting_Data_Services/Data_Discovery/README-da.md) - En videns-proces orienteret mod forretningsbrugere, der giver dem mulighed for visuelt at udforske data og anvende avanceret analyse for at finde mønstre, få indsigt og besvare specifikke forretningsspørgsmål.
+[Data Discovery](Supporting_Data_Services/Data_Discovery/DataDicovery-da.md) - En videns-proces orienteret mod forretningsbrugere, der giver dem mulighed for visuelt at udforske data og anvende avanceret analyse for at finde mønstre, få indsigt og besvare specifikke forretningsspørgsmål.
 
-[Data Lineage](Supporting_Data_Services/Data_Lineage/README-da.md) – Dokumentation af, hvordan data bliver "overført" og transformeret mellem de forskellige områder. Det kan både være den teknisk forarbejdning der er sket - "hvilke handlinger blev udført på dataene" - såvel som dokumentation til ens forretningsbrugere - "hvor stammer disse data fra?".
+[Data Lineage](Supporting_Data_Services/Data_Lineage/DataLineage-da.md) – Dokumentation af, hvordan data bliver "overført" og transformeret mellem de forskellige områder. Det kan både være den teknisk forarbejdning der er sket - "hvilke handlinger blev udført på dataene" - såvel som dokumentation til ens forretningsbrugere - "hvor stammer disse data fra?".
 
-[Datastyring](Supporting_Data_Services/Data_Governance/README-da.md) – Processer, politikker, regler og rapporter for at sikre, at dataene styres korrekt. Ofte baseret på rammer som ISO27x eller NIST.
+[Datastyring](Supporting_Data_Services/Data_Governance/DataGovernance-da.md) – Processer, politikker, regler og rapporter for at sikre, at dataene styres korrekt. Ofte baseret på rammer som ISO27x eller NIST.
 
-[Master Data](Supporting_Data_Services/Master_Data/README-da.md) – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde.
+[Master Data](Supporting_Data_Services/Master_Data/MasterData-da.md) – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde.
 
 > [!Note]
 > Dokumentet vil løbende blive udvidet med beskrivelse af disse.
@@ -529,14 +531,14 @@ Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man
 > [!Note]
 > Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
-[Azure Baseret](Microsoft/Azure/README-da.md) - en data platform lavet v.h.a. Azure PaaS Services
+[Azure Baseret](Microsoft/Azure/Azure-da.md) - en data platform lavet v.h.a. Azure PaaS Services
 
-[Synapse baseret](Microsoft/Synapse/README-da.md) - løsningen bygget v.h.a. Azure PaaS servicen Synapse
+[Synapse baseret](Microsoft/Synapse/Synapse-da.md) - løsningen bygget v.h.a. Azure PaaS servicen Synapse
 
-[Fabric baseret](Microsoft/Fabric/README-da.md) - en data platform v.h.a. SaaS læsningen Microsoft Fabric
+[Fabric baseret](Microsoft/Fabric/Fabric-da.md) - en data platform v.h.a. SaaS læsningen Microsoft Fabric
 
-[DataBricks baseret](Partners/Databricks/README-da.md) - Azure Databricks som udgangspunkt for løsningen
+[DataBricks baseret](Partners/Databricks/Databricks-da.md) - Azure Databricks som udgangspunkt for løsningen
 
-[Snowflake baseret](Partners/Snowflake/README-da.md) - brugen af SaaS løsningen Snowflake sammen med Azure PaaS services
+[Snowflake baseret](Partners/Snowflake/Snowflake-da.md) - brugen af SaaS løsningen Snowflake sammen med Azure PaaS services
 
-[Microsoft Purview og data platformen](Microsoft/Purview/README-da.md) - Governance og Compliance af løsningen sammen med Microsoft Purview
+[Microsoft Purview og data platformen](Microsoft/Purview/Purview-da.md) - Governance og Compliance af løsningen sammen med Microsoft Purview

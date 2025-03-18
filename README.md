@@ -12,7 +12,7 @@ The IT world is undergoing significant changes in these times (2024) mainly beca
 
 Therefore, it is more crucial than ever to ensure that the right data with the right quality is fed into such services to maximize the benefits of these features.  But how could you predict a year ago what we can do today and what big change it is and hence plan for being able to support this. The short answer is - you couldn't.
 
-And what new "challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.
+And what new "possibilities/challenges" will tomorrow bring. Well, we really don't know, the only thing we know is that there will be changes and they are likely to happen sooner rather than later.
 
 This document explains how you could create a data platform that will be able to handle "whatever might come" and hence give you the ability to at least from a data perspective navigate these opportunities/challenges.
 
@@ -30,9 +30,10 @@ This document is based on the experiences of various Microsoft customers who wan
 This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
 
 > [!NOTE]
-> The document is based on Microsoft technology components.
+> The document is mainly based on Microsoft technology components.
 
 ## The Vision
+
 The vision of the data platform described in this document is to a platform where Governance and Compliance are main drivers. Hence the concept of a self consistent dataset is a key element of this
 approach.
 
@@ -57,10 +58,9 @@ To ensure that the data platform can handle “whatever might come” it is impo
 
 The concepts of *data* and *datasets* are **core components** of the data platform.
 
-A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling
-is the overall aspect of this.
+A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling is the overall aspect of this.
 
-When the term *data* is used, it refers to a single data object like a table or file that contains only the *data* for that given object. For example, a source table like customers or invoices.
+When the term *data* is used, it refers to a single data object like a file or table that contains only the *data* for that given object. For example, a source table like customers or invoices.
 
 On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
 
@@ -152,17 +152,17 @@ One more component of the implementation that Figure 2 displays are some Support
 
 These include:
 
-[Data Catalog](Supporting_Data_Services/Data_Catalog/README.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
+[Data Catalog](Supporting_Data_Services/Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
-[Common Data Model](Supporting_Data_Services/Common_Data_Model/README.md) – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
+[Common Data Model](Supporting_Data_Services/Common_Data_Model/CommonDataModel.md) – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
 
-[Data Discovery](Supporting_Data_Services/Data_Discovery/README.md) – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
+[Data Discovery](Supporting_Data_Services/Data_Discovery/DataDiscovery.md) – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
 
-[Data Lineage](Supporting_Data_Services/Data_Lineage/README.md) – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
+[Data Lineage](Supporting_Data_Services/Data_Lineage/DataLineage.md) – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
 
-[Data Governance](Supporting_Data_Services/Data_Governance/README.md) – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
+[Data Governance](Supporting_Data_Services/Data_Governance/DataGovernance.md) – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
 
-[Master Data](Supporting_Data_Services/Master_Data/README.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+[Master Data](Supporting_Data_Services/Master_Data/MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
 > [!NOTE]
 > The document will be enhanced over time to include further description of these services.
@@ -524,14 +524,14 @@ regards of your business opportunities and challenges.
 > [!NOTE]
 > These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
-[Azure Based](Microsoft/Azure/README.md) - using PaaS services from Azure
+[Azure Based](Microsoft/Azure/Azure.md) - using PaaS services from Azure
 
-[Synapse based](Microsoft/Synapse/README.md) - using Synapse PaaS service 
+[Synapse based](Microsoft/Synapse/Synapse.md) - using Synapse PaaS service 
 
-[Fabric based](Microsoft/Azure/Fabric/README.md) - using the SaaS solution Microsoft Fabric
+[Fabric based](Microsoft/Azure/Fabric/Fabric.md) - using the SaaS solution Microsoft Fabric
 
-[DataBricks based](Patrners/Databricks/README.md) - using the 1st party PaaS service Azure DataBricks
+[DataBricks based](Patrners/Databricks/Databricks.md) - using the 1st party PaaS service Azure DataBricks
 
-[Snowflake based](Partners/Snowflake/README.md) - using the SaaS service Snowflake together with Azure services
+[Snowflake based](Partners/Snowflake/Snowflake.md) - using the SaaS service Snowflake together with Azure services
 
-[Microsoft Purview and the data platform](Microsoft/Purview/README.md) - governance and compliance of the data paltform using Purview
+[Microsoft Purview and the data platform](Microsoft/Purview/Purview.md) - governance and compliance of the data platform using Purview
