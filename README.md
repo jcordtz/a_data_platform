@@ -528,9 +528,9 @@ regards of your business opportunities and challenges.
 
 [Synapse based](Microsoft/Synapse/Synapse.md) - using Synapse PaaS service 
 
-[Fabric based](Microsoft/Azure/Fabric/Fabric.md) - using the SaaS solution Microsoft Fabric
+[Fabric based](Microsoft/Fabric/Fabric.md) - using the SaaS solution Microsoft Fabric
 
-[DataBricks based](Patrners/Databricks/Databricks.md) - using the 1st party PaaS service Azure DataBricks
+[DataBricks based](Partners/Databricks/Databricks.md) - using the 1st party PaaS service Azure DataBricks
 
 [Snowflake based](Partners/Snowflake/Snowflake.md) - using the SaaS service Snowflake together with Azure services
 

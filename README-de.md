@@ -520,9 +520,9 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 
 [Synapse-basiert](Microsoft/Synapse/Synapse-de.md) – mit Synapse PaaS-Dienst
 
-[Fabric-basiert](Microsoft/Azure/Fabric/Fabric-de.md) - unter Verwendung der SaaS-Lösung Microsoft Fabric
+[Fabric-basiert](Microsoft/Fabric/Fabric-de.md) - unter Verwendung der SaaS-Lösung Microsoft Fabric
 
-[DataBricks-basiert](Patrners/Databricks/Databricks-de.md) – unter Verwendung des 1st-Party-PaaS-Dienstes Azure DataBricks
+[DataBricks-basiert](Partners/Databricks/Databricks-de.md) – unter Verwendung des 1st-Party-PaaS-Dienstes Azure DataBricks
 
 [Snowflake-basiert](Partners/Snowflake/Snowflake-de.md) - Verwendung des SaaS-Dienstes Snowflake zusammen mit Azure-Diensten
 
