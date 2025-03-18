@@ -15,7 +15,7 @@ Man kan sagtens bygge en data platform ved hjælp af Fabric, men da Fabric er en
 
 Følgende figur viser hvorledes Fabric for eksempel kunne bruges i data platformen.
 
-![figur2](../../images/danish/Slide9.jpg)
+![figur2](../../images/danish/Slide9.JPG)
 
 *Figur 2*
 
