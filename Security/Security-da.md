@@ -1,11 +1,12 @@
 # En data platform - Sikkerhed "Under construction"
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 
-![Sikkerhed](../images/tiger.png) ![microsoft](../images/microsoft.png)
+![Sikkerhed](../images/security.png) ![microsoft](../images/microsoft.png)
 
 ## Indledning
 
@@ -207,3 +208,9 @@ Mens DataOps startede som et sæt bedste praksis, har det nu udviklet sig til at
 I softwareudvikling lægger DevOps vægt på kontinuerlig levering ved at bruge on-demand it-ressourcer og ved at automatisere test og implementering af software. Denne måde at udvikle software og it-drift på har forbedret hastigheden, kvaliteten, forudsigeligheden og omfanget af softwareudvikling og implementering.
 
 Ved at tage metoder fra DevOps sigter DataOps mod at bringe de samme forbedringer til dataanalyse. DataOps bør ikke knyttes til en bestemt teknologi, arkitektur, værktøj, sprog eller ramme.
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)

@@ -1,8 +1,9 @@
 # A data platform - Security "Under construction"
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ![security](../images/security.png) ![microsoft](../images/microsoft.png)
 
@@ -232,3 +233,9 @@ While DataOps started as a set of best practices, it has now evolved to become a
 In software development, DevOps emphasizes continuous delivery by using on-demand IT resources and by automating test and deployment of software. This way of software development and IT operations has improved velocity, quality, predictability and scale of software engineering and deployment.
 
 Taking methods from DevOps, DataOps aims to bring these same improvements to data analytics. DataOps should not be linked to a specific technology, architecture, tool, language, or framework.
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)

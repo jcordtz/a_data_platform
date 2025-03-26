@@ -1,8 +1,9 @@
 # Eine Datenplattform - Sicherheit "Im Aufbau"
 
-[![de](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![DK](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ![security](../images/security.png) ![microsoft](../images/microsoft.png)
 
@@ -225,3 +226,8 @@ In der Softwareentwicklung legt DevOps den Schwerpunkt auf Continuous Delivery d
 DataOps greift Methoden von DevOps auf und zielt darauf ab, dieselben Verbesserungen in die Datenanalyse zu bringen. DataOps sollten nicht mit einer bestimmten Technologie, Architektur, einem Tool, einer Sprache oder einem Framework verknüpft werden.
 
 
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)

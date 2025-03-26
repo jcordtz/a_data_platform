@@ -1,5 +1,10 @@
 # Placeholder
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+
 [Datenkatalog](Data_Catalog/DataCatalog-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
 [Gemeinsames Datenmodell](Common_Data_Model/CommonDataModel-de.md) – Insbesondere für den **Verbrauchenbereich** können bestehende Branchendatenmodelle nützlich/relevant sein. 
@@ -14,3 +19,8 @@
 
 > [!Hinweis]
 > Das Dokument wird laufend um eine Beschreibung dieser erweitert.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
