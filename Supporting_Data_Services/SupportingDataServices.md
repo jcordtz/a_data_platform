@@ -1,4 +1,8 @@
 # Placeholder
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[main-document](../README.md)
 
 [Data Catalog](Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
@@ -11,3 +15,11 @@
 [Data Governance](Data_Governance/DataGovernance.md) – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
 
 [Master Data](Master_Data/MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+
+
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[main-document](../README.md)

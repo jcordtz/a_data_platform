@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-
+[main-document](README.md)
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
 ## Introduction
@@ -522,3 +522,9 @@ regards of your business opportunities and challenges.
 [Snowflake based](Partners/Snowflake/Snowflake.md) - using the SaaS service Snowflake together with Azure services
 
 [Microsoft Purview and the data platform](Microsoft/Purview/Purview.md) - governance and compliance of the data platform using Purview
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[main-document](README.md)
