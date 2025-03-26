@@ -2,7 +2,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[main-document](../README.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 [Data Catalog](Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
