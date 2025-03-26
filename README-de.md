@@ -141,7 +141,7 @@ Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt
 Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
 > [!Hinweis]
-> Das oben beschriebene Paradigma ist heute auch als Medaillon-Datenarchitektur bekannt, wobei Bronze der **Autnahmebereich**, Silber **Transformieren** und Gold **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+> Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der **Autnahmebereich**, *Silber* **Transformieren** und *Gold* **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Schnittstellen
 

@@ -127,7 +127,7 @@ In the **publish area**, we create the *datasets* that are needed to meet the va
 The **consume area** is where the end users of the data platform will access the *datasets*  from the **publish area** using the tools they find most suitable.
 
 > [!NOTE]
-> The paradigm described above is today also known as the medallion data architecture, where bronze is the **ingest area**, silver is **transform** and gold is **publish**. The medallion architecture does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
+> The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the **ingest area**, *silver* is **transform** and *gold* is **publish**. The *medallion architecture* does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
 
 ### Interfaces
 

@@ -144,7 +144,7 @@ I *publish* området skabes de *datasæt*, der er nødvendige for at opfylde de 
 *Publish* området er det sted, hvor slutbrugerne af dataplatformen får adgang til de datasæt de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
 
 > [!NOTE]
-> Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor bronze er **ingest området**, sølv er **transform** og guld er **publish**. *Medallion* arkitekturen indeholder ikke
+> Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor *bronze* er **ingest området**, *sølv* er **transform** og *guld* er **publish**. *Medallion* arkitekturen indeholder ikke
 et **consume område**. Dette dokument vil bruge begreberne **ingest**, **transform**, **publish**, og **consume** da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
 
 ### Grænseflader
