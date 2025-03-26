@@ -63,7 +63,3 @@ Die Möglichkeit, das Schema und die Common Data Model-Standardentitäten zu erw
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
-
-![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
-
-
