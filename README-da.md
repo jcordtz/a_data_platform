@@ -33,9 +33,10 @@ Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange,
 > Dokumentet er baseret på Microsoft teknologi komponenter.
 
 ## Visionen
-Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter. Derfor er konceptet med et selvkonsistent datasæt et nøgleelement i denne tilgang.
+Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.
+Derfor er konceptet med et selvkonsistent datasæt et nøgleelement i denne tilgang.
 
-Når det er sagt, kan den beskrevne dataplatform bruges i ethvert scenarie og tilpasses til den faktiske brugssituation.
+Når det er sagt, kan den beskrevne dataplatform bruges i flere forskellige scenarier og naturligt nok tilpasses til den faktiske brugssituation.
 
 ## Overordnet paradigme
 

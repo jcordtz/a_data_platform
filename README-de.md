@@ -32,7 +32,8 @@ Dieses Konzept einer Datenplattform kann auf andere Datenplattformansätze angew
 > Das Dokument basiert sich auf Microsoft-Technologiekomponenten.
 
 ## Die Vision
-Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind. Daher ist das Konzept eines in sich konsistenten Datensatzes ein Schlüsselelement in diesem platform.
+Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind.
+Daher ist das Konzept eines in sich konsistenten Datensatzes ein Schlüsselelement in diesem platform.
 
 Allerdings kann die beschriebene Datenplattform in jedem Szenario eingesetzt und an den tatsächlichen Anwendungsfall angepasst werden.
 

@@ -34,10 +34,10 @@ This concept of a data platform could most likely be applied on any data platfor
 
 ## The Vision
 
-The vision of the data platform described in this document is to a platform where Governance and Compliance are main drivers. Hence the concept of a self consistent dataset is a key element of this
-approach.
+The vision of the data platform described in this document is to have a platform where Governance and Compliance are main drivers.
+Hence the concept of a self consistent dataset is a key element of this approach.
 
-Having said that, the described data platform can be used in any scenario and be adopted to the actual use case.
+Having said that, the described data platform can be used in many different scenarios and of course be adopted to an actual use case.
 
 ## Overall paradigm
 
@@ -148,21 +148,8 @@ Python's syntax is simple, easy to learn and emphasizes readability, which lower
 
 ### Supporting Data Services
 
-One more component of the implementation that Figure 2 displays are some Supporting data Services.
+One more component of the implementation that Figure 2 displays are some Supporting data Services. These service are described in further details [here](Supporting_Data_Services/SupportingDataServices.md)
 
-These include:
-
-[Data Catalog](Supporting_Data_Services/Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
-
-[Common Data Model](Supporting_Data_Services/Common_Data_Model/CommonDataModel.md) – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
-
-[Data Discovery](Supporting_Data_Services/Data_Discovery/DataDiscovery.md) – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
-
-[Data Lineage](Supporting_Data_Services/Data_Lineage/DataLineage.md) – Documentation on how data is being “transferred” and transformed between the different areas. It can be both a technical lineage – “what actions were performed on the data” - as well as a business lineage - “where do these data originate from?”.
-
-[Data Governance](Supporting_Data_Services/Data_Governance/DataGovernance.md) – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
-
-[Master Data](Supporting_Data_Services/Master_Data/MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
 > [!NOTE]
 > The document will be enhanced over time to include further description of these services.
