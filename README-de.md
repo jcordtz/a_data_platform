@@ -3,6 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
@@ -514,3 +515,9 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 [Snowflake-basiert](Partners/Snowflake/Snowflake-de.md) - Verwendung des SaaS-Dienstes Snowflake zusammen mit Azure-Diensten
 
 [Microsoft Purview und die Datenplattform](Microsoft/Purview/Purview-de.md) – Governance und Compliance der Datenplattform mit Purview
+
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)

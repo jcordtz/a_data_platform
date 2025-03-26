@@ -3,7 +3,7 @@
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[main-document](README.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
 ![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
 
 ## Introduction
@@ -527,4 +527,4 @@ regards of your business opportunities and challenges.
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[main-document](README.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
