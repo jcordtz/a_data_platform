@@ -1,7 +1,5 @@
 # Placeholder
 
-These include:
-
 [Data Catalog](Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
 [Common Data Model](Common_Data_Model/CommonDataModel.md) – Especially for the **publish area**, existing industry *data* models could be useful/relevant.

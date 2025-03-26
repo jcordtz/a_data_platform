@@ -148,7 +148,7 @@ Python's syntax is simple, easy to learn and emphasizes readability, which lower
 
 ### Supporting Data Services
 
-One more component of the implementation that Figure 2 displays are some Supporting data Services. These service are described in further details [here](Supporting_Data_Services/SupportingDataServices.md)
+One more component of the implementation that Figure 2 displays are some Supporting data Services. These service are described further in this [document](Supporting_Data_Services/SupportingDataServices.md)
 
 
 > [!NOTE]
