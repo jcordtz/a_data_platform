@@ -5,7 +5,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
 
-![tiger](images/DataModel.png) ![microsoft](images/microsoft.png)
+![tiger](../../images/DataModel.png) ![microsoft](../../images/microsoft.png)
 
 ## Introduction
 
