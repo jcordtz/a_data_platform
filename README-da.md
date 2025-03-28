@@ -341,10 +341,9 @@ Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til 
 
 Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
 
-Mens DataOps startede som et sæt bedste praksis, har det nu udviklet sig til at blive en ny og særskilt tilgang til dataanalyse. DataOps dækker hele datalivscyklussen fra dataforberedelse til rapportering og anerkender den indbyrdes afhængige karakter af dataanalyseteamet og informationsteknologioperationer.
+A mere detaljeret diskussion om DataOps er tilgængelig i denne [sektion](DataOps/DataOps-da.md)
 
-Inden for softwareudvikling lægger DevOps vægt på kontinuerlig levering ved hjælp af on-demand it-ressourcer og ved at automatisere test og implementering af software. Denne måde at udvikle software og it-drift på har forbedret hastigheden, kvaliteten, forudsigeligheden og omfanget af softwareudvikling og implementering. 
-Ved at tage metoder fra DevOps sigter DataOps mod at bringe de samme forbedringer til dataanalyse. DataOps bør ikke knyttes til en bestemt teknologi, arkitektur, værktøj, sprog eller struktur.
+
 
 ### Miljøer og krypteringspolitikker
 

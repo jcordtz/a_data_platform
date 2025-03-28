@@ -162,7 +162,7 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 ### Unterstützende Datendienste
 
-Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter bescrheibt in diesem [sektion](Supporting_Data_Services/SupportingDataServices-de.md)
+Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter beschreibt in diesem [sektion](Supporting_Data_Services/SupportingDataServices-de.md)
 
 
 ### Ein Sonderfall – Echtzeit
@@ -335,11 +335,8 @@ Die **Attributbasierte Zugriffskontrolle** – auch bekannt als ABAC – bietet 
 
 Laut Wikipedia ist DataOps eine Sammlung von Praktiken, Prozessen und Technologien, die eine ganzheitliche und prozessorientierte Sicht auf Daten mit Automatisierung und Methoden aus dem agilen Software-Engineering kombiniert, um Qualität, Geschwindigkeit und Zusammenarbeit zu verbessern und eine Kultur der kontinuierlichen Verbesserung rund um die Datenanalyse zu fördern.
 
-Während DataOps als eine Reihe von Best Practices begann, hat es sich inzwischen zu einem neuen und eigenständigen Ansatz für die Datenanalyse entwickelt. DataOps deckt den gesamten Datenlebenszyklus von der Datenaufbereitung bis zur Berichterstattung ab und erkennt die gegenseitige Abhängigkeit des Datenanalyseteams und der IT-Abläufe an.
+DataOps sind weiter beschreibt in diesem [sektion](DataOps/DataOps-de.md)
 
-In der Softwareentwicklung legt DevOps den Schwerpunkt auf Continuous Delivery durch den Einsatz von On-Demand-IT-Ressourcen und durch die Automatisierung von Test und Bereitstellung von Software. Diese Art der Softwareentwicklung und des IT-Betriebs hat die Geschwindigkeit, Qualität, Vorhersagbarkeit und den Umfang der Softwareentwicklung und -bereitstellung verbessert.
-
-DataOps greift Methoden von DevOps auf und zielt darauf ab, dieselben Verbesserungen in die Datenanalyse zu bringen. DataOps sollten nicht mit einer bestimmten Technologie, Architektur, einem Tool, einer Sprache oder einem Framework verknüpft werden.
 
 ### Umgebungen und Tags
 
