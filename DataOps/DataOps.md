@@ -1,8 +1,9 @@
-# A data platform - DataOps "Under construction"
+# A data platform - DataOps - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 ![microsoft](../images/microsoft.png)
 
@@ -10,3 +11,7 @@
 
 
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
