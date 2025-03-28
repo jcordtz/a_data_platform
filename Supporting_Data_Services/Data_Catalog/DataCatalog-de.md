@@ -6,6 +6,7 @@
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 ![purview](../../images/Purview.png)        ![microsoft](../../images/microsoft.png)
+
 # Introduction
 In the modern era of data-driven decision-making, the need for effective organization, management, and utilization of data has never been more critical. A data catalog stands at the forefront of these needs, acting as a comprehensive solution for businesses and organizations seeking to harness the full potential of their data assets.
 
