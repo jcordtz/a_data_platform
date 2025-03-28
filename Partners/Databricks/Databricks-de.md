@@ -1,4 +1,13 @@
-# Azure Databricks-basiert
+# Partner lösung - Azure Databricks basiert - Under Construction
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+
+![microsoft](images/microsoft.png)
+
+## Introduction
 
 Dieser Ansatz ähnelt dem Azure-basierten Ansatz, mit der Ausnahme, dass Databricks anstelle von Data Factory Data Flow und möglicherweise Synapse DW verwendet wird.
 
@@ -13,3 +22,8 @@ Abbildung 1
 Abbildung 1 zeigt, wo Databricks am ehesten hineinpassen würde. Dieser Ansatz passt auch sehr gut zum Medaillon-Ansatz, der sehr häufig in einem Databricks Lakehouse-Ansatz verwendet wird.
 
 Weitere Informationen zu Azure Databricks finden Sie hier [Azure Databricks Info](https://azure.microsoft.com/de-de/products/databricks)
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
