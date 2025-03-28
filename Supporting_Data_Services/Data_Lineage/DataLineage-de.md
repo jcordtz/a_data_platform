@@ -7,20 +7,39 @@
 
 ![purview](../../images/purview.png)        ![microsoft](../../images/microsoft.png)
 
-## Introduction
+## Einleitung
 
-Data lineage is the process of tracing the journey that data takes within an organization, from its origin to its final destination. It captures the lifecycle of data, including its source, transformations, movements, and interactions with various systems and users. By documenting this path, organizations gain a clear understanding of how data is generated, processed, and consumed. Think of data lineage as the “history book” of your organization’s data. It answers critical questions like: Where did this data come from? How has it been transformed over time? Who has accessed or modified it? Is the data accurate and reliable? What dependencies exist? Where does the data go?1
+Unter der Datenherkunft versteht man den Prozess der Nachverfolgung des Weges, den Daten innerhalb Ihrer Organisation von ihrem Ursprung bis zu ihrem endgültigen Ziel zurücklegen.
+Es erfasst den Lebenszyklus von Daten, einschließlich ihrer Quelle, Transformationen, Bewegungen und Interaktionen mit verschiedenen Systemen und Benutzern. 
 
-## Importance of Data Lineage
+Durch die Dokumentation dieses Pfads erhalten Unternehmen ein klares Verständnis dafür, wie Daten generiert, verarbeitet und konsumiert werden. 
 
-Data lineage is critical in modern data ecosystems because it ensures transparency, accountability, and trust in data processes. Here's why it matters:
-•	Improved Data Quality and Integrity: By tracking the journey of data, lineage helps identify errors or inconsistencies at any stage—whether at the source, during transformation, or in final outputs2.
-•	Enhanced Troubleshooting and Debugging: When something goes wrong in data pipelines, lineage provides a clear view of the flow, making it easier to pinpoint and resolve issues3.
-•	Regulatory Compliance: Many industries have strict data governance requirements (e.g., GDPR, HIPAA). Data lineage demonstrates accountability and helps organizations comply with these regulations4.
-•	Impact Analysis for Changes: When modifying systems, data lineage shows how proposed changes might affect downstream applications, reports, or users, reducing risks5.
-•	Strengthened Data Governance: Lineage provides visibility into who uses the data, how it's processed, and where it's stored—ensuring accountability and responsible usage6.
-•	Increased Efficiency: By understanding dependencies and connections, data teams can streamline workflows, optimize processes, and avoid duplicating efforts7.
-•	Building Trust in Data: Stakeholders are more likely to rely on data-driven decisions when they can see a clear record of the data's origins and transformations4.
+Die Datenherkunft ist also so etwas wie das "Geschichtsbuch" der Daten Ihres Unternehmens. 
+
+Es beantwortet kritische Fragen wie:
+
+1) Woher stammen diese Daten?
+2) Wie hat es sich im Laufe der Zeit verändert?
+3) Wer hat darauf zugegriffen oder sie geändert?
+4) Sind die Daten korrekt und zuverlässig?
+5) Welche Abhängigkeiten gibt es?
+6) Wohin gehen die Daten?
+
+## Bedeutung der Datenherkunft
+
+Die Datenherkunft ist in modernen Datenökosystemen von entscheidender Bedeutung, da sie Transparenz, Verantwortlichkeit und Vertrauen in Datenprozesse gewährleistet.
+
+Dies sollte Ihnen folgende Vorteile bringen:
+
+1) Verbesserte Datenqualität und -integrität: Durch die Verfolgung des Weges von Daten hilft die Herkunft, Fehler oder Inkonsistenzen in jeder Phase zu identifizieren – sei es an der Quelle, während der Transformation oder in den endgültigen Ergebnissen.
+2) Verbesserte Fehlerbehebung und Debugging: Wenn in Datenpipelines ein Fehler auftritt, bietet die Herkunft einen klaren Überblick über den Ablauf und erleichtert so das Lokalisieren und Beheben von Problemen.
+3) Einhaltung gesetzlicher Vorschriften: Viele Branchen haben strenge Anforderungen an die Datenverwaltung (z. B. DSGVO, HIPAA, NIS2). Die Datenherkunft zeigt die Verantwortlichkeit und hilft Unternehmen, diese Vorschriften einzuhalten.
+4) Auswirkungsanalyse für Änderungen: Beim Ändern von Systemen zeigt die Datenherkunft, wie sich vorgeschlagene Änderungen auf nachgelagerte Anwendungen, Berichte oder Benutzer auswirken können, um Risiken zu reduzieren.
+5) Verstärkte Data Governance: Lineage bietet Einblick in die Nutzung der Daten, deren Verarbeitung und Speicherort – und gewährleistet so die Verantwortlichkeit und den verantwortungsvollen Umgang.
+6) Gesteigerte Effizienz: Durch das Verständnis von Abhängigkeiten und Verbindungen können Datenteams Arbeitsabläufe rationalisieren, Prozesse optimieren und Doppelarbeit vermeiden.
+7) Aufbau von Vertrauen in Daten: Stakeholder verlassen sich eher auf datengestützte Entscheidungen, wenn sie eine klare Aufzeichnung der Herkunft und Transformation der Daten sehen können.
+
+
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)

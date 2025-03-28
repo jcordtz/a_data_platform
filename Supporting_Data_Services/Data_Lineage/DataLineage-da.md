@@ -7,20 +7,39 @@
 
 ![purview](../../images/purview.png)        ![microsoft](../../images/microsoft.png)
 
-## Introduction
+## Indledning
 
-Data lineage is the process of tracing the journey that data takes within an organization, from its origin to its final destination. It captures the lifecycle of data, including its source, transformations, movements, and interactions with various systems and users. By documenting this path, organizations gain a clear understanding of how data is generated, processed, and consumed. Think of data lineage as the “history book” of your organization’s data. It answers critical questions like: Where did this data come from? How has it been transformed over time? Who has accessed or modified it? Is the data accurate and reliable? What dependencies exist? Where does the data go?1
+Dataafstamning er processen med at spore den rejse, som data tager i din organisation, fra deres oprindelse til deres endelige destination.
+Den registrerer datas livscyklus, herunder dens kilde, transformationer, bevægelser og interaktioner med forskellige systemer og brugere. 
 
-## Importance of Data Lineage
+Ved at dokumentere denne sti får organisationer en klar forståelse af, hvordan data genereres, behandles og forbruges. 
 
-Data lineage is critical in modern data ecosystems because it ensures transparency, accountability, and trust in data processes. Here's why it matters:
-•	Improved Data Quality and Integrity: By tracking the journey of data, lineage helps identify errors or inconsistencies at any stage—whether at the source, during transformation, or in final outputs2.
-•	Enhanced Troubleshooting and Debugging: When something goes wrong in data pipelines, lineage provides a clear view of the flow, making it easier to pinpoint and resolve issues3.
-•	Regulatory Compliance: Many industries have strict data governance requirements (e.g., GDPR, HIPAA). Data lineage demonstrates accountability and helps organizations comply with these regulations4.
-•	Impact Analysis for Changes: When modifying systems, data lineage shows how proposed changes might affect downstream applications, reports, or users, reducing risks5.
-•	Strengthened Data Governance: Lineage provides visibility into who uses the data, how it's processed, and where it's stored—ensuring accountability and responsible usage6.
-•	Increased Efficiency: By understanding dependencies and connections, data teams can streamline workflows, optimize processes, and avoid duplicating efforts7.
-•	Building Trust in Data: Stakeholders are more likely to rely on data-driven decisions when they can see a clear record of the data's origins and transformations4.
+Så dataafstamning er en slags "historiebog" for din organisations data. 
+
+Den besvarer kritiske spørgsmål som:
+
+1) Hvor kom disse data fra?
+2) Hvordan er det blevet ændret over tid?
+3) Hvem har fået adgang til eller ændret den?
+4) Er dataene nøjagtige og pålidelige?
+5) Hvilke afhængigheder findes der?
+6) Hvor bliver dataene af?
+
+## Vigtigheden af dataafstamning
+
+Dataafstamning er afgørende i moderne dataøkosystemer, fordi den sikrer gennemsigtighed, ansvarlighed og tillid til dataprocesser.
+
+Dette skulle give dig følgende fordele:
+
+1) Forbedret datakvalitet og -integritet: Ved at spore datarejsen hjælper afstamning med at identificere fejl eller uoverensstemmelser på ethvert tidspunkt – uanset om det er ved kilden, under transformation eller i endelige output.
+2) Forbedret fejlfinding og fejlfinding: Når noget går galt i datapipelines, giver afstamning et klart overblik over flowet, hvilket gør det nemmere at lokalisere og løse problemer.
+3) Overholdelse af lovgivning: Mange brancher har strenge krav til datastyring (f.eks. GDPR, HIPAA, NIS2). Dataafstamning demonstrerer ansvarlighed og hjælper organisationer med at overholde disse regler.
+4) Konsekvensanalyse for ændringer: Når du ændrer systemer, viser dataafstamning, hvordan foreslåede ændringer kan påvirke downstream-applikationer, rapporter eller brugere, hvilket reducerer risici.
+5) Styrket datastyring: Afstamning giver indsigt i, hvem der bruger dataene, hvordan de behandles, og hvor de er gemt – hvilket sikrer ansvarlighed og ansvarlig brug.
+6) Øget effektivitet: Ved at forstå afhængigheder og forbindelser kan datateams strømline arbejdsgange, optimere processer og undgå dobbeltarbejde.
+7) Opbygning af tillid til data: Interessenter er mere tilbøjelige til at stole på datadrevne beslutninger, når de kan se en klar registrering af dataenes oprindelse og transformationer.
+
+
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
