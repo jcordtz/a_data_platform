@@ -330,7 +330,7 @@ In Figure 4 you will find several ways to protect data which are available in Az
 
 According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around data analytics.
 
-A mode detailed discussion about DataOps can be found in this [section](DataOps/DataOps.md)
+A more detailed discussion about DataOps can be found in this [section](DataOps/DataOps.md)
 
 ### Environments and encryption policies
 
