@@ -5,7 +5,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
-![purview](../../images/Purview.png)        ![microsoft](../../images/microsoft.png)
+![purview](../../images/purview.png)        ![microsoft](../../images/microsoft.png)
 
 # Indledning
 I den moderne æra med datadrevet beslutningstagning har behovet for effektiv organisering, styring og udnyttelse af data aldrig været mere kritisk. Et datakatalog står på forkant med disse behov og fungerer som en omfattende løsning for virksomheder og organisationer, der søger at udnytte det fulde potentiale af deres dataaktiver.
