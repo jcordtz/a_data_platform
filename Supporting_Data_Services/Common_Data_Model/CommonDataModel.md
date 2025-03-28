@@ -1,9 +1,9 @@
 # Supporting Data Services - Common Data Model - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 ![CMD](../../images/DataModel.png) ![microsoft](../../images/microsoft.png)
 
@@ -59,9 +59,7 @@ A unified shape, where data integrations can combine existing enterprise data wi
 
 The ability to extend the schema and Common Data Model standard entities to tailor the model to your organization.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
-
-![tiger](images/tiger.jpg) ![microsoft](images/microsoft.png)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

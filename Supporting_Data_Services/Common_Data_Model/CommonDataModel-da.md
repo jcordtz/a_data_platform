@@ -1,9 +1,9 @@
 # Supporting Data Services - Common Data Model - Under konstruktion
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 ![CMD](../../images/DataModel.png) ![microsoft](../../images/microsoft.png)
 
@@ -59,7 +59,7 @@ En samlet form, hvor dataintegrationer kan kombinere eksisterende virksomhedsdat
 
 Muligheden for at udvide skemaet og Common Data Model-standardobjekterne for at skræddersy modellen til din organisation.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

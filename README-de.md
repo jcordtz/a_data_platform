@@ -162,7 +162,7 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 ### Unterstützende Datendienste
 
-Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter bescrheibt in diesem [dokument](Supporting_Data_Services/SupportingDataServices-de.md)
+Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter bescrheibt in diesem [sektion](Supporting_Data_Services/SupportingDataServices-de.md)
 
 
 ### Ein Sonderfall – Echtzeit
