@@ -191,16 +191,66 @@ Another threat we need to understand is internal threats.
 
 ## Logical mechanism
 
-Discover your most valuable asset, your data
-Secure configuration to prevent sophisticated attacks
-Detect how users are interacting with data and identify insider risks
-Ensure your data remains secure from data leakage and data exfiltration activities
+The logical mechanism covers elements that has to do with the process we need to have in place to ensure that we can support the requested/required security levels.
+
+1) We must be able to discover the data- that means being able to notice their location, who owns them, what structure do they have, which environments do they belong to (i.e. dev, non-prod, prod) etc.
+2) We also need to find out if their are items like configurations files, scripts (i.e. IaC programs etc) etc. that needs to be documented that (could) have an influence on our data.
+3) Detect how users are interacting with data and identify potential insider risks.
+4) Establish processed that can ensure data remains secure from data leakage and data exfiltration activities.
+5) Establish processes that ensures we can restore any data that might have be compromised. And that we have processes that regularly tests that this restore works.
+
+A long with such processes we also need to have mechanism that can help us having an understanding of the nature of the data in question.
+
+Such mechanism are described in the next section.
+
+## Marking Data
+
+To ensure that we knows what nature the data we are looking at have, like is it production data or non-production data or are is it data that can be shared outside of out company, we need to be
+able to mark data.
+
+### Sensitivity
+
+We must be able to classify data in our organization so that we know what kind of sensitivity they represent - meaning how are they allowed to be used. These sensitivties helps to determine
+elements like who has access to that data, how long can/needs data to be retained and can we use soft delete on them.
+
+Often we see sensitivty levels like : personal, public, general, confidential, and highly confidential. Note - These are Office365 default levels.
+
+1) Personal - Non-business data, for personal use only - like personal pictures and a phone.
+2) Public - business data that is specifically prepared and approved for public consumption - like a press release.
+3) General - Business data that is not intended for public consumption. However, this can be shared with external partners, as required. Examples include a company internal telephone directory, organizational charts, internal standards, and most internal communication.
+4) Confidential - Sensitive business data that could cause damage to the business if shared with unauthorized people. Examples include contracts, security reports, forecast summaries, and sales account data.
+5) Highly Confidential - Very sensitive business data that would cause damage to the business if it was shared with unauthorized people. Examples include employee and customer information, passwords, source code, and pre-announced financial reports.
+
+### Common Frameworks
+
+Many frameworks and legal regulations have specific requirements that encourage organizations to classify data. 
+Examples of such regulations are as flows:
+
+1) SOC 2: The SOC 2 Trust Services Criteria requires that service organizations who include the confidentiality category in their audit demonstrate that they identify and maintain confidential information to meet the entity’s objectives related to confidentiality.
+2) HIPAA: PHI is considered high-risk data. As such, HIPAA Security Rule requires that all covered entities and business associates implement administrative safeguards that ensure the confidentiality, integrity, and availability of PHI. In addition, the HIPAA Privacy Rule limits the uses and disclosures of PHI, forcing covered entities and business associates alike to establish procedures for classifying the data they collect, use, store, or transmit.
+3) PCI: In order to comply with PCI DSS Requirement 9.6.1, entities must “classify data so that sensitivity of the data can be determined.”
+4) GDPR: Organizations that handle the personal data of EU data subjects must classify the types of data they collect in order to comply with the law. Additionally, GDPR categorizes certain data – race, ethnic origin, political opinions, biometric data, and health data – as “special” and therefore it is subject to additional protection. This not only means that organizations need to know what types of data they hold, but they also need to be able to label such data.
 
 ### Classification
 
-### Labeling
+Classifications are expressions or patterns that can help identify what kind of data can be found in a file or a column in a table.
+Examples of such classifications are Social Security Number, Drive license number, Bank account number, etc.
+
+A combination of classification often helps setting the right sensitivity to a given *data* or *dataset* - either manually or during a scanning process.
 
 ### Policies
+
+Policies helps to enforce organizational standards and to assess compliance and is very often relying on a framework like ISO27xxx, NIST or CIS18. 
+
+Common use cases for such policies include implementing governance for data consistency, regulatory compliance, security, and management. 
+
+IN an Azure environment policy definitions are already available for such common use cases as built-ins to help you get started.
+
+Some useful governance actions you can enforce using Azure Policy are:
+
+1) Ensure your team deploys Azure resources only to allowed regions and hence ensure that data is stored in only allowed Azure locations.
+2) Enforce the consistent application of taxonomic tags.
+3) Require resources to send diagnostic logs to a Log Analytics workspace.
 
 ## Technical mechanism
 

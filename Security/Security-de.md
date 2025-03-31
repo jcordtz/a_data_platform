@@ -183,17 +183,66 @@ Eine weitere Bedrohung, die wir verstehen müssen, sind interne Bedrohungen.
 
 ## Logischer Mechanismus
 
-Entdecken Sie Ihr wertvollstes Gut, Ihre Daten
-Sichere Konfiguration zur Abwehr ausgeklügelter Angriffe
-Erkennen Sie, wie Benutzer mit Daten interagieren, und identifizieren Sie Insider-Risiken
-Stellen Sie sicher, dass Ihre Daten vor Datenlecks und Datenexfiltration geschützt bleiben
+Der logische Mechanismus deckt Elemente ab, die mit dem Prozess zu tun haben, den wir einrichten müssen, um sicherzustellen, dass wir die angeforderten/erforderlichen Sicherheitsstufen unterstützen können.
+
+1) Wir müssen in der Lage sein, die Daten zu entdecken – das bedeutet, dass wir in der Lage sein müssen, ihren Standort zu erkennen, wem sie gehören, welche Struktur sie haben, zu welchen Umgebungen sie gehören (z. B. dev, non-prod, prod) usw.
+2) Wir müssen auch herausfinden, ob es Elemente wie Konfigurationsdateien, Skripte (z.B. IaC-Programme usw.) usw. gibt, die dokumentiert werden müssen und einen Einfluss auf unsere Daten haben (könnten).
+3) Erkennen Sie, wie Benutzer mit Daten interagieren, und identifizieren Sie potenzielle Insider-Risiken.
+4) Richten Sie Verarbeitungen ein, die sicherstellen können, dass die Daten vor Datenlecks und Datenexfiltrationsaktivitäten geschützt bleiben.
+5) Richten Sie Prozesse ein, die sicherstellen, dass wir alle möglicherweise kompromittierten Daten wiederherstellen können. Und dass wir Prozesse haben, die regelmäßig testen, ob diese Wiederherstellung funktioniert.
+
+Bei solchen Prozessen müssen wir auch über einen Mechanismus verfügen, der uns helfen kann, die Art der betreffenden Daten zu verstehen.
+
+Ein solcher Mechanismus wird im nächsten Abschnitt beschrieben.
+
+## Markieren von Daten
+
+Um sicherzustellen, dass wir wissen, welche Art die Daten haben, die wir betrachten, z. B. ob es sich um Produktionsdaten oder Nicht-Produktionsdaten handelt oder ob es sich um Daten handelt, die außerhalb unseres Unternehmens geteilt werden können, müssen wir
+in der Lage, Daten zu markieren.
+
+### Empfindlichkeit
+
+Wir müssen in der Lage sein, Daten in unserer Organisation zu klassifizieren, damit wir wissen, welche Art von Sensibilität sie darstellen - d.h. wie sie verwendet werden dürfen. Diese Empfindlichkeiten helfen bei der Bestimmung
+Elemente wie z. B. wer Zugriff auf diese Daten hat, wie lange Daten aufbewahrt werden müssen/müssen und ob wir sie vorläufig löschen können.
+
+Oft sehen wir Sensibilitätsstufen wie: persönlich, öffentlich, allgemein, vertraulich und streng vertraulich. Hinweis: Hierbei handelt es sich um Office365-Standardstufen.
+
+1) Persönlich - Nicht geschäftliche Daten, nur für den persönlichen Gebrauch - wie persönliche Bilder und ein Telefon.
+2) Öffentlich - Geschäftsdaten, die speziell für die öffentliche Nutzung aufbereitet und genehmigt wurden - wie eine Pressemitteilung.
+3) Allgemein - Geschäftsdaten, die nicht für den öffentlichen Gebrauch bestimmt sind. Dies kann jedoch bei Bedarf mit externen Partnern geteilt werden. Beispiele hierfür sind das interne Telefonbuch eines Unternehmens, Organigramme, interne Standards und die meiste interne Kommunikation.
+4) Vertraulich - Sensible Geschäftsdaten, die dem Unternehmen Schaden zufügen könnten, wenn sie an Unbefugte weitergegeben werden. Beispiele hierfür sind Verträge, Sicherheitsberichte, Prognosezusammenfassungen und Verkaufskontodaten.
+5) Streng vertraulich - Sehr sensible Geschäftsdaten, die dem Unternehmen Schaden zufügen würden, wenn sie an Unbefugte weitergegeben würden. Beispiele hierfür sind Mitarbeiter- und Kundeninformationen, Passwörter, Quellcode und vorab angekündigte Finanzberichte.
+
+### Gemeinsame Frameworks
+
+Viele Frameworks und gesetzliche Vorschriften haben spezifische Anforderungen, die Organisationen dazu ermutigen, Daten zu klassifizieren. 
+Beispiele für solche Regelungen sind wie Flows:
+
+1) SOC 2: Die SOC 2 Trust Services Criteria verlangen, dass Serviceorganisationen, die die Vertraulichkeitskategorie in ihr Audit einbeziehen, nachweisen, dass sie vertrauliche Informationen identifizieren und aufbewahren, um die Ziele des Unternehmens in Bezug auf die Vertraulichkeit zu erreichen.
+2) HIPAA: PHI gelten als Hochrisikodaten. Daher verlangt die HIPAA-Sicherheitsregel, dass alle betroffenen Unternehmen und Geschäftspartner administrative Sicherheitsvorkehrungen treffen, die die Vertraulichkeit, Integrität und Verfügbarkeit von PHI gewährleisten. Darüber hinaus schränkt die HIPAA-Datenschutzregel die Verwendung und Offenlegung von PHI ein und zwingt betroffene Unternehmen und Geschäftspartner gleichermaßen, Verfahren zur Klassifizierung der von ihnen gesammelten, verwendeten, gespeicherten oder übertragenen Daten festzulegen.
+3) PCI: Um die PCI DSS-Anforderung 9.6.1 zu erfüllen, müssen Unternehmen "Daten klassifizieren, damit die Vertraulichkeit der Daten bestimmt werden kann".
+4) DSGVO: Organisationen, die mit den personenbezogenen Daten von EU-Datensubjekten umgehen, müssen die Arten von Daten, die sie sammeln, klassifizieren, um das Gesetz einzuhalten. Darüber hinaus stuft die DSGVO bestimmte Daten – Rasse, ethnische Herkunft, politische Meinungen, biometrische Daten und Gesundheitsdaten – als "besonders" ein und unterliegt daher einem zusätzlichen Schutz. Das bedeutet nicht nur, dass Unternehmen wissen müssen, welche Arten von Daten sie besitzen, sondern dass sie auch in der Lage sein müssen, solche Daten zu kennzeichnen.
 
 ### Klassifizierung
 
-### Beschriftung
+Klassifizierungen sind Ausdrücke oder Muster, mit deren Hilfe identifiziert werden kann, welche Art von Daten in einer Datei oder Spalte in einer Tabelle zu finden sind.
+Beispiele für solche Klassifizierungen sind die Sozialversicherungsnummer, die Führerscheinnummer, die Bankkontonummer usw.
+
+Eine Kombination von Klassifizierungen hilft oft, die richtige Empfindlichkeit für einen bestimmten *Daten* oder *Datensatz* einzustellen  - entweder manuell oder während eines Scanvorgangs.
 
 ### Richtlinien
 
+Policies hilft bei der Durchsetzung organisatorischer Standards und bei der Bewertung der Compliance und stützt sich sehr oft auf ein Framework wie ISO27xxx, NIST oder CIS18. 
+
+Häufige Anwendungsfälle für solche Richtlinien sind die Implementierung von Governance für Datenkonsistenz, Einhaltung gesetzlicher Vorschriften, Sicherheit und Verwaltung. 
+
+In einer Azure-Umgebung sind bereits Richtliniendefinitionen für gängige Anwendungsfälle wie integrierte Funktionen verfügbar, um Ihnen den Einstieg zu erleichtern.
+
+Einige nützliche Governanceaktionen, die Sie mithilfe von Azure Policy erzwingen können, sind:
+
+1) Stellen Sie sicher, dass Ihr Team Azure-Ressourcen nur in zulässigen Regionen bereitstellt, und stellen Sie daher sicher, dass Daten nur an zulässigen Azure-Standorten gespeichert werden.
+2) Erzwingen Sie die konsistente Anwendung taxonomischer Tags.
+3) Anfordern von Ressourcen zum Senden von Diagnoseprotokollen an einen Log Analytics-Arbeitsbereich.
 
 ## Technischer Mechanismus
 
