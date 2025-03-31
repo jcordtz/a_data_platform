@@ -98,11 +98,8 @@ This is known as infrastructure as code (IaC). In the data platform, this is use
 
 ## Logical architecture
 
-The data platform arranges *data* and *datasets* in different areas according
-to the logical architecture shown on Figure 2.
-
-This is to ensure that the approach can comply with the "rules" of the paradigm
-as mentioned previously.
+The data platform arranges *data* and *datasets* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach 
+can comply with the "rules" of the paradigm as mentioned previously.
 
 ![Figure 2](images/english/Slide2.JPG)
 
