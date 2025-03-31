@@ -21,7 +21,7 @@ been established at "another place" in your business.
 ## What is in a Common Data Model?
 
 In addition to the documentation of its structure and content, a *Common Data Model* includes a set of standardized and often extensible schemas. This collection of schemas includes entities,
-attributes, descriptions, and relationships. These schemas represent commonly used concepts and activities, such as Customer, Address etc. 
+attributes, descriptions, and relationships. These schemas represent commonly used concepts and activities, such as Customer, Address etc.
 This approach simplifies the creation, aggregation, and analysis of data.
 
 ## Why use a Common Data Model?
@@ -33,7 +33,7 @@ the asset for an Account. Such an asset most likely contains the same informatio
 
 If you used a *Common Data Model*, these applications would have had a standardized format to refer for assets like an Account to and (maybe) then each app could have used the same data.
 
-Each applications would then have its own additional data and schemas, depending on its functionality. 
+Each applications would then have its own additional data and schemas, depending on its functionality.
 
 But when it comes to development, your apps and reports could then pull common data elements quickly, cleanly, and with confidence.
 
@@ -43,15 +43,14 @@ as a "translator" between different systems. ANd in this case it makes a lot of 
 If you pursue this approach creating a new application, data mart or report becomes much more standardized. And your development efforts can concentrate on business logic rather than
 figruring out how to transform the data *"yet another time"*.
 
-Historically, the work to build an app has been tightly tied with data integration, but with Common Data Model and the platforms that support it, the two can happen independently:
+Historically, the work to build an app has been tightly tied with data integration, but with a *Common Data Model* and the platforms that support it, the two can happen independently:
 
-App makers and/or developers: Whether these users leverage code-based platforms or a low-code/no-code platform such as Power Apps or Power BI, they need to store and manage data for their apps.
+1) App makers and/or developers: Whether these users leverage code-based platforms or a low-code/no-code platform such as Power Apps or Power BI, they need to store and manage data for their apps.
+2) Data integrators: These users are responsible for bringing data from a variety of systems to make it accessible for apps to use.
 
-Data integrators: These users are responsible for bringing data from a variety of systems to make it accessible for apps to use.
+A *Common Data Model* simplifies data management and app development by unifying data into a known form and applying structural and semantic consistency across multiple apps and deployments. To summarize the benefits:
 
-Common Data Model simplifies data management and app development by unifying data into a known form and applying structural and semantic consistency across multiple apps and deployments. To summarize the benefits:
-
-Structural and semantic consistency across applications and deployments.
+## Structural and semantic consistency across applications and deployments.
 
 Simplified integration and disambiguation of data that's collected from processes, digital interactions, product telemetry, people interactions, and so on.
 
