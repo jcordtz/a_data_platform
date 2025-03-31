@@ -91,7 +91,7 @@ Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit ei
 
 *Abbildung 1*
 
-Wie in Abbildung 1 dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
+Wie in *Abbildung 1* dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
 
 Infrastructure as a Service (IaaS) – Dies ermöglicht die Erstellung verschiedener Arten von virtuellen Maschinen und die Installation der gesamten darauf benötigten Software. Dabei garantiert der Cloud-Anbieter den Service bis auf Betriebssystemebene.  Beim IaaS-Ansatz fokussieren wir uns darauf, welche Produkte wir einsetzen wollen und liefern so die passenden "Maschinen" dafür.
 
@@ -109,15 +109,15 @@ Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Date
 
 ## Logische Architektur
 
-Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in Abbildung 2 dargestellt. 
-Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt. 
- 
+Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. Damit soll sichergestellt werden, dass 
+wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
+
 ![Abbildung 2](images/german/Slide2.JPG)
 
 *Abbildung 2*
 
 Die Bereiche repräsentieren verschiedene Zustände der Reise von Daten zu Datensätzen und damit zu Berichten und Analysen.
-In Bezug auf Abbildung 2 können die verschiedenen Bereiche wie folgt beschrieben werden:
+In Bezug auf *Abbildung 2* können die verschiedenen Bereiche wie folgt beschrieben werden:
 
 **Quellsysteme** sind alle Systeme, aus denen Daten extrahiert (gebatcht) oder von denen Daten gesendet (gestreamt) werden sollen.
 
@@ -145,7 +145,7 @@ Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die be
 
 ### Schnittstellen
 
-Abbildung 2 zeigt, dass die Schnittstelle zwischen den verschiedenen Bereichen genauso wichtig ist wie der Inhalt der Bereiche. Diese Schnittstellen müssen die technologische Unabhängigkeit gewährleisten, die wir in der Plattform wünschen – es muss einfach sein, neue Dienste zu ändern/hinzuzufügen – und sicherstellen, dass wir die Wege des Datenflusses kennen.
+*Abbildung 2* zeigt, dass die Schnittstelle zwischen den verschiedenen Bereichen genauso wichtig ist wie der Inhalt der Bereiche. Diese Schnittstellen müssen die technologische Unabhängigkeit gewährleisten, die wir in der Plattform wünschen – es muss einfach sein, neue Dienste zu ändern/hinzuzufügen – und sicherstellen, dass wir die Wege des Datenflusses kennen.
 
 Die meisten Unternehmen/Institutionen bevorzugen die Verwendung einer oder mehrerer der folgenden Schnittstellenoptionen.  
 
@@ -217,6 +217,7 @@ Azure AI Search ist ein Beispiel für eine solche "Datenbank", die Indizierungs-
 Durch Code und andere Komponenten können Sie eine umfassende RAG-Lösung entwerfen, die alle Elemente für generative KI für Ihre proprietären Inhalte enthält.
 
 Auf der Grundlage des oben Gesagten müssen wir sicherstellen, dass die Daten, die wir den erstellten Lösungen zur Verfügung stellen, genau mit dem übereinstimmen, worauf der Benutzer Zugriff hat, so dass die Erdung und damit die Vektordatenbank nur dies enthält. Dies kann über den Veröffentlichungs-Layer erfolgen, da dieser Layer Datensätze mit dem genauen Inhalt darstellt. Die Aufgabe besteht also darin, die verwendeten Vektordatenbanken zu "laden" - und sicherzustellen, dass diese nach der Verwendung gestoppt/entfernt werden.
+
 ## Rollen
 
 Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.
@@ -313,6 +314,9 @@ Datensicherheit ist ein kritisches Element des Betriebs eines jeden Unternehmens
 Datensicherheit ist von entscheidender Bedeutung, da sie Unternehmen vor Cyberangriffen, Insider-Bedrohungen und menschlichem Versagen schützt, die zu Datenschutzverletzungen führen können. Zu den wesentlichen Faktoren für die Datensicherheit gehören Vertraulichkeit, Integrität, Verfügbarkeit und Compliance. Angesichts wachsender Bedrohungen für Daten müssen Unternehmen ihre Daten an der Quelle schützen, um die Datensicherheit aufrechtzuerhalten und Daten aus einem Angriff schnell wiederherzustellen. Der Zweck der Datensicherheit besteht darin, Daten vor allen Formen des Missbrauchs, einschließlich Cyberangriffen und menschlichem Versagen, zu schützen.
 
 Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Informationen eines Unternehmens für die Datensicherheit unerlässlich ist. Es unterstützt den Schutz kritischer Ressourcen, hilft bei der Erfüllung der Compliance-Anforderungen bestimmter Standards und erhält das Vertrauen der Kunden.
+
+Im Abschnitt [Sicherheit/Security-de.md] finden Sie eine viel detailliertere Diskussion des Sicherheitsaspekts.
+In diesem Abschnitt geht es weiter mit einigen weiteren technischen Möglichkeiten.
 
 Abbildung 4 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 

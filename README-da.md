@@ -95,7 +95,7 @@ Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås me
 
 *Figur 1*
 
-Som vist på figur 1 giver brug af cloud teknologier adgang til forskellige typer tjenester.
+Som vist på *figur 1* giver brug af cloud teknologier adgang til forskellige typer tjenester.
 
 **Infrastruktur som en service** (IaaS) - Dette giver mulighed for at oprette forskellige typer tilgangen virtuelle maskiner og installere al software, der er nødvendig på dem. I dette garanterer cloud-leverandøren tjenesten op til operativsystemets niveau.  I IaaS tilgangen har vi fokus på, hvilke produkter vi ønsker at bruge og dermed levere de rigtige "maskiner" til dette.
 
@@ -103,7 +103,7 @@ Som vist på figur 1 giver brug af cloud teknologier adgang til forskellige type
 
 **Software som en service** (SaaS) – en SaaS-service er en komplet løsning som et ERP- eller HR-system. Her sikrer cloud-leverandøren adgang til en komplet pakke af applikationer, databaser og infrastruktur, der er nødvendig for, at SaaS-tjenesten kan fungere.
 
-Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS. 
+Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS.
 
 I kapitlet "Eksempler på Implementeringer" er der beskrevet forskellige måder at gøre dette på med forskellige PaaS- eller SaaS-tjenester.
 
@@ -113,15 +113,15 @@ Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform 
 
 ## Logisk arkitektur
 
-Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på Figur 2. 
-Dette er for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt. 
+Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på *Figur 2*. Dette er for at sikre, at vi kan overholde
+paradigmets "regler" som tidligere nævnt. 
  
 ![figur 2](images/danish/Slide2.JPG)
 
 *Figur 2*
 
 Områderne repræsenterer forskellige tilstande af rejsen fra data til datasæt og dermed til rapportering og analyse.
-Med henvisning til Figur 2 kan de forskellige områder beskrives som følger:
+Med henvisning til *figur 2* kan de forskellige områder beskrives som følger:
 
 **Kildesystemer** er ethvert system, hvor data skal udtrækkes (batch) fra, eller hvor data sendes fra (streames).
 
@@ -149,7 +149,7 @@ et **consume område**. Dette dokument vil bruge begreberne **ingest**, **transf
 
 ### Grænseflader
 
-Figur 2 angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
+*Figur 2* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
 
 De fleste virksomheder/institutioner foretrækker at bruge en eller flere af følgende muligheder for grænseflade.  
 
@@ -166,7 +166,7 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 ### Understøttende datatjenester
 
-En yderligere komponent i implementeringen, som figur 2 viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion](Supporting_Data_Services/SupportingDataServices-da.md)
+En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion](Supporting_Data_Services/SupportingDataServices-da.md)
 
 
 ## Et særligt tilfælde – Real Time 
@@ -319,7 +319,10 @@ Datasikkerhed er kritisk, da den sikrer organisationer mod cyberangreb, insidert
 
 For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden, integriteten og tilgængeligheden af en organisations oplysninger. Det understøtter beskyttelsen af vigtige ressourcer, hjælper med at imødekomme de specificerede standarders compliance krav og fastholder kundetillid.
 
-Figur 4 viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+I afsnittet [Sikkerhed](Security/Security-da.md) findes en meget mere detaljeret diskussion om sikkerhedsaspektet.
+Dette afsnit fortsætter med nogle flere tekniske muligheder.
+
+*Figur 4* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
 
 ![figur 4](images/danish/Slide8.JPG)

@@ -82,7 +82,7 @@ This document explains how to create a data platform using cloud technology. And
 
 *Figure 1*
 
-As shown on Figure 1 using cloud technologies, gives access to different types of services.
+As shown on *Figure 1* using cloud technologies, gives access to different types of services.
 
 **Infrastructure as a Service (IaaS)** – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system. In the IaaS setup the focus is on which products should be used and hence providing the right “machines” for this.
 
@@ -107,7 +107,7 @@ can comply with the "rules" of the paradigm as mentioned previously.
 
 The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
 
-Referring to Figure 2 the characteristics of the different areas are as follows:
+Referring to *Figure 2* the characteristics of the different areas are as follows:
 
 **Source systems** are any system where *data* must be extracted from (batch) or where *data* is sent from (streamed).
 
@@ -128,11 +128,11 @@ The **consume area** is where the end users of the data platform will access the
 
 ### Interfaces
 
-Figure 2 indicates that the interface between the different areas is as important as the content of the areas.
+*Figure 2* indicates that the interface between the different areas is as important as the content of the areas.
 
-These interfaces must ensure the technology independency we want in the platform – it must be easy to change/add new services – as well as ensuring that we know the data pathways.
+These interfaces must ensure the **technology independency** we want in the platform – it must be easy to change/add new services – as well as ensuring that we know the data pathways.
 
-Most of the customers we work with prefer these three interface options.
+Most of the customers we work with prefer these three interface options:
 
 **REST API** – the “basic” interface that most (all) new services use to offer their functionalities. This level is highly technical and is not suitable for low/no-code.
 
@@ -146,12 +146,8 @@ Python's syntax is simple, easy to learn and emphasizes readability, which lower
 
 ### Supporting Data Services
 
-One more component of the implementation that Figure 2 displays are some Supporting data Services. 
+One more component of the implementation that *Figure 2* displays are Supporting data Services. 
 These service are described further in this [section](Supporting_Data_Services/SupportingDataServices.md)
-
-
-> [!NOTE]
-> The document will be enhanced over time to include further description of these services.
 
 ## A special case – Real Time
 
@@ -305,7 +301,7 @@ In summary, data security is essential for maintaining the confidentiality, inte
 In the section [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect.
 This section will continue with some more technical possibilities.
 
-In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
+In *Figure 4* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
 ![figure 4](images/english/Slide8.JPG)
 

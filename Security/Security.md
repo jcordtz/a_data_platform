@@ -202,15 +202,13 @@ Ensure your data remains secure from data leakage and data exfiltration activiti
 
 ### Policies
 
-
-
 ## Technical mechanism
 
-In Figure 4 you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
+In *Figure 1* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 4](../images/english/Slide8.JPG)
+![figure 1](../images/english/Slide8.JPG)
 
-*Figure 4*
+*Figure 1*
 
 **Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
 

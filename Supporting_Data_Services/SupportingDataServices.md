@@ -16,8 +16,8 @@
 
 [Master Data](Master_Data/MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
-
-
+> [!NOTE]
+> The document will be enhanced over time to include further description of these services.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)

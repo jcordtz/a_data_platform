@@ -179,13 +179,14 @@ Sørg for, at dine data forbliver sikre mod datalækage og dataeksfiltreringsakt
 ### Mærkning
 
 ### Politikker
-## Teknisk mekanisme
 
-I figur 4 finder du flere måder at beskytte data på, som er tilgængelige i Azure. Dette adresserer ikke de mere generelle ting som netværkssikkerhed, Multi Factor Authentication osv., som antages at være på plads.
+## Teknisk mekanisme
 
-! [Figur 4](.. /images/dansk/Slide8.JPG)
+I *figur 1* finder du flere måder at beskytte data på, som er tilgængelige i Azure. Dette adresserer ikke de mere generelle ting som netværkssikkerhed, Multi Factor Authentication osv., som antages at være på plads.
 
-*Figur 4*
+! [Figur 1](.. /images/dansk/Slide8.JPG)
+
+*Figur 1*
 
 **Applikationsbaseret adgangskontrol** – dækker, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som tilgås fra programmet ved hjælp af en tjenestekonto.
 

@@ -197,11 +197,11 @@ Stellen Sie sicher, dass Ihre Daten vor Datenlecks und Datenexfiltration geschü
 
 ## Technischer Mechanismus
 
-In Abbildung 4 finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in Azure verfügbar sind. Dies befasst sich nicht mit den allgemeineren Dingen wie Netzwerksicherheit, Multi-Faktor-Authentifizierung usw., von denen angenommen wird, dass sie vorhanden sind.
+In *Abbildung 1* finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in Azure verfügbar sind. Dies befasst sich nicht mit den allgemeineren Dingen wie Netzwerksicherheit, Multi-Faktor-Authentifizierung usw., von denen angenommen wird, dass sie vorhanden sind.
 
-! [Abbildung 4](.. /Bilder/Deutsch/Slide8.JPG)
+! [Abbildung 1](.. /Bilder/Deutsch/Slide8.JPG)
 
-*Abbildung 4*
+*Abbildung 1*
 
 **Anwendungsbasierte Zugriffskontrolle** – deckt ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten gewährt, die in der Anwendung verwendet werden. Häufig handelt es sich bei dem zugrunde liegenden Datenspeicher um eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen wird.
 
