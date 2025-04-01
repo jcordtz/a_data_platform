@@ -349,10 +349,10 @@ In den verschiedenen Umgebungen müssen unterschiedliche Tags verwendet werden, 
 |Umwelt/Dach|Sandkasten|Projektraum|Nicht-Produktion|Produktion|Vertraulich|Werte|
 |---------|---------|----------|---------------|----------|---------|-------|
 |Eigentümer der Daten|Prüfung|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Name des Eigentümers|
-|Umwelt|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Die Art der Umgebung, die "Sandbox" |
-|Diät-Zentrum|Erforderlich|Erforderlich|Erforderlich|Erforderlich|ErforderlichKostenstelle |
+|Environment|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Die Art der Umgebung, bz. "Sandbox" |
+|Kostenstelle|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Erforderlich|Kostenstelle|
 
-- Überarbeitung – Dachbeeren sind an Ort und Stelle.
+- Überarbeitung – Tag solte vorhanden sein.
 - Erforderlich – Tag muss vorhanden sein, andernfalls wird die Installation verweigert.
 - Nicht zutreffend – Nicht zutreffend.
 

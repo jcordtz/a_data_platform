@@ -324,9 +324,8 @@ Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
 *Figur 4* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-
 ![figur 4](images/danish/Slide8.JPG)
- 
+
 *Figur 4*
 
 **Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto. 
@@ -368,8 +367,8 @@ I de forskellige miljøer skal forskellige tags bruges til at identificere milj�
 |Miljø/Tag|Sandkasse|Projektrum|Ikke-produktion|Produktion|Fortrolig|Værdier|
 |---------|---------|----------|---------------|----------|---------|-------|
 |Data ejer|Revision|Kræves|Kræves|Kræves|Kræves|Ejerens navn|
-|Miljø|Kræves|Kræves|Kræves|Kræves|Kræves|Den type miljø som "Sandkasse"|
-|Kost Center|Kræves|Kræves|Kræves|Kræves|KrævesOmkostningscenter|
+|Miljø|Kræves|Kræves|Kræves|Kræves|Kræves|Type af miljø som f.eks. "Sandkasse"|
+|Kost Center|Kræves|Kræves|Kræves|Kræves|Kræves|Kost center|
 
 - Revision – tag bær være på plads.
 - Påkrævet – -tagget skal være til stede, hvis ikke, nægtes installationen.
