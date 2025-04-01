@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![snowflake](../../images/snowflake.png)               ![microsoft](../../images/microsoft.png)
 
 # Partner løsning - Snowflake baseret - Under Construction
 

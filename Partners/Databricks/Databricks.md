@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![snowflake](../../images/Databricks_Logo.png)                               ![microsoft](../../images/microsoft.png)
 
 # Partner solution - Azure Databricks based - Under Construction
 
@@ -25,27 +25,29 @@ More information about Azure Databricks can be found here [Azure Databricks Info
 
 Azure Databricks plays a pivotal role in supporting the construction of a lakehouse architecture, which combines the best features of data lakes and data warehouses to create a unified data platform. 
 
-## Introduction to Azure Databricks
+## Azure Databricks
 
 Azure Databricks is a cloud-based data analytics platform that leverages Apache Spark to provide a scalable and efficient environment for big data processing and machine learning. The lakehouse architecture, on the other hand, is a modern data management system that merges the advantages of data lakes and data warehouses, offering scalable storage and processing capabilities while ensuring data quality and governance.
 
 ## Key Components of Azure Databricks in Lakehouse Architecture
 
-1) Delta Lake: Delta Lake is an optimized storage layer that supports ACID transactions and schema enforcement. It ensures data reliability and consistency, making it a crucial component of the lakehouse architecture. Delta Lake allows for efficient data ingestion, processing, and querying, providing a robust foundation for the lakehouse1.
-2) Unity Catalog: Unity Catalog is a unified governance solution for data and AI. It offers fine-grained access control, data lineage, and audit capabilities, ensuring that data access is managed and secure. Unity Catalog plays a vital role in maintaining data governance within the lakehouse2.
-3) Apache Spark: Azure Databricks is built on Apache Spark, a powerful engine that enables massively scalable data processing. Apache Spark's capabilities are essential for handling large volumes of data and performing complex analytics tasks within the lakehouse3.
+1) Delta Lake: Delta Lake is an optimized storage layer that supports ACID transactions and schema enforcement. It ensures data reliability and consistency, making it a crucial component of the lakehouse architecture. Delta Lake allows for efficient data ingestion, processing, and querying, providing a robust foundation for the lakehouse.
+2) Unity Catalog: Unity Catalog is a unified governance solution for data and AI. It offers fine-grained access control, data lineage, and audit capabilities, ensuring that data access is managed and secure. Unity Catalog plays a vital role in maintaining data governance within the lakehouse.
+3) Apache Spark: Azure Databricks is built on Apache Spark, a powerful engine that enables massively scalable data processing. Apache Spark's capabilities are essential for handling large volumes of data and performing complex analytics tasks within the lakehouse.
 
 ## Benefits of Building a Lakehouse with Azure Databricks
 
-1) Unified Data Platform: The lakehouse architecture provides a single source of truth for all data, eliminating redundant systems and ensuring data freshness. Azure Databricks supports this unified platform by integrating various data sources and processing workloads seamlessly4.
-2) Scalability and Performance: Azure Databricks offers native integration with Azure services, providing regional availability and performance optimization. This ensures that the lakehouse can scale to meet the demands of modern data analytics4.
-3) Data Governance and Security: With Unity Catalog, Azure Databricks ensures that data governance and security are maintained across the lakehouse. Fine-grained access control and data lineage capabilities help protect sensitive data and comply with regulatory requirements2.
+1) Unified Data Platform: The lakehouse architecture provides a single source of truth for all data, eliminating redundant systems and ensuring data freshness. Azure Databricks supports this unified platform by integrating various data sources and processing workloads seamlessly.
+2) Scalability and Performance: Azure Databricks offers native integration with Azure services, providing regional availability and performance optimization. This ensures that the lakehouse can scale to meet the demands of modern data analytics.
+3) Data Governance and Security: With Unity Catalog, Azure Databricks ensures that data governance and security are maintained across the lakehouse. Fine-grained access control and data lineage capabilities help protect sensitive data and comply with regulatory requirements.
 
 ## Integration Capabilities
 
 Azure Databricks integrates with various Azure services, enhancing the lakehouse architecture's capabilities. Some notable integrations include:
-1) Azure Synapse: Azure Databricks can seamlessly integrate with Azure Synapse, enabling advanced analytics and data warehousing capabilities. This integration allows for efficient data movement and processing between the lakehouse and Synapse1.
-2) Microsoft Fabric: With the launch of Microsoft Fabric, Azure Databricks customers can augment their analytics systems with Generative AI on top of the same open and governed lakehouse. This integration reduces data estate fragmentation and enhances analytics capabilities5.
+
+1) Azure Synapse: Azure Databricks can seamlessly integrate with Azure Synapse, enabling advanced analytics and data warehousing capabilities. This integration allows for efficient data movement and processing between the lakehouse and Synapse.
+2) Microsoft Fabric: With the launch of Microsoft Fabric, Azure Databricks customers can augment their analytics systems with Generative AI on top of the same open and governed lakehouse. This integration reduces data estate fragmentation and enhances analytics capabilities.
+3) Azure Data Factory: Azure Databricks can also be used together with Azure Data Factory from which Azure Databricks notebooks can be used together with Azure Data Factories "own" processes.
 
 ## Conclusion
 
