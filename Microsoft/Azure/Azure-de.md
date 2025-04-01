@@ -10,11 +10,11 @@ Abbildung 1 zeigt die Azure-Dienste, die normalerweise bei diesem Ansatz verwend
 
 Abbildung 1
 
-Im Bereich **Aufnahme** befinden sich Azure Event Hub und Echtzeitanalysen zum Verarbeiten eingehender Nachrichten sowie Data Factory zum Verarbeiten des Batchkopiervorgangs. Die Speicherebene ist Azure Data Lake.
+Im Bereich **Aufnahme** befinden sich *Azure Event Hub* und *Azure Real Time Analytics* zum Verarbeiten eingehender Nachrichten sowie *Azure Data Factory* zum Verarbeiten des Batchkopiervorgangs. Die Speicherebene ist *Azure Data Lake*.
 
-Im Bereich **Transformieren** würde der Prozess dann von Data Factory Data Flow verarbeitet, und die Speicherschicht wäre ebenfalls Azure Data Lake. Wenn Sie ein Enterprise Data Warehouse erstellen möchten, kann dies von Synapse DW verarbeitet werden.
+Im Bereich **Transformieren** würde der Prozess dann von *Azure Data Factory Data Flow* (alt. *Azure Databricks*) verarbeitet, und die Speicherschicht wäre ebenfalls *Azure Data Lake*. Wenn Sie ein *Enterprise Data Warehouse* erstellen möchten, kann dies von *Synapse DW* verarbeitet werden.
 
-Im **Veröffentlichungsbereich** finden Sie verschiedene Azure-Datenbanktechnologien, nämlich die relationalen Datenbanken Azure SQL Database, Azure PostgresDB und Azure MySQL. Auch Datenbanken wie Azure Cosmos DB, Azure Analytical Services und Azure Data Explorer sind neben Azure Data Lake Kandidaten.
+Im **Veröffentlichungsbereich** finden Sie verschiedene Azure-Datenbanktechnologien, nämlich die relationalen Datenbanken *Azure SQL Database*, *Azure PostgresDB* und *Azure MySQL*. Auch Datenbanken wie *Azure Cosmos DB*, *Azure Analytical Services* und *Azure Data Explorer* sind neben *Azure Data Lake* Kandidaten.
 
-Im Bereich **Verbrauchen** finden Sie PowerBI zusammen mit Azure Machine Learning und Azure AI Studio.
+Im Bereich **Verbrauchen** finden Sie *PowerBI/Fabric* zusammen mit *Azure Machine Learning* und *Azure AI Foundry*.
 
