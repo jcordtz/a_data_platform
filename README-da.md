@@ -168,6 +168,9 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion](Supporting_Data_Services/SupportingDataServices-da.md)
 
+### Data model
+
+Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i denne [sektion](DataModelling/DataModel-da.md).
 
 ## Et særligt tilfælde – Real Time 
 

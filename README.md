@@ -149,6 +149,10 @@ Python's syntax is simple, easy to learn and emphasizes readability, which lower
 One more component of the implementation that *Figure 2* displays are Supporting data Services. 
 These service are described further in this [section](Supporting_Data_Services/SupportingDataServices.md)
 
+### Data models
+
+The topic of handling the modelling of data in this setup is discussed further in this [section](DataModelling/DataModel.md)
+
 ## A special case – Real Time
 
 We will approach Real Time data processing as a particular case and examine it from that perspective.

@@ -164,8 +164,11 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter beschreibt in diesem [sektion](Supporting_Data_Services/SupportingDataServices-de.md)
 
+### Data model
 
-### Ein Sonderfall – Echtzeit
+Das Thema des Umgangs mit der Modellierung von Daten in diesem Setup wird in diesem [section](DataModelling/DataModel-de.md) näher erläutert.
+
+## Ein Sonderfall – Echtzeit
 
 Wir werden uns der Echtzeit-Datenverarbeitung als Einzelfall nähern und sie aus dieser Perspektive betrachten.
 
