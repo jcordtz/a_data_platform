@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Microsoft Purview og dataplatformen
 
 Microsoft Purview er et omfattende sæt af løsninger, der kan hjælpe organisationer med at styre, beskytte og administrere data, uanset hvor de er placeret. Microsoft Purview-løsninger giver integreret dækning og hjælper med at håndtere fragmenteringen af data på tværs af organisationer, manglen på synlighed, der hæmmer databeskyttelse og styring, og udviskningen af traditionelle it-administrationsroller.

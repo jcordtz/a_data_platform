@@ -1,11 +1,11 @@
+![microsoft](../images/microsoft.png)
+
 # Supporting Data Services - Data Catalog - Under konstruktion
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
-
-![purview](../../images/purview.png)        ![microsoft](../../images/microsoft.png)
 
 ## Einleitung
 

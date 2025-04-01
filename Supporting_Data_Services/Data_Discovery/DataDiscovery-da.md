@@ -1,11 +1,11 @@
+![microsoft](../images/microsoft.png)
+
 # Supporting Data Services - Data Discovery - Under konstruktion
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
-
-![purview](../../images/purview.png)        ![microsoft](../../images/microsoft.png)
 
 ## Introduktion
 

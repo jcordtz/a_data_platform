@@ -1,11 +1,11 @@
+![microsoft](../images/microsoft.png)
+
 # Partner solution - Azure Databricks based - Under Construction
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
-
-![microsoft](images/microsoft.png)
 
 ## Introduction
 

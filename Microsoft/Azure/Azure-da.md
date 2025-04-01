@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Baseret på Azure-tjenester.
 
 Implementering af dataplatformen ved hjælp af Azure-tjenester resulterer i en meget fleksibel og agil tilgang. Dette vil opfylde alle emner, der er anført i kapitlet ”Overordnet paradigme".

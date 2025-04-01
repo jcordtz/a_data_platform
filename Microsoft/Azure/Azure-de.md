@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Basierend auf Azure-Diensten.
 
 Die Implementierung der Datenplattform mithilfe von Azure-Diensten führt zu einem sehr flexiblen und agilen Ansatz. Damit sind alle Themen erfüllt, die im Kapitel "Gesamtparadigma" aufgeführt sind.

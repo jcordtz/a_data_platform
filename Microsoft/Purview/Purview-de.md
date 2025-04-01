@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Microsoft Purview und die Datenplattform
 
 Microsoft Purview ist ein umfassendes Paket von Lösungen, mit denen Organisationen Daten verwalten, schützen und verwalten können, unabhängig davon, wo sie sich befinden. Microsoft Purview-Lösungen bieten eine integrierte Abdeckung und tragen dazu bei, die Fragmentierung von Daten in Organisationen, die mangelnde Transparenz, die den Datenschutz und die Governance behindert, sowie die Verwischung traditioneller IT-Verwaltungsrollen zu bewältigen.

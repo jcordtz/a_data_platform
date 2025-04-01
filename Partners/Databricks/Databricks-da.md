@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Partner løsning - Baseret på Azure Databricks - Under konstruktion
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)

@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Microsoft Fabric-basiert.
 
 Microsoft Fabric ist eine All-in-One-Analyselösung, die alles abdeckt, von Datenbewegungen über Data Science bis hin zu Echtzeitanalysen und Business Intelligence.

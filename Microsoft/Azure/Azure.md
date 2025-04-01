@@ -1,3 +1,5 @@
+![microsoft](../images/microsoft.png)
+
 # Azure services based.
 
 Implementing the data platform using Azure services results in a very flexible and agile approach. This will fulfill all topics listed in the chapter “Overall paradigm”.

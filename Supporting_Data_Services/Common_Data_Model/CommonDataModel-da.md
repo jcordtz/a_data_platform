@@ -1,11 +1,11 @@
+![microsoft](../images/microsoft.png)
+
 # Supporting Data Services - Common Data Model - Under konstruktion
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
-
-![CMD](../../images/DataModel.png) ![microsoft](../../images/microsoft.png)
 
 ## Indledning
 
