@@ -19,9 +19,6 @@
 
 [Master Data](Master_Data/MasterData-da.md) – Nogle data/datasæt kan med fordel behandles som stamdata, så der kun er "én record" af fx en kunde.
 
-> [!Note]
-> Dokumentet vil løbende blive udvidet med beskrivelse af disse.
-
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)

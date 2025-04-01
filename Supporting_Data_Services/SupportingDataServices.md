@@ -2,9 +2,9 @@
 
 # Supporting Data Services
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportDataServices-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportDataServices-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 [Data Catalog](Data_Catalog/DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
@@ -19,10 +19,7 @@
 
 [Master Data](Master_Data/MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
-> [!NOTE]
-> The document will be enhanced over time to include further description of these services.
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportDataServices-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportDataServices-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)

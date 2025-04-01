@@ -19,9 +19,6 @@
 
 [Stammdaten] (/Master_Data/MasterData-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
 
-> [!Hinweis]
-> Das Dokument wird laufend um eine Beschreibung dieser erweitert.
-
 [![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
