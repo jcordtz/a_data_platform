@@ -15,9 +15,9 @@
 
 [Datenherkunft](Data_Lineage/DataLineage-de.md) – Dokumentation, wie Daten zwischen den verschiedenen Bereichen "übertragen" und transformiert werden. Es kann sowohl die technische Verarbeitung sein, die stattgefunden hat - "welche Aktionen wurden mit den Daten durchgeführt" - als auch die Dokumentation für die eigenen Geschäftsanwender - "Woher kommen diese Daten?".
 
-[Datenverwaltung] (Data_Governance/DataGovernance-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
+[Datenverwaltung](Data_Governance/DataGovernance-de.md) - Prozesse, Richtlinien, Regeln und Berichte, um sicherzustellen, dass die Daten ordnungsgemäß verwaltet werden. Oft basierend auf Frameworks wie ISO27x oder NIST.
 
-[Stammdaten] (/Master_Data/MasterData-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
+[Stammdaten](/Master_Data/MasterData-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
