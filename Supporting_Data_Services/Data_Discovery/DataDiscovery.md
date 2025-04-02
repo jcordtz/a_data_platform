@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # Supporting Data Services - Data Discovery - Under construction
 

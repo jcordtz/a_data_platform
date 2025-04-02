@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # Unterstützung von Datendiensten - Common Data Model - Im Aufbau
 
