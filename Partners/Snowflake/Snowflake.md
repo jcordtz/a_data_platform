@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# A Data Platform - Partner solution - Snowflake - Under Construction
+# A Data Platform - Partner solution - Snowflake
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Snowflake.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](Snowflake-da.md)
