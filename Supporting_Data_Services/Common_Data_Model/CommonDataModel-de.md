@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Unterstützung von Datendiensten - Common Data Model - Im Aufbau
+# Unterstützung von Datendiensten - Common Data Model
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)

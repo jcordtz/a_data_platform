@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Supporting Data Services - Common Data Model - Under konstruktion
+# Supporting Data Services - Common Data Model
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](CommonDataModel-da.md)

@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Supporting Data Services - Data Discovery - Under construction
+# Supporting Data Services - Data Discovery
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)

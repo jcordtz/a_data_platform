@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Supporting Data Services - Data Catalog - Under construction
+# Supporting Data Services - Data Catalog
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
