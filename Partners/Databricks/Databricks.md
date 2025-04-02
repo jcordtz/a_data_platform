@@ -7,7 +7,9 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
-<div style="text-align: center"><img src="../../images/Databricks_Logo.png" width="200" /></div>
+<p align="center">
+  <img width="200" src="../../images/Databricks_Logo.png">
+</p>
 
 ## Introduction
 

@@ -7,7 +7,10 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
-<div style="text-align: center"><img src="../../images/snowflake.png" width="200" /></div>
+<p align="center">
+  <img width="200" src="../../images/snowflake.png"">
+</p>
+
 
 ## Indledning
 
