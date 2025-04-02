@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Data Model - "Under construction"
+# A data platform - Data Model
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)

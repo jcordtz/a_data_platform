@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - DataOps - Under construction
+# A data platform - DataOps
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)

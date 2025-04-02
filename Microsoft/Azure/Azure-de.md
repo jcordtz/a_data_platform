@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Eine Data Platform - Basierend auf Azure-Diensten.
+# Eine Data Platform - Basierend auf Azure-Diensten
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
@@ -23,3 +23,7 @@ Im **Veröffentlichungsbereich** finden Sie verschiedene Azure-Datenbanktechnolo
 
 Im Bereich **Verbrauchen** finden Sie *PowerBI/Fabric* zusammen mit *Azure Machine Learning* und *Azure AI Foundry*.
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
