@@ -1,27 +1,38 @@
-![microsoft](../images/microsoft.png)
+[microsoft](../images/microsoft.png)
 
-# Fabric baseret
+# A Data Platform - Microsoft Fabric based
 
-Microsoft Fabric er en alt-i-en-analyseløsning, der dækker alt fra dataflytning til data-science, realtidsanalyse og Business Intelligence.
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
-Platformen er Software as a Service (SaaS) produkt, som håndterer al integration mellem de forskellige komponenter, der anvendes i dataplatformen.
+Microsoft Fabric er en alt-i-én-analyseløsning, der dækker alt fra dataflytning til datavidenskab, realtidsanalyse og Business Intelligence.
 
-Microsoft Fabric samler nye og eksisterende komponenter fra Power BI, Azure Synapse og Azure Data Factory i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
+Fabric er en Software as a Service (SaaS), som håndterer al integration mellem de forskellige komponenter, der bruges i platformen.
 
-![figur1](../../images/danish/Slide11.JPG)
+Microsoft Fabric samler nye og eksisterende komponenter som Power BI, Azure Synapse og Azure Data Factory i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
+
+![figur1](../../images/danish/Slide11.jpg)
 
 *Figur 1*
 
-Man kan sagtens bygge en data platform ved hjælp af Fabric, men da Fabric er en SaaS-løsning, vil dette ikke give en teknologi-uafhængig løsning.
+Du kan bygge en dataplatform ved hjælp af Fabric, men på grund af Fabric som en SaaS-løsning vil dette - naturligvis - ikke give dig en teknologiuafhængig løsning.
+Fabric er dog stadig en åben platform med API'er, der kan bruges til at interagere med den fra andre værktøjer.
 
-Følgende figur viser hvorledes Fabric for eksempel kunne bruges i data platformen.
+I *figur 2* illustreres forskellige måder at bruge Microsoft Fabric på inden for dataplatformskonceptet.
 
 ![figur2](../../images/danish/Slide9.JPG)
 
 *Figur 2*
 
-I toppen af diagrammet placerer Microsoft Fabric sig ideelt i **consume** area, som en mulig direkte kloning af data platformen. Dette kan tilbyde avancerede analytiske funktioner til teams/projekter/organisationer, der ønsker at introducere deres egne datasæt, samtidig med at de opererer inden for et "kontrolleret" rammearbejde.
+Øverst på figuren passer Microsoft Fabric rigtig godt ind i **consume area** , hvor det kunne bruges som en "copy-cat" af selve dataplatformen. Derfor kan du levere lignende funktionalitet til afdelinger/projekter/organisationer, der gerne vil lave mere avancerede analyser og/eller være i stand til at bringe deres egne data, men stadig have dette i et "kontrolleret" miljø.
 
-Og i bunden af figuren, er Microsoft Fabric selve data platformen.
+Og nederst i figuren har vi en implementering, hvor Microsoft Fabric er selve dataplatformen.
 
-Mere information om Microsoft Fabric findes her (https://www.microsoft.com/da-dk/microsoft-fabric)
+Du kan finde flere oplysninger om Microsoft Fabric her [Microsoft Fabric Info](https://www.microsoft.com/en-us/microsoft-fabric)
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
