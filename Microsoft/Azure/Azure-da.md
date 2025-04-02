@@ -1,6 +1,11 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
-# Baseret på Azure-tjenester.
+# En Data Platform - Baseret på Azure-tjenester.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 Implementering af dataplatformen ved hjælp af Azure-tjenester resulterer i en meget fleksibel og agil tilgang. Dette vil opfylde alle emner, der er anført i kapitlet ”Overordnet paradigme".
 
@@ -17,3 +22,8 @@ I **Transform** området vil ETL-processen håndteres af *Azure Data Factory Dat
 I **publish** området finder man forskellige Azure-databaseteknologier, for eksempel relations databaserne *Azure SQL Database*, *Azure PostgresDB* og *Azure MySQL*. Også databaser som *Azure Cosmos DB*, *Azure Analytical Services* og *Azure Data Explorer* er kandidater sammen med *Azure Data Lake*.
 
 I **consume** området finder man *PowerBI/Fabric* sammen med *Azure Machine Learning* og *Azure AI Foundry*.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

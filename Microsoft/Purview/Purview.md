@@ -1,6 +1,11 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # Microsoft Purview and the data platform
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 Microsoft Purview is a comprehensive set of solutions that can help organizations govern, protect, and manage data, wherever it resides. Microsoft Purview solutions provide integrated coverage and help address the fragmentation of data across organizations, the lack of visibility that hampers data protection and governance, and the blurring of traditional IT management roles.
 
@@ -20,3 +25,8 @@ This is a very important capability in connection with the data platform as it p
 Providing a **"search engine"** where users entering the **consume** area can see/find what they have access to, what this represents and whom to contact for different assets within their "data catalog".
 
 One of the aspects of the data platform is that **"a database only exists if being used"** means that a database is removed when not being used and then re-created when needed. Hence Microsoft Purview could play the important role of both document that the database "was there" and when/if being re-created can work as a place to refere to ensure that the structures in the re-created database are "as they were".
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

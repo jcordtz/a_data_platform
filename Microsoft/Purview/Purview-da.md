@@ -1,6 +1,11 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # Microsoft Purview og dataplatformen
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 Microsoft Purview er et omfattende sæt af løsninger, der kan hjælpe organisationer med at styre, beskytte og administrere data, uanset hvor de er placeret. Microsoft Purview-løsninger giver integreret dækning og hjælper med at håndtere fragmenteringen af data på tværs af organisationer, manglen på synlighed, der hæmmer databeskyttelse og styring, og udviskningen af traditionelle it-administrationsroller.
 
@@ -20,3 +25,8 @@ Dette er en meget vigtig funktion i forbindelse med dataplatformen, da den giver
 Adgang til en **"søgemaskine"**, hvor brugere, der går ind i **consume** området, kan se/finde, hvad de har adgang til, hvad dette repræsenterer, og hvem de skal kontakte for disse forskellige aktiver i deres "datakatalog".
 
 Et af aspekterne ved dataplatformen er, at **"en database eksisterer kun, hvis den bruges"** betyder, at en database kan/bør fjernes, når den ikke bruges, og derefter genskabes, når der er behov for det. Dermed kan Microsoft Purview spille den vigtige rolle det er både at dokumentere, at databasen "var der", og når/hvis denne genskabes, kan fungere som et sted at referere til for at sikre, at strukturerne i den genskabte database er "som de var".
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

@@ -1,6 +1,11 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
-# Azure services based.
+# A Data Platform - Azure services based.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 Implementing the data platform using Azure services results in a very flexible and agile approach. This will fulfill all topics listed in the chapter “Overall paradigm”.
 
@@ -17,3 +22,8 @@ In the **transform area** the process would then be handled by *Data Factory Dat
 In the **publish area** you will find different *Azure database* technologies being the relational databases *Azure SQL Database*, *Azure PostgresDB* and *Azure MySQL*. Also databases like *Azure Cosmos DB*, *Azure Analytical Services* and *Azure Data Explorer* are candidates along with *Azure Data Lake*.
 
 In the **consume area** you will find *PowerBI/Fabric* along with *Azure Machine Learning Studio* and *Azure AI Foundry*.
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)

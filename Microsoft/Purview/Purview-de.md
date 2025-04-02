@@ -1,6 +1,11 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # Microsoft Purview und die Datenplattform
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
 
 Microsoft Purview ist ein umfassendes Paket von Lösungen, mit denen Organisationen Daten verwalten, schützen und verwalten können, unabhängig davon, wo sie sich befinden. Microsoft Purview-Lösungen bieten eine integrierte Abdeckung und tragen dazu bei, die Fragmentierung von Daten in Organisationen, die mangelnde Transparenz, die den Datenschutz und die Governance behindert, sowie die Verwischung traditioneller IT-Verwaltungsrollen zu bewältigen.
 
@@ -20,3 +25,8 @@ Dies ist eine sehr wichtige Funktion im Zusammenhang mit der Datenplattform, da 
 Bereitstellung einer **"Suchmaschine"**, in der Benutzer, die den **Konsumbereich** betreten, sehen/finden können, worauf sie Zugriff haben, was dies darstellt und an wen sie sich für verschiedene Assets innerhalb ihres "Datenkatalogs" wenden können.
 
 Einer der Aspekte der Datenplattform ist, dass **"eine Datenbank existiert nur, wenn sie verwendet wird"** bedeutet, dass eine Datenbank entfernt wird, wenn sie nicht verwendet wird, und dann bei Bedarf neu erstellt wird. Daher könnte Microsoft Purview die wichtige Rolle spielen, sowohl zu dokumentieren, dass die Datenbank "ihnen gehörte", als auch wann/ob die Neuerstellung als Referenzort dienen kann, um sicherzustellen, dass die Strukturen in der neu erstellten Datenbank "so sind, wie sie waren".
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
