@@ -1,11 +1,13 @@
-![snowflake](../../images/Databricks_Logo.png)                               ![microsoft](../../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
-# Partnerløsning – Azure Databricks-baseret – under udvikling
+# En data platform - Partnerløsning – Azure Databricks – under udvikling
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+
+<div style="text-align: center"><img src="../../images/Databricks_Logo.png" width="200" /></div>
 
 ## Indledning
 
@@ -52,8 +54,6 @@ Azure Databricks kan integreres med forskellige Azure-tjenester, hvilket forbedr
 ## Konklusion
 
 Azure Databricks er et effektivt værktøj, der understøtter konstruktionen af en lakehouse-arkitektur ved at levere skalerbar lagerplads, effektiv databehandling og robust datastyring. Dens integration med forskellige Azure-tjenester forbedrer lakehouse's muligheder yderligere, hvilket gør det til en omfattende løsning til moderne datastyring og -analyse. Ved at udnytte Azure Databricks kan organisationer opbygge en samlet, skalerbar og sikker dataplatform, der opfylder deres analysebehov og skaber forretningssucces.
-
-
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)

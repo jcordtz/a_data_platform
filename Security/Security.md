@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Security "Under construction"
+# A data platform - Security
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
