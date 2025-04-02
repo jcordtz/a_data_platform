@@ -13,7 +13,7 @@ Fabric is a Software as a Service (SaaS), which handles all integration between 
 
 Microsoft Fabric brings together new and existing components like Power BI, Azure Synapse, and Azure Data Factory into a single integrated environment. These components are then presented in various customized user experiences.
 
-![figur1](../../images/english/Slide11.jpg)
+![figur1](../../images/english/Slide11.JPG)
 
 *Figure 1*
 

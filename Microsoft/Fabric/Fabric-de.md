@@ -1,4 +1,4 @@
-[microsoft](../../images/microsoft.png)
+![microsoft](../../images/microsoft.png)
 
 # A Data Platform - Microsoft Fabric based
 
@@ -13,7 +13,7 @@ Fabric ist eine Software-as-a-Service (SaaS), die die gesamte Integration zwisch
 
 Microsoft Fabric vereint neue und vorhandene Komponenten wie Power BI, Azure Synapse und Azure Data Factory in einer einzigen integrierten Umgebung. Diese Komponenten werden dann in verschiedenen maßgeschneiderten Benutzererlebnissen präsentiert.
 
-![abbildung1](../../images/german/Slide11.jpg)
+![abbildung1](../../images/german/Slide11.JPG)
 
 *Abbildung 1*
 
