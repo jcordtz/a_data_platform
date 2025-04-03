@@ -29,6 +29,49 @@ Bei der Datenmodellierung werden verschiedene Techniken eingesetzt, um eine gena
 2) Normalisierung: Diese Technik wird verwendet, um Daten zu organisieren, um Redundanz zu reduzieren und die Datenintegrität zu verbessern. Dabei geht es darum, große Tische in kleinere, handlichere Teile zu unterteilen.
 3) Dimensionale Modellierung: Diese Technik wird hauptsächlich im Data Warehousing verwendet und umfasst die Erstellung von Fakten- und Dimensionstabellen zur Unterstützung analytischer Abfragen.
 
+## Datenmodellierung in der Datenplattform
+
+Neben den oben genannten Techniken führt die Datenplattform einige Aspekte der Datenmodellierung ein, die nicht zu den allgemeinen Aspekten der Datenmodellierung gehören.
+
+Abbildung 1 zeigt diese Datenmodelle in der Data Platform.
+
+![abbildung1](../images/german/Slide13.png)
+
+### Tabellenmodell
+
+Im **Ingest-Bereich** wird  ein Datenmodell namens *Tabel Model* vorgestellt. Dieses Modell beschreibt, worauf wir uns geeinigt haben, dass ein bestimmter Ingest-Stream liefert. Und daher dieses Modell
+kann verwendet werden, um zu überprüfen, ob die von einem entsprechenden Prozess gelieferten Daten den Erwartungen entsprechen. Es kann auch den Nachweis erbringen, dass neue "Spalten" in den empfangenen Daten vorhanden sind, so dass diese
+angemessen gehandhabt.
+
+Die Daten selbst werden in keiner Weise verändert, sondern können in einem  *guten* und *schlechten* Datensatzbereich geparkt werden,  basierend auf entweder falschem Inhalt in Bezug auf das, was erwartet wurde, oder 
+Ein fehlerhafter Datensatz, der z.B. auf fehlenden Daten basiert.
+
+Dieses Modell wird von den *Data Engineers* gepflegt.
+
+### Abgestimmtes Datenmodell
+
+Im Bereich **Transformation** wird das erstellte Modell als *ausgerichtetes Datenmodell* bezeichnet. Dieses Modell stellt ein traditionelleres EB-Datenmodell dar, aber mit dem großen Unterschied, dass das Datenmodell
+implementiert die Beziehungen nicht. Sie werden beschrieben, aber nicht durchgesetzt. Bei den Tabellen, die in diesem Bereich beschrieben werden, handelt es sich um "korrekte Datensätze", bei denen die Entitäten und Attribute an
+Allgemeine Regeln wie Datentyp, Datumsformate, Beschreibungen, Schlüssel, Fremdschlüssel, Dezimalgenauigkeit usw. Das Ergebnis müssen Strukturen sein, die sich sehr einfach zu einer Form verbinden lassen 
+die Datensätze im **Veröffentlichungsbereich**.
+
+Dieses Modell wird von den *Data Engineers* gepflegt.
+
+### Dimensionales Modell
+
+Bei den Datenmodellen, die im **Veröffentlichungsbereich** vorhanden  sind, handelt es sich um standardmäßige *dimensionale Modelle*, bei denen Daten verknüpft und die richtigen Spalten vorhanden sind, um die jeweilige Geschäftsaufgabe zu unterstützen.
+
+Dieses Modell wird von den *Designern* gepflegt
+
+### Datenprodukt
+
+Die *dimensionalen Modelle* im **Veröffentlichungsbereich** werden im **Verbrauchsbereich** weiter verbessert, indem  sie zu *Datenprodukten* geformt werden. Ein *Datenprodukt* ändert das Layout des *dimensionalen Modells* nicht
+fügt aber beschreibende Informationen wie *Anwendungsfall*, *Dokumentation*, *Benutzerhandbücher* usw. hinzu.
+
+Diese Informationen sollten von dem Geschäftsinhaber gepflegt werden, der das *dimensionale Modell* "bestellt" hat.
+
+
+
 ## Vorteile der Datenmodellierung
 
 Die Datenmodellierung bietet zahlreiche Vorteile, die die Effizienz und Effektivität des Datenmanagements steigern:

@@ -203,7 +203,7 @@ Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-L
 
 RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
 
-! [Microsoft RAG-Architektur](images/englisch/architecture-diagram.png)
+! [Microsoft RAG-Architektur](images/architecture-diagram.png)
 *Microsoft RAG-Architektur*
 
 Die Entscheidung, welches Informationsabrufsystem verwendet werden soll, ist entscheidend, da es die Eingaben für das LLM bestimmt. Das Informationsabrufsystem sollte Folgendes bieten:

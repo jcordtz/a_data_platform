@@ -208,7 +208,7 @@ En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-
 
 RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **jordforbindelse** data. Tilføjelse af et informationshentningssystem giver dig kontrol over jordingsdata, der bruges af en LLM, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, at du kan begrænse generativ AI til dit virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis du har integreringsmodeller for det pågældende indhold.
 
-! [Microsoft RAG-arkitektur](images/english/architecture-diagram.png)
+! [Microsoft RAG-arkitektur](images/architecture-diagram.png)
 *Microsoft RAG-arkitektur*
 
 Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM. Informationssøgningssystemet skal indeholde:

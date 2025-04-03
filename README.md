@@ -189,7 +189,7 @@ A typical approach for bringing your own data in scope of especially a GenAI sol
 
 RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data. Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
 
-![Microsoft RAG Architecture](images/english/architecture-diagram.png)
+![Microsoft RAG Architecture](images/architecture-diagram.png)
 *Microsoft RAG Architecture*
 
 The decision about which information retrieval system to use is critical because it determines the inputs to the LLM. The information retrieval system should provide:
