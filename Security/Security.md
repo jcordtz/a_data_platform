@@ -104,7 +104,7 @@ requirements, and maintain customer trust.
 
 ## Legislation
 
-On a political/legislational level a lot of very good work (I think) has happened over the last years to outline and set requirements (laws)
+On a political/legislation level a lot of very good work (I think) has happened over the last years to outline and set requirements (laws)
 on what we have to do to protect our data assets. And hence protect our customers, citizens and us self as individuals.
 
 This document will use the two EU directives NIS2 and GDPR and the US HIPAA rules as examples of legislation being implemented.
@@ -114,6 +114,8 @@ This document will use the two EU directives NIS2 and GDPR and the US HIPAA rule
 3) HIPAA is used because it focuses on Health Information, and is actually three laws in one. It consists of the Privacy Rule, the Security Rule and
 the Data Breach Notification Rule.
 4) EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI).
+
+A more comprehensive guide is provided in this [section](Legislations.md),including the ones mentioned beneath.
 
 ### GDPR
 
