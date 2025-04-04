@@ -105,7 +105,7 @@ Data residency regulations, such as those provided by the Microsoft EU Data Boun
 
 ## List of laws per country
 
-Tke following is a list of laws bu country - just for informational purposes -[Reference](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide)
+The following is a list of laws by country - just for informational purposes -[Reference](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide)
 
 |Country|Title of Legislation/Draft Legislation|Links to laws|
 |---|---|---|
