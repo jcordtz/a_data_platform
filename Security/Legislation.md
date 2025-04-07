@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Legislation
+# A data platform - Legislation - under construction
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
@@ -12,96 +12,537 @@
 On a political/legislation level a lot of very good work (I think) has happened over the last years to outline and set requirements (laws)
 on what we have to do to protect our data assets. And hence protect our customers, citizens and us self as individuals.
 
-This section discusses many of the different directives/rules that could be of interest depending on industry and requirements.
+This section discusses many of the different directives/rules that could be of interest depending on industry and requirements and that we seen being
+in effect at our customers.
 
-### GDPR
+This is meant to be an introduction to the different aspects of this, so please follow the provided links for more information.
 
-This Regulation lays down rules relating to the protection of *natural persons* with regard of the processing of **personal** data and
-rules relating to the free movement of personal data.
+## GDPR
 
-This Regulation protects fundamental rights and freedoms of natural persons and in particular their right to the protection of personal data.
-And GDPR states that the free movement of personal data within the European Union shall be neither restricted nor prohibited for reasons
-connected with the protection of natural persons with regard to the processing of personal data.
+The **General Data Protection Regulation (GDPR)** is a data protection law enacted by the European Union (EU) to safeguard personal data and privacy of individuals within the EU. It came into effect on May 25, 2018, and is considered one of the most comprehensive privacy and security laws globally.
 
-So this directive protects individuals data from misusage. One of the main objectives in the GDPR directive is that data need to be **classified**.
+### Key Components of GDPR
 
-Reference: <https://gdpr-info.eu/art-1-gdpr>
+* Scope and Applicability - GDPR applies to any organization, regardless of its location, that processes personal data of individuals in the EU. This includes companies outside the EU that offer goods or services to EU residents or monitor their behavior.
+* Personal Data - Personal data refers to any information that can directly or indirectly identify a living person. Examples include names, addresses, phone numbers, email addresses, IP addresses, and even online behavior.
+* Data Processing Principles:
+  * *Lawfulness, Fairness, and Transparency*: Data must be processed lawfully, fairly, and transparently.
+  * *Purpose Limitation*: Data should be collected for specified, explicit, and legitimate purposes and not further processed in a manner incompatible with those purposes.
+  * *Data Minimization*: Only the data necessary for the intended purpose should be collected.
+  * *Accuracy*: Data must be accurate and kept up to date.
+  * *Storage Limitation*: Data should be stored only as long as necessary for the purposes for which it was collected.
+  * *Integrity and Confidentiality*: Data must be processed securely to protect against unauthorized or unlawful processing and accidental loss, destruction, or damage.
 
-### NIS2
+### Rights of Data Subjects
 
-The NIS2 Directive (European Directive 2022/2555) is a legislative framework designed to enhance cybersecurity across the European Union by
-establishing a high common level of security for network and information systems.
+**GDPR** provides a set of "Rights" that the processor of the data must adhere to. These are as follows:
 
-It builds upon the original NIS Directive, expanding its scope and strengthening requirements to better address evolving cyber threats.
+* Right to Access - Individuals have the right to access their personal data and obtain information about how it is being processed.
+* Right to Rectification - Individuals can request correction of inaccurate or incomplete data.
+* Right to Erasure (also known as the "Right to be Forgotten") - Individuals can request the deletion of their data under certain circumstances.
+* Right to Restrict Processing - Individuals can request the restriction of processing their data under specific conditions.
+* Right to Data Portability - Individuals can receive their data in a structured, commonly used, and machine-readable format and transfer it to another controller.
+* Right to Object - Individuals can object to the processing of their data, particularly for direct marketing purposes.
 
-Under NIS2, essential and important entities must adopt appropriate, proportionate technical, operational, and organizational measures to manage
-cybersecurity risks.
+So, one of the main objectives in the **GDPR** directive is that data need to be **classified**.
 
-These measures aim to protect network and information systems, as well as to prevent or minimize the impact of incidents on service
-recipients and interconnected services.
+### Obligations of Data Controllers and Processors
 
-The directive mandates an "all-hazards" approach, meaning that entities must be prepared to address a wide range of threats, from cyber
-attacks to physical disruptions, ensuring comprehensive protection and resilience in their operations.
+The **GDPR** legislation defines the 2 key concepts of a *data controller* and a *data processor* to define *who* is responsible in aspects of the above mentioned *rights* and *principals*.
 
-This directive regulates what needs to be in place regarding the usage of data. One of the main objectives is that you need to know where **all** your data is - as described in the most common used framework *behind* NIS 2 being CIS 18.
+A *data controller* is a natural or legal person, public authority, agency, or any other body which, alone or jointly with others, determines the purposes and means of the processing of personal data.
 
-Reference: <https://www.nis-2-directive.com/>
+A *data processor* is a natural or legal person, public authority, agency, or any other body that processes personal data on behalf of the *data controller*.
 
-### HIPAA
+So, the difference between these two entities is then as follows:
 
-* The Privacy Rule: The HIPAA Privacy Rule establishes national standards to protect individuals' medical records and other individually identifiable health information (collectively defined as “protected health information”) and applies to health plans, health care clearinghouses, and those health care providers that conduct certain health care transactions electronically.  
-* The Security Rule: The HIPAA Security Rule establishes national standards to protect individuals’ electronic personal health information that is created, received, used, or maintained by a covered entity. The Security Rule requires appropriate administrative, physical and technical safeguards to ensure the confidentiality, integrity, and security of electronic protected health information. 
-* Data Breach Notifications: The Breach Notification Rule requires covered entities and business associates to notify affected individuals, HHS, and, in some cases, the media of a breach of unsecured PHI.
+* Data Controller: The data controller determines the purposes and means of processing personal data. They have overall control and responsibility for the data processing activities.
+* Data Processor: The data processor acts on behalf of the data controller and follows their instructions. They do not have control over the purposes and means of processing
 
-HIPAA is in effect together with other rules/laws, so data will live and need to be handled under these different kind of rules.
+Both entities are obligated to secure the following:
+
+* Data Protection by Design and Default - Organizations must implement appropriate technical and organizational measures to ensure data protection principles are integrated into processing activities.
+* Data Protection Impact Assessments (DPIAs) - DPIAs are required for processing activities that pose high risks to individuals' rights and freedoms.
+* Appointment of Data Protection Officers (DPOs) - Organizations must appoint DPOs if they engage in large-scale processing of sensitive data or systematic monitoring of individuals.
+* Breach Notification - Data breaches must be reported to the relevant supervisory authority within 72 hours, and affected individuals must be informed if the breach poses a high risk to their rights and freedoms.
+
+### Enforcement and Penalties
+
+GDPR enforcement is carried out by national data protection authorities in each EU member state. Non-compliance can result in severe penalties, including fines up to €20 million or 4% of the annual global turnover, whichever is higher.
+
+Reference: <https://gdpr.eu/what-is-gdpr/>
+
+## NIS2
+
+The **Network and Information Security Directive 2 (NIS2)** is a European Union directive (European Directive 2022/2555) aimed at enhancing the cybersecurity of critical infrastructure and essential services within the EU. It builds upon and expands the original NIS Directive (Directive 2016/1148), addressing its shortcomings and introducing more stringent requirements.
+
+This directive regulates what needs to be in place regarding the usage of data. One of the main objectives is that you need to know where **all** your data is - as described in the most common used framework *behind* NIS 2 being CIS 18 (described later in this section).
+
+### Key Components of NIS2
+
+**NIS2** applies to a broader range of sectors compared to the original NIS Directive. It covers 15 sectors, including energy, transport, banking, financial market infrastructures, health, drinking water supply and distribution, digital infrastructure, public administration, and space.
+
+Organizations within the scope of **NIS2** are required to implement appropriate and proportionate technical and organizational measures to manage the risks posed to the security of network and information systems.
+
+**NIS2** also introduces stricter timelines for reporting significant incidents. Organizations must report incidents to the relevant national authorities within **24 hours** of detection.
+
+The directive places a strong emphasis on securing supply chains. Hence organizations must also ensure that their suppliers and service providers adhere to robust cybersecurity standards.
+
+It is important to notice that **NIS2** holds top management accountable for ensuring compliance with the directive. This includes the implementation of cybersecurity measures and the reporting of incidents.
+
+Non-compliance with **NIS2** can result in severe penalties, including substantial fines and legal ramifications for management teams.
+
+### Objectives of NIS2
+
+**NIS2** aims to create a high common level of cybersecurity across the EU by harmonizing the security requirements and measures that organizations must implement.
+
+The directive seeks to enhance cooperation and information sharing between EU member states to better respond to and mitigate cyber threats.
+
+**NIS2** is designed to address the evolving landscape of cyber threats, ensuring that critical infrastructure and essential services are better protected against sophisticated attacks.
+
+### Implementation Timeline
+
+EU member states had until October 17, 2024, to transpose **NIS2** into their national laws. Organizations within the scope of the directive should have complied with its requirements by this date. Most countries did not achieve this - actually Croatia and Italy are the only countries having implemented **NIS2**. In Denmark the current date for the **NIS2** to be implemented is July 1, 2025.
+
+### Differences Between NIS and NIS2
+
+**NIS2** covers more sectors and organizations compared to the original NIS Directive. **NIS2** introduces more stringent security measures, reporting obligations, and penalties.
+And the directive places greater emphasis on securing supply chains and ensuring that third-party providers adhere to cybersecurity standards.
+
+Reference: <https://digital-strategy.ec.europa.eu/en/policies/nis2-directive>
+
+## HIPAA
+
+The **Health Insurance Portability and Accountability Act (HIPAA)** is a U.S. law enacted in 1996 to protect patient health information and ensure privacy and security in healthcare. It primarily aims to enable workers to carry forward healthcare insurance between jobs, prohibit discrimination against beneficiaries with pre-existing health conditions, and guarantee coverage renewability in multi-employer health insurance plans.
+
+**HIPAA** is in effect together with other rules/laws, so data will live and need to be handled under these different kind of rules.
 
 These rules are i.e. Virginia Consumer Data Protection Act, Illinois’ Biometric Information Privacy Act etc.
+
+### Key Components of HIPAA
+
+**HIPAA** is divided in to 5 *Titles*, which are as follows:
+
+* Title I – Health Care Access, Portability, and Renewability - Ensures that individuals can maintain their health insurance coverage when changing or losing jobs.
+* Title II – Preventing Health Care Fraud and Abuse, Administrative Simplification, and Medical Liability Reform - Introduces measures to combat healthcare fraud and abuse, and establishes standards for electronic healthcare transactions.
+* Title III – Tax-Related Health Provisions Governing Medical Savings Accounts - Provides tax benefits related to medical savings accounts.
+* Title IV – Application and Enforcement of Group Health Insurance Requirements - Enforces requirements for group health insurance plans.
+* Title V – Revenue Offset Governing Tax Deductions for Employers - Addresses tax deductions for employers.
+
+**HIPAA** works a set of administrative simplification regulations.
+
+* Privacy Rule - Establishes national standards for the protection of individually identifiable health information (PHI). It regulates how PHI can be used and disclosed by covered entities and business associates.
+* Security Rule - Sets standards for the protection of electronic PHI (ePHI) to ensure its confidentiality, integrity, and availability.
+* Breach Notification Rule - Requires covered entities to notify affected individuals, the Secretary of Health and Human Services (HHS), and, in some cases, the media of breaches of unsecured PHI.
+
+So, the objectives of **HIPAA** are to protect patients privacy which aims to safeguard the privacy of patient health information and give patients more control over their health data. Secondly, **HIPAA** seeks to improve efficiency by standardizing electronic healthcare transactions. Last, but not least, **HIPAA** seeks to combat fraud and abuse and hence saving billions of dollars for health plan members, employers, and US taxpayers.
+
+### Rights of Individuals Under HIPAA
+
+Just like **GDPR** **HIPAA** imposes a set of rights to the individual person (in **GDPR** terms the *Data subject*).
+
+* Right to Access - Individuals have the right to access their health records and obtain copies of their PHI.
+* Right to Amend - Individuals can request corrections to their health information if they believe it is inaccurate or incomplete.
+* Right to an Accounting of Disclosure - Individuals can request a list of disclosures of their PHI made by a covered entity.
+* Right to Request Restrictions - Individuals can request restrictions on how their PHI is used and disclosed.
+* Right to Confidential Communications - Individuals can request that communications about their health information be made through alternative means or at alternative locations.
+
+### Obligations of Covered Entities and Business Associates
+
+The above principals then imposes obligations to entities handling PHI records.
+
+Covered entities and business associates must implement administrative, physical, and technical safeguards to protect PHI. Secondly they must conduct regular risk assessments to identify and mitigate potential threats to PHI.
+It is also required that employees must be trained on **HIPAA** policies and procedures to ensure compliance.
+Last, but no least, Breaches of unsecured PHI must be reported promptly to affected individuals and the HHS.
+
+**HIPAA** enforcement is carried out by the Office for Civil Rights (OCR) within HHS. Non-compliance can result in civil and criminal penalties, including fines and imprisonment.
 
 Reference: <https://www.hhs.gov/hipaa/index.html>
 
 ### EU Artificial intelligence Act
 
-The EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI). It establishes a common regulatory 
-and legal framework for AI within the European Union. It came into force on 1 August 2024, with provisions that shall come into operation gradually over the following 6 to 36 months.
+The **EU Artificial Intelligence Act (AI Act)** is a significant regulatory framework aimed at harmonizing the development, deployment, and use of artificial intelligence within the European Union. It was proposed by the European Commission in April 2021 and came into effect on August 1, 2024, with provisions that it shall come into operation gradually over the following 6 to 36 months.
 
-It covers all types of AI across a broad range of sectors, with exceptions for AI systems used solely for military, national security, research and non-professional purposes.
+The **AI Act** defines an AI system as a machine-based system designed to operate with varying levels of autonomy and adaptiveness, generating outputs such as predictions, content, recommendations, or decisions that can influence physical or virtual environments.
+
+The **AI Act** applies to providers and deployers of AI systems within the EU, as well as those outside the EU whose AI systems impact the EU market. It covers a broad range of sectors, including healthcare, finance, insurance, transportation, and education, with exceptions for AI systems used solely for military, national security, research and non-professional purposes.
 
 As a piece of product regulation, it does not confer rights on individuals, but regulates the providers of AI systems and entities using AI in a professional context.
 
-The Act classifies non-exempt AI applications by their risk of causing harm. There are four levels – unacceptable, high, limited, minimal – plus an additional category for general-purpose AI.
+The **AI Act** classifies non-exempt AI applications by their risk of causing harm. There are four risk categories – unacceptable, high, limited, minimal – plus an additional category for general-purpose AI.
 
-* Applications with unacceptable risks are banned.
-* High-risk applications must comply with security, transparency and quality obligations, and undergo conformity assessments.
-* Limited-risk applications only have transparency obligations.
-* Minimal-risk applications are not regulated.
+* Applications with unacceptable risks - AI systems that pose unacceptable risks to fundamental rights, safety, and public interests are prohibited. These include AI systems using subliminal techniques to manipulate behavior, exploiting vulnerabilities of specific groups, social scoring based on personal characteristics, and untargeted scraping for facial recognition databases.
+* High-risk applications - AI systems, such as AI-based medical software or AI systems used for recruitment, must comply with strict requirements, including risk-mitigation systems, high-quality data sets, clear user information, and human oversight.
+* Limited-risk applications - Systems like chatbots must clearly inform users that they are interacting with a machine, and certain AI-generated content must be labeled as such.
+* Minimal-risk applications - AI systems such as spam filters and AI-enabled video games face no obligations under the AI Act, but companies can voluntarily adopt additional codes of conduct.
 
 For general-purpose AI, transparency requirements are imposed, with reduced requirements for open source models, and additional evaluations for high-capability models.
 
-Reference: <https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1689>
+### Objectives of the AI Act
 
-### Digital Operational Resilience Act (DORA)
+The **AI Act** aims to ensure the safety of AI systems and protect the fundamental rights of individuals within the EU.
 
-Adopted by the European Union in 2022, the Digital Operational Resilience Act (DORA) seeks to strengthen financial entities against digital disruptions by ensuring they can withstand, respond to, and recover from ICT-related incidents.
+By providing these clear requirements and obligations, the **AI Act** seeks to foster responsible AI development and deployment, promoting innovation while preventing market fragmentation.
 
-DORA applies to banks, insurance firms, investment companies, and other financial services organizations, establishing comprehensive requirements for managing ICT risks.
+The **AI Act** also introduces transparency obligations for certain AI systems and holds top management accountable for ensuring compliance.
 
-Core provisions include mandatory risk assessments, stringent third-party ICT provider oversight, incident reporting obligations, and regular resilience testing.
+The **AI Act** emphasizes the importance of AI literacy for providers and deployers, requiring ongoing training and education tailored to specific sectors and use cases.
 
-By harmonizing practices across the EU, DORA aims to bolster the operational stability of the financial sector and enhance trust in its digital infrastructure.
+Hence the Commission has launched a consultation on a Code of Practice for providers of general-purpose AI models, addressing critical areas such as transparency, copyright-related rules, and risk management.
 
-## Cloud-Specific Standards and Frameworks
+Being non-compliant with the **AI Act** can result in severe penalties, including substantial fines and legal ramifications for management teams.
+
+Reference: <https://commission.europa.eu/news/ai-act-enters-force-2024-08-01_en>
+
+## Digital Operational Resilience Act (DORA)
+
+The **Digital Operational Resilience Act (DORA)** is a European Union regulation designed to enhance the digital operational resilience of financial entities. It was enacted on January 16, 2023, and will apply from January 17, 2025.
+
+So, **DORA** seeks to strengthen financial entities against digital disruptions by ensuring they can withstand, respond to, and recover from Information and communication technology(ICT) related incidents.
+
+By harmonizing practices across the EU, **DORA** aims to bolster the operational stability of the financial sector and enhance trust in its digital infrastructure.
+
+**DORA** applies to a wide range of financial entities, including banks, insurance companies, investment firms, payment service providers, and critical third-party ICT service providers. This broad coverage reflects the interconnected nature of modern financial systems and the importance of ensuring resilience across the entire ecosystem.
+
+These financial entities **must** implement comprehensive ICT risk management frameworks. These frameworks should include policies and procedures for identifying, assessing, and mitigating ICT risks and entities are required to conduct regular risk assessments and update their risk management strategies accordingly.
+
+**DORA** mandates the reporting of major ICT-related incidents to competent authorities within a specified timeframe. This ensures that authorities are promptly informed of significant disruptions and can take appropriate action.The regulation also requires entities to maintain detailed records of all ICT-related incidents and the measures taken to address them.
+
+Financial entities **must** conduct regular testing of their ICT systems to ensure they can withstand and recover from disruptions. This includes both basic and advanced testing, such as penetration testing and scenario-based testing.Testing results must be documented and used to improve the resilience of ICT systems.
+
+**DORA** places a strong emphasis on managing risks associated with third-party ICT service providers. Financial entities must ensure that their third-party providers adhere to robust cybersecurity standards. Key contractual provisions must be in place to manage third-party risks, and entities must monitor the performance and security practices of their providers.
+
+On the more *soft* side, the regulation encourages the sharing of information and intelligence on cyber threats among financial entities. This collaborative approach aims to enhance the overall security posture of the financial sector.
+
+### Objectives of DORA
+
+The main objective addressed by **DORA** aims to strengthen the cybersecurity of financial entities by standardizing risk management practices and ensuring robust protection against cyber threats. The regulation seeks to ensure that financial entities can withstand, respond to, and recover from ICT disruptions, thereby maintaining the stability and trust in the financial markets. And by harmonizing ICT risk management requirements across the EU, DORA aims to prevent regulatory fragmentation and create a level playing field for all financial entities.
+
+**DORA** establishes an oversight framework for critical ICT third-party providers. Competent authorities will oversee these providers to ensure they comply with the regulation. - Non-compliance with **DORA** can result in severe penalties, including substantial fines and legal ramifications for management teams.
+
+Reference: <https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_en>
+
+## Payment Card Industry Data Security Standard
+
+*PCI Compliance* refers to the adherence to the **Payment Card Industry Data Security Standard (PCI DSS)**, which is a set of security standards designed to ensure that all companies that process, store, or transmit credit card information maintain a secure environment.
+
+The **PCI DSS** was established by the PCI Security Standards Council (PCI SSC), which includes major credit card companies such as Visa, Mastercard, Discover, and American Express. The main goal of **PCI DSS** is to reduce the risk of credit card fraud and data breaches by implementing robust security measures.
+
+**PCI DSS** requires 12 elements to be in place to obtain *PCI Compliance*.
+
+* Install and maintain a firewall configuration to protect cardholder data. Firewalls are essential for preventing unauthorized access to network resources.
+* Do not use vendor-supplied defaults for system passwords and other security parameters. Default passwords are easily guessable and should be changed.
+* Protect stored cardholder data. Sensitive data must be encrypted and securely stored.
+* Encrypt transmission of cardholder data across open, public networks. Encryption ensures that data is protected during transmission.
+* Use and regularly update anti-virus software or programs. Anti-virus software helps detect and prevent malware.
+* Develop and maintain secure systems and applications. Regular updates and patches are necessary to protect against vulnerabilities.
+* Restrict access to cardholder data by business need to know. Access controls ensure that only authorized personnel can access sensitive data.
+* Identify and authenticate access to system components. Strong authentication mechanisms are required to verify user identities.
+* Restrict physical access to cardholder data. Physical security measures prevent unauthorized access to data.
+* Track and monitor all access to network resources and cardholder data. Logging and monitoring help detect and respond to security incidents.
+* Regularly test security systems and processes. Regular testing ensures that security measures are effective.
+* Maintain a policy that addresses information security for all personnel. A comprehensive security policy helps ensure that all employees understand their roles and responsibilities.
+
+These requirements as the basis for obtaining PCI compliance helps protect sensitive cardholder data from breaches and fraud.
+And then the *PCI-compliance* demonstrates a commitment to security, which can enhance customer trust and loyalty.
+Hence *PCI-compliance" actually helps organizations meet other regulatory requirements related to data protection.
+
+Non-compliance can result in severe penalties, including fines and the loss of the ability to accept credit card payments.
+
+Reference: <https://www.forbes.com/advisor/business/what-is-pci-compliance/>
+
+## Standards and Frameworks
+
+Many frameworks addresses *best practices* to follow. This section discusses some of the more *common ones*.
 
 ### FedRAMP
 
 In the United States, the Federal Risk and Authorization Management Program (FedRAMP) standardizes security assessments for cloud services used by federal agencies. FedRAMP ensures consistent security practices across public, private, and hybrid cloud environments.
 
+The Federal Risk and Authorization Management Program (FedRAMP) is a government-wide initiative established in 2011 to promote the adoption of secure cloud services across the federal government. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services 1 2.
+
+Key Components of FedRAMP
+Standardized Security Framework:
+
+FedRAMP offers a consistent security framework for all cloud services used by federal agencies. This framework is based on the National Institute of Standards and Technology (NIST) guidelines, specifically NIST SP 800-53, but includes additional cloud-specific controls 2.
+Joint Authorization Board (JAB):
+
+The JAB is the primary governance and decision-making body for FedRAMP. It includes Chief Information Officers (CIOs) from the Department of Defense, Department of Homeland Security, and General Services Administration 1.
+Program Management Office (PMO):
+
+The FedRAMP PMO, housed within the General Services Administration (GSA), supports agencies and cloud service providers through the authorization process and maintains a secure repository of FedRAMP authorizations 1.
+Objectives of FedRAMP
+Reduce Duplicative Efforts:
+
+By providing a standardized approach, FedRAMP reduces the need for multiple security assessments, thereby saving time and resources 2.
+Promote Innovation and Security:
+
+FedRAMP fosters public-private partnerships that encourage innovation while ensuring robust security measures are in place 2.
+Accelerate Cloud Adoption:
+
+The program aims to speed up the federal government’s adoption of cloud computing by providing clear and transparent standards and processes for security authorizations 2.
+Authorization Process
+Agency Authorization (ATO):
+
+Any federal agency can work with a cloud service provider to obtain an Authority to Operate (ATO) for the cloud service. The agency then submits the security package to the FedRAMP PMO for authorization 2.
+Third Party Assessment Organizations (3PAOs):
+
+FedRAMP requires assessments to be conducted by certified 3PAOs. These organizations perform initial and periodic assessments of cloud systems based on federal security requirements 2.
+Continuous Monitoring
+FedRAMP emphasizes continuous monitoring to ensure that cloud services maintain their security posture over time. This includes regular security assessments and updates to address emerging threats 1.
+Differences Between FedRAMP and FISMA
+Scope:
+
+FISMA applies to all federal information systems, while FedRAMP is specific to cloud services 2.
+Assessment Requirements:
+
+FedRAMP requires assessments by certified 3PAOs, whereas FISMA does not 2.
+Reuse of Authorizations:
+
+FedRAMP authorizations can be leveraged by multiple agencies, promoting efficiency and consistency across the federal government 2.
+For more detailed information, you can visit the FedRAMP website or the GSA FedRAMP page.
+
+Reference: <https://www.fedramp.gov/>
+
 ### ISO/IEC 27001
 
-The ISO/IEC 27001 standard provides a globally recognized framework for information security management systems (ISMS). Its applicability extends to both cloud and on-premises solutions, ensuring robust security measures, such as encryption, access controls, and incident response protocols.
+TThe **ISO/IEC 27001** is an international standard that provides a globally recognized framework for information security management systems (ISMS). Its applicability extends to both cloud and on-premises solutions, ensuring robust security measures, such as encryption, access controls, and incident response protocols.
+
+**ISO/IEC 27001 is** applicable to any organization, regardless of size, type, or nature. It is designed to be adaptable to the specific needs and context of the organization.
+
+The standard specifies the requirements for establishing, implementing, maintaining, and continually improving an ISMS. This includes the assessment and treatment of information security risks tailored to the needs of the organization.
+
+Organizations must systematically examine their information security risks, considering the threats, vulnerabilities, and impacts. They must design and implement a coherent and comprehensive suite of information security controls and other forms of risk treatment to address those risks.
+
+Top management must demonstrate leadership and commitment to the ISMS by ensuring the necessary resources are available, establishing an information security policy, and integrating the ISMS requirements into the organization’s processes.
+
+The standard emphasizes the need for continual improvement of the ISMS. Organizations must monitor, review, and improve their ISMS to ensure it remains effective and aligned with the organization’s objectives.
+
+### Structure of ISO/IEC 27001
+
+The standard addresses a list of elements that should be in place:
+
+* Understanding the organization and its context, including the needs and expectations of interested parties, and defining the scope of the ISMS.
+
+* Establishing leadership commitment, defining roles and responsibilities, and setting the information security policy.
+
+* Addressing risks and opportunities, setting information security objectives, and planning to achieve them.
+
+* Providing resources, ensuring competence, raising awareness, and maintaining documented information.
+
+* Implementing and operating the ISMS, including risk assessment and treatment.
+
+* Monitoring, measuring, analyzing, and evaluating the ISMS, including internal audits and management reviews.
+
+* Addressing nonconformities and implementing corrective actions to continually improve the ISMS.
+
+The framework should then provide the following benefits:
+
+* Enhanced Security - Provides a systematic approach to managing sensitive company information, ensuring its confidentiality, integrity, and availability.
+* Compliance - Helps organizations comply with legal, regulatory, and contractual requirements related to information security.
+* Risk Management - Enables organizations to identify and manage information security risks effectively.
+* Customer Trust - Demonstrates to customers and stakeholders that the organization takes information security seriously.
+* Operational Efficiency - Improves processes and reduces the likelihood of security incidents, leading to operational efficiencies.
+
+### Certification Process
+
+1. **Preparation**:
+   - Understand the requirements of ISO/IEC 27001 and prepare the organization for implementation [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
+
+2. **Implementation**:
+   - Develop and implement the ISMS, including risk assessment and treatment [1](https://www.iso.org/standard/27001).
+
+3. **Internal Audit**:
+   - Conduct internal audits to ensure the ISMS is functioning as intended [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
+
+4. **Management Review**:
+   - Top management reviews the ISMS to ensure its continuing suitability, adequacy, and effectiveness [1](https://www.iso.org/standard/27001).
+
+5. **Certification Audit**:
+   - An accredited certification body conducts an external audit to verify compliance with ISO/IEC 27001 [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
+
+6. **Continual Improvement**:
+   - Maintain and continually improve the ISMS to ensure ongoing compliance and effectiveness [1](https://www.iso.org/standard/27001).
+
+Reference: <https://www.iso.org/standard/27001>
+
+
+### NIST
+
+The **National Institute of Standards and Technology (NIST)** is a U.S. federal agency that was established in 1901 and is part of the U.S. Department of Commerce. NIST's primary mission is to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve the quality of life [1](https://www.nist.gov/about-nist) [2](https://www.nist.gov/).
+
+### Key Components of NIST
+
+1. **Mission and Vision**:
+   - **Mission**: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve the quality of life [1](https://www.nist.gov/about-nist).
+   - **Vision**: To be the world's leader in creating critical measurement solutions and promoting equitable standards. NIST's efforts stimulate innovation, foster industrial competitiveness, and improve the quality of life [1](https://www.nist.gov/about-nist).
+
+2. **Core Competencies**:
+   - **Measurement Science**: NIST develops and disseminates measurement techniques, standards, and technologies that underpin innovation and industrial competitiveness [1](https://www.nist.gov/about-nist).
+   - **Rigorous Traceability**: Ensuring that measurements are accurate and traceable to international standards [1](https://www.nist.gov/about-nist).
+   - **Development and Use of Standards**: NIST plays a crucial role in developing and promoting standards that ensure the quality and interoperability of products and services [1](https://www.nist.gov/about-nist).
+
+3. **Areas of Focus**:
+   - **Cybersecurity**: NIST develops guidelines and frameworks to help organizations manage and reduce cybersecurity risks. The NIST Cybersecurity Framework is widely used across various sectors [3](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2).
+   - **Advanced Manufacturing**: NIST supports U.S. manufacturing by developing measurement techniques and standards that improve the quality and efficiency of manufacturing processes [2](https://www.nist.gov/).
+   - **Quantum Science**: NIST conducts research in quantum science to develop new technologies and improve existing ones [2](https://www.nist.gov/).
+   - **Health and Bioscience**: NIST's work in health and bioscience includes developing standards and measurement techniques for medical diagnostics, biotechnology, and other health-related fields [2](https://www.nist.gov/).
+   - **Energy**: NIST supports the development of standards and measurement techniques for energy production, distribution, and consumption [2](https://www.nist.gov/).
+
+4. **Historical Impact**:
+   - NIST was established to address the need for a reliable measurement infrastructure in the U.S., which was lagging behind other industrialized nations at the time [1](https://www.nist.gov/about-nist).
+   - Over the years, NIST has contributed to numerous technological advancements, from the development of atomic clocks to the creation of encryption standards [2](https://www.nist.gov/).
+
+### Organizational Structure
+
+- **Leadership**: NIST is led by a Director, who is appointed by the President of the United States. The Director oversees the agency's various programs and initiatives [1](https://www.nist.gov/about-nist).
+- **Laboratories and Programs**: NIST operates several laboratories and programs focused on different areas of research and development, including the Physical Measurement Laboratory, the Engineering Laboratory, and the Information Technology Laboratory [2](https://www.nist.gov/).
+
+### Contributions to Industry and Society
+
+- **Standards Development**: NIST plays a key role in developing and promoting standards that ensure the quality, safety, and interoperability of products and services. These standards are used by industries worldwide [2](https://www.nist.gov/).
+- **Innovation Support**: NIST supports innovation by providing measurement techniques, standards, and technologies that enable new products and services to be developed and brought to market [1](https://www.nist.gov/about-nist).
+- **Economic Impact**: NIST's work contributes to the economic security of the U.S. by enhancing the competitiveness of U.S. industries and promoting technological innovation [1](https://www.nist.gov/about-nist).
+
+For more detailed information, you can visit the [NIST website](https://www.nist.gov/about-nist) or the [Better World Technology page on NIST](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2).
+
+[1](https://www.nist.gov/about-nist): [NIST](https://www.nist.gov/about-nist)
+[2](https://www.nist.gov/): [NIST](https://www.nist.gov/)
+[3](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2): [Better World Technology](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2)
+
+### CIS 18
+
+The **CIS Critical Security Controls (CIS Controls)** are a set of best practices developed by the Center for Internet Security (CIS) to help organizations improve their cybersecurity posture. The latest version, CIS Controls v8.1, includes 18 critical security controls designed to address the most prevalent and dangerous cybersecurity threats [1](https://www.cisecurity.org/controls/cis-controls-list) [2](https://www.cisecurity.org/controls).
+
+### Key Components of CIS18
+
+1. **Inventory and Control of Enterprise Assets**:
+   - Actively manage (inventory, track, and correct) all enterprise assets connected to the infrastructure to ensure accurate monitoring and protection [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+2. **Inventory and Control of Software Assets**:
+   - Manage all software on the network to ensure only authorized software is installed and executed, preventing unauthorized software from being installed or executed [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+3. **Data Protection**:
+   - Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+4. **Secure Configuration of Enterprise Assets and Software**:
+   - Establish and maintain secure configurations for enterprise assets and software to prevent vulnerabilities [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+5. **Account Management**:
+   - Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator and service accounts [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+6. **Access Control Management**:
+   - Create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+7. **Continuous Vulnerability Management**:
+   - Continuously assess and track vulnerabilities on all enterprise assets to remediate and minimize the window of opportunity for attackers [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+8. **Audit Log Management**:
+   - Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+9. **Email and Web Browser Protections**:
+   - Improve protections and detections of threats from email and web vectors, which are common avenues for attackers [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+10. **Malware Defenses**:
+    - Control the installation, spread, and execution of malicious code at multiple points in the enterprise[1](https://www.cisecurity.org/controls/cis-controls-list).
+
+11. **Data Recovery**:
+    - Implement processes and tools to ensure data recovery capabilities are in place to restore data after an incident [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+12. **Network Infrastructure Management**:
+    - Secure network infrastructure by implementing segmentation, monitoring, and other controls [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+13. **Security Awareness and Skills Training**:
+    - Provide security awareness and skills training to employees to ensure they understand their role in protecting the organization [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+14. **Service Provider Management**:
+    - Manage service providers to ensure they adhere to security requirements and protect the organization's data [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+15. **Application Software Security**:
+    - Implement security measures in the development and deployment of application software to prevent vulnerabilities [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+16. **Incident Response Management**:
+    - Develop and implement incident response capabilities to detect, respond to, and recover from security incidents [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+17. **Penetration Testing**:
+    - Conduct regular penetration testing to identify and remediate vulnerabilities before they can be exploited [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+18. **Security Leadership**:
+    - Establish security leadership and governance to ensure the organization’s security strategy is aligned with business objectives [1](https://www.cisecurity.org/controls/cis-controls-list).
+
+### Objectives of CIS18
+
+- **Simplify Threat Protection**:
+  - The CIS Controls provide a simplified approach to cybersecurity, helping organizations defend against top threats by implementing specific safeguards [2](https://www.cisecurity.org/controls).
+
+- **Achieve Essential Cyber Hygiene**:
+  - The controls focus on foundational security measures that help organizations achieve essential cyber hygiene and protect against common attack vectors [2](https://www.cisecurity.org/controls).
+
+- **Comply with Industry Regulations**:
+  - Implementing the CIS Controls helps organizations comply with various industry regulations, such as PCI DSS, HIPAA, GDPR, and others [2](https://www.cisecurity.org/controls).
+
+### Implementation Groups (IGs)
+
+- **IG1**:
+  - Basic cyber hygiene suitable for small to mid-size organizations with limited resources [2](https://www.cisecurity.org/controls).
+- **IG2**:
+  - Intermediate cyber hygiene for organizations with moderate resources and risk profiles [2](https://www.cisecurity.org/controls).
+- **IG3**:
+  - Advanced cyber hygiene for organizations with significant resources and high-risk profiles [2](https://www.cisecurity.org/controls).
+
+For more detailed information, you can visit the [CIS Controls page](https://www.cisecurity.org/controls/cis-controls-list) or the [RISMA Systems article on CIS18](https://www.rismasystems.com/en/resources/articles/what-is-cis18).
+
+[1](https://www.cisecurity.org/controls/cis-controls-list): [CIS Controls](https://www.cisecurity.org/controls/cis-controls-list)
+[2](https://www.cisecurity.org/controls): [RISMA Systems](https://www.rismasystems.com/en/resources/articles/what-is-cis18)
+
+
 
 ### Microsoft specific
 
 Data residency regulations, such as those provided by the Microsoft EU Data Boundary Framework, ensures where data can be stored and processed. Organizations must align their data handling practices with local laws, balancing operational efficiency with compliance.
+
+The **Microsoft EU Data Boundary Framework** is a comprehensive initiative by Microsoft to ensure that customer data and personal data are stored and processed within the European Union (EU) and European Free Trade Association (EFTA) regions. This framework is designed to address EU-specific concerns regarding data privacy and security, and it reflects Microsoft's commitment to data residency, transparency, and privacy [1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+### Key Components of the EU Data Boundary Framework
+
+1. **Geographical Scope**:
+   - The EU Data Boundary is a geographically defined boundary within which Microsoft has committed to store and process customer data and personal data for its enterprise online services, including Azure, Dynamics 365, Power Platform, and Microsoft 365 [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+2. **Data Residency**:
+   - Microsoft ensures that customer data and personal data are stored at rest within the EU and EFTA regions. This commitment significantly reduces the flow of cloud data outside the EU, addressing concerns about data sovereignty and compliance with EU regulations [1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb).
+
+3. **Transparency and Documentation**:
+   - Microsoft provides detailed documentation to help customers understand data transfers and the technical and organizational measures taken to support regulatory compliance. This includes information on data flows, scoping, and increased levels of data transparency [1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb).
+
+4. **Limited Data Transfers**:
+   - While the primary goal is to keep data within the EU Data Boundary, there are limited circumstances where data may be transferred outside the EU. These transfers are subject to strict conditions and are documented to ensure transparency [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+5. **Customer Data and Professional Services Data**:
+   - Customer Data includes all data provided to Microsoft by or on behalf of customers through the use of online services. Professional Services Data, which is stored at rest within the EU, is also covered under this framework [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+6. **System-Generated Logs**:
+   - Microsoft online services create system-generated logs as part of regular operations. These logs, which may contain personal data, are essential for monitoring system performance, detecting and responding to operational problems, and complying with laws and regulations [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+### Objectives of the EU Data Boundary Framework
+
+- **Enhance Data Privacy and Security**:
+  - The framework aims to enhance data privacy and security for European customers by ensuring their data is stored and processed within the EU [1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb).
+- **Compliance with EU Regulations**:
+  - By adhering to the EU Data Boundary, Microsoft helps customers comply with EU data protection regulations, such as the General Data Protection Regulation (GDPR) [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+- **Increase Customer Trust**:
+  - The initiative is designed to increase customer trust by providing transparency and demonstrating Microsoft's commitment to protecting customer data [1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb).
+
+### Implementation and Updates
+
+- **Ongoing Deployment**:
+  - Microsoft is continuously deploying more services and capabilities within the EU Data Boundary and updates the documentation accordingly [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+- **Customer Support**:
+  - Microsoft offers resources and support to help customers configure their services for use within the EU Data Boundary [2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+For more detailed information, you can visit the [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb) or the [Microsoft Learn page on the EU Data Boundary](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn).
+
+[1](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb): [Microsoft Trust Center](https://www.microsoft.com/en-us/trust-center/privacy/european-data-boundary-eudb)
+[2](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn): [Microsoft Learn](https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn)
 
 ## List of laws per country
 
