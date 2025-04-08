@@ -2,10 +2,10 @@
 
 # En dataplatform - Lovgivning - under opbygning
 
-[! [de](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[! [dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
-[! [de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[! [hoved](https://img.shields.io/badge/main-document-blue.svg)](.. /README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ## Indledning
 
@@ -789,8 +789,7 @@ Følgende er en liste over love, der beskytter data og privatliv efter land - ku
 |Zimbabwe|Lov om databeskyttelse (på engelsk)|https://www.veritaszim.net/sites/veritas_d/files/Data Lov om beskyttelse af 2021.pdf 5 af |
 
 
-
-[! [de](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[! [dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
-[! [de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[! [hoved](https://img.shields.io/badge/main-document-blue.svg)](.. /README.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
+[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
