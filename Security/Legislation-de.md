@@ -1,4 +1,4 @@
-! [Microsoft](.. /images/microsoft.png)
+![Microsoft](.. /images/microsoft.png)
 
 # Eine Datenplattform - Gesetzgebung - im Aufbau
 
