@@ -15,7 +15,7 @@ on what we have to do to protect our data assets. And hence protect our customer
 This section discusses many of the different directives/rules that could be of interest depending on industry and requirements and that we seen being
 in effect at our customers.
 
-This is meant to be an introduction to the different aspects of this, so please follow the provided links for more information.
+This is meant to be an introduction to the different aspects of this, so **please** follow the provided links for more information.
 
 ## GDPR
 
@@ -224,7 +224,7 @@ Reference: <https://www.eiopa.europa.eu/digital-operational-resilience-act-dora_
 
 ## Payment Card Industry Data Security Standard
 
-*PCI Compliance* refers to the adherence to the **Payment Card Industry Data Security Standard (PCI DSS)**, which is a set of security standards designed to ensure that all companies that process, store, or transmit credit card information maintain a secure environment.
+*PCI Compliance* refers to the adherence of the **Payment Card Industry Data Security Standard (PCI DSS)**, which is a set of security standards designed to ensure that all companies that process, store, or transmit credit card information maintain a secure environment.
 
 The **PCI DSS** was established by the PCI Security Standards Council (PCI SSC), which includes major credit card companies such as Visa, Mastercard, Discover, and American Express. The main goal of **PCI DSS** is to reduce the risk of credit card fraud and data breaches by implementing robust security measures.
 
@@ -255,58 +255,44 @@ Reference: <https://www.forbes.com/advisor/business/what-is-pci-compliance/>
 
 Many frameworks addresses *best practices* to follow. This section discusses some of the more *common ones*.
 
-### FedRAMP
+## Federal Risk and Authorization Management Program
 
-In the United States, the Federal Risk and Authorization Management Program (FedRAMP) standardizes security assessments for cloud services used by federal agencies. FedRAMP ensures consistent security practices across public, private, and hybrid cloud environments.
+In the United States, the Federal Risk and Authorization Management Program (**FedRAMP**) standardizes security assessments for cloud services used by federal agencies.
+FedRAMP seeks to ensure consistent security practices across public, private, and hybrid cloud environments.
 
-The Federal Risk and Authorization Management Program (FedRAMP) is a government-wide initiative established in 2011 to promote the adoption of secure cloud services across the federal government. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services 1 2.
+**FedRAMP** is a government-wide initiative established in 2011 to promote the adoption of secure cloud services across the federal government. It provides a standardized approach to security assessment, authorization, and continuous monitoring for cloud products and services.
 
-Key Components of FedRAMP
-Standardized Security Framework:
+### Key Components of FedRAMP
 
-FedRAMP offers a consistent security framework for all cloud services used by federal agencies. This framework is based on the National Institute of Standards and Technology (NIST) guidelines, specifically NIST SP 800-53, but includes additional cloud-specific controls 2.
-Joint Authorization Board (JAB):
+*FedRAMP* offers a consistent security framework for all cloud services used by federal agencies. This framework is based on the National Institute of Standards and Technology (NIST) guidelines, specifically NIST SP 800-53, but includes additional cloud-specific controls.
 
-The JAB is the primary governance and decision-making body for FedRAMP. It includes Chief Information Officers (CIOs) from the Department of Defense, Department of Homeland Security, and General Services Administration 1.
-Program Management Office (PMO):
+* The Joint Authorization Board (JAB) is the primary governance and decision-making body for FedRAMP. It includes Chief Information Officers (CIOs) from the Department of Defense, Department of Homeland Security, and General Services Administration.
 
-The FedRAMP PMO, housed within the General Services Administration (GSA), supports agencies and cloud service providers through the authorization process and maintains a secure repository of FedRAMP authorizations 1.
-Objectives of FedRAMP
-Reduce Duplicative Efforts:
+* The Program Management Office (PMO), housed within the General Services Administration (GSA), supports agencies and cloud service providers through the authorization process and maintains a secure repository of **FedRAMP** authorizations .
 
-By providing a standardized approach, FedRAMP reduces the need for multiple security assessments, thereby saving time and resources 2.
-Promote Innovation and Security:
+### Objectives of **FedRAMP**
 
-FedRAMP fosters public-private partnerships that encourage innovation while ensuring robust security measures are in place 2.
-Accelerate Cloud Adoption:
+By providing a standardized approach, **FedRAMP** reduces the need for multiple security assessments, thereby saving time and resources.
 
-The program aims to speed up the federal government’s adoption of cloud computing by providing clear and transparent standards and processes for security authorizations 2.
-Authorization Process
-Agency Authorization (ATO):
+**FedRAMP** seeks to foster public-private partnerships that encourage innovation while at the same time ensuring robust security measures are in place.
 
-Any federal agency can work with a cloud service provider to obtain an Authority to Operate (ATO) for the cloud service. The agency then submits the security package to the FedRAMP PMO for authorization 2.
-Third Party Assessment Organizations (3PAOs):
+The aim of **FedRAMP** is to speed up the federal government’s adoption of cloud computing by providing clear and transparent standards and processes for security authorizations.
 
-FedRAMP requires assessments to be conducted by certified 3PAOs. These organizations perform initial and periodic assessments of cloud systems based on federal security requirements 2.
-Continuous Monitoring
-FedRAMP emphasizes continuous monitoring to ensure that cloud services maintain their security posture over time. This includes regular security assessments and updates to address emerging threats 1.
-Differences Between FedRAMP and FISMA
-Scope:
+### Authorization Process
 
-FISMA applies to all federal information systems, while FedRAMP is specific to cloud services 2.
-Assessment Requirements:
+Any federal agency can work with a cloud service provider to obtain an Authority to Operate (ATO) for the cloud service. The agency then submits the security package to the **FedRAMP** PMO for authorization.
 
-FedRAMP requires assessments by certified 3PAOs, whereas FISMA does not 2.
-Reuse of Authorizations:
+**FedRAMP** requires assessments to be conducted by certified Third Party Assessment Organizations (3PAOs). These organizations perform initial and periodic assessments of cloud systems based on federal security requirements.
 
-FedRAMP authorizations can be leveraged by multiple agencies, promoting efficiency and consistency across the federal government 2.
-For more detailed information, you can visit the FedRAMP website or the GSA FedRAMP page.
+**FedRAMP** emphasizes continuous monitoring to ensure that cloud services maintain their security posture over time. This includes regular security assessments and updates to address emerging threats.
+
+**FedRAMP** authorizations can be leveraged by multiple agencies, promoting efficiency and consistency across the federal government.
 
 Reference: <https://www.fedramp.gov/>
 
-### ISO/IEC 27001
+## ISO/IEC 27001
 
-TThe **ISO/IEC 27001** is an international standard that provides a globally recognized framework for information security management systems (ISMS). Its applicability extends to both cloud and on-premises solutions, ensuring robust security measures, such as encryption, access controls, and incident response protocols.
+The **ISO/IEC 27001** is an international standard that provides a globally recognized framework for information security management systems (ISMS). Its applicability extends to both cloud and on-premises solutions, ensuring robust security measures, such as encryption, access controls, and incident response protocols.
 
 **ISO/IEC 27001 is** applicable to any organization, regardless of size, type, or nature. It is designed to be adaptable to the specific needs and context of the organization.
 
@@ -338,169 +324,100 @@ The standard addresses a list of elements that should be in place:
 
 The framework should then provide the following Benefits of ISO/IEC 27001
 
-- **Enhanced Security**:
-  - Provides a systematic approach to managing sensitive company information, ensuring its confidentiality, integrity, and availability [1](https://www.iso.org/standard/27001).
-- **Compliance**:
-  - Helps organizations comply with legal, regulatory, and contractual requirements related to information security [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
-- **Risk Management**:
-  - Enables organizations to identify and manage information security risks effectively [1](https://www.iso.org/standard/27001).
-- **Customer Trust**:
-  - Demonstrates to customers and stakeholders that the organization takes information security seriously [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
-- **Operational Efficiency**:
-  - Improves processes and reduces the likelihood of security incidents, leading to operational efficiencies [1](https://www.iso.org/standard/27001).
+* Enhanced Security - Provides a systematic approach to managing sensitive company information, ensuring its confidentiality, integrity, and availability.
+* Compliance - Helps organizations comply with legal, regulatory, and contractual requirements related to information security.
+* Risk Management - Enables organizations to identify and manage information security risks effectively.
+* Customer Trust - Demonstrates to customers and stakeholders that the organization takes information security seriously.
+* Operational Efficiency - Improves processes and reduces the likelihood of security incidents, leading to operational efficiencies.
 
 ### Certification Process
 
-1. **Preparation**:
-   - Understand the requirements of ISO/IEC 27001 and prepare the organization for implementation [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
+To obtain the **ISO/IEC 27001** certification their is a approach that needs to be followed.
 
-2. **Implementation**:
-   - Develop and implement the ISMS, including risk assessment and treatment [1](https://www.iso.org/standard/27001).
-
-3. **Internal Audit**:
-   - Conduct internal audits to ensure the ISMS is functioning as intended [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
-
-4. **Management Review**:
-   - Top management reviews the ISMS to ensure its continuing suitability, adequacy, and effectiveness [1](https://www.iso.org/standard/27001).
-
-5. **Certification Audit**:
-   - An accredited certification body conducts an external audit to verify compliance with ISO/IEC 27001 [2](https://en.wikipedia.org/wiki/ISO/IEC_27001).
-
-6. **Continual Improvement**:
-   - Maintain and continually improve the ISMS to ensure ongoing compliance and effectiveness [1](https://www.iso.org/standard/27001).
+* Preparation - Understand the requirements of ISO/IEC 27001 and prepare the organization for implementation.
+* Implementation - Develop and implement the ISMS, including risk assessment and treatment.
+* Internal Audit - Conduct internal audits to ensure the ISMS is functioning as intended.
+* Management Review - Top management reviews the ISMS to ensure its continuing suitability, adequacy, and effectiveness.
+* Certification Audit - An accredited certification body conducts an external audit to verify compliance with **ISO/IEC 27001**.
+* Continual Improvement - Maintain and continually improve the ISMS to ensure ongoing compliance and effectiveness.
 
 Reference: <https://www.iso.org/standard/27001>
 
+## National Institute of Standards and Technology 
 
-### NIST
+The **National Institute of Standards and Technology (NIST)** is a U.S. federal agency that was established in 1901 and is part of the U.S. Department of Commerce. NIST's primary mission is to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve the quality of life.
 
-The **National Institute of Standards and Technology (NIST)** is a U.S. federal agency that was established in 1901 and is part of the U.S. Department of Commerce. NIST's primary mission is to promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve the quality of life [1](https://www.nist.gov/about-nist) [2](https://www.nist.gov/).
+**NIST** vision is to be the world's leader in creating critical measurement solutions and promoting equitable standards. NIST's efforts must stimulate innovation, foster industrial competitiveness, and improve the quality of life.
 
-### Key Components of NIST
+**NIST** is led by a Director, who is appointed by the President of the United States. The Director oversees the agency's various programs and initiatives.
 
-1. **Mission and Vision**:
-   - **Mission**: To promote U.S. innovation and industrial competitiveness by advancing measurement science, standards, and technology in ways that enhance economic security and improve the quality of life [1](https://www.nist.gov/about-nist).
-   - **Vision**: To be the world's leader in creating critical measurement solutions and promoting equitable standards. NIST's efforts stimulate innovation, foster industrial competitiveness, and improve the quality of life [1](https://www.nist.gov/about-nist).
+**NIST** operates several laboratories and programs focused on different areas of research and development, including the Physical Measurement Laboratory, the Engineering Laboratory, and the Information Technology Laboratory.
 
-2. **Core Competencies**:
-   - **Measurement Science**: NIST develops and disseminates measurement techniques, standards, and technologies that underpin innovation and industrial competitiveness [1](https://www.nist.gov/about-nist).
-   - **Rigorous Traceability**: Ensuring that measurements are accurate and traceable to international standards [1](https://www.nist.gov/about-nist).
-   - **Development and Use of Standards**: NIST plays a crucial role in developing and promoting standards that ensure the quality and interoperability of products and services [1](https://www.nist.gov/about-nist).
 
-3. **Areas of Focus**:
-   - **Cybersecurity**: NIST develops guidelines and frameworks to help organizations manage and reduce cybersecurity risks. The NIST Cybersecurity Framework is widely used across various sectors [3](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2).
-   - **Advanced Manufacturing**: NIST supports U.S. manufacturing by developing measurement techniques and standards that improve the quality and efficiency of manufacturing processes [2](https://www.nist.gov/).
-   - **Quantum Science**: NIST conducts research in quantum science to develop new technologies and improve existing ones [2](https://www.nist.gov/).
-   - **Health and Bioscience**: NIST's work in health and bioscience includes developing standards and measurement techniques for medical diagnostics, biotechnology, and other health-related fields [2](https://www.nist.gov/).
-   - **Energy**: NIST supports the development of standards and measurement techniques for energy production, distribution, and consumption [2](https://www.nist.gov/).
+### Core Competencies
 
-4. **Historical Impact**:
-   - NIST was established to address the need for a reliable measurement infrastructure in the U.S., which was lagging behind other industrialized nations at the time [1](https://www.nist.gov/about-nist).
-   - Over the years, NIST has contributed to numerous technological advancements, from the development of atomic clocks to the creation of encryption standards [2](https://www.nist.gov/).
+**NIST** provides some core competencies which are:
 
-### Organizational Structure
+* Measurement Science - **NIST** develops and disseminates measurement techniques, standards, and technologies that underpin innovation and industrial competitiveness.
+* Rigorous Traceability - Ensuring that measurements are accurate and traceable to international standards.
+* Development and Use of Standards - **NIST** plays a crucial role in developing and promoting standards that ensure the quality and interoperability of products and services.
 
-- **Leadership**: NIST is led by a Director, who is appointed by the President of the United States. The Director oversees the agency's various programs and initiatives [1](https://www.nist.gov/about-nist).
-- **Laboratories and Programs**: NIST operates several laboratories and programs focused on different areas of research and development, including the Physical Measurement Laboratory, the Engineering Laboratory, and the Information Technology Laboratory [2](https://www.nist.gov/).
+These competencies are used with in a set focus areas.
 
-### Contributions to Industry and Society
+* Cybersecurity - NIST develops guidelines and frameworks to help organizations manage and reduce cybersecurity risks. The NIST Cybersecurity Framework is widely used across various sectors.
+* Advanced Manufacturing - NIST supports U.S. manufacturing by developing measurement techniques and standards that improve the quality and efficiency of manufacturing processes.
+* Quantum Science - NIST conducts research in quantum science to develop new technologies and improve existing ones.
+* Health and Bioscience - NIST's work in health and bioscience includes developing standards and measurement techniques for medical diagnostics, biotechnology, and other health-related fields.
+* Energy - NIST supports the development of standards and measurement techniques for energy production, distribution, and consumption.
 
-- **Standards Development**: NIST plays a key role in developing and promoting standards that ensure the quality, safety, and interoperability of products and services. These standards are used by industries worldwide [2](https://www.nist.gov/).
-- **Innovation Support**: NIST supports innovation by providing measurement techniques, standards, and technologies that enable new products and services to be developed and brought to market [1](https://www.nist.gov/about-nist).
-- **Economic Impact**: NIST's work contributes to the economic security of the U.S. by enhancing the competitiveness of U.S. industries and promoting technological innovation [1](https://www.nist.gov/about-nist).
+Over the years **NIST** has established the need for a reliable measurement infrastructure in the U.S., which was lagging behind other industrialized nations at the time.
+Hence NIST has contributed to numerous technological advancements, from the development of atomic clocks to the creation of encryption standards.
 
-For more detailed information, you can visit the [NIST website](https://www.nist.gov/about-nist) or the [Better World Technology page on NIST](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2).
+**NIST** plays a key role in developing and promoting standards that ensure the quality, safety, and interoperability of products and services. These standards are used by industries worldwide.
+**NIST** supports innovation by providing measurement techniques, standards, and technologies that enable new products and services to be developed and brought to market.
+Hence **NIST's** work contributes to the economic security of the U.S. by enhancing the competitiveness of U.S. industries and promoting technological innovation.
 
-[1](https://www.nist.gov/about-nist): [NIST](https://www.nist.gov/about-nist)
-[2](https://www.nist.gov/): [NIST](https://www.nist.gov/)
-[3](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2): [Better World Technology](https://www.betterworldtechnology.com/post/what-is-nist-understanding-the-national-institute-of-standards-and-technology-2)
+Reference: <https://www.nist.gov/about-nist>
 
-### CIS 18
+## Critical Security Controls 18
 
-The **CIS Critical Security Controls (CIS Controls)** are a set of best practices developed by the Center for Internet Security (CIS) to help organizations improve their cybersecurity posture. The latest version, CIS Controls v8.1, includes 18 critical security controls designed to address the most prevalent and dangerous cybersecurity threats [1](https://www.cisecurity.org/controls/cis-controls-list) [2](https://www.cisecurity.org/controls).
+The **CIS Critical Security Controls (CIS Controls)** are a set of best practices developed by the Center for Internet Security (CIS) to help organizations improve their cybersecurity posture. The latest version, **CIS Controls v8.1**, includes 18 critical security controls - hence the popular name CIS 18 - that rea designed to address the most prevalent and dangerous cybersecurity threats.
 
 ### Key Components of CIS18
 
-1. **Inventory and Control of Enterprise Assets**:
-   - Actively manage (inventory, track, and correct) all enterprise assets connected to the infrastructure to ensure accurate monitoring and protection [1](https://www.cisecurity.org/controls/cis-controls-list).
+These are topics and hence the controls addressed by the CIS18 framework.
 
-2. **Inventory and Control of Software Assets**:
-   - Manage all software on the network to ensure only authorized software is installed and executed, preventing unauthorized software from being installed or executed [1](https://www.cisecurity.org/controls/cis-controls-list).
+1) Inventory and Control of Enterprise Assets - Actively manage (inventory, track, and correct) all enterprise assets connected to the infrastructure to ensure accurate monitoring and protection.
+2) Inventory and Control of Software Assets - Manage all software on the network to ensure only authorized software is installed and executed, preventing unauthorized software from being installed or executed.
+3) Data Protection - Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data.
+4) Secure Configuration of Enterprise Assets and Software - Establish and maintain secure configurations for enterprise assets and software to prevent vulnerabilities.
+5) Account Management - Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator and service accounts.
+6) Access Control Management - Create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts.
+7) Continuous Vulnerability Management - Continuously assess and track vulnerabilities on all enterprise assets to remediate and minimize the window of opportunity for attackers.
+8) Audit Log Management - Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack.
+9) Email and Web Browser Protections - Improve protections and detections of threats from email and web vectors, which are common avenues for attackers.
+10) Malware Defenses - Control the installation, spread, and execution of malicious code at multiple points in the enterprise.
+11) Data Recovery - Implement processes and tools to ensure data recovery capabilities are in place to restore data after an incident.
+12) Network Infrastructure Management - Secure network infrastructure by implementing segmentation, monitoring, and other controls.
+13) Security Awareness and Skills Training - Provide security awareness and skills training to employees to ensure they understand their role in protecting the organization.
+14) Service Provider Management - Manage service providers to ensure they adhere to security requirements and protect the organization's data.
+15) Application Software Security - Implement security measures in the development and deployment of application software to prevent vulnerabilities.
+16) Incident Response Management - Develop and implement incident response capabilities to detect, respond to, and recover from security incidents.
+17) Penetration Testing - Conduct regular penetration testing to identify and remediate vulnerabilities before they can be exploited.
+18) Security Leadership - Establish security leadership and governance to ensure the organization’s security strategy is aligned with business objectives.
 
-3. **Data Protection**:
-   - Develop processes and technical controls to identify, classify, securely handle, retain, and dispose of data [1](https://www.cisecurity.org/controls/cis-controls-list).
+The objectives of CIS18 and the topics listed is to first of all simplify threat protection by providing a simplified approach to cybersecurity, helping organizations defend against top
+threats by implementing specific safeguards. Secondly, to achieve a essential cyber hygiene where the controls focuses on foundational security measures that help organizations achieve
+essential cyber hygiene and protect against common attack vectors. Last, but not least, comply with industry regulations, where the implementation of the CIS Controls helps organizations
+comply with various industry regulations, such as PCI DSS, HIPAA, GDPR, and others.
 
-4. **Secure Configuration of Enterprise Assets and Software**:
-   - Establish and maintain secure configurations for enterprise assets and software to prevent vulnerabilities [1](https://www.cisecurity.org/controls/cis-controls-list).
+The cyber hygiene is divede into implementation groups (IGs), so that organizations find the most appropriate level need.
 
-5. **Account Management**:
-   - Use processes and tools to assign and manage authorization to credentials for user accounts, including administrator and service accounts [1](https://www.cisecurity.org/controls/cis-controls-list).
+* IG1 - Basic cyber hygiene suitable for small to mid-size organizations with limited resources.
+* IG2 - Intermediate cyber hygiene for organizations with moderate resources and risk profiles.
+* IG3 - Advanced cyber hygiene for organizations with significant resources and high-risk profiles.
 
-6. **Access Control Management**:
-   - Create, assign, manage, and revoke access credentials and privileges for user, administrator, and service accounts [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-7. **Continuous Vulnerability Management**:
-   - Continuously assess and track vulnerabilities on all enterprise assets to remediate and minimize the window of opportunity for attackers [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-8. **Audit Log Management**:
-   - Collect, alert, review, and retain audit logs of events that could help detect, understand, or recover from an attack [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-9. **Email and Web Browser Protections**:
-   - Improve protections and detections of threats from email and web vectors, which are common avenues for attackers [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-10. **Malware Defenses**:
-    - Control the installation, spread, and execution of malicious code at multiple points in the enterprise[1](https://www.cisecurity.org/controls/cis-controls-list).
-
-11. **Data Recovery**:
-    - Implement processes and tools to ensure data recovery capabilities are in place to restore data after an incident [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-12. **Network Infrastructure Management**:
-    - Secure network infrastructure by implementing segmentation, monitoring, and other controls [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-13. **Security Awareness and Skills Training**:
-    - Provide security awareness and skills training to employees to ensure they understand their role in protecting the organization [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-14. **Service Provider Management**:
-    - Manage service providers to ensure they adhere to security requirements and protect the organization's data [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-15. **Application Software Security**:
-    - Implement security measures in the development and deployment of application software to prevent vulnerabilities [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-16. **Incident Response Management**:
-    - Develop and implement incident response capabilities to detect, respond to, and recover from security incidents [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-17. **Penetration Testing**:
-    - Conduct regular penetration testing to identify and remediate vulnerabilities before they can be exploited [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-18. **Security Leadership**:
-    - Establish security leadership and governance to ensure the organization’s security strategy is aligned with business objectives [1](https://www.cisecurity.org/controls/cis-controls-list).
-
-### Objectives of CIS18
-
-- **Simplify Threat Protection**:
-  - The CIS Controls provide a simplified approach to cybersecurity, helping organizations defend against top threats by implementing specific safeguards [2](https://www.cisecurity.org/controls).
-
-- **Achieve Essential Cyber Hygiene**:
-  - The controls focus on foundational security measures that help organizations achieve essential cyber hygiene and protect against common attack vectors [2](https://www.cisecurity.org/controls).
-
-- **Comply with Industry Regulations**:
-  - Implementing the CIS Controls helps organizations comply with various industry regulations, such as PCI DSS, HIPAA, GDPR, and others [2](https://www.cisecurity.org/controls).
-
-### Implementation Groups (IGs)
-
-- **IG1**:
-  - Basic cyber hygiene suitable for small to mid-size organizations with limited resources [2](https://www.cisecurity.org/controls).
-- **IG2**:
-  - Intermediate cyber hygiene for organizations with moderate resources and risk profiles [2](https://www.cisecurity.org/controls).
-- **IG3**:
-  - Advanced cyber hygiene for organizations with significant resources and high-risk profiles [2](https://www.cisecurity.org/controls).
-
-For more detailed information, you can visit the [CIS Controls page](https://www.cisecurity.org/controls/cis-controls-list) or the [RISMA Systems article on CIS18](https://www.rismasystems.com/en/resources/articles/what-is-cis18).
-
-[1](https://www.cisecurity.org/controls/cis-controls-list): [CIS Controls](https://www.cisecurity.org/controls/cis-controls-list)
-[2](https://www.cisecurity.org/controls): [RISMA Systems](https://www.rismasystems.com/en/resources/articles/what-is-cis18)
-
-
+Reference: <https://www.cisecurity.org/controls>
 
 ### Microsoft specific
 
