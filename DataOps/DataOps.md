@@ -56,7 +56,9 @@ Despite its many benefits, implementing DataOps is not without challenges. Organ
 
 ## Shared responsibility in a cloud environment
 
-on-prem vs iaas vs paas vs saas
+It is important to understand who has the responsibility regarding the different layers in the infrastructure when you use either on-premise or a cloud, and in the cloud understand this across Infrastructure as a Service (IaaS), Platform as a Service (Paas) and Software as a Service.
+
+This is discussed in more details in this [section](Cloud-env.md)
 
 ## Conclusion
 

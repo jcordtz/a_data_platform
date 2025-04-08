@@ -108,6 +108,11 @@ Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bede
 
 Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten Datensatz mithilfe von Code in diese Datenbank zu laden.
 
+Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env.md) näher erläutert.
+
+Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem Abschnitt [Abschnitt](DataOps/DataOps.md) näher erläutert.
+
+
 ## Logische Architektur
 
 Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. Damit soll sichergestellt werden, dass 
