@@ -261,81 +261,94 @@ Many frameworks addresses *best practices* to follow. This section discusses som
 
 A Security Operations Center (SOC) compliance framework is a structured approach designed to ensure that an organization's security operations align with regulatory requirements and industry standards. This framework helps organizations protect customer data, manage security incidents, and maintain a robust security posture.
 
-### Key Components of the SOC Compliance Framework
+### Trust Services Criteria (TSC)
 
-#### 1. **Trust Services Criteria (TSC)**
 The SOC compliance framework is built around five Trust Services Criteria:
-- **Security**: Protecting information from unauthorized access and breaches.
-- **Availability**: Ensuring that systems are operational and accessible when needed.
-- **Processing Integrity**: Guaranteeing that data processing is accurate, timely, and authorized.
-- **Confidentiality**: Safeguarding sensitive information from unauthorized disclosure.
-- **Privacy**: Managing personal information in accordance with privacy policies and regulations.
 
-#### 2. **Regulatory Compliance**
+* Security - Protecting information from unauthorized access and breaches.
+* Availability - Ensuring that systems are operational and accessible when needed.
+* Processing Integrity - Guaranteeing that data processing is accurate, timely, and authorized.
+* Confidentiality - Safeguarding sensitive information from unauthorized disclosure.
+* Privacy - Managing personal information in accordance with privacy policies and regulations.
+
+### Regulatory Compliance
+
 Organizations must adhere to various regulations and standards, such as:
-- **SOC 2**: Developed by the American Institute of Certified Public Accountants (AICPA), SOC 2 focuses on managing and storing customer data based on the Trust Services Criteria.
-- **ISO 27001**: An international standard for information security management systems (ISMS).
-- **PCI DSS**: Standards for securing credit card transactions.
+
+* SOC 2 - Developed by the American Institute of Certified Public Accountants (AICPA), SOC 2 focuses on managing and storing customer data based on the Trust Services Criteria.
+* ISO 27001 - An international standard for information security management systems (ISMS).
+* PCI DSS - Standards for securing credit card transactions.
 
 ### Functions of a SOC Compliance Framework
 
-#### 1. **Asset and Tool Inventory**
+#### Asset and Tool Inventory
+
 Maintaining a comprehensive inventory of all assets and tools used to protect the organization is crucial. This includes:
-- **Visibility**: Ensuring all assets are accounted for.
-- **Coverage**: Identifying and addressing any security gaps.
 
-#### 2. **Reducing the Attack Surface**
+* Visibility - Ensuring all assets are accounted for.
+* Coverage - Identifying and addressing any security gaps.
+
+#### Reducing the Attack Surface
+
 Implementing measures to minimize vulnerabilities and exposure to threats:
-- **Inventory Management**: Keeping track of all workloads and assets.
-- **Security Patches**: Regularly updating software and firewalls.
-- **Threat Research**: Analyzing emerging threats to stay ahead of risks.
 
-#### 3. **Continuous Monitoring**
+* Inventory Management - Keeping track of all workloads and assets.
+* Security Patches - Regularly updating software and firewalls.
+* Threat Research - Analyzing emerging threats to stay ahead of risks.
+
+#### Continuous Monitoring
+
 Utilizing advanced security analytics solutions to monitor the environment continuously:
-- **SIEM (Security Information and Event Management)**: Aggregating and analyzing security data.
-- **SOAR (Security Orchestration, Automation, and Response)**: Automating incident response.
-- **XDR (Extended Detection and Response)**: Integrating multiple security products for comprehensive threat detection.
 
-#### 4. **Threat Intelligence**
+* SIEM (Security Information and Event Management)**: Aggregating and analyzing security data.
+* SOAR (Security Orchestration, Automation, and Response)**: Automating incident response.
+* XDR (Extended Detection and Response)**: Integrating multiple security products for comprehensive threat detection.
+
+#### Threat Intelligence
+
 Leveraging external feeds and product threat reports to understand attacker behavior and infrastructure:
-- **Data Analytics**: Analyzing threat data to gain insights.
-- **Big Picture View**: Understanding global threat trends to fortify defenses.
+
+* Data Analytics - Analyzing threat data to gain insights.
+* Big Picture View - Understanding global threat trends to fortify defenses.
 
 ### Benefits of a SOC Compliance Framework
 
-#### 1. **Improved Security Posture**
-Strengthening the organization's ability to defend against cyberattacks through proactive threat management and continuous monitoring.
+Strengthening the organization's ability to defend against cyberattacks through proactive threat management and continuous monitoring should give an improved security posture.
 
-#### 2. **Efficient Incident Response**
-Enhancing the speed and effectiveness of responding to security incidents, minimizing damage and recovery time.
+Enhancing the speed and effectiveness of responding to security incidents, minimizing damage and recovery time. provides a foundation for an efficient incident response.
 
-#### 3. **Regulatory Compliance**
-Ensuring adherence to legal and regulatory standards, avoiding penalties and reputational damage.
+Ensuring adherence to legal and regulatory standards, and thereby avoiding penalties and reputational damage.
 
-#### 4. **Proactive Threat Management**
-Staying ahead of potential threats by continuously monitoring and gathering intelligence, enabling a proactive rather than reactive approach to security.
+Staying ahead of potential threats by continuously monitoring and gathering intelligence, enabling a proactive approach rather than reactive approach to security proves ones security posture.
 
 ### Steps to Develop a SOC Compliance Framework
 
-#### 1. **Define Objectives**
-Establish clear goals for the SOC, such as improving incident response times and ensuring regulatory compliance.
+The SOC compliance framework consists of a number of steps that needs to be covered.
 
-#### 2. **Identify Requirements**
-Determine the specific regulatory and industry standards that the organization must comply with.
-
-#### 3. **Develop Policies and Procedures**
-Create detailed policies and procedures that outline how the SOC will operate, including incident response protocols and data protection measures.
-
-#### 4. **Implement Tools and Technologies**
-Deploy advanced security tools and technologies to support the SOC's operations, such as SIEM, SOAR, and XDR solutions.
-
-#### 5. **Train Personnel**
-Ensure that SOC staff are well-trained in the latest security practices and technologies.
-
-#### 6. **Continuous Improvement**
-Regularly review and update the SOC framework to address new threats and improve overall security posture.
+* Define Objectives - Establish clear goals for the SOC, such as improving incident response times and ensuring regulatory compliance.
+* Identify Requirements - Determine the specific regulatory and industry standards that the organization must comply with.
+* Develop Policies and Procedures - Create detailed policies and procedures that outline how the SOC will operate, including incident response protocols and data protection measures.
+* Implement Tools and Technologies - Deploy advanced security tools and technologies to support the SOC's operations, such as SIEM, SOAR, and XDR solutions.
+* Train Personnel - Ensure that SOC staff are well-trained in the latest security practices and technologies.
+* Continuous Improvement - Regularly review and update the SOC framework to address new threats and improve overall security posture.
 
 By implementing a robust SOC compliance framework, organizations can significantly enhance their cybersecurity capabilities, ensuring they are well-prepared to handle the complexities of modern cyber threats.
+
+### SOC3 reports
+
+The SOC3 framework, developed by the American Institute of Certified Public Accountants (AICPA), is part of the System and Organization Controls (SOC) reporting structure. It is designed to provide assurance about the controls at a service organization relevant to security, availability, processing integrity, confidentiality, and privacy. This is a detailed description of the SOC3 framework, being latest of the SOC reports.
+
+**Overview of SOC Reports**
+
+The SOC framework includes three types of reports:
+
+* SOC 1 - Focuses on internal controls over financial reporting.
+* SOC 2 - Addresses controls relevant to operations and compliance, based on the Trust Services Criteria (TSC).
+* SOC 3 - Similar to SOC 2 but intended for public consumption, providing a high-level overview without disclosing detailed information.
+
+**SOC3 Report Characteristics**
+
+The SOC3 reports are designed to be publicly accessible and used as marketing material to demonstrate an organization’s commitment to security and data protection. These reports include the auditor’s opinion and management assertion but do not contain detailed descriptions of the system, auditor’s control tests, test procedures, or test results.
 
 Reference: <https://soc2.co.uk/>
 
@@ -393,17 +406,11 @@ The standard emphasizes the need for continual improvement of the ISMS. Organiza
 The standard addresses a list of elements that should be in place:
 
 * Understanding the organization and its context, including the needs and expectations of interested parties, and defining the scope of the ISMS.
-
 * Establishing leadership commitment, defining roles and responsibilities, and setting the information security policy.
-
 * Addressing risks and opportunities, setting information security objectives, and planning to achieve them.
-
 * Providing resources, ensuring competence, raising awareness, and maintaining documented information.
-
 * Implementing and operating the ISMS, including risk assessment and treatment.
-
 * Monitoring, measuring, analyzing, and evaluating the ISMS, including internal audits and management reviews.
-
 * Addressing nonconformities and implementing corrective actions to continually improve the ISMS.
 
 The framework should then provide the following Benefits of ISO/IEC 27001
@@ -436,7 +443,6 @@ The **National Institute of Standards and Technology (NIST)** is a U.S. federal 
 **NIST** is led by a Director, who is appointed by the President of the United States. The Director oversees the agency's various programs and initiatives.
 
 **NIST** operates several laboratories and programs focused on different areas of research and development, including the Physical Measurement Laboratory, the Engineering Laboratory, and the Information Technology Laboratory.
-
 
 ### Core Competencies
 
@@ -505,7 +511,7 @@ Reference: <https://www.cisecurity.org/controls>
 
 ## Microsoft EU Data Boundary Framework
 
-Data residency frameworks, such as those provided by the Microsoft EU Data Boundary Framework, ensures where data can be stored and processed. Organizations must align their data handling practices with local laws, balancing operational efficiency with compliance.
+Data residency frameworks, such as those provided by the **Microsoft EU Data Boundary Framework**, ensures where data can be stored and processed. Organizations must align their data handling practices with local laws, balancing operational efficiency with compliance.
 
 The **Microsoft EU Data Boundary Framework** is a comprehensive initiative by Microsoft to ensure that customer data and personal data are stored and processed within the European Union (EU) and European Free Trade Association (EFTA) regions. This framework is designed to address EU-specific concerns regarding data privacy and security, and it reflects Microsoft's commitment to data residency, transparency, and privacy.
 
