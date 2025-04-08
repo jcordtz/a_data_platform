@@ -2,9 +2,9 @@
 
 # A data platform - Legislation - under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ## Introduction
@@ -789,7 +789,8 @@ The following is a list of laws protecting data and privacy by country - just fo
 |Zimbabwe|Data Protection Act (In English)|https://www.veritaszim.net/sites/veritas_d/files/Data Protection Act 5 of 2021.pdf|
 
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
+
+[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
