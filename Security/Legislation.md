@@ -540,7 +540,9 @@ Reference: <https://www.microsoft.com/en-us/trust-center/privacy/european-data-b
 
 ## List of laws per country
 
-The following is a list of laws by country - just for informational purposes -[Reference](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide)
+The following is a list of laws protecing data and privacyby country - just for informational purposes
+
+[Reference](https://unctad.org/page/data-protection-and-privacy-legislation-worldwide)
 
 |Country|Title of Legislation/Draft Legislation|Links to laws|
 |---|---|---|
