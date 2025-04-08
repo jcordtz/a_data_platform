@@ -54,6 +54,10 @@ Despite its many benefits, implementing DataOps is not without challenges. Organ
 3) Tool Selection - Selecting the right tools and technologies is critical to the success of DataOps. Organizations must evaluate their specific needs and choose solutions that align with their data management objectives and capabilities.
 4) Data Governance and Compliance - Ensuring data governance and compliance is a top priority in DataOps. Organizations must implement policies and procedures to protect data privacy, maintain data quality, and adhere to regulatory requirements.
 
+## Shared responsibility in a cloud environment
+
+on-prem vs iaas vs paas vs saas
+
 ## Conclusion
 
 Data operations, or DataOps, represent a transformative approach to data management, enabling organizations to efficiently harness the power of data for informed decision-making. By embracing the principles of collaboration, automation, and continuous improvement, DataOps can help organizations overcome the challenges of modern data management and unlock the true potential of their data assets. As data continues to grow in volume and complexity, the importance of implementing a robust DataOps strategy will only become more critical for organizations seeking to thrive in the digital age.

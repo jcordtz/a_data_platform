@@ -98,6 +98,8 @@ A key aspect of the cloud is that "everything is software". This means that when
 
 This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a *dataset* into this database using code.
 
+This model also raises a discussion around which elements in the underlying infrastructure the cloud provider as well as the customer is responsible for in the different "silos" of on-prem, IaaS, PaaS and SaaS. This is discussed further in the [dataops section](DataOps/DataOps.md).
+
 ## Logical architecture
 
 The data platform arranges *data* and *datasets* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach 
