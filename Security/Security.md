@@ -115,7 +115,7 @@ This document will use the two EU directives NIS2 and GDPR and the US HIPAA rule
 the Data Breach Notification Rule.
 4) EU Artificial Intelligence Act (EU AI Act) is a European Union regulation concerning artificial intelligence (AI).
 
-A more comprehensive guide is provided in this [section](Legislations.md),including the ones mentioned beneath.
+A more comprehensive guide is provided in this [section](Legislation.md), including the ones mentioned beneath.
 
 ### GDPR
 
@@ -225,7 +225,7 @@ Often we see sensitivty levels like : personal, public, general, confidential, a
 
 ### Common Frameworks
 
-Many frameworks and legal regulations have specific requirements that encourage organizations to classify data. 
+Many frameworks and legal regulations have specific requirements that encourage organizations to classify data.
 Examples of such regulations are as flows:
 
 1) SOC 2: The SOC 2 Trust Services Criteria requires that service organizations who include the confidentiality category in their audit demonstrate that they identify and maintain confidential information to meet the entity’s objectives related to confidentiality.
