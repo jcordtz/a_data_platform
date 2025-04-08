@@ -337,7 +337,7 @@ Regularly review and update the SOC framework to address new threats and improve
 
 By implementing a robust SOC compliance framework, organizations can significantly enhance their cybersecurity capabilities, ensuring they are well-prepared to handle the complexities of modern cyber threats.
 
-Refence: <https://soc2.co.uk/>
+Reference: <https://soc2.co.uk/>
 
 ## Federal Risk and Authorization Management Program
 
