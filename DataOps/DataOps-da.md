@@ -54,6 +54,12 @@ På trods af de mange fordele er implementering af DataOps ikke uden udfordringe
 3) Valg af værktøj - Valg af de rigtige værktøjer og teknologier er afgørende for DataOps' succes. Organisationer skal evaluere deres specifikke behov og vælge løsninger, der stemmer overens med deres datastyringsmål og -muligheder.
 4) Datastyring og overholdelse - Sikring af datastyring og overholdelse er en topprioritet i DataOps. Organisationer skal implementere politikker og procedurer for at beskytte databeskyttelse, opretholde datakvalitet og overholde lovmæssige krav.
 
+## Fælles ansvar i et cloud-miljø
+
+Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når du bruger enten on-premise eller en cloud, og i skyen forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service.
+
+Dette behandles nærmere i dette [afsnit](Cloud-env.md)
+
 ## Konklusion
 
 Dataoperationer, eller DataOps, repræsenterer en transformativ tilgang til datastyring, der gør det muligt for organisationer effektivt at udnytte dataens kraft til informeret beslutningstagning. Ved at omfavne principperne om samarbejde, automatisering og løbende forbedringer kan DataOps hjælpe organisationer med at overvinde udfordringerne ved moderne datastyring og frigøre det sande potentiale i deres dataaktiver. Efterhånden som data fortsætter med at vokse i volumen og kompleksitet, vil vigtigheden af at implementere en robust DataOps-strategi kun blive mere kritisk for organisationer, der søger at trives i den digitale tidsalder.
