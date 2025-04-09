@@ -11,7 +11,7 @@
 
 Cloud computing offers various service models to cater to different business needs. The three primary models are Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each model provides different levels of control, flexibility, and management.
 
-![Figure 1](../images/english/Slide1.png)
+![Figure 1](../images/english/Slide1.JPG)
 
 ### Infrastructure as a Service (IaaS)
 
