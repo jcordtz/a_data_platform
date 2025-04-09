@@ -11,7 +11,7 @@
 
 Cloud computing tilbyder forskellige servicemodeller for at imødekomme forskellige forretningsbehov. De tre primære modeller er Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS). Hver model giver forskellige niveauer af kontrol, fleksibilitet og styring.
 
-![Figur 1](../images/english/Slide1.JPG)
+![Figur 1](../images/danish/Slide1.JPG)
 
 ### Infrastruktur som en tjeneste (IaaS)
 
@@ -92,9 +92,9 @@ SaaS leverer softwareapplikationer over internettet på abonnementsbasis. Bruger
 
 Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når du bruger enten on-premise eller en cloud, og i skyen forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service.
 
-![Figur 2](../images/english/Slide20.png)
+![Figur 2](../images/danish/Slide20.png)
 
-![udl. 1](../images/english/Slide21.png)
+![udl. 1](../images/danish/Slide21.png)
 
 I figur 1 vises forskelle mellem on-premise, IaaS, PaaS og SaaS med hensyn til cloud-udbyderens og kundens ansvar.
 
@@ -171,10 +171,10 @@ Denne ansvarsfordeling hjælper organisationer med at vælge den rigtige cloud-t
 Dette valg kan/bør variere fra projekt til projekt, så en kunde altid opnår en optimal løsning baseret på funktionalitet og omkostninger.
 
 ## Delt ansvar i et AI-cloudmiljø
-'
-![Figur 3](../images/english/Slide22.png)
 
-![udl. 1](../images/english/Slide23.png)
+![Figur 3](../images/danish/Slide22.png)
+
+![udl. 1](../images/danish/Slide23.png)
 
 I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS).
 
@@ -231,7 +231,7 @@ Resten af dette afsnit beskriver strukturen i Microsoft og dermed en dataplatfor
 
 De forskellige aspekter af delt ansvar i Microsoft håndteres i flere dokumenter.
 
-![Figur 4](../images/english/Slide14.png)
+![Figur 4](../images/danish/Slide14.png)
 
 Dette er vist i figur 4.
 
@@ -351,7 +351,7 @@ Baseret på arten af de cloud-tjenester (IaaS, PaaS og SaaS), der bruges i ens d
 
 I denne proces bør det være tydeligt, hvordan ansvaret har for de forskellige elementer i platformen.
 
-![Figur 5](../images/english/Slide16.png)
+![Figur 5](../images/danish/Slide16.png)
 
 Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **Kontraktlig overholdelse**, der definerer forpligtelserne mellem parterne, og som også fastsætter, hvordan overholdelse af forpligtelser skal påvises.
 
