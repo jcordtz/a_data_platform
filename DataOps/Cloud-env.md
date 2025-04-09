@@ -11,6 +11,8 @@
 
 Cloud computing offers various service models to cater to different business needs. The three primary models are Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each model provides different levels of control, flexibility, and management.
 
+![Figure 1](../images/english/Slide13.png)
+
 ### Infrastructure as a Service (IaaS)
 
 IaaS provides virtualized computing resTheces over the internet. It offers the most control over the IT resTheces and is closest to traditional on-premises data centers.
@@ -90,7 +92,7 @@ SaaS delivers software applications over the internet, on a subscription basis. 
 
 It is important to understand who has the responsibility regarding the different layers in the infrastructure when you use either on-premise or a cloud, and in the cloud understand this across Infrastructure as a Service (IaaS), Platform as a Service (Paas) and Software as a Service.
 
-![Figure 1](../images/english/Slide20.png)
+![Figure 2](../images/english/Slide20.png)
 
 ![expl1](../images/english/Slide21.png)
 
@@ -169,7 +171,7 @@ This division of responsibilities helps organizations choose the right cloud ser
 
 ## Shared responsibility in an AI cloud environment
 '
-![Figure 2](../images/english/Slide22.png)
+![Figure 3](../images/english/Slide22.png)
 
 ![expl1](../images/english/Slide23.png)
 
@@ -228,9 +230,9 @@ The rest of this section describes the structure within Microsoft and hence a da
 
 The different aspects of shared responsibility in Microsoft are handled in multiple documents.
 
-![Figure 3](../images/english/Slide13.png)
+![Figure 4](../images/english/Slide14.png)
 
-This is shown in figure 3.
+This is shown in figure 4.
 
 The **Principal Agreement (MCA or MBSA & EA)** is the "main" contract describing the "purchasing conditions"
 
