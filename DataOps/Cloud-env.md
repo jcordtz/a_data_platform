@@ -345,6 +345,60 @@ Here is an overall description of what The Data Processing Addendum contains:
 
 These elements ensure that The Data Processing Addendum is comprehensive, clear, and compliant with relevant data protection regulations, providing a robust framework for the processing and protection of personal data.
 
+## Data Security and compliance
+
+Based on the nature of the cloud services (IaaS, PaaS, and SaaS) being used in ones data platform and the contractual items that are being used a process defining ones security posture should be established.
+
+In this process it should be clear how has the responsibility for the different elements in the platform.
+
+![figure 5](../images/english/Slide16.png)
+
+The first step should be "on which terms" do we operate, that is the **Contractual Compliance** defining the obligations between the parties and that also sets out how adherence with obligations must be demonstrated.
+
+When we has established on which terms we operate, the next step would be to **demonstarte compliance** that is kind of the "the how and the what", where we demonstrate *shared responsibility* in practice. This means the ability do auditing and inspection.
+
+The last step is then to **Adopt Compliance**, that is having compliance in action. This affects the Compliance, Security and Risk posture related to organizational use of data.
+
+## Microsoft Approach for Data Security and Data Compliance in Online Services
+
+**Contractual Compliance**
+
+* Product Terms and DPA
+
+   * DPA has the general obligations
+   * Product-specific terms and Product Documentation has specific terms and guidance.
+   * One general DPA for Products (Online Services and Software) and Professional Service
+      * With different terms for:
+         * Online Services Previews vs. Online Services
+         * Online Services vs. Core Online Services
+         * Coe Online Service vs. EU Data Boundary Online Service
+
+Important to remember that their might be Product-specific terms. And that Product Documentation describes specific data use scenarios and
+features for customer configuration
+
+**Demonstrated Compliance**
+
+* Service Assurance
+   * Learn descriptions of Datacenter operations & controls design to safeguards customer data
+   * Learn Training & education paths
+
+* Third-party Certification & Audits
+   * Microsoft controls based on various standards
+   * Third-party Certification & Audits Third-party attestation & certification (ISO, SOC etc.)
+
+* Penetration Testing
+   * Third-party testing and/or by customers
+
+* Compliance Program
+   * White glove service available for annual fee
+
+**Adopted Compliance**
+
+* Technical & security measures and tools for organizational use
+   * Data security tools
+   * Encryption, Customer Lockbox etc.
+
+
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
