@@ -34,8 +34,8 @@ Use Cases
 
 Examples
 
-* Amazon Web Services (AWS) EC2
 * Microsoft Azure Virtual Machines
+* Amazon Web Services (AWS) EC2
 * Google Cloud Compute Engine
 
 ### Platform as a Service (PaaS)
@@ -84,8 +84,8 @@ SaaS delivers software applications over the internet, on a subscription basis. 
 
 **Examples**
 
-* Google Workspace (formerly G Suite)
 * Microsoft Office 365
+* Google Workspace (formerly G Suite)
 * Salesforce
 
 ## Shared responsibility in a cloud environment
@@ -110,6 +110,7 @@ On a more detailed level this then means the following:
 * Data - The customer manages all data, including backups and disaster recovery.
 
 **Cloud Provider Responsibility**:
+
 * None - In an on-premise setup, there is no involvement from a cloud provider.
 
 
@@ -168,6 +169,7 @@ On a more detailed level this then means the following:
 * Physical Security - The cloud provider ensures the physical security of the data centers.
 
 This division of responsibilities helps organizations choose the right cloud service model based on their needs and capabilities.
+This choice can/should differ from project to project, so that a customer always achieves to optimal solution based on functionality and costs.
 
 ## Shared responsibility in an AI cloud environment
 '
