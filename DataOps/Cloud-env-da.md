@@ -92,7 +92,7 @@ SaaS leverer softwareapplikationer over internettet på abonnementsbasis. Bruger
 
 Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når du bruger enten on-premise eller en cloud, og i skyen forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service.
 
-![Figur 2](../billeder/english/Slide20.png)
+![Figur 2](../images/english/Slide20.png)
 
 ![udl. 1](../images/english/Slide21.png)
 
@@ -174,7 +174,7 @@ Dette valg kan/bør variere fra projekt til projekt, så en kunde altid opnår e
 '
 ![Figur 3](../images/english/Slide22.png)
 
-![udl. 1](../billeder/english/Slide23.png)
+![udl. 1](../images/english/Slide23.png)
 
 I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS).
 
