@@ -149,7 +149,7 @@ On a more detailed level this then means the following:
 
 ### Software as a Service (SaaS)
 
-* Customer Responsibility
+**Customer Responsibility**
 * Data - The customer manages data, including backups and disaster recovery (to the extent allowed by the SaaS provider).
 
 **Cloud Provider Responsibility**
@@ -165,14 +165,17 @@ On a more detailed level this then means the following:
 * Networking - The cloud provider handles networking infrastructure.
 * Physical Security - The cloud provider ensures the physical security of the data centers.
 
-This division of responsibilities helps organizations choose the right cloud service model based on their needs and capabilities. If you have any more questions or need further details, feel free to ask!
+This division of responsibilities helps organizations choose the right cloud service model based on their needs and capabilities.
 
+## Shared responsibility in an AI cloud environment
 '
 ![Figure 2](../images/english/Slide22.png)
 
 ![expl1](../images/english/Slide23.png)
 
-In the context of AI, the responsibilities of the cloud provider and the customer differ significantly across Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Here’s an overview of these differences:
+In the context of AI, the responsibilities of the cloud provider and the customer differ significantly across Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
+
+Here’s an overview of these differences:
 
 ### Infrastructure as a Service (IaaS) - Bring Your Own Model
 
