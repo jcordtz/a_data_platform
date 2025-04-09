@@ -262,7 +262,7 @@ The **Product Terms** provides more detailed information about the rights and re
    * The Product Terms are regularly updated to reflect changes in Microsoft's product offerings and services .
    * They are accessible through the Product Terms website, where Customer can find detailed information about the terms applicable to their specific products .
 
-Overall, the Microsoft Product Terms are designed to provide clear, concise, and comprehensive information about the use rights and obligations associated with Microsoft products and services, ensuring that Customer have a clear understanding of their licensing terms and conditions.
+Overall, the Microsoft Product Terms are designed to provide clear, concise, and comprehensive information about the use rights and obligations associated with Microsoft products and services, ensuring that customers have a clear understanding of their licensing terms and conditions.
 
 The **Product Terms** is further "unfolded" in three documents:
 
@@ -293,7 +293,7 @@ The Privacy & Security Terms contain several key elements designed to ensure the
 * Supplier Security & Privacy Assurance
    * Supplier Requirements**: Suppliers handling personal data on Microsoft's behalf must adhere to privacy and security requirements, ensuring compliance and protection.
 
-These elements ensure that The Privacy & Security Terms are comprehensive, clear, and compliant with relevant regulations, making it easier for Customer to understand and trust The data handling practices.
+These elements ensure that The Privacy & Security Terms are comprehensive, clear, and compliant with relevant regulations, making it easier for customers to understand and trust the data handling practices.
 
 **Universal License Terms for Online Services**
 
@@ -309,7 +309,7 @@ The Universal License Terms for Online Services contain several key elements des
 *Responsible AI - The approach to responsible AI focuses on fairness, inclusiveness, transparency, privacy, security, reliability, and safety. The terms ensure that the use of AI technologies complies with relevant regulations.
 * Updates and Changes - The terms may be updated to reflect changes in regulatory requirements, new features, or other relevant updates. Customer are informed of these changes and how they impact their use of the online services.
 
-These elements ensure that The Universal License Terms for Online Services are comprehensive, clear, and compliant with relevant regulations, making it easier for Customer to understand and use The services effectively.
+These elements ensure that The Universal License Terms for Online Services are comprehensive, clear, and compliant with relevant regulations, making it easier for customers to understand and use the services effectively.
 
 ### Service-Specific Terms in Product Offerings
 
