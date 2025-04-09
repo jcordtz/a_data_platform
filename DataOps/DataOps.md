@@ -60,6 +60,15 @@ It is important to understand who has the responsibility regarding the different
 
 This is discussed in more details in this [section](Cloud-env.md)
 
+## Foundation for DataOps
+
+To have a good DataOps architecture it is important that the "settings" are well architechured. 
+
+Microsoft provides two framework for this:
+
+* Azure Well-Architected Framework (WAF) - a set of quality-driven tenets, architectural decision points, and review tools intended to help solution architects build a technical foundation for their workloads.
+* Microsoft Cloud Adoption Framework (CAF) - Proven guidance and best practices that help you confidently adopt the cloud and achieve business outcomes.
+
 ## Conclusion
 
 Data operations, or DataOps, represent a transformative approach to data management, enabling organizations to efficiently harness the power of data for informed decision-making. By embracing the principles of collaboration, automation, and continuous improvement, DataOps can help organizations overcome the challenges of modern data management and unlock the true potential of their data assets. As data continues to grow in volume and complexity, the importance of implementing a robust DataOps strategy will only become more critical for organizations seeking to thrive in the digital age.
