@@ -373,7 +373,7 @@ The last step is then to **Adopt Compliance**, that is having compliance in acti
       * With different terms for:
          * Online Services Previews vs. Online Services
          * Online Services vs. Core Online Services
-         * Coe Online Service vs. EU Data Boundary Online Service
+         * Core Online Service vs. EU Data Boundary Online Service
 
 Important to remember that their might be Product-specific terms. And that Product Documentation describes specific data use scenarios and
 features for customer configuration

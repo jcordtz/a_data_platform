@@ -58,7 +58,16 @@ Trotz der vielen Vorteile ist die Implementierung von DataOps nicht ohne Herausf
 
 Es ist wichtig zu verstehen, wer die Verantwortung für die verschiedenen Schichten in der Infrastruktur trägt, wenn Sie entweder On-Premise oder eine Cloud nutzen, und in der Cloud dies über Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (Paas) und Software-as-a-Service hinweg zu verstehen.
 
-Dies wird in diesem [Abschnitt](Cloud-env.md) ausführlicher erörtert
+Dies wird in diesem [Abschnitt](Cloud-env.md) ausführlicher erörtert.
+
+## Grundlage für DataOps
+
+Um eine gute DataOps-Architektur zu haben, ist es wichtig, dass die "Einstellungen" gut strukturiert sind. 
+
+Microsoft stellt dafür zwei Frameworks zur Verfügung:
+
+* Azure Well-Architected Framework (WAF) – eine Reihe von qualitätsorientierten Grundsätzen, architektonischen Entscheidungspunkten und Überprüfungstools, die Lösungsarchitekten dabei unterstützen sollen, eine technische Grundlage für ihre Workloads zu schaffen.
+* Microsoft Cloud Adoption Framework (CAF) – Bewährte Anleitungen und Best Practices, die Ihnen helfen, die Cloud sicher einzuführen und Geschäftsergebnisse zu erzielen.
 
 ## Fazit
 

@@ -60,6 +60,15 @@ Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infras
 
 Dette behandles nærmere i dette [afsnit](Cloud-env.md)
 
+## Fundament for DataOps
+
+For at have en god DataOps-arkitektur er det vigtigt, at "indstillingerne" er godt struktureret. 
+
+Microsoft leverer to strukturer til dette:
+
+* Azure Well-Architected Framework (WAF) – et sæt kvalitetsdrevne principper, arkitektoniske beslutningspunkter og gennemgangsværktøjer, der er beregnet til at hjælpe løsningsarkitekter med at opbygge et teknisk fundament for deres arbejdsbelastninger.
+* Microsoft Cloud Adoption Framework (CAF) – Gennemprøvet vejledning og bedste praksis, der hjælper dig med at indføre skyen trygt og opnå forretningsresultater.
+
 ## Konklusion
 
 Dataoperationer, eller DataOps, repræsenterer en transformativ tilgang til datastyring, der gør det muligt for organisationer effektivt at udnytte dataens kraft til informeret beslutningstagning. Ved at omfavne principperne om samarbejde, automatisering og løbende forbedringer kan DataOps hjælpe organisationer med at overvinde udfordringerne ved moderne datastyring og frigøre det sande potentiale i deres dataaktiver. Efterhånden som data fortsætter med at vokse i volumen og kompleksitet, vil vigtigheden af at implementere en robust DataOps-strategi kun blive mere kritisk for organisationer, der søger at trives i den digitale tidsalder.
