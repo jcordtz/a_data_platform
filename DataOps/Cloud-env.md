@@ -242,23 +242,20 @@ The **Product Terms** provides more detailed information about the rights and re
 
 **Product Terms** addresses several key aspects including:
 
-1. **Purpose and Scope**
-
+* **Purpose and Scope**
    * The primary purpose of the Product Terms is to explain the rights granted to Customer for using Microsoft products (the "use rights") and any restrictions or limitations on their use .
    * The Product Terms may also include other obligations that the customer may have with respect to a product, which are not covered in upstream agreements .
 
-2. **Content**:
+* **Content**:
 
    * The Product Terms cover various aspects such as licensing terms, privacy and security terms, data processing addendums, and service-specific terms.
    * They also include universal license terms for online services and specific terms for different product offerings.
 
-3. **Generative AI Services**:
-
+* **Generative AI Services**
    * The Product Terms include specific provisions for the use of Microsoft Generative AI Services, such as restrictions on using these services to generate synthetic training data for developing AI models with similar functionality to Microsoft AI services.
    * Customer may use the Azure OpenAI Service to create synthesized data solely for fine-tuning certain model types.
 
-4. **Updates and Accessibility**:
-
+* **Updates and Accessibility**
    * The Product Terms are regularly updated to reflect changes in Microsoft's product offerings and services .
    * They are accessible through the Product Terms website, where Customer can find detailed information about the terms applicable to their specific products .
 

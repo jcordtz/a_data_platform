@@ -241,25 +241,21 @@ Die **Produktbedingungen** enthalten ausführlichere Informationen zu den Rechte
 
 **Produktbedingungen** befasst sich mit mehreren wichtigen Aspekten, darunter:
 
-1. **Zweck und Geltungsbereich**
+* **Zweck und Geltungsbereich**
+   * Der Hauptzweck der Produktbedingungen besteht darin, die dem Kunden für die Nutzung von Microsoft-Produkten gewährten Rechte (die "Nutzungsrechte") sowie etwaige Einschränkungen oder Beschränkungen ihrer Nutzung zu erläutern.
+   * Die Produktbedingungen können auch andere Verpflichtungen enthalten, die der Kunde in Bezug auf ein Produkt haben kann und die nicht in Vorverträgen enthalten sind.
 
-* Der Hauptzweck der Produktbedingungen besteht darin, die dem Kunden für die Nutzung von Microsoft-Produkten gewährten Rechte (die "Nutzungsrechte") sowie etwaige Einschränkungen oder Beschränkungen ihrer Nutzung zu erläutern.
-* Die Produktbedingungen können auch andere Verpflichtungen enthalten, die der Kunde in Bezug auf ein Produkt haben kann und die nicht in Vorverträgen enthalten sind.
+* **Inhalt**:
+   * Die Produktbedingungen decken verschiedene Aspekte ab, wie z. B. Lizenzbedingungen, Datenschutz- und Sicherheitsbedingungen, Nachträge zur Datenverarbeitung und dienstspezifische Bedingungen.
+   * Sie enthalten auch universelle Lizenzbedingungen für Online-Dienste und spezifische Bedingungen für verschiedene Produktangebote.
 
-2. **Inhalt**:
+* **Generative KI-Dienste**:
+   * Die Produktbedingungen enthalten spezifische Bestimmungen für die Nutzung von Microsoft Generative AI Services, wie z. B. Einschränkungen bei der Nutzung dieser Dienste zum Generieren synthetischer Trainingsdaten für die Entwicklung von KI-Modellen mit ähnlicher Funktionalität wie Microsoft AI Services.
+   * Der Kunde kann den Azure OpenAI-Dienst verwenden, um synthetisierte Daten ausschließlich für die Feinabstimmung bestimmter Modelltypen zu erstellen.
 
-* Die Produktbedingungen decken verschiedene Aspekte ab, wie z. B. Lizenzbedingungen, Datenschutz- und Sicherheitsbedingungen, Nachträge zur Datenverarbeitung und dienstspezifische Bedingungen.
-* Sie enthalten auch universelle Lizenzbedingungen für Online-Dienste und spezifische Bedingungen für verschiedene Produktangebote.
-
-3. **Generative KI-Dienste**:
-
-* Die Produktbedingungen enthalten spezifische Bestimmungen für die Nutzung von Microsoft Generative AI Services, wie z. B. Einschränkungen bei der Nutzung dieser Dienste zum Generieren synthetischer Trainingsdaten für die Entwicklung von KI-Modellen mit ähnlicher Funktionalität wie Microsoft AI Services.
-* Der Kunde kann den Azure OpenAI-Dienst verwenden, um synthetisierte Daten ausschließlich für die Feinabstimmung bestimmter Modelltypen zu erstellen.
-
-4. **Updates und Zugänglichkeit**:
-
-* Die Produktbedingungen werden regelmäßig aktualisiert, um Änderungen an den Produktangeboten und Diensten von Microsoft widerzuspiegeln.
-* Sie sind über die Website mit den Produktbedingungen zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
+* **Updates und Zugänglichkeit**:
+   * Die Produktbedingungen werden regelmäßig aktualisiert, um Änderungen an den Produktangeboten und Diensten von Microsoft widerzuspiegeln.
+   * Sie sind über die Website mit den Produktbedingungen zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
 
 Insgesamt sind die Microsoft-Produktbedingungen so konzipiert, dass sie klare, prägnante und umfassende Informationen über die Nutzungsrechte und -pflichten im Zusammenhang mit Microsoft-Produkten und -Diensten bereitstellen und sicherstellen, dass Kunden ein klares Verständnis der Lizenzbedingungen haben.
 

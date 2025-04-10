@@ -241,25 +241,21 @@ Dette er vist i figur 4.
 
 **Produktvilkår** omhandler flere vigtige aspekter, herunder:
 
-1. **Formål og omfang**
+* **Formål og omfang**
+   * Det primære formål med Produktvilkårene er at forklare de rettigheder, der gives til Kunden til brug af Microsoft-produkter ("brugsrettighederne") og eventuelle begrænsninger eller begrænsninger for deres brug.
+   * Produktvilkårene kan også indeholde andre forpligtelser, som kunden måtte have i forhold til et produkt, som ikke er omfattet af upstream-aftaler.
 
-* Det primære formål med Produktvilkårene er at forklare de rettigheder, der gives til Kunden til brug af Microsoft-produkter ("brugsrettighederne") og eventuelle begrænsninger eller begrænsninger for deres brug.
-* Produktvilkårene kan også indeholde andre forpligtelser, som kunden måtte have i forhold til et produkt, som ikke er omfattet af upstream-aftaler.
+* **Indhold**:
+   * Produktvilkårene dækker forskellige aspekter såsom licensvilkår, privatlivs- og sikkerhedsvilkår, tillæg til databehandling og tjenestespecifikke vilkår.
+   * De omfatter også universelle licensvilkår for onlinetjenester og specifikke vilkår for forskellige produkttilbud.
 
-2. **Indhold**:
+* **Generative AI-tjenester**:
+   * Produktvilkårene indeholder specifikke bestemmelser for brugen af Microsoft Generative AI-tjenester, f.eks. begrænsninger for brug af disse tjenester til at generere syntetiske træningsdata til udvikling af AI-modeller med funktionalitet, der ligner Microsofts AI-tjenester.
+   * Kunden kan bruge Azure OpenAI-tjenesten til at oprette syntetiserede data udelukkende til finjustering af visse modeltyper.
 
-* Produktvilkårene dækker forskellige aspekter såsom licensvilkår, privatlivs- og sikkerhedsvilkår, tillæg til databehandling og tjenestespecifikke vilkår.
-* De omfatter også universelle licensvilkår for onlinetjenester og specifikke vilkår for forskellige produkttilbud.
-
-3. **Generative AI-tjenester**:
-
-* Produktvilkårene indeholder specifikke bestemmelser for brugen af Microsoft Generative AI-tjenester, f.eks. begrænsninger for brug af disse tjenester til at generere syntetiske træningsdata til udvikling af AI-modeller med funktionalitet, der ligner Microsofts AI-tjenester.
-* Kunden kan bruge Azure OpenAI-tjenesten til at oprette syntetiserede data udelukkende til finjustering af visse modeltyper.
-
-4. **Opdateringer og tilgængelighed**:
-
-* Produktvilkårene opdateres regelmæssigt for at afspejle ændringer i Microsofts produkttilbud og -tjenester.
-* De er tilgængelige via webstedet Produktvilkår, hvor Kunden kan finde detaljerede oplysninger om de vilkår, der gælder for deres specifikke produkter.
+* **Opdateringer og tilgængelighed**:
+   * Produktvilkårene opdateres regelmæssigt for at afspejle ændringer i Microsofts produkttilbud og -tjenester.
+   * De er tilgængelige via webstedet Produktvilkår, hvor Kunden kan finde detaljerede oplysninger om de vilkår, der gælder for deres specifikke produkter.
 
 Samlet set er Microsofts produktvilkår designet til at give klare, præcise og omfattende oplysninger om de brugsrettigheder og -forpligtelser, der er forbundet med Microsoft-produkter og -tjenester, hvilket sikrer, at kunderne har en klar forståelse af deres licensvilkår og -betingelser.
 
