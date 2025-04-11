@@ -19,10 +19,18 @@ In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden k
 
 Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
 
-
 > [!Hinweis]
 > Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
 > Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
+>
+> Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden:
+> [Sicherheit](./Security/Security-de.md), 
+> [Gesetzgebung](./Security/Legislation-de.md), 
+> [Exit-Strategie](./Security/Exit-and-risc-strategies-de.md), 
+> [Risikobewertung](./Security/Exit-and-risc-strategies-de.md), 
+> [Data-Modellierung](./DataModelling/DataModel-de.md), 
+> [Data-operations](./DataOps/DataOps-de.md) und 
+> [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
 
 ## Hintergrund
 
