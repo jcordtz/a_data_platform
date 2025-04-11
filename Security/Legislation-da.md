@@ -1,6 +1,6 @@
 ![Microsoft](.. /images/microsoft.png)
 
-# En dataplatform - Lovgivning - under opbygning
+# En dataplatform - Lovgivning
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)

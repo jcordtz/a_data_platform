@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Exit strategy and Risk assessment - under construction
+# En data platform - Exit strategy og Risikovurdering
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Exit-and-risc-strategies.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Exit-and-risc-strategies-da.md)

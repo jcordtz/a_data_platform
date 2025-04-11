@@ -1,6 +1,6 @@
 ![Microsoft](.. /images/microsoft.png)
 
-# Eine Datenplattform - Gesetzgebung - im Aufbau
+# Eine Datenplattform - Gesetzgebung
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
