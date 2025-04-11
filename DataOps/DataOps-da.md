@@ -45,6 +45,12 @@ Organisationer, der med succes implementerer DataOps, kan realisere en række fo
 4) Skalerbarhed: Den automatisering og effektivitet, der opnås gennem DataOps, giver organisationer mulighed for at skalere deres dataoperationer problemfrit, imødekomme voksende datamængder og stigende analytiske krav.
 5) Reducerede driftsomkostninger: Ved at automatisere gentagne opgaver og optimere dataarbejdsgange kan DataOps reducere driftsomkostningerne betydeligt og forbedre ressourceallokeringen.
 
+## Selvbetjening
+
+Et interessant emne i en god dataops-opsætning er, at den vil muliggøre en sti til at aktivere selvbetjening. Simpelthen fordi dataplatformen har "kontrol" over data, deres tilstand og hvordan de "flyttes rundt".
+
+Emnet selvbetjening diskuteres mere detaljeret i dette [afsnit](Self-service-da.md)
+
 ## Udfordringer og overvejelser
 
 På trods af de mange fordele er implementering af DataOps ikke uden udfordringer. Organisationer skal nøje overveje følgende faktorer:

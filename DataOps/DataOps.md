@@ -45,7 +45,7 @@ Organizations that successfully implement DataOps can realize a range of benefit
 4) Scalability: The automation and efficiency gained through DataOps allow organizations to scale their data operations seamlessly, accommodating growing data volumes and increasing analytical demands.
 5) Reduced Operational Costs: By automating repetitive tasks and optimizing data workflows, DataOps can significantly reduce operational costs and improve resource allocation.
 
-### Self-service
+## Self-service
 
 An interesting topics of a good dataops setup is that it will enable a path to enable self-service. Simply because the data platform is in "control" of data, its state and how they are "moved around".
 

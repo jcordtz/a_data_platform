@@ -45,6 +45,12 @@ Unternehmen, die DataOps erfolgreich implementieren, können eine Reihe von Vort
 4) Skalierbarkeit: Die durch DataOps erzielte Automatisierung und Effizienz ermöglicht es Unternehmen, ihre Datenoperationen nahtlos zu skalieren und dabei wachsenden Datenmengen und steigenden analytischen Anforderungen gerecht zu werden.
 5) Reduzierte Betriebskosten: Durch die Automatisierung sich wiederholender Aufgaben und die Optimierung von Daten-Workflows kann DataOps die Betriebskosten erheblich senken und die Ressourcenzuweisung verbessern.
 
+## Selbstbedienung
+
+Ein interessantes Thema eines guten Dataops-Setups ist, dass es einen Weg zur Aktivierung von Self-Service ermöglicht. Ganz einfach, weil die Datenplattform die "Kontrolle" über die Daten, ihren Zustand und die Art und Weise, wie sie "verschoben" werden, hat.
+
+Das Thema Self-Service wird in diesem [Abschnitt](Self-service-de.md) ausführlicher behandelt
+
 ## Herausforderungen und Überlegungen
 
 Trotz der vielen Vorteile ist die Implementierung von DataOps nicht ohne Herausforderungen. Unternehmen müssen die folgenden Faktoren sorgfältig berücksichtigen:

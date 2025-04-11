@@ -30,7 +30,7 @@ Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "wa
 > [Risikobewertung](./Security/Exit-and-risc-strategies-de.md), 
 > [Data-Modellierung](./DataModelling/DataModel-de.md), 
 > [Data-operations](./DataOps/DataOps-de.md),
-> [Self-service](./DataOps/Self-service-de.md) und 
+> [Selbstbedienung](./DataOps/Self-service-de.md) und 
 > [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
 
 ## Hintergrund

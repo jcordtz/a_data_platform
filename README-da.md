@@ -32,7 +32,7 @@ Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som
 > [Risikovurdering](./Security/Exit-and-risc-strategies-da.md), 
 > [Data-modellering](./DataModelling/DataModel-da.md), 
 > [Data-operations](./DataOps/DataOps-da.md),
-> [Self-service](./DataOps/Self-service-da.md) og 
+> [Selvbetjening](./DataOps/Self-service-da.md) og 
 > [Cloud-miljøer](./DataOps/Cloud-env-da.md)
 
 
