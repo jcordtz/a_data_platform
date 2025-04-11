@@ -32,7 +32,8 @@ The content of this document is not a "this is best practice", but a "you ought 
 > [Exit-strategy](./Security/Exit-and-risc-strategies.md), 
 > [Risk-assesment](./Security/Exit-and-risc-strategies.md), 
 > [Data-modelling](./DataModelling/DataModel.md), 
-> [Data-operations](./DataOps/DataOps.md) and 
+> [Data-operations](./DataOps/DataOps.md),
+> [Self-service](./DataOps/Self-service.md) and 
 > [Cloud-environments](./DataOps/Cloud-env.md)
 
 ## Background
