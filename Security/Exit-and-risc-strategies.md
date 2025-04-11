@@ -11,6 +11,9 @@
 
 This section discusses how to establish and maintain an Exit strategy and use this as the foundation for a Risk assessment.
 
+You can find a template for an Exit strategy [here](../office-documents/Exit%20Strategy%20Template-eng.docx), as well as a spreadsheet that could be used [here](../office-documents/Exit%20Strategy%20Template-eng.xlsx).
+Also, template for a Risk assessment can be found [here](../office-documents/Risk%20Assessment%20Template-eng.docx).
+
 ## Exit Strategy
 
 Creating an exit strategy for an IT project is essential to ensure a smooth transition, minimize risks, and maximize the value of the project. An effective exit strategy should address several key components to guarantee that the project can be completed successfully and that all stakeholders are satisfied with the outcome.
