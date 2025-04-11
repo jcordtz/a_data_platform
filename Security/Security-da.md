@@ -94,6 +94,13 @@ være i stand til at gendanne det hurtigere. Målet med datasikkerhed er at gør
 Sammenfattende er datasikkerhed afgørende for at opretholde fortroligheden, integriteten og tilgængeligheden af en organisations data. Det hjælper med at beskytte værdifulde aktiver og overholde regler og standarder
 krav og opretholde kundernes tillid.
 
+## Exitstrategi og risikovurdering
+
+En af de "mekanismer", der bør adresseres i forbindelse med datasikkerhed, er evnen til at "komme ud", dvs. at etablere og vedligeholde en exitstrategi.
+Denne Exit-strategi kan så også bruges som "ankerpunkt" for at have en risikovurdering af den dataplatform, der implementeres.
+
+Disse 2 emner diskuteres yderligere i dette [afsnit](Exit-and-risc-strategies-da.md)
+
 ## Lovgivning
 
 På et politisk/lovgivningsmæssigt plan er der sket en masse meget godt arbejde (synes jeg) i løbet af de sidste år for at skitsere og opstille krav (love) 
@@ -248,17 +255,6 @@ I *figur 1* finder du flere måder at beskytte data på, som er tilgængelige i 
 **Krypteringsbaseret adgangskontrol** – dette er ikke rigtig adgangskontrol, fordi *data*-lageret vil være tilgængeligt, men jeg kan kun læse/bruge *data*, hvis jeg har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
 
 **Fjernelsesbaseret adgangskontrol** – denne fremgangsmåde er kun mulig i **publiceringsområdet**. Denne tilgang bruger det aspekt af **publiceringsområdet**, at et datasætlager kun "lever så længe det bruges", i dette tilfælde "... bruges korrekt". Da denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*-lager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne den ressource, der er under angreb, hvis der er risiko for tab af *datasæt*.
-
-## Datasikkerhedsoperationer
-
-Ifølge Wikipedia er DataOps en samling af praksisser, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
-
-Mens DataOps startede som et sæt bedste praksis, har det nu udviklet sig til at blive en ny og særskilt tilgang til dataanalyse. DataOps dækker hele datalivscyklussen fra dataforberedelse til rapportering og anerkender den indbyrdes afhængighed af dataanalyseteamet og informationsteknologioperationer.
-
-I softwareudvikling lægger DevOps vægt på kontinuerlig levering ved at bruge on-demand it-ressourcer og ved at automatisere test og implementering af software. Denne måde at udvikle software og it-drift på har forbedret hastigheden, kvaliteten, forudsigeligheden og omfanget af softwareudvikling og implementering.
-
-Ved at tage metoder fra DevOps sigter DataOps mod at bringe de samme forbedringer til dataanalyse. DataOps bør ikke knyttes til en bestemt teknologi, arkitektur, værktøj, sprog eller ramme.
-
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)

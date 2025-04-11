@@ -91,8 +91,14 @@ Datensicherheit ist wichtig, weil sie Unternehmen hilft, sich vor Cyberangriffen
 Sicherheit sind Vertraulichkeit, Integrität, Verfügbarkeit und Compliance. Da Daten zunehmend zum Ziel von Angreifern werden, benötigen Unternehmen Sicherheit am Ort der *Daten*, um die Sicherheit und
 in der Lage sein, es schneller wiederherzustellen. Das Ziel der Datensicherheit ist es, Ihre Daten so widerstandsfähig wie möglich gegen jede Art von Missbrauch zu machen, z. B. Angriffe, Fehler usw.
 
-Zusammenfassend lässt sich sagen, dass die Datensicherheit für die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Daten eines Unternehmens unerlässlich ist. Es hilft, wertvolle Vermögenswerte zu schützen und Compliance zu erfüllen
-Anforderungen zu erfüllen und das Vertrauen der Kunden zu erhalten.
+Zusammenfassend lässt sich sagen, dass die Datensicherheit für die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Daten eines Unternehmens unerlässlich ist. Es hilft, wertvolle Vermögenswerte zu schützen und Compliance zu erfüllen Anforderungen zu erfüllen und das Vertrauen der Kunden zu erhalten.
+
+## Ausstiegsstrategie und Risikobewertung
+
+Einer der "Mechanismen", der im Zusammenhang mit der Datensicherheit angesprochen werden sollte, ist die Fähigkeit zum "Ausstieg", d.h. die Etablierung und Aufrechterhaltung einer Exit-Strategie.
+Diese Exit-Strategie kann dann auch als "Ankerpunkt" für eine Risikobewertung der zu implementierenden Datenplattform verwendet werden.
+
+Diese 2 Themen werden in diesem [Abschnitt](Exit-and-risc-strategies-de.md) weiter diskutiert.
 
 ## Gesetzgebung
 
@@ -263,18 +269,6 @@ In *Abbildung 1* finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in 
 **Verschlüsselungsbasierte Zugriffskontrolle** – dies ist keine wirkliche Zugriffskontrolle, da der *Daten*-Speicher zugänglich ist, ich aber die *Daten* nur lesen/verwenden kann,  wenn ich den Schlüssel zur Entschlüsselung habe. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
 **Removal Based Access Control** – dieser Ansatz ist nur im **Veröffentlichungsbereich** möglich. Dieser Ansatz nutzt den Aspekt des **Veröffentlichungsbereichs**, dass ein Datensatzspeicher nur "so lange lebt, wie er verwendet wird", in diesem Fall "... richtig verwendet werden". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten *dataset*-Speicher neu erstellen zu können  , kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn also ein Angriff realisiert wird, besteht der einfachste Weg, dies zu stoppen, darin, die angegriffene Ressource einfach zu entfernen, wenn das Risiko eines  *Datensatzes* Verlusts besteht.
-
-## Datensicherheit
-
-Laut Wikipedia ist DataOps eine Sammlung von Praktiken, Prozessen und Technologien, die eine ganzheitliche und prozessorientierte Sicht auf Daten mit Automatisierung und Methoden aus dem agilen Software-Engineering kombiniert, um Qualität, Geschwindigkeit und Zusammenarbeit zu verbessern und eine Kultur der kontinuierlichen Verbesserung rund um die Datenanalyse zu fördern.
-
-Während DataOps als eine Reihe von Best Practices begann, hat es sich inzwischen zu einem neuen und eigenständigen Ansatz für die Datenanalyse entwickelt. DataOps deckt den gesamten Datenlebenszyklus von der Datenaufbereitung bis zur Berichterstattung ab und erkennt die gegenseitige Abhängigkeit des Datenanalyseteams und der IT-Abläufe an.
-
-In der Softwareentwicklung legt DevOps den Schwerpunkt auf Continuous Delivery durch den Einsatz von On-Demand-IT-Ressourcen und durch die Automatisierung von Test und Bereitstellung von Software. Diese Art der Softwareentwicklung und des IT-Betriebs hat die Geschwindigkeit, Qualität, Vorhersagbarkeit und den Umfang der Softwareentwicklung und -bereitstellung verbessert.
-
-DataOps greift Methoden von DevOps auf und zielt darauf ab, dieselben Verbesserungen in die Datenanalyse zu bringen. DataOps sollten nicht mit einer bestimmten Technologie, Architektur, einem Tool, einer Sprache oder einem Framework verknüpft werden.
-
-
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)

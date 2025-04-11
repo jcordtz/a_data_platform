@@ -15,7 +15,7 @@ This part is also a lot about processes and hence highlighting that you cannot s
 
 In regard of scope, this section is in line with the overall Data Platform document and does not hence (yet) describe other aspects of data security than the once supporting this.
 
-I think the most mechanism are useable for other kinds of data - including also "end-user" document handling like Microsoft OneDrive.
+I think that most mechanism are useable for other kinds of data - including also "end-user" document handling like Microsoft OneDrive.
 
 ## Types of threats
 
@@ -101,6 +101,13 @@ be able to recover it faster. The goal of data security is to make your data as 
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance
 requirements, and maintain customer trust.
+
+## Exit strategy and Risk assessment
+
+One of the "mechanism" that should be addressed in connection with Data security is the ability to "get out", meaning establishing and maintaining an Exit Strategy.
+This Exit strategy can then also be used as the "anchor" point of having a Risk assessment of the data platform being implemented.
+
+These 2 topics are discussed further in this [section](Exit-and-risc-strategies.md)
 
 ## Legislation
 
@@ -273,17 +280,6 @@ In *Figure 1* you will find several ways to protect data which are available in 
 **Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
 
 **Removal Based Access Control** – this approach is only feasible in the **publish area**. This approach uses the aspect of the **publish area** that a dataset store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
-
-## Data Security Operations
-
-According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around data analytics.
-
-While DataOps started as a set of best practices, it has now evolved to become a new and distinct approach to data analytics. DataOps covers the whole data lifecycle from data preparation to reporting and acknowledges the interdependent nature of the data analytics team and information technology operations.
-
-In software development, DevOps emphasizes continuous delivery by using on-demand IT resources and by automating test and deployment of software. This way of software development and IT operations has improved velocity, quality, predictability and scale of software engineering and deployment.
-
-Taking methods from DevOps, DataOps aims to bring these same improvements to data analytics. DataOps should not be linked to a specific technology, architecture, tool, language, or framework.
-
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
