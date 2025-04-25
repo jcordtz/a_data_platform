@@ -8,43 +8,37 @@
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
 ## **Einführung**
-Data Mesh ist ein architektonisches Paradigma, das entwickelt wurde, um die Herausforderungen bei der Skalierung von Datenmanagement und -analyse in großen, komplexen Organisationen zu bewältigen. Es wechselt von zentralisierten Data Lakes und Data Warehouses zu einem dezentralisierten Ansatz, der es verschiedenen Teams ermöglicht, Daten unabhängig zu verwalten und zu nutzen.
 
-## **Kernprinzipien von Data Mesh**
+In der heutigen datengesteuerten Welt sind Unternehmen ständig auf der Suche nach Möglichkeiten, ihre Daten effektiver zu verwalten und zu nutzen. Ein aufkommendes Konzept, das große Aufmerksamkeit erregt hat, ist das Data Mesh. Aber was genau ist ein Data Mesh und warum wird es zu einer beliebten Wahl für moderne Datenarchitekturen?
 
-### **1. Domänenorientiertes Dezentrales Dateneigentum und Architektur**
-Data Mesh organisiert Daten nach Domänen, was die Struktur des Unternehmens widerspiegelt. Jede Domäne ist für ihre eigenen Daten verantwortlich, was sicherstellt, dass das Dateneigentum dezentralisiert ist. Dieser Ansatz ermöglicht es Teams, Daten unabhängig zu verwalten und zu nutzen, was Innovation und Agilität fördert.
+## Was ist Data Mesh?
 
-### **2. Daten als Produkt**
-In einem Data Mesh werden Daten als Produkt behandelt. Jede Domäne ist dafür verantwortlich, dass ihre Daten von hoher Qualität, gut dokumentiert und leicht zugänglich sind. Dieses Prinzip betont die Bedeutung der Aufrechterhaltung hoher Standards für Daten und deren einfache Verfügbarkeit für den Verbrauch.
+Data Mesh ist ein Architekturmuster, das entwickelt wurde, um die Herausforderungen traditioneller zentralisierter Datenmanagementsysteme zu bewältigen. Es fördert einen dezentralen Ansatz, bei dem Dateneigentum und Governance auf verschiedene Bereiche innerhalb eines Unternehmens verteilt sind. Diese Verschiebung ermöglicht es Teams, die den Daten am nächsten sind, diese zu verwalten und zu nutzen, was Agilität und Skalierbarkeit fördert.
 
-### **3. Selbstbedienungs-Dateninfrastruktur als Plattform**
-Eine Selbstbedienungs-Dateninfrastruktur bietet Werkzeuge und Plattformen, die es Teams ermöglichen, auf Daten zuzugreifen und diese zu nutzen, ohne auf ein zentrales Datenteam angewiesen zu sein. Diese Infrastruktur unterstützt die Erstellung, Verwaltung und Nutzung von Datenprodukten und erleichtert effiziente Datenoperationen.
+## Schlüsselprinzipien von Data Mesh
 
-### **4. Föderierte Computationale Governance**
-Governance in einem Data Mesh ist föderiert, was bedeutet, dass Richtlinien und Standards domänenübergreifend durchgesetzt werden, aber jede Domäne die Flexibilität hat, sie auf eine Weise umzusetzen, die ihren Bedürfnissen entspricht. Dieser Ansatz stellt Konsistenz sicher und erlaubt gleichzeitig domänenspezifische Anpassungen.
+1) Domänenbesitz: Data Mesh weist das Eigentum an Daten bestimmten Domänen zu, z. B. Finanzen, Marketing oder Betrieb. Jede Domain ist für die Verwaltung ihrer Daten verantwortlich und stellt sicher, dass sie korrekt, sicher zugänglich sind.
+2) Daten als Produkt: In einem Data Mesh werden Daten wie ein Produkt behandelt, mit klaren Definitionen, Qualitätsstandards und Lebenszyklusmanagement. Dieser Ansatz stellt sicher, dass die Daten zuverlässig und wertvoll für ihre Verbraucher sind.
+3) Self-Serve-Datenplattform: Data Mesh bietet eine Self-Service-Plattform, die es Teams ermöglicht, unabhängig voneinander auf Daten zuzugreifen und mit ihnen zu arbeiten. Dies reduziert Engpässe und beschleunigt die datengetriebene Entscheidungsfindung.
+4) Verbundgovernance: Während der Datenbesitz dezentralisiert ist, bleibt die Governance föderiert. Das bedeutet, dass globale Richtlinien und Standards in allen Bereichen durchgesetzt werden, um Konsistenz und Compliance zu gewährleisten.
 
-## **Vorteile von Data Mesh**
+## Vorteile von Data Mesh
 
-### **Skalierbarkeit**
-Durch die Dezentralisierung des Dateneigentums und -managements ermöglicht Data Mesh es Organisationen, ihre Datenoperationen effektiver zu skalieren.
+Die Implementierung eines Data Mesh bietet mehrere Vorteile:
 
-### **Agilität**
-Teams können unabhängig arbeiten, Engpässe reduzieren und die Datenintegration und -analyse beschleunigen.
+1) Skalierbarkeit: Durch die Verteilung der Verantwortlichkeiten für das Datenmanagement können Unternehmen ihre Datenvorgänge effektiver skalieren.
+2) Agilität: Teams können sich schnell an sich ändernde Geschäftsanforderungen anpassen und datengestützte Entscheidungen treffen, ohne auf eine zentrale Genehmigung warten zu müssen.
+3) Verbesserte Datenqualität: Domänenspezifisches Eigentum stellt sicher, dass Daten von denjenigen gepflegt werden, die sie am besten verstehen, was zu höherer Qualität und Genauigkeit führt.
+4) Verbesserte Zusammenarbeit: Data Mesh fördert die Zusammenarbeit zwischen IT- und Geschäftsteams und richtet Dateninitiativen an den Unternehmenszielen aus.
 
-### **Qualität und Zugänglichkeit**
-Die Behandlung von Daten als Produkt stellt sicher, dass sie hohen Standards entsprechen und leicht zugänglich sind.
+## Anwendungen in der Praxis
 
-## **Herausforderungen und Überlegungen**
+Viele Unternehmen haben Data Mesh erfolgreich eingeführt, um ihre Datenarchitektur zu transformieren. Zum Beispiel hat OBOS, Norwegens führendes Wohnungsbauunternehmen, seine Datenanalyse mit Fabric mit einem Data-Mesh-Design demokratisiert. Dies ermöglichte es OBOS, eine föderierte Governance zu implementieren und Geschäftsteams mit Self-Service-Arbeitsbereichen auszustatten, wodurch die Geschäftsleistung verbessert und die Betriebskosten gesenkt wurden.
 
-### **Kultureller Wandel**
-Die Implementierung eines Data Mesh erfordert einen erheblichen kulturellen Wandel innerhalb einer Organisation, da Teams neue Verantwortlichkeiten für das Datenmanagement übernehmen müssen.
+## Schlussfolgerung
 
-### **Komplexität**
-Die dezentrale Natur von Data Mesh kann Komplexität in Bezug auf Governance und Koordination zwischen den Domänen einführen.
+Data Mesh stellt eine bedeutende Veränderung in der Art und Weise dar, wie Unternehmen an das Datenmanagement herangehen. Durch die Dezentralisierung von Eigentum und Governance bietet es ein skalierbares, agiles und kollaboratives Framework, das eine bessere Datennutzung und Geschäftsergebnisse ermöglichen kann. Da immer mehr Unternehmen die Vorteile von Data Mesh erkennen, ist es bereit, zu einem Eckpfeiler der modernen Datenarchitektur zu werden.
 
-## **Fazit**
-Data Mesh stellt einen transformativen Ansatz für das Datenmanagement dar und bietet Lösungen für viele der Herausforderungen, denen große Organisationen gegenüberstehen. Durch die Dezentralisierung des Dateneigentums, die Behandlung von Daten als Produkt und die Bereitstellung einer Selbstbedienungsinfrastruktur ermöglicht Data Mesh skalierbare, agile und qualitativ hochwertige Datenoperationen.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Data-mesh-da.md)
