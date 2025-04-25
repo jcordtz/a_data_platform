@@ -164,6 +164,12 @@ I *publish* området skabes de *datasæt*, der er nødvendige for at opfylde de 
 > Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor *bronze* er **ingest området**, *sølv* er **transform** og *guld* er **publish**. *Medallion* arkitekturen indeholder ikke
 et **consume område**. Dette dokument vil bruge begreberne **ingest**, **transform**, **publish**, og **consume** da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
 
+### Dataplatform og Data Mesh-paradigmet
+
+Data mesh er et arkitektonisk paradigme, der er designet til at løse udfordringerne ved skalering af datastyring og -analyse i store, komplekse organisationer. Det skifter fra centraliserede datasøer og lagre til en decentraliseret tilgang, der gør det muligt for forskellige teams at administrere og bruge data uafhængigt.
+
+Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i dette [afsnit](DataOps/Data-mesh-da.md)
+
 ### Grænseflader
 
 *Figur 2* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.

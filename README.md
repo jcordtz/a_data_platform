@@ -142,6 +142,12 @@ The **consume area** is where the end users of the data platform will access the
 > [!NOTE]
 > The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the **ingest area**, *silver* is **transform** and *gold* is **publish**. The *medallion architecture* does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
 
+### Data platform and the Data Mesh paradigm
+
+Data mesh is an architectural paradigm designed to address the challenges of scaling data management and analytics in large, complex organizations. It shifts from centralized data lakes and warehouses to a decentralized approach, enabling different teams to manage and utilize data independently.
+
+This topic in the context of the **data platform** is discussed in more details in this [section](DataOps/Data-mesh.md)
+
 ### Interfaces
 
 *Figure 2* indicates that the interface between the different areas is as important as the content of the areas.

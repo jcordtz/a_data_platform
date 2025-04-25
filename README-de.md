@@ -158,6 +158,12 @@ Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die be
 > [!Hinweis]
 > Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der **Autnahmebereich**, *Silber* **Transformieren** und *Gold* **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
+### Datenplattform und das Data-Mesh-Paradigma
+
+Data Mesh ist ein Architekturparadigma, das entwickelt wurde, um die Herausforderungen bei der Skalierung von Datenmanagement und -analyse in großen, komplexen Organisationen zu bewältigen. Es verlagert sich von zentralisierten Data Lakes und Warehouses zu einem dezentralen Ansatz, der es verschiedenen Teams ermöglicht, Daten unabhängig voneinander zu verwalten und zu nutzen.
+
+Dieses Thema im Zusammenhang mit der **Datenplattform** wird in diesem [Abschnitt](DataOps/Data-mesh-de.md) ausführlicher behandelt
+
 ### Schnittstellen
 
 *Abbildung 2* zeigt, dass die Schnittstelle zwischen den verschiedenen Bereichen genauso wichtig ist wie der Inhalt der Bereiche. Diese Schnittstellen müssen die technologische Unabhängigkeit gewährleisten, die wir in der Plattform wünschen – es muss einfach sein, neue Dienste zu ändern/hinzuzufügen – und sicherstellen, dass wir die Wege des Datenflusses kennen.
