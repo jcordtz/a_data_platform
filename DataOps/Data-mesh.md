@@ -43,6 +43,7 @@ Data Mesh can be implemented in different ways. Here are some of those
 1) Domain-Oriented Decentralized Data Ownership and Architecture
     - **Description**: This principle involves decentralizing data ownership to domain teams, which are responsible for their own data. Each domain team manages its data as a product, ensuring it is high-quality, well-documented, and easily accessible.
     - **Benefits**: It reduces bottlenecks and allows domain experts to handle data more effectively.
+
 2) Data as a Product
     - **Description**: Data is treated as a product with its own lifecycle, including development, maintenance, and improvement. Each data product is designed to be discoverable, addressable, and trustworthy.
     - **Benefits**: This approach ensures that data is reliable and can be used confidently across the organization.
@@ -67,6 +68,7 @@ Many organizations have successfully adopted data mesh to transform their data a
 
 ## Data Mesh and the Data Platform
 
+In the described dataplatform data mesh is normally established "on top" of the data platform. Hence, the data mesh is established in or after the *publish layer*. This then means that the data platform act as the place where data conformity and quality is handled enabling the data mesh to be able to support the business needs exactly how and where it is needed.  
 
 ## Conclusion
 
