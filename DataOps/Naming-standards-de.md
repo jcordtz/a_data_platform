@@ -7,8 +7,6 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
-Sure! Here’s the enhanced article translated to German:
-
 ## Bedeutung von Namensstandards
 
 1. **Konsistenz**: Konsistente Namenskonventionen helfen sicherzustellen, dass jeder in der Organisation die Datenstruktur versteht, was Verwirrung und Fehler reduziert.

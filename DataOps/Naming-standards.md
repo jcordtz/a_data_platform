@@ -7,9 +7,6 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
-Sure! Here’s the enhanced article in Markdown:
-
-```markdown
 # Importance of Naming Standards
 
 1. **Consistency**: Consistent naming conventions help ensure that everyone in the organization understands the data structure, reducing confusion and errors.

@@ -7,8 +7,6 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
-Sure! Here’s the enhanced article translated to Danish:
-
 ## Vigtigheden af Navngivningsstandarder
 
 1. **Konsistens**: Konsistente navngivningskonventioner hjælper med at sikre, at alle i organisationen forstår datastrukturen, hvilket reducerer forvirring og fejl.
