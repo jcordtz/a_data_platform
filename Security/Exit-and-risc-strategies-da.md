@@ -177,7 +177,7 @@ En konsekvensanalyse af databeskyttelse (DPIA) er en systematisk proces, der er 
 
 Ved at følge disse trin kan organisationer effektivt styre databeskyttelsesrisici og sikre overholdelse af lovmæssige krav. DPIA'er er ikke kun en lovgivningsmæssig forpligtelse, men et værdifuldt værktøj til at forbedre databeskyttelsespraksis og beskytte enkeltpersoners privatlivsrettigheder.
 
-En skabelon leveret af EU kan findes [her](.. /office-documents/dpia-template-v1.pdf)
+En skabelon leveret af EU kan findes [her](../office-documents/dpia-template-v1.pdf)
 
 Henvisning : <https://gdpr.eu/data-protection-impact-assessment-template>
 
