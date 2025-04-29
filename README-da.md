@@ -51,7 +51,10 @@ Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange,
 
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.
+
 Derfor er konceptet med et selvkonsistent datasæt et nøgleelement i denne tilgang.
+
+Desuden skal platformen platform også kunne dække "hvad der måtte komme" og give en situation, hvor du kan sige - *hvis det ikke er i platformen i dag, vil det være der i morgen*.
 
 Når det er sagt, kan den beskrevne dataplatform bruges i flere forskellige scenarier og naturligt nok tilpasses til den faktiske brugssituation.
 
