@@ -38,6 +38,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 - [Data Mesh](./DataOps/Data-mesh-da.md)
 - [Selvbetjening](./DataOps/Self-service-da.md)
 - [Cloud-miljøer](./DataOps/Cloud-env-da.md)
+- [Navngivnings-standard](./DataOps/Naming-standards-da.md)
 
 
 ## Baggrund
