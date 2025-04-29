@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Naming Stanards
+# A data platform - Naming Standards
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Naming-Standards.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Naming-Standards-da.md)
