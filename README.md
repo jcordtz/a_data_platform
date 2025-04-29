@@ -40,7 +40,7 @@ Besides covering the main topic of how create a data platform and the direct dis
 - [Data Mesh](./DataOps/Data-mesh.md)
 - [Self-service](./DataOps/Self-service.md)
 - [Cloud-environments](./DataOps/Cloud-env.md)
-- [Naming Standards](./DataOps/Naming-stanards.md)
+- [Naming Standards](./DataOps/Naming-standards.md)
 
 ## Background
 
