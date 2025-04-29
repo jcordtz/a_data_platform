@@ -47,7 +47,7 @@ Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der
 Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange, men det er (i øjeblikket) ikke dækket.
 
 > [!Note]
-> Dokumentet er baseret på Microsoft teknologi komponenter.
+> Dokumentet er hovedsagligt baseret på Microsoft teknologi komponenter.
 
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.

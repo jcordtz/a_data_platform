@@ -44,7 +44,7 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 Dieses Konzept einer Datenplattform kann auf andere Datenplattformansätze angewendet werden, ist aber (derzeit) nicht abgedeckt.
 
 > [!Hinweis]
-> Das Dokument basiert sich auf Microsoft-Technologiekomponenten.
+> Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.
 
 ## Die Vision
 Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind.
