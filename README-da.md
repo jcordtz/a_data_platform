@@ -24,16 +24,20 @@ Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
 > De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
 > med dataplatforme som er i brug.
->
-> Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende:
-> [Sikkerhed](./Security/Security-da.md), 
-> [Lovgivning](./Security/Legislation-da.md), 
-> [Exit-strategi](./Security/Exit-and-risc-strategies-da.md), 
-> [Risikovurdering](./Security/Exit-and-risc-strategies-da.md), 
-> [Data-modellering](./DataModelling/DataModel-da.md), 
-> [Data-operations](./DataOps/DataOps-da.md),
-> [Selvbetjening](./DataOps/Self-service-da.md) og 
-> [Cloud-miljøer](./DataOps/Cloud-env-da.md)
+
+## Indhold
+
+Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende:
+
+- [Sikkerhed](./Security/Security-da.md)
+- [Lovgivning](./Security/Legislation-da.md)
+- [Exit-strategi](./Security/Exit-and-risc-strategies-da.md)
+- [Risikovurdering](./Security/Exit-and-risc-strategies-da.md)
+- [Data-modellering](./DataModelling/DataModel-da.md)
+- [Data-operations](./DataOps/DataOps-da.md)
+- [Data Mesh](./DataOps/Data-mesh-da.md)
+- [Selvbetjening](./DataOps/Self-service-da.md)
+- [Cloud-miljøer](./DataOps/Cloud-env-da.md)
 
 
 ## Baggrund

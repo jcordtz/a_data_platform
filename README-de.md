@@ -22,16 +22,20 @@ Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "wa
 > [!Hinweis]
 > Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
 > Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
->
-> Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden:
-> [Sicherheit](./Security/Security-de.md), 
-> [Gesetzgebung](./Security/Legislation-de.md), 
-> [Exit-Strategie](./Security/Exit-and-risc-strategies-de.md), 
-> [Risikobewertung](./Security/Exit-and-risc-strategies-de.md), 
-> [Data-Modellierung](./DataModelling/DataModel-de.md), 
-> [Data-operations](./DataOps/DataOps-de.md),
-> [Selbstbedienung](./DataOps/Self-service-de.md) und 
-> [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
+
+## Inhalt
+
+Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden:
+
+- [Sicherheit](./Security/Security-de.md)
+- [Gesetzgebung](./Security/Legislation-de.md)
+- [Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)
+- [Risikobewertung](./Security/Exit-and-risc-strategies-de.md)
+- [Data-Modellierung](./DataModelling/DataModel-de.md)
+- [Data-operations](./DataOps/DataOps-de.md)
+- [Data Mesh](./DataOps/Data-mesh-de.md)
+- [Selbstbedienung](./DataOps/Self-service-de.md)
+- [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
 
 ## Hintergrund
 

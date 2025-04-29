@@ -26,15 +26,20 @@ The content of this document is not a "this is best practice", but a "you ought 
 > The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
 > the different implementations we have of dataplatforms in use.
 >
-> Besides covering the main topic of how create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also being covered. These are follows:
-> [Security](./Security/Security.md), 
-> [Legislation](./Security/Legislation.md), 
-> [Exit-strategy](./Security/Exit-and-risc-strategies.md), 
-> [Risk-assesment](./Security/Exit-and-risc-strategies.md), 
-> [Data-modelling](./DataModelling/DataModel.md), 
-> [Data-operations](./DataOps/DataOps.md),
-> [Self-service](./DataOps/Self-service.md) and 
-> [Cloud-environments](./DataOps/Cloud-env.md)
+
+## Content
+
+Besides covering the main topic of how create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also being covered. These are follows:
+
+- [Security](./Security/Security.md)
+- [Legislation](./Security/Legislation.md)
+- [Exit-strategy](./Security/Exit-and-risc-strategies.md)
+- [Risk-assesment](./Security/Exit-and-risc-strategies.md)
+- [Data-modelling](./DataModelling/DataModel.md)
+- [Data-operations](./DataOps/DataOps.md)
+- [Data Mesh](./DataOps/Data-mesh.md)
+- [Self-service](./DataOps/Self-service.md)
+- [Cloud-environments](./DataOps/Cloud-env.md)
 
 ## Background
 
