@@ -7,86 +7,82 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
 [![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
 
-## IaaS-, PaaS- und SaaS-Umgebungen
+In der sich ständig weiterentwickelnden Welt der Technologie hat sich Cloud Computing als Leuchtfeuer der Innovation erwiesen und bietet verschiedene Servicemodelle, um unterschiedliche Geschäftsanforderungen zu erfüllen. Stellen Sie sich eine riesige digitale Landschaft vor, in der Unternehmen zwischen verschiedenen Wegen wählen können, die jeweils zu einem einzigartigen Satz von Fähigkeiten und Kontrollen führen. Diese Wege sind bekannt als Infrastructure as a Service (IaaS), Platform as a Service (PaaS) und Software as a Service (SaaS). Jeder Weg bietet ein unterschiedliches Maß an Kontrolle, Flexibilität und Verwaltung, ähnlich wie die Wahl zwischen dem Bau eines eigenen Hauses, der Anmietung einer voll möblierten Wohnung oder dem Aufenthalt in einem Hotel.
 
-Cloud Computing bietet verschiedene Servicemodelle, um unterschiedlichen Geschäftsanforderungen gerecht zu werden. Die drei Hauptmodelle sind Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) und Software-as-a-Service (SaaS). Jedes Modell bietet unterschiedliche Ebenen der Kontrolle, Flexibilität und Verwaltung.
+## Infrastruktur als Service (IaaS)
 
-![Abbildung 1](../images/german/Slide1.JPG)
+Stellen Sie sich vor, Sie sind ein Architekt mit einer leeren Leinwand. IaaS bietet Ihnen die virtualisierten Bausteine über das Internet. Sie haben die Freiheit, virtuelle Maschinen zu erstellen und zu verwalten, jede mit ihrem eigenen Betriebssystem. Es ist, als hätten Sie ein Grundstück, auf dem Sie Ihr Traumhaus von Grund auf bauen können.
 
-### Infrastruktur-as-a-Service (IaaS)
+### Hauptmerkmale
 
-IaaS bietet virtualisierte Rechenressourcen über das Internet. Es bietet die größte Kontrolle über die IT-Ressourcen und kommt herkömmlichen lokalen Rechenzentren am nächsten.
+- Virtuelle Maschinen: Stellen Sie sich vor, Sie erstellen und verwalten Ihre eigenen digitalen Häuser.
+- Speicher: Denken Sie an skalierbare Speicherlösungen als riesige digitale Lagerhäuser.
+- Netzwerk: Stellen Sie sich virtuelle Netzwerke, Lastenausgleicher und IP-Adressen als Straßen und Brücken vor, die Ihre digitale Stadt verbinden.
+- Flexibilität: Skalieren Sie Ihre Ressourcen je nach Bedarf nach oben oder unten, ähnlich wie Sie Ihr Haus erweitern, wenn Gäste kommen.
+- Bezahlen nach Nutzung: Zahlen Sie nur für das, was Sie nutzen, ähnlich wie bei Versorgungsleistungen in einem echten Zuhause.
 
-Hauptmerkmale
+### Anwendungsfälle
 
-* Virtuelle Maschinen: Benutzer können virtuelle Maschinen mit ihren eigenen Betriebssystemen erstellen und verwalten.
-* Speicher: Skalierbare Speicherlösungen, wie z. B. Blockspeicher und Objektspeicher.
-* Netzwerk: Virtuelle Netzwerke, Load Balancer und IP-Adressen.
-* Flexibilität: Benutzer können Ressourcen je nach Bedarf nach oben oder unten skalieren.
-* Pay-as-you-go: Abrechnung basierend auf der Nutzung, was Kosteneffizienz ermöglicht.
+- Entwicklung und Test: Richten Sie Entwicklungsumgebungen schnell ein und bauen Sie sie wieder ab, ähnlich wie beim Bau und Abriss temporärer Strukturen.
+- Webhosting: Hosten Sie Websites und Webanwendungen, ähnlich wie beim Einrichten von Geschäften in Ihrer digitalen Stadt.
+- Datenspeicherung und Backup: Speichern Sie große Datenmengen mit hoher Verfügbarkeit, ähnlich wie bei einem sicheren Tresor.
+- Katastrophenwiederherstellung: Implementieren Sie Katastrophenwiederherstellungslösungen mit minimalen Vorabkosten, ähnlich wie bei einem Notfallplan für Ihre Stadt.
 
-Anwendungsfälle
+### Beispiele
 
-* Entwicklung und Tests: Schnelles Einrichten und Beenden von Entwicklungsumgebungen.
-* Website-Hosting: Hosten Sie Websites und Webanwendungen.
-* Datenspeicherung und -sicherung: Speichern Sie große Datenmengen mit hoher Verfügbarkeit.
-* Disaster Recovery: Implementieren Sie Disaster Recovery-Lösungen mit minimalen Vorabkosten.
+- Microsoft Azure Virtuelle Maschinen
+- Amazon Web Services (AWS) EC2
+- Google Cloud Compute Engine
 
-Beispiele
+## Plattform als Service (PaaS)
 
-* Virtuelle Microsoft Azure-Maschinen
-* Amazon Web Services (AWS) EC2
-* Google Cloud Compute Engine
+Stellen Sie sich nun vor, Sie ziehen in eine voll möblierte Wohnung. PaaS bietet eine Plattform, die es Ihnen ermöglicht, Anwendungen zu entwickeln, auszuführen und zu verwalten, ohne sich um die zugrunde liegende Infrastruktur kümmern zu müssen. Es ist, als hätten Sie einen bezugsfertigen Raum, in dem Sie sich auf Ihre kreativen Bestrebungen konzentrieren können.
 
-### Plattform-as-a-Service (PaaS)
+### Hauptmerkmale
 
-PaaS bietet eine Plattform, die es dem Kunden ermöglicht, Anwendungen zu entwickeln, auszuführen und zu verwalten, ohne sich mit der zugrunde liegenden Infrastruktur befassen zu müssen. Es abstrahiert einen Großteil der Arbeit der Systemadministration.
+- Entwicklungswerkzeuge: Integrierte Entwicklungsumgebungen (IDEs) und Werkzeuge zum Codieren, Testen und Bereitstellen von Anwendungen, ähnlich wie ein voll ausgestattetes Werkstatt.
+- Middleware: Software, die verschiedene Anwendungen und Dienste verbindet, ähnlich wie die Sanitär- und Elektroinstallationen in Ihrer Wohnung.
+- Datenbankverwaltung: Verwaltete Datenbankdienste zum Speichern und Abrufen von Daten, ähnlich wie eine eingebaute Bibliothek.
+- Skalierbarkeit: Automatische Skalierung von Anwendungen je nach Bedarf, ähnlich wie erweiterbare Räume.
+- Integration: Einfache Integration mit verschiedenen Diensten und APIs, ähnlich wie nahtlose Verbindungen zu Versorgungsleistungen und Diensten.
 
-**Hauptmerkmale**
+### Anwendungsfälle
 
-* Entwicklungstools: Integrierte Entwicklungsumgebungen (IDEs) und Tools zum Codieren, Testen und Bereitstellen von Anwendungen.
-* Middleware: Software, die verschiedene Anwendungen und Dienste verbindet.
-* Datenbankmanagement: Verwaltete Datenbankdienste zum Speichern und Abrufen von Daten.
-* Skalierbarkeit: Automatische Skalierung von Anwendungen basierend auf dem Bedarf.
-* Integration: Einfache Integration mit verschiedenen Diensten und APIs.
+- Anwendungsentwicklung: Entwickeln und Bereitstellen von Web- und Mobilanwendungen, ähnlich wie das Erstellen digitaler Meisterwerke.
+- API-Entwicklung: Erstellen und Verwalten von APIs für verschiedene Dienste, ähnlich wie das Bauen von Brücken zwischen digitalen Inseln.
+- Analytics und Business Intelligence: Erstellen und Bereitstellen von Analytics-Anwendungen, ähnlich wie das Einrichten von Observatorien, um Einblicke zu gewinnen.
+- IoT-Anwendungen: Entwickeln und Verwalten von Internet of Things (IoT)-Anwendungen, ähnlich wie das Erstellen eines Smart Homes.
 
-**Anwendungsfälle**
+### Beispiele
 
-* Anwendungsentwicklung: Entwicklung und Bereitstellung von Web- und mobilen Anwendungen.
-* API-Entwicklung: Erstellen und verwalten Sie APIs für verschiedene Dienste.
-* Analytics und Business Intelligence: Erstellen und Bereitstellen von Analyseanwendungen.
-* IoT-Anwendungen: Entwickeln und verwalten Sie IoT-Anwendungen (Internet of Things).
+- Google App Engine
+- Microsoft Azure App Services
+- Heroku
 
-**Beispiele**
+## Software als Service (SaaS)
 
-* Google App Engine (Englisch)
-* Microsoft Azure App-Dienste
-* Heroku
+Stellen Sie sich schließlich vor, Sie wohnen in einem luxuriösen Hotel. SaaS liefert Softwareanwendungen über das Internet auf Abonnementbasis. Sie greifen über einen Webbrowser auf die Software zu, und der Anbieter verwaltet alles andere. Es ist, als würden Sie alle Annehmlichkeiten genießen, ohne irgendwelche Verantwortlichkeiten zu haben.
 
-### Software-as-a-Service (SaaS)
+### Hauptmerkmale
 
-SaaS stellt Softwareanwendungen über das Internet auf Abonnementbasis bereit. Die Nutzer greifen über einen Webbrowser auf die Software zu, und der Anbieter verwaltet die Infrastruktur und die Plattformen, auf denen die Anwendungen ausgeführt werden.
+- Zugänglichkeit: Greifen Sie von jedem Gerät mit Internetverbindung auf Anwendungen zu, ähnlich wie bei einem Schlüssel zu jedem Zimmer im Hotel.
+- Wartung: Der Anbieter kümmert sich um Updates, Sicherheit und Wartung, ähnlich wie ein engagiertes Personal.
+- Abonnementbasiert: Zahlen Sie für die Software auf Abonnementbasis, oft monatlich oder jährlich, ähnlich wie bei der Bezahlung Ihres Aufenthalts.
+- Skalierbarkeit: Skalieren Sie die Anzahl der Benutzer und Funktionen nach Bedarf, ähnlich wie bei der Buchung weiterer Zimmer für Gäste.
+- Integration: Integrieren Sie mit anderen SaaS-Anwendungen und -Diensten, ähnlich wie bei der Nutzung aller Annehmlichkeiten des Hotels.
 
-**Hauptmerkmale**
+### Anwendungsfälle
 
-* Barrierefreiheit: Greifen Sie von jedem Gerät mit Internetverbindung auf Anwendungen zu.
-* Wartung: Der Anbieter kümmert sich um Updates, Sicherheit und Wartung.
-* Abonnementbasiert: Bezahlen Sie die Software auf Abonnementbasis, oft monatlich oder jährlich.
-* Skalierbarkeit: Skalieren Sie die Anzahl der Benutzer und Funktionen einfach nach Bedarf.
-* Integration: Integration mit anderen SaaS-Anwendungen und -Diensten.
+- Geschäftsanwendungen: CRM-, ERP- und HR-Managementsysteme, ähnlich wie ein Concierge-Service.
+- Zusammenarbeitstools: E-Mail, Instant Messaging und Projektmanagement-Tools, ähnlich wie ein Konferenzraum.
+- Content Management: Verwalten und Verteilen digitaler Inhalte, ähnlich wie ein Medienzentrum.
+- E-Commerce: Online-Shopping-Plattformen und Zahlungsgateways, ähnlich wie eine Einkaufspassage.
 
-**Anwendungsfälle**
+### Beispiele
 
-* Geschäftsanwendungen: CRM-, ERP- und HR-Management-Systeme.
-* Tools für die Zusammenarbeit: E-Mail, Instant Messaging und Projektmanagement-Tools.
-* Content Management: Verwalten und verteilen Sie digitale Inhalte.
-* E-Commerce: Online-Shopping-Plattformen und Zahlungsgateways.
-
-**Beispiele**
-
-* Microsoft Office 365
-* Google Workspace (ehemals G Suite)
-* Salesforce (Englisch)
+- Microsoft Office 365
+- Google Workspace (ehemals G Suite)
+- Salesforce
 
 ## Gemeinsame Verantwortung in einer Cloud-Umgebung
 
@@ -100,7 +96,7 @@ In Abbildung 1 sind die Unterschiede zwischen On-Premise, IaaS, PaaS und SaaS in
 
 Auf einer detaillierteren Ebene bedeutet dies dann folgendes:
 
-### Vor Ort
+### On-Premise
 
 **Verantwortung des Kunden**:
 
