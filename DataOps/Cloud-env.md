@@ -288,7 +288,7 @@ The Privacy & Security Terms contain several key elements designed to ensure the
 * Employee Data
    * Privacy Principles - The same privacy principles applied to customer data are also applicable to employee data, ensuring consistent protection across all personal data.
 * Supplier Security & Privacy Assurance
-   * Supplier Requirements**: Suppliers handling personal data on Microsoft's behalf must adhere to privacy and security requirements, ensuring compliance and protection.
+   * Supplier Requirements: Suppliers handling personal data on Microsoft's behalf must adhere to privacy and security requirements, ensuring compliance and protection.
 
 These elements ensure that The Privacy & Security Terms are comprehensive, clear, and compliant with relevant regulations, making it easier for customers to understand and trust the data handling practices.
 

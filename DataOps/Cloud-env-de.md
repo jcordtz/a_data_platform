@@ -286,7 +286,7 @@ Die Datenschutz- und Sicherheitsbedingungen enthalten mehrere Schlüsselelemente
 * Mitarbeiterdaten
 * Datenschutzgrundsätze - Die gleichen Datenschutzgrundsätze, die für Kundendaten gelten, gelten auch für Mitarbeiterdaten, um einen einheitlichen Schutz aller personenbezogenen Daten zu gewährleisten.
 * Lieferantensicherheit und Datenschutzgarantie
-* Anforderungen an Lieferanten**: Lieferanten, die personenbezogene Daten im Auftrag von Microsoft verarbeiten, müssen Datenschutz- und Sicherheitsanforderungen einhalten, um Compliance und Schutz zu gewährleisten.
+* Anforderungen an Lieferanten: Lieferanten, die personenbezogene Daten im Auftrag von Microsoft verarbeiten, müssen Datenschutz- und Sicherheitsanforderungen einhalten, um Compliance und Schutz zu gewährleisten.
 
 Diese Elemente stellen sicher, dass die Datenschutz- und Sicherheitsbedingungen umfassend, klar und konform mit den relevanten Vorschriften sind, was es den Kunden erleichtert, die Datenverarbeitungspraktiken zu verstehen und ihnen zu vertrauen.
 

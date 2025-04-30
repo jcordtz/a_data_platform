@@ -286,7 +286,7 @@ Vilkårene for beskyttelse af personlige oplysninger og sikkerhed indeholder fle
 * Medarbejder data
 * Principper for beskyttelse af personlige oplysninger - De samme principper for beskyttelse af personlige oplysninger, der gælder for kundedata, gælder også for medarbejderdata, hvilket sikrer ensartet beskyttelse på tværs af alle personlige data.
 * Leverandørsikkerhed og beskyttelse af personlige oplysninger
-* Leverandørkrav**: Leverandører, der håndterer personlige data på Microsofts vegne, skal overholde krav til beskyttelse af personlige oplysninger og sikkerhed, hvilket sikrer overholdelse og beskyttelse.
+* Leverandørkrav: Leverandører, der håndterer personlige data på Microsofts vegne, skal overholde krav til beskyttelse af personlige oplysninger og sikkerhed, hvilket sikrer overholdelse og beskyttelse.
 
 Disse elementer sikrer, at vilkårene for beskyttelse af personlige oplysninger og sikkerhed er omfattende, klare og i overensstemmelse med relevante regler, hvilket gør det lettere for kunderne at forstå og stole på datahåndteringspraksis.
 
@@ -353,7 +353,7 @@ Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **K
 
 Når vi har afklaret, hvilke vilkår vi opererer på, vil næste skridt være at **demonstrere compliance**, det vil sige en slags "hvordan og hvad", hvor vi udviser *fælles ansvar* i praksis. Det betyder evnen til at udføre revision og inspektion.
 
-Det sidste skridt er så at **Adopt Compliance**, det vil sige at have compliance i aktion. Dette påvirker overholdelses-, sikkerheds- og risikostillingen i forbindelse med organisatorisk brug af data.
+Det sidste skridt er så at have en **faktisk overholdelse**, det vil sige at udfører *compliance* i aktion. Dette påvirker overholdelses-, sikkerheds- og risikostillingen i forbindelse med organisatorisk brug af data.
 
 ## Microsofts tilgang til datasikkerhed og overholdelse af angivne standarder i onlinetjenester
 
@@ -388,7 +388,7 @@ Funktioner til kundekonfiguration
 * Program for overholdelse
    * "White Glow" tilgængelig mod et årligt gebyr
 
-**Vedtaget overholdelse**
+**Faktisk overholdelse**
 
 * Tekniske og sikkerhedsmæssige foranstaltninger og værktøjer til organisatorisk brug
 * Værktøjer til datasikkerhed
