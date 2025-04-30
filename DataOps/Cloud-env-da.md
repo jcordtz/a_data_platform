@@ -223,7 +223,8 @@ Her følger en oversigt over disse forskelle.
 ## **Kontrakterne**
 
 > [!NOTE]
-> The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
+> Den angivne beskrivelse er **KUN** til orientering og erstatter på ingen måde brugen af ​​de originale dokumenter.
+> Disse dokumenter kan findes [her](<https://www.microsoft.com/en-us/licensing>) og [her][<https://servicetrust.microsoft.com/>]
 
 Grundlaget for at forstå, hvem der har hvilket ansvar, kræver dokumenter, der beskriver, hvordan dette håndteres.
 
@@ -257,7 +258,7 @@ Denne henviser til **Produkt vilkårene** der indeholder mere detaljerede oplysn
    - *Produktvilkårene* opdateres regelmæssigt for at afspejle ændringer i Microsofts produkttilbud og -tjenester.
    - De er tilgængelige via webstedet for [produktvilkår](<https://www.microsoft.com/en-us/licensing>), hvor kunden kan finde detaljerede oplysninger om de vilkår, der gælder for deres specifikke produkter.
 
-Samlet set er Microsofts produktvilkår designet til at give klare, præcise og omfattende oplysninger om de brugsrettigheder og -forpligtelser, der er forbundet med Microsoft-produkter og -tjenester, hvilket sikrer, at kunderne har en klar forståelse af deres licensvilkår og -betingelser.
+Samlet set er Microsofts *produktvilkår* designet til at give klare, præcise og omfattende oplysninger om de brugsrettigheder og -forpligtelser, der er forbundet med Microsoft-produkter og -tjenester, hvilket sikrer, at kunderne har en klar forståelse af deres licensvilkår og -betingelser.
 
 **Produktvilkårene** er yderligere "foldet ud" i tre dokumenter:
 
@@ -294,50 +295,51 @@ Disse elementer sikrer, at vilkårene for beskyttelse af personlige oplysninger 
 
 Vilkårene for universel licens til onlinetjenester indeholder flere nøgleelementer, der er designet til at sikre klarhed, konsistens og overholdelse af relevante regler. Her er en overordnet beskrivelse af, hvad de indeholder:
 
-* Definitioner - Begreberne giver klare definitioner af nøglebegreber og terminologi, der anvendes i hele dokumentet. Dette sikrer, at alle parter har en fælles forståelse af vilkårene og betingelserne.
-* Kundens brugsrettigheder - Kunden tildeles specifikke brugsrettigheder til de onlinetjenester, de har licenseret. Disse rettigheder er betinget af overholdelse af volumenlicensaftalen og de specifikke vilkår, der er beskrevet i produktvilkårene. Kunden skal have en licens til hvert produkt og separat licenseret funktionalitet, der bruges på en enhed eller af en bruger.
-* Overholdelse af love - Vilkårene sikrer, at brugen af onlinetjenester overholder gældende love og regler, herunder import-/eksporttjenester, politikker for acceptabel brug og tekniske begrænsninger.
-* Databeskyttelse og privatliv - Vilkårene omfatter forpligtelser til databeskyttelse og privatliv, hvilket sikrer, at kundedata håndteres i overensstemmelse med relevante regler såsom GDPR. Dette omfatter oplysninger om, hvordan data behandles, opbevares og videregives.
-* Sikkerhedsforanstaltninger - Vilkårene beskriver de sikkerhedsforanstaltninger, der skal være på plads for at beskytte kundedata. Dette omfatter krav til håndtering af fortrolige oplysninger og opretholdelse af sikkerhedskontroller for at forhindre uautoriseret adgang.
-* Serviceniveauaftaler – Mange onlinetjenester tilbyder SLA'er, der beskriver ydeevne- og tilgængelighedsgarantier, der leveres til kunden. Disse aftaler specificerer forpligtelserne til oppetid og konnektivitet.
-* Brug af kundedata - Vilkårene regulerer brugen af kundedata, herunder hvordan de behandles, opbevares og videregives. Dette omfatter forpligtelser til beskyttelse af personlige oplysninger og sikkerhed samt specifikke vilkår for brug af kundedata i forskellige områder.
-*Ansvarlig AI - Tilgangen til ansvarlig AI fokuserer på retfærdighed, inklusion, gennemsigtighed, privatliv, sikkerhed, pålidelighed og sikkerhed. Vilkårene sikrer, at brugen af AI-teknologier er i overensstemmelse med relevante regler.
-* Opdateringer og ændringer - Vilkårene kan opdateres for at afspejle ændringer i lovkrav, nye funktioner eller andre relevante opdateringer. Kunden informeres om disse ændringer, og hvordan de påvirker deres brug af onlinetjenesterne.
+- Definitioner - Begreberne giver klare definitioner af nøglebegreber og terminologi, der anvendes i hele dokumentet. Dette sikrer, at alle parter har en fælles forståelse af vilkårene og betingelserne.
+- Kundens brugsrettigheder - Kunden tildeles specifikke brugsrettigheder til de onlinetjenester, de har licenseret. Disse rettigheder er betinget af overholdelse af volumenlicensaftalen og de specifikke vilkår, der er beskrevet i produktvilkårene. Kunden skal have en licens til hvert produkt og separat licenseret funktionalitet, der bruges på en enhed eller af en bruger.
+- Overholdelse af love - Vilkårene sikrer, at brugen af onlinetjenester overholder gældende love og regler, herunder import-/eksporttjenester, politikker for acceptabel brug og tekniske begrænsninger.
+- Databeskyttelse og privatliv - Vilkårene omfatter forpligtelser til databeskyttelse og privatliv, hvilket sikrer, at kundedata håndteres i overensstemmelse med relevante regler såsom GDPR. Dette omfatter oplysninger om, hvordan data behandles, opbevares og videregives.
+- Sikkerhedsforanstaltninger - Vilkårene beskriver de sikkerhedsforanstaltninger, der skal være på plads for at beskytte kundedata. Dette omfatter krav til håndtering af fortrolige oplysninger og opretholdelse af sikkerhedskontroller for at forhindre uautoriseret adgang.
+- Serviceniveauaftaler – Mange onlinetjenester tilbyder SLA'er, der beskriver ydeevne- og tilgængelighedsgarantier, der leveres til kunden. Disse aftaler specificerer forpligtelserne til oppetid og konnektivitet.
+- Brug af kundedata - Vilkårene regulerer brugen af kundedata, herunder hvordan de behandles, opbevares og videregives. Dette omfatter forpligtelser til beskyttelse af personlige oplysninger og sikkerhed samt specifikke vilkår for brug af kundedata i forskellige områder.
+- Ansvarlig AI - Tilgangen til ansvarlig AI fokuserer på retfærdighed, inklusion, gennemsigtighed, privatliv, sikkerhed, pålidelighed og sikkerhed. Vilkårene sikrer, at brugen af AI-teknologier er i overensstemmelse med relevante regler.
+- Opdateringer og ændringer - Vilkårene kan opdateres for at afspejle ændringer i lovkrav, nye funktioner eller andre relevante opdateringer. Kunden informeres om disse ændringer, og hvordan de påvirker deres brug af onlinetjenesterne.
 
 Disse elementer sikrer, at de universelle licensvilkår for onlinetjenester er omfattende, klare og i overensstemmelse med relevante regler, hvilket gør det lettere for kunderne at forstå og bruge tjenesterne effektivt.
 
-### Tjenestespecifikke vilkår i produkttilbud
+### Tjenestespecifikke vilkår i *produkttilbud*
 
-Hvis der er behov for særlige vilkår for en given tjeneste (normalt på grund af arten af det, denne tjeneste gør), dokumenterer de tjenestespecifikke vilkår Produkttilbud dette.
+Hvis der er behov for særlige vilkår for en given tjeneste (normalt på grund af arten af det, denne tjeneste gør), dokumenterer de tjenestespecifikke vilkår *produkttilbud* dette.
 Dette dokument indeholder flere nøgleelementer, der er designet til at skabe klarhed og detaljerede oplysninger om den pågældende specifikke tjeneste.
 
 Her er en overordnet beskrivelse af, hvad de indeholder:
 
-* Tjenestedefinitioner - Disse vilkår giver klare definitioner for hver tjeneste, der tilbydes, hvilket sikrer, at kunden forstår omfanget og arten af de tjenester, de bruger.
-* Brugsrettigheder og begrænsninger - Detaljerede oplysninger om de brugsrettigheder, der er tildelt kunden for hver tjeneste, herunder eventuelle begrænsninger eller begrænsninger for, hvordan tjenesterne kan bruges.
-* Service Level Agreements (SLA'er) - Specifikke ydelses- og tilgængelighedsgarantier for hver service, der beskriver de forpligtelser, vi påtager os vedrørende oppetid, svartider og andre nøglepræstationsindikatorer.
-* Databeskyttelse og beskyttelse af personlige oplysninger - Oplysninger om, hvordan kundedata håndteres, herunder databehandling, opbevaring og videregivelsespraksis. Dette afsnit sikrer overholdelse af relevante databeskyttelsesbestemmelser og skitserer forpligtelserne til at opretholde kundernes privatliv.
-* Sikkerhedsforanstaltninger - Detaljer om de sikkerhedsforanstaltninger, der er indført for at beskytte kundedata og sikre tjenesternes integritet og fortrolighed. Dette omfatter oplysninger om adgangskontrol, kryptering og andre sikkerhedsprotokoller.
-* Overholdelse af love - Sikkerhed for, at brugen af tjenesterne overholder gældende love og regler, herunder import-/eksportkontrol, politikker for acceptabel brug og tekniske begrænsninger.
-* Opdateringer og ændringer - Oplysninger om, hvordan opdateringer og ændringer af tjenesterne vil blive kommunikeret til kunden, herunder eventuelle påvirkninger af tjenestens brug eller ydeevne.
-* Support og vedligeholdelse - Oplysninger om de support- og vedligeholdelsestjenester, der er tilgængelige for kunden, herunder hvordan man får adgang til support, svartider og eventuelle tilknyttede omkostninger.
-* Opsigelse og suspension - Betingelser, hvorunder tjenester kan opsiges eller suspenderes, herunder kundeansvar og eventuelle opsigelsesfrister.
+- Tjenestedefinitioner - Disse vilkår giver klare definitioner for hver tjeneste, der tilbydes, hvilket sikrer, at kunden forstår omfanget og arten af de tjenester, de bruger.
+- Brugsrettigheder og begrænsninger - Detaljerede oplysninger om de brugsrettigheder, der er tildelt kunden for hver tjeneste, herunder eventuelle begrænsninger eller begrænsninger for, hvordan tjenesterne kan bruges.
+- Service Level Agreements (SLA'er) - Specifikke ydelses- og tilgængelighedsgarantier for hver service, der beskriver de forpligtelser, vi påtager os vedrørende oppetid, svartider og andre nøglepræstationsindikatorer.
+- Databeskyttelse og beskyttelse af personlige oplysninger - Oplysninger om, hvordan kundedata håndteres, herunder databehandling, opbevaring og videregivelsespraksis. Dette afsnit sikrer overholdelse af relevante databeskyttelsesbestemmelser og skitserer forpligtelserne til at opretholde kundernes privatliv.
+- Sikkerhedsforanstaltninger - Detaljer om de sikkerhedsforanstaltninger, der er indført for at beskytte kundedata og sikre tjenesternes integritet og fortrolighed. Dette omfatter oplysninger om adgangskontrol, kryptering og andre sikkerhedsprotokoller.
+- Overholdelse af love - Sikkerhed for, at brugen af tjenesterne overholder gældende love og regler, herunder import-/eksportkontrol, politikker for acceptabel brug og tekniske begrænsninger.
+- Opdateringer og ændringer - Oplysninger om, hvordan opdateringer og ændringer af tjenesterne vil blive kommunikeret til kunden, herunder eventuelle påvirkninger af tjenestens brug eller ydeevne.
+- Support og vedligeholdelse - Oplysninger om de support- og vedligeholdelsestjenester, der er tilgængelige for kunden, herunder hvordan man får adgang til support, svartider og eventuelle tilknyttede omkostninger.
+- Opsigelse og suspension - Betingelser, hvorunder tjenester kan opsiges eller suspenderes, herunder kundeansvar og eventuelle opsigelsesfrister.
 
-### Tillæg om databehandling
+### Tillæg om databehandling (DPA)
 
 Dokumentet Vilkår for beskyttelse af personlige oplysninger og sikkerhed er "understøttet" af det kritiske dokument Data Processing Addendum (DPA), som skitserer vilkår og betingelser i forbindelse med behandling og beskyttelse af personoplysninger.
+
 Her er en overordnet beskrivelse af, hvad databehandlingstillægget indeholder:
 
-* Definitioner - DPA giver klare definitioner af nøglebegreber som "dataansvarlig", "databehandler", "personoplysninger" og "registreret". Disse definitioner sikrer, at alle parter har en fælles forståelse af de termer, der anvendes i hele dokumentet.
-* Vilkår for databehandling - Dette afsnit beskriver de specifikke vilkår og betingelser, hvorunder personoplysninger vil blive behandlet. Den indeholder oplysninger om arten, formålet og varigheden af databehandlingsaktiviteterne samt de typer af personoplysninger og kategorier af registrerede, der er involveret.
-* Overholdelse af love - DPA sikrer, at alle databehandlingsaktiviteter overholder gældende databeskyttelseslove og -regler, såsom den generelle databeskyttelsesforordning (GDPR) og California Consumer Privacy Act (CCPA). Dette omfatter forpligtelser til at overholde databeskyttelsesprincipperne og til at implementere passende tekniske og organisatoriske foranstaltninger til beskyttelse af personoplysninger.
-* Datasikkerhed - Dette afsnit beskriver de sikkerhedsforanstaltninger, der skal være på plads for at beskytte personoplysninger. Det omfatter krav til opretholdelse af fortrolighed, integritet og tilgængelighed af personoplysninger samt procedurer for håndtering af sikkerhedshændelser og brud.
-* Den registreredes rettigheder - Datatilsynet beskriver de registreredes rettigheder, såsom retten til at få adgang til, berigtige, slette og begrænse behandlingen af deres personoplysninger. Den omfatter også procedurer for besvarelse af anmodninger fra registrerede og sikring af, at registrerede kan udøve deres rettigheder.
-* Underdatabehandlere - Dette afsnit indeholder oplysninger om brugen af underdatabehandlere, herunder de betingelser, hvorunder underdatabehandlere kan ansættes, og databehandlerens ansvar i forhold til underdatabehandlere. Det indeholder også krav om at sikre, at underdatabehandlere overholder de samme databeskyttelsesforpligtelser som databehandleren.
-* Dataoverførsler - DPA adresserer overførsel af personoplysninger til tredjelande eller internationale organisationer og sikrer, at sådanne overførsler udføres i overensstemmelse med gældende databeskyttelseslove. Dette omfatter brugen af passende sikkerhedsforanstaltninger, såsom standardkontraktbestemmelser eller bindende virksomhedsregler.
-* Opbevaring og sletning af data - Dette afsnit beskriver politikker og procedurer for opbevaring og sletning af personoplysninger. Det indeholder krav om at sikre, at personoplysninger kun opbevares, så længe det er nødvendigt for at opfylde de formål, hvortil de blev indsamlet, og om sikker sletning af personoplysninger, når de ikke længere er nødvendige.
-* Revisionsrettigheder - DPA giver den dataansvarlige ret til at foretage revisioner og inspektioner for at verificere databehandlerens overholdelse af vilkårene i DPA og gældende databeskyttelseslove. Dette omfatter bestemmelser om at give adgang til relevante optegnelser og oplysninger.
-* Ansvar og skadesløsholdelse - Dette afsnit skitserer parternes ansvar og skadesløsholdelsesforpligtelser i forbindelse med brud på databeskyttelse og manglende overholdelse af DPA. Den indeholder bestemmelser om erstatning til registrerede for skader som følge af overtrædelser af databeskyttelsesreglerne.
+- Definitioner - DPA giver klare definitioner af nøglebegreber som "dataansvarlig", "databehandler", "personoplysninger" og "registreret". Disse definitioner sikrer, at alle parter har en fælles forståelse af de termer, der anvendes i hele dokumentet.
+- Vilkår for databehandling - Dette afsnit beskriver de specifikke vilkår og betingelser, hvorunder personoplysninger vil blive behandlet. Den indeholder oplysninger om arten, formålet og varigheden af databehandlingsaktiviteterne samt de typer af personoplysninger og kategorier af registrerede, der er involveret.
+- Overholdelse af love - DPA sikrer, at alle databehandlingsaktiviteter overholder gældende databeskyttelseslove og -regler, såsom den generelle databeskyttelsesforordning (GDPR) og California Consumer Privacy Act (CCPA). Dette omfatter forpligtelser til at overholde databeskyttelsesprincipperne og til at implementere passende tekniske og organisatoriske foranstaltninger til beskyttelse af personoplysninger.
+- Datasikkerhed - Dette afsnit beskriver de sikkerhedsforanstaltninger, der skal være på plads for at beskytte personoplysninger. Det omfatter krav til opretholdelse af fortrolighed, integritet og tilgængelighed af personoplysninger samt procedurer for håndtering af sikkerhedshændelser og brud.
+- Den registreredes rettigheder - Datatilsynet beskriver de registreredes rettigheder, såsom retten til at få adgang til, berigtige, slette og begrænse behandlingen af deres personoplysninger. Den omfatter også procedurer for besvarelse af anmodninger fra registrerede og sikring af, at registrerede kan udøve deres rettigheder.
+- Underdatabehandlere - Dette afsnit indeholder oplysninger om brugen af underdatabehandlere, herunder de betingelser, hvorunder underdatabehandlere kan ansættes, og databehandlerens ansvar i forhold til underdatabehandlere. Det indeholder også krav om at sikre, at underdatabehandlere overholder de samme databeskyttelsesforpligtelser som databehandleren.
+- Dataoverførsler - DPA adresserer overførsel af personoplysninger til tredjelande eller internationale organisationer og sikrer, at sådanne overførsler udføres i overensstemmelse med gældende databeskyttelseslove. Dette omfatter brugen af passende sikkerhedsforanstaltninger, såsom standardkontraktbestemmelser eller bindende virksomhedsregler.
+- Opbevaring og sletning af data - Dette afsnit beskriver politikker og procedurer for opbevaring og sletning af personoplysninger. Det indeholder krav om at sikre, at personoplysninger kun opbevares, så længe det er nødvendigt for at opfylde de formål, hvortil de blev indsamlet, og om sikker sletning af personoplysninger, når de ikke længere er nødvendige.
+- Revisionsrettigheder - DPA giver den dataansvarlige ret til at foretage revisioner og inspektioner for at verificere databehandlerens overholdelse af vilkårene i DPA og gældende databeskyttelseslove. Dette omfatter bestemmelser om at give adgang til relevante optegnelser og oplysninger.
+- Ansvar og skadesløsholdelse - Dette afsnit skitserer parternes ansvar og skadesløsholdelsesforpligtelser i forbindelse med brud på databeskyttelse og manglende overholdelse af DPA. Den indeholder bestemmelser om erstatning til registrerede for skader som følge af overtrædelser af databeskyttelsesreglerne.
 
 Disse elementer sikrer, at databehandlingstillægget er omfattende, klart og i overensstemmelse med relevante databeskyttelsesregler, hvilket giver en robust ramme for behandling og beskyttelse af personoplysninger.
 
@@ -345,54 +347,54 @@ Disse elementer sikrer, at databehandlingstillægget er omfattende, klart og i o
 
 Baseret på arten af de cloud-tjenester (IaaS, PaaS og SaaS), der bruges i ens dataplatform og de kontraktlige elementer, der bruges, bør der etableres en proces, der definerer ens sikkerhedsstilling.
 
-I denne proces bør det være tydeligt, hvordan ansvaret har for de forskellige elementer i platformen.
+I denne proces bør det være tydeligt, hvem der har ansvaret for de forskellige elementer i platformen.
 
 ![Figur 5](../images/danish/Slide16.png)
 
-Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **Kontraktlig overholdelse**, der definerer forpligtelserne mellem parterne, og som også fastsætter, hvordan overholdelse af forpligtelser skal påvises.
+Det første skridt bør være at se "på hvilke vilkår" der opereres, det vil sige **kontraktlig overholdelse**, der definerer forpligtelserne mellem parterne, og som også fastsætter, hvordan overholdelse af disse forpligtelser skal påvises.
 
-Når vi har afklaret, hvilke vilkår vi opererer på, vil næste skridt være at **demonstrere compliance**, det vil sige en slags "hvordan og hvad", hvor vi udviser *fælles ansvar* i praksis. Det betyder evnen til at udføre revision og inspektion.
+Når dette er afklaret, vil næste skridt være at **demonstrere overholdelse**, det vil sige en slags "hvordan og hvad", hvor der udvises *fælles ansvar* i praksis. Det betyder evnen til at udføre revision og inspektion.
 
 Det sidste skridt er så at have en **faktisk overholdelse**, det vil sige at udfører *compliance* i aktion. Dette påvirker overholdelses-, sikkerheds- og risikostillingen i forbindelse med organisatorisk brug af data.
 
 ## Microsofts tilgang til datasikkerhed og overholdelse af angivne standarder i onlinetjenester
 
-**Overholdelse af kontrakter**
+**Kontraktlig overholdelse**
 
-* Produktvilkår og DPA
+- Produktvilkår og DPA
 
-* DPA har de generelle forpligtelser
-* Produktspecifikke vilkår og produktdokumentation har specifikke vilkår og vejledning
-* En generel DPA for produkter (onlinetjenester og software) og professionel service
-   * Med forskellige vilkår for:
-      * Preview onlinetjenester vs. onlinetjenester
-      * Onlinetjenester vs. Core tjenester
-      * Core-onlinetjenesten i forhold til EU's onlinetjeneste for datagrænser
+- DPA har de generelle forpligtelser
+- Produktspecifikke vilkår og produktdokumentation har specifikke vilkår og vejledning
+- En generel DPA for produkter (onlinetjenester og software) og professionel service
+   - Med forskellige vilkår for:
+      - Preview onlinetjenester vs. onlinetjenester
+      - Onlinetjenester vs. Core tjenester
+      - Core-onlinetjenesten i forhold til EU's onlinetjeneste for datagrænser
 
-Det er vigtigt at huske, at de kan være produktspecifikke termer. Og at produktdokumentationen beskriver specifikke databrugsscenarier og
-Funktioner til kundekonfiguration
+Det er vigtigt at huske, at der kan være produktspecifikke termer. Og at produktdokumentationen beskriver specifikke databrugsscenarier og
+funktioner til kundekonfiguration
 
 **Demonstreret overholdelse**
 
-* Service Forsikring
-   * Få mere at vide om beskrivelser af datacenterdrift og -kontroldesign for at beskytte kundedata
-   * Lær trænings- og uddannelsesveje
+- Service Forsikring
+   - Få mere at vide om beskrivelser af datacenterdrift og -kontroldesign for at beskytte kundedata
+   - Lær trænings- og uddannelsesveje
 
-* Tredjeparts certificering og revisioner
-   * Microsoft-kontroller baseret på forskellige standarder
-   * Tredjepartscertificering og -revisioner Tredjepartsattestering og -certificering (ISO, SOC osv.)
+- Tredjeparts certificering og revisioner
+   - Microsoft-kontroller baseret på forskellige standarder
+   - Tredjepartscertificering og -revisioner Tredjepartsattestering og -certificering (ISO, SOC osv.)
 
-* Penetrationstest
-   * Tredjepartstest og/eller af kunder
+- Penetrationstest
+   - Tredjepartstest og/eller af kunder
 
-* Program for overholdelse
-   * "White Glow" tilgængelig mod et årligt gebyr
+- Program for overholdelse
+   - "White Glow" tilgængelig mod et årligt gebyr
 
 **Faktisk overholdelse**
 
-* Tekniske og sikkerhedsmæssige foranstaltninger og værktøjer til organisatorisk brug
-* Værktøjer til datasikkerhed
-* Kryptering, Customer Lockbox osv.
+- Tekniske og sikkerhedsmæssige foranstaltninger og værktøjer til organisatorisk brug
+- Værktøjer til datasikkerhed
+- Kryptering, Customer Lockbox osv.
 
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)

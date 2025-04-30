@@ -222,7 +222,9 @@ Alles andere - Der Cloud-Anbieter verwaltet den gesamten Stack, einschließlich 
 ## **Die Verträge**
 
 > [!NOTE]
-> The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
+> Die bereitgestellte Beschreibung dient **NUR** zu Informationszwecken und ersetzt in keiner Weise die Verwendung der Originaldokumente.
+> Diese dokumente sind [hier](<https://www.microsoft.com/en-us/licensing>) und [hier][<https://servicetrust.microsoft.com/>] zugänglich.
+
 
 Um zu verstehen, wer welche Verantwortung trägt, sind Dokumente erforderlich, die beschreiben, wie dies gehandhabt wird.
 
@@ -236,56 +238,56 @@ Dies ist in Abbildung 4 dargestellt.
 
 Der **Hauptvertrag (MCA oder MBSA & EA)** ist der "Hauptvertrag", der die "Einkaufsbedingungen" beschreibt
 
-Die **Produktbedingungen** enthalten ausführlichere Informationen zu den Rechten und Einschränkungen, die mit der Verwendung von Microsoft-Produkten und -Diensten verbunden sind. 
+Die **Produktbedingungen** enthalten ausführlichere Informationen zu den Rechten und Einschränkungen, die mit der Verwendung von Microsoft-Produkten und -Diensten verbunden sind.
 
 **Produktbedingungen** befasst sich mit mehreren wichtigen Aspekten, darunter:
 
-* **Zweck und Geltungsbereich**
-   * Der Hauptzweck der Produktbedingungen besteht darin, die dem Kunden für die Nutzung von Microsoft-Produkten gewährten Rechte (die "Nutzungsrechte") sowie etwaige Einschränkungen oder Beschränkungen ihrer Nutzung zu erläutern.
-   * Die Produktbedingungen können auch andere Verpflichtungen enthalten, die der Kunde in Bezug auf ein Produkt haben kann und die nicht in Vorverträgen enthalten sind.
+- **Zweck und Geltungsbereich**
+   - Der Hauptzweck der Produktbedingungen besteht darin, die dem Kunden für die Nutzung von Microsoft-Produkten gewährten Rechte (die "Nutzungsrechte") sowie etwaige Einschränkungen oder Beschränkungen ihrer Nutzung zu erläutern.
+   - Die Produktbedingungen können auch andere Verpflichtungen enthalten, die der Kunde in Bezug auf ein Produkt haben kann und die nicht in Vorverträgen enthalten sind.
 
-* **Inhalt**:
-   * Die Produktbedingungen decken verschiedene Aspekte ab, wie z. B. Lizenzbedingungen, Datenschutz- und Sicherheitsbedingungen, Nachträge zur Datenverarbeitung und dienstspezifische Bedingungen.
-   * Sie enthalten auch universelle Lizenzbedingungen für Online-Dienste und spezifische Bedingungen für verschiedene Produktangebote.
+- **Inhalt**:
+   - Die Produktbedingungen decken verschiedene Aspekte ab, wie z. B. Lizenzbedingungen, Datenschutz- und Sicherheitsbedingungen, Nachträge zur Datenverarbeitung und dienstspezifische Bedingungen.
+   - Sie enthalten auch universelle Lizenzbedingungen für Online-Dienste und spezifische Bedingungen für verschiedene Produktangebote.
 
-* **Generative KI-Dienste**:
-   * Die Produktbedingungen enthalten spezifische Bestimmungen für die Nutzung von Microsoft Generative AI Services, wie z. B. Einschränkungen bei der Nutzung dieser Dienste zum Generieren synthetischer Trainingsdaten für die Entwicklung von KI-Modellen mit ähnlicher Funktionalität wie Microsoft AI Services.
-   * Der Kunde kann den Azure OpenAI-Dienst verwenden, um synthetisierte Daten ausschließlich für die Feinabstimmung bestimmter Modelltypen zu erstellen.
+- **Generative KI-Dienste**:
+   - Die Produktbedingungen enthalten spezifische Bestimmungen für die Nutzung von Microsoft Generative AI Services, wie z. B. Einschränkungen bei der Nutzung dieser Dienste zum Generieren synthetischer Trainingsdaten für die Entwicklung von KI-Modellen mit ähnlicher Funktionalität wie Microsoft AI Services.
+   - Der Kunde kann den Azure OpenAI-Dienst verwenden, um synthetisierte Daten ausschließlich für die Feinabstimmung bestimmter Modelltypen zu erstellen.
 
-* **Updates und Zugänglichkeit**:
-   * Die Produktbedingungen werden regelmäßig aktualisiert, um Änderungen an den Produktangeboten und Diensten von Microsoft widerzuspiegeln.
-   * Sie sind über die Website mit den [Produktbedingungen](<https://www.microsoft.com/en-us/licensing>), zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
+- **Updates und Zugänglichkeit**:
+   - Die Produktbedingungen werden regelmäßig aktualisiert, um Änderungen an den Produktangeboten und Diensten von Microsoft widerzuspiegeln.
+   - Sie sind über die Website mit den [Produktbedingungen](<https://www.microsoft.com/en-us/licensing>), zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
 
 Insgesamt sind die Microsoft-Produktbedingungen so konzipiert, dass sie klare, prägnante und umfassende Informationen über die Nutzungsrechte und -pflichten im Zusammenhang mit Microsoft-Produkten und -Diensten bereitstellen und sicherstellen, dass Kunden ein klares Verständnis der Lizenzbedingungen haben.
 
 Die **Produktbedingungen** werden in drei Dokumenten weiter "entfaltet":
 
-* Datenschutz- und Sicherheitsbedingungen
-* Universelle Lizenzbedingungen für Online-Dienste
-* Servicespezifische Bedingungen in "Produktangebote"
+- Datenschutz- und Sicherheitsbedingungen
+- Universelle Lizenzbedingungen für Online-Dienste
+- Servicespezifische Bedingungen in "Produktangebote"
 
 ### Datenschutz- und Sicherheitsbestimmungen
 
 Die Datenschutz- und Sicherheitsbedingungen enthalten mehrere Schlüsselelemente, die den Schutz personenbezogener Daten und die Einhaltung der einschlägigen Vorschriften gewährleisten sollen. Hier ist eine allgemeine Beschreibung dessen, was sie beinhalten:
 
-* Datenschutz und Privatsphäre 
-* Datenschutzstandards – Die Bedingungen beschreiben die Datenschutzstandards, die Microsoft einhält und die sicherstellen, dass personenbezogene Daten auf eine Weise gesammelt, verwendet und weitergegeben werden, die die Datenschutzrechte des Einzelnen respektiert.
-* Framework für Datentaxonomie und -nutzung - Dieses Framework hilft bei der Kategorisierung und Verwaltung von Daten basierend auf ihrer Sensibilität und ihrem Verwendungszweck.
-* Datenschutzvorfälle - Die Verfahren für den Umgang mit Datenschutzvorfällen, einschließlich der Meldung und der Maßnahmen zur Risikominderung, werden detailliert beschrieben, um eine schnelle und effektive Reaktion zu gewährleisten.
-* Sicherheitsmaßnahmen
-* Informationssicherheit – Die Bedingungen enthalten Anforderungen an den Umgang mit vertraulichen Informationen, um sicherzustellen, dass der Zugriff auf Microsoft- und Kundendaten nur auf der Grundlage eines legitimen Geschäftsbedarfs gewährt wird.
-* Sicherheitskontrollen – Richtlinien für die Aufrechterhaltung von Sicherheitskontrollen, wie z. B. die Nichtweitergabe von Anmeldeinformationen für Benutzerkonten und das Sichern von Geräten, wenn sie nicht verwendet werden, werden bereitgestellt, um unbefugten Zugriff zu verhindern.
-* Einhaltung von Standards – Microsoft hält verschiedene Sicherheitsstandards und Zertifizierungen ein, z. B. ISO 27001, ISO 27018 und ISO 27701, um einen robusten Datenschutz zu gewährleisten.
-* Verwendung von Kundendaten
-* Datenverarbeitung - Die Bedingungen regeln, wie Kundendaten verarbeitet, gespeichert und offengelegt werden, wobei Vertraulichkeit und Sicherheit gewährleistet sind.
-* Software von Drittanbietern - Jede Verwendung von Software von Drittanbietern muss einem Governance-Prozess folgen, um Risiken zu minimieren und eine ordnungsgemäße Überprüfung zu gewährleisten.
-* Verantwortungsvolle KI
-* Ethische KI-Nutzung - Der Ansatz für verantwortungsvolle KI konzentriert sich auf Fairness, Inklusivität, Transparenz, Datenschutz, Sicherheit, Zuverlässigkeit und Sicherheit.
-* Einhaltung von KI-Vorschriften - Die Bedingungen stellen sicher, dass der Einsatz von KI-Technologien den einschlägigen Vorschriften entspricht.
-* Mitarbeiterdaten
-* Datenschutzgrundsätze - Die gleichen Datenschutzgrundsätze, die für Kundendaten gelten, gelten auch für Mitarbeiterdaten, um einen einheitlichen Schutz aller personenbezogenen Daten zu gewährleisten.
-* Lieferantensicherheit und Datenschutzgarantie
-* Anforderungen an Lieferanten: Lieferanten, die personenbezogene Daten im Auftrag von Microsoft verarbeiten, müssen Datenschutz- und Sicherheitsanforderungen einhalten, um Compliance und Schutz zu gewährleisten.
+- Datenschutz und Privatsphäre 
+   - Datenschutzstandards – Die Bedingungen beschreiben die Datenschutzstandards, die Microsoft einhält und die sicherstellen, dass personenbezogene Daten auf eine Weise gesammelt, verwendet und weitergegeben werden, die die Datenschutzrechte des Einzelnen respektiert.
+   - Framework für Datentaxonomie und -nutzung - Dieses Framework hilft bei der Kategorisierung und Verwaltung von Daten basierend auf ihrer Sensibilität und ihrem Verwendungszweck.
+   - Datenschutzvorfälle - Die Verfahren für den Umgang mit Datenschutzvorfällen, einschließlich der Meldung und der Maßnahmen zur Risikominderung, werden detailliert beschrieben, um eine schnelle und effektive Reaktion zu gewährleisten.
+- Sicherheitsmaßnahmen
+   - Informationssicherheit – Die Bedingungen enthalten Anforderungen an den Umgang mit vertraulichen Informationen, um sicherzustellen, dass der Zugriff auf Microsoft- und Kundendaten nur auf der Grundlage eines legitimen Geschäftsbedarfs gewährt wird.
+   - Sicherheitskontrollen – Richtlinien für die Aufrechterhaltung von Sicherheitskontrollen, wie z. B. die Nichtweitergabe von Anmeldeinformationen für Benutzerkonten und das Sichern von Geräten, wenn sie nicht verwendet werden, werden bereitgestellt, um unbefugten Zugriff zu verhindern.
+   - Einhaltung von Standards – Microsoft hält verschiedene Sicherheitsstandards und Zertifizierungen ein, z. B. ISO 27001, ISO 27018 und ISO 27701, um einen robusten Datenschutz zu gewährleisten.
+- Verwendung von Kundendaten
+   - Datenverarbeitung - Die Bedingungen regeln, wie Kundendaten verarbeitet, gespeichert und offengelegt werden, wobei Vertraulichkeit und Sicherheit gewährleistet sind.
+   - Software von Drittanbietern - Jede Verwendung von Software von Drittanbietern muss einem Governance-Prozess folgen, um Risiken zu minimieren und eine ordnungsgemäße Überprüfung zu gewährleisten.
+- Verantwortungsvolle KI
+   - Ethische KI-Nutzung - Der Ansatz für verantwortungsvolle KI konzentriert sich auf Fairness, Inklusivität, Transparenz, Datenschutz, Sicherheit, Zuverlässigkeit und Sicherheit.
+   - Einhaltung von KI-Vorschriften - Die Bedingungen stellen sicher, dass der Einsatz von KI-Technologien den einschlägigen Vorschriften entspricht.
+- Mitarbeiterdaten
+   - Datenschutzgrundsätze - Die gleichen Datenschutzgrundsätze, die für Kundendaten gelten, gelten auch für Mitarbeiterdaten, um einen einheitlichen Schutz aller personenbezogenen Daten zu gewährleisten.
+- Lieferantensicherheit und Datenschutzgarantie
+   - Anforderungen an Lieferanten: Lieferanten, die personenbezogene Daten im Auftrag von Microsoft verarbeiten, müssen Datenschutz- und Sicherheitsanforderungen einhalten, um Compliance und Schutz zu gewährleisten.
 
 Diese Elemente stellen sicher, dass die Datenschutz- und Sicherheitsbedingungen umfassend, klar und konform mit den relevanten Vorschriften sind, was es den Kunden erleichtert, die Datenverarbeitungspraktiken zu verstehen und ihnen zu vertrauen.
 
@@ -293,15 +295,15 @@ Diese Elemente stellen sicher, dass die Datenschutz- und Sicherheitsbedingungen 
 
 Die universellen Lizenzbedingungen für Online-Dienste enthalten mehrere Schlüsselelemente, die Klarheit, Konsistenz und Einhaltung der relevanten Vorschriften gewährleisten sollen. Hier ist eine allgemeine Beschreibung dessen, was sie beinhalten:
 
-* Definitionen - Die Begriffe bieten klare Definitionen für Schlüsselkonzepte und Terminologie, die im gesamten Dokument verwendet werden. Dadurch wird sichergestellt, dass alle Parteien ein gemeinsames Verständnis der Allgemeinen Geschäftsbedingungen haben.
-* Nutzungsrechte des Kunden - Dem Kunden werden spezifische Nutzungsrechte für die von ihm lizenzierten Online-Dienste eingeräumt. Diese Rechte sind abhängig von der Einhaltung der Volumenlizenzvereinbarung und der spezifischen Bedingungen, die in den Produktbedingungen dargelegt sind. Der Kunde benötigt eine Lizenz für jedes Produkt und separat lizenzierte Funktionen, die auf einem Gerät oder von einem Benutzer verwendet werden.
-* Einhaltung von Gesetzen - Die Bedingungen stellen sicher, dass die Nutzung von Online-Diensten den geltenden Gesetzen und Vorschriften entspricht, einschließlich Import-/Exportdiensten, Richtlinien zur akzeptablen Nutzung und technischen Beschränkungen.
-* Datenschutz und Privatsphäre - Die Bedingungen beinhalten Verpflichtungen zum Datenschutz und zur Privatsphäre, um sicherzustellen, dass Kundendaten in Übereinstimmung mit den einschlägigen Vorschriften wie der DSGVO behandelt werden. Dazu gehören auch Details darüber, wie Daten verarbeitet, gespeichert und weitergegeben werden.
-* Sicherheitsmaßnahmen - Die Bedingungen beschreiben die Sicherheitsmaßnahmen, die zum Schutz von Kundendaten ergriffen werden müssen. Dazu gehören Anforderungen an den Umgang mit vertraulichen Informationen und die Aufrechterhaltung von Sicherheitskontrollen, um unbefugten Zugriff zu verhindern.
-* Service Level Agreements - Viele Online-Dienste bieten SLAs an, in denen Leistungs- und Verfügbarkeitsgarantien für den Kunden aufgeführt sind. In diesen Vereinbarungen sind die Verpflichtungen für Betriebszeit und Konnektivität festgelegt.
-* Verwendung von Kundendaten - Die Bedingungen regeln die Verwendung von Kundendaten, einschließlich der Art und Weise, wie sie verarbeitet, gespeichert und offengelegt werden. Dazu gehören Verpflichtungen zu Datenschutz und Sicherheit sowie spezifische Bedingungen für die Verwendung von Kundendaten in verschiedenen Regionen.
-*Verantwortungsvolle KI - Der Ansatz für verantwortungsvolle KI konzentriert sich auf Fairness, Inklusivität, Transparenz, Datenschutz, Sicherheit, Zuverlässigkeit und Schutz. Die Bedingungen stellen sicher, dass der Einsatz von KI-Technologien den einschlägigen Vorschriften entspricht.
-* Aktualisierungen und Änderungen - Die Bedingungen können aktualisiert werden, um Änderungen der gesetzlichen Anforderungen, neue Funktionen oder andere relevante Aktualisierungen widerzuspiegeln. Der Kunde wird über diese Änderungen und deren Auswirkungen auf die Nutzung der Online-Dienste informiert.
+- Definitionen - Die Begriffe bieten klare Definitionen für Schlüsselkonzepte und Terminologie, die im gesamten Dokument verwendet werden. Dadurch wird sichergestellt, dass alle Parteien ein gemeinsames Verständnis der Allgemeinen Geschäftsbedingungen haben.
+- Nutzungsrechte des Kunden - Dem Kunden werden spezifische Nutzungsrechte für die von ihm lizenzierten Online-Dienste eingeräumt. Diese Rechte sind abhängig von der Einhaltung der Volumenlizenzvereinbarung und der spezifischen Bedingungen, die in den Produktbedingungen dargelegt sind. Der Kunde benötigt eine Lizenz für jedes Produkt und separat lizenzierte Funktionen, die auf einem Gerät oder von einem Benutzer verwendet werden.
+- Einhaltung von Gesetzen - Die Bedingungen stellen sicher, dass die Nutzung von Online-Diensten den geltenden Gesetzen und Vorschriften entspricht, einschließlich Import-/Exportdiensten, Richtlinien zur akzeptablen Nutzung und technischen Beschränkungen.
+- Datenschutz und Privatsphäre - Die Bedingungen beinhalten Verpflichtungen zum Datenschutz und zur Privatsphäre, um sicherzustellen, dass Kundendaten in Übereinstimmung mit den einschlägigen Vorschriften wie der DSGVO behandelt werden. Dazu gehören auch Details darüber, wie Daten verarbeitet, gespeichert und weitergegeben werden.
+- Sicherheitsmaßnahmen - Die Bedingungen beschreiben die Sicherheitsmaßnahmen, die zum Schutz von Kundendaten ergriffen werden müssen. Dazu gehören Anforderungen an den Umgang mit vertraulichen Informationen und die Aufrechterhaltung von Sicherheitskontrollen, um unbefugten Zugriff zu verhindern.
+- Service Level Agreements - Viele Online-Dienste bieten SLAs an, in denen Leistungs- und Verfügbarkeitsgarantien für den Kunden aufgeführt sind. In diesen Vereinbarungen sind die Verpflichtungen für Betriebszeit und Konnektivität festgelegt.
+- Verwendung von Kundendaten - Die Bedingungen regeln die Verwendung von Kundendaten, einschließlich der Art und Weise, wie sie verarbeitet, gespeichert und offengelegt werden. Dazu gehören Verpflichtungen zu Datenschutz und Sicherheit sowie spezifische Bedingungen für die Verwendung von Kundendaten in verschiedenen Regionen.
+- Verantwortungsvolle KI - Der Ansatz für verantwortungsvolle KI konzentriert sich auf Fairness, Inklusivität, Transparenz, Datenschutz, Sicherheit, Zuverlässigkeit und Schutz. Die Bedingungen stellen sicher, dass der Einsatz von KI-Technologien den einschlägigen Vorschriften entspricht.
+- Aktualisierungen und Änderungen - Die Bedingungen können aktualisiert werden, um Änderungen der gesetzlichen Anforderungen, neue Funktionen oder andere relevante Aktualisierungen widerzuspiegeln. Der Kunde wird über diese Änderungen und deren Auswirkungen auf die Nutzung der Online-Dienste informiert.
 
 Diese Elemente stellen sicher, dass die universellen Lizenzbedingungen für Online-Dienste umfassend, klar und konform mit den einschlägigen Vorschriften sind, was es den Kunden erleichtert, die Dienste zu verstehen und effektiv zu nutzen.
 
@@ -312,31 +314,32 @@ Dieses Dokument enthält mehrere Schlüsselelemente, die Klarheit und detaillier
 
 Hier ist eine allgemeine Beschreibung dessen, was sie beinhalten:
 
-* Service-Definitionen - Diese Bedingungen bieten klare Definitionen für jeden angebotenen Service, um sicherzustellen, dass der Kunde den Umfang und die Art der von ihm genutzten Services versteht.
-* Nutzungsrechte und -einschränkungen - Detaillierte Informationen über die Nutzungsrechte, die dem Kunden für jeden Dienst gewährt werden, einschließlich etwaiger Einschränkungen oder Einschränkungen hinsichtlich der Nutzung der Dienste.
-* Service Level Agreements (SLAs) - Spezifische Leistungs- und Verfügbarkeitsgarantien für jeden Dienst, die die Verpflichtungen beschreiben, die wir in Bezug auf Verfügbarkeit, Reaktionszeiten und andere wichtige Leistungsindikatoren eingehen.
-* Datenschutz und Privatsphäre - Informationen darüber, wie Kundendaten gehandhabt werden, einschließlich Datenverarbeitung, -speicherung und -offenlegung. Dieser Abschnitt stellt die Einhaltung der einschlägigen Datenschutzbestimmungen sicher und beschreibt die Verpflichtungen zur Wahrung der Privatsphäre der Kunden.
-* Sicherheitsmaßnahmen - Details zu den Sicherheitsmaßnahmen, die zum Schutz von Kundendaten und zur Gewährleistung der Integrität und Vertraulichkeit der Dienste ergriffen wurden. Dazu gehören Informationen zu Zugriffskontrollen, Verschlüsselung und anderen Sicherheitsprotokollen.
-* Einhaltung von Gesetzen - Gewissheit, dass die Nutzung der Dienste den geltenden Gesetzen und Vorschriften entspricht, einschließlich Import-/Exportkontrollen, Richtlinien zur akzeptablen Nutzung und technischen Beschränkungen.
-* Aktualisierungen und Änderungen - Informationen darüber, wie Aktualisierungen und Änderungen an den Diensten dem Kunden mitgeteilt werden, einschließlich möglicher Auswirkungen auf die Nutzung oder Leistung des Dienstes.
-* Support und Wartung - Details zu den Support- und Wartungsdiensten, die dem Kunden zur Verfügung stehen, einschließlich des Zugriffs auf den Support, der Reaktionszeiten und der damit verbundenen Kosten.
-* Kündigung und Aussetzung - Bedingungen, unter denen Dienste beendet oder ausgesetzt werden können, einschließlich der Verantwortlichkeiten des Kunden und aller erforderlichen Kündigungsfristen.
+- Service-Definitionen - Diese Bedingungen bieten klare Definitionen für jeden angebotenen Service, um sicherzustellen, dass der Kunde den Umfang und die Art der von ihm genutzten Services versteht.
+- Nutzungsrechte und -einschränkungen - Detaillierte Informationen über die Nutzungsrechte, die dem Kunden für jeden Dienst gewährt werden, einschließlich etwaiger Einschränkungen oder Einschränkungen hinsichtlich der Nutzung der Dienste.
+- Service Level Agreements (SLAs) - Spezifische Leistungs- und Verfügbarkeitsgarantien für jeden Dienst, die die Verpflichtungen beschreiben, die wir in Bezug auf Verfügbarkeit, Reaktionszeiten und andere wichtige Leistungsindikatoren eingehen.
+- Datenschutz und Privatsphäre - Informationen darüber, wie Kundendaten gehandhabt werden, einschließlich Datenverarbeitung, -speicherung und -offenlegung. Dieser Abschnitt stellt die Einhaltung der einschlägigen Datenschutzbestimmungen sicher und beschreibt die Verpflichtungen zur Wahrung der Privatsphäre der Kunden.
+- Sicherheitsmaßnahmen - Details zu den Sicherheitsmaßnahmen, die zum Schutz von Kundendaten und zur Gewährleistung der Integrität und Vertraulichkeit der Dienste ergriffen wurden. Dazu gehören Informationen zu Zugriffskontrollen, Verschlüsselung und anderen Sicherheitsprotokollen.
+- Einhaltung von Gesetzen - Gewissheit, dass die Nutzung der Dienste den geltenden Gesetzen und Vorschriften entspricht, einschließlich Import-/Exportkontrollen, Richtlinien zur akzeptablen Nutzung und technischen Beschränkungen.
+- Aktualisierungen und Änderungen - Informationen darüber, wie Aktualisierungen und Änderungen an den Diensten dem Kunden mitgeteilt werden, einschließlich möglicher Auswirkungen auf die Nutzung oder Leistung des Dienstes.
+- Support und Wartung - Details zu den Support- und Wartungsdiensten, die dem Kunden zur Verfügung stehen, einschließlich des Zugriffs auf den Support, der Reaktionszeiten und der damit verbundenen Kosten.
+- Kündigung und Aussetzung - Bedingungen, unter denen Dienste beendet oder ausgesetzt werden können, einschließlich der Verantwortlichkeiten des Kunden und aller erforderlichen Kündigungsfristen.
 
-### Nachtrag zur Datenverarbeitung
+### Nachtrag zur Datenverarbeitung (DPA)
 
 Das Dokument Datenschutz- und Sicherheitsbedingungen wird durch das kritische Dokument Data Processing Addendum (DPA) "unterstützt", das die Bedingungen in Bezug auf die Verarbeitung und den Schutz personenbezogener Daten umreißt.
+
 Im Folgenden finden Sie eine allgemeine Beschreibung dessen, was der Nachtrag zur Datenverarbeitung enthält:
 
-* Definitionen - Die DPA bietet klare Definitionen für Schlüsselbegriffe wie "Datenverantwortlicher", "Datenverarbeiter", "personenbezogene Daten" und "betroffene Person". Diese Definitionen stellen sicher, dass alle Parteien ein gemeinsames Verständnis der im gesamten Dokument verwendeten Begriffe haben.
-* Bedingungen für die Datenverarbeitung - In diesem Abschnitt werden die spezifischen Bedingungen beschrieben, unter denen personenbezogene Daten verarbeitet werden. Sie enthält Angaben zu Art, Zweck und Dauer der Datenverarbeitungstätigkeiten sowie zu den Arten personenbezogener Daten und den Kategorien betroffener Personen.
-* Einhaltung von Gesetzen - Die DPA stellt sicher, dass alle Datenverarbeitungsaktivitäten den geltenden Datenschutzgesetzen und -vorschriften entsprechen, wie z. B. der Datenschutz-Grundverordnung (DSGVO) und dem California Consumer Privacy Act (CCPA). Dazu gehören Verpflichtungen zur Einhaltung der Datenschutzgrundsätze und zur Umsetzung geeigneter technischer und organisatorischer Maßnahmen zum Schutz personenbezogener Daten.
-* Datensicherheit - In diesem Abschnitt werden die Sicherheitsmaßnahmen beschrieben, die zum Schutz personenbezogener Daten ergriffen werden müssen. Sie umfasst Anforderungen an die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit personenbezogener Daten sowie Verfahren für den Umgang mit Sicherheitsvorfällen und -verletzungen.
-* Rechte der betroffenen Person - Die DPA beschreibt die Rechte der betroffenen Personen, wie z. B. das Recht auf Zugang, Berichtigung, Löschung und Einschränkung der Verarbeitung ihrer personenbezogenen Daten. Sie umfasst auch Verfahren für die Beantwortung von Anträgen betroffener Personen und die Sicherstellung, dass betroffene Personen ihre Rechte ausüben können.
-* Unterauftragsverarbeiter - Dieser Abschnitt enthält Informationen über den Einsatz von Unterauftragsverarbeitern, einschließlich der Bedingungen, unter denen Unterauftragsverarbeiter beauftragt werden können, und der Verantwortlichkeiten des Datenverarbeiters in Bezug auf Unterauftragsverarbeiter. Sie enthält auch Anforderungen, die sicherstellen, dass Unterauftragsverarbeiter die gleichen Datenschutzverpflichtungen einhalten wie der Auftragsverarbeiter.
-* Datenübermittlungen - Die DPA befasst sich mit der Übermittlung personenbezogener Daten an Drittländer oder internationale Organisationen und stellt sicher, dass solche Übermittlungen in Übereinstimmung mit den geltenden Datenschutzgesetzen durchgeführt werden. Dazu gehört auch der Einsatz geeigneter Schutzmaßnahmen, wie z. B. Standardvertragsklauseln oder verbindliche interne Datenschutzvorschriften.
-* Datenspeicherung und -löschung - In diesem Abschnitt werden die Richtlinien und Verfahren zum Aufbewahren und Löschen personenbezogener Daten beschrieben. Sie enthält Anforderungen, die sicherstellen, dass personenbezogene Daten nur so lange aufbewahrt werden, wie es zur Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist, und dass personenbezogene Daten sicher gelöscht werden, wenn sie nicht mehr benötigt werden.
-* Prüfungsrechte - Die DPA gewährt dem Datenverantwortlichen das Recht, Audits und Inspektionen durchzuführen, um die Einhaltung der Bestimmungen der DPA und der geltenden Datenschutzgesetze durch den Datenverarbeiter zu überprüfen. Dazu gehören Bestimmungen über den Zugang zu relevanten Aufzeichnungen und Informationen.
-* Haftung und Entschädigung - In diesem Abschnitt werden die Haftungs- und Entschädigungspflichten der Parteien in Bezug auf Datenschutzverletzungen und die Nichteinhaltung des DPA beschrieben. Er enthält Regelungen zum Ersatz von Schäden, die Betroffene aus Datenschutzverstößen entstehen.
+- Definitionen - Die DPA bietet klare Definitionen für Schlüsselbegriffe wie "Datenverantwortlicher", "Datenverarbeiter", "personenbezogene Daten" und "betroffene Person". Diese Definitionen stellen sicher, dass alle Parteien ein gemeinsames Verständnis der im gesamten Dokument verwendeten Begriffe haben.
+- Bedingungen für die Datenverarbeitung - In diesem Abschnitt werden die spezifischen Bedingungen beschrieben, unter denen personenbezogene Daten verarbeitet werden. Sie enthält Angaben zu Art, Zweck und Dauer der Datenverarbeitungstätigkeiten sowie zu den Arten personenbezogener Daten und den Kategorien betroffener Personen.
+- Einhaltung von Gesetzen - Die DPA stellt sicher, dass alle Datenverarbeitungsaktivitäten den geltenden Datenschutzgesetzen und -vorschriften entsprechen, wie z. B. der Datenschutz-Grundverordnung (DSGVO) und dem California Consumer Privacy Act (CCPA). Dazu gehören Verpflichtungen zur Einhaltung der Datenschutzgrundsätze und zur Umsetzung geeigneter technischer und organisatorischer Maßnahmen zum Schutz personenbezogener Daten.
+- Datensicherheit - In diesem Abschnitt werden die Sicherheitsmaßnahmen beschrieben, die zum Schutz personenbezogener Daten ergriffen werden müssen. Sie umfasst Anforderungen an die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit personenbezogener Daten sowie Verfahren für den Umgang mit Sicherheitsvorfällen und -verletzungen.
+- Rechte der betroffenen Person - Die DPA beschreibt die Rechte der betroffenen Personen, wie z. B. das Recht auf Zugang, Berichtigung, Löschung und Einschränkung der Verarbeitung ihrer personenbezogenen Daten. Sie umfasst auch Verfahren für die Beantwortung von Anträgen betroffener Personen und die Sicherstellung, dass betroffene Personen ihre Rechte ausüben können.
+- Unterauftragsverarbeiter - Dieser Abschnitt enthält Informationen über den Einsatz von Unterauftragsverarbeitern, einschließlich der Bedingungen, unter denen Unterauftragsverarbeiter beauftragt werden können, und der Verantwortlichkeiten des Datenverarbeiters in Bezug auf Unterauftragsverarbeiter. Sie enthält auch Anforderungen, die sicherstellen, dass Unterauftragsverarbeiter die gleichen Datenschutzverpflichtungen einhalten wie der Auftragsverarbeiter.
+- Datenübermittlungen - Die DPA befasst sich mit der Übermittlung personenbezogener Daten an Drittländer oder internationale Organisationen und stellt sicher, dass solche Übermittlungen in Übereinstimmung mit den geltenden Datenschutzgesetzen durchgeführt werden. Dazu gehört auch der Einsatz geeigneter Schutzmaßnahmen, wie z. B. Standardvertragsklauseln oder verbindliche interne Datenschutzvorschriften.
+- Datenspeicherung und -löschung - In diesem Abschnitt werden die Richtlinien und Verfahren zum Aufbewahren und Löschen personenbezogener Daten beschrieben. Sie enthält Anforderungen, die sicherstellen, dass personenbezogene Daten nur so lange aufbewahrt werden, wie es zur Erfüllung der Zwecke, für die sie erhoben wurden, erforderlich ist, und dass personenbezogene Daten sicher gelöscht werden, wenn sie nicht mehr benötigt werden.
+- Prüfungsrechte - Die DPA gewährt dem Datenverantwortlichen das Recht, Audits und Inspektionen durchzuführen, um die Einhaltung der Bestimmungen der DPA und der geltenden Datenschutzgesetze durch den Datenverarbeiter zu überprüfen. Dazu gehören Bestimmungen über den Zugang zu relevanten Aufzeichnungen und Informationen.
+- Haftung und Entschädigung - In diesem Abschnitt werden die Haftungs- und Entschädigungspflichten der Parteien in Bezug auf Datenschutzverletzungen und die Nichteinhaltung des DPA beschrieben. Er enthält Regelungen zum Ersatz von Schäden, die Betroffene aus Datenschutzverstößen entstehen.
 
 Diese Elemente stellen sicher, dass der Nachtrag zur Datenverarbeitung umfassend, klar und konform mit den einschlägigen Datenschutzbestimmungen ist und einen robusten Rahmen für die Verarbeitung und den Schutz personenbezogener Daten bietet.
 
@@ -358,41 +361,39 @@ Der letzte Schritt besteht dann darin, die Einhaltung zu übernehmen, d. h. die 
 
 **Einhaltung vertraglicher Vorschriften**
 
-* Produktbedingungen und DPA
+- Produktbedingungen und DPA
 
-   * DPA hat die allgemeinen Verpflichtungen
-   * Produktspezifische Begriffe und Produktdokumentation enthalten spezifische Bedingungen und Anleitungen.
-   * Eine allgemeine DPA für Produkte (Online-Dienste und Software) und Professional Service
-      * Mit unterschiedlichen Begriffen für:
-         * Vorschau auf Online-Dienste im Vergleich zu Online-Diensten
-         * Online-Dienste im Vergleich zu Core Online-Diensten
-         * Core Online Service vs. EU Data Boundary Online Service
+- DPA hat die allgemeinen Verpflichtungen
+   - Produktspezifische Begriffe und Produktdokumentation enthalten spezifische Bedingungen und Anleitungen.
+   - Eine allgemeine DPA für Produkte (Online-Dienste und Software) und Professional Service
+      - Mit unterschiedlichen Begriffen für:
+         - Vorschau auf Online-Dienste im Vergleich zu Online-Diensten
+         - Online-Dienste im Vergleich zu Core Online-Diensten
+         - Core Online Service vs. EU Data Boundary Online Service
 
-Es ist wichtig, sich daran zu erinnern, dass es sich um produktspezifische Begriffe handeln kann. Und dass die Produktdokumentation spezifische Datenverwendungsszenarien beschreibt und
-Funktionen für die Kundenkonfiguration
+Es ist wichtig, sich daran zu erinnern, dass es sich um produktspezifische Begriffe handeln kann. Und dass die Produktdokumentation spezifische Datenverwendungsszenarien beschreibt und Funktionen für die Kundenkonfiguration
 
 **Nachgewiesene Compliance**
 
-* Service-Gewährleistung
-  * Erfahren Sie mehr über das Design von Rechenzentrumsabläufen und -kontrollen zum Schutz von Kundendaten.
-  * Lernen Sie Trainings- und Bildungspfade
+- Service-Gewährleistung
+  - Erfahren Sie mehr über das Design von Rechenzentrumsabläufen und -kontrollen zum Schutz von Kundendaten.
+  - Lernen Sie Trainings- und Bildungspfade
 
-* Zertifizierungen und Audits durch Dritte
-  * Microsoft-Kontrollen basieren auf verschiedenen Standards
-  * Zertifizierung und Audits durch Dritte Bescheinigung und Zertifizierung durch Dritte (ISO, SOC usw.)
+- Zertifizierungen und Audits durch Dritte
+  - Microsoft-Kontrollen basieren auf verschiedenen Standards
+  - Zertifizierung und Audits durch Dritte Bescheinigung und Zertifizierung durch Dritte (ISO, SOC usw.)
 
-* Penetrationstests
-   * Tests durch Dritte und/oder durch Kunden
+- Penetrationstests
+   - Tests durch Dritte und/oder durch Kunden
 
-* Compliance-Programm
-   * Weißer Handschuhservice gegen Jahresgebühr verfügbar
+- Compliance-Programm
+   - Weißer Handschuhservice gegen Jahresgebühr verfügbar
 
 **Angenommene Compliance**
 
-* Technische & Sicherheitsmaßnahmen und Tools für den organisatorischen Einsatz
-* Tools zur Datensicherheit
-* Verschlüsselung, Kunden-Lockbox usw.
-
+- Technische & Sicherheitsmaßnahmen und Tools für den organisatorischen Einsatz
+- Tools zur Datensicherheit
+- Verschlüsselung, Kunden-Lockbox usw.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)

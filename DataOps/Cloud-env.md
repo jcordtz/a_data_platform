@@ -225,6 +225,8 @@ Here’s an overview of these differences:
 
 > [!NOTE]
 > The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
+> These documents can be found [here](<https://www.microsoft.com/en-us/licensing>) and [here][<https://servicetrust.microsoft.com/>]
+
 
 The foundation of understanding who has what responsibility requires documents describing how this handled.
 
@@ -242,53 +244,53 @@ The **Product Terms** provides more detailed information about the rights and re
 
 **Product Terms** addresses several key aspects including:
 
-* **Purpose and Scope**
-   * The primary purpose of the Product Terms is to explain the rights granted to Customer for using Microsoft products (the "use rights") and any restrictions or limitations on their use .
-   * The Product Terms may also include other obligations that the customer may have with respect to a product, which are not covered in upstream agreements .
+- **Purpose and Scope**
+   - The primary purpose of the Product Terms is to explain the rights granted to Customer for using Microsoft products (the "use rights") and any restrictions or limitations on their use .
+   - The Product Terms may also include other obligations that the customer may have with respect to a product, which are not covered in upstream agreements .
 
-* **Content**:
+- **Content**
 
-   * The Product Terms cover various aspects such as licensing terms, privacy and security terms, data processing addendums, and service-specific terms.
-   * They also include universal license terms for online services and specific terms for different product offerings.
+   - The Product Terms cover various aspects such as licensing terms, privacy and security terms, data processing addendums, and service-specific terms.
+   - They also include universal license terms for online services and specific terms for different product offerings.
 
-* **Generative AI Services**
-   * The Product Terms include specific provisions for the use of Microsoft Generative AI Services, such as restrictions on using these services to generate synthetic training data for developing AI models with similar functionality to Microsoft AI services.
-   * Customer may use the Azure OpenAI Service to create synthesized data solely for fine-tuning certain model types.
+- **Generative AI Services**
+   - The Product Terms include specific provisions for the use of Microsoft Generative AI Services, such as restrictions on using these services to generate synthetic training data for developing AI models with similar functionality to Microsoft AI services.
+   - Customer may use the Azure OpenAI Service to create synthesized data solely for fine-tuning certain model types.
 
-* **Updates and Accessibility**
-   * The Product Terms are regularly updated to reflect changes in Microsoft's product offerings and services .
-   * They are accessible through the website with [Product Terms](<https://www.microsoft.com/en-us/licensing>),, where Customer can find detailed information about the terms applicable to their specific products .
+- **Updates and Accessibility**
+   - The Product Terms are regularly updated to reflect changes in Microsoft's product offerings and services .
+   - They are accessible through the website with [Product Terms](<https://www.microsoft.com/en-us/licensing>),, where Customer can find detailed information about the terms applicable to their specific products .
 
 Overall, the Microsoft Product Terms are designed to provide clear, concise, and comprehensive information about the use rights and obligations associated with Microsoft products and services, ensuring that customers have a clear understanding of their licensing terms and conditions.
 
 The **Product Terms** is further "unfolded" in three documents:
 
-* Privacy & security Terms
-* Universal License Terms for Online Services
-* Service-Specific Terms in "Product Offerings"
+- Privacy & security Terms
+- Universal License Terms for Online Services
+- Service-Specific Terms in "Product Offerings"
 
 ### Privacy & Security Terms
 
 The Privacy & Security Terms contain several key elements designed to ensure the protection of **personal data** and compliance with relevant regulations. Here is an overall description of what they include:
 
-* Data Protection and Privacy 
-   * Privacy Standards - The terms outline the privacy standards that Microsoft adheres to, ensuring that personal data is collected, used, and shared in a manner that respects individuals' privacy rights.
-   * Data Taxonomy and Use Framework - This framework helps categorize and manage data based on its sensitivity and intended use.
-   * Privacy Incidents - Procedures for handling privacy incidents, including reporting and mitigation steps, are detailed to ensure swift and effective responses.
-* Security Measures
-   * Information Security - The terms include requirements for handling confidential information, ensuring that access to Microsoft and customer data is granted only on a legitimate business need basis.
-   * Security Controls - Guidelines for maintaining security controls, such as not sharing user account credentials and securing devices when not in use, are provided to prevent unauthorized access.
-   * Compliance with Standards - Microsoft complies with various security standards and certifications, such as ISO 27001, ISO 27018, and ISO 27701, to ensure robust data protection.
-* Use of Customer Data
-   * Data Processing - The terms govern how customer data is processed, stored, and disclosed, with commitments to privacy and security.
-   * Third-Party Software - Any use of third-party software must follow a governance process to mitigate risks and ensure proper review.
-* Responsible AI
-   * Ethical AI Use - The approach to responsible AI focuses on fairness, inclusiveness, transparency, privacy, security, reliability, and safety.
-   * Compliance with AI Regulations - The terms ensure that the use of AI technologies complies with relevant regulations.
-* Employee Data
-   * Privacy Principles - The same privacy principles applied to customer data are also applicable to employee data, ensuring consistent protection across all personal data.
-* Supplier Security & Privacy Assurance
-   * Supplier Requirements: Suppliers handling personal data on Microsoft's behalf must adhere to privacy and security requirements, ensuring compliance and protection.
+- Data Protection and Privacy 
+   - Privacy Standards - The terms outline the privacy standards that Microsoft adheres to, ensuring that personal data is collected, used, and shared in a manner that respects individuals' privacy rights.
+   - Data Taxonomy and Use Framework - This framework helps categorize and manage data based on its sensitivity and intended use.
+   - Privacy Incidents - Procedures for handling privacy incidents, including reporting and mitigation steps, are detailed to ensure swift and effective responses.
+- Security Measures
+   - Information Security - The terms include requirements for handling confidential information, ensuring that access to Microsoft and customer data is granted only on a legitimate business need basis.
+   - Security Controls - Guidelines for maintaining security controls, such as not sharing user account credentials and securing devices when not in use, are provided to prevent unauthorized access.
+   - Compliance with Standards - Microsoft complies with various security standards and certifications, such as ISO 27001, ISO 27018, and ISO 27701, to ensure robust data protection.
+- Use of Customer Data
+   - Data Processing - The terms govern how customer data is processed, stored, and disclosed, with commitments to privacy and security.
+   - Third-Party Software - Any use of third-party software must follow a governance process to mitigate risks and ensure proper review.
+- Responsible AI
+   - Ethical AI Use - The approach to responsible AI focuses on fairness, inclusiveness, transparency, privacy, security, reliability, and safety.
+   - Compliance with AI Regulations - The terms ensure that the use of AI technologies complies with relevant regulations.
+- Employee Data
+   - Privacy Principles - The same privacy principles applied to customer data are also applicable to employee data, ensuring consistent protection across all personal data.
+- Supplier Security & Privacy Assurance
+   - Supplier Requirements: Suppliers handling personal data on Microsoft's behalf must adhere to privacy and security requirements, ensuring compliance and protection.
 
 These elements ensure that The Privacy & Security Terms are comprehensive, clear, and compliant with relevant regulations, making it easier for customers to understand and trust the data handling practices.
 
@@ -296,15 +298,15 @@ These elements ensure that The Privacy & Security Terms are comprehensive, clear
 
 The Universal License Terms for Online Services contain several key elements designed to ensure clarity, consistency, and compliance with relevant regulations. Here is an overall description of what they include:
 
-* Definitions - The terms provide clear definitions for key concepts and terminology used throughout the document. This ensures that all parties have a common understanding of the terms and conditions.
-* Customer’s Use Rights - Customer are granted specific use rights for the online services they have licensed. These rights are contingent upon compliance with the volume licensing agreement and the specific terms outlined in the product terms. Customer need a license for each product and separately licensed functionality used on a device or by a user.
-* Compliance with Laws - The terms ensure that the use of online services complies with applicable laws and regulations, including import/export services, acceptable use policies, and technical limitations.
-* Data Protection and Privacy - The terms include commitments to data protection and privacy, ensuring that customer data is handled in compliance with relevant regulations such as GDPR. This includes details on how data is processed, stored, and disclosed.
-* Security Measures - The terms outline the security measures that must be in place to protect customer data. This includes requirements for handling confidential information and maintaining security controls to prevent unauthorized access.
-* Service Level Agreements - Many online services offer SLAs that outline performance and availability guarantees provided to Customer. These agreements specify the commitments for uptime and connectivity.
-* Use of Customer Data - The terms govern the use of customer data, including how it is processed, stored, and disclosed. This includes commitments to privacy and security, as well as specific terms for the use of customer data in different regions.
-*Responsible AI - The approach to responsible AI focuses on fairness, inclusiveness, transparency, privacy, security, reliability, and safety. The terms ensure that the use of AI technologies complies with relevant regulations.
-* Updates and Changes - The terms may be updated to reflect changes in regulatory requirements, new features, or other relevant updates. Customer are informed of these changes and how they impact their use of the online services.
+- Definitions - The terms provide clear definitions for key concepts and terminology used throughout the document. This ensures that all parties have a common understanding of the terms and conditions.
+- Customer’s Use Rights - Customer are granted specific use rights for the online services they have licensed. These rights are contingent upon compliance with the volume licensing agreement and the specific terms outlined in the product terms. Customer need a license for each product and separately licensed functionality used on a device or by a user.
+- Compliance with Laws - The terms ensure that the use of online services complies with applicable laws and regulations, including import/export services, acceptable use policies, and technical limitations.
+- Data Protection and Privacy - The terms include commitments to data protection and privacy, ensuring that customer data is handled in compliance with relevant regulations such as GDPR. This includes details on how data is processed, stored, and disclosed.
+- Security Measures - The terms outline the security measures that must be in place to protect customer data. This includes requirements for handling confidential information and maintaining security controls to prevent unauthorized access.
+- Service Level Agreements - Many online services offer SLAs that outline performance and availability guarantees provided to Customer. These agreements specify the commitments for uptime and connectivity.
+- Use of Customer Data - The terms govern the use of customer data, including how it is processed, stored, and disclosed. This includes commitments to privacy and security, as well as specific terms for the use of customer data in different regions.
+- Responsible AI - The approach to responsible AI focuses on fairness, inclusiveness, transparency, privacy, security, reliability, and safety. The terms ensure that the use of AI technologies complies with relevant regulations.
+- Updates and Changes - The terms may be updated to reflect changes in regulatory requirements, new features, or other relevant updates. Customer are informed of these changes and how they impact their use of the online services.
 
 These elements ensure that The Universal License Terms for Online Services are comprehensive, clear, and compliant with relevant regulations, making it easier for customers to understand and use the services effectively.
 
@@ -315,15 +317,15 @@ This document contains several key elements designed to provide clarity and deta
 
 Here is an overall description of what they include:
 
-* Service Definitions - These terms provide clear definitions for each service offered, ensuring that Customer understand the scope and nature of the services they are using.
-* Usage Rights and Restrictions - Detailed information about the usage rights granted to Customer for each service, including any restrictions or limitations on how the services can be used.
-* Service Level Agreements (SLAs) - Specific performance and availability guarantees for each service, outlining the commitments we make regarding uptime, response times, and other key performance indicators.
-* Data Protection and Privacy - Information on how customer data is handled, including data processing, storage, and disclosure practices. This section ensures compliance with relevant data protection regulations and outlines The commitments to maintaining customer privacy.
-* Security Measures - Details on the security measures in place to protect customer data and ensure the integrity and confidentiality of the services. This includes information on access controls, encryption, and other security protocols.
-* Compliance with Laws - Assurance that the use of The services complies with applicable laws and regulations, including import/export controls, acceptable use policies, and technical limitations.
-* Updates and Changes - Information on how updates and changes to the services will be communicated to Customer, including any potential impacts on service usage or performance.
-* Support and Maintenance - Details on the support and maintenance services available to Customer, including how to access support, response times, and any associated costs.
-* Termination and Suspension - Conditions under which services may be terminated or suspended, including customer responsibilities and any notice periods required.
+- Service Definitions - These terms provide clear definitions for each service offered, ensuring that Customer understand the scope and nature of the services they are using.
+- Usage Rights and Restrictions - Detailed information about the usage rights granted to Customer for each service, including any restrictions or limitations on how the services can be used.
+- Service Level Agreements (SLAs) - Specific performance and availability guarantees for each service, outlining the commitments we make regarding uptime, response times, and other key performance indicators.
+- Data Protection and Privacy - Information on how customer data is handled, including data processing, storage, and disclosure practices. This section ensures compliance with relevant data protection regulations and outlines The commitments to maintaining customer privacy.
+- Security Measures - Details on the security measures in place to protect customer data and ensure the integrity and confidentiality of the services. This includes information on access controls, encryption, and other security protocols.
+- Compliance with Laws - Assurance that the use of The services complies with applicable laws and regulations, including import/export controls, acceptable use policies, and technical limitations.
+- Updates and Changes - Information on how updates and changes to the services will be communicated to Customer, including any potential impacts on service usage or performance.
+- Support and Maintenance - Details on the support and maintenance services available to Customer, including how to access support, response times, and any associated costs.
+- Termination and Suspension - Conditions under which services may be terminated or suspended, including customer responsibilities and any notice periods required.
 
 
 ### Data Processing Addendum
@@ -331,16 +333,16 @@ Here is an overall description of what they include:
 The document Privacy & Security Terms is "supported" by the critical document Data Processing Addendum (DPA) which outlines the terms and conditions related to the processing and protection of personal data.
 Here is an overall description of what The Data Processing Addendum contains:
 
-* Definitions - The DPA provides clear definitions for key terms such as "Data Controller," "Data Processor," "Personal Data," and "Data Subject." These definitions ensure that all parties have a common understanding of the terms used throughout the document.
-* Data Processing Terms - This section outlines the specific terms and conditions under which personal data will be processed. It includes details on the nature, purpose, and duration of the data processing activities, as well as the types of personal data and categories of data subjects involved.
-* Compliance with Laws - The DPA ensures that all data processing activities comply with applicable data protection laws and regulations, such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). This includes commitments to adhere to data protection principles and to implement appropriate technical and organizational measures to protect personal data.
-* Data Security - This section details the security measures that must be in place to protect personal data. It includes requirements for maintaining the confidentiality, integrity, and availability of personal data, as well as procedures for handling security incidents and breaches.
-* Data Subject Rights - The DPA outlines the rights of data subjects, such as the right to access, rectify, erase, and restrict the processing of their personal data. It also includes procedures for responding to data subject requests and ensuring that data subjects can exercise their rights.
-* Subprocessors - This section provides information on the use of subprocessors, including the conditions under which subprocessors may be engaged and the responsibilities of the Data Processor in relation to subprocessors. It also includes requirements for ensuring that subprocessors comply with the same data protection obligations as the Data Processor.
-* Data Transfers - The DPA addresses the transfer of personal data to third countries or international organizations, ensuring that such transfers are conducted in compliance with applicable data protection laws. This includes the use of appropriate safeguards, such as Standard Contractual Clauses or Binding Corporate Rules.
-* Data Retention and Deletion - This section outlines the policies and procedures for retaining and deleting personal data. It includes requirements for ensuring that personal data is only retained for as long as necessary to fulfill the purposes for which it was collected and for securely deleting personal data when it is no longer needed.
-* Audit Rights - The DPA grants the Data Controller the right to conduct audits and inspections to verify the Data Processor's compliance with the terms of the DPA and applicable data protection laws. This includes provisions for providing access to relevant records and information.
-* Liability and Indemnification - This section outlines the liability and indemnification obligations of the parties in relation to data protection breaches and non-compliance with the DPA. It includes provisions for compensating data subjects for damages resulting from data protection violations.
+- Definitions - The DPA provides clear definitions for key terms such as "Data Controller," "Data Processor," "Personal Data," and "Data Subject." These definitions ensure that all parties have a common understanding of the terms used throughout the document.
+- Data Processing Terms - This section outlines the specific terms and conditions under which personal data will be processed. It includes details on the nature, purpose, and duration of the data processing activities, as well as the types of personal data and categories of data subjects involved.
+- Compliance with Laws - The DPA ensures that all data processing activities comply with applicable data protection laws and regulations, such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). This includes commitments to adhere to data protection principles and to implement appropriate technical and organizational measures to protect personal data.
+- Data Security - This section details the security measures that must be in place to protect personal data. It includes requirements for maintaining the confidentiality, integrity, and availability of personal data, as well as procedures for handling security incidents and breaches.
+- Data Subject Rights - The DPA outlines the rights of data subjects, such as the right to access, rectify, erase, and restrict the processing of their personal data. It also includes procedures for responding to data subject requests and ensuring that data subjects can exercise their rights.
+- Subprocessors - This section provides information on the use of subprocessors, including the conditions under which subprocessors may be engaged and the responsibilities of the Data Processor in relation to subprocessors. It also includes requirements for ensuring that subprocessors comply with the same data protection obligations as the Data Processor.
+- Data Transfers - The DPA addresses the transfer of personal data to third countries or international organizations, ensuring that such transfers are conducted in compliance with applicable data protection laws. This includes the use of appropriate safeguards, such as Standard Contractual Clauses or Binding Corporate Rules.
+- Data Retention and Deletion - This section outlines the policies and procedures for retaining and deleting personal data. It includes requirements for ensuring that personal data is only retained for as long as necessary to fulfill the purposes for which it was collected and for securely deleting personal data when it is no longer needed.
+- Audit Rights - The DPA grants the Data Controller the right to conduct audits and inspections to verify the Data Processor's compliance with the terms of the DPA and applicable data protection laws. This includes provisions for providing access to relevant records and information.
+- Liability and Indemnification - This section outlines the liability and indemnification obligations of the parties in relation to data protection breaches and non-compliance with the DPA. It includes provisions for compensating data subjects for damages resulting from data protection violations.
 
 These elements ensure that The Data Processing Addendum is comprehensive, clear, and compliant with relevant data protection regulations, providing a robust framework for the processing and protection of personal data.
 
@@ -362,41 +364,40 @@ The last step is then to **Adopt Compliance**, that is having compliance in acti
 
 **Contractual Compliance**
 
-* Product Terms and DPA
+- Product Terms and DPA
 
-   * DPA has the general obligations
-   * Product-specific terms and Product Documentation has specific terms and guidance.
-   * One general DPA for Products (Online Services and Software) and Professional Service
-      * With different terms for:
-         * Online Services Previews vs. Online Services
-         * Online Services vs. Core Online Services
-         * Core Online Service vs. EU Data Boundary Online Service
+- DPA has the general obligations
+   - Product-specific terms and Product Documentation has specific terms and guidance.
+   - One general DPA for Products (Online Services and Software) and Professional Service
+      - With different terms for:
+         - Online Services Previews vs. Online Services
+         - Online Services vs. Core Online Services
+         - Core Online Service vs. EU Data Boundary Online Service
 
 Important to remember that their might be Product-specific terms. And that Product Documentation describes specific data use scenarios and
 features for customer configuration
 
 **Demonstrated Compliance**
 
-* Service Assurance
-   * Learn descriptions of Datacenter operations & controls design to safeguards customer data
-   * Learn Training & education paths
+- Service Assurance
+   - Learn descriptions of Datacenter operations & controls design to safeguards customer data
+   - Learn Training & education paths
 
-* Third-party Certification & Audits
-   * Microsoft controls based on various standards
-   * Third-party Certification & Audits Third-party attestation & certification (ISO, SOC etc.)
+- Third-party Certification & Audits
+   - Microsoft controls based on various standards
+   - Third-party Certification & Audits Third-party attestation & certification (ISO, SOC etc.)
 
-* Penetration Testing
-   * Third-party testing and/or by customers
+- Penetration Testing
+   - Third-party testing and/or by customers
 
-* Compliance Program
-   * White glove service available for annual fee
+- Compliance Program
+   - White glove service available for annual fee
 
 **Adopted Compliance**
 
-* Technical & security measures and tools for organizational use
-   * Data security tools
-   * Encryption, Customer Lockbox etc.
-
+- Technical & security measures and tools for organizational use
+   - Data security tools
+   - Encryption, Customer Lockbox etc.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
