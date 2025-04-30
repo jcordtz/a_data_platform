@@ -225,7 +225,7 @@ Here’s an overview of these differences:
 
 > [!NOTE]
 > The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
-> These documents can be found [here](<https://www.microsoft.com/en-us/licensing>) and [here][<https://servicetrust.microsoft.com/>]
+> These documents can be found [here](<https://www.microsoft.com/en-us/licensing>) and [here](<https://servicetrust.microsoft.com/>)
 
 
 The foundation of understanding who has what responsibility requires documents describing how this handled.
