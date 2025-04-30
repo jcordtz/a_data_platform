@@ -9,9 +9,9 @@
 
 I den stadigt udviklende verden har cloud computing vist sig som et fyrtårn af innovation, der tilbyder forskellige servicemodeller for at imødekomme forskellige forretningsbehov. Forestil dig et stort digitalt landskab, hvor virksomheder kan vælge mellem forskellige stier, hver førende til et unikt sæt af kapaciteter og kontroller. Disse stier er kendt som Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS). Hver sti tilbyder et forskelligt niveau af kontrol, fleksibilitet og styring, ligesom at vælge mellem at bygge dit eget hus, leje en fuldt møbleret lejlighed eller bo på et hotel.
 
-## Infrastruktur som en Service (IaaS)
+## Infrastrukturas a Service (IaaS)
 
-Forestil dig selv som en arkitekt med et tomt lærred. IaaS giver dig de virtualiserede byggesten over internettet. Du har friheden til at oprette og administrere virtuelle maskiner, hver med sit eget operativsystem. Det er som at have en grund, hvor du kan bygge dit drømmehus fra bunden.
+Forestil dig selv som en arkitekt med et tomt lærred. IaaS giver dig de virtualiserede byggesten over internettet. man har friheden til at oprette og administrere virtuelle maskiner, hver med sit eget operativsystem. Det er som at have en grund, hvor man kan bygge dit drømmehus fra bunden.
 
 ### Nøglefunktioner
 
@@ -19,7 +19,7 @@ Forestil dig selv som en arkitekt med et tomt lærred. IaaS giver dig de virtual
 - Lagring: Tænk på skalerbare lagringsløsninger som store digitale lagre.
 - Netværk: Forestil dig virtuelle netværk, load balancers og IP-adresser som veje og broer, der forbinder din digitale by.
 - Fleksibilitet: Skaler dine ressourcer op eller ned baseret på efterspørgsel, ligesom at udvide dit hus, når gæster ankommer.
-- Betal-efter-forbrug: Betal kun for det, du bruger, ligesom forsyninger i et rigtigt hjem.
+- Betal-efter-forbrug: Betal kun for det, man bruger, ligesom forsyninger i et rigtigt hjem.
 
 ### Anvendelsesområder
 
@@ -34,9 +34,9 @@ Forestil dig selv som en arkitekt med et tomt lærred. IaaS giver dig de virtual
 - Amazon Web Services (AWS) EC2
 - Google Cloud Compute Engine
 
-## Platform som en Service (PaaS)
+## Platformas a Service (PaaS)
 
-Forestil dig nu at flytte ind i en fuldt møbleret lejlighed. PaaS giver en platform, der giver dig mulighed for at udvikle, køre og administrere applikationer uden at bekymre dig om den underliggende infrastruktur. Det er som at have et klar-til-brug rum, hvor du kan fokusere på dine kreative bestræbelser.
+Forestil dig nu at flytte ind i en fuldt møbleret lejlighed. PaaS giver en platform, der giver dig mulighed for at udvikle, køre og administrere applikationer uden at bekymre dig om den underliggende infrastruktur. Det er som at have et klar-til-brug rum, hvor man kan fokusere på dine kreative bestræbelser.
 
 ### Nøglefunktioner
 
@@ -59,9 +59,9 @@ Forestil dig nu at flytte ind i en fuldt møbleret lejlighed. PaaS giver en plat
 - Microsoft Azure App Services
 - Heroku
 
-## Software som en Service (SaaS)
+## Softwareas a Service (SaaS)
 
-Endelig, forestil dig at bo på et luksushotel. SaaS leverer softwareapplikationer over internettet på abonnementsbasis. Du får adgang til softwaren via en webbrowser, og udbyderen administrerer alt andet. Det er som at nyde alle faciliteterne uden nogen af ansvarsområderne.
+Endelig, forestil dig at bo på et luksushotel. SaaS leverer softwareapplikationer over internettet på abonnementsbasis. man får adgang til softwaren via en webbrowser, og udbyderen administrerer alt andet. Det er som at nyde alle faciliteterne uden nogen af ansvarsområderne.
 
 ### Nøglefunktioner
 
@@ -86,7 +86,7 @@ Endelig, forestil dig at bo på et luksushotel. SaaS leverer softwareapplikation
 
 ## Fælles ansvar i et cloud-miljø
 
-Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når du bruger enten on-premise eller en cloud, og i skyen forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service.
+Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når man bruger enten on-premise eller cloud, og i cloud forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service (SaaS).
 
 ![Figur 2](../images/danish/Slide20.png)
 
@@ -94,77 +94,78 @@ Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infras
 
 I figur 1 vises forskelle mellem on-premise, IaaS, PaaS og SaaS med hensyn til cloud-udbyderens og kundens ansvar.
 
-På et mere detaljeret niveau betyder det så følgende:
+Følgende beskriver på et mere detaljeret niveau betydningen af dette.
 
-### På stedet
+### On-Premise
 
-**Kundeansvar**:
+**Kundens ansvar**:
 
-* Infrastruktur - Kunden er ansvarlig for indkøb, administration og vedligeholdelse af al hardware, herunder servere, storage og netværksudstyr.
-* Software - Kunden installerer, konfigurerer og opdaterer al software, herunder operativsystemer, middleware og applikationer.
-* Sikkerhed - Kunden er ansvarlig for alle aspekter af sikkerhed, herunder fysisk sikkerhed, netværkssikkerhed og databeskyttelse.
-* Data - Kunden administrerer alle data, herunder sikkerhedskopier og disaster recovery.
-
-**Cloud-udbyderens ansvar**:
-
-* Ingen - I en on-premise opsætning er der ingen involvering fra en cloud-udbyder.
-
-### Infrastruktur som en tjeneste (IaaS)
-
-**Kundeansvar**:
-
-* Applikationer - Kunden installerer, konfigurerer og administrerer applikationer.
-* Data - Kunden er ansvarlig for at administrere data, herunder backup og disaster recovery.
-* Runtime - Kunden administrerer runtime-miljøet for applikationer.
-* Middleware - Kunden installerer og administrerer middleware.
-* Operativsystem - Kunden installerer, konfigurerer og opdaterer operativsystemet.
+- Infrastruktur - Kunden er ansvarlig for indkøb, administration og vedligeholdelse af al hardware, herunder servere, storage og netværksudstyr.
+- Software - Kunden installerer, konfigurerer og opdaterer al software, herunder operativsystemer, middleware og applikationer.
+- Sikkerhed - Kunden er ansvarlig for alle aspekter af sikkerhed, herunder fysisk sikkerhed, netværkssikkerhed og databeskyttelse.
+- Data - Kunden administrerer alle data, herunder sikkerhedskopier og disaster recovery.
 
 **Cloud-udbyderens ansvar**:
 
-* Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
-* Servere - Cloud-udbyderen vedligeholder de fysiske servere.
-* Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur.
-* Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
-* Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
+- Ingen - I en on-premise opsætning er der ingen involvering fra en cloud-udbyder.
 
-### Platform som en tjeneste (PaaS)
+### Infrastruktur as a Service (IaaS)
 
-**Kundeansvar**:
+**Kundens ansvar**:
 
-* Applikationer - Kunden udvikler, implementerer og administrerer applikationer.
-* Data - Kunden administrerer data, herunder sikkerhedskopier og disaster recovery.
+- Applikationer - Kunden installerer, konfigurerer og administrerer applikationer.
+- Data - Kunden er ansvarlig for at administrere data, herunder backup og disaster recovery.
+- Runtime - Kunden administrerer runtime-miljøet for applikationer.
+- Middleware - Kunden installerer og administrerer middleware.
+- Operativsystem - Kunden installerer, konfigurerer og opdaterer operativsystemet.
 
 **Cloud-udbyderens ansvar**:
 
-* Runtime - Cloud-udbyderen administrerer runtime-miljøet.
-* Middleware - Cloud-udbyderen leverer og administrerer middleware.
-* Operativsystem - Cloud-udbyderen installerer, konfigurerer og opdaterer operativsystemet.
-* Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
-* Servere - Cloud-udbyderen vedligeholder de fysiske servere.
-* Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur.
-* Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
-* Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
+- Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
+- Servere - Cloud-udbyderen vedligeholder de fysiske servere.
+- Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur, herunder sikring af kryptering.
+- Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
+- Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
 
-### Software som en tjeneste (SaaS)
+### Platform as a Service (PaaS)
 
-**Kundeansvar**
-* Data - Kunden administrerer data, herunder sikkerhedskopier og katastrofegendannelse (i det omfang SaaS-udbyderen tillader det).
+**Kundens ansvar**:
+
+- Applikationer - Kunden udvikler, implementerer og administrerer applikationer.
+- Data - Kunden administrerer data, herunder sikkerhedskopier og disaster recovery.
+
+**Cloud-udbyderens ansvar**:
+
+- Runtime - Cloud-udbyderen administrerer runtime-miljøet.
+- Middleware - Cloud-udbyderen leverer og administrerer middleware.
+- Operativsystem - Cloud-udbyderen installerer, konfigurerer og opdaterer operativsystemet.
+- Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
+- Servere - Cloud-udbyderen vedligeholder de fysiske servere.
+- Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur, herunder sikring af kryptering.
+- Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
+- Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
+
+### Software as a Service (SaaS)
+
+**Kundes ansvar**
+
+- Data - Kunden administrerer data, herunder sikkerhedskopier og katastrofegendannelse (i det omfang SaaS-udbyderen tillader det).
 
 **Cloud-udbyderens ansvar**
 
-* Applikationer - Cloud-udbyderen udvikler, implementerer og administrerer applikationer.
-* Data - Cloud-udbyderen sikrer datasikkerhed og compliance.
-* Runtime - Cloud-udbyderen administrerer runtime-miljøet.
-* Middleware - Cloud-udbyderen leverer og administrerer middleware.
-* Operativsystem - Cloud-udbyderen installerer, konfigurerer og opdaterer operativsystemet.
-* Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
-* Servere - Cloud-udbyderen vedligeholder de fysiske servere.
-* Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur.
-* Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
-* Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
+- Applikationer - Cloud-udbyderen udvikler, implementerer og administrerer applikationer.
+- Data - Cloud-udbyderen sikrer datasikkerhed og compliance.
+- Runtime - Cloud-udbyderen administrerer runtime-miljøet.
+- Middleware - Cloud-udbyderen leverer og administrerer middleware.
+- Operativsystem - Cloud-udbyderen installerer, konfigurerer og opdaterer operativsystemet.
+- Virtualisering - Cloud-udbyderen administrerer virtualiseringslaget.
+- Servere - Cloud-udbyderen vedligeholder de fysiske servere.
+- Opbevaring - Cloud-udbyderen administrerer lagerinfrastruktur, herunder sikring af kryptering.
+- Netværk - Cloud-udbyderen håndterer netværksinfrastruktur.
+- Fysisk sikkerhed - Cloud-udbyderen sikrer den fysiske sikkerhed i datacentrene.
 
-Denne ansvarsfordeling hjælper organisationer med at vælge den rigtige cloud-tjenestemodel baseret på deres behov og muligheder.
-Dette valg kan/bør variere fra projekt til projekt, så en kunde altid opnår en optimal løsning baseret på funktionalitet og omkostninger.
+Denne ansvarsfordeling hjælper kunder med at vælge den rigtige cloud-tjenestemodel baseret på deres behov og muligheder.
+Dette valg kan/skal/bør variere fra projekt til projekt, så en kunde altid opnår den mest optimale løsning baseret på funktionalitet og omkostninger.
 
 ## Delt ansvar i et AI-cloudmiljø
 
@@ -172,117 +173,120 @@ Dette valg kan/bør variere fra projekt til projekt, så en kunde altid opnår e
 
 ![udl. 1](../images/danish/Slide23.png)
 
-I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS).
+I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS) i forhold til en *standard* cloud model, som beskrevet ovenfor.
 
-Her er en oversigt over disse forskelle:
+Her følger en oversigt over disse forskelle.
 
-### Infrastruktur som en service (IaaS) - Medbring din egen model
-
-**Kundens ansvar**
-
-* AI-modeludvikling - Kunden er ansvarlig for at udvikle, træne og implementere deres AI-modeller. Dette inkluderer valg og konfiguration af den nødvendige software og værktøjer.
-* Datahåndtering - Kunden håndterer forberedelse, opbevaring og administration af data, herunder sikring af datakvalitet og overholdelse af relevante regler.
-* Runtime Environment - Kunden administrerer runtime-miljøet, herunder operativsystemet, middleware og runtime-biblioteker.
-* Sikkerhed - Kunden er ansvarlig for at sikre sine applikationer og data, herunder implementering af adgangskontrol og overvågning af sikkerhedstrusler.
-
-**Cloud-udbyderens ansvar**
-
-* Infrastruktur - Cloud-udbyderen administrerer den underliggende infrastruktur, herunder fysiske servere, storage og netværk.
-* Virtualisering - Udbyderen håndterer virtualiseringslaget og sikrer, at virtuelle maskiner er tilgængelige og fungerer korrekt.
-* Grundlæggende sikkerhed - Udbyderen sikrer den fysiske sikkerhed i datacentre og sikkerheden i infrastrukturen.
-
-### PaaS (Platform as a Service) – Azure AI
+### Infrastruktur as a Service (IaaS) - Medbring din egen model
 
 **Kundens ansvar**
 
-* AI-modeludvikling - Kundefokus på at udvikle og implementere AI-modeller ved hjælp af de værktøjer og rammer, der leveres af PaaS.
-* Datahåndtering - Kunden administrerer deres data, herunder dataforberedelse og sikring af overholdelse af relevante regler.
-* Applikationslogik - Kunden er ansvarlig for logikken og funktionaliteten af deres AI-applikationer.
+- AI-modeludvikling - Kunden er ansvarlig for at udvikle, træne og implementere deres AI-modeller. Dette inkluderer valg og konfiguration af den nødvendige software og værktøjer.
+- Datahåndtering - Kunden håndterer forberedelse, opbevaring og administration af data, herunder sikring af datakvalitet og overholdelse af relevante regler.
+- Runtime Environment - Kunden administrerer runtime-miljøet, herunder operativsystemet, middleware og runtime-biblioteker.
+- Sikkerhed - Kunden er ansvarlig for at sikre sine applikationer og data, herunder implementering af adgangskontrol og overvågning af sikkerhedstrusler.
 
 **Cloud-udbyderens ansvar**
 
-* Infrastruktur og runtime - Cloud-udbyderen administrerer den underliggende infrastruktur, operativsystem, middleware og runtime-miljø.
-* AI-værktøjer og -rammer - Udbyderen tilbyder forudbyggede AI-værktøjer, rammer og tjenester, som kunden kan bruge til at udvikle og implementere deres modeller.
-* Sikkerhed - Udbyderen sikrer platformens sikkerhed, herunder patching og opdatering af operativsystemet og middleware.
+- Infrastruktur - Cloud-udbyderen administrerer den underliggende infrastruktur, herunder fysiske servere, storage og netværk.
+- Virtualisering - Udbyderen håndterer virtualiseringslaget og sikrer, at virtuelle maskiner er tilgængelige og fungerer korrekt.
+- Grundlæggende sikkerhed - Udbyderen sikrer den fysiske sikkerhed i datacentre og sikkerheden i infrastrukturen.
 
-### Software som en service (SaaS) - CoPilot
+### Platform as a Service (PaaS) – Azure AI
 
 **Kundens ansvar**
 
-* Datainput - Kunden leverer de data, som AI-tjenesten vil behandle.
-* Konfiguration – Kunden konfigurerer AI-tjenesten til at opfylde deres specifikke behov, f.eks. angivelse af parametre og definition af arbejdsgange.
-* Brug – Kunden bruger AI-tjenesten til at nå deres forretningsmål, f.eks. generere indsigt eller automatisere opgaver.
+- AI-modeludvikling - Kundefokus på at udvikle og implementere AI-modeller ved hjælp af de værktøjer og rammer, der leveres af PaaS.
+- Datahåndtering - Kunden administrerer deres data, herunder dataforberedelse og sikring af overholdelse af relevante regler.
+- Applikationslogik - Kunden er ansvarlig for logikken og funktionaliteten af deres AI-applikationer.
 
 **Cloud-udbyderens ansvar**
 
-* Alt andet - Cloud-udbyderen administrerer hele stakken, inklusive infrastrukturen, runtime-miljøet, AI-modeller og applikationslogik.
-* AI-tjenestelevering - Udbyderen sikrer, at AI-tjenesten er tilgængelig, pålidelig og sikker. Dette omfatter vedligeholdelse og opdatering af AI-modellerne og den underliggende infrastruktur.
-* Datasikkerhed - Udbyderen sikrer sikkerheden og overholdelsen af de data, der behandles af AI-tjenesten.
+- Infrastruktur og runtime - Cloud-udbyderen administrerer den underliggende infrastruktur, operativsystem, middleware og runtime-miljø.
+- AI-værktøjer og -rammer - Udbyderen tilbyder forudbyggede AI-værktøjer, rammer og tjenester, som kunden kan bruge til at udvikle og implementere deres modeller.
+- Sikkerhed - Udbyderen sikrer platformens sikkerhed, herunder patching og opdatering af operativsystemet og middleware.
 
-## *Kontrakterne*
+### Software as a Service (SaaS) - CoPilot
+
+**Kundens ansvar**
+
+- Datainput - Kunden leverer de data, som AI-tjenesten vil behandle.
+- Konfiguration – Kunden konfigurerer AI-tjenesten til at opfylde deres specifikke behov, f.eks. angivelse af parametre og definition af arbejdsgange.
+- Brug – Kunden bruger AI-tjenesten til at nå deres forretningsmål, f.eks. generere indsigt eller automatisere opgaver.
+
+**Cloud-udbyderens ansvar**
+
+- Alt andet - Cloud-udbyderen administrerer hele stakken, inklusive infrastrukturen, runtime-miljøet, AI-modeller og applikationslogik.
+- AI-tjenestelevering - Udbyderen sikrer, at AI-tjenesten er tilgængelig, pålidelig og sikker. Dette omfatter vedligeholdelse og opdatering af AI-modellerne og den underliggende infrastruktur.
+- Datasikkerhed - Udbyderen sikrer sikkerheden og overholdelsen af de data, der behandles af AI-tjenesten.
+
+## **Kontrakterne**
+
+> [!NOTE]
+> The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
 
 Grundlaget for at forstå, hvem der har hvilket ansvar, kræver dokumenter, der beskriver, hvordan dette håndteres.
 
-Resten af dette afsnit beskriver strukturen i Microsoft og dermed en dataplatform baseret på Azure. Se venligst lignende dokumenter afhængigt af infrastrukturen.
+Resten af dette afsnit beskriver strukturen i Microsoft og dermed en dataplatform baseret på Azure. Se venligst lignende dokumentation afhængigt af infrastrukturen.
 
-De forskellige aspekter af delt ansvar i Microsoft håndteres i flere dokumenter.
+De forskellige aspekter af det beskrevne delte ansvar i Microsoft håndteres i flere dokumenter.
 
 ![Figur 4](../images/danish/Slide14.png)
 
 Dette er vist i figur 4.
 
-**Hovedaftalen (MCA eller MBSA & EA)** er den "hovedkontrakt", der beskriver "købsbetingelserne"
+**Hovedaftalen (MCA eller MBSA & EA)** er den "hovedkontrakt", der beskriver "købsbetingelserne".
 
-**Produktvilkårene** indeholder mere detaljerede oplysninger om de rettigheder og begrænsninger, der er knyttet til brugen af Microsoft-produkter og -tjenester. 
+Denne henviser til **Produkt vilkårene** der indeholder mere detaljerede oplysninger om de rettigheder og begrænsninger, der er knyttet til brugen af Microsoft-produkter og -tjenester.
 
-**Produktvilkår** omhandler flere vigtige aspekter, herunder:
+**Produkt vilkår** adressere flere vigtige aspekter, herunder:
 
-* **Formål og omfang**
-   * Det primære formål med Produktvilkårene er at forklare de rettigheder, der gives til Kunden til brug af Microsoft-produkter ("brugsrettighederne") og eventuelle begrænsninger eller begrænsninger for deres brug.
-   * Produktvilkårene kan også indeholde andre forpligtelser, som kunden måtte have i forhold til et produkt, som ikke er omfattet af upstream-aftaler.
+- **Formål og omfang**
+   - Det primære formål med *produktvilkårene* er at forklare de rettigheder, der gives til kunden til brug af Microsoft-produkter ("brugsrettighederne") og eventuelle begrænsninger eller begrænsninger for denne brug.
+   - *Produktvilkårene* kan også indeholde andre forpligtelser, som kunden måtte have i forhold til et produkt, som ikke er omfattet af hoved-aftalen.
 
-* **Indhold**:
-   * Produktvilkårene dækker forskellige aspekter såsom licensvilkår, privatlivs- og sikkerhedsvilkår, tillæg til databehandling og tjenestespecifikke vilkår.
-   * De omfatter også universelle licensvilkår for onlinetjenester og specifikke vilkår for forskellige produkttilbud.
+- **Indhold**
+   - *Produktvilkårene* dækker forskellige aspekter såsom licensvilkår, privatlivs- og sikkerhedsvilkår, tillæg til databehandling og tjenestespecifikke vilkår.
+   - De omfatter også universelle licensvilkår for onlinetjenester og specifikke vilkår for forskellige produkttilbud.
 
-* **Generative AI-tjenester**:
-   * Produktvilkårene indeholder specifikke bestemmelser for brugen af Microsoft Generative AI-tjenester, f.eks. begrænsninger for brug af disse tjenester til at generere syntetiske træningsdata til udvikling af AI-modeller med funktionalitet, der ligner Microsofts AI-tjenester.
-   * Kunden kan bruge Azure OpenAI-tjenesten til at oprette syntetiserede data udelukkende til finjustering af visse modeltyper.
+- **Generative AI-tjenester**:
+   - *Produktvilkårene* indeholder specifikke bestemmelser for brugen af Microsoft Generative AI-tjenester, f.eks. begrænsninger for brug af disse tjenester til at generere syntetiske træningsdata til udvikling af AI-modeller med funktionalitet, der ligner Microsofts AI-tjenester.
+   - Kunden kan bruge Azure OpenAI-tjenesten til at oprette syntetiserede data udelukkende til finjustering af visse modeltyper.
 
-* **Opdateringer og tilgængelighed**:
-   * Produktvilkårene opdateres regelmæssigt for at afspejle ændringer i Microsofts produkttilbud og -tjenester.
-   * De er tilgængelige via webstedet Produktvilkår, hvor Kunden kan finde detaljerede oplysninger om de vilkår, der gælder for deres specifikke produkter.
+- **Opdateringer og tilgængelighed**:
+   - *Produktvilkårene* opdateres regelmæssigt for at afspejle ændringer i Microsofts produkttilbud og -tjenester.
+   - De er tilgængelige via webstedet for [produktvilkår](<https://www.microsoft.com/en-us/licensing>), hvor kunden kan finde detaljerede oplysninger om de vilkår, der gælder for deres specifikke produkter.
 
 Samlet set er Microsofts produktvilkår designet til at give klare, præcise og omfattende oplysninger om de brugsrettigheder og -forpligtelser, der er forbundet med Microsoft-produkter og -tjenester, hvilket sikrer, at kunderne har en klar forståelse af deres licensvilkår og -betingelser.
 
 **Produktvilkårene** er yderligere "foldet ud" i tre dokumenter:
 
-* Vilkår for beskyttelse af personlige oplysninger og sikkerhed
-* Universelle licensvilkår for onlinetjenester
-* Tjenestespecifikke vilkår i "Produkttilbud"
+- Vilkår for beskyttelse af personlige oplysninger og sikkerhed
+- Universelle licensvilkår for onlinetjenester
+- Tjenestespecifikke vilkår i "Produkttilbud"
 
 ### Vilkår for beskyttelse af personlige oplysninger og sikkerhed
 
 Vilkårene for beskyttelse af personlige oplysninger og sikkerhed indeholder flere nøgleelementer, der er designet til at sikre beskyttelsen af **personoplysninger** og overholdelse af relevante regler. Her er en overordnet beskrivelse af, hvad de indeholder:
 
-* Databeskyttelse og privatliv 
-* Standarder for beskyttelse af personlige oplysninger – Vilkårene beskriver de standarder for beskyttelse af personlige oplysninger, som Microsoft overholder, og sikrer, at personlige data indsamles, bruges og deles på en måde, der respekterer enkeltpersoners rettigheder til beskyttelse af personlige oplysninger.
-* Datataksonomi og brugsramme - Denne ramme hjælper med at kategorisere og administrere data baseret på deres følsomhed og tilsigtede anvendelse.
-* Privatlivshændelser - Procedurer for håndtering af privatlivshændelser, herunder rapportering og afhjælpningstrin, er detaljerede for at sikre hurtige og effektive reaktioner.
-* Sikkerhedsforanstaltninger
-* Informationssikkerhed – Vilkårene omfatter krav til håndtering af fortrolige oplysninger, hvilket sikrer, at adgang til Microsoft- og kundedata kun gives på grundlag af et legitimt forretningsbehov.
-* Sikkerhedskontroller - Retningslinjer for opretholdelse af sikkerhedskontroller, såsom ikke at dele brugerkontooplysninger og sikre enheder, når de ikke er i brug, er angivet for at forhindre uautoriseret adgang.
-* Overholdelse af standarder - Microsoft overholder forskellige sikkerhedsstandarder og certificeringer, såsom ISO 27001, ISO 27018 og ISO 27701, for at sikre robust databeskyttelse.
-* Brug af kundedata
-* Databehandling - Vilkårene styrer, hvordan kundedata behandles, opbevares og videregives, med forpligtelser til privatliv og sikkerhed.
-* Tredjepartssoftware - Enhver brug af tredjepartssoftware skal følge en styringsproces for at mindske risici og sikre korrekt gennemgang.
-* Ansvarlig AI
-* Etisk AI-brug - Tilgangen til ansvarlig AI fokuserer på retfærdighed, inklusion, gennemsigtighed, privatliv, sikkerhed, pålidelighed og sikkerhed.
-* Overholdelse af AI-regler - Vilkårene sikrer, at brugen af AI-teknologier overholder relevante regler.
-* Medarbejder data
-* Principper for beskyttelse af personlige oplysninger - De samme principper for beskyttelse af personlige oplysninger, der gælder for kundedata, gælder også for medarbejderdata, hvilket sikrer ensartet beskyttelse på tværs af alle personlige data.
-* Leverandørsikkerhed og beskyttelse af personlige oplysninger
-* Leverandørkrav: Leverandører, der håndterer personlige data på Microsofts vegne, skal overholde krav til beskyttelse af personlige oplysninger og sikkerhed, hvilket sikrer overholdelse og beskyttelse.
+- **Databeskyttelse og privatliv**
+   - Standarder for beskyttelse af personlige oplysninger – Vilkårene beskriver de standarder for beskyttelse af personlige oplysninger, som Microsoft overholder, og sikrer, at personlige data indsamles, bruges og deles på en måde, der respekterer enkeltpersoners rettigheder til beskyttelse af personlige oplysninger.
+   - Datataksonomi og brugsramme - Denne ramme hjælper med at kategorisere og administrere data baseret på deres følsomhed og tilsigtede anvendelse.
+   - Privatlivshændelser - Procedurer for håndtering af privatlivshændelser, herunder rapportering og afhjælpningstrin, er detaljerede for at sikre hurtige og effektive reaktioner.
+- **Sikkerhedsforanstaltninger**
+   - Informationssikkerhed – Vilkårene omfatter krav til håndtering af fortrolige oplysninger, hvilket sikrer, at adgang til Microsoft- og kundedata kun gives på grundlag af et legitimt forretningsbehov.
+   - Sikkerhedskontroller - Retningslinjer for opretholdelse af sikkerhedskontroller, såsom ikke at dele brugerkontooplysninger og sikre enheder, når de ikke er i brug, er angivet for at forhindre uautoriseret adgang.
+   - Overholdelse af standarder - Microsoft overholder forskellige sikkerhedsstandarder og certificeringer, såsom ISO 27001, ISO 27018 og ISO 27701, for at sikre robust databeskyttelse.
+- **Brug af kundedata**
+   - Databehandling - Vilkårene styrer, hvordan kundedata behandles, opbevares og videregives, med forpligtelser til privatliv og sikkerhed.
+   - Tredjepartssoftware - Enhver brug af tredjepartssoftware skal følge en styringsproces for at mindske risici og sikre korrekt gennemgang.
+- **Ansvarlig AI**
+   - Etisk AI-brug - Tilgangen til ansvarlig AI fokuserer på retfærdighed, inklusion, gennemsigtighed, privatliv, sikkerhed, pålidelighed og sikkerhed.
+   - Overholdelse af AI-regler - Vilkårene sikrer, at brugen af AI-teknologier overholder relevante regler.
+- **Medarbejder data**
+   - Principper for beskyttelse af personlige oplysninger - De samme principper for beskyttelse af personlige oplysninger, der gælder for kundedata, gælder også for medarbejderdata, hvilket sikrer ensartet beskyttelse på tværs af alle personlige data.
+- **Leverandørsikkerhed og beskyttelse af personlige oplysninger**
+   - Leverandørkrav: Leverandører, der håndterer personlige data på Microsofts vegne, skal overholde krav til beskyttelse af personlige oplysninger og sikkerhed, hvilket sikrer overholdelse og beskyttelse.
 
 Disse elementer sikrer, at vilkårene for beskyttelse af personlige oplysninger og sikkerhed er omfattende, klare og i overensstemmelse med relevante regler, hvilket gør det lettere for kunderne at forstå og stole på datahåndteringspraksis.
 
@@ -316,7 +320,7 @@ Her er en overordnet beskrivelse af, hvad de indeholder:
 * Sikkerhedsforanstaltninger - Detaljer om de sikkerhedsforanstaltninger, der er indført for at beskytte kundedata og sikre tjenesternes integritet og fortrolighed. Dette omfatter oplysninger om adgangskontrol, kryptering og andre sikkerhedsprotokoller.
 * Overholdelse af love - Sikkerhed for, at brugen af tjenesterne overholder gældende love og regler, herunder import-/eksportkontrol, politikker for acceptabel brug og tekniske begrænsninger.
 * Opdateringer og ændringer - Oplysninger om, hvordan opdateringer og ændringer af tjenesterne vil blive kommunikeret til kunden, herunder eventuelle påvirkninger af tjenestens brug eller ydeevne.
-* Support og vedligeholdelse - Oplysninger om de support- og vedligeholdelsestjenester, der er tilgængelige for kunden, herunder hvordan du får adgang til support, svartider og eventuelle tilknyttede omkostninger.
+* Support og vedligeholdelse - Oplysninger om de support- og vedligeholdelsestjenester, der er tilgængelige for kunden, herunder hvordan man får adgang til support, svartider og eventuelle tilknyttede omkostninger.
 * Opsigelse og suspension - Betingelser, hvorunder tjenester kan opsiges eller suspenderes, herunder kundeansvar og eventuelle opsigelsesfrister.
 
 ### Tillæg om databehandling

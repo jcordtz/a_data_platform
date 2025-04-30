@@ -86,7 +86,7 @@ Finally, imagine staying in a luxurious hotel. SaaS delivers software applicatio
 
 ## Shared responsibility in a cloud environment
 
-It is important to understand who has the responsibility regarding the different layers in the infrastructure when you use either on-premise or a cloud, and in the cloud understand this across Infrastructure as a Service (IaaS), Platform as a Service (Paas) and Software as a Service.
+It is important to understand who has the responsibility regarding the different layers in the infrastructure when you use either on-premise or a cloud, and in the cloud understand this across Infrastructure as a Service (IaaS), Platform as a Service (Paas) and Software as a Service (SaaS).
 
 ![Figure 2](../images/english/Slide20.png)
 
@@ -100,72 +100,73 @@ On a more detailed level this then means the following:
 
 **Customer Responsibility**:
 
-* Infrastructure - The customer is responsible for purchasing, managing, and maintaining all hardware, including servers, storage, and networking equipment.
-* Software -The customer installs, configures, and updates all software, including operating systems, middleware, and applications.
-* Security - The customer is responsible for all aspects of security, including physical security, network security, and data protection.
-* Data - The customer manages all data, including backups and disaster recovery.
+- Infrastructure - The customer is responsible for purchasing, managing, and maintaining all hardware, including servers, storage, and networking equipment.
+- Software -The customer installs, configures, and updates all software, including operating systems, middleware, and applications.
+- Security - The customer is responsible for all aspects of security, including physical security, network security, and data protection.
+- Data - The customer manages all data, including backups and disaster recovery.
 
 **Cloud Provider Responsibility**:
 
-* None - In an on-premise setup, there is no involvement from a cloud provider.
+- None - In an on-premise setup, there is no involvement from a cloud provider.
 
 
 ### Infrastructure as a Service (IaaS)
 
 **Customer Responsibility**:
 
-* Applications - The customer installs, configures, and manages applications.
-* Data - The customer is responsible for managing data, including backups and disaster recovery.
-* Runtime - The customer manages the runtime environment for applications.
-* Middleware - The customer installs and manages middleware.
-* Operating System - The customer installs, configures, and updates the operating system.
+- Applications - The customer installs, configures, and manages applications.
+- Data - The customer is responsible for managing data, including backups and disaster recovery.
+- Runtime - The customer manages the runtime environment for applications.
+- Middleware - The customer installs and manages middleware.
+- Operating System - The customer installs, configures, and updates the operating system.
 
 **Cloud Provider Responsibility**:
 
-* Virtualization - The cloud provider manages the virtualization layer.
-* Servers - The cloud provider maintains the physical servers.
-* Storage - The cloud provider manages storage infrastructure.
-* Networking - The cloud provider handles networking infrastructure.
-* Physical Security - The cloud provider ensures the physical security of the data centers.
+- Virtualization - The cloud provider manages the virtualization layer.
+- Servers - The cloud provider maintains the physical servers.
+- Storage - The cloud provider manages storage infrastructure.
+- Networking - The cloud provider handles networking infrastructure.
+- Physical Security - The cloud provider ensures the physical security of the data centers.
 
 ### Platform as a Service (PaaS)
 
 **Customer Responsibility**:
 
-* Applications - The customer develops, deploys, and manages applications.
-* Data - The customer manages data, including backups and disaster recovery.
+- Applications - The customer develops, deploys, and manages applications.
+- Data - The customer manages data, including backups and disaster recovery.
 
 **Cloud Provider Responsibility**:
 
-* Runtime - The cloud provider manages the runtime environment.
-* Middleware - The cloud provider provides and manages middleware.
-* Operating System - The cloud provider installs, configures, and updates the operating system.
-* Virtualization - The cloud provider manages the virtualization layer.
-* Servers - The cloud provider maintains the physical servers.
-* Storage - The cloud provider manages storage infrastructure.
-* Networking - The cloud provider handles networking infrastructure.
-* Physical Security - The cloud provider ensures the physical security of the data centers.
+- Runtime - The cloud provider manages the runtime environment.
+- Middleware - The cloud provider provides and manages middleware.
+- Operating System - The cloud provider installs, configures, and updates the operating system.
+- Virtualization - The cloud provider manages the virtualization layer.
+- Servers - The cloud provider maintains the physical servers.
+- Storage - The cloud provider manages storage infrastructure.
+- Networking - The cloud provider handles networking infrastructure.
+- Physical Security - The cloud provider ensures the physical security of the data centers.
 
 ### Software as a Service (SaaS)
 
 **Customer Responsibility**
-* Data - The customer manages data, including backups and disaster recovery (to the extent allowed by the SaaS provider).
+
+- Data - The customer manages data, including backups and disaster recovery (to the extent allowed by the SaaS provider).
 
 **Cloud Provider Responsibility**
 
-* Applications - The cloud provider develops, deploys, and manages applications.
-* Data - The cloud provider ensures data security and compliance.
-* Runtime - The cloud provider manages the runtime environment.
-* Middleware - The cloud provider provides and manages middleware.
-* Operating System - The cloud provider installs, configures, and updates the operating system.
-* Virtualization - The cloud provider manages the virtualization layer.
-* Servers - The cloud provider maintains the physical servers.
-* Storage - The cloud provider manages storage infrastructure.
-* Networking - The cloud provider handles networking infrastructure.
-* Physical Security - The cloud provider ensures the physical security of the data centers.
+- Applications - The cloud provider develops, deploys, and manages applications.
+- Data - The cloud provider ensures data security and compliance.
+- Runtime - The cloud provider manages the runtime environment.
+- Middleware - The cloud provider provides and manages middleware.
+- Operating System - The cloud provider installs, configures, and updates the operating system.
+- Virtualization - The cloud provider manages the virtualization layer.
+- Servers - The cloud provider maintains the physical servers.
+- Storage - The cloud provider manages storage infrastructure.
+- Networking - The cloud provider handles networking infrastructure.
+- Physical Security - The cloud provider ensures the physical security of the data centers.
 
 This division of responsibilities helps organizations choose the right cloud service model based on their needs and capabilities.
-This choice can/should differ from project to project, so that a customer always achieves to optimal solution based on functionality and costs.
+This choice can/should/must differ from project to project, so that a customer always achieves to optimal solution based on functionality and costs.
 
 ## Shared responsibility in an AI cloud environment
 '
@@ -181,50 +182,53 @@ Here’s an overview of these differences:
 
 **Customer Responsibilities**
 
-* AI Model Development - Customer are responsible for developing, training, and deploying their AI models. This includes selecting and configuring the necessary software and tools.
-* Data Management - Customer handle data preparation, storage, and management, including ensuring data quality and compliance with relevant regulations.
-* Runtime Environment - Customer manage the runtime environment, including the operating system, middleware, and runtime libraries.
-* Security - Customer are responsible for securing their applications and data, including implementing access controls and monitoring for security threats.
+- AI Model Development - Customer are responsible for developing, training, and deploying their AI models. This includes selecting and configuring the necessary software and tools.
+- Data Management - Customer handle data preparation, storage, and management, including ensuring data quality and compliance with relevant regulations.
+- Runtime Environment - Customer manage the runtime environment, including the operating system, middleware, and runtime libraries.
+- Security - Customer are responsible for securing their applications and data, including implementing access controls and monitoring for security threats.
 
 **Cloud Provider Responsibilities**
 
-* Infrastructure - The cloud provider manages the underlying infrastructure, including physical servers, storage, and networking.
-* Virtualization - The provider handles the virtualization layer, ensuring that virtual machines are available and functioning correctly.
-* Basic Security - The provider ensures the physical security of data centers and the security of the infrastructure.
+- Infrastructure - The cloud provider manages the underlying infrastructure, including physical servers, storage, and networking.
+- Virtualization - The provider handles the virtualization layer, ensuring that virtual machines are available and functioning correctly.
+- Basic Security - The provider ensures the physical security of data centers and the security of the infrastructure.
 
 ### Platform as a Service (PaaS) - Azure AI
 
 **Customer Responsibilities**
 
-* AI Model Development - Customer focus on developing and deploying AI models using the tools and frameworks provided by the PaaS.
-* Data Management - Customer manage their data, including data preparation and ensuring compliance with relevant regulations.
-* Application Logic - Customer are responsible for the logic and functionality of their AI applications.
+- AI Model Development - Customer focus on developing and deploying AI models using the tools and frameworks provided by the PaaS.
+- Data Management - Customer manage their data, including data preparation and ensuring compliance with relevant regulations.
+- Application Logic - Customer are responsible for the logic and functionality of their AI applications.
 
 **Cloud Provider Responsibilities**
 
-* Infrastructure and Runtime - The cloud provider manages the underlying infrastructure, operating system, middleware, and runtime environment.
-* AI Tools and Frameworks - The provider offers pre-built AI tools, frameworks, and services that Customer can use to develop and deploy their models.
-* Security - The provider ensures the security of the platform, including patching and updating the operating system and middleware.
+- Infrastructure and Runtime - The cloud provider manages the underlying infrastructure, operating system, middleware, and runtime environment.
+- AI Tools and Frameworks - The provider offers pre-built AI tools, frameworks, and services that Customer can use to develop and deploy their models.
+- Security - The provider ensures the security of the platform, including patching and updating the operating system and middleware.
 
 ### Software as a Service (SaaS) - CoPilot
 
 **Customer Responsibilities**
 
-* Data Input - Customer provide the data that the AI service will process.
-* Configuration - Customer configure the AI service to meet their specific needs, such as setting parameters and defining workflows.
-* Usage - Customer use the AI service to achieve their business objectives, such as generating insights or automating tasks.
+- Data Input - Customer provide the data that the AI service will process.
+- Configuration - Customer configure the AI service to meet their specific needs, such as setting parameters and defining workflows.
+- Usage - Customer use the AI service to achieve their business objectives, such as generating insights or automating tasks.
 
 **Cloud Provider Responsibilities**
 
-* Everything Else - The cloud provider manages the entire stack, including the infrastructure, runtime environment, AI models, and application logic.
-* AI Service Delivery - The provider ensures that the AI service is available, reliable, and secure. This includes maintaining and updating the AI models and the underlying infrastructure.
-* Data Security - The provider ensures the security and compliance of the data processed by the AI service.
+- Everything Else - The cloud provider manages the entire stack, including the infrastructure, runtime environment, AI models, and application logic.
+- AI Service Delivery - The provider ensures that the AI service is available, reliable, and secure. This includes maintaining and updating the AI models and the underlying infrastructure.
+- Data Security - The provider ensures the security and compliance of the data processed by the AI service.
 
-## *The contracts*
+## **The contracts**
+
+> [!NOTE]
+> The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
 
 The foundation of understanding who has what responsibility requires documents describing how this handled.
 
-The rest of this section describes the structure within Microsoft and hence a data platform based on Azure. Please consult similar documents depending on yThe infrastructure.
+The rest of this section describes the structure within Microsoft and hence a data platform based on Azure. Please consult similar documentation depending on the infrastructure in question.
 
 The different aspects of shared responsibility in Microsoft are handled in multiple documents.
 
@@ -253,7 +257,7 @@ The **Product Terms** provides more detailed information about the rights and re
 
 * **Updates and Accessibility**
    * The Product Terms are regularly updated to reflect changes in Microsoft's product offerings and services .
-   * They are accessible through the Product Terms website, where Customer can find detailed information about the terms applicable to their specific products .
+   * They are accessible through the website with [Product Terms](<https://www.microsoft.com/en-us/licensing>),, where Customer can find detailed information about the terms applicable to their specific products .
 
 Overall, the Microsoft Product Terms are designed to provide clear, concise, and comprehensive information about the use rights and obligations associated with Microsoft products and services, ensuring that customers have a clear understanding of their licensing terms and conditions.
 

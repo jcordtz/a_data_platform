@@ -219,7 +219,10 @@ Alles andere - Der Cloud-Anbieter verwaltet den gesamten Stack, einschließlich 
 * KI-Servicebereitstellung - Der Anbieter stellt sicher, dass der KI-Dienst verfügbar, zuverlässig und sicher ist. Dazu gehört die Pflege und Aktualisierung der KI-Modelle und der zugrundeliegenden Infrastruktur.
 * Datensicherheit - Der Anbieter gewährleistet die Sicherheit und Konformität der vom KI-Dienst verarbeiteten Daten.
 
-## *Die Verträge*
+## **Die Verträge**
+
+> [!NOTE]
+> The provided description is for informational purpose **ONLY** and do not in any way replace using the original documents.
 
 Um zu verstehen, wer welche Verantwortung trägt, sind Dokumente erforderlich, die beschreiben, wie dies gehandhabt wird.
 
@@ -251,7 +254,7 @@ Die **Produktbedingungen** enthalten ausführlichere Informationen zu den Rechte
 
 * **Updates und Zugänglichkeit**:
    * Die Produktbedingungen werden regelmäßig aktualisiert, um Änderungen an den Produktangeboten und Diensten von Microsoft widerzuspiegeln.
-   * Sie sind über die Website mit den Produktbedingungen zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
+   * Sie sind über die Website mit den [Produktbedingungen](<https://www.microsoft.com/en-us/licensing>), zugänglich, auf der der Kunde detaillierte Informationen über die für seine spezifischen Produkte geltenden Bedingungen finden kann.
 
 Insgesamt sind die Microsoft-Produktbedingungen so konzipiert, dass sie klare, prägnante und umfassende Informationen über die Nutzungsrechte und -pflichten im Zusammenhang mit Microsoft-Produkten und -Diensten bereitstellen und sicherstellen, dass Kunden ein klares Verständnis der Lizenzbedingungen haben.
 
