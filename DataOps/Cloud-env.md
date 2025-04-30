@@ -250,7 +250,7 @@ The **Product Terms** provides more detailed information about the rights and re
 
 - **Content**
 
-   - The Product Terms cover various aspects such as licensing terms, privacy and security terms, data processing addendums, and service-specific terms.
+   - The Product Terms cover various aspects such as licensing terms, privacy and security terms, data processing addendum, and service-specific terms.
    - They also include universal license terms for online services and specific terms for different product offerings.
 
 - **Generative AI Services**
