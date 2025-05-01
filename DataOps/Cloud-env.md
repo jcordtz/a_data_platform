@@ -109,7 +109,6 @@ On a more detailed level this then means the following:
 
 - None - In an on-premise setup, there is no involvement from a cloud provider.
 
-
 ### Infrastructure as a Service (IaaS)
 
 **Customer Responsibility**:
@@ -327,7 +326,6 @@ Here is an overall description of what they include:
 - Support and Maintenance - Details on the support and maintenance services available to Customer, including how to access support, response times, and any associated costs.
 - Termination and Suspension - Conditions under which services may be terminated or suspended, including customer responsibilities and any notice periods required.
 
-
 ### Data Processing Addendum
 
 The document Privacy & Security Terms is "supported" by the critical document Data Processing Addendum (DPA) which outlines the terms and conditions related to the processing and protection of personal data.
@@ -350,13 +348,13 @@ These elements ensure that The Data Processing Addendum is comprehensive, clear,
 
 Based on the nature of the cloud services (IaaS, PaaS, and SaaS) being used in ones data platform and the contractual items that are being used a process defining ones security posture should be established.
 
-In this process it should be clear how has the responsibility for the different elements in the platform.
+In this process it should be clear who has the responsibility for the different elements in the platform.
 
 ![figure 5](../images/english/Slide16.png)
 
-The first step should be "on which terms" do we operate, that is the **Contractual Compliance** defining the obligations between the parties and that also sets out how adherence with obligations must be demonstrated.
+The first step should be "on which terms" do we operate, that is the **Contractual Compliance** defining the obligations between the parties and also sets out how adherence with obligations must be demonstrated.
 
-When we has established on which terms we operate, the next step would be to **demonstarte compliance** that is kind of the "the how and the what", where we demonstrate *shared responsibility* in practice. This means the ability do auditing and inspection.
+When on which terms we operate is established, the next step would be to **Demonstrate compliance**. That is kind of the "the how and what", where we demonstrate *shared responsibility* in practice. This means the ability do auditing and inspection.
 
 The last step is then to **Adopt Compliance**, that is having compliance in action. This affects the Compliance, Security and Risk posture related to organizational use of data.
 
@@ -364,34 +362,38 @@ The last step is then to **Adopt Compliance**, that is having compliance in acti
 
 **Contractual Compliance**
 
-- Product Terms and DPA
+The important documents in regards of the data platform are Product Terms and DPA
 
-- DPA has the general obligations
-   - Product-specific terms and Product Documentation has specific terms and guidance.
-   - One general DPA for Products (Online Services and Software) and Professional Service
-      - With different terms for:
+The DPA has the general obligations.
+
+The Product-specific terms and Product Documentation then has any specific terms and guidance.
+
+So, one general DPA for Products (Online Services and Software) and Professional Service
+    - With different terms for:
          - Online Services Previews vs. Online Services
          - Online Services vs. Core Online Services
          - Core Online Service vs. EU Data Boundary Online Service
 
-Important to remember that their might be Product-specific terms. And that Product Documentation describes specific data use scenarios and
-features for customer configuration
+It is important to remember that their might be Product-specific terms. And that Product Documentation describes specific data use scenarios and
+features for customer configurations.
 
 **Demonstrated Compliance**
 
+The "how and what" includes the following scenarios to be handled:
+
 - Service Assurance
-   - Learn descriptions of Datacenter operations & controls design to safeguards customer data
-   - Learn Training & education paths
+   - Understand the design of datacenter operations & controls to safeguards customer data.
+   - Understand which training & education paths that should be followed.
 
 - Third-party Certification & Audits
-   - Microsoft controls based on various standards
-   - Third-party Certification & Audits Third-party attestation & certification (ISO, SOC etc.)
+   - Understand the Microsoft controls and on which various standards they are based.
+   - Ensure that the right Third-party Certification & Audits, Third-party attestation & certification are part of your documentation (ISO, SOC etc.).
 
 - Penetration Testing
-   - Third-party testing and/or by customers
+   - Ensure that you do penetration testing - either by Third-party or by you.
 
 - Compliance Program
-   - White glove service available for annual fee
+   - Microsoft can provide **White glove** services for annual fee.
 
 **Adopted Compliance**
 
