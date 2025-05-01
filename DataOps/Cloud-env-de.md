@@ -349,11 +349,11 @@ Basierend auf der Art der Cloud-Dienste (IaaS, PaaS und SaaS), die auf der Daten
 
 In diesem Prozess sollte klar sein, wer die Verantwortung für die verschiedenen Elemente in der Plattform trägt.
 
-![Abbildung 5](../images/german/Slide16.png)
+! [Abbildung 5](.. /images/english/Slide16.png)
 
-Der erste Schritt sollte sein, "zu welchen Bedingungen" wir arbeiten, d.h. die **Vertragseinhaltung**, die die Verpflichtungen zwischen den Parteien definiert und die auch festlegt, wie die Einhaltung der Verpflichtungen nachgewiesen werden muss.
+Der erste Schritt sollte sein, "zu welchen Bedingungen" wir arbeiten, d.h. die **Vertragseinhaltung** , die die Verpflichtungen zwischen den Parteien definiert und auch festlegt, wie die Einhaltung der Verpflichtungen nachgewiesen werden muss.
 
-Wenn wir festgestellt haben, zu welchen Bedingungen wir arbeiten, wäre der nächste Schritt die **Demonstration der Compliance**, d.h. eine Art "das Wie und das Was", bei dem wir in der  Praxis *gemeinsame Verantwortung* demonstrieren  . Dies bedeutet die Fähigkeit, Audits und Inspektionen durchzuführen.
+Wenn festgelegt ist, zu welchen Bedingungen wir arbeiten, besteht der nächste Schritt darin, die Einhaltung der Vorschriften nachzuweisen. Das ist eine Art "das Wie und Was", bei dem wir in der  Praxis *gemeinsame Verantwortung* demonstrieren  . Dies bedeutet die Fähigkeit, Audits und Inspektionen durchzuführen.
 
 Der letzte Schritt besteht dann darin, die Einhaltung zu übernehmen, d. h. die Einhaltung in Aktion zu halten. Dies wirkt sich auf die Compliance-, Sicherheits- und Risikolage im Zusammenhang mit der organisatorischen Nutzung von Daten aus.
 
@@ -361,39 +361,44 @@ Der letzte Schritt besteht dann darin, die Einhaltung zu übernehmen, d. h. die 
 
 **Einhaltung vertraglicher Vorschriften**
 
-- Produktbedingungen und DPA
+Die wichtigen Dokumente in Bezug auf die Datenplattform sind Product Terms und DPA
 
-- DPA hat die allgemeinen Verpflichtungen
-   - Produktspezifische Begriffe und Produktdokumentation enthalten spezifische Bedingungen und Anleitungen.
-   - Eine allgemeine DPA für Produkte (Online-Dienste und Software) und Professional Service
-      - Mit unterschiedlichen Begriffen für:
-         - Vorschau auf Online-Dienste im Vergleich zu Online-Diensten
-         - Online-Dienste im Vergleich zu Core Online-Diensten
-         - Core Online Service vs. EU Data Boundary Online Service
+Die Datenschutzbehörde hat die allgemeinen Verpflichtungen.
 
-Es ist wichtig, sich daran zu erinnern, dass es sich um produktspezifische Begriffe handeln kann. Und dass die Produktdokumentation spezifische Datenverwendungsszenarien beschreibt und Funktionen für die Kundenkonfiguration
+Die produktspezifischen Begriffe und die Produktdokumentation enthalten dann alle spezifischen Begriffe und Anleitungen.
+
+Also, eine allgemeine DPA für Produkte (Online-Dienste und Software) und Professional Service
+    - Mit unterschiedlichen Begriffen für:
+         - Vorschau von Onlinediensten im Vergleich zu Onlinediensten
+         - Onlinedienste im Vergleich zu den wichtigsten Onlinediensten
+         - Zentraler Onlinedienst vs. Onlinedienst mit EU-Datengrenze
+
+Es ist wichtig, sich daran zu erinnern, dass es sich um produktspezifische Begriffe handeln kann. Und dass die Produktdokumentation spezifische Datenverwendungsszenarien beschreibt und
+Funktionen für Kundenkonfigurationen.
 
 **Nachgewiesene Compliance**
 
+Das "Wie und Was" umfasst die folgenden Szenarien, die behandelt werden sollen:
+
 - Service-Gewährleistung
-  - Erfahren Sie mehr über das Design von Rechenzentrumsabläufen und -kontrollen zum Schutz von Kundendaten.
-  - Lernen Sie Trainings- und Bildungspfade
+   - Verstehen Sie das Design von Rechenzentrumsabläufen und -kontrollen, um Kundendaten zu schützen.
+   - Verstehen Sie, welche Schulungs- und Weiterbildungspfade befolgt werden sollten.
 
 - Zertifizierungen und Audits durch Dritte
-  - Microsoft-Kontrollen basieren auf verschiedenen Standards
-  - Zertifizierung und Audits durch Dritte Bescheinigung und Zertifizierung durch Dritte (ISO, SOC usw.)
+   - Verstehen Sie die Microsoft-Kontrollen und auf welchen verschiedenen Standards sie basieren.
+   - Stellen Sie sicher, dass die richtigen Zertifizierungen und Audits sowie Zertifizierungen und Zertifizierungen durch Dritte Teil Ihrer Dokumentation (ISO, SOC usw.) sind.
 
 - Penetrationstests
-   - Tests durch Dritte und/oder durch Kunden
+   - Stellen Sie sicher, dass Sie Penetrationstests durchführen - entweder von Dritten oder von Ihnen.
 
 - Compliance-Programm
-   - Weißer Handschuhservice gegen Jahresgebühr verfügbar
+   - Microsoft kann  **White Glove**-Dienste gegen eine jährliche Gebühr bereitstellen.
 
 **Angenommene Compliance**
 
 - Technische & Sicherheitsmaßnahmen und Tools für den organisatorischen Einsatz
-- Tools zur Datensicherheit
-- Verschlüsselung, Kunden-Lockbox usw.
+   - Tools zur Datensicherheit
+   - Verschlüsselung, Kunden-Lockbox etc.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)

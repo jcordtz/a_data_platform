@@ -347,55 +347,58 @@ Disse elementer sikrer, at databehandlingstillægget er omfattende, klart og i o
 
 Baseret på arten af de cloud-tjenester (IaaS, PaaS og SaaS), der bruges i ens dataplatform og de kontraktlige elementer, der bruges, bør der etableres en proces, der definerer ens sikkerhedsstilling.
 
-I denne proces bør det være tydeligt, hvem der har ansvaret for de forskellige elementer i platformen.
+I denne proces bør det være klart, hvem der har ansvaret for de forskellige elementer i platformen.
 
-![Figur 5](../images/danish/Slide16.png)
+! [figur 5](.. /images/dansk/Slide16.png)
 
-Det første skridt bør være at se "på hvilke vilkår" der opereres, det vil sige **kontraktlig overholdelse**, der definerer forpligtelserne mellem parterne, og som også fastsætter, hvordan overholdelse af disse forpligtelser skal påvises.
+Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **Kontraktlig overholdelse**,  der definerer forpligtelserne mellem parterne og også fastsætter, hvordan overholdelse af forpligtelser skal påvises.
 
-Når dette er afklaret, vil næste skridt være at **demonstrere overholdelse**, det vil sige en slags "hvordan og hvad", hvor der udvises *fælles ansvar* i praksis. Det betyder evnen til at udføre revision og inspektion.
+Når de vilkår, vi opererer på, er fastlagt, vil næste skridt være at **Demonstrere overholdelse**. Det er lidt "hvordan og hvad", hvor vi demonstrerer *fælles ansvar* i praksis. Det betyder evnen til at udføre revision og inspektion.
 
-Det sidste skridt er så at have en **faktisk overholdelse**, det vil sige at udfører *compliance* i aktion. Dette påvirker overholdelses-, sikkerheds- og risikostillingen i forbindelse med organisatorisk brug af data.
+Det sidste skridt er så at **Adopt Compliance**, det vil sige at have compliance i aktion. Dette påvirker overholdelses-, sikkerheds- og risikostillingen i forbindelse med organisatorisk brug af data.
 
 ## Microsofts tilgang til datasikkerhed og overholdelse af angivne standarder i onlinetjenester
 
-**Kontraktlig overholdelse**
+**Overholdelse af kontrakter**
 
-- Produktvilkår og DPA
+De vigtige dokumenter i forhold til dataplatformen er Produktvilkår og DPA
 
-- DPA har de generelle forpligtelser
-- Produktspecifikke vilkår og produktdokumentation har specifikke vilkår og vejledning
-- En generel DPA for produkter (onlinetjenester og software) og professionel service
-   - Med forskellige vilkår for:
-      - Preview onlinetjenester vs. onlinetjenester
-      - Onlinetjenester vs. Core tjenester
-      - Core-onlinetjenesten i forhold til EU's onlinetjeneste for datagrænser
+Datatilsynet har de generelle forpligtelser.
 
-Det er vigtigt at huske, at der kan være produktspecifikke termer. Og at produktdokumentationen beskriver specifikke databrugsscenarier og
-funktioner til kundekonfiguration
+De produktspecifikke vilkår og produktdokumentationen indeholder derefter specifikke vilkår og vejledning.
+
+Så en generel DPA for produkter (onlinetjenester og software) og professionel service
+    - Med forskellige termer for:
+         - Forhåndsvisning af onlinetjenester vs. onlinetjenester
+         - Onlinetjenester vs. centrale onlinetjenester
+         - Grundlæggende onlinetjeneste vs. EU's onlinetjeneste for datagrænser
+
+Det er vigtigt at huske, at deres kan være produktspecifikke termer. Og at produktdokumentationen beskriver specifikke databrugsscenarier og
+Funktioner til kundekonfigurationer.
 
 **Demonstreret overholdelse**
 
-- Service Forsikring
-   - Få mere at vide om beskrivelser af datacenterdrift og -kontroldesign for at beskytte kundedata
-   - Lær trænings- og uddannelsesveje
+"Hvordan og hvad" omfatter følgende scenarier, der skal håndteres:
+
+- Forsikring af service
+   - Forstå designet af datacenterdrift og -kontroller for at beskytte kundedata.
+   - Forstå, hvilke trænings- og uddannelsesveje der skal følges.
 
 - Tredjeparts certificering og revisioner
-   - Microsoft-kontroller baseret på forskellige standarder
-   - Tredjepartscertificering og -revisioner Tredjepartsattestering og -certificering (ISO, SOC osv.)
+   - Forstå Microsoft-kontrollerne, og hvilke forskellige standarder de er baseret på.
+   - Sørg for, at den rigtige tredjepartscertificering og -revision, tredjepartsattestering og -certificering er en del af din dokumentation (ISO, SOC osv.).
 
 - Penetrationstest
-   - Tredjepartstest og/eller af kunder
+   - Sørg for, at du udfører penetrationstest - enten af tredjepart eller af dig.
 
-- Program for overholdelse
-   - "White Glow" tilgængelig mod et årligt gebyr
+- Program for overholdelse af regler og standarder
+   - Microsoft kan levere **White glove** -tjenester mod et årligt gebyr.
 
-**Faktisk overholdelse**
+**Vedtaget overholdelse**
 
 - Tekniske og sikkerhedsmæssige foranstaltninger og værktøjer til organisatorisk brug
-- Værktøjer til datasikkerhed
-- Kryptering, Customer Lockbox osv.
-
+   - Værktøjer til datasikkerhed
+   - Kryptering, Customer Lockbox osv.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
