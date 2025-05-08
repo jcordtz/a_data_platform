@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Meta data handtierung
+# A datenplatform - Meta data handtierung
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
@@ -21,9 +21,9 @@ Metadaten liefern wesentliche Informationen über Datenelemente, einschließlich
 
 ## Bedeutung von Metadaten
 
-### Datengewebe-Integration
+### Datenplatform-Integration
 
-Metadaten sind integraler Bestandteil des Konzepts eines Datengewebes, eines einheitlichen Rahmens, der Datenmanagement-Tools und -Prozesse über verschiedene Umgebungen hinweg integriert. Durch die Nutzung von Metadaten können Organisationen Daten über Plattformen hinweg automatisiert und intelligent orchestrieren, die betriebliche Effizienz steigern und einen nahtlosen Datenzugriff ermöglichen.
+Metadaten sind integraler Bestandteil des Konzepts eines Datenplatform, eines einheitlichen Rahmens, der Datenmanagement-Tools und -Prozesse über verschiedene Umgebungen hinweg integriert. Durch die Nutzung von Metadaten können Organisationen Daten über Plattformen hinweg automatisiert und intelligent orchestrieren, die betriebliche Effizienz steigern und einen nahtlosen Datenzugriff ermöglichen.
 
 ### Sicherstellung der Datenqualität
 
