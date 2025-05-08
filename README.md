@@ -29,12 +29,12 @@ The content of this document is not a "this is best practice", but a "you ought 
 
 ## Content
 
-Besides covering the main topic of how create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also being covered. These are follows:
+Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also being covered. These are follows:
 
 - [Security](./Security/Security.md)
 - [Legislation](./Security/Legislation.md)
 - [Exit-strategy](./Security/Exit-and-risc-strategies.md)
-- [Risk-assesment](./Security/Exit-and-risc-strategies.md)
+- [Risk-asesment](./Security/Exit-and-risc-strategies.md)
 - [Data-modelling](./DataModelling/DataModel.md)
 - [Data-operations](./DataOps/DataOps.md)
 - [Data Mesh](./DataOps/Data-mesh.md)
