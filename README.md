@@ -41,6 +41,7 @@ Besides covering the main topic of how create a data platform and the direct dis
 - [Self-service](./DataOps/Self-service.md)
 - [Cloud-environments](./DataOps/Cloud-env.md)
 - [Naming Standards](./DataOps/Naming-standards.md)
+- [Meta data handling](./DataOps/Meta-management.md)
 
 ## Background
 
