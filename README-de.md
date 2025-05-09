@@ -37,7 +37,7 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 - [Selbstbedienung](./DataOps/Self-service-de.md)
 - [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
 - [Namensstandards](./DataOps/Naming-standards-de.md)
-- [Meta data hånderting]
+- [Meta data hånderting](./DataOps/Data-mesh-de.md)
 
 ## Hintergrund
 
