@@ -2,10 +2,10 @@
 
 # En data platform - Sikkerhed
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Indledning
 
@@ -256,7 +256,7 @@ I *figur 1* finder du flere måder at beskytte data på, som er tilgængelige i 
 
 **Fjernelsesbaseret adgangskontrol** – denne fremgangsmåde er kun mulig i **publiceringsområdet**. Denne tilgang bruger det aspekt af **publiceringsområdet**, at et datasætlager kun "lever så længe det bruges", i dette tilfælde "... bruges korrekt". Da denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*-lager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne den ressource, der er under angreb, hvis der er risiko for tab af *datasæt*.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

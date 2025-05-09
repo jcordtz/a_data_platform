@@ -2,10 +2,10 @@
 
 # Eine Datenplattform - Gesetzgebung
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Einleitung
 
@@ -788,8 +788,7 @@ Im Folgenden finden Sie eine Liste von Gesetzen zum Schutz von Daten und Privats
 |Sambia|" Datenschutzgesetz 2021 (auf Englisch)"|https://www.parliament.gov.zm/sites/default/files/documents/acts/Act Nr. 3 Das Datenschutzgesetz 2021_0.pdf|
 |Simbabwe|Datenschutzgesetz (auf Englisch)|https://www.veritaszim.net/sites/veritas_d/files/Data Schutzgesetz 5 von 2021.pdf|
 
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Legislation.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Legislation-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

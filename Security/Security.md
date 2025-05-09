@@ -2,10 +2,10 @@
 
 # A data platform - Security
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduction
 
@@ -281,7 +281,7 @@ In *Figure 1* you will find several ways to protect data which are available in 
 
 **Removal Based Access Control** – this approach is only feasible in the **publish area**. This approach uses the aspect of the **publish area** that a dataset store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

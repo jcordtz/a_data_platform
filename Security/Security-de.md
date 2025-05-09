@@ -2,10 +2,10 @@
 
 # Eine Datenplattform - Sicherheit
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Einleitung
 
@@ -270,7 +270,7 @@ In *Abbildung 1* finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in 
 
 **Removal Based Access Control** – dieser Ansatz ist nur im **Veröffentlichungsbereich** möglich. Dieser Ansatz nutzt den Aspekt des **Veröffentlichungsbereichs**, dass ein Datensatzspeicher nur "so lange lebt, wie er verwendet wird", in diesem Fall "... richtig verwendet werden". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten *dataset*-Speicher neu erstellen zu können  , kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn also ein Angriff realisiert wird, besteht der einfachste Weg, dies zu stoppen, darin, die angegriffene Ressource einfach zu entfernen, wenn das Risiko eines  *Datensatzes* Verlusts besteht.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Security.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Security-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
