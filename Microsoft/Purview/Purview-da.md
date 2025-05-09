@@ -2,10 +2,10 @@
 
 # En Data Platform - Microsoft Purview
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Purview-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 *Microsoft Purview* er et omfattende sæt af løsninger, der kan hjælpe organisationer med at styre, beskytte og administrere data, uanset hvor de er placeret. *Microsoft Purview*-løsninger giver integreret dækning og hjælper med at håndtere fragmenteringen af data på tværs af organisationer, manglen på synlighed, der hæmmer databeskyttelse og styring, og udviskningen af traditionelle it-administrationsroller.
 
@@ -33,7 +33,7 @@ Et af aspekterne ved dataplatformen er, at **"en database eksisterer kun, hvis d
 
 Yderlig information om *Microsoft Purview* kan findes her (<https://learn.microsoft.com/en-us/purview/purview>)
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Purview.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Purview-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Purview.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Purview-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

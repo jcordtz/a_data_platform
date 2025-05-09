@@ -2,10 +2,10 @@
 
 # A Data Platform - Azure services based
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 Implementing the data platform using Azure services results in a very flexible and agile approach. This will fulfill all topics listed in the chapter “Overall paradigm”.
 
@@ -23,7 +23,7 @@ In the **publish area** you will find different *Azure database* technologies be
 
 In the **consume area** you will find *PowerBI/Fabric* along with *Azure Machine Learning Studio* and *Azure AI Foundry*.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,10 +2,10 @@
 
 # En Data Platform - Baseret på Azure-tjenester
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 Implementering af dataplatformen ved hjælp af Azure-tjenester resulterer i en meget fleksibel og agil tilgang. Dette vil opfylde alle emner, der er anført i kapitlet ”Overordnet paradigme".
 
@@ -23,7 +23,7 @@ I **publish** området finder man forskellige Azure-databaseteknologier, for eks
 
 I **consume** området finder man *PowerBI/Fabric* sammen med *Azure Machine Learning* og *Azure AI Foundry*.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Azure.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Azure-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

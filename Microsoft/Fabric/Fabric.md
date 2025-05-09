@@ -2,10 +2,10 @@
 
 # A Data Platform - Microsoft Fabric based
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 *Microsoft Fabric* is an all-in-one analytics solution that covers everything from data movement to data science, Real-Time Analytics, and Business Intelligence.
 
@@ -34,7 +34,7 @@ In between of these "endpoints" any combination can be established depending on 
 
 More information about *Microsoft Fabric* can be found here (<https://www.microsoft.com/en-us/microsoft-fabric>)
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

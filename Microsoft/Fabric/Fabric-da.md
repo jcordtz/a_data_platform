@@ -2,10 +2,10 @@
 
 # A Data Platform - Microsoft Fabric based
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 *Microsoft Fabric* er en alt-i-én-analyseløsning, der dækker alt fra dataflytning til datavidenskab, realtidsanalyse og Business Intelligence.
 
@@ -34,7 +34,7 @@ I mellem disse to lag er det så muligt at lave den kombination der passer bedst
 
 Du kan finde flere oplysninger om Microsoft Fabric her (<https://www.microsoft.com/en-us/microsoft-fabric>)
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Fabric.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Fabric-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
