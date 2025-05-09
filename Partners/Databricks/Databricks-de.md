@@ -1,12 +1,11 @@
 ![microsoft](../../images/microsoft.png)
 
-
 # Eine Datenplattform - Partner lösung - *Azure Databricks*
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Databricks.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 <p align="center">
   <img width="200" src="../../images/Databricks_Logo.png">
@@ -58,9 +57,7 @@ Weitere Informationen zu *Azure Databricks* finden Sie unter [*Azure Databricks*
 
 *Azure Databricks* ist ein leistungsstarkes Tool, das den Aufbau einer Lakehouse-Architektur unterstützt, indem es skalierbaren Speicher, effizientes Computing und robuste Datengovernance bereitstellt. Die Integration mit verschiedenen Azure-Diensten verbessert die Fähigkeiten von Lakehouse weiter und macht es zu einer umfassenden Lösung für modernes Datenmanagement und -analysen. Durch die Nutzung von *Azure Databricks* können Organisationen eine einheitliche, skalierbare und sichere Datenplattform aufbauen, die ihre Analyseanforderungen erfüllt und den Geschäftserfolg fördert.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Databricks.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Databricks-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Databricks.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,10 +2,10 @@
 
 # En data platform - Partner løsning - Snowflake
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Snowflake.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Snowflake-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 <p align="center">
   <img width="200" src="../../images/snowflake.png"">
@@ -41,9 +41,7 @@ Integrationen af *Snowflake* med *Microsoft Azure* giver virksomheder mulighed f
 
 Integrationen af *Snowflake* med *Microsoft Azure* giver en effektiv løsning til virksomheder, der ønsker at administrere, analysere og udnytte deres data. Med de kombinerede styrker ved begge platforme kan organisationer opnå skalerbarhed, sikkerhed og avancerede analysefunktioner. Uanset om det drejer sig om at skabe datasøer, datavarehuse eller udnytte kunstig intelligens til dataindsigt,  tilbyder *Snowflake* og *Microsoft Azure* en omfattende og alsidig dataplatform, der kan skabe forretningssucces.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Snowflake.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Snowflake-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

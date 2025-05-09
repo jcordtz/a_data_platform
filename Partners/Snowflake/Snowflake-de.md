@@ -2,10 +2,10 @@
 
 # Eine Datenplattform - Partner lösung - Snowflake
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Snowflake.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Snowflake-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 <p align="center">
   <img width="200" src="../../images/snowflake.png"">
@@ -40,7 +40,7 @@ Die Integration von *Snowflake* mit *Microsoft Azure* ermöglicht es Unternehmen
 
 Die Integration von *Snowflake* mit *Microsoft Azure* bietet eine leistungsstarke Lösung für Unternehmen, die ihre Daten verwalten, analysieren und nutzen möchten. Mit den kombinierten Stärken beider Plattformen können Unternehmen Skalierbarkeit, Sicherheit und erweiterte Analysefunktionen erreichen. Ganz gleich, ob es um die Erstellung von Data Lakes, Data Warehouses oder die Nutzung von KI für Dateneinblicke geht, *Snowflake* und *Microsoft Azure* bieten eine umfassende und vielseitige Datenplattform, die den Geschäftserfolg steigern kann.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Snowflake.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](Snowflake-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
