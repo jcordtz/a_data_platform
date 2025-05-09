@@ -2,10 +2,10 @@
 
 # Eine Data Platform - Data model
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Einleitung
 
@@ -103,9 +103,7 @@ Trotz ihrer Vorteile steht die Datenmodellierung vor mehreren Herausforderungen,
 
 Die Datenmodellierung ist ein unverzichtbarer Bestandteil des Datenmanagements, der einen strukturierten Ansatz für die Organisation und Verwaltung von Daten bietet. Durch das Verständnis der Arten, Techniken, Vorteile und Anwendungen der Datenmodellierung können Unternehmen robuste Datensysteme erstellen, die ihre Geschäftsprozesse und strategischen Ziele unterstützen. Trotz der Herausforderungen überwiegen die Vorteile der Datenmodellierung bei weitem die Nachteile, was sie zu einer Schlüsselkomponente erfolgreicher Datenmanagementstrategien macht.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

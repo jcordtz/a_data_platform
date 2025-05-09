@@ -2,10 +2,10 @@
 
 # En data platform - Data model
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Indledning
 
@@ -101,9 +101,7 @@ På trods af fordelene står datamodellering over for flere udfordringer, der sk
 
 Datamodellering er en uundværlig del af datastyring, der giver en struktureret tilgang til organisering og styring af data. Ved at forstå typerne, teknikkerne, fordelene og anvendelserne af datamodellering kan organisationer skabe robuste datasystemer, der understøtter deres forretningsprocesser og strategiske mål. På trods af udfordringerne opvejer fordelene ved datamodellering langt ulemperne, hvilket gør det til en nøglekomponent i vellykkede datastyringsstrategier.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

@@ -2,10 +2,10 @@
 
 # A data platform - Data Model
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduction
 
@@ -104,7 +104,7 @@ Despite its benefits, data modelling faces several challenges that need to be ad
 
 Data modelling is an indispensable part of data management that provides a structured approach to organizing and managing data. By understanding the types, techniques, benefits, and applications of data modelling, organizations can create robust data systems that support their business processes and strategic goals. Despite the challenges, the advantages of data modelling far outweigh the drawbacks, making it a key component of successful data management strategies.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataModel.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataModel-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
