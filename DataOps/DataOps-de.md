@@ -5,8 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
-
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Einleitung
 
@@ -83,4 +82,4 @@ Data Operations (DataOps) stellt einen transformativen Ansatz für das Datenmana
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

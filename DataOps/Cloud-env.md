@@ -6,6 +6,7 @@
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+
 In the ever-evolving world of technology, cloud computing has emerged as a beacon of innovation, offering various service models to meet diverse business needs. Imagine a vast digital landscape where companies can choose from different paths, each leading to a unique set of capabilities and controls. These paths are known as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Each path offers a different level of control, flexibility, and management, much like choosing between building your own house, renting a fully furnished apartment, or staying in a hotel.
 
 ## Infrastructure as a Service (IaaS)
