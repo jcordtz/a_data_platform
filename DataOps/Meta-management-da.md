@@ -21,9 +21,9 @@ Metadata giver væsentlige oplysninger om dataelementer, herunder deres struktur
 
 ## Betydningen af Metadata
 
-### Data Fabric Integration
+### Data platform integration
 
-Metadata er en integreret del af konceptet med et data fabric, en samlet ramme, der integrerer datastyringsværktøjer og -processer på tværs af forskellige miljøer. Ved at udnytte metadata kan organisationer automatisere og intelligent orkestrere data på tværs af platforme, forbedre operationel effektivitet og muliggøre problemfri dataadgang.
+Metadata er en integreret del af konceptet om dataplatformen, som giver mulighed for en ramme, der integrerer datastyringsværktøjer og -processer på tværs af forskellige miljøer. Ved at udnytte metadata kan organisationer automatisere og intelligent orkestrere data på tværs af platforme, forbedre operationel effektivitet og muliggøre problemfri dataadgang.
 
 ### Sikring af Datakvalitet
 
@@ -49,7 +49,7 @@ For at maksimere fordelene ved metadata bør organisationer udnytte dem til data
 
 ## Konklusion
 
-Metadata er rygraden i datadrevne miljøer og leverer væsentlige oplysninger, der forbedrer datastyring, kvalitet og udnyttelse. Ved at anvende bedste praksis for oprettelse, integration og udnyttelse af metadata kan organisationer udnytte det fulde potentiale af deres dataressourcer og opnå betydelige forretningsindsigter og operationel effektivitet.
+Metadata ebør være rygraden i datadrevne miljøer og leverer væsentlige oplysninger, der forbedrer datastyring, kvalitet og udnyttelse. Ved at anvende bedste praksis for oprettelse, integration og udnyttelse af metadata kan organisationer udnytte det fulde potentiale af deres dataressourcer og opnå betydelige forretningsindsigter og operationel effektivitet.
 
 [![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
 [![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)

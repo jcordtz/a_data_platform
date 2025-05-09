@@ -89,7 +89,7 @@ On the other hand, when the term *dataset* is used, it implies a collection of t
 
 The *dataset* is the key component of the data platform, and it has some specific characteristics:
 
-- The *dataset* is self-sufficient, meaning it does not depend on any other *data* sources. It contains all the information needed.
+- The *dataset* is self-sufficient, meaning it does not depend on any other sources. It contains all the information needed.
 - Only the columns/rows that are relevant for the task being supported are included.
 - A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
 - A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
@@ -98,7 +98,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 ## Cloud aspects
 
-This document explains how to create a data platform using cloud technology. And this approach to a data platform has some features that are only achievable with a cloud approach.
+This document explains how to create a data platform using cloud technology. And the described approach to a data platform has some features that are only achievable with a cloud approach.
 
 ![Figure 1](images/english/Slide1.JPG)
 

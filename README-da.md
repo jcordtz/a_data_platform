@@ -99,7 +99,7 @@ På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af 
 
 *Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
 
-- *Datasættet* er selvforsynende, hvilket betyder, at det ikke afhænger af andre datakilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
+- *Datasættet* er selvforsynende, hvilket betyder, at det ikke afhænger af andre kilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
 - Kun de kolonner/rækker, der er relevante for den opgave, der udføres, er til stede i *datasættet*.
 - Et *datasæt* tilhører en gruppe og ikke bestemte personer – i en Azure-konfiguration vil ejeren derfor være en gruppe med et Entra-id.
 - Et *datasæt* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
@@ -110,7 +110,7 @@ På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af 
 
 Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologier.
 
-Og denne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
+Og den beskrevne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
 
 ![figur 1](images/danish/Slide1.JPG)
 
