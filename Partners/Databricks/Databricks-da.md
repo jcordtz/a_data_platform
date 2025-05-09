@@ -19,7 +19,7 @@ Du kan også bruge *Databricks* i stedet for SQL Server, hvis du vil.
 
 Teknologisk uafhængighed ligger i, at *Databricks* er baseret på Python og Spark. Men du vil have en tilgang, hvor mere af "programmeringen" udføres i det samme værktøj.
 
-! [figur 1](.. /.. /billeder/dansk/Slide6.JPG)
+![figur 1](../../images/danish/Slide6.JPG)
 
 Figur 1
 
@@ -56,6 +56,7 @@ Du kan finde flere oplysninger om *Azure Databricks* her [*Azure Databricks* Inf
 ## Konklusion
 
 *Azure Databricks* er et effektivt værktøj, der understøtter konstruktionen af en lakehouse-arkitektur ved at levere skalerbar lagerplads, effektiv databehandling og robust datastyring. Dens integration med forskellige Azure-tjenester forbedrer lakehouse's muligheder yderligere, hvilket gør det til en omfattende løsning til moderne datastyring og -analyse. Ved at udnytte *Azure Databricks* kan organisationer opbygge en samlet, skalerbar og sikker dataplatform, der opfylder deres analysebehov og skaber forretningssucces.
+
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)

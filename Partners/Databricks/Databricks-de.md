@@ -19,7 +19,7 @@ Wenn Sie möchten, können Sie auch *Databricks* anstelle von SQL Server verwend
 
 Die technologische Unabhängigkeit liegt darin, dass *Databricks* auf Python und Spark basiert. Aber Sie möchten einen Ansatz, bei dem ein größerer Teil der "Programmierung" im selben Tool erledigt wird.
 
-! [Abbildung 1](.. /.. /Bilder/Dänisch/Slide6.JPG)
+![Abbildung 1](../../images/german/Slide6.JPG)
 
 Abbildung 1
 
