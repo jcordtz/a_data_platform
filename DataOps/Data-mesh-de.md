@@ -2,10 +2,10 @@
 
 # Eine Dattenplatform - Data Mesh
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Data-mesh.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Data-mesh-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Einleitung
 
@@ -78,7 +78,7 @@ In der beschriebenen Datenplattform wird in der Regel ein Data Mesh "auf" der Da
 
 Data Mesh stellt eine bedeutende Veränderung in der Art und Weise dar, wie Unternehmen an das Datenmanagement herangehen. Durch die Dezentralisierung von Eigentum und Governance bietet es ein skalierbares, agiles und kollaboratives Framework, das eine bessere Datennutzung und Geschäftsergebnisse ermöglichen kann. Da immer mehr Unternehmen die Vorteile von Data Mesh erkennen, ist es bereit, zu einem Eckpfeiler der modernen Datenarchitektur zu werden.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Data-mesh.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Data-mesh-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

@@ -1,10 +1,10 @@
 ![microsoft](images/microsoft.png)
 # Eine Datenplattform - *"zukunftssicher"*
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
@@ -551,7 +551,7 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 [Microsoft Purview und die Datenplattform](Microsoft/Purview/Purview-de.md) – Governance und Compliance der Datenplattform mit Purview
 
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

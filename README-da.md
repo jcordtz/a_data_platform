@@ -567,7 +567,7 @@ Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man
 
 [Microsoft Purview og data platformen](Microsoft/Purview/Purview-da.md) - Governance og Compliance af løsningen sammen med Microsoft Purview
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)

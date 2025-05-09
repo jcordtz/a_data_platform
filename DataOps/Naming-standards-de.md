@@ -2,10 +2,10 @@
 
 # Eine dattenplatform - Namensstandards
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Naming-Standards-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 In der geschäftigen Welt der Daten, in der riesige Mengen an Informationen gespeichert und verwaltet werden, spielen Benennungsstandards eine entscheidende Rolle. Stellen Sie sich eine große Bibliothek vor, in der jedes Buch akribisch katalogisiert und in Regale gestellt wird. Ohne ein klares System wäre es eine entmutigende Aufgabe, ein bestimmtes Buch zu finden. In ähnlicher Weise stellen Benennungsstandards auf der Datenplattform sicher, dass Daten organisiert, zugänglich und verständlich sind.
 
@@ -55,7 +55,8 @@ Diese Standards tragen dazu bei, dass Cloud-Ressourcen leicht identifizierbar un
 Zusammenfassend lässt sich sagen, dass Benennungsstandards sowohl in der Datenplattform als auch in den Cloud-Umgebungen unerlässlich sind, um Konsistenz, Klarheit und Effizienz zu wahren. Durch die Befolgung von Best Practices und die Verwendung beschreibender, konsistenter Namen können Unternehmen sicherstellen, dass ihre Daten organisiert, zugänglich und leicht verständlich sind. Dies wiederum unterstützt ein effektives Datenmanagement und eine effektive Datenanalyse und bietet eine solide Grundlage für eine fundierte Entscheidungsfindung und den Geschäftserfolg.
 
 Lass mich wissen, wenn du weitere Änderungen oder zusätzliche Informationen benötigst!
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Naming-Standards-da.md)
+
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

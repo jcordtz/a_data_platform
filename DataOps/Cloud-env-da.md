@@ -2,10 +2,10 @@
 
 # A data platform - Cloud Enviroments
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Cloud-env.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 I den stadigt udviklende verden har cloud computing vist sig som et fyrtårn af innovation, der tilbyder forskellige servicemodeller for at imødekomme forskellige forretningsbehov. Forestil dig et stort digitalt landskab, hvor virksomheder kan vælge mellem forskellige stier, hver førende til et unikt sæt af kapaciteter og kontroller. Disse stier er kendt som Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS). Hver sti tilbyder et forskelligt niveau af kontrol, fleksibilitet og styring, ligesom at vælge mellem at bygge dit eget hus, leje en fuldt møbleret lejlighed eller bo på et hotel.
 
@@ -400,7 +400,7 @@ Funktioner til kundekonfigurationer.
    - Værktøjer til datasikkerhed
    - Kryptering, Customer Lockbox osv.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Cloud-env.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

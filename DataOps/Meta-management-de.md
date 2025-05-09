@@ -2,10 +2,11 @@
 
 # A datenplatform - Meta data handtierung
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+
 
 ## Einführung
 
@@ -51,7 +52,7 @@ Um die Vorteile von Metadaten zu maximieren, sollten Organisationen diese für d
 
 Metadaten sind das Rückgrat datengetriebener Umgebungen und liefern wesentliche Informationen, die das Datenmanagement, die Qualität und die Nutzung verbessern. Durch die Einführung bewährter Verfahren zur Erstellung, Integration und Nutzung von Metadaten können Organisationen das volle Potenzial ihrer Datenressourcen ausschöpfen und bedeutende Geschäftseinblicke und betriebliche Effizienz erzielen.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

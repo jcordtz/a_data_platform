@@ -2,10 +2,10 @@
 
 # En data platform - Navngivnings-standarder
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Naming-Standards-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 I den travleevigt voksende verden af data, hvor enorme mængder information lagres og administreres, spiller navngivningsstandarder en afgørende rolle. Forestil dig et storslået bibliotek, hvor hver bog er omhyggeligt katalogiseret og sat på hylder. Uden et klart system ville det være en skræmmende opgave at finde en bestemt bog. På samme måde sikrer navngivningsstandarder i dataplatformen, at data er organiserede, tilgængelige og forståelige.
 
@@ -54,7 +54,7 @@ Disse standarder hjælper med at sikre, at cloudressourcer er let identificerbar
 
 Afslutningsvis er navngivningsstandarder i dataplatformen såvel som i cloud-miljøerne afgørende for at opretholde konsistens, klarhed og effektivitet. Ved at følge bedste praksis og bruge beskrivende, ensartede navne kan organisationer sikre, at deres data er organiserede, tilgængelige og nemme at forstå. Dette understøtter igen effektiv datastyring og analyse, hvilket giver et solidt grundlag for informeret beslutningstagning og forretningssucces.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Naming-Standards-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

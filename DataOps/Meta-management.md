@@ -2,10 +2,10 @@
 
 # A data platform - Meta data management
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduction
 
@@ -51,7 +51,7 @@ To maximize the benefits of metadata, organizations should leverage it for data 
 
 Metadata should be the backbone of data-driven environments, providing essential information that enhances data management, quality, and utilization. By adopting best practices for metadata creation, integration, and utilization, organizations can unlock the full potential of their data resources and drive significant business insights and operational efficiency.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

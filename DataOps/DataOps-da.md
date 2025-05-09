@@ -2,10 +2,10 @@
 
 # En data platform - DataOps
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Indledning
 
@@ -79,7 +79,7 @@ Microsoft leverer to strukturer til dette:
 
 Dataoperationer, eller DataOps, repræsenterer en transformativ tilgang til datastyring, der gør det muligt for organisationer effektivt at udnytte dataens kraft til informeret beslutningstagning. Ved at omfavne principperne om samarbejde, automatisering og løbende forbedringer kan DataOps hjælpe organisationer med at overvinde udfordringerne ved moderne datastyring og frigøre det sande potentiale i deres dataaktiver. Efterhånden som data fortsætter med at vokse i volumen og kompleksitet, vil vigtigheden af at implementere en robust DataOps-strategi kun blive mere kritisk for organisationer, der søger at trives i den digitale tidsalder.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

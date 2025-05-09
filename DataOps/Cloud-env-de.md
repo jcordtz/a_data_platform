@@ -2,10 +2,10 @@
 
 # A data platform - Cloud Enviroments
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Cloud-env.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 In der sich ständig weiterentwickelnden Welt der Technologie hat sich Cloud Computing als Leuchtfeuer der Innovation erwiesen und bietet verschiedene Servicemodelle, um unterschiedliche Geschäftsanforderungen zu erfüllen. Stellen Sie sich eine riesige digitale Landschaft vor, in der Unternehmen zwischen verschiedenen Wegen wählen können, die jeweils zu einem einzigartigen Satz von Fähigkeiten und Kontrollen führen. Diese Wege sind bekannt als Infrastructure as a Service (IaaS), Platform as a Service (PaaS) und Software as a Service (SaaS). Jeder Weg bietet ein unterschiedliches Maß an Kontrolle, Flexibilität und Verwaltung, ähnlich wie die Wahl zwischen dem Bau eines eigenen Hauses, der Anmietung einer voll möblierten Wohnung oder dem Aufenthalt in einem Hotel.
 
@@ -400,7 +400,7 @@ Das "Wie und Was" umfasst die folgenden Szenarien, die behandelt werden sollen:
    - Tools zur Datensicherheit
    - Verschlüsselung, Kunden-Lockbox etc.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Cloud-env.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Cloud-env-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Cloud-env.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Cloud-env-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Cloud-env-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

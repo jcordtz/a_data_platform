@@ -2,10 +2,11 @@
 
 # A data platform - DataOps
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+
 
 ## Introduction
 
@@ -79,7 +80,7 @@ Microsoft provides two framework for this:
 
 Data operations, or DataOps, represent a transformative approach to data management, enabling organizations to efficiently harness the power of data for informed decision-making. By embracing the principles of collaboration, automation, and continuous improvement, DataOps can help organizations overcome the challenges of modern data management and unlock the true potential of their data assets. As data continues to grow in volume and complexity, the importance of implementing a robust DataOps strategy will only become more critical for organizations seeking to thrive in the digital age.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataOps.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](DataOps-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataOps.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataOps-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataOps-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

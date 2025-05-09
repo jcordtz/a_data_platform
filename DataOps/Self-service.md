@@ -2,10 +2,10 @@
 
 # A data platform - Self-service
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Self-service-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ### Achieving Self-Service in Business Intelligence Setup
 
@@ -56,7 +56,7 @@ The following outlines how self-service BI could be achieved.
 
 By implementing these strategies, organizations could successfully achieve self-service in their business intelligence setup, empowering users to leverage data for better decision-making and fostering a data-driven culture.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Self-service-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

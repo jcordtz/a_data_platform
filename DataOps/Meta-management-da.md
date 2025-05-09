@@ -2,10 +2,10 @@
 
 # A data platform - Meta data håndtering
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduktion
 
@@ -51,7 +51,7 @@ For at maksimere fordelene ved metadata bør organisationer udnytte dem til data
 
 Metadata ebør være rygraden i datadrevne miljøer og leverer væsentlige oplysninger, der forbedrer datastyring, kvalitet og udnyttelse. Ved at anvende bedste praksis for oprettelse, integration og udnyttelse af metadata kan organisationer udnytte det fulde potentiale af deres dataressourcer og opnå betydelige forretningsindsigter og operationel effektivitet.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Meta-management.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Meta-management-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Meta-management.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Meta-management-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Meta-management-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

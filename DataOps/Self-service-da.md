@@ -2,10 +2,10 @@
 
 # En data platform - Self-service
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Self-service-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ### Opnåelse af selvbetjening i Business Intelligence-opsætning
 
@@ -56,7 +56,7 @@ I det følgende beskrives, hvordan selvbetjenings-BI kan opnås.
 
 Ved at implementere disse strategier kan organisationer med succes opnå selvbetjening i deres business intelligence-opsætning, hvilket giver brugerne mulighed for at udnytte data til bedre beslutningstagning og fremme en datadrevet kultur.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](Self-service-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
