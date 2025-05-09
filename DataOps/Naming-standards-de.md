@@ -2,9 +2,9 @@
 
 # Eine dattenplatform - Namensstandards
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-standards-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-standards-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 In der geschäftigen Welt der Daten, in der riesige Mengen an Informationen gespeichert und verwaltet werden, spielen Benennungsstandards eine entscheidende Rolle. Stellen Sie sich eine große Bibliothek vor, in der jedes Buch akribisch katalogisiert und in Regale gestellt wird. Ohne ein klares System wäre es eine entmutigende Aufgabe, ein bestimmtes Buch zu finden. In ähnlicher Weise stellen Benennungsstandards auf der Datenplattform sicher, dass Daten organisiert, zugänglich und verständlich sind.
@@ -56,7 +56,7 @@ Zusammenfassend lässt sich sagen, dass Benennungsstandards sowohl in der Datenp
 
 Lass mich wissen, wenn du weitere Änderungen oder zusätzliche Informationen benötigst!
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-standards-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-standards-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

@@ -2,9 +2,9 @@
 
 # A data platform - Naming Standards
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-standards-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-standards-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 In the bustling world of data, where vast amounts of information are stored and managed, naming standards play a crucial role. Imagine a grand library, where every book is meticulously cataloged and shelved. Without a clear system, finding a specific book would be a daunting task. Similarly, in the data platform, naming standards ensure that data is organized, accessible, and understandable.
@@ -54,7 +54,7 @@ These standards help ensure that cloud resources are easily identifiable and man
 
 In conclusion, naming standards in the data platform as well as in the cloud environments are essential for maintaining consistency, clarity, and efficiency. By following best practices and using descriptive, consistent names, organizations can ensure that their data is organized, accessible, and easy to understand. This, in turn, supports effective data management and analysis, providing a solid foundation for informed decision-making and business success.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-Standards.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-Standards-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-Standards-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Naming-standards.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Naming-standards-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Naming-standards-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
