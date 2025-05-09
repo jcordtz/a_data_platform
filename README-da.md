@@ -2,10 +2,10 @@
 
 # En data platform - *"fremtidssikret"*
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](README-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
+[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
@@ -27,7 +27,7 @@ Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som
 
 ## Indhold
 
-Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende (i egnbe sektioner):
+Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende (i egne sektioner):
 
 - [Sikkerhed](./Security/Security-da.md)
 - [Lovgivning](./Security/Legislation-da.md)
