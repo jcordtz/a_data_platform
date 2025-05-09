@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Catalog
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Introduction
 
@@ -73,7 +73,7 @@ To overcome the challenges and reap the full benefits of a data catalog, organiz
 
 A data catalog is an indispensable tool for modern organizations seeking to harness the full potential of their data assets. By providing a centralized repository for metadata, data lineage, and data quality metrics, a data catalog enhances data discoverability, governance, collaboration, and management. While implementing a data catalog can present challenges, following best practices and focusing on user adoption can ensure a successful deployment and maximize the benefits for the organization. As data continues to play a pivotal role in business decision-making, a well-implemented data catalog can be a game-changer, driving innovation and growth in the data-driven landscape.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Catalog
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Einleitung
 
@@ -73,9 +73,7 @@ Um die Herausforderungen zu meistern und die Vorteile eines Datenkatalogs voll a
 
 Ein Datenkatalog ist ein unverzichtbares Werkzeug für moderne Unternehmen, die das volle Potenzial ihrer Datenbestände ausschöpfen wollen. Durch die Bereitstellung eines zentralen Repositorys für Metadaten, Datenherkunft und Datenqualitätsmetriken verbessert ein Datenkatalog die Auffindbarkeit, Governance, Zusammenarbeit und Verwaltung von Daten. Die Implementierung eines Datenkatalogs kann zwar eine Herausforderung darstellen, aber die Befolgung von Best Practices und die Konzentration auf die Benutzerakzeptanz können eine erfolgreiche Bereitstellung sicherstellen und die Vorteile für das Unternehmen maximieren. Da Daten nach wie vor eine zentrale Rolle bei der Entscheidungsfindung in Unternehmen spielen, kann ein gut implementierter Datenkatalog ein entscheidender Faktor sein und Innovation und Wachstum in der datengesteuerten Landschaft vorantreiben.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

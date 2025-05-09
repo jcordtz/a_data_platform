@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Master Data - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Einleitung
 
@@ -51,9 +51,7 @@ Kontinuierliche Überwachung und Verbesserung: Überwachen Sie regelmäßig die 
 Stammdaten sind das Rückgrat eines effektiven Datenmanagements. Durch die Implementierung einer umfassenden MDM-Strategie können Unternehmen die Genauigkeit, Konsistenz und Governance ihrer kritischen Datenbestände sicherstellen, was zu einem verbesserten Kundenerlebnis, einer verbesserten betrieblichen Effizienz und einer besseren Entscheidungsfindung führt.
 Ich hoffe, dieser Artikel bietet einen umfassenden Überblick über Stammdaten und ihre Bedeutung im Datenmanagement. Wenn Sie bestimmte Aspekte haben, in die Sie tiefer eintauchen möchten, lassen Sie es mich gerne wissen!
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Catalog
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Indledning
 
@@ -73,9 +73,7 @@ For at overvinde udfordringerne og drage fuld fordel af et datakatalog skal orga
 
 Et datakatalog er et vigtigt værktøj for moderne virksomheder, der ønsker at frigøre det fulde potentiale af deres dataaktiver. Ved at levere et centralt lager til metadata, dataafstamning og datakvalitetsmålinger forbedrer et datakatalog dataregistrering, styring, samarbejde og administration. Selvom implementering af et datakatalog kan være udfordrende, kan det at følge bedste praksis og fokusere på brugeradoption sikre en vellykket implementering og maksimere forretningsfordele. Da data fortsat spiller en central rolle i forretningsmæssig beslutningstagning, kan et velimplementeret datakatalog være en game-changer, der driver innovation og vækst i det datadrevne landskab.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataCatalog.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataCatalog-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

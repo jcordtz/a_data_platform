@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Discovery
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Introduction
 
@@ -62,10 +62,7 @@ The *Data Discovery* process is cyclical and iterative, comprising several key s
 
 *Data Discovery* is a powerful process that enables organizations to unlock the full potential of their data. By exploring, analyzing, and visualizing data from diverse sources, businesses can uncover valuable insights, optimize processes, and drive innovation. As the data landscape continues to evolve, *Data Discovery* will remain a critical component of data-driven decision-making and performance optimization.
 
-
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

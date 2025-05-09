@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Discovery
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Introduktion
 
@@ -63,10 +63,7 @@ Dataregistrering giver flere fordele, der forbedrer forretningsbeslutninger og y
 Konklusion
 *Data Discovery* er en effektiv proces, der gør det muligt for organisationer at frigøre det fulde potentiale af deres data. Ved at udforske, analysere og visualisere data fra forskellige kilder kan virksomheder afdække værdifuld indsigt, optimere processer og drive innovation. Efterhånden som datalandskabet fortsætter med at udvikle sig, vil *Data Discovery* forblive en kritisk komponent i datadrevet beslutningstagning og optimering af ydeevne.
 
-
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

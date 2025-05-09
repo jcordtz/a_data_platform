@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Governance - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataGovernance.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataGovernance-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Indledning
 
@@ -41,10 +41,8 @@ Datastyringsprogrammer kan hjælpe organisationer med at beskytte og administrer
 
 Datastyring er en løbende samtale, der involverer styring og regulering af dataaktiver for at sikre, at de bruges effektivt, effektivt og ansvarligt i en organisation. Ved at etablere robuste politikker og rammer for datastyring kan organisationer sikre dataintegritet, sikkerhed og overholdelse, hvilket i sidste ende fører til bedre forretningsresultater og forbedrede kunde- og medarbejderoplevelser.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataGovernance.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataGovernance-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 

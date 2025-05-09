@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Governance - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataGovernance.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataGovernance-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Einleitung
 
@@ -41,9 +41,7 @@ Data-Governance-Programme können Unternehmen dabei helfen, große Datenmengen z
 
 Data Governance ist ein fortlaufendes Gespräch, das die Verwaltung und Regulierung von Datenbeständen umfasst, um sicherzustellen, dass sie innerhalb eines Unternehmens effektiv, effizient und verantwortungsbewusst genutzt werden. Durch die Einrichtung robuster Data-Governance-Richtlinien und -Frameworks können Unternehmen die Datenintegrität, -sicherheit und -konformität gewährleisten, was letztendlich zu besseren Geschäftsergebnissen und verbesserten Kunden- und Mitarbeitererfahrungen führt.
 
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataGovernance.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataGovernance-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
-
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

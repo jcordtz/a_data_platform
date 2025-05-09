@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Master Data - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Introduction
 
@@ -51,7 +51,7 @@ Continuous Monitoring and Improvement: Regularly monitor data quality and MDM pr
 Master data is the backbone of effective data management. By implementing a comprehensive MDM strategy, organizations can ensure the accuracy, consistency, and governance of their critical data assets, leading to improved customer experience, operational efficiency, and better decision-making.
 I hope this article provides a comprehensive overview of master data and its importance in data management. If you have any specific aspects you'd like to delve deeper into, feel free to let me know!
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

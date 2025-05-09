@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Lineage - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Einleitung
 
@@ -39,9 +39,7 @@ Dies sollte Ihnen folgende Vorteile bringen:
 6) Gesteigerte Effizienz: Durch das Verständnis von Abhängigkeiten und Verbindungen können Datenteams Arbeitsabläufe rationalisieren, Prozesse optimieren und Doppelarbeit vermeiden.
 7) Aufbau von Vertrauen in Daten: Stakeholder verlassen sich eher auf datengestützte Entscheidungen, wenn sie eine klare Aufzeichnung der Herkunft und Transformation der Daten sehen können.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

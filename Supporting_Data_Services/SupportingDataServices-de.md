@@ -2,10 +2,10 @@
 
 # Supporting Data Services
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 [Datenkatalog](Data_Catalog/DataCatalog-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
@@ -19,7 +19,7 @@
 
 [Stammdaten](/Master_Data/MasterData-de.md) – Einige Daten/Datensätze können vorteilhaft als Stammdaten behandelt werden, so dass es nur "einen Datensatz" von z.B. einem Kunden gibt.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](SupportingDataServices.md)
-[![dk](https://img.shields.io/badge/lang-da--dk-green.svg)](SupportingDataServices-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

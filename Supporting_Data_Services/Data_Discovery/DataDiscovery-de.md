@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Discovery
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Einleitung
 
@@ -65,10 +65,7 @@ Data Discovery spielt in verschiedenen Facetten eines Unternehmens eine wesentli
 
 Data Discovery ist ein leistungsstarker Prozess, der es Unternehmen ermöglicht, das volle Potenzial ihrer Daten auszuschöpfen. Durch die Erkundung, Analyse und Visualisierung von Daten aus verschiedenen Quellen können Unternehmen wertvolle Erkenntnisse gewinnen, Prozesse optimieren und Innovationen vorantreiben. Da sich die Datenlandschaft ständig weiterentwickelt, wird die *Data Discovery* eine wichtige Komponente der datengesteuerten Entscheidungsfindung und Leistungsoptimierung bleiben.
 
-
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataDiscovery.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataDiscovery-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

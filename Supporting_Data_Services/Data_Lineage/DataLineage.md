@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Lineage - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Introduction
 
@@ -36,7 +36,7 @@ Data lineage is critical in modern data ecosystems because it ensures transparen
 6) Increased Efficiency: By understanding dependencies and connections, data teams can streamline workflows, optimize processes, and avoid duplicating efforts.
 7) Building Trust in Data: Stakeholders are more likely to rely on data-driven decisions when they can see a clear record of the data's origins and transformations.
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

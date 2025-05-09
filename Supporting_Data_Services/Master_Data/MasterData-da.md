@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Master Data - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Indledning
 
@@ -51,9 +51,7 @@ Løbende overvågning og forbedring: Overvåg regelmæssigt datakvalitet og MDM-
 Stamdata er rygraden i effektiv datahåndtering. Ved at implementere en omfattende MDM-strategi kan organisationer sikre nøjagtigheden, konsistensen og styringen af deres kritiske dataaktiver, hvilket fører til forbedret kundeoplevelse, driftseffektivitet og bedre beslutningstagning.
 Jeg håber, at denne artikel giver et omfattende overblik over stamdata og deres betydning i datahåndtering. Hvis du har nogle specifikke aspekter, du gerne vil dykke dybere ned i, er du velkommen til at fortælle mig det!
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](MasterData.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](MasterData-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

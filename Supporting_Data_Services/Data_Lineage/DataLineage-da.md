@@ -2,10 +2,10 @@
 
 # Supporting Data Services - Data Lineage - Under construction
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Indledning
 
@@ -39,9 +39,7 @@ Dette skulle give dig følgende fordele:
 6) Øget effektivitet: Ved at forstå afhængigheder og forbindelser kan datateams strømline arbejdsgange, optimere processer og undgå dobbeltarbejde.
 7) Opbygning af tillid til data: Interessenter er mere tilbøjelige til at stole på datadrevne beslutninger, når de kan se en klar registrering af dataenes oprindelse og transformationer.
 
-
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](DataLineage.md)
-[![dk](https://img.shields.io/badge/lang-dk-green.svg)](DataLineage-da.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-blue.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
