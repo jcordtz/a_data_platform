@@ -29,7 +29,7 @@ The content of this document is not a "this is best practice", but a "you ought 
 
 ## Content
 
-Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also being covered. These are follows:
+Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also covered in different sections. These are follows:
 
 - [Security](./Security/Security.md)
 - [Legislation](./Security/Legislation.md)

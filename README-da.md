@@ -27,7 +27,7 @@ Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som
 
 ## Indhold
 
-Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende:
+Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende (i egnbe sektioner):
 
 - [Sikkerhed](./Security/Security-da.md)
 - [Lovgivning](./Security/Legislation-da.md)
