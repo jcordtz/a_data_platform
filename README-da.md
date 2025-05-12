@@ -37,6 +37,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 - [Data-operations](./DataOps/DataOps-da.md)
 - [Data Mesh](./DataOps/Data-mesh-da.md)
 - [Selvbetjening](./DataOps/Self-service-da.md)
+- [GenAI og data platformen](./DataOps/GenAI-da.md)
 - [Cloud-miljøer](./DataOps/Cloud-env-da.md)
 - [Navngivnings-standard](./DataOps/Naming-standards-da.md)
 - [Meta Data håndtering](./DataOps/Data-mesh-da.md)

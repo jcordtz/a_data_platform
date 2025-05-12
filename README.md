@@ -39,6 +39,7 @@ Besides covering the main topic on how to create a data platform and the direct 
 - [Data-operations](./DataOps/DataOps.md)
 - [Data Mesh](./DataOps/Data-mesh.md)
 - [Self-service](./DataOps/Self-service.md)
+- [GenAI and the Data Platform](./DataOps/GenAI.md)
 - [Cloud-environments](./DataOps/Cloud-env.md)
 - [Naming Standards](./DataOps/Naming-standards.md)
 - [Meta data handling](./DataOps/Meta-management.md)
