@@ -114,6 +114,8 @@ Louise documented key lessons:
 
 As Louise looked out at the horizon, she saw a future where GenAI wasn’t a threat to data governance—but a partner. A co-pilot that respected boundaries, learned from context, and operated with transparency.
 
+PS - maybe it is worth thinking about where the "person" Louise and the "layout" of this section actually started :wink:
+
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](GenAI-de.md)
