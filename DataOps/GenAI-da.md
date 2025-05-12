@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - GenAI with the Data Platform
+# En data platform - GenAI med data platformen
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
