@@ -11,7 +11,7 @@
 
 ## The Spark
 
-In an office overlooking the see, Louise, a data architect at a global firm, stared at the blinking cursor on her screen. Her team had just been greenlit to integrate Generative AI into their operations—but with a caveat: **data must remain sovereign, secure, and compliant**.
+In an office overlooking the see, Louise, a data architect at a global firm, stared at the blinking cursor on her screen. Her team had just been allowed to integrate Generative AI into their operations—but with a caveat: **data must remain sovereign, secure, and compliant**.
 
 The challenge? Harness the power of GenAI without compromising the sanctity of their data platform built on the premisses described in this document - that is, driven by governance and compliance.
 
