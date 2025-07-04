@@ -96,6 +96,11 @@ Resilience refers to the system’s ability to **withstand and recover** from fa
 - Overlooking security of backup data
 - Failing to update DR plans as systems evolve
 
+## An example of a Data Platform strategy
+
+Based on the "standard" Data Platform as shown in figure 1 the following shows a strategy on what to take a backup of and how to restore.
+![figure 5](../images/english/Slide5.JPG)
+
 ## Conclusion
 
 Effective IT operations in the cloud require a proactive approach to **backup and resilience**. By leveraging cloud-native tools, automating processes, and designing for failure,
