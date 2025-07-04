@@ -9,7 +9,7 @@
 
 I en tid med digital transformation er cloud computing blevet rygraden i moderne it-drift. Selvom skyen tilbyder skalerbarhed, fleksibilitet og omkostningseffektivitet, er det fortsat afgørende at sikre **databeskyttelse** og **operationel modstandsdygtighed** . Denne artikel udforsker bedste praksis, strategier og værktøjer til styring af it-drift i skyen med fokus på **backup** og **robusthed**.
 
-## Forståelse af cloud-it-drift**
+## Forståelse af cloud-it-drift
 
 Cloud IT-drift omfatter administration af infrastruktur, applikationer og tjenester, der hostes i cloud-miljøer. Disse operationer omfatter:
 
@@ -19,7 +19,7 @@ Cloud IT-drift omfatter administration af infrastruktur, applikationer og tjenes
 - **Administration af sikkerhedskopier og genoprettelse efter nedbrud**
 - **Automatisering af rutineopgaver**
 
-## Vigtigheden af backup og modstandsdygtighed**
+## Vigtigheden af backup og modstandsdygtighed
 
 ### Sikkerhedskopiering
 Sikkerhedskopier er afgørende for at beskytte data mod utilsigtet sletning, korruption, ransomware og systemfejl. I skyen skal sikkerhedskopier være:

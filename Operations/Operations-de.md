@@ -9,7 +9,7 @@
 
 Im Zeitalter der digitalen Transformation ist Cloud Computing zum Rückgrat des modernen IT-Betriebs geworden. Die Cloud bietet zwar Skalierbarkeit, Flexibilität und Kosteneffizienz, aber die Gewährleistung von **Datenschutz** und **betrieblicher Resilienz** bleibt von entscheidender Bedeutung. In diesem Artikel werden Best Practices, Strategien und Tools für die Verwaltung des IT-Betriebs in der Cloud mit Schwerpunkt auf **Backup** und **Resilienz** untersucht.
 
-## Verständnis des IT-Betriebs in der Cloud**
+## Verständnis des IT-Betriebs in der Cloud
 
 Der Cloud-IT-Betrieb umfasst die Verwaltung von Infrastrukturen, Anwendungen und Diensten, die in Cloud-Umgebungen gehostet werden. Zu diesen Vorgängen gehören:
 
@@ -19,7 +19,7 @@ Der Cloud-IT-Betrieb umfasst die Verwaltung von Infrastrukturen, Anwendungen und
 - **Verwalten von Backups und Disaster Recovery**
 - **Automatisierung von Routineaufgaben**
 
-## Die Bedeutung von Backup und Ausfallsicherheit**
+## Die Bedeutung von Backup und Ausfallsicherheit
 
 ### Sicherung
 Backups sind unerlässlich, um Daten vor versehentlichem Löschen, Beschädigung, Ransomware und Systemausfällen zu schützen. In der Cloud müssen Backups wie folgt aussehen:
