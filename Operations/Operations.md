@@ -50,7 +50,7 @@ Resilience refers to the system’s ability to **withstand and recover** from fa
 - **Snapshot Backup**: Point-in-time image of a system or volume
 
 ### Backup Best Practices
-- **Follow the 3-2-1 Rule**: 3 copies of data, 2 different media, 1 offsite
+- **Follow the 3-2-1 Rule**: 3 copies of data and code, 2 different media, 1 offsite
 - **Use Cloud-Native Tools**: Azure Backup, AWS Backup, Google Cloud Backup
 - **Automate Retention Policies**: Define how long backups are kept
 - **Test Restores Regularly**: Ensure backups are usable when needed

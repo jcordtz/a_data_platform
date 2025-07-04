@@ -50,7 +50,7 @@ Resilienz bezieht sich auf die Fähigkeit des Systems,  Ausfällen zu standhalte
 - **Snapshot Backup**: Point-in-Time-Image eines Systems oder Volumes
 
 ### Best Practices für Backups
-- **Befolgen Sie die 3-2-1-Regel**: 3 Kopien von Daten, 2 verschiedene Medien, 1 Offsite
+- **Befolgen Sie die 3-2-1-Regel**: 3 Kopien von Daten und Code, 2 verschiedene Medien, 1 Offsite
 - **Verwenden Sie Cloud-native Tools**: AWS Backup, Azure Backup, Google Cloud Backup
 - **Automatisieren von Aufbewahrungsrichtlinien**: Definieren, wie lange Backups aufbewahrt werden
 - **Testen Sie Wiederherstellungen regelmäßig**: Stellen Sie sicher, dass Backups bei Bedarf verwendbar sind.

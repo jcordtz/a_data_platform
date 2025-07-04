@@ -50,7 +50,7 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 - **Snapshot Backup**: Billede af et system eller en enhed
 
 ### Bedste praksis for sikkerhedskopiering
-- **Følg 3-2-1-reglen**: 3 kopier af data, 2 forskellige medier, 1 offsite
+- **Følg 3-2-1-reglen**: 3 kopier af data og kode, 2 forskellige medier, 1 offsite
 - **Brug cloud-native værktøjer**: AWS Backup, Azure Backup, Google Cloud Backup
 - **Automatiser opbevaringspolitikker**: Definer, hvor længe sikkerhedskopier opbevares
 - **Test gendannes regelmæssigt**: Sørg for, at sikkerhedskopier kan bruges, når det er nødvendigt
