@@ -36,6 +36,7 @@ Besides covering the main topic on how to create a data platform and the direct 
 - [Exit-strategy](./Security/Exit-and-risc-strategies.md)
 - [Risk-asesment](./Security/Exit-and-risc-strategies.md)
 - [Data-modelling](./DataModelling/DataModel.md)
+- [Operations](./Operations/Operations.md)
 - [Data-operations](./DataOps/DataOps.md)
 - [Data Mesh](./DataOps/Data-mesh.md)
 - [Self-service](./DataOps/Self-service.md)

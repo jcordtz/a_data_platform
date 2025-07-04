@@ -34,6 +34,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 - [Exit-strategi](./Security/Exit-and-risc-strategies-da.md)
 - [Risikovurdering](./Security/Exit-and-risc-strategies-da.md)
 - [Data-modellering](./DataModelling/DataModel-da.md)
+- [Drift](./Operations/Operations-da.md)
 - [Data-operations](./DataOps/DataOps-da.md)
 - [Data Mesh](./DataOps/Data-mesh-da.md)
 - [Selvbetjening](./DataOps/Self-service-da.md)
