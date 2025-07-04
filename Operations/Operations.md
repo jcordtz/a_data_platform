@@ -7,7 +7,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
-In the era of digital transformation, cloud computing has become the backbone of modern IT operations. While the cloud offers scalability, flexibility, and cost-efficiency, ensuring **data protection** and **operational resilience** remains critical. This article explores best practices, strategies, and tools for managing IT operations in the cloud with a focus on **backup** and **resilience**.
+In the era of digital transformation, cloud computing has become the backbone of modern IT operations. While the cloud offers scalability, flexibility, and cost-efficiency, ensuring **data protection** and **operational resilience** remains critical. This section discusses elements to consider regarding  best practices, strategies, and tools for managing IT operations in the cloud with a focus on **backup** and **resilience**.
 
 ## Understanding Cloud IT Operations
 
@@ -22,37 +22,38 @@ Cloud IT operations encompass the management of infrastructure, applications, an
 ## The Importance of Backup and Resilience
 
 ### Backup
-Backups are essential for protecting data against accidental deletion, corruption, ransomware, and system failures. In the cloud, backups must be:
+Backups are essential for protecting data and code against accidental deletion, corruption, ransomware, and system failures. In the cloud, backups should be:
 
 - **Automated**: Scheduled and policy-driven
 - **Redundant**: Stored across multiple locations or regions
 - **Secure**: Encrypted in transit and at rest
 - **Recoverable**: Easily restorable with minimal downtime
 
+Especially for data platforms with larger amounts of data a backup should also adhere to:
+
+- **Divided**: It must be possible to restore data in a way that operations can begin even though all data has not been restored
+- **Code-aware**: It must be possible to restore code for recreation of the platform independently of the data itself.
+
 ### Resilience
 Resilience refers to the system’s ability to **withstand and recover** from failures. This includes:
 
 - **High availability (HA)**: Minimizing downtime through redundancy
-- **Disaster recovery (DR)**: Rapid recovery from catastrophic events
+- **Disaster recovery (DR)**: Rapid recovery from catastrophic events to a operations state
 - **Fault tolerance**: Continuation of operations despite component failures
-
----
 
 ## Backup Strategies in the Cloud
 
 ### Types of Backups
-- **Full Backup**: A complete copy of all data
+- **Full Backup**: A complete copy of all data and code
 - **Incremental Backup**: Only changes since the last backup
 - **Differential Backup**: Changes since the last full backup
 - **Snapshot Backup**: Point-in-time image of a system or volume
 
 ### Backup Best Practices
 - **Follow the 3-2-1 Rule**: 3 copies of data, 2 different media, 1 offsite
-- **Use Cloud-Native Tools**: AWS Backup, Azure Backup, Google Cloud Backup
+- **Use Cloud-Native Tools**: Azure Backup, AWS Backup, Google Cloud Backup
 - **Automate Retention Policies**: Define how long backups are kept
 - **Test Restores Regularly**: Ensure backups are usable when needed
-
----
 
 ## Building Resilient Cloud Architectures
 
@@ -69,8 +70,6 @@ Resilience refers to the system’s ability to **withstand and recover** from fa
 ### Implement Disaster Recovery Plans
 - Define **Recovery Time Objective (RTO)** and **Recovery Point Objective (RPO)**.
 - Use **pilot light**, **warm standby**, or **multi-site active-active** DR strategies.
-
----
 
 ## Monitoring and Automation
 
@@ -99,7 +98,8 @@ Resilience refers to the system’s ability to **withstand and recover** from fa
 
 ## Conclusion
 
-Effective IT operations in the cloud require a proactive approach to **backup and resilience**. By leveraging cloud-native tools, automating processes, and designing for failure, organizations can ensure business continuity, protect critical data, and maintain trust with stakeholders.
+Effective IT operations in the cloud require a proactive approach to **backup and resilience**. By leveraging cloud-native tools, automating processes, and designing for failure,
+organizations can ensure business continuity, protect critical data, and maintain trust with stakeholders.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)

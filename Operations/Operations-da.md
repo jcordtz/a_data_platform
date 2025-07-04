@@ -7,7 +7,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
-I en tid med digital transformation er cloud computing blevet rygraden i moderne it-drift. Selvom skyen tilbyder skalerbarhed, fleksibilitet og omkostningseffektivitet, er det fortsat afgørende at sikre **databeskyttelse** og **operationel modstandsdygtighed** . Denne artikel udforsker bedste praksis, strategier og værktøjer til styring af it-drift i skyen med fokus på **backup** og **robusthed**.
+I en tid med digital transformation er cloud computing blevet rygraden i moderne it-drift. Selvom cloud'en tilbyder skalerbarhed, fleksibilitet og omkostningseffektivitet, er det fortsat afgørende at sikre **databeskyttelse** og **operationel modstandsdygtighed**. I denne sektion ser vi på nogle af de overvejelser man bør gøre sig i forhold til bedste praksis, strategier og værktøjer til styring af it-drift i cloud'en med fokus på **backup** og **robusthed**.
 
 ## Forståelse af cloud-it-drift
 
@@ -29,14 +29,17 @@ Sikkerhedskopier er afgørende for at beskytte data mod utilsigtet sletning, kor
 - **Sikker**: Krypteret under overførsel og i hvile
 - **Kan gendannes**: Kan nemt gendannes med minimal nedetid
 
+Især for dataplatforme med større mængder data bør en backup også overholde:
+
+- **Opdelt**: Det skal være muligt at gendanne data på en måde, så operationer kan begynde, selvom alle data ikke er blevet gendannet
+- **Code-aware**: Det skal være muligt at gendanne kode til genskabelse af platformen uden at denne er afhængig af selve dataene.
+
 ### Modstandsdygtighed
 Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** efter fejl. Dette omfatter:
 
 - **Høj tilgængelighed (HA)**: Minimering af nedetid gennem redundans
 - **Disaster Recovery (DR)**: Hurtig genopretning efter katastrofale hændelser
 - **Fejltolerance**: Fortsættelse af driften på trods af komponentfejl
-
----
 
 ## Backup-strategier i skyen
 
@@ -51,8 +54,6 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 - **Brug cloud-native værktøjer**: AWS Backup, Azure Backup, Google Cloud Backup
 - **Automatiser opbevaringspolitikker**: Definer, hvor længe sikkerhedskopier opbevares
 - **Test gendannes regelmæssigt**: Sørg for, at sikkerhedskopier kan bruges, når det er nødvendigt
-
----
 
 ## Opbygning af modstandsdygtige cloud-arkitekturer
 
@@ -69,8 +70,6 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 ### Implementer katastrofeberedskabsplaner
 - Definer **Mål for gendannelsestid (RTO)** og **Mål for genoprettelsespunkt (RPO)**.
 - Brug **pilotlys**, **varm standby** eller **multi-site aktiv-aktiv** DR-strategier.
-
----
 
 ## Overvågning og automatisering
 
@@ -99,7 +98,8 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 
 ## Konklusion
 
-Effektiv it-drift i skyen kræver en proaktiv tilgang til **backup og robusthed**. Ved at udnytte cloud-native værktøjer, automatisere processer og designe til fejl kan organisationer sikre forretningskontinuitet, beskytte kritiske data og bevare tilliden hos interessenter.
+Effektiv it-drift i skyen kræver en proaktiv tilgang til **backup og robusthed**. Ved at udnytte cloud-native værktøjer, automatisere processer og designe til
+fejl kan organisationer sikre forretningskontinuitet, beskytte kritiske data og bevare tilliden hos interessenter.
 
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
