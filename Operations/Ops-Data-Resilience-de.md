@@ -1,10 +1,10 @@
 ![microsoft](../images/microsoft.png)
 
-# Eine Datenplattform - Operations
+# Eine Datenplattform - Data Widerstandsfähigkeit (Work in Progress)
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 Im Zeitalter der digitalen Transformation ist Cloud Computing zum Rückgrat des modernen IT-Betriebs geworden. Die Cloud bietet zwar Skalierbarkeit, Flexibilität und Kosteneffizienz, aber die Gewährleistung von **Datenschutz** und **betrieblicher Resilienz** bleibt von entscheidender Bedeutung. In diesem Artikel werden Best Practices, Strategien und Tools für die Verwaltung des IT-Betriebs in der Cloud mit Schwerpunkt auf **Backup** und **Resilienz** untersucht.
@@ -41,7 +41,7 @@ Resilienz bezieht sich auf die Fähigkeit des Systems,  Ausfällen zu standhalte
 - **Disaster Recovery (DR)**: Schnelle Wiederherstellung nach Katastrophenereignissen
 - **Fehlertoleranz**: Fortführung des Betriebs trotz Komponentenausfällen
 
-Diese Elemente werden im Kontext der Datenplattform ausführlicher erörtert, siehe hier – [Datenresilienz](../Operations/Ops-Data-Resilience-de.md).
+
 
 ## Backup-Strategien in der Cloud
 
@@ -104,7 +104,7 @@ Ein effektiver IT-Betrieb in der Cloud erfordert einen proaktiven Ansatz für **
 Prozessen und die Entwicklung für Ausfälle können Unternehmen die Geschäftskontinuität sicherstellen, kritische Daten schützen und das Vertrauen der Stakeholder aufrechterhalten.
 
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

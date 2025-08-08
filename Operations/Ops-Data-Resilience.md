@@ -1,10 +1,10 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Operations
+# A data platform - Data Resilience (Work in Progress)
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 In the era of digital transformation, cloud computing has become the backbone of modern IT operations. While the cloud offers scalability, flexibility, and cost-efficiency, ensuring **data protection** and **operational resilience** remains critical. This section discusses elements to consider regarding best practices, strategies, and tools for managing IT operations in the cloud with a focus on **backup** and **resilience**.
@@ -43,7 +43,7 @@ Resilience refers to the system’s ability to **withstand and recover** from fa
 - **Disaster recovery (DR)**: Rapid recovery from catastrophic events to a operations state
 - **Fault tolerance**: Continuation of operations despite component failures
 
-These elements are discussed in further details in the context of the data platform, please see here - [Data Resilience](../Operations/Ops-Data-Resilience.md).
+These elements are discussed in further details in the context of the data platform, please click the above links.
 
 ## Backup Strategies in the Cloud
 
@@ -130,7 +130,7 @@ of data and hence the re-establish of the services you had in the **transform ar
 Effective IT operations in the cloud require a proactive approach to **backup and resilience**. By leveraging cloud-native tools, automating processes, and designing for failure,
 organizations can ensure business continuity, protect critical data, and maintain trust with stakeholders.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

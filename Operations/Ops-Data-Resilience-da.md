@@ -1,10 +1,10 @@
 ![microsoft](../images/microsoft.png)
 
-# En data platform - Operations
+# En data platform - Data modstandsdygtighed (Work in progress)
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 I en tid med digital transformation er cloud computing blevet rygraden i moderne it-drift. Selvom cloud'en tilbyder skalerbarhed, fleksibilitet og omkostningseffektivitet, er det fortsat afgørende at sikre **databeskyttelse** og **operationel modstandsdygtighed**. I denne sektion ser vi på nogle af de overvejelser man bør gøre sig i forhold til bedste praksis, strategier og værktøjer til styring af it-drift i cloud'en med fokus på **backup** og **robusthed**.
@@ -40,8 +40,6 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 - **Høj tilgængelighed (HA)**: Minimering af nedetid gennem redundans
 - **Disaster Recovery (DR)**: Hurtig genopretning efter katastrofale hændelser
 - **Fejltolerance**: Fortsættelse af driften på trods af komponentfejl
-
-Disse elementer diskuteres yderligere i forbindelse med dataplatformen, se venligst her - [Data Resilience](../Operations/Ops-Data-Resilience-da.md).
 
 ## Backup-strategier i skyen
 
@@ -104,7 +102,7 @@ Effektiv it-drift i skyen kræver en proaktiv tilgang til **backup og robusthed*
 fejl kan organisationer sikre forretningskontinuitet, beskytte kritiske data og bevare tilliden hos interessenter.
 
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
