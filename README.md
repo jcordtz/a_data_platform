@@ -24,7 +24,7 @@ The content of this document is not a "this is best practice", but a "you ought 
 > [!NOTE]
 > This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
 > The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
-> the different implementations we have of dataplatforms in use.
+> the different implementations we have of data platforms in use.
 >
 
 ## Content
@@ -34,9 +34,9 @@ Besides covering the main topic on how to create a data platform and the direct 
 - [Security](./Security/Security.md)
 - [Legislation](./Security/Legislation.md)
 - [Exit-strategy](./Security/Exit-and-risc-strategies.md)
-- [Risk-asesment](./Security/Exit-and-risc-strategies.md)
+- [Risk-assessment](./Security/Exit-and-risc-strategies.md)
 - [Data-modelling](./DataModelling/DataModel.md)
-- [Operations](./Operations/Operations.md)
+- [Operations/Resilience](./Operations/Operations.md)
 - [Data-operations](./DataOps/DataOps.md)
 - [Data Mesh](./DataOps/Data-mesh.md)
 - [Self-service](./DataOps/Self-service.md)

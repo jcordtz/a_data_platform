@@ -32,7 +32,7 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 - [Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)
 - [Risikobewertung](./Security/Exit-and-risc-strategies-de.md)
 - [Data-Modellierung](./DataModelling/DataModel-de.md)
-- [Operationen](./Operations/Operations-de.md)
+- [Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)
 - [Data-Operationen](./DataOps/DataOps-de.md)
 - [Data Mesh](./DataOps/Data-mesh-de.md)
 - [Selbstbedienung](./DataOps/Self-service-de.md)
