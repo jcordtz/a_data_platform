@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# Eine Datenplattform - Data Widerstandsfähigkeit (Work in Progress/Vom Co-Piloten erstellte Inhalte/Es mangelt eine menschlicher Bearbeitung)
+# Eine Datenplattform - Data Widerstandsfähigkeit <span style="font-size:50%;">(Work in Progress/Vom Co-Piloten erstellte Inhalte/Es mangelt eine menschlicher Bearbeitung)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)

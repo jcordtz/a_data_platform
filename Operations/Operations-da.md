@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# En data platform - Operations (Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
+# En data platform - Operations <span style="font-size:50%;">(Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)

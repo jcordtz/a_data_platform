@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Data Resilience (Work in Progress/CoPilot generated content/lacks human editing)
+# A data platform - Data Resilience <span style="font-size:50%;">(Work in Progress/CoPilot generated content/lacks human editing)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
