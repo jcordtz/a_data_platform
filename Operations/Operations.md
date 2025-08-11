@@ -3,6 +3,7 @@
 # A data platform - Operations <span style="font-size:8pt;">(Work in Progress/CoPilot generated content/lacks human editing)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
+<!-- Alt text: Blue badge labeled lang en with a link to the English version of the Operations documentation. The badge has a simple, modern design and is set against a neutral background, conveying a clear and professional tone. -->
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
