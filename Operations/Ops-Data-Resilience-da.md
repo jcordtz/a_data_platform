@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# En data platform - Data modstandsdygtighed <span style="font-size:50%;">(Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
+# En data platform - Data modstandsdygtighed (Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
