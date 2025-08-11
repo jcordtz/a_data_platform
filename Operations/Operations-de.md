@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# Eine Datenplattform - Operations
+# Eine Datenplattform - Operations (Work in Progress/Vom Co-Piloten erstellte Inhalte/Es mangelt eine menschlicher Bearbeitung)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)

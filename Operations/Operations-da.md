@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# En data platform - Operations
+# En data platform - Operations (Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
@@ -41,7 +41,7 @@ Modstandsdygtighed refererer til systemets evne til at **modstå og komme sig** 
 - **Disaster Recovery (DR)**: Hurtig genopretning efter katastrofale hændelser
 - **Fejltolerance**: Fortsættelse af driften på trods af komponentfejl
 
-Disse elementer diskuteres yderligere i forbindelse med dataplatformen, se venligst her - [Data Resilience](../Operations/Ops-Data-Resilience-da.md).
+Disse elementer diskuteres yderligere i forbindelse med dataplatformen, se venligst her - [Data Resilience](../Operations/Ops-Data-Resilience.md).
 
 ## Backup-strategier i skyen
 
