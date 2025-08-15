@@ -1,6 +1,8 @@
 ![microsoft](../images/microsoft.png)
 
-# En data platform - Data modstandsdygtighed (Work in progress/Co-pilot dannet indhold/mangler menneskelig redigering)
+# En data platform - Dataresiliens
+
+**Work in Progress. Content is CoPilot generated and lacks human editing**
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)

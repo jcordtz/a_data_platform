@@ -1,8 +1,8 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Operations 
+# A data platform - Operations
 
-### Work in Progress/CoPilot generated content/lacks human editing
+**Work in Progress. Content is CoPilot generated and lacks human editing**
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
