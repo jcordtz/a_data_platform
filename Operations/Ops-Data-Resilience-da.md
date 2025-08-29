@@ -2,7 +2,7 @@
 
 # En data platform - Dataresiliens
 
-**Work in Progress. Content is CoPilot generated and lacks human editing**
+**Work in Progress. Content is CoPilot generated and currently lacks human editing**
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)

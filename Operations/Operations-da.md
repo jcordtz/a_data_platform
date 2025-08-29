@@ -2,7 +2,7 @@
 
 # En data platform - Operations
 
-**Work in Progress. Content is CoPilot generated and lacks human editing**
+**Work in Progress. Content is CoPilot generated and currently lacks human editing**
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
