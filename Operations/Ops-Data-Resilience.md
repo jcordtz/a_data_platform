@@ -56,25 +56,41 @@ Both are critical metrics for a disaster recovery plan, guiding the frequency of
 
 This also means that you can not just define one backup strategy, but need to have a backup framework that can support multiple different ways of doing backup/restore.
 
-Their are some **Best Practices** that could be worth considering.
-One being to follow the **3-2-1 rule** saying that you 3 copies of data distributed on 2 different media where 1 is offsite. Secondly always automate backups and test recovery processes regularly.
+Their are some **Best Practices** that ought to be followed.
+
+First and foremost always automate backups and test recovery processes regularly.
+
+Secondly follow the **3-2-1 rule** saying that you have 3 copies of the data distributed on 2 different media where 1 is offsite.
+
+Azure actually has this rule build in. Storage in Azure is always stored in 3 copies - either as Local Redundant Storage (LRS) where 3 copies are in the same datacenter or Zone-redundant storage (ZRS) where the 3 copies are stored in 3 different datacenters in the same region. Regarding the "2 different media" rule this is accomplished in Azure using Geo-Redundant storage (GRS) or Geo-Zone-redundant storage where the data copies is also in a secondary region.
+
+Azure offers to handle the offsite part of the rule using 3rd party backup tools like Commvault.
 
 ### 3. Disaster Recovery Planning (DRP)
 
-- **Definition**: A documented, tested plan for restoring IT systems after a disaster.
-- **Includes**:
-  - Recovery Time Objective (RTO)
+It is of essence that you have a documented and (regular) tested plan for restoring IT systems after a disaster.
+
+This plan describes in which order the different systems must be restored and which might need to wait for others having been restored. 
+
+And for each of the systems in question the following is documented:
+
+  - Recover Time Objective (RTO)
   - Recovery Point Objective (RPO)
+  - Can the system be used after partial restore has been done ?
   - Roles and responsibilities
   - Communication plans
 
+
 ### 4. High Availability (HA)
 
-- **Definition**: Systems designed to operate continuously without failure.
-- **Techniques**:
-  - Load balancing
-  - Failover clusters
+A way of avoiding a *catastrophic* disaster is to design/buy/implement systems to support a **high avialability** architecture. Such systems can operate continuously without failure.
+
+The **Techniques** used to make such systems are:
+  - Load balancing, ensuring that you have more than 1 instance of the system and hence can *guide* a workload to the server being most idle. You can often also introduce or remove servers from such a setup depending on the workload of the system.
+  - Failover clusters is a technique where a secondary machine is able to take over in case of malfunction of a primary server.
   - Active-active or active-passive configurations
+
+From a data point of view it is of high importance that transactional control is considered where this is required.
 
 ### 5. Data Replication
 
