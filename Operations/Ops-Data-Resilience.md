@@ -13,13 +13,14 @@
 
 ## Introduction
 
-In today’s digital world, data is the lifeblood of organizations. From customer records to operational data, the ability to access and protect this information is critical. **Data resiliency** refers to an organization’s ability to ensure data remains available, accurate, and secure—even in the face of disruptions such as hardware failures, cyberattacks, or natural disasters.
+In today’s digital world, data is the lifeblood of organizations. From customer records to operational data, the ability to access and protect this information is critical. **Data resiliency** refers to an organization’s ability to ensure data remains available, accurate, and secure — even in the face of disruptions such as hardware failures, cyber attacks, or natural disasters.
 
-This article explores the concept of data resiliency, its importance, and practical strategies to implement it effectively.
+This part explores the concept of data resiliency, its importance, and practical strategies to implement it effectively.
+Even though it is part of the description of a data platform most of the elements discussed in this part can be used across any workload where data is an important part.
 
 ## What Is Data Resiliency?
 
-**Data resiliency** is the capacity of a system to recover quickly from any disruption and continue operating with minimal downtime or data loss. It encompasses:
+**Data resiliency** is the capacity of a system to recover as quickly as possible from any disruption and continue operating with no/minimal downtime or data loss. It encompasses:
 
 - **Data availability**: Ensuring data is accessible when needed.
 - **Data integrity**: Maintaining accuracy and consistency of data.
