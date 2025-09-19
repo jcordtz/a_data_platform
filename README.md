@@ -47,9 +47,28 @@ Besides covering the main topic on how to create a data platform and the direct 
 
 ## Background
 
+>[!NOTE]
+>In this section, the word "data" is used to refer to any representation of data (text/images/sound....)
+
 As shown in this figure the discussion in this document is about what data can be used for.
 
-![Figure 0](images/english/Slide24.JPEG)
+In the center we have a "piece of data", that is any information that we would like to use.
+
+This "piece" of data is most likely being used in different ways. Here is outlined the following:
+
+1. **Reporting** where we provide the data through some application that makes it possible for me to read "something" out of the "numbers". Most likely this would be some kind of graph.
+2. **Analytics** in this situation the data becomes mores active as they will be used by the end-user to work further and get answers to new questions. This is most likely done using a BI tool like PowerBI.
+3. **AI/ML/GenAI** here the data is used for "simulations/predictions". And programming takes place, both programming using code as well as no-code/low-code tools. The programming is in most case done using Python and the tools you would meet here covers products like Visual Studio/Eclipse over Azure AI Foundry to CoPilot Studio. And the more you use no-code tools the more the language changes from Python to natural language ("ChatGPT talk").
+4. **Shareable** when you have data that you find interesting you most likely wants to be able share those. In most case this needs to be a controlled operation so that we are sure that the receiving part is correct reflecting the politics we should have covering this.
+5 **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and *datasets*.
+6 **Compliance/Governance** covers the ability to document who is accessing what and ensuring this stays within our defined politics.
+7 **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
+8 **Sources** covers how and what data is brought into the data platform. See next figure.
+
+![Figure 0](images/english/Slide24.jpeg)
+
+
+![Figure 0.0](images/english/Slide25.jpeg)
 
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
 
