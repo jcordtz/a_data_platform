@@ -47,9 +47,15 @@ Besides covering the main topic on how to create a data platform and the direct 
 
 ## Background
 
+As shown in this figure the discussion in this document is about what data can be used for.
+
+![Figure 0](images/english/Slide24.JPEG)
+
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
 
 This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
+
+
 
 > [!NOTE]
 > The document is mainly based on Microsoft technology components.
