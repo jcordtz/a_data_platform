@@ -21,10 +21,10 @@ This document explains how you could create a data platform that will be able to
 
 The content of this document is not a "this is best practice", but a "you ought to consider this" when establishing your data platform.
 
-> [!NOTE]
-> This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
-> The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
-> the different implementations we have of data platforms in use.
+>[!NOTE]
+>This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
+>The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
+>the different implementations we have of data platforms in use.
 >
 
 ## Content
@@ -189,8 +189,8 @@ In the **publish area**, we create the *datasets* that are needed to meet the va
 
 The **consume area** is where the end users of the data platform will access the *datasets*  from the **publish area** using the tools they find most suitable.
 
-> [!NOTE]
-> The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the **ingest area**, *silver* is **transform** and *gold* is **publish**. The *medallion architecture* does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
+>[!NOTE]
+>The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the **ingest area**, *silver* is **transform** and *gold* is **publish**. The *medallion architecture* does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
 
 ### Data platform and the Data Mesh paradigm
 
@@ -521,8 +521,8 @@ Tokenization and hash functions can be used to pseudonymize data.
 
 In this case you protect your *data* with an encryption key and only the people within the Dictionary of this data storage will be able to use the key. This key could be held in an Azure Key Vault.
 
-> [!NOTE]
-> This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
+>[!NOTE]
+>This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
 
 #### “No relations” *datasets*
 
@@ -575,8 +575,8 @@ This also represents how the data platform should be able to exactly support the
 The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites best in
 regards of your business opportunities and challenges.
 
-> [!NOTE]
-> These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
+>[!NOTE]
+>These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
 [Azure Based](Microsoft/Azure/Azure.md) - using PaaS services from Azure
 

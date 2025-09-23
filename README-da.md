@@ -85,8 +85,8 @@ Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret
 
 Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
 
-> [!Note]
-> Dokumentet er hovedsagligt baseret på Microsoft teknologi komponenter.
+>[!Note]
+>Dokumentet er hovedsagligt baseret på Microsoft teknologi komponenter.
 
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.
@@ -206,9 +206,8 @@ I *publish* området skabes de *datasæt*, der er nødvendige for at opfylde de 
 
 *Publish* området er det sted, hvor slutbrugerne af dataplatformen får adgang til de datasæt de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
 
-> [!NOTE]
-> Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor *bronze* er **ingest området**, *sølv* er **transform** og *guld* er **publish**. *Medallion* arkitekturen indeholder ikke
-et **consume område**. Dette dokument vil bruge begreberne **ingest**, **transform**, **publish**, og **consume** da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
+>[!NOTE]
+>Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor *bronze* er **ingest området**, *sølv* er **transform** og *guld* er **publish**. *Medallion* arkitekturen indeholder ikke et **consume område**. Dette dokument vil bruge begreberne **ingest**, **transform**, **publish**, og **consume** da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
 
 ### Dataplatform og Data Mesh-paradigmet
 
@@ -539,7 +538,8 @@ I dette tilfælde beskytter man ens data med en krypteringsnøgle, og kun person
 
 Denne nøgle kan opbevares i en Azure Key Vault.
 
-**BEMÆRK: Dette er ikke en gyldig GDPR "beskyttelsesmekanisme", fordi den "kun" beskytter adgangen til dataene, ikke brugen af dataene.
+>[!Note]
+>Dette er ikke en gyldig GDPR "beskyttelsesmekanisme", fordi den "kun" beskytter adgangen til dataene, ikke brugen af dataene.
 
 #### Datasæt af typen "Ingen relationer"
 
@@ -589,8 +589,8 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester. 
 Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer bedst i forhold til de muligheder og udfordringer man måtte have.
 
-> [!Note]
-> Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
+>[!Note]
+>Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
 [Azure Baseret](Microsoft/Azure/Azure-da.md) - en data platform lavet v.h.a. Azure PaaS Services
 

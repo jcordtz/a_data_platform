@@ -19,9 +19,9 @@ In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden k
 
 Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
 
-> [!Hinweis]
-> Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
-> Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
+>[!Note]
+>Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
+>Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
 
 ## Inhalt
 
@@ -82,8 +82,8 @@ Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu
 
 Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
-> [!Note]
-> Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.
+>[!Note]
+>Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.
 
 ## Die Vision
 Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind.
@@ -201,8 +201,8 @@ Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt
 
 Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
-> [!Hinweis]
-> Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der **Autnahmebereich**, *Silber* **Transformieren** und *Gold* **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+>[!Note]
+>Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der **Autnahmebereich**, *Silber* **Transformieren** und *Gold* **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Datenplattform und das Data-Mesh-Paradigma
 
@@ -255,7 +255,7 @@ Oder geben Sie detailliertere Informationen über ein Torereignis in einem Fußb
 
 Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat. Das System, das den Fahrgästen am Bahnhof die Informationen anzeigt, erhält sofort die Echtzeitdaten über die Verspätung und aktualisiert die Schilder entsprechend. Dabei werden die Daten selbst nur wenig verarbeitet.
 
-! [Abbildung 3](images/german/Slide3.JPG)
+![Abbildung 3](images/german/Slide3.JPG)
 
 *Abbildung 3*
 
@@ -269,7 +269,7 @@ Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-L
 
 RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
 
-! [Microsoft RAG-Architektur](images/architecture-diagram.png)
+![Microsoft RAG-Architektur](images/architecture-diagram.png)
 *Microsoft RAG-Architektur*
 
 Die Entscheidung, welches Informationsabrufsystem verwendet werden soll, ist entscheidend, da es die Eingaben für das LLM bestimmt. Das Informationsabrufsystem sollte Folgendes bieten:
@@ -522,7 +522,8 @@ In diesem Fall schützen Sie Ihre Daten mit einem Verschlüsselungsschlüssel, u
 
 Dieser Schlüssel kann in einem Azure Key Vault gespeichert werden.
 
-**HINWEIS: Dies ist kein gültiger DSGVO-"Schutzmechanismus", da er "nur" den Zugriff auf die Daten schützt, nicht die Verwendung der Daten.
+>![Note]
+>Dies ist kein gültiger DSGVO-"Schutzmechanismus", da er "nur" den Zugriff auf die Daten schützt, nicht die Verwendung der Daten.
 
 
 #### Datensatz "Keine Beziehungen"
@@ -572,8 +573,8 @@ Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsa
 
 Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
 
-> [! Hinweis]
-> Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
+>[!Note]
+>Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
 [Azure-basiert](Microsoft/Azure/Azure-de.md) – Verwendung von PaaS-Diensten von Azure
 
