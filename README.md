@@ -48,7 +48,7 @@ Besides covering the main topic on how to create a data platform and the direct 
 ## Background
 
 >[!NOTE]
->In this section, the word "data" is used to refer to any representation of data (text/images/sound....)
+>In this section, the word "data" is used to refer to any representation of data (text/images/sound/numbers....)
 
 As shown in this figure the discussion in this document is about what data can be used for.
 

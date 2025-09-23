@@ -43,9 +43,44 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 
 ## Hintergrund
 
-Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren möchten.
+>[! HINWEIS]
+>In diesem Abschnitt wird das Wort "Daten" verwendet, um sich auf jede Darstellung von Daten (Text/Bilder/Ton/Zahlen...) zu beziehen.
 
-Dieses Konzept einer Datenplattform kann auf andere Datenplattformansätze angewendet werden, ist aber (derzeit) nicht abgedeckt.
+Wie in dieser Abbildung gezeigt, geht es in diesem Dokument darum, wofür Daten verwendet werden können.
+
+In der Mitte haben wir ein "Stück Daten", d.h. alle Informationen, die wir verwenden möchten.
+
+Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verwendet. Hier wird folgendes skizziert:
+
+1. **Reporting** , bei dem wir die Daten über eine Anwendung bereitstellen, die es mir ermöglicht, "etwas" aus den "Zahlen" herauszulesen. Höchstwahrscheinlich wäre dies eine Art Diagramm.
+2. **Analytics** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
+3. **AI/ML/GenAI** hier werden die Daten für "Simulationen/Vorhersagen" verwendet. Und es wird programmiert, sowohl mit Code als auch mit No-Code/Low-Code-Tools. Die Programmierung erfolgt in den meisten Fällen mit Python und die Tools, die Sie hier treffen würden, decken Produkte wie Visual Studio/Eclipse über Azure AI Foundry bis hin zu CoPilot Studio ab. Und je mehr Sie No-Code-Tools verwenden, desto mehr ändert sich die Sprache von Python zu natürlicher Sprache ("ChatGPT-Gespräch").
+4. **Teilbar** Wenn Sie Daten haben, die Sie interessant finden, möchten Sie diese höchstwahrscheinlich teilen können. In den meisten Fällen muss dies eine kontrollierte Operation sein, damit wir sicher sind, dass der empfangende Teil korrekt ist und die Politik widerspiegelt, die wir darüber haben sollten.
+5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *Daten* und *Datensätze* behandelt.
+6. **Compliance/Governance** umfasst die Möglichkeit, zu dokumentieren, wer auf was zugreift, und sicherzustellen, dass dies innerhalb unserer definierten Richtlinien bleibt.
+7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und die Erstellung neuer Datensätze selbst anfordern kann und dass sein Prozess automatisch von der Datenplattform abgewickelt wird.
+8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
+
+![Abbildung 0](images/english/Slide24.jpeg)
+
+Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten.
+In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
+
+![Abbildung 0.0](images/english/Slide25.jpeg)
+
+Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
+
+1. Die Berichtsfunktionen werden dem Endbenutzer direkt von der Anwendung zur Verfügung gestellt - möglicherweise über eine gemeinsame "Schnittstelle", wie in der Abbildung gezeigt.
+2. Alle Daten werden in die Datenplattform geschoben/gezogen und von hier aus offengelegt.
+3. Nur Daten, die mit anderen Anwendungsdaten kombiniert werden müssen, werden in die Datenplattform gepusht/gezogen.
+
+Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu tun ist.
+
+>[! HINWEIS]
+>Es ist erforderlich, dass Sie 2 und 3 arbeiten lassen, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Daten dieser Anwendungen erhalten können und dass es
+>Dokumentierte und gepflegte Schnittstelle basierend auf einem Standard wie REST API, SQL oder Python.
+
+Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
 > [!Hinweis]
 > Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.

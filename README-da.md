@@ -46,9 +46,44 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 
 ## Baggrund
 
-Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der har et ønske om at strømline oprettelsen af en dataplatform ved hjælp af cloud tjenester til analytiske opgaver.
+>[! BEMÆRK]
+>I dette afsnit bruges ordet "data" til at henvise til enhver repræsentation af data (tekst/billeder/lyd/tal....)
 
-Dette koncept med en dataplatform kan anvendes på andre dataplatforms tilgange, men det er (i øjeblikket) ikke dækket.
+Som det fremgår af denne figur, handler diskussionen i dette dokument om, hvad data kan bruges til.
+
+I midten har vi et "stykke data", det vil sige enhver information, som vi gerne vil bruge.
+
+Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her er skitseret følgende:
+
+1. **Rapportering** , hvor vi leverer dataene gennem en applikation, der gør det muligt for mig at læse "noget" ud af "tallene". Mest sandsynligt ville dette være en slags graf.
+2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
+3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, du vil møde her, dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere du bruger no-code-værktøjer, jo mere skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
+4. **Delbar** : Når du har data, som du finder interessante, vil du højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til at dække dette.
+5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *data* og *datasæt*.
+6. **Compliance/Governance** dækker over evnen til at dokumentere, hvem der har adgang til hvad, og sikre, at dette forbliver inden for vores definerede politik.
+7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og oprettelse, hvis nye datasæt selv opstår, og at hans proces håndteres automatisk af dataplatformen.
+8. **Kilder** dækker, hvordan og hvilke data der bringes ind i dataplatformen. Se næste figur.
+
+![Figur 0](images/english/Slide24.jpeg)
+
+Når vi diskuterer, hvor data kommer fra, hvor de bliver brugt, vil det være sådan, at (højst sandsynligt) mange applikationer, du har, allerede indeholder en form for rapporterings-/analysedel.
+I dette tilfælde er det meget værd at træffe en beslutning om, hvordan du udnytter dette på den rigtige måde til dine formål.
+
+![Figur 0.0](images/english/Slide25.jpeg)
+
+De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
+
+1. Rapporteringsmulighederne eksponeres direkte fra applikationen til slutbrugeren - måske gennem en fælles "grænseflade" som vist på figuren.
+2. Alle data skubbes/trækkes ind i dataplatformen og eksponeres derefter herfra.
+3. Kun data, der skal kombineres med andre applikationsdata, skubbes/trækkes ind i dataplatformen.
+
+Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
+
+>[! BEMÆRK]
+>Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse ansøgninger, og at der er
+>dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python.
+
+Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
 
 > [!Note]
 > Dokumentet er hovedsagligt baseret på Microsoft teknologi komponenter.
