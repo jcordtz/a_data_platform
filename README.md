@@ -60,16 +60,29 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 2. **Analytics** in this situation the data becomes mores active as they will be used by the end-user to work further and get answers to new questions. This is most likely done using a BI tool like PowerBI.
 3. **AI/ML/GenAI** here the data is used for "simulations/predictions". And programming takes place, both programming using code as well as no-code/low-code tools. The programming is in most case done using Python and the tools you would meet here covers products like Visual Studio/Eclipse over Azure AI Foundry to CoPilot Studio. And the more you use no-code tools the more the language changes from Python to natural language ("ChatGPT talk").
 4. **Shareable** when you have data that you find interesting you most likely wants to be able share those. In most case this needs to be a controlled operation so that we are sure that the receiving part is correct reflecting the politics we should have covering this.
-5 **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and *datasets*.
-6 **Compliance/Governance** covers the ability to document who is accessing what and ensuring this stays within our defined politics.
-7 **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
-8 **Sources** covers how and what data is brought into the data platform. See next figure.
+5. **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and *datasets*.
+6. **Compliance/Governance** covers the ability to document who is accessing what and ensuring this stays within our defined politics.
+7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
+8. **Sources** covers how and what data is brought into the data platform. See next figure.
 
 ![Figure 0](images/english/Slide24.jpeg)
 
+When we are discussing where data comes from at where they are being used it will be so that (most likely) many applications you have already contains some kind of reporting/analytics part.
+In this case it very much worth to make a decision on how to utilize this in the right way for your purposes.
 
 ![Figure 0.0](images/english/Slide25.jpeg)
 
+The topics to discuss would then be (maybe per application):
+
+1. The reporting capabilities is exposed directly from the application to the end-user - maybe through a common "interface" as shown on the figure.
+2. All data is pushed/pulled into the data platform and then from here exposed.
+3. Only data that needs to be combined with other applications data is pushed/pulled into the data platform.
+
+Any combination of these is "correct", the important part is that it is documented what to do.
+
+>[!NOTE]
+>It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can get you data of theses applications and that their is
+>documented and maintained interface based on a standard like REST API, SQL or Python.
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
 
 This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
