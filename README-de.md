@@ -43,7 +43,7 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 
 ## Hintergrund
 
->[!HINWEIS]
+>[!Note]
 >In diesem Abschnitt wird das Wort "Daten" verwendet, um sich auf jede Darstellung von Daten (Text/Bilder/Ton/Zahlen...) zu beziehen.
 
 Wie in dieser Abbildung gezeigt, geht es in diesem Dokument darum, wofür Daten verwendet werden können.
@@ -76,13 +76,13 @@ Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
 Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu tun ist.
 
->[!HINWEIS]
+>[!Note]
 >Es ist erforderlich, dass Sie 2 und 3 arbeiten lassen, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Daten dieser Anwendungen erhalten können und dass es
 >Dokumentierte und gepflegte Schnittstelle basierend auf einem Standard wie REST API, SQL oder Python.
 
 Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
-> [!Hinweis]
+> [!Note]
 > Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.
 
 ## Die Vision
