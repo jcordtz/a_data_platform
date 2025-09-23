@@ -8,12 +8,10 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
+
 <style>
-    /* initialise the counter */
     body { counter-reset: figureCounter; }
-    /* increment the counter for every instance of a figure even if it doesn't have a caption */
     figure { counter-increment: figureCounter; }
-    /* prepend the counter to the figcaption content */
     figure figcaption:before {
         content: "Fig " counter(figureCounter) ": "
     }
