@@ -53,7 +53,7 @@ In der Mitte haben wir ein "Stück Daten", d.h. alle Informationen, die wir verw
 Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verwendet. Hier wird folgendes skizziert:
 
 1. **Reporting** , bei dem wir die Daten über eine Anwendung bereitstellen, die es mir ermöglicht, "etwas" aus den "Zahlen" herauszulesen. Höchstwahrscheinlich wäre dies eine Art Diagramm.
-2. **Analytics** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
+2. **Analyse** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
 3. **AI/ML/GenAI** hier werden die Daten für "Simulationen/Vorhersagen" verwendet. Und es wird programmiert, sowohl mit Code als auch mit No-Code/Low-Code-Tools. Die Programmierung erfolgt in den meisten Fällen mit Python und die Tools, die Sie hier treffen würden, decken Produkte wie Visual Studio/Eclipse über Azure AI Foundry bis hin zu CoPilot Studio ab. Und je mehr Sie No-Code-Tools verwenden, desto mehr ändert sich die Sprache von Python zu natürlicher Sprache ("ChatGPT-Gespräch").
 4. **Teilbar** Wenn Sie Daten haben, die Sie interessant finden, möchten Sie diese höchstwahrscheinlich teilen können. In den meisten Fällen muss dies eine kontrollierte Operation sein, damit wir sicher sind, dass der empfangende Teil korrekt ist und die Politik widerspiegelt, die wir darüber haben sollten.
 5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *Daten* und *Datensätze* behandelt.
@@ -61,12 +61,12 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und die Erstellung neuer Datensätze selbst anfordern kann und dass sein Prozess automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
-![Abbildung 0](images/english/Slide24.jpeg)
+![Abbildung 1](images/german/Slide24.jpeg)
 
 Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten.
 In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
 
-![Abbildung 0.0](images/english/Slide25.jpeg)
+![Abbildung 2](images/german/Slide25.jpeg)
 
 Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
@@ -143,11 +143,11 @@ Die in diesem Dokument beschriebene Datenplattform basiert auf Cloud-Technologie
 
 Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit einem solchen Cloud-Ansatz erreicht werden können.
 
-![Abbildung 1](images/german/Slide1.JPG)
+![Abbildung 3](images/german/Slide1.JPG)
 
-*Abbildung 1*
+*Abbildung 3*
 
-Wie in *Abbildung 1* dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
+Wie in *Abbildung 3* dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
 
 Infrastructure as a Service (IaaS) – Dies ermöglicht die Erstellung verschiedener Arten von virtuellen Maschinen und die Installation der gesamten darauf benötigten Software. Dabei garantiert der Cloud-Anbieter den Service bis auf Betriebssystemebene.  Beim IaaS-Ansatz fokussieren wir uns darauf, welche Produkte wir einsetzen wollen und liefern so die passenden "Maschinen" dafür.
 
@@ -173,12 +173,12 @@ Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werde
 Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. Damit soll sichergestellt werden, dass 
 wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
 
-![Abbildung 2](images/german/Slide2.JPG)
+![Abbildung 4](images/german/Slide2.JPG)
 
-*Abbildung 2*
+*Abbildung 4*
 
 Die Bereiche repräsentieren verschiedene Zustände der Reise von Daten zu Datensätzen und damit zu Berichten und Analysen.
-In Bezug auf *Abbildung 2* können die verschiedenen Bereiche wie folgt beschrieben werden:
+In Bezug auf *Abbildung 4* können die verschiedenen Bereiche wie folgt beschrieben werden:
 
 **Quellsysteme** sind alle Systeme, aus denen Daten extrahiert (batch) oder von denen Daten gesendet (streaming) werden sollen.
 
@@ -255,9 +255,9 @@ Oder geben Sie detailliertere Informationen über ein Torereignis in einem Fußb
 
 Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat. Das System, das den Fahrgästen am Bahnhof die Informationen anzeigt, erhält sofort die Echtzeitdaten über die Verspätung und aktualisiert die Schilder entsprechend. Dabei werden die Daten selbst nur wenig verarbeitet.
 
-![Abbildung 3](images/german/Slide3.JPG)
+![Abbildung 5](images/german/Slide3.JPG)
 
-*Abbildung 3*
+*Abbildung 5*
 
 Diese *Daten* werden aber **auch** in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. Dieser 
 
@@ -388,11 +388,11 @@ Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integri
 Im Abschnitt [Sicherheit/Security-de.md] finden Sie eine viel detailliertere Diskussion des Sicherheitsaspekts.
 In diesem Abschnitt geht es weiter mit einigen weiteren technischen Möglichkeiten.
 
-Abbildung 4 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
+Abbildung 6 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 
-![Abbildung 4](images/german/Slide8.JPG)
+![Abbildung 6](images/german/Slide8.JPG)
 
-*Abbildung 4*
+*Abbildung 6*
 
 **Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
 Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
@@ -436,9 +436,9 @@ Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepfl
 
 Die folgende Abbildung zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
 
-![Abbildung 5](images/german/Slide5.JPG) 
+![Abbildung 7](images/german/Slide5.JPG) 
 
-*Abbildung 5*
+*Abbildung 7*
 
 Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel".
 
@@ -544,17 +544,17 @@ Hierfür können Data Factory-Dataflows/Azure Databricks verwendet werden.
 Wie oben erwähnt, sollte die Verwendung von CI/CD-Prinzipien (Continuous Integration/Continuous Deployment) in Betracht gezogen werden, um sicherzustellen, dass die Codierung in der Datenplattform konsistent gehandhabt wird. 
 Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Prozesse Code durchläuft, wenn er in der Produktion bereitgestellt wird.
 
-Abbildung 6 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
+Abbildung 8 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-![Abbildung 6](images/german/Slide10.JPG) 
+![Abbildung 8](images/german/Slide10.JPG) 
 
-*Abbildung 6*
+*Abbildung 8*
 
 Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig in der Lage sein, Daten in Nicht-Produktionsumgebungen zu verarbeiten. Wahrscheinlich haben Sie keine Berechtigung oder möchten Produktionsdaten in diesen Umgebungen verwenden. Zu Testzwecken können fehlerhafte Daten auch in Datensätze eingefügt werden, um mögliche Ausnahmeszenarien zu adressieren.
 
 ## Ein praktischer Ansatz
 
-Basierend auf den Diskussionen in diesem Dokument zeigt Abbildung 6, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
+Basierend auf den Diskussionen in diesem Dokument zeigt *Abbildung 9*, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
 In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
 Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
@@ -563,9 +563,9 @@ Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-![Abbildung 7](images/german/Slide7.JPG)
+![Abbildung 9](images/german/Slide7.JPG)
 
-*Abbildung 7*
+*Abbildung 9*
 
 Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen. Der Gesamtansatz könnte also lauten: Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein.
 

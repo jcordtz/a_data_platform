@@ -56,7 +56,7 @@ I midten har vi et "stykke data", det vil sige enhver information, som vi gerne 
 Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her er skitseret følgende:
 
 1. **Rapportering** , hvor vi leverer dataene gennem en applikation, der gør det muligt for mig at læse "noget" ud af "tallene". Mest sandsynligt ville dette være en slags graf.
-2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
+2. **Analyse** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
 3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, du vil møde her, dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere du bruger no-code-værktøjer, jo mere skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
 4. **Delbar** : Når du har data, som du finder interessante, vil du højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til at dække dette.
 5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *data* og *datasæt*.
@@ -64,14 +64,14 @@ Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her 
 7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og oprettelse, hvis nye datasæt selv opstår, og at hans proces håndteres automatisk af dataplatformen.
 8. **Kilder** dækker, hvordan og hvilke data der bringes ind i dataplatformen. Se næste figur.
 
-![Figur 0](images/english/Slide24.jpeg)
+![Figur 1](images/danish/Slide24.jpeg)
 
 Når vi diskuterer, hvor data kommer fra, hvor de bliver brugt, vil det være sådan, at (højst sandsynligt) mange applikationer, du har, allerede indeholder en form for rapporterings-/analysedel.
 I dette tilfælde er det meget værd at træffe en beslutning om, hvordan du udnytter dette på den rigtige måde til dine formål.
 
-![Figur 0.0](images/english/Slide25.jpeg)
+![Figur 2](images/danish/Slide25.jpeg)
 
-De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
+De emner, der skal diskuteres, vil så være (måske pr. applikation):
 
 1. Rapporteringsmulighederne eksponeres direkte fra applikationen til slutbrugeren - måske gennem en fælles "grænseflade" som vist på figuren.
 2. Alle data skubbes/trækkes ind i dataplatformen og eksponeres derefter herfra.
@@ -80,7 +80,7 @@ De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
 Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
 
 >[!Note]
->Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse ansøgninger, og at der er
+>Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse applikationer, og at der er
 >dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python.
 
 Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
@@ -150,11 +150,11 @@ Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologie
 
 Og den beskrevne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
 
-![figur 1](images/danish/Slide1.JPG)
+![figur 3](images/danish/Slide1.JPG)
 
-*Figur 1*
+*Figur 3*
 
-Som vist på *figur 1* giver brug af cloud teknologier adgang til forskellige typer tjenester.
+Som vist på *figur 3* giver brug af cloud teknologier adgang til forskellige typer tjenester.
 
 **Infrastruktur som en service** (IaaS) - Dette giver mulighed for at oprette forskellige typer tilgangen virtuelle maskiner og installere al software, der er nødvendig på dem. I dette garanterer cloud-leverandøren tjenesten op til operativsystemets niveau.  I IaaS tilgangen har vi fokus på, hvilke produkter vi ønsker at bruge og dermed levere de rigtige "maskiner" til dette.
 
@@ -179,12 +179,12 @@ Operationerne i denne model - kendt som Data Operations eller DataOps - diskuter
 Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på *Figur 2*. Dette er for at sikre, at vi kan overholde
 paradigmets "regler" som tidligere nævnt. 
  
-![figur 2](images/danish/Slide2.JPG)
+![figur 4](images/danish/Slide2.JPG)
 
-*Figur 2*
+*Figur 4*
 
 Områderne repræsenterer forskellige tilstande af rejsen fra data til datasæt og dermed til rapportering og analyse.
-Med henvisning til *figur 2* kan de forskellige områder beskrives som følger:
+Med henvisning til *figur 4* kan de forskellige områder beskrives som følger:
 
 **Kildesystemer** er ethvert system, hvor data skal udtrækkes (batch) fra, eller hvor data sendes fra (streames).
 
@@ -260,9 +260,9 @@ Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og 
 
 For at illustrere dette kan du forestille dig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen, vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
 
-![Figur 3](images/danish/Slide3.JPG)
+![Figur ](images/danish/Slide3.JPG)
 
-*Figur 3*
+*Figur 5*
 
 Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
 
@@ -393,11 +393,11 @@ For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden,
 I afsnittet [Sikkerhed](Security/Security-da.md) findes en meget mere detaljeret diskussion om sikkerhedsaspektet.
 Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
-*Figur 4* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+*Figur 6* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-![figur 4](images/danish/Slide8.JPG)
+![figur 6](images/danish/Slide8.JPG)
 
-*Figur 4*
+*Figur 6*
 
 **Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto. 
 Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
@@ -455,9 +455,9 @@ I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig i
 
 I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
 
-![figur 5](images/danish/Slide5.JPG) 
+![figur 7](images/danish/Slide5.JPG) 
 
-*Figur 5*
+*Figur 7*
 
 Udvikling, der foregår i et projektrum, kan derefter "checkes ind" i den samlede dataplatform ved hjælp af f.eks. en CI/CD-proces. Et eksempel på dette kan ses i kapitlet ”CI/CD-eksempel”. 
 
@@ -559,17 +559,17 @@ Data Factory-dataflows/Azure Databricks kan bruges til dette.
 Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet. 
 Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
 
-Figur 6 viser et – forenklet- eksempel på en sådan arbejdsgang.
+Figur 8 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 6](images/danish/Slide10.JPG) 
+![figur 8](images/danish/Slide10.JPG) 
 
-*Figur 6*
+*Figur 8*
 
 I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
 
 ## En praktisk tilgang
 
-Baseret på diskussionerne i dette dokument viser figur 7, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
+Baseret på diskussionerne i dette dokument viser *figur 9*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
 
 I midten finder vi dataplatformen med området ingest, transform og publish. I området ingest ser man, at data tages en-til-en fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. 
 På højre side af figuren ses, hvad der kræves af slutbrugerne i publish området. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces. 
@@ -578,9 +578,9 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 7](images/danish/Slide7.JPG)
+![figur 9](images/danish/Slide7.JPG)
 
-*Figur 7*
+*Figur 9*
 
 Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit. Så den samlede tilgang kunne være - hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen.
 

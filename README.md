@@ -9,14 +9,6 @@
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
-<style>
-    body { counter-reset: figureCounter; }
-    figure { counter-increment: figureCounter; }
-    figure figcaption:before {
-        content: "Fig " counter(figureCounter) ": "
-    }
-</style>
-
 ## Introduction
 
 The IT world is undergoing significant changes in these times (2024-) mainly because of the "ChatGPT's" that are offering a lot of new features around text, sound, images and even videos under the domain of Generative AI - or simply GenAI.
@@ -73,15 +65,12 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
 8. **Sources** covers how and what data is brought into the data platform. See next figure.
 
-<figure id="my-image">
-    <img src="images/english/Slide24.jpeg" alt="don't forget to put some alt text here">
-    <figcaption>This will be rendered below the image</figcaption>
-</figure>
+![Figure 1](images/english/Slide24.jpeg)
 
 When we are discussing where data comes from at where they are being used it will be so that (most likely) many applications you have already contains some kind of reporting/analytics part.
 In this case it very much worth to make a decision on how to utilize this in the right way for your purposes.
 
-![Figure 0.0](images/english/Slide25.jpeg)
+![Figure 2](images/english/Slide25.jpeg)
 
 The topics to discuss would then be (maybe per application):
 
@@ -151,11 +140,11 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 This document explains how to create a data platform using cloud technology. And the described approach to a data platform has some features that are only achievable with a cloud approach.
 
-![Figure 1](images/english/Slide1.JPG)
+![Figure 3](images/english/Slide1.JPG)
 
-*Figure 1*
+*Figure 3*
 
-As shown on *Figure 1* using cloud technologies, gives access to different types of services.
+As shown on *Figure 3* using cloud technologies, gives access to different types of services.
 
 **Infrastructure as a Service (IaaS)** – this provides the ability to create various types of virtual machines and install any software needed on them. In this, the cloud vendor guarantees the service up to the level of the operating system. In the IaaS setup the focus is on which products should be used and hence providing the right “machines” for this.
 
@@ -178,13 +167,13 @@ The operations of this model - known as Data Operations, or DataOps - is further
 The data platform arranges *data* and *datasets* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach 
 can comply with the "rules" of the paradigm as mentioned previously.
 
-![Figure 2](images/english/Slide2.JPG)
+![Figure 4](images/english/Slide2.JPG)
 
-*Figure 2*
+*Figure 4*
 
 The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
 
-Referring to *Figure 2* the characteristics of the different areas are as follows:
+Referring to *Figure 4* the characteristics of the different areas are as follows:
 
 **Source systems** are any system where *data* must be extracted from (batch) or where *data* is sent from (streamed).
 
@@ -256,9 +245,9 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-![figure 3](images/english/Slide3.JPG)
+![figure 5](images/english/Slide3.JPG)
 
-*Figure 3*
+*Figure 5*
 
 However, this *data* is **also** stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones.
 
@@ -390,9 +379,9 @@ This section will continue with some more technical possibilities.
 
 In *Figure 4* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 4](images/english/Slide8.JPG)
+![figure 6](images/english/Slide8.JPG)
 
-*Figure 4*
+*Figure 6*
 
 **Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
 
@@ -448,9 +437,9 @@ In the project room data, tools and code are established/maintained completely i
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 5](images/english/Slide5.JPG)
+![figure 7](images/english/Slide5.JPG)
 
-*Figure 5*
+*Figure 7*
 
 Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any data needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
 
@@ -550,20 +539,22 @@ And when creating a new row, random values are taken from these *datasets* and u
 
 As mentioned above, a way of making sure coding in the data platform is done the “right away” you should consider using Continuous Integration/Continuous Deployment (CI/CD) principles. Such processes have pipeline workflow that describes what processes code goes through when being deployed to production.
 
-The following Figure 6 show a simplified workflow.
+The following Figure 8 show a simplified workflow.
 
-![figure 6](images/english/Slide10.JPG)
+![Figure 8](images/english/Slide10.JPG)
+
+*Figure 8*
+
 
 A deeper discussion on CI/CD and the data platform can be found in this section [DataOps](DataOps/DataOps.md)
 
-*Figure 6*
 
 In connection with the continuous development and testing you often need to be able to handle data in non-production environments. Most likely you are not allowed to or do not want to use production data in these environments. Also, for testing purposes you may want to introduce faulty data in your 
 datasets to be able to handle any exception handling scenarios.
 
 ## A practical approach
 
-Based on the discussions in this document Figure 7 shows what this could look like in “real life”.
+Based on the discussions in this document *Figure 9* shows what this could look like in “real life”.
 
 On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
 
@@ -575,9 +566,9 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 7](images/english/Slide7.JPG)
+![figure 9](images/english/Slide7.JPG)
 
-*Figure 7*
+*Figure 9*
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
 
