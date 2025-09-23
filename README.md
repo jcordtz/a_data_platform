@@ -8,6 +8,16 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
+<style>
+    /* initialise the counter */
+    body { counter-reset: figureCounter; }
+    /* increment the counter for every instance of a figure even if it doesn't have a caption */
+    figure { counter-increment: figureCounter; }
+    /* prepend the counter to the figcaption content */
+    figure figcaption:before {
+        content: "Fig " counter(figureCounter) ": "
+    }
+</style>
 
 ## Introduction
 
@@ -65,7 +75,10 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
 8. **Sources** covers how and what data is brought into the data platform. See next figure.
 
-![Figure 0](images/english/Slide24.jpeg)
+<figure id="my-image">
+    <img src="images/english/Slide24.jpeg" alt="don't forget to put some alt text here">
+    <figcaption>This will be rendered below the image</figcaption>
+</figure>
 
 When we are discussing where data comes from at where they are being used it will be so that (most likely) many applications you have already contains some kind of reporting/analytics part.
 In this case it very much worth to make a decision on how to utilize this in the right way for your purposes.
