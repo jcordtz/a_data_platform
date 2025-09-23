@@ -46,7 +46,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 
 ## Baggrund
 
->[! BEMÆRK]
+>[!Note]
 >I dette afsnit bruges ordet "data" til at henvise til enhver repræsentation af data (tekst/billeder/lyd/tal....)
 
 Som det fremgår af denne figur, handler diskussionen i dette dokument om, hvad data kan bruges til.
@@ -79,7 +79,7 @@ De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
 
 Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
 
->[! BEMÆRK]
+>[!Note]
 >Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse ansøgninger, og at der er
 >dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python.
 
