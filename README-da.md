@@ -92,7 +92,7 @@ I dette tilfælde er det meget værd at træffe en beslutning om, hvordan du udn
 
 *Figur 2*
 
-De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
+De emner, der skal diskuteres, vil så være (måske pr. applikation):
 
 1. Rapporteringsmulighederne eksponeres direkte fra applikationen til slutbrugeren - måske gennem en fælles "grænseflade" som vist på figuren.
 2. Alle data skubbes/trækkes ind i dataplatformen og eksponeres derefter herfra.
