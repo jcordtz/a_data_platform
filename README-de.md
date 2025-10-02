@@ -64,7 +64,7 @@ Daten werden benötigt. Und dass dieser Ansatz auch auf eine konforme und gerege
 
 Eine allgemeine Botschaft des Inhalts dieses Dokuments ist die Fähigkeit, Ihren Benutzern, die Daten anfordern, sagen zu können:
  
-                   **Wenn es heute nicht verfügbar ist, wird es morgen verfügbar sein.**
+                   **Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.**
 
 Werfen wir einen genaueren Blick auf die Nutzungsmuster der hier behandelten Daten.
 
