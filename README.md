@@ -59,7 +59,7 @@ data is needed. And that this approach is also done in a **compliant** as well a
 
 An overall message of the content in this document is the ability to be able to say to your users requesting data -
  
-                   **if it is not available today, it will be available tomorrow.**
+                   If data is not available today, it will be available tomorrow.
 
 Lets have a closer look at the usage patterns of data covered here.
 

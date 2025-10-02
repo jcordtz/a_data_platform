@@ -64,7 +64,7 @@ data. Og at denne tilgang også udføres på en kompatibel såvel som en styret 
 
 Et overordnet budskab om indholdet i dette dokument er muligheden for at kunne sige til dine brugere, der anmoder om data -
  
-                   **Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.**
+                   Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.
 
 Lad os se nærmere på brugsmønstrene for data, der er dækket her.
 
