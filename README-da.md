@@ -30,10 +30,10 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 >Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
 >De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
 >med dataplatforme som er i brug.
->
+
 >[!Note]
 > Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
->
+
 >[!Note]
 >Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
 
