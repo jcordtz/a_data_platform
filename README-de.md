@@ -107,7 +107,7 @@ Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu
 
 
 ## Die Vision
-Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind.
+Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der **Governance** und **Compliance** die Haupttreiber sind.
 
 Daher ist das Konzept eines in sich konsistenten Datensatzes ein Schlüsselelement in diesem platform.
 

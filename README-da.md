@@ -108,7 +108,7 @@ Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret
 
 
 ## Visionen
-Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.
+Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor **Governance** og **Compliance** er de vigtigste drivkræfter for at skabe adgang til data.
 
 Derfor er konceptet med et selvkonsistent datasæt et nøgleelement i denne tilgang.
 
