@@ -1,4 +1,5 @@
 ![microsoft](images/microsoft.png)
+
 # Eine Datenplattform - *"zukunftssicher"*
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
@@ -24,12 +25,18 @@ ermöglichen, diese Chancen/Herausforderungen zu bewältigen.
 
 Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
 
->[!Note 1]
->Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
->Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
+Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
->[!Note 2]
->In diesem Abschnitt wird die Wörter "Daten" und "Datenset" verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
+>[!Hinweis]
+>Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
+>Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von 
+>Datenplattformen im Einsatz haben.
+
+>[!Hinweis]
+>Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
+
+>[!Hinweis]
+>Die Wörter "Daten" und "Datenset" wird verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
 
 
 ## Inhalt
@@ -97,12 +104,6 @@ Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu
 >Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Ihre Daten aus diesen Anwendungen herausholen können und 
 >Dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf einem Standard wie REST API, SQL oder Python basiert.
 
-Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
-
-Dieses Konzept einer Datenplattform könnte höchstwahrscheinlich auf jede Datenplattform-Einrichtung angewendet werden, aber das ist (derzeit) nicht im Geltungsbereich.
-
-> [! HINWEIS]
-> Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
 
 ## Die Vision

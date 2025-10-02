@@ -21,13 +21,18 @@ This document explains how you could create a data platform that will be able to
 
 The content of this document is not a "this is best practice", but a "you ought to consider this" when establishing your data platform.
 
->[!NOTE 1]
+It is based on the experience from different Microsoft-customers, that had a wish to streamline their processes creating a data platform for analytical tasks using cloud services.
+
+>[!Note]
 >This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
 >The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
 >the different implementations we have of data platforms in use.
->
->[!NOTE 2]
->In this document, the word "data" and "dataset" is used to refer to any representation of information (text/images/sound/numbers....)
+
+>[!Note]
+>The words "data" and "dataset" are used to refer to any representation of information (text/images/sound/numbers....)
+
+>[!Note]
+> The document is mainly based on Microsoft technology components.
 
 ## Content
 
@@ -49,13 +54,12 @@ Besides covering the main topic on how to create a data platform and the direct 
 
 ## Background
 
-The discussion in this document is about what data can be used for and how to ensure that you are always prepared for any new situation where 
-data is needed. And that this approach is also done in a compliant as well as a governed way reflecting your guidelines and politics of data usage.
+The discussion in this document is about what data can be used for and how to ensure that you are always prepared for any new situation where
+data is needed. And that this approach is also done in a **compliant** as well as a **governed** way reflecting your guidelines and politics of data usage.
 
 An overall message of the content in this document is the ability to be able to say to your users requesting data -
  
                    **if it is not available today, it will be available tomorrow.**
-
 
 Lets have a closer look at the usage patterns of data covered here.
 
@@ -91,16 +95,10 @@ The topics to discuss would then be (maybe per application):
 
 Any combination of these is "correct", the important part is that it is documented what to do.
 
->[!NOTE]
+>[!Note]
 >It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can get you data out of these applications and 
 >that their is a documented and maintained interface based on a standard like REST API, SQL or Python to do this.
 
-This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
-
-This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
-
-> [!NOTE]
-> The document is mainly based on Microsoft technology components.
 
 ## The Vision
 
@@ -108,13 +106,14 @@ The vision of the data platform described in this document is to have a platform
 
 Hence the concept of a self consistent dataset is a key element of this approach.
 
-Also to provide a platform that can cover "what ever comes" and provide a situation where you can say - *if it is not in the platform today, it will be there tomorrow*.
+Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the platform today, it will be there tomorrow*.
 
 Having said that, the described data platform can be used in many different scenarios and of course should be adopted to an actual use case.
 
 ## Overall paradigm
 
-To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following characteristics.
+To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following 
+characteristics.
 
 1. **Consistency** - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any data object is always clear. This is to make sure that the value of the data can always be conveyed.
 2. **Data Encapsulation** - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
@@ -199,7 +198,7 @@ In the **publish area**, we create the *datasets* that are needed to meet the va
 
 The **consume area** is where the end users of the data platform will access the *datasets*  from the **publish area** using the tools they find most suitable.
 
->[!NOTE]
+>[!Note]
 >The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the **ingest area**, *silver* is **transform** and *gold* is **publish**. The *medallion architecture* does not reflect on the **consume area**. This document will use the terms **ingest**, **transform**, **publish**, and **consume** as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
 
 ### Data platform and the Data Mesh paradigm
@@ -534,7 +533,7 @@ Tokenization and hash functions can be used to pseudonymize data.
 
 In this case you protect your *data* with an encryption key and only the people within the Dictionary of this data storage will be able to use the key. This key could be held in an Azure Key Vault.
 
->[!NOTE]
+>[!Note]
 >This is not a valid GDPR “protection” mechanism because it “only” protects the access to the data, not the usage of the data.
 
 #### “No relations” *datasets*
@@ -590,7 +589,7 @@ This also represents how the data platform should be able to exactly support the
 The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm is technology independence hence you should “mix and match” what suites best in
 regards of your business opportunities and challenges.
 
->[!NOTE]
+>[!Note]
 >These folders "only" contains descriptive information for the time being but will eventually have Infrastructure-as-Code examples included.
 
 [Azure Based](Microsoft/Azure/Azure.md) - using PaaS services from Azure

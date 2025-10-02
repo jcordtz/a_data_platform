@@ -11,22 +11,31 @@
 
 ## Introduktion
 
-IT-verdenen gennemgår betydelige ændringer i disse tider (2024-) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer under overskriften Generativ AI - eller simpelthen GenAI.   Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester for at drage fuld fordel af disse funktioner.
+IT-verdenen gennemgår betydelige ændringer i disse tider (2024-) hovedsageligt på grund af "ChatGPT'erne", der tilbyder en lang række nye funktioner omkring tekst, lyd, billeder og endda videoer 
+under overskriften Generativ AI - eller simpelthen GenAI. Derfor er det mere afgørende end nogensinde at sikre, at de rigtige data med den rigtige kvalitet benyttes samen med sådanne tjenester 
+for at drage fuld fordel af disse funktioner.
 
-Men hvordan kunne man for et år siden forudsige, hvad er muligt i dag, og hvilken stor forandring det rent faktisk er, og dermed planlægge at kunne støtte dette. Det korte svar er - det kunne man ikke.
-Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikke, det eneste, vi ved, er, at der vil være ændringer, og de vil sandsynligvis vil ske før snarere end senere.
+Men hvordan kunne man for et år siden forudsige, hvad er muligt i dag, og hvilken stor forandring det rent faktisk er, og dermed planlægge at kunne støtte dette. Det korte svar er - det kunne 
+man ikke. Og hvilke nye "udfordringer" vil morgendagen bringe. Vi ved det nok virkelig ikke, det eneste, vi ved, er, at der vil være ændringer, og de vil sandsynligvis vil ske før snarere end 
+senere.
 
-Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at navigere i disse muligheder / udfordringer.
+Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være i stand til at håndtere "hvad der måtte komme" og dermed give mulighed for i det mindste fra et dataperspektiv at 
+navigere i disse muligheder / udfordringer.
 
 Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som "det bør man overveje", hvis man vil lave en dataplatform.
 
-> [!Note 1]
-> Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
-> De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
-> med dataplatforme som er i brug.
+Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
 
->[!Note 2]
->I dette afsnit bruges ordene "data" og "datasæt" til at henvise til enhver repræsentation af information (tekst/billeder/lyd/tal....)
+>[!Note]
+>Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
+>De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
+>med dataplatforme som er i brug.
+>
+>[!Note]
+> Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
+>
+>[!Note]
+>Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
 
 
 ## Indhold
@@ -91,28 +100,12 @@ De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
 
 Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
 
->[! BEMÆRK]
+>[!Note]
 >Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan få dig data ud af disse applikationer og 
 >at der er en dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python til at gøre dette.
 
-Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
-
-Dette koncept med en dataplatform kan højst sandsynligt anvendes på enhver dataplatformopsætning, men det er (i øjeblikket) ikke inden for rækkevidde.
-
-> [! BEMÆRK]
-> Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
 
 
-
-
->[!Note]
->Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse applikationer, og at der er
->dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python.
-
-Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
-
->[!Note]
->Dokumentet er hovedsagligt baseret på Microsoft teknologi komponenter.
 
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor Governance og Compliance er de vigtigste drivkræfter.
