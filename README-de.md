@@ -10,18 +10,27 @@
 
 ## Einführung
 
-Die IT-Welt befindet sich in diesen Zeiten (2024-) in einem erheblichen Wandel, vor allem aufgrund der "ChatGPTs", die unter der Überschrift Generative AI – oder einfach GenAI – eine breite Palette neuer Funktionen rund um Text, Audio, Bilder und sogar Videos bieten.   Daher ist es wichtiger denn je, sicherzustellen, dass die richtigen Daten mit der richtigen Qualität neben solchen Diensten verwendet werden, um diese Funktionen voll auszuschöpfen.
+Die IT-Welt befindet sich in diesen Zeiten (2024-) in einem erheblichen Wandel, vor allem aufgrund der "ChatGPTs", die unter der Überschrift Generative AI – oder einfach GenAI – eine breite 
+Palette neuer Funktionen rund um Text, Audio, Bilder und sogar Videos bieten.   Daher ist es wichtiger denn je, sicherzustellen, dass die richtigen Daten mit der richtigen Qualität neben solchen 
+Diensten verwendet werden, um diese Funktionen voll auszuschöpfen.
 
-Aber wie konnte man vor einem Jahr vorhersagen, was heute möglich ist und was für eine große Veränderung es tatsächlich ist, und damit planen, dies unterstützen zu können? Die kurze Antwort lautet: Sie könnten es nicht.
-Und welche neuen "Herausforderungen" morgen mit sich bringen. Wir wissen es wahrscheinlich wirklich nicht, wir wissen nur, dass es Veränderungen geben wird, und sie werden wahrscheinlich eher früher als später eintreten.
+Aber wie konnte man vor einem Jahr vorhersagen, was heute möglich ist und was für eine große Veränderung es tatsächlich ist, und damit planen, dies unterstützen zu können? Die kurze Antwort 
+lautet: Sie könnten es nicht.
+Und welche neuen "Herausforderungen" morgen mit sich bringen. Wir wissen es wahrscheinlich wirklich nicht, wir wissen nur, dass es Veränderungen geben wird, und sie werden wahrscheinlich eher 
+früher als später eintreten.
 
-In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden kann, die in der Lage ist, "was auch immer kommen mag" zu bewältigen und somit zumindest aus Datensicht zu ermöglichen, diese Chancen/Herausforderungen zu bewältigen.
+In diesem Dokument wird beschrieben, wie eine Datenplattform geschaffen werden kann, die in der Lage ist, "was auch immer kommen mag" zu bewältigen und somit zumindest aus Datensicht zu 
+ermöglichen, diese Chancen/Herausforderungen zu bewältigen.
 
 Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "was Sie beachten sollten", wenn Sie eine Datenplattform erstellen möchten.
 
->[!Note]
+>[!Note 1]
 >Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
 >Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
+
+>[!Note 2]
+>In diesem Abschnitt wird die Wörter "Daten" und "Datenset" verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
+
 
 ## Inhalt
 
@@ -43,17 +52,21 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 
 ## Hintergrund
 
->[!Note]
->In diesem Abschnitt wird das Wort "Daten" verwendet, um sich auf jede Darstellung von Daten (Text/Bilder/Ton/Zahlen...) zu beziehen.
+In diesem Dokument geht es darum, wofür Daten verwendet werden können und wie Sie sicherstellen können, dass Sie immer auf jede neue Situation vorbereitet sind, in der 
+Daten werden benötigt. Und dass dieser Ansatz auch auf eine konforme und geregelte Weise erfolgt, die Ihre Richtlinien und Richtlinien für die Datennutzung widerspiegelt.
 
-Wie in dieser Abbildung gezeigt, geht es in diesem Dokument darum, wofür Daten verwendet werden können.
+Eine allgemeine Botschaft des Inhalts dieses Dokuments ist die Fähigkeit, Ihren Benutzern, die Daten anfordern, sagen zu können:
+ 
+                   **Wenn es heute nicht verfügbar ist, wird es morgen verfügbar sein.**
 
-In der Mitte haben wir ein "Stück Daten", d.h. alle Informationen, die wir verwenden möchten.
+Werfen wir einen genaueren Blick auf die Nutzungsmuster der hier behandelten Daten.
+
+Wie in Abbildung 1 gezeigt, haben wir in der Mitte ein "Stück Daten", d.h. alle Informationen, die wir *irgendwo* verwenden möchten.
 
 Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verwendet. Hier wird folgendes skizziert:
 
 1. **Reporting** , bei dem wir die Daten über eine Anwendung bereitstellen, die es mir ermöglicht, "etwas" aus den "Zahlen" herauszulesen. Höchstwahrscheinlich wäre dies eine Art Diagramm.
-2. **Analyse** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
+2. **Analytics** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
 3. **AI/ML/GenAI** hier werden die Daten für "Simulationen/Vorhersagen" verwendet. Und es wird programmiert, sowohl mit Code als auch mit No-Code/Low-Code-Tools. Die Programmierung erfolgt in den meisten Fällen mit Python und die Tools, die Sie hier treffen würden, decken Produkte wie Visual Studio/Eclipse über Azure AI Foundry bis hin zu CoPilot Studio ab. Und je mehr Sie No-Code-Tools verwenden, desto mehr ändert sich die Sprache von Python zu natürlicher Sprache ("ChatGPT-Gespräch").
 4. **Teilbar** Wenn Sie Daten haben, die Sie interessant finden, möchten Sie diese höchstwahrscheinlich teilen können. In den meisten Fällen muss dies eine kontrollierte Operation sein, damit wir sicher sind, dass der empfangende Teil korrekt ist und die Politik widerspiegelt, die wir darüber haben sollten.
 5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *Daten* und *Datensätze* behandelt.
@@ -61,12 +74,16 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und die Erstellung neuer Datensätze selbst anfordern kann und dass sein Prozess automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
-![Abbildung 1](images/german/Slide24.jpeg)
+! [Abbildung 1](Bilder/Englisch/Slide24.jpeg)
+
+*Abbildung 1*
 
 Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten.
 In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
 
-![Abbildung 2](images/german/Slide25.jpeg)
+! [Abbildung 2](Bilder/Englisch/Slide25.jpeg)
+
+*Abbildung 2*
 
 Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
@@ -76,14 +93,17 @@ Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
 Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu tun ist.
 
->[!Note]
->Es ist erforderlich, dass Sie 2 und 3 arbeiten lassen, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Daten dieser Anwendungen erhalten können und dass es
->Dokumentierte und gepflegte Schnittstelle basierend auf einem Standard wie REST API, SQL oder Python.
+>[! HINWEIS]
+>Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Ihre Daten aus diesen Anwendungen herausholen können und 
+>Dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf einem Standard wie REST API, SQL oder Python basiert.
 
 Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
->[!Note]
->Das Dokument basiert sich hauptsächlich auf Microsoft-Technologiekomponenten.
+Dieses Konzept einer Datenplattform könnte höchstwahrscheinlich auf jede Datenplattform-Einrichtung angewendet werden, aber das ist (derzeit) nicht im Geltungsbereich.
+
+> [! HINWEIS]
+> Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
+
 
 ## Die Vision
 Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der Governance und Compliance die Haupttreiber sind.
@@ -267,10 +287,14 @@ Da KI/ML/GenKI immer zugänglicher wird, werden die Anforderungen und damit Hera
 
 Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-Lösung zu bringen, ist die Verwendung einer Methode namens RAG, die für Retrieval Augmented Generation steht.
 
-RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
+RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines 
+Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die 
+RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über 
+Einbettungsmodelle für diese Inhalte verfügen.
 
 ![Microsoft RAG-Architektur](images/architecture-diagram.png)
-*Microsoft RAG-Architektur*
+
+*Abbildung 6*
 
 Die Entscheidung, welches Informationsabrufsystem verwendet werden soll, ist entscheidend, da es die Eingaben für das LLM bestimmt. Das Informationsabrufsystem sollte Folgendes bieten:
 
@@ -286,13 +310,17 @@ Azure AI Search ist ein Beispiel für eine solche "Datenbank", die Indizierungs-
 
 Durch Code und andere Komponenten können Sie eine umfassende RAG-Lösung entwerfen, die alle Elemente für generative KI für Ihre proprietären Inhalte enthält.
 
-Auf der Grundlage des oben Gesagten müssen wir sicherstellen, dass die Daten, die wir den erstellten Lösungen zur Verfügung stellen, genau mit dem übereinstimmen, worauf der Benutzer Zugriff hat, so dass die Erdung und damit die Vektordatenbank nur dies enthält. Dies kann über den Veröffentlichungs-Layer erfolgen, da dieser Layer Datensätze mit dem genauen Inhalt darstellt. Die Aufgabe besteht also darin, die verwendeten Vektordatenbanken zu "laden" - und sicherzustellen, dass diese nach der Verwendung gestoppt/entfernt werden.
+Auf der Grundlage des oben Gesagten müssen wir sicherstellen, dass die Daten, die wir den erstellten Lösungen zur Verfügung stellen, genau mit dem übereinstimmen, worauf der Benutzer Zugriff 
+hat, so dass die Erdung und damit die Vektordatenbank nur dies enthält. Dies kann über den Veröffentlichungs-Layer erfolgen, da dieser Layer Datensätze mit dem genauen Inhalt darstellt. Die 
+Aufgabe besteht also darin, die verwendeten Vektordatenbanken zu "laden" - und sicherzustellen, dass diese nach der Verwendung gestoppt/entfernt werden.
 
 ## Rollen
 
-Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.
+Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um 
+Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.
 
-Wie die Rollen mit den einzelnen Personen verbunden sind und ob einige von ihnen mehr als eine Rolle haben, hängt vom einzelnen Unternehmen/der Institution sowie den gegebenen Bedürfnissen und verfügbaren Ressourcen ab.
+Wie die Rollen mit den einzelnen Personen verbunden sind und ob einige von ihnen mehr als eine Rolle haben, hängt vom einzelnen Unternehmen/der Institution sowie den gegebenen Bedürfnissen und 
+verfügbaren Ressourcen ab.
 
 Das Wichtigste ist, dass sich die Prozesse des Umgangs mit Daten an die "Regeln" des Paradigmas halten.
 
@@ -388,11 +416,11 @@ Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integri
 Im Abschnitt [Sicherheit/Security-de.md] finden Sie eine viel detailliertere Diskussion des Sicherheitsaspekts.
 In diesem Abschnitt geht es weiter mit einigen weiteren technischen Möglichkeiten.
 
-Abbildung 6 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
+Abbildung 7 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 
-![Abbildung 6](images/german/Slide8.JPG)
+![Abbildung 7](images/german/Slide8.JPG)
 
-*Abbildung 6*
+*Abbildung 7*
 
 **Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. 
 Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
@@ -434,11 +462,11 @@ Diese Projekträume stellen eine isolierte Umgebung dar, die sich in der Regel i
 
 Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepflegt. Der Zugriff auf einen Projektraum erfolgt durch Hinzufügen oder Abrufen von Personen aus den entsprechenden Gruppen.
 
-Die folgende Abbildung zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
+Die folgende Abbildung 8 zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
 
-![Abbildung 7](images/german/Slide5.JPG) 
+![Abbildung 8](images/german/Slide5.JPG) 
 
-*Abbildung 7*
+*Abbildung 8*
 
 Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel".
 
@@ -544,17 +572,17 @@ Hierfür können Data Factory-Dataflows/Azure Databricks verwendet werden.
 Wie oben erwähnt, sollte die Verwendung von CI/CD-Prinzipien (Continuous Integration/Continuous Deployment) in Betracht gezogen werden, um sicherzustellen, dass die Codierung in der Datenplattform konsistent gehandhabt wird. 
 Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Prozesse Code durchläuft, wenn er in der Produktion bereitgestellt wird.
 
-Abbildung 8 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
+Abbildung 9 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-![Abbildung 8](images/german/Slide10.JPG) 
+![Abbildung 9](images/german/Slide10.JPG) 
 
-*Abbildung 8*
+*Abbildung 9*
 
 Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig in der Lage sein, Daten in Nicht-Produktionsumgebungen zu verarbeiten. Wahrscheinlich haben Sie keine Berechtigung oder möchten Produktionsdaten in diesen Umgebungen verwenden. Zu Testzwecken können fehlerhafte Daten auch in Datensätze eingefügt werden, um mögliche Ausnahmeszenarien zu adressieren.
 
 ## Ein praktischer Ansatz
 
-Basierend auf den Diskussionen in diesem Dokument zeigt *Abbildung 9*, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
+Basierend auf den Diskussionen in diesem Dokument zeigt *Abbildung 10*, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
 In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. 
 Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
@@ -563,9 +591,9 @@ Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-![Abbildung 9](images/german/Slide7.JPG)
+![Abbildung 10](images/german/Slide7.JPG)
 
-*Abbildung 9*
+*Abbildung 10*
 
 Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen. Der Gesamtansatz könnte also lauten: Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein.
 

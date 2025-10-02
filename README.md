@@ -21,11 +21,13 @@ This document explains how you could create a data platform that will be able to
 
 The content of this document is not a "this is best practice", but a "you ought to consider this" when establishing your data platform.
 
->[!NOTE]
+>[!NOTE 1]
 >This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
 >The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with 
 >the different implementations we have of data platforms in use.
 >
+>[!NOTE 2]
+>In this document, the word "data" and "dataset" is used to refer to any representation of information (text/images/sound/numbers....)
 
 ## Content
 
@@ -47,12 +49,17 @@ Besides covering the main topic on how to create a data platform and the direct 
 
 ## Background
 
->[!NOTE]
->In this section, the word "data" is used to refer to any representation of data (text/images/sound/numbers....)
+The discussion in this document is about what data can be used for and how to ensure that you are always prepared for any new situation where 
+data is needed. And that this approach is also done in a compliant as well as a governed way reflecting your guidelines and politics of data usage.
 
-As shown in this figure the discussion in this document is about what data can be used for.
+An overall message of the content in this document is the ability to be able to say to your users requesting data -
+ 
+                   **if it is not available today, it will be available tomorrow.**
 
-In the center we have a "piece of data", that is any information that we would like to use.
+
+Lets have a closer look at the usage patterns of data covered here.
+
+As shown in figure 1 we in the center have a "piece of data", that is any information that we would like to use *somewhere*.
 
 This "piece" of data is most likely being used in different ways. Here is outlined the following:
 
@@ -67,10 +74,14 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 
 ![Figure 1](images/english/Slide24.jpeg)
 
+*Figure 1*
+
 When we are discussing where data comes from at where they are being used it will be so that (most likely) many applications you have already contains some kind of reporting/analytics part.
 In this case it very much worth to make a decision on how to utilize this in the right way for your purposes.
 
 ![Figure 2](images/english/Slide25.jpeg)
+
+*Figure 2*
 
 The topics to discuss would then be (maybe per application):
 
@@ -81,13 +92,12 @@ The topics to discuss would then be (maybe per application):
 Any combination of these is "correct", the important part is that it is documented what to do.
 
 >[!NOTE]
->It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can get you data of theses applications and that their is
->documented and maintained interface based on a standard like REST API, SQL or Python.
+>It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can get you data out of these applications and 
+>that their is a documented and maintained interface based on a standard like REST API, SQL or Python to do this.
+
 This document is based on the experiences of various Microsoft customers who wanted to streamline the creation of a data platform utilizing cloud services for analytical tasks.
 
 This concept of a data platform could most likely be applied on any data platform setup, but that is (currently) not in scope.
-
-
 
 > [!NOTE]
 > The document is mainly based on Microsoft technology components.
@@ -200,7 +210,7 @@ This topic in the context of the **data platform** is discussed in more details 
 
 ### Interfaces
 
-*Figure 2* indicates that the interface between the different areas is as important as the content of the areas.
+*Figure 3* indicates that the interface between the different areas is as important as the content of the areas.
 
 These interfaces must ensure the **technology independency** we want in the platform – it must be easy to change/add new services – as well as ensuring that we know the data pathways.
 
@@ -257,10 +267,13 @@ As AI/ML/GenAI is becoming more and more accessible the requirements and hence c
 
 A typical approach for bringing your own data in scope of especially a GenAI solution is using a method known as RAG, standing for Retrieval Augmented Generation.
 
-RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data. Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
+RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data.
+Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means
+that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
 
 ![Microsoft RAG Architecture](images/architecture-diagram.png)
-*Microsoft RAG Architecture*
+
+*Figure 6*
 
 The decision about which information retrieval system to use is critical because it determines the inputs to the LLM. The information retrieval system should provide:
 
@@ -379,9 +392,9 @@ This section will continue with some more technical possibilities.
 
 In *Figure 4* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 6](images/english/Slide8.JPG)
+![figure 7](images/english/Slide8.JPG)
 
-*Figure 6*
+*Figure 7*
 
 **Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
 
@@ -437,9 +450,9 @@ In the project room data, tools and code are established/maintained completely i
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 7](images/english/Slide5.JPG)
+![figure 8](images/english/Slide5.JPG)
 
-*Figure 7*
+*Figure 8*
 
 Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of this is shown later in this document. Any data needed for doing the development could/should undergo a process that makes it a “non-production” *data*/*dataset*.
 
@@ -541,9 +554,9 @@ As mentioned above, a way of making sure coding in the data platform is done the
 
 The following Figure 8 show a simplified workflow.
 
-![Figure 8](images/english/Slide10.JPG)
+![Figure 9](images/english/Slide10.JPG)
 
-*Figure 8*
+*Figure 9*
 
 
 A deeper discussion on CI/CD and the data platform can be found in this section [DataOps](DataOps/DataOps.md)
@@ -554,7 +567,7 @@ datasets to be able to handle any exception handling scenarios.
 
 ## A practical approach
 
-Based on the discussions in this document *Figure 9* shows what this could look like in “real life”.
+Based on the discussions in this document *Figure 10* shows what this could look like in “real life”.
 
 On the left in this figure, you see the source system which is owned by “someone”, usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
 
@@ -566,9 +579,9 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 9](images/english/Slide7.JPG)
+![figure 10](images/english/Slide7.JPG)
 
-*Figure 9*
+*Figure 10*
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly. So, the overall term could be – **if it is not available today, it will be tomorrow**.
 

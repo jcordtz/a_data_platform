@@ -20,10 +20,14 @@ Dette dokument beskriver, hvordan man kan oprette en dataplatform, der vil være
 
 Dokumentet tager ikke udgangspunkt i hvad er "bedste praksis", men er tænkt som "det bør man overveje", hvis man vil lave en dataplatform.
 
-> [!Note]
+> [!Note 1]
 > Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
 > De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse
 > med dataplatforme som er i brug.
+
+>[!Note 2]
+>I dette afsnit bruges ordene "data" og "datasæt" til at henvise til enhver repræsentation af information (tekst/billeder/lyd/tal....)
+
 
 ## Indhold
 
@@ -46,17 +50,21 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 
 ## Baggrund
 
->[!Note]
->I dette afsnit bruges ordet "data" til at henvise til enhver repræsentation af data (tekst/billeder/lyd/tal....)
+Diskussionen i dette dokument handler om, hvad data kan bruges til, og hvordan du sikrer, at du altid er forberedt på enhver ny situation, hvor 
+data. Og at denne tilgang også udføres på en kompatibel såvel som en styret måde, der afspejler dine retningslinjer og politik for databrug.
 
-Som det fremgår af denne figur, handler diskussionen i dette dokument om, hvad data kan bruges til.
+Et overordnet budskab om indholdet i dette dokument er muligheden for at kunne sige til dine brugere, der anmoder om data -
+ 
+                   **Hvis den ikke er tilgængelig i dag, vil den være tilgængelig i morgen.**
 
-I midten har vi et "stykke data", det vil sige enhver information, som vi gerne vil bruge.
+Lad os se nærmere på brugsmønstrene for data, der er dækket her.
+
+Som vist i figur 1 har vi i midten et "stykke data", det vil sige enhver information, som vi gerne vil bruge *et sted*.
 
 Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her er skitseret følgende:
 
 1. **Rapportering** , hvor vi leverer dataene gennem en applikation, der gør det muligt for mig at læse "noget" ud af "tallene". Mest sandsynligt ville dette være en slags graf.
-2. **Analyse** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
+2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
 3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, du vil møde her, dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere du bruger no-code-værktøjer, jo mere skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
 4. **Delbar** : Når du har data, som du finder interessante, vil du højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til at dække dette.
 5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *data* og *datasæt*.
@@ -66,18 +74,36 @@ Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her 
 
 ![Figur 1](images/danish/Slide24.jpeg)
 
+*Figur 1*
+
 Når vi diskuterer, hvor data kommer fra, hvor de bliver brugt, vil det være sådan, at (højst sandsynligt) mange applikationer, du har, allerede indeholder en form for rapporterings-/analysedel.
 I dette tilfælde er det meget værd at træffe en beslutning om, hvordan du udnytter dette på den rigtige måde til dine formål.
 
 ![Figur 2](images/danish/Slide25.jpeg)
 
-De emner, der skal diskuteres, vil så være (måske pr. applikation):
+*Figur 2*
+
+De emner, der skal diskuteres, vil så være (måske pr. ansøgning):
 
 1. Rapporteringsmulighederne eksponeres direkte fra applikationen til slutbrugeren - måske gennem en fælles "grænseflade" som vist på figuren.
 2. Alle data skubbes/trækkes ind i dataplatformen og eksponeres derefter herfra.
 3. Kun data, der skal kombineres med andre applikationsdata, skubbes/trækkes ind i dataplatformen.
 
 Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
+
+>[! BEMÆRK]
+>Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan få dig data ud af disse applikationer og 
+>at der er en dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python til at gøre dette.
+
+Dette dokument er baseret på erfaringerne fra forskellige Microsoft-kunder, der ønskede at strømline oprettelsen af en dataplatform ved hjælp af cloud-tjenester til analytiske opgaver.
+
+Dette koncept med en dataplatform kan højst sandsynligt anvendes på enhver dataplatformopsætning, men det er (i øjeblikket) ikke inden for rækkevidde.
+
+> [! BEMÆRK]
+> Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
+
+
+
 
 >[!Note]
 >Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan skaffe dig data af disse applikationer, og at der er
@@ -217,7 +243,7 @@ Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i det
 
 ### Grænseflader
 
-*Figur 2* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
+*Figur 3* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
 
 De fleste virksomheder/institutioner foretrækker at bruge en eller flere af følgende muligheder for grænseflade.  
 
@@ -272,10 +298,12 @@ I takt med at AI/ML/GenAI bliver mere og mere tilgængelige, bliver kravene og d
 
 En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-løsning er at bruge en metode kendt som RAG, der står for Retrieval Augmented Generation.
 
-RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **jordforbindelse** data. Tilføjelse af et informationshentningssystem giver dig kontrol over jordingsdata, der bruges af en LLM, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, at du kan begrænse generativ AI til dit virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis du har integreringsmodeller for det pågældende indhold.
+RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **grounding** data. Tilføjelse af et 
+informationshentningssystem giver dig kontrol over jordingsdata, der bruges af en LLM, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, at du kan begrænse generativ 
+AI til dit virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis du har integreringsmodeller for det pågældende indhold.
 
-! [Microsoft RAG-arkitektur](images/architecture-diagram.png)
-*Microsoft RAG-arkitektur*
+![Microsoft RAG-arkitektur](images/architecture-diagram.png)
+*Figur 6*
 
 Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM. Informationssøgningssystemet skal indeholde:
 
@@ -393,11 +421,11 @@ For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden,
 I afsnittet [Sikkerhed](Security/Security-da.md) findes en meget mere detaljeret diskussion om sikkerhedsaspektet.
 Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
-*Figur 6* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+*Figur 7* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-![figur 6](images/danish/Slide8.JPG)
+![figur 7](images/danish/Slide8.JPG)
 
-*Figur 6*
+*Figur 7*
 
 **Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto. 
 Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
@@ -455,9 +483,9 @@ I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig i
 
 I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
 
-![figur 7](images/danish/Slide5.JPG) 
+![figur 8](images/danish/Slide5.JPG) 
 
-*Figur 7*
+*Figur 8*
 
 Udvikling, der foregår i et projektrum, kan derefter "checkes ind" i den samlede dataplatform ved hjælp af f.eks. en CI/CD-proces. Et eksempel på dette kan ses i kapitlet ”CI/CD-eksempel”. 
 
@@ -559,17 +587,17 @@ Data Factory-dataflows/Azure Databricks kan bruges til dette.
 Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet. 
 Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
 
-Figur 8 viser et – forenklet- eksempel på en sådan arbejdsgang.
+Figur 9 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 8](images/danish/Slide10.JPG) 
+![figur 9](images/danish/Slide10.JPG) 
 
-*Figur 8*
+*Figur 9*
 
 I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
 
 ## En praktisk tilgang
 
-Baseret på diskussionerne i dette dokument viser *figur 9*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
+Baseret på diskussionerne i dette dokument viser *figur 10*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3. 
 
 I midten finder vi dataplatformen med området ingest, transform og publish. I området ingest ser man, at data tages en-til-en fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. 
 På højre side af figuren ses, hvad der kræves af slutbrugerne i publish området. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces. 
@@ -578,9 +606,9 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 9](images/danish/Slide7.JPG)
+![figur 10](images/danish/Slide7.JPG)
 
-*Figur 9*
+*Figur 10*
 
 Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit. Så den samlede tilgang kunne være - hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen.
 
