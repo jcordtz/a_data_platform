@@ -37,7 +37,6 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 >[!Note]
 >Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
 
-
 ## Indhold
 
 Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen. Disse er følgende (i egne sektioner):
@@ -48,6 +47,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 - [Risikovurdering](./Security/Exit-and-risc-strategies-da.md)
 - [Data-modellering](./DataModelling/DataModel-da.md)
 - [Etablering-af-data](./Operations/establish-data-da.md)
+- [Roller](./Operations/establish-data-da.md)
 - [Drift/Modstandsdygtighed](./Operations/Operations-da.md)
 - [Data-operations](./DataOps/DataOps-da.md)
 - [Data Mesh](./DataOps/Data-mesh-da.md)
@@ -56,7 +56,6 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 - [Cloud-miljøer](./DataOps/Cloud-env-da.md)
 - [Navngivnings-standard](./DataOps/Naming-standards-da.md)
 - [Meta Data håndtering](./DataOps/Data-mesh-da.md)
-
 
 ## Baggrund
 
@@ -260,7 +259,7 @@ En yderligere komponent i implementeringen, som *figur 2* viser, er understøtte
 
 Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i denne [sektion](DataModelling/DataModel-da.md).
 
-## Et særligt tilfælde – Real Time 
+## Et særligt tilfælde – Real Time
 
 Vi vil anse databehandling i realtid som et særligt tilfælde og undersøge det ud fra dette perspektiv.
 
@@ -270,7 +269,7 @@ Realtid kommer i forskellige varianter, i dette dokument vil vi bruge følgende 
 - Næsten realtid – *data*, der er "forsinket" på grund af kommunikation eller behandling.
 - Dynamiske data – *data*, der opdateres og kræver opmærksomhed.
 
-Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til næsten realtid og dynamiske data. Dynamiske data – som er baseret på hændelser – behandles på samme måde som Near Real Time-data i dataplatformen.
+Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til nær realtid og dynamiske data. Dynamiske data – som er baseret på hændelser – behandles på samme måde som nær realtid data i dataplatformen.
 
 Den generelle tilgang er, at alle eller alle *data i realtid* også opbevares i **consume** området for mere behandling.
 Dette gør det muligt for dataplatformen at have funktioner, der kan understøtte en realtidsproces, hvor det er relevant, men også at styre al viden, der kan genereres over tid fra realtidssituationer.
@@ -280,7 +279,7 @@ Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og 
 
 For at illustrere dette kan du forestille dig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen, vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
 
-![Figur ](images/danish/Slide3.JPG)
+![Figur 5](images/danish/Slide3.JPG)
 
 *Figur 5*
 
@@ -296,7 +295,7 @@ RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) s
 informationshentningssystem giver dig kontrol over jordingsdata, der bruges af en LLM, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, at du kan begrænse generativ 
 AI til dit virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis du har integreringsmodeller for det pågældende indhold.
 
-![Microsoft RAG-arkitektur](images/architecture-diagram.png)
+![Figur 6](images/architecture-diagram.png)
 *Figur 6*
 
 Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM. Informationssøgningssystemet skal indeholde:
@@ -315,72 +314,6 @@ Gennem kode og andre komponenter kan du designe en omfattende RAG-løsning, der 
 
 På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til, så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer datasæt med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes efter brug.
 
-## Roller
-
-Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og datasæt i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.
-
-Hvordan rollerne er forbundet med de enkelte personer og on nogle af disse har mere end én rolle, er op til den enkelte virksomhed/institution samt det givne behov og tilgængelige ressourcer.
-
-Det vigtigste er, at processerne ved håndtering af data overholder "reglerne" i paradigmet.
-
-Dette er en liste over mulige roller, baseret på hvad virksomheder/institutioner, der har bygget en dataplatform som beskrevet, har benyttet:
-
-1. Projekt ejer
-   - Interface til styregruppe/ledelse.
-   - Kommer typisk fra "Forretningen"
-
-2. Projekt leder
-   - Leder af det enkelte projekt.
-   - Kommer typisk fra “IT”
-
-3. Data Engineer
-   - Definerer og danner de processer der henter data fra kildesystemerne og til ingest området.
-   - Kommer typisk fra “IT”
-
-4. Designer
-   - Definere og danner de datasæts som skal dannes for at understøtte forretningens behov
-   - Kommer typisk fra “Forretningen”
-
-5. Transform engineer (ETL-programmør)
-   - Danner de transformations-processer (ETL) der anvendes i **transform** og **publish** områderne.
-   - Kommer typisk fra “IT”
-
-6. Data Governance
-   - Sikre en ens forståelse mellem IT og forretningen i forhold til sikkerhed.
-     Samt at disse passer til de overordnede sikkerheds principper virksomheden/institutionen følger.
-   - Kommer typisk fra “IT/Forretningen”
-
-7. Super-bruger/Ambassadør
-   - Definere og danner rapporter/dashboard og andre slut-brugs scenarier
-   - Kommer typisk fra “Forretningen”
-
-8. System ejer
-   - Bibringer viden om hvorledes kildesystemerne anvendes/er organiseret
-   - Kommer typisk fra “Forretningen”
-
-9. Arkitekt
-   - Sikrer at principper omkring IT-arkitektur følges
-   - Kommer typisk fra “IT”
-
-Afhængigt af projektets størrelse, virksomhedens/institutionens størrelse og/eller et eventuelt anvendt framework kan man også møde roller som Scrum Master, Product Owner, Program Owner, Styregruppe medlem m.fl.
-
-Behovene i de forskellige roller vil naturligvis variere gennem et projekt. Følgende er et eksempel på, hvordan "arbejdsbyrden" kunne se ud:
-
-|Rolle|Ideation|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ….|Vision state|
-|----|--------|-----------|-----------|-----------|-----------|------------|------------|
-|Projekt ejer|100 %|25%|25%|25%|25%|25%|100%|
-|Projekt leder|100%|100%|100%|100%|100%|100%|100%|
-|Data Engineer|100%|50%|25%|5%|5%|5%|0%|
-|Designer|100%|10%|10%|25%|25%|40%|0%|
-|Transform Engineer|100%|30%|30%|30%|30%|30%|0%|
-|Data Governance|100%|25%|25%|10%|10%|10%|10%|
-|Super-bruger/Ambassadør|100%|5%|5%|20%|20%|50%|100%|
-|System ejer|100%|25%|10%|0%|0%|0%|10%|
-|Arkitekt|100%|50%|25%|10%|10%|10%|10%|
-
-1. Ideation – Projekt start der sætter rammerne og ønsket resultat for et projekt.
-2. Iteration X – de individuelle “versioner” – typisk ny version hver 3 måned 
-3. Vision State – Det ønskede endelige resultat.
 
 ## Miljøer
 

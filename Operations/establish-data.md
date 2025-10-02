@@ -2,9 +2,9 @@
 
 # A data platform - Data establishment
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Data establishment
@@ -95,7 +95,7 @@ And when creating a new row, random values are taken from these *datasets* and u
 
 - Azure Data Factory *data* flows/Azure Databricks can be used for this.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.mdREADME.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

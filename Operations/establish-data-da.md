@@ -2,10 +2,10 @@
 
 # En data platform - etablering af data
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Etablering af data
 
@@ -95,7 +95,7 @@ Og når man opretter en ny række, tages tilfældige værdier fra de enkelte sæ
 
 Data Factory-dataflows/Azure Databricks kan bruges til dette.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
-[![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
