@@ -148,11 +148,16 @@ Dieses übergeordnete Paradigma soll sicherstellen, dass eine Datenplattform die
 
 Die Konzepte *data* und *dataset* sind die "Kernkomponenten" der Datenplattform.
 
-Ein sehr wichtiger Aspekt insbesondere von *Daten*, aber auch bis zu einem gewissen Grad *Datensätze* ist, dass ein gegebenes Objekt in der Lage sein muss, von sich selbst gehandhabt, gepflegt und gesichert zu werden, d.h. nicht durch eine Technologiekomponente wie eine Datenbank, daher ist die **file-handhabung** der Gesamtaspekt davon.
+Ein sehr wichtiger Aspekt insbesondere von *Daten*, aber auch bis zu einem gewissen Grad *Datensätze* ist, dass ein gegebenes Objekt in 
+der Lage sein muss, von sich selbst gehandhabt, gepflegt und gesichert zu werden, d.h. nicht durch eine Technologiekomponente wie eine 
+Datenbank, daher ist die **file-handhabung** der Gesamtaspekt davon.
 
-Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
+Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten 
+eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
 
-Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt.   Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
+Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden 
+sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt.   
+Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
 
 - Der Datensatz ist in sich geschlossen, d. h. er ist nicht von anderen Quellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
 - Nur die Spalten/Zeilen, die für die ausgeführte Aufgabe relevant sind, sind im *Datensatz* vorhanden.
@@ -174,15 +179,23 @@ Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit ei
 
 Wie in *Abbildung 3* dargestellt, bietet die Verwendung von Cloud-Technologien Zugriff auf verschiedene Arten von Diensten.
 
-Infrastructure as a Service (IaaS) – Dies ermöglicht die Erstellung verschiedener Arten von virtuellen Maschinen und die Installation der gesamten darauf benötigten Software. Dabei garantiert der Cloud-Anbieter den Service bis auf Betriebssystemebene.  Beim IaaS-Ansatz fokussieren wir uns darauf, welche Produkte wir einsetzen wollen und liefern so die passenden "Maschinen" dafür.
+**Infrastructure as a Service (IaaS)** – Dies ermöglicht die Erstellung verschiedener Arten von virtuellen Maschinen und die Installation der 
+gesamten darauf benötigten Software. Dabei garantiert der Cloud-Anbieter den Service bis auf Betriebssystemebene.  Beim IaaS-Ansatz 
+fokussieren wir uns darauf, welche Produkte wir einsetzen wollen und liefern so die passenden "Maschinen" dafür.
 
-Platform-as-a-Service (PaaS): Dies gilt für Dienste wie Datenbanken. Wir müssen uns keine Sorgen um die Infrastruktur hinter diesen Diensten machen. Der Cloud-Anbieter stellt alle notwendigen Komponenten hinter dem Service selbst sicher. Dazu gehören Updates, neue Versionen und Verfügbarkeit. Im PaaS-Setup konzentrieren wir uns nur darauf, welche Funktionalität wir benötigen, und nicht darauf, welches "Produkt" wir dafür benötigen.
+**Platform-as-a-Service (PaaS)**: Dies gilt für Dienste wie Datenbanken. Wir müssen uns keine Sorgen um die Infrastruktur hinter diesen 
+Diensten machen. Der Cloud-Anbieter stellt alle notwendigen Komponenten hinter dem Service selbst sicher. Dazu gehören Updates, neue 
+Versionen und Verfügbarkeit. Im PaaS-Setup konzentrieren wir uns nur darauf, welche Funktionalität wir benötigen, und nicht darauf, 
+welches "Produkt" wir dafür benötigen.
 
-Software as a Service (SaaS) – Ein SaaS-Service ist eine Komplettlösung wie ein ERP- oder HR-System. Hier stellt der Cloud-Anbieter den Zugriff auf eine vollständige Suite von Anwendungen, Datenbanken und Infrastrukturen sicher, die für das Funktionieren des SaaS-Dienstes erforderlich sind.
+**Software as a Service (SaaS)** – Ein SaaS-Service ist eine Komplettlösung wie ein ERP- oder HR-System. Hier stellt der Cloud-Anbieter den 
+Zugriff auf eine vollständige Suite von Anwendungen, Datenbanken und Infrastrukturen sicher, die für das Funktionieren des SaaS-Dienstes 
+erforderlich sind.
 
 Die diskutierte Datenplattform basiert "nur" auf PaaS- und/oder SaaS-Diensten und damit in sehr begrenztem Umfang auf IaaS. 
 
-Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten beschrieben, dies mit verschiedenen PaaS- oder SaaS-Diensten zu tun.
+Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten beschrieben, dies mit verschiedenen PaaS- oder 
+SaaS-Diensten zu tun.
 
 Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bedeutet, dass beim Erstellen eines neuen Servers beispielsweise die verschiedenen Komponenten, die der Server verwendet - wie Festplatten, Netzwerkkarten usw. - durch Senden von Befehlen an die Cloud-Infrastruktur generiert werden. Wir können also Software verwenden, um diese Komponenten herzustellen.
 
@@ -195,8 +208,9 @@ Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werde
 
 ## Logische Architektur
 
-Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. Damit soll sichergestellt werden, dass 
-wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
+Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. 
+
+Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
 
 ![Abbildung 4](images/german/Slide2.JPG)
 
@@ -207,18 +221,18 @@ In Bezug auf *Abbildung 4* können die verschiedenen Bereiche wie folgt beschrie
 
 **Quellsysteme** sind alle Systeme, aus denen Daten extrahiert (batch) oder von denen Daten gesendet (streaming) werden sollen.
 
-Der **Aufnahmebereich** ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parkett möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der **Aufnahmebereich** verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
+Der **Aufnahmebereich** ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parkett möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der *Aufnahmebereich* verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
 
-Im Laufe der Zeit müssen Dateien im **Aufnahmebereich** archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
+Im Laufe der Zeit müssen Dateien im *Aufnahmebereich* archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
 
-Im Bereich **Transformieren** werden Daten aus dem Bereich **Aufnahmebereich** abgerufen und in ein "technisch nutzbares" Format geändert.
+Im Bereich **Transformieren** werden Daten aus dem Bereich *Aufnahmebereich* abgerufen und in ein "technisch nutzbares" Format geändert.
 
 Eine Aufgabe besteht daher darin, Daten so zu transformieren, dass sie das gleiche Format haben – zum Beispiel könnte es sein, die "schwierigen" Datentypen wie Datumsangaben (z. B. das Teilen der Uhrzeit vom Datum in eine separate Spalte) und Dezimalzahlen ("." oder ",." als Trennzeichen) zu "standardisieren".
 
 
-Die einzelnen Datenelemente im Bereich **Transformieren** sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
+Die einzelnen Datenelemente im Bereich *Transformieren* sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
 
-*Daten* im Bereich **Transformieren** existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
+*Daten* im Bereich *Transformieren* existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
 
 Eine weitere Aufgabe besteht darin, sicherzustellen, dass die verschiedenen Daten, die wir in diesem Bereich zur Verfügung haben möchten, einfach zusammengeführt werden können, was bedeutet, dass jedes Datenobjekt über die "Referenzschlüssel" verfügt, die erforderlich sind, um sich mit anderen Datenobjekten verbinden zu können.
 
@@ -227,13 +241,13 @@ Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt
 Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
 >[!Note]
->Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der **Autnahmebereich**, *Silber* **Transformieren** und *Gold* **Veröffentlichen** ist. Die Medaillonarchitektur reflektiert nicht den **Verbrauchenbereich**. In diesem Dokument werden die Begriffe **Aufnahme**, **Transformieren**, **Veröffentlichen** und **Verbrauchen** verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+>Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der *Autnahmebereich*, *Silber* *Transformieren* und *Gold* *Veröffentlichen* ist. Die Medaillonarchitektur reflektiert nicht den *Verbrauchenbereich*. In diesem Dokument werden die Begriffe *Aufnahme*, *Transformieren*, *Veröffentlichen* und *Verbrauchen* verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Datenplattform und das Data-Mesh-Paradigma
 
 Data Mesh ist ein Architekturparadigma, das entwickelt wurde, um die Herausforderungen bei der Skalierung von Datenmanagement und -analyse in großen, komplexen Organisationen zu bewältigen. Es verlagert sich von zentralisierten Data Lakes und Warehouses zu einem dezentralen Ansatz, der es verschiedenen Teams ermöglicht, Daten unabhängig voneinander zu verwalten und zu nutzen.
 
-Dieses Thema im Zusammenhang mit der **Datenplattform** wird in diesem [Abschnitt](DataOps/Data-mesh-de.md) ausführlicher behandelt
+Dieses Thema im Zusammenhang mit der *Datenplattform* wird in diesem [Abschnitt](DataOps/Data-mesh-de.md) ausführlicher behandelt
 
 ### Schnittstellen
 
@@ -272,7 +286,7 @@ Real Time gibt es in verschiedenen Varianten, in diesem Dokument werden wir die 
 
 Die Datenplattformmethode in diesem Dokument ist **nicht** für die Echtzeitsituation geeignet, aber sie funktioniert gut für nahezu Echtzeit- und dynamische Daten. Dynamische Daten, die auf Ereignissen basieren, werden auf die gleiche Weise verarbeitet wie Near-Real-Time-Daten in der Datenplattform.
 
-Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im **Aufnahmebereich** für eine weitere Verarbeitung gespeichert werden.
+Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im *Aufnahmebereich* für eine weitere Verarbeitung gespeichert werden.
 Dies ermöglicht es der Datenplattform, über Funktionen zu verfügen, die gegebenenfalls einen Echtzeitprozess unterstützen können, aber auch das gesamte Wissen zu verwalten, das im Laufe der Zeit aus den Echtzeitsituationen generiert werden kann.
 Dies kann dann dazu beitragen, das Eintreten eines unerwünschten Ereignisses – wie z. B. eine Zugverspätung – zu vermeiden.
 
@@ -369,7 +383,7 @@ Die **Attributbasierte Zugriffskontrolle** – auch bekannt als ABAC – bietet 
 
 **Verschlüsselungsbasierte Zugriffskontrolle** - Dies ist keine wirkliche Zugriffskontrolle, da der Datenspeicher verfügbar ist, man die Daten jedoch nur lesen/verwenden kann, wenn man den Schlüssel zur Entschlüsselung hat. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
-**Löschbasierte Zugriffssteuerung** – dieser Ansatz ist nur im bereich **Veröffentlichen** verfügbar. Dieser Ansatz nutzt den Aspekt des **Veröffentlihen** bereichs, dass ein *Datensetz* nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
+**Löschbasierte Zugriffssteuerung** – dieser Ansatz ist nur im bereich *Veröffentlichen* verfügbar. Dieser Ansatz nutzt den Aspekt des *Veröffentlihen* bereichs, dass ein *Datensetz* nur "so lange lebt, wie es genutzt wird", in diesem Fall "... richtig verwendet wird". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten Datenspeicher neu erstellen zu können, kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn es also zu einem Angriff kommt, besteht der einfachste Weg, dies zu stoppen, darin, die Ressource während des Angriffs einfach zu entfernen, wenn die Gefahr eines Datenverlusts besteht.
 
 ## Daten operationen
 
@@ -442,7 +456,9 @@ Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darst
 
 *Abbildung 10*
 
-Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen. Der Gesamtansatz könnte also lauten: Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein.
+Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen.
+
+Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
 
 ## Beispiele für Implementierungen
 
