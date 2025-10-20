@@ -36,7 +36,10 @@ It is based on the experience from different Microsoft-customers, that had a wis
 
 ## Content
 
-Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform is also covered in different sections. These are follows:
+Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in 
+connection with the data platform is also covered in different sections. 
+
+These are follows:
 
 - [Security](./Security/Security.md)
 - [Legislation](./Security/Legislation.md)
@@ -56,27 +59,36 @@ Besides covering the main topic on how to create a data platform and the direct 
 
 ## Background
 
-The discussion in this document is about what data can be used for and how to ensure that you are always prepared for any new situation where
-data is needed. And that this approach is also done in a **compliant** as well as a **governed** way reflecting your guidelines and politics of data usage.
+The discussion in this document is about what data can be used for and how to ensure that you are always prepared for 
+any new situation where data is needed. And that this approach is also done in a **compliant** as well as a **governed** way reflecting 
+your guidelines and politics of data usage.
 
 An overall message of the content in this document is the ability to be able to say to your users requesting data -
- 
+
                    If data is not available today, it will be available tomorrow.
 
 Lets have a closer look at the usage patterns of data covered here.
 
-As shown in figure 1 we in the center have a "piece of data", that is any information that we would like to use *somewhere*.
+As shown in figure 1 in the center we have a "piece of data", that is any information that we would like to use *somewhere*.
 
 This "piece" of data is most likely being used in different ways. Here is outlined the following:
 
-1. **Reporting** where we provide the data through some application that makes it possible for me to read "something" out of the "numbers". Most likely this would be some kind of graph.
-2. **Analytics** in this situation the data becomes mores active as they will be used by the end-user to work further and get answers to new questions. This is most likely done using a BI tool like PowerBI.
-3. **AI/ML/GenAI** here the data is used for "simulations/predictions". And programming takes place, both programming using code as well as no-code/low-code tools. The programming is in most case done using Python and the tools you would meet here covers products like Visual Studio/Eclipse over Azure AI Foundry to CoPilot Studio. And the more you use no-code tools the more the language changes from Python to natural language ("ChatGPT talk").
-4. **Shareable** when you have data that you find interesting you most likely wants to be able share those. In most case this needs to be a controlled operation so that we are sure that the receiving part is correct reflecting the politics we should have covering this.
-5. **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and *datasets*.
+1. **Reporting** where we provide the data through some application that makes it possible for me to read "something" out of the 
+"numbers". Most likely this would be some kind of graph.
+2. **Analytics** in this situation the data becomes mores active as they will be used by the end-user to work further and get answers to 
+new questions. This is most likely done using a BI tool like PowerBI.
+3. **AI/ML/GenAI** here the data is used for "simulations/predictions". And programming takes place, both programming using code as well 
+as no-code/low-code tools. The programming is in most case done using Python and the tools you would meet here covers products like Visual 
+Studio/Eclipse over Azure AI Foundry to CoPilot Studio. And the more you use no-code tools the more the language changes from Python to 
+natural language ("ChatGPT talk").
+4. **Shareable** when you have data that you find interesting you most likely wants to be able share those. In most case this needs to be 
+a controlled operation so that we are sure that the receiving part is correct reflecting the politics we should have covering this.
+5. **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and 
+*datasets*.
 6. **Compliance/Governance** covers the ability to document who is accessing what and ensuring this stays within our defined politics.
-7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and the creation if new datasets them selves and that his process is handled automatically by the data platform.
-8. **Sources** covers how and what data is brought into the data platform. See next figure.
+7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and - maybe - creation
+of new datasets handled automatically by the data platform.
+8. **Sources** covers which and how data is brought into the data platform. See figure 2.
 
 ![Figure 1](images/english/Slide24.jpeg)
 
@@ -91,16 +103,17 @@ In this case it very much worth to make a decision on how to utilize this in the
 
 The topics to discuss would then be (maybe per application):
 
-1. The reporting capabilities is exposed directly from the application to the end-user - maybe through a common "interface" as shown on the figure.
+1. The reporting capabilities is exposed directly from the application to the end-user - maybe through a common "interface" 
+as shown on the figure.
 2. All data is pushed/pulled into the data platform and then from here exposed.
 3. Only data that needs to be combined with other applications data is pushed/pulled into the data platform.
 
-Any combination of these is "correct", the important part is that it is documented what to do.
+Any combination of these are "correct", the important part is that it is documented what is being done and why.
 
 >[!Note]
->It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can get you data out of these applications and 
->that their is a documented and maintained interface based on a standard like REST API, SQL or Python to do this.
-
+>It is required to make 2 and 3 work that you have ensured that you easily and without any further cost (licenses) can
+>get you data out of these applications and that their is a documented and maintained interface based on a standard
+>like REST API, SQL or Python SDK to do this.
 
 ## The Vision
 
@@ -108,35 +121,51 @@ The vision of the data platform described in this document is to have a platform
 
 Hence the concept of a self consistent dataset is a key element of this approach.
 
-Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the platform today, it will be there tomorrow*.
+Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the 
+platform today, it will be there tomorrow*.
 
-Having said that, the described data platform can be used in many different scenarios and of course should be adopted to an actual use case.
+Having said that, the described data platform can be used in many different scenarios and of course should be adopted to an actual use 
+case.
 
 ## Overall paradigm
 
-To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall paradigm is to have a data platform fulfilling the following 
-characteristics.
+To ensure that the data platform can handle “whatever might come” it is important to establish a set of guidelines. Hence the overall 
+paradigm is to have a data platform fulfilling the following characteristics.
 
-1. **Consistency** - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of any data object is always clear. This is to make sure that the value of the data can always be conveyed.
-2. **Data Encapsulation** - The data in the data infrastructure can only be accessed through an interface that controls who can access what and when. The interface must let you change the data infrastructure without affecting external systems.
-3. **Modularity** - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to replace, add or remove resources and services.
-4. **Technology Independent** - Architecture does not depend on the technology being used. This means that the processes, functionalities, and layers remain the same no matter what technology is used.
-5. **Scalability** - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
-6. **Restartability** - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/recreated. And this without any data loss or change in functionality.
-7. **Accountability** - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the data flow.
-8. **Security** - Security must be integrated into the general architecture and the specific solution designs, both for information security and privacy. A change in components must not affect any security aspects. Compliance and governance must be maintained across the different layers over time.
-9. **Reuse** - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up time-to-market and ensure standardization.
+1. **Consistency** - The solution design is consistent to make it easy to operate and develop solutions further. The consistency level of 
+any data object is always clear. This is to make sure that the value of the data can always be conveyed.
+2. **Data Encapsulation** - The data in the data infrastructure can only be accessed through an interface that controls who can access 
+what and when. The interface must let you change the data infrastructure without affecting external systems.
+3. **Modularity** - The solutions in the data platform must be built with modularity in mind and with a clear interface, so it is easy to 
+replace, add or remove resources and services.
+4. **Technology Independent** - Architecture does not depend on the technology being used. This means that the processes, functionalities, 
+and layers remain the same no matter what technology is used.
+5. **Scalability** - Scalability (horizontal/vertical) is part of the solution design from the start, so that the implementation and 
+operations are not impacted by bottlenecks, downtime, or unexpected license purchases.
+6. **Restartability** - All services used in the solution should be able to be paused/stopped and even deleted. And be able to be started/
+recreated. And this without any data loss or change in functionality.
+7. **Accountability** - All services used in the solution must be individually trackable for usage - both for security and cost purposes.  
+Agility - The focus is on minimum viable product (MVP) and ongoing feedback to previous steps in the data flow.
+8. **Security** - Security must be integrated into the general architecture and the specific solution designs, both for information 
+security and privacy. A change in components must not affect any security aspects. Compliance and governance must be maintained across the 
+different layers over time.
+9. **Reuse** - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up 
+time-to-market and ensure standardization.
 10. **Feedback** - The architecture should be continuously adjusted and improved based on feedback from the usage of the data platform.
 
 ## *Data* and *Datasets*
 
 The concepts of *data* and *datasets* are **core components** of the data platform.
 
-A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling is the overall aspect of this.
+A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, 
+maintained and secured by itself, that is not through any technology component like a database, hence **file** handling is the overall 
+aspect of this.
 
-When the term *data* is used, it refers to a single data object like a file or table that contains only the *data* for that given object. For example, a source table like customers or invoices.
+When the term *data* is used, it refers to a single data object like a file or table that contains only the *data* for that given object. 
+For example, a source table like customers or invoices.
 
-On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
+On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This 
+could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
 
 The *dataset* is the key component of the data platform, and it has some specific characteristics:
 
@@ -145,7 +174,8 @@ The *dataset* is the key component of the data platform, and it has some specifi
 - A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
 - A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
 - Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
-- A *dataset* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based. It can then be provided with the appropriate technology for the task in question – like a relational database.
+- A *dataset* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based. 
+- A *dataset* can be provided with the appropriate technology for the task in question – like a relational database.
 
 ## Cloud aspects
 

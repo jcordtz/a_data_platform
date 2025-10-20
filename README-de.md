@@ -65,7 +65,7 @@ In diesem Dokument geht es darum, wofür Daten verwendet werden können und wie 
 Daten werden benötigt. Und dass dieser Ansatz auch auf eine konforme und geregelte Weise erfolgt, die Ihre Richtlinien und Richtlinien für die Datennutzung widerspiegelt.
 
 Eine allgemeine Botschaft des Inhalts dieses Dokuments ist die Fähigkeit, Ihren Benutzern, die Daten anfordern, sagen zu können:
- 
+
                    Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.
 
 Werfen wir einen genaueren Blick auf die Nutzungsmuster der hier behandelten Daten.
@@ -80,7 +80,8 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 4. **Teilbar** Wenn Sie Daten haben, die Sie interessant finden, möchten Sie diese höchstwahrscheinlich teilen können. In den meisten Fällen muss dies eine kontrollierte Operation sein, damit wir sicher sind, dass der empfangende Teil korrekt ist und die Politik widerspiegelt, die wir darüber haben sollten.
 5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *Daten* und *Datensätze* behandelt.
 6. **Compliance/Governance** umfasst die Möglichkeit, zu dokumentieren, wer auf was zugreift, und sicherzustellen, dass dies innerhalb unserer definierten Richtlinien bleibt.
-7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und die Erstellung neuer Datensätze selbst anfordern kann und dass sein Prozess automatisch von der Datenplattform abgewickelt wird.
+7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und - vieleicht - die
+Erstellung neuer Datensätze automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
 ! [Abbildung 1](Bilder/Englisch/Slide24.jpeg)
@@ -96,17 +97,17 @@ In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Si
 
 Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
-1. Die Berichtsfunktionen werden dem Endbenutzer direkt von der Anwendung zur Verfügung gestellt - möglicherweise über eine gemeinsame "Schnittstelle", wie in der Abbildung gezeigt.
+1. Die Berichtsfunktionen werden dem Endbenutzer direkt von der Anwendung zur Verfügung gestellt - möglicherweise über eine
+gemeinsame "Schnittstelle", wie in der Abbildung gezeigt.
 2. Alle Daten werden in die Datenplattform geschoben/gezogen und von hier aus offengelegt.
 3. Nur Daten, die mit anderen Anwendungsdaten kombiniert werden müssen, werden in die Datenplattform gepusht/gezogen.
 
 Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu tun ist.
 
 >[! HINWEIS]
->Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Ihre Daten aus diesen Anwendungen herausholen können und 
->Dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf einem Standard wie REST API, SQL oder Python basiert.
-
-
+>Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) 
+>Ihre Daten aus diesen Anwendungen herausholen können und dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf
+>einem Standard wie REST API, SQL oder Python SDK basiert ist.
 
 ## Die Vision
 Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der **Governance** und **Compliance** die Haupttreiber sind.
@@ -158,7 +159,8 @@ Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlun
 - Ein *Datensatz* gehört zu einer Gruppe und nicht zu bestimmten Personen – daher ist der Besitzer in einer Azure-Konfiguration eine Gruppe mit einer Entra ID.
 - Einem *Datensatz* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
 - Der Zugriff auf einen *Datensatz* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
-- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das Dataset wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. Es kann dann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank sein.
+- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das Dataset wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. 
+- Ein *Datensatz* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank sein.
 
 ## Cloud-Zugang
 

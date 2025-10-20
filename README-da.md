@@ -59,27 +59,39 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 
 ## Baggrund
 
-Diskussionen i dette dokument handler om, hvad data kan bruges til, og hvordan du sikrer, at du altid er forberedt på enhver ny situation, hvor 
-data. Og at denne tilgang også udføres på en kompatibel såvel som en styret måde, der afspejler dine retningslinjer og politik for databrug.
+Diskussionen i dette dokument handler om, hvad data kan bruges til, og hvordan du sikrer, at du altid er forberedt på enhver ny situation, 
+hvor data. Og at denne tilgang også udføres på en kompatibel såvel som en styret måde, der afspejler dine retningslinjer og politik for databrug.
 
 Et overordnet budskab om indholdet i dette dokument er muligheden for at kunne sige til dine brugere, der anmoder om data -
- 
+
                    Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.
 
 Lad os se nærmere på brugsmønstrene for data, der er dækket her.
 
 Som vist i figur 1 har vi i midten et "stykke data", det vil sige enhver information, som vi gerne vil bruge *et sted*.
 
-Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder. Her er skitseret følgende:
+Dette "stykke" data bliver højst sandsynligt brugt på forskellige måder.
 
-1. **Rapportering** , hvor vi leverer dataene gennem en applikation, der gør det muligt for mig at læse "noget" ud af "tallene". Mest sandsynligt ville dette være en slags graf.
-2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
-3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, du vil møde her, dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere du bruger no-code-værktøjer, jo mere skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
-4. **Delbar** : Når du har data, som du finder interessante, vil du højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til at dække dette.
-5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *data* og *datasæt*.
-6. **Compliance/Governance** dækker over evnen til at dokumentere, hvem der har adgang til hvad, og sikre, at dette forbliver inden for vores definerede politik.
-7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og oprettelse, hvis nye datasæt selv opstår, og at hans proces håndteres automatisk af dataplatformen.
-8. **Kilder** dækker, hvordan og hvilke data der bringes ind i dataplatformen. Se næste figur.
+Her er skitseret følgende:
+
+1. **Rapportering** , hvor vi leverer dataene gennem en applikation, der gør det muligt for mig at læse "noget" ud af "tallene".
+Mest sandsynligt ville dette være en slags graf.
+2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og
+få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
+3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode 
+såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, du vil møde her, 
+dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere du bruger no-code-værktøjer, jo mere 
+skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
+4. **Delbar** : Når du har data, som du finder interessante, vil du højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal 
+dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til 
+at dække dette.
+5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er 
+dækket af emnerne *data* og *datasæt*.
+6. **Compliance/Governance** dækker over evnen til at dokumentere, hvem der har adgang til hvad, og sikre, at dette forbliver inden for 
+vores definerede politik.
+7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og eventuel 
+oprettelse, og dermed at nye datasæt automatisk dannes af dataplatformen.
+8. **Kilder** dækker, hvilke og hvorledes data bringes ind i dataplatformen. Se figur 2.
 
 ![Figur 1](images/danish/Slide24.jpeg)
 
@@ -101,11 +113,9 @@ De emner, der skal diskuteres, vil så være (måske pr. applikation):
 Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret, hvad der skal gøres.
 
 >[!Note]
->Det er nødvendigt at få 2 og 3 til at fungere, at du har sikret, at du nemt og uden yderligere omkostninger (licenser) kan få dig data ud af disse applikationer og 
->at der er en dokumenteret og vedligeholdt grænseflade baseret på en standard som REST API, SQL eller Python til at gøre dette.
-
-
-
+>Det er nødvendigt for at få 2 og 3 til at fungere, at man har sikret sig, nemt og uden yderligere omkostninger (licenser) 
+>kan få adgang til at tage data ud af disse applikationer og at der er en dokumenteret og vedligeholdt grænseflade baseret 
+>på en standard som REST API, SQL eller Python SDK til at gøre dette.
 
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor **Governance** og **Compliance** er de vigtigste drivkræfter for at skabe adgang til data.
@@ -161,7 +171,8 @@ På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af 
 - Et *datasæt* tilhører en gruppe og ikke bestemte personer – i en Azure-konfiguration vil ejeren derfor være en gruppe med et Entra-id.
 - Et *datasæt* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
 - Adgang til et *datasæt* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
-- Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer. Det kan derefter leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database.
+- Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer. 
+- Et *datasæt* kan leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database.
 
 ## Cloud-tilgang
 
