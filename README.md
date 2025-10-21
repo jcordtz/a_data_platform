@@ -37,25 +37,25 @@ It is based on the experience from different Microsoft-customers, that had a wis
 ## Content
 
 Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in 
-connection with the data platform is also covered in different sections. 
+connection with the data platform are also addressed, these can be found in separate sections of this repository.
 
 These are follows:
 
-- [Security](./Security/Security.md)
-- [Legislation](./Security/Legislation.md)
-- [Exit-strategy](./Security/Exit-and-risc-strategies.md)
-- [Risk-assessment](./Security/Exit-and-risc-strategies.md)
-- [Data-modelling](./DataModelling/DataModel.md)
-- [Data-establishment](./Operations/establish-data.md)
-- [Roles](./Operations/roles.md)
-- [Operations/Resilience](./Operations/Operations.md)
-- [Data-operations](./DataOps/DataOps.md)
-- [Data Mesh](./DataOps/Data-mesh.md)
-- [Self-service](./DataOps/Self-service.md)
-- [GenAI and the Data Platform](./DataOps/GenAI.md)
-- [Cloud-environments](./DataOps/Cloud-env.md)
-- [Naming Standards](./DataOps/Naming-standards.md)
-- [Meta data handling](./DataOps/Meta-management.md)
+>- [Security](./Security/Security.md)
+>- [Legislation](./Security/Legislation.md)
+>- [Exit-strategy](./Security/Exit-and-risc-strategies.md)
+>- [Risk-assessment](./Security/Exit-and-risc-strategies.md)
+>- [Data-modelling](./DataModelling/DataModel.md)
+>- [Data-establishment](./Operations/establish-data.md)
+>- [Roles](./Operations/roles.md)
+>- [Operations/Resilience](./Operations/Operations.md)
+>- [Data-operations](./DataOps/DataOps.md)
+>- [Data Mesh](./DataOps/Data-mesh.md)
+>- [Self-service](./DataOps/Self-service.md)
+>- [GenAI and the Data Platform](./DataOps/GenAI.md)
+>- [Cloud-environments](./DataOps/Cloud-env.md)
+>- [Naming Standards](./DataOps/Naming-standards.md)
+>- [Meta data handling](./DataOps/Meta-management.md)
 
 ## Background
 
