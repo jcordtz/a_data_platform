@@ -22,6 +22,13 @@ The classification presented herein is derived from an extensive review of indus
 
 ## 3. User Categories and Functional Requirements
 
+![Figure 1](images/english/Slide24.jpeg)
+
+*Figure 1*
+
+
+
+
 ### 3.1 Data Engineers
 Data engineers constitute the foundational layer of platform operations. Their primary mandate involves constructing and maintaining data pipelines, ensuring data integrity, and optimizing system performance. They require advanced ETL/ELT frameworks, monitoring utilities, and scalable storage solutions.
 

@@ -28,6 +28,10 @@ Klassifikationen præsenteret her er baseret på en omfattende gennemgang af ind
 
 ## **3. Brugerkategorier og Funktionelle Krav**
 
+![Figur 1](../images/danish/Slide24.jpeg)
+
+*Figur 1*
+
 ### **3.1 Dataingeniører**
 Dataingeniører udgør det grundlæggende lag af platformens drift. Deres primære opgave er at opbygge og vedligeholde datapipelines, sikre dataintegritet og optimere systemets ydeevne. De har brug for avancerede ETL/ELT-rammer, overvågningsværktøjer og skalerbare lagringsløsninger.
 

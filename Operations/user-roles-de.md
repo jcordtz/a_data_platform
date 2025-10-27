@@ -28,6 +28,10 @@ Die hier vorgestellte Klassifizierung basiert auf einer umfassenden Überprüfun
 
 ## **3. Benutzerkategorien und funktionale Anforderungen**
 
+![Abbildung 1](../images/german/Slide24.jpeg)
+
+*Abbildung 1*
+
 ### **3.1 Dateningenieure**
 Dateningenieure bilden die Grundlage für den Betrieb der Plattform. Ihre Hauptaufgabe besteht darin, Datenpipelines zu erstellen und zu warten, die Datenintegrität sicherzustellen und die Systemleistung zu optimieren. Sie benötigen fortschrittliche ETL/ELT-Frameworks, Überwachungswerkzeuge und skalierbare Speicherlösungen.
 

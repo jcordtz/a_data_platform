@@ -75,14 +75,14 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 Erstellung neuer Datensätze automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
-! [Abbildung 1](Bilder/Englisch/Slide24.jpeg)
+![Abbildung 1](images/german/Slide24.jpeg)
 
 *Abbildung 1*
 
 Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten.
 In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
 
-! [Abbildung 2](Bilder/Englisch/Slide25.jpeg)
+! [Abbildung 2](images/german/Slide25.jpeg)
 
 *Abbildung 2*
 
