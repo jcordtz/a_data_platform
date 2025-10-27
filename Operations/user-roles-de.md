@@ -7,74 +7,57 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
-## Rollen
+CoPilot generated content, not yet revised by author.
 
-Die Datenplattform ist so eingerichtet, dass Rollen als Mechanismus verwendet werden, um den Zugriff auf Daten und Datensätze in der Plattform zu steuern. Diese Rollen werden verwendet, um 
-Personen, die mit der Plattform arbeiten, die richtigen Verantwortlichkeiten zu übertragen.
+# Charakterisierung von Benutzerrollen in modernen Datenplattformen: Eine umfassende Analyse
 
-Wie die Rollen mit den einzelnen Personen verbunden sind und ob einige von ihnen mehr als eine Rolle haben, hängt vom einzelnen Unternehmen/der Institution sowie den gegebenen Bedürfnissen und 
-verfügbaren Ressourcen ab.
+## **Abstract**
+Datenplattformen haben sich als kritische Infrastrukturen für Organisationen etabliert, die datengesteuerte Entscheidungsfindung anstreben. Das Verständnis der Vielfalt der Benutzerrollen, die mit diesen Plattformen interagieren, ist entscheidend für die Optimierung von Design, Funktionalität und Governance. Dieser Artikel kategorisiert und analysiert systematisch die primären Benutzergruppen von Datenplattformen und hebt deren Verantwortlichkeiten, Anforderungen und Interaktionen hervor.
 
-Das Wichtigste ist, dass sich die Prozesse des Umgangs mit Daten an die "Regeln" des Paradigmas halten.
+---
 
-Dies ist eine Liste möglicher Rollen, basierend auf dem, was Unternehmen/Institutionen, die eine Datenplattform wie beschrieben aufgebaut haben, verwendet haben:
+## **1. Einleitung**
+Die zunehmende Datenmenge in verschiedenen Branchen hat die Entwicklung robuster Datenplattformen erforderlich gemacht, die heterogene Benutzerbedürfnisse unterstützen können. Diese Plattformen dienen als zentrale Umgebung für die Datenaufnahme, -speicherung, -verarbeitung und -analyse. Ihre Effektivität hängt jedoch davon ab, dass sie ein breites Spektrum an Stakeholdern mit unterschiedlichen Zielen und technischen Kenntnissen berücksichtigen. Diese Studie zielt darauf ab, die wichtigsten Benutzerkategorien und deren funktionale Abhängigkeiten innerhalb eines Datenplattform-Ökosystems zu definieren.
 
-1. Projektinhaber
-   - Schnittstelle zum Lenkungsausschuss/Management.
-   - Kommt typischerweise von "The Business"
+---
 
-2. Projektleiter
-   - Leiter des einzelnen Projekts.
-   - Kommt typischerweise von "IT"
+## **2. Methodik**
+Die hier vorgestellte Klassifizierung basiert auf einer umfassenden Überprüfung von Branchenpraktiken, wissenschaftlicher Literatur und empirischen Beobachtungen von Unternehmensdatenplattformen. Benutzerrollen werden basierend auf funktionalen Verantwortlichkeiten und Interaktionsmustern mit Plattformkomponenten segmentiert.
 
-3. Dateningenieur
-   - Definieren und gestalten Sie die Prozesse, die Daten aus den Quellsystemen und in den AufnahmeBereich abrufen.
-   - Kommt typischerweise von "IT"
+---
 
-4. Designer
-   - Definieren und formen Sie die Datensätze, die gebildet werden müssen, um die Anforderungen des Unternehmens zu erfüllen
-   - Kommt typischerweise von "The Business"
+## **3. Benutzerkategorien und funktionale Anforderungen**
 
-5. Transformationsingenieur (ETL-Programmierer)
-   - Bildet die Transformationsprozesse (ETL), die in den Bereichen **transformieren** und **veröffentlichen** verwendet werden.
-   - Kommt typischerweise von "IT"
+### **3.1 Dateningenieure**
+Dateningenieure bilden die Grundlage für den Betrieb der Plattform. Ihre Hauptaufgabe besteht darin, Datenpipelines zu erstellen und zu warten, die Datenintegrität sicherzustellen und die Systemleistung zu optimieren. Sie benötigen fortschrittliche ETL/ELT-Frameworks, Überwachungswerkzeuge und skalierbare Speicherlösungen.
 
-6. Datenverwaltung
-   - Stellen Sie ein einheitliches Verständnis zwischen IT und Unternehmen in Bezug auf Sicherheit sicher.
-     Und dass diese zu den allgemeinen Sicherheitsprinzipien passen, die das Unternehmen/die Institution befolgt.
-   - Kommt typischerweise aus "IT/Business"
+### **3.2 Datenwissenschaftler**
+Datenwissenschaftler nutzen kuratierte Datensätze, um prädiktive Modelle zu entwickeln und explorative Analysen durchzuführen. Ihre Arbeitsabläufe erfordern leistungsstarke Rechenressourcen, die Integration mit Machine-Learning-Bibliotheken und den Zugriff auf strukturierte und semi-strukturierte Daten.
 
-7. Superuser/Botschafter
-   - Definieren und Formen von Berichten/Dashboards und anderen Endanwendungsszenarien
-   - Kommt typischerweise von "The Business"
+### **3.3 Business-Analysten**
+Business-Analysten übersetzen Rohdaten in umsetzbare Erkenntnisse durch deskriptive und diagnostische Analysen. Sie sind auf intuitive Business-Intelligence-(BI)-Tools, Self-Service-Abfrageoberflächen und den rechtzeitigen Zugriff auf aggregierte Datensätze angewiesen.
 
-8. Systembesitzer
-   - Vermittelt Wissen darüber, wie die Quellsysteme verwendet/organisiert werden
-   - Kommt typischerweise von "The Business"
+### **3.4 Anwendungsentwickler**
+Anwendungsentwickler integrieren Plattformdaten in operative Systeme und kundenorientierte Anwendungen. Ihre Anforderungen umfassen sichere APIs, konsistente Datenschemata und umfassende Dokumentation für eine nahtlose Integration.
 
-9. Architekt
-   - Stellt sicher, dass die Prinzipien der IT-Architektur eingehalten werden
-   - Kommt typischerweise von "IT"
+### **3.5 Führungskräfte**
+Führungskräfte und strategische Entscheidungsträger nutzen synthetisierte Datenausgaben für die Organisationsplanung und Leistungsüberwachung. Ihre Interaktion erfolgt hauptsächlich über hochrangige Dashboards und prädiktive Analyseberichte.
 
-Abhängig von der Größe des Projekts, der Größe des Unternehmens/der Institution und/oder eines verwendeten Frameworks können Sie auch Rollen wie Scrum Master, Product Owner, Program Owner, Steering Committee Member usw. treffen.
+### **3.6 Governance- und Compliance-Teams**
+Diese Teams setzen die Einhaltung gesetzlicher Vorschriften und die Datenverwaltung durch. Sie benötigen Mechanismen für rollenbasierte Zugriffskontrolle, Prüfpfade und Metadatenmanagement, um Transparenz und Verantwortlichkeit sicherzustellen.
 
-Die Anforderungen der verschiedenen Rollen variieren natürlich während eines Projekts. Im Folgenden finden Sie ein Beispiel dafür, wie die "Workload" aussehen könnte:
+### **3.7 Betriebs- und Supportpersonal**
+Operationsteams gewährleisten die Zuverlässigkeit und Kontinuität der Plattform. Ihr Werkzeugkasten umfasst Observabilitäts-Frameworks, Systeme für das Vorfallmanagement und automatisierte Skalierungsfunktionen.
 
-|Rolle|Ideenfindung|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ....|Zustand der Vision|
-|----|--------|-----------|-----------|-----------|-----------|------------|------------|
-|Bauherr|100%|25%|25%|25%|25%|25%|100%|
-|Projektmanager|100%|100%|100%|100%|100%|100%|100%|100%|
-|Dateningenieur|100%|50%|25%|5%|5%|5%|0%|
-|Designer|100%|10%|10%|25%|25%|40%|0%|
-|Transformationsingenieur|100%|30%|30%|30%|30%|30%|30%|0%|
-|Data Governance|100%|25%|25%|10%|10%|10%|10%|10%|
-|Superuser/Botschafter|100%|5%|5%|20%|20%|50%|100%|
-|Systembesitzer|100%|25%|10%|0%|0%|0%|0%|10%|
-|Architekt|100%|50%|25%|10%|10%|10%|10%|
+---
 
-1. Ideenfindung – Projektstart, der den Rahmen und das gewünschte Ergebnis für ein Projekt festlegt.
-2. Iteration X – die einzelnen "Versionen" – in der Regel alle 3 Monate eine neue Version 
-3. Visionszustand – Das gewünschte Endergebnis.
+## **4. Diskussion**
+Die Heterogenität der Benutzerrollen unterstreicht die Notwendigkeit modularer und adaptiver Plattformarchitekturen. Eine mangelnde Berücksichtigung dieser unterschiedlichen Anforderungen kann die Akzeptanz behindern und die Datenstrategien der Organisation beeinträchtigen. Zukünftige Forschung sollte die Optimierung der Benutzererfahrung und die Zusammenarbeit zwischen den Rollen innerhalb von Datenökosystemen untersuchen.
+
+---
+
+## **5. Fazit**
+Datenplattformen stellen vielschichtige Umgebungen dar, die sowohl technische als auch nicht-technische Stakeholder bedienen. Ein detailliertes Verständnis der Benutzerrollen und ihrer jeweiligen Anforderungen ist entscheidend für die Entwicklung robuster, sicherer und benutzerzentrierter Plattformen. Diese Taxonomie bietet eine Grundlage für die Ausrichtung der Plattformfunktionen an den organisatorischen Zielen.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)

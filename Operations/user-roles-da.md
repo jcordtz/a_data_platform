@@ -7,72 +7,58 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
-## Roller
+CoPilot generated content, not yet revised by author.
 
-Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og datasæt i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.
+# Karakterisering af Brugerroller i Moderne Dataplatforme: En Omfattende Analyse
 
-Hvordan rollerne er forbundet med de enkelte personer og on nogle af disse har mere end én rolle, er op til den enkelte virksomhed/institution samt det givne behov og tilgængelige ressourcer.
+## **Resumé**
+Dataplatforme er blevet kritiske infrastrukturer for organisationer, der ønsker at udnytte datadrevet beslutningstagning. Forståelsen af mangfoldigheden af brugerroller, der interagerer med disse platforme, er afgørende for at optimere design, funktionalitet og styring. Denne artikel kategoriserer og analyserer systematisk de primære brugergrupper af dataplatforme og fremhæver deres ansvar, krav og interaktioner.
 
-Det vigtigste er, at processerne ved håndtering af data overholder "reglerne" i paradigmet.
+---
 
-Dette er en liste over mulige roller, baseret på hvad virksomheder/institutioner, der har bygget en dataplatform som beskrevet, har benyttet:
+## **1. Introduktion**
+Den stigende mængde data på tværs af industrier har nødvendiggjort udviklingen af robuste dataplatforme, der kan understøtte heterogene brugerbehov. Disse platforme fungerer som centraliserede miljøer for dataindsamling, lagring, behandling og analyse. Deres effektivitet afhænger dog af at imødekomme en bred vifte af interessenter, hver med forskellige mål og tekniske færdigheder. Dette studie har til formål at beskrive de vigtigste brugerkategorier og deres funktionelle afhængigheder inden for et dataplatformsøkosystem.
 
-1. Projekt ejer
-   - Interface til styregruppe/ledelse.
-   - Kommer typisk fra "Forretningen"
+---
 
-2. Projekt leder
-   - Leder af det enkelte projekt.
-   - Kommer typisk fra “IT”
+## **2. Metodologi**
+Klassifikationen præsenteret her er baseret på en omfattende gennemgang af industripraksis, akademisk litteratur og empiriske observationer af implementeringer af dataplatforme i virksomheder. Brugerroller er segmenteret baseret på funktionelle ansvarsområder og interaktionsmønstre med platformskomponenter.
 
-3. Data Engineer
-   - Definerer og danner de processer der henter data fra kildesystemerne og til ingest området.
-   - Kommer typisk fra “IT”
+---
 
-4. Designer
-   - Definere og danner de datasæts som skal dannes for at understøtte forretningens behov
-   - Kommer typisk fra “Forretningen”
+## **3. Brugerkategorier og Funktionelle Krav**
 
-5. Transform engineer (ETL-programmør)
-   - Danner de transformations-processer (ETL) der anvendes i **transform** og **publish** områderne.
-   - Kommer typisk fra “IT”
+### **3.1 Dataingeniører**
+Dataingeniører udgør det grundlæggende lag af platformens drift. Deres primære opgave er at opbygge og vedligeholde datapipelines, sikre dataintegritet og optimere systemets ydeevne. De har brug for avancerede ETL/ELT-rammer, overvågningsværktøjer og skalerbare lagringsløsninger.
 
-6. Data Governance
-   - Sikre en ens forståelse mellem IT og forretningen i forhold til sikkerhed.
-     Samt at disse passer til de overordnede sikkerheds principper virksomheden/institutionen følger.
-   - Kommer typisk fra “IT/Forretningen”
+### **3.2 Dataspecialister**
+Dataspecialister udnytter kuraterede datasæt til at udvikle prædiktive modeller og udføre eksplorative analyser. Deres arbejdsgange kræver højtydende computerressourcer, integration med maskinlæringsbiblioteker og adgang til strukturerede og semistrukturerede data.
 
-7. Super-bruger/Ambassadør
-   - Definere og danner rapporter/dashboard og andre slut-brugs scenarier
-   - Kommer typisk fra “Forretningen”
+### **3.3 Forretningsanalytikere**
+Forretningsanalytikere omsætter rå data til handlingsrettede indsigter gennem beskrivende og diagnostiske analyser. De er afhængige af intuitive Business Intelligence (BI)-værktøjer, selvbetjeningsforespørgselsgrænseflader og rettidig adgang til aggregerede datasæt.
 
-8. System ejer
-   - Bibringer viden om hvorledes kildesystemerne anvendes/er organiseret
-   - Kommer typisk fra “Forretningen”
+### **3.4 Applikationsudviklere**
+Applikationsudviklere integrerer platformdata i operationelle systemer og kundevendte applikationer. Deres krav omfatter sikre API'er, konsistente dataskemaer og omfattende dokumentation for at lette problemfri integration.
 
-9. Arkitekt
-   - Sikrer at principper omkring IT-arkitektur følges
-   - Kommer typisk fra “IT”
+### **3.5 Ledende Interessenter**
+Ledere og strategiske beslutningstagere anvender syntetiserede dataoutput til organisatorisk planlægning og performanceovervågning. Deres interaktion sker primært gennem højniveau dashboards og prædiktive analyse rapporter.
 
-Afhængigt af projektets størrelse, virksomhedens/institutionens størrelse og/eller et eventuelt anvendt framework kan man også møde roller som Scrum Master, Product Owner, Program Owner, Styregruppe medlem m.fl.
+### **3.6 Governance- og Compliance-teams**
+Disse teams håndhæver overholdelse af regler og datastyring. De har brug for mekanismer til rollebaseret adgangskontrol, revisionsspor og metadatahåndtering for at sikre gennemsigtighed og ansvarlighed.
 
-Behovene i de forskellige roller vil naturligvis variere gennem et projekt. Følgende er et eksempel på, hvordan "arbejdsbyrden" kunne se ud:
+### **3.7 Drifts- og Supportpersonale**
+Driftsteams opretholder platformens pålidelighed og kontinuitet. Deres værktøjskasse omfatter overvågningsrammer, hændelseshåndteringssystemer og automatiserede skaleringsfunktioner.
 
-|Rolle|Ideation|Iteration 1|Iteration 2|Iteration 3|Iteration 4|Iteration ….|Vision state|
-|----|--------|-----------|-----------|-----------|-----------|------------|------------|
-|Projekt ejer|100 %|25%|25%|25%|25%|25%|100%|
-|Projekt leder|100%|100%|100%|100%|100%|100%|100%|
-|Data Engineer|100%|50%|25%|5%|5%|5%|0%|
-|Designer|100%|10%|10%|25%|25%|40%|0%|
-|Transform Engineer|100%|30%|30%|30%|30%|30%|0%|
-|Data Governance|100%|25%|25%|10%|10%|10%|10%|
-|Super-bruger/Ambassadør|100%|5%|5%|20%|20%|50%|100%|
-|System ejer|100%|25%|10%|0%|0%|0%|10%|
-|Arkitekt|100%|50%|25%|10%|10%|10%|10%|
+---
 
-1. Ideation – Projekt start der sætter rammerne og ønsket resultat for et projekt.
-2. Iteration X – de individuelle “versioner” – typisk ny version hver 3 måned 
-3. Vision State – Det ønskede endelige resultat.
+## **4. Diskussion**
+Mangfoldigheden af brugerroller understreger nødvendigheden af modulære og adaptive platformarkitekturer. Manglende imødekommelse af disse forskellige krav kan hæmme adoption og kompromittere organisationens datastrategier. Fremtidig forskning bør undersøge optimering af brugeroplevelsen og tværgående samarbejde inden for dataøkosystemer.
+
+---
+
+## **5. Konklusion**
+Dataplatforme repræsenterer multifacetterede miljøer, der betjener både tekniske og ikke-tekniske interessenter. En detaljeret forståelse af brugerroller og deres respektive krav er afgørende for at designe robuste, sikre og brugervenlige platforme. Denne taksonomi giver et grundlag for at tilpasse platformens kapabiliteter til organisatoriske mål.
+
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)
