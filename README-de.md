@@ -43,22 +43,12 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 
 Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden (in separaten Abschnitten):
 
->- [Sicherheit](./Security/Security-de.md)
->- [Gesetzgebung](./Security/Legislation-de.md)
->- [Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)
->- [Risikobewertung](./Security/Exit-and-risc-strategies-de.md)
->- [Data-Modellierung](./DataModelling/DataModel-de.md)
->- [Daten-ermiteln](./Operations/establish-data-de.md)
->- [Project Rollen](./Operations/project-roles-de.md)
->- [Anwender Rollen](./Operations/user-roles-de.md)
->- [Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)
->- [Data-Operationen](./DataOps/DataOps-de.md)
->- [Data Mesh](./DataOps/Data-mesh-de.md)
->- [Selbstbedienung](./DataOps/Self-service-de.md)
->- [GenAI und die Datenplattform](./DataOps/GenAI-de.md)
->- [Cloud-Umgebungen](./DataOps/Cloud-env-de.md)
->- [Namensstandards](./DataOps/Naming-standards-de.md)
->- [Meta data Handhabung](./DataOps/Data-mesh-de.md)
+|Sektion|Sektion|Section|Sektion|
+|-------|-------|-------|-------|
+|[Sicherheit](./Security/Security-de.md)|[Gesetzgebung](./Security/Legislation-de.md)|[Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)|[Risikobewertung](./Security/Exit-and-risc-strategies-de.md)|
+|[Data-Modellierung](./DataModelling/DataModel-de.md)|[Daten-ermiteln](./Operations/establish-data-de.md)|[Project Rollen](./Operations/project-roles-de.md)|[Anwender Rollen](./Operations/user-roles-de.md)|
+|[Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)|[Data-Operationen](./DataOps/DataOps-de.md)|[Data Mesh](./DataOps/Data-mesh-de.md)|[Selbstbedienung](./DataOps/Self-service-de.md)|
+|[GenAI und die Datenplattform](./DataOps/GenAI-de.md)|[Cloud-Umgebungen](./DataOps/Cloud-env-de.md)|[Namensstandards](./DataOps/Naming-standards-de.md)|[Meta data Handhabung](./DataOps/Data-mesh-de.md)|
 
 ## Hintergrund
 
