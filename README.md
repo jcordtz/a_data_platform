@@ -47,7 +47,7 @@ These are follows:
 >- [Risk-assessment](./Security/Exit-and-risc-strategies.md)
 >- [Data-modelling](./DataModelling/DataModel.md)
 >- [Data-establishment](./Operations/establish-data.md)
->- [Projet roles](./Operations/project-roles.md)
+>- [Project roles](./Operations/project-roles.md)
 >- [User roles](./Operations/user-roles.md)
 >- [Operations/Resilience](./Operations/Operations.md)
 >- [Data-operations](./DataOps/DataOps.md)
