@@ -1,10 +1,10 @@
-![microsoft](images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
-# Eine Datenplattform - Rollen
+# Eine Datenplattform - Project Rollen
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Rollen
@@ -76,7 +76,7 @@ Die Anforderungen der verschiedenen Rollen variieren natürlich während eines P
 2. Iteration X – die einzelnen "Versionen" – in der Regel alle 3 Monate eine neue Version 
 3. Visionszustand – Das gewünschte Endergebnis.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

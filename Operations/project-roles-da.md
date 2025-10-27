@@ -1,10 +1,10 @@
-![microsoft](images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
-# En data platform - Roller
+# En data platform - Projekt roller
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Roller
@@ -74,7 +74,7 @@ Behovene i de forskellige roller vil naturligvis variere gennem et projekt. Føl
 2. Iteration X – de individuelle “versioner” – typisk ny version hver 3 måned 
 3. Vision State – Det ønskede endelige resultat.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

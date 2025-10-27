@@ -1,10 +1,10 @@
-![microsoft](images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
-# A data platform - Roles
+# A data platform - User roles (under construction)
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Roles
@@ -71,7 +71,7 @@ The needs of the different roles will naturally differ through a project. The fo
 2. Iteration X – the individual “versions” – most likely in 3-month timespans
 3. Vision State – overall what is the projects going to accomplish
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](roles.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](roles-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](roles-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
