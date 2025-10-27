@@ -22,7 +22,7 @@ The classification presented herein is derived from an extensive review of indus
 
 ## 3. User Categories and Functional Requirements
 
-![Figure 1](images/english/Slide24.jpeg)
+![Figure 1](../images/english/Slide24.jpeg)
 
 *Figure 1*
 
