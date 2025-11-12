@@ -48,7 +48,9 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 |[Sicherheit](./Security/Security-de.md)|[Gesetzgebung](./Security/Legislation-de.md)|[Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)|[Risikobewertung](./Security/Exit-and-risc-strategies-de.md)|
 |[Data-Modellierung](./DataModelling/DataModel-de.md)|[Daten-ermiteln](./Operations/establish-data-de.md)|[Project Rollen](./Operations/project-roles-de.md)|[Anwender Rollen](./Operations/user-roles-de.md)|
 |[Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)|[Data-Operationen](./DataOps/DataOps-de.md)|[Data Mesh](./DataOps/Data-mesh-de.md)|[Selbstbedienung](./DataOps/Self-service-de.md)|
-|[GenAI und die Datenplattform](./DataOps/GenAI-de.md)|[Cloud-Umgebungen](./DataOps/Cloud-env-de.md)|[Namensstandards](./DataOps/Naming-standards-de.md)|[Meta data Handhabung](./DataOps/Data-mesh-de.md)|
+|[GenAI und die Datenplattform](./GenAI/GenAI-de.md)|[Cloud-Umgebungen](./DataOps/Cloud-env-de.md)|[Namensstandards](./DataOps/Naming-standards-de.md)|[Meta data Handhabung](./DataOps/Data-mesh-de.md)|
+|[Agentic AI und die Datenplatform](./GenAI/Agent-de.md)|[Die Datenplatform und einen Daten Marketsplatz](./GenAI/Marketplace-de.md)|||
+
 
 ## Hintergrund
 

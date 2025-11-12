@@ -49,7 +49,8 @@ i forbindelse med dataplatformen. Disse er følgende (findes i egne sektioner af
 |[Sikkerhed](./Security/Security-da.md)|[Lovgivning](./Security/Legislation-da.md)|[Exit-strategi](./Security/Exit-and-risc-strategies-da.md)|[Risikovurdering](./Security/Exit-and-risc-strategies-da.md)|
 |[Data-modellering](./DataModelling/DataModel-da.md)|[Etablering-af-data](./Operations/establish-data-da.md)|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)|
 |[Drift/Modstandsdygtighed](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|[Selvbetjening](./DataOps/Self-service-da.md)|
-|[GenAI og data platformen](./DataOps/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataOps/Naming-standards-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
+|[GenAI og data platformen](./GenAI/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataOps/Naming-standards-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
+|[Agentic AI og data platformen](./GenAI/Agent-da.md)|[Data platformen som en data markedsplads](./GenAI/Marketplace-da.md)|||
 
 ## Baggrund
 

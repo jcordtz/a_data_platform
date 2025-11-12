@@ -46,7 +46,8 @@ These are follows:
 |[Security](./Security/Security.md)|[Legislation](./Security/Legislation.md)|[Exit-strategy](./Security/Exit-and-risc-strategies.md)|[Risk-assessment](./Security/Exit-and-risc-strategies.md)|
 |[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)|
 |[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|[Data Mesh](./DataOps/Data-mesh.md)|[Self-service](./DataOps/Self-service.md)|
-|[GenAI and the Data Platform](./DataOps/GenAI.md)|[Cloud-environments](./DataOps/Cloud-env.md)|[Naming Standards](./DataOps/Naming-standards.md)|[Meta data handling](./DataOps/Meta-management.md)|
+|[GenAI and the Data Platform](./GenAI/GenAI.md)|[Cloud-environments](./DataOps/Cloud-env.md)|[Naming Standards](./DataOps/Naming-standards.md)|[Meta data handling](./DataOps/Meta-management.md)|
+|[Agentic AI and the Data Platform](./GenAI/Agent.md)|[The Data Platform as a marketplace](./GenAI/Marketplace.md)|||
 
 ## Background
 
