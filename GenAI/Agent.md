@@ -9,7 +9,18 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Agent-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
-## **Introduction**
+## **Background**
+
+The content in this section comes from a discussion we have at Dansk Flygtningehjælp/Danish Refugee Council (DRC).
+
+In its nature DRC handles crisis of many natures. And for each crisis their is always something that is more or less different.
+
+So how can you make an optimal process that can cover all these differences. It really do not fit very well into the paradigms we often
+talk about when wants to make something more effective, scalable, repeatable, reliable, proven.....
+
+It is difficult to put into a standard ERP/CRM system not into a traditional datawarehouse/datamart/one-version of the truth setup.
+
+
 
 Agents connected to individual database tables are specialized processes or services that monitor, manage, and interact with specific tables in a database. These agents can automate tasks, enforce rules, and provide real-time insights into data changes. They are essential for modern data-driven architectures where modularity and intelligence are key.
 
