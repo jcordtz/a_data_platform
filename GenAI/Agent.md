@@ -40,12 +40,8 @@ Table-connected agents have these characteristics:
 * **Data Quality** for the individual agent is handled by the agent itself.
 * **Integration points** for external systems to interact with database tables.
 
-### **Common Use Cases**
-
-* Data validation and cleansing.
-* Triggering workflows when new records are inserted.
-* Synchronizing data with external APIs.
-* Monitoring compliance and governance rules.
+In this way an agent can be used in any number of relevant contexts providing the part of the
+overall response that makes sense.
 
 ## **How to Establish Table-Connected Agents**
 
