@@ -11,25 +11,33 @@
 
 ## **Background**
 
-The content in this section comes from a discussion we have at Dansk Flygtningehjælp/Danish Refugee Council (DRC).
+The content in this section comes from a discussion I have at a big danish NGO who handles
+human crisis situations worldwide.
 
-In its nature DRC handles crisis of many natures. And for each crisis their is always something that is more or less different.
+In its nature this NGO handles crisis of many different natures. And hence for each crisis their
+is always something that is more or less different.
 
-So how can you make an optimal process that can cover all these differences. It really do not fit very well into the paradigms we often
-talk about when wants to make something more effective, scalable, repeatable, reliable, proven.....
+So how can you make an optimal process that can cover all these differences. It really does not 
+fit very well into the paradigms we often talk about when wants to make something more effective, 
+scalable, repeatable, reliable, proven, etc. as this often has standardization as a main element.
 
-It is difficult to put into a standard ERP/CRM system not into a traditional datawarehouse/datamart/one-version of the truth setup.
+It is difficult to put into a standard ERP/CRM system or into a traditional datawarehouse/
+datamart/"one-version of the truth" setup.
 
+So the idea arose that instead of trying to get all kind of crisis in to a standard setup, what
+if each element (in this context read *dataset*) had it is own agent. Each of these agents should
+then provide a description of what this *dataset* contains ("columns"), (maybe) a description per column, what is the *key* and how can this *dataset* be combined with other *datasets*.
 
-
-Agents connected to individual database tables are specialized processes or services that monitor, manage, and interact with specific tables in a database. These agents can automate tasks, enforce rules, and provide real-time insights into data changes. They are essential for modern data-driven architectures where modularity and intelligence are key.
+In this section we will call these agents *table-connected agents*.
 
 ## **What Are Table-Connected Agents?**
 
-Table-connected agents are:
+Table-connected agents have these characteristics:
 
-* **Automated entities** that perform operations on a designated table.
-* **Event-driven** or **scheduled** processes that respond to data changes.
+* **Automated entities** that perform operations on a single, designated *dataset*.
+* **Event-driven** so that they only provide content if appropriate.
+* **Governed** meaning that the individual agent ensures that the requester can get a response.
+* **Data Quality** for the individual agent is handled by the agent itself.
 * **Integration points** for external systems to interact with database tables.
 
 ### **Common Use Cases**
