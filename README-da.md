@@ -50,7 +50,7 @@ i forbindelse med dataplatformen. Disse er følgende (findes i egne sektioner af
 |[Data-modellering](./DataModelling/DataModel-da.md)|[Etablering-af-data](./Operations/establish-data-da.md)|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)|
 |[Drift/Modstandsdygtighed](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|[Selvbetjening](./DataOps/Self-service-da.md)|
 |[Generativ AI](./GenAI/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataOps/Naming-standards-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
-|[Agentic AI](./GenAI/Agent-da.md)|[Datamarkedsplads](./GenAI/Marketplace-da.md)|||
+|[Data agents](./GenAI/Agent-da.md)|[Datamarkedsplads](./GenAI/Marketplace-da.md)|||
 
 ## Baggrund
 

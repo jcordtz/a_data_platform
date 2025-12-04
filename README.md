@@ -47,7 +47,7 @@ These are follows:
 |[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)|
 |[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|[Data Mesh](./DataOps/Data-mesh.md)|[Self-service](./DataOps/Self-service.md)|
 |[Generative AI](./GenAI/GenAI.md)|[Cloud-environments](./DataOps/Cloud-env.md)|[Naming Standards](./DataOps/Naming-standards.md)|[Meta data handling](./DataOps/Meta-management.md)|
-|[Agentic AI](./GenAI/Agent.md)|[Datamarketplace](./GenAI/Marketplace.md)|||
+|[Data Agents](./GenAI/Agent.md)|[Datamarketplace](./GenAI/Marketplace.md)|||
 
 ## Background
 
