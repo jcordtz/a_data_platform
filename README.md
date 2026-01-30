@@ -285,7 +285,7 @@ These service are described further in this [section](Supporting_Data_Services/S
 
 The topic of handling the modelling of data in this setup is discussed further in this [section](DataModelling/DataModel.md)
 
-## A special case – Real Time
+## A *special* case – Real Time
 
 We will approach Real Time data processing as a particular case and examine it from that perspective.
 
@@ -318,7 +318,7 @@ However, this *data* is **also** stored in the data platform, where there is som
 alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on 
 their smartphones.
 
-## Another special case - ChatGPT/CoPilot
+## Another *special* case - ChatGPT/CoPilot
 
 As AI/ML/GenAI is becoming more and more accessible the requirements and hence challenges on the data elements being used in such 
 solutions gets even more important.
@@ -356,6 +356,27 @@ your proprietary content.
 Based on the above we must ensure that the data we provide to the solutions created fits exactly what the user has access to, so that the 
 grounding and hence the vector database contains only this. This can be done through the *publish area* as this area represents datasets 
 with the exact content. So the task is to "load" the vector databases being used - and make sure these are stopped/removed after usage.
+
+## And a third *special* case - Agentic AI/Agents
+
+The generative AI approach has turned a lot towards *agents*. 
+
+A concept where an agent solve a specific task and then returns the response to an "overall" service that then combines the different agents partly answer to a request to form the "complete" answer (using a MCP-server).
+
+As an example I have a discussion going on with a NGO that helps when a disaster occurs (earthquake, storms, earth-slides etc.). No disaster is the same, so help needed depends on a lot of things like geography, vendors available, infrastructure, religion etc. This also means that the process needed differs from time to time.
+
+This does nit fit good into a standardized framework. So they always have to put things together somehow and depending of the case this can be everything from doable to very complex.
+
+So what we are discussing is if and how we could take an approach where the relevant "tables" in their system-landscape is fronted by an agent each.
+Each of these agents describes the capabilities of the individual table like what does it contain, how can be used, how can it be combined with other pieces of information and so on.
+
+And then in front of these agents sits a master agent that is configured(grounded) for each case where the relevant people can use this master agent to prompt for answers. They can also create an application that fits the case in question and then provide that to help-workers.
+
+In this case each datasets individual tables in the data platform would be fronted by an agent. These agents can then be put in to action depending of task in question.
+
+![Figure 6a](images/english/slide27.jpg)
+
+*Figure 6a*
 
 ## Environments
 
