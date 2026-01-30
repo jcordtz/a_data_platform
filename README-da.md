@@ -399,6 +399,25 @@ så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan g
 datasæt med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes 
 efter brug.
 
+## Og et tredje special-tilfælde – Agentic AI / Agents
+
+Den generative AI-tilgang har i høj grad bevæget sig i retning af agents.
+
+Et koncept, hvor en agent løser en specifik opgave og derefter returnerer sit svar til en “overordnet” service, som så kombinerer de forskellige agents’ delvise svar på en forespørgsel for at danne det “fuldstændige” svar (ved brug af en MCP-server).
+Som eksempel har jeg en igangværende dialog med en NGO, der hjælper, når en katastrofe indtræffer (jordskælv, storme, jordskred osv.). Ingen katastrofer er ens, så den nødvendige hjælp afhænger af mange faktorer såsom geografi, tilgængelige leverandører, infrastruktur, religion osv. Det betyder også, at den proces, der er nødvendig, varierer fra gang til gang.
+
+Dette passer ikke godt ind i et standardiseret framework. Derfor er de altid nødt til på en eller anden måde at sammensætte løsninger, og afhængigt af situationen kan dette spænde fra relativt overkommeligt til meget komplekst.
+
+Det, vi diskuterer, er derfor, om – og hvordan – vi kan anvende en tilgang, hvor de relevante tables i deres system-landskab hver især frontes af en agent.
+Hver af disse agents beskriver kapabiliteterne for den enkelte table, såsom hvad den indeholder, hvordan den kan anvendes, og hvordan den kan kombineres med andre informationsdele osv.
+
+Foran disse agents placeres der så en master agent, som konfigureres (grounded) til hver enkelt situation, hvor de relevante personer kan bruge denne master agent til at prompte efter svar. De kan også opbygge en applikation, der passer til den konkrete situation, og derefter stille den til rådighed for hjælpearbejdere.
+
+I dette scenarie vil hver enkelt tables i et datasets i data platformen være frontet af en agent. Disse agents kan derefter sættes i aktion afhængigt af den aktuelle opgave.
+
+![Figur 6a](images/danish/slide27.jpg)
+
+*Figur 6a*
 
 ## Miljøer
 

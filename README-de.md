@@ -326,7 +326,23 @@ Auf der Grundlage des oben Gesagten müssen wir sicherstellen, dass die Daten, d
 hat, so dass die Erdung und damit die Vektordatenbank nur dies enthält. Dies kann über den Veröffentlichungs-Layer erfolgen, da dieser Layer Datensätze mit dem genauen Inhalt darstellt. Die 
 Aufgabe besteht also darin, die verwendeten Vektordatenbanken zu "laden" - und sicherzustellen, dass diese nach der Verwendung gestoppt/entfernt werden.
 
+## Und ein dritter Special-Fall – Agentic AI / Agents
 
+Der generative AI-Ansatz hat sich zunehmend in Richtung agents entwickelt.
+
+Ein Konzept, bei dem ein agent eine spezifische Aufgabe löst und anschließend seine Antwort an einen „übergeordneten“ Service zurückgibt, der dann die teilweisen Antworten der verschiedenen agents zu einer „vollständigen“ Antwort auf eine Anfrage kombiniert (unter Verwendung eines MCP-Servers).
+
+Als Beispiel führe ich derzeit eine Diskussion mit einer NGO, die Hilfe leistet, wenn eine Katastrophe eintritt (Erdbeben, Stürme, Erdrutsche usw.). Keine Katastrophe ist wie die andere, daher hängt die benötigte Hilfe von vielen Faktoren ab, wie z. B. Geografie, verfügbaren Anbietern, Infrastruktur, Religion usw. Das bedeutet auch, dass sich der benötigte Prozess von Fall zu Fall unterscheidet.
+
+Dies passt nicht gut in ein standardisiertes Framework. Daher müssen sie die Dinge immer irgendwie zusammenstellen, und je nach Situation kann dies von relativ machbar bis hin zu sehr komplex reichen.
+
+Was wir daher diskutieren, ist, ob – und wie – wir einen Ansatz verfolgen können, bei dem die relevanten tables in ihrer Systemlandschaft jeweils von einem agent fronted werden.
+
+Jeder dieser agents beschreibt die Fähigkeiten der einzelnen table, z. B. was sie enthält, wie sie genutzt werden kann und wie sie mit anderen Informationsteilen kombiniert werden kann usw.
+
+Vor diesen agents befindet sich dann ein master agent, der für jeden einzelnen Fall konfiguriert (grounded) wird. Die relevanten Personen können diesen master agent nutzen, um per Prompt Antworten zu erhalten. Sie können auch eine Applikation erstellen, die zum jeweiligen Fall passt, und diese anschließend den Helfern zur Verfügung stellen.
+
+In diesem Szenario würde jede einzelne table eines datasets in der data platform von einem agent fronted werden. Diese agents können dann je nach der jeweiligen Aufgabe in Aktion treten.
 
 ## Umgebungen
 
