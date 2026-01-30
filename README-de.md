@@ -344,6 +344,10 @@ Vor diesen agents befindet sich dann ein master agent, der für jeden einzelnen 
 
 In diesem Szenario würde jede einzelne table eines datasets in der data platform von einem agent fronted werden. Diese agents können dann je nach der jeweiligen Aufgabe in Aktion treten.
 
+![Abbildung 6a](images/german/slide27.jpg)
+
+*Abbildung 6a*
+
 ## Umgebungen
 
 In diesem Abschnitt wird erläutert, wie sechs Umgebungen zum Implementieren eines Datenplattformprojekts verwendet werden können. Je nach Vorlieben können Sie natürlich entscheiden, wie viele dieser Umgebungen Sie haben möchten und wie Sie die beschriebenen Aufgaben auf weniger oder mehr Umgebungen verteilen.
