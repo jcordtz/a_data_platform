@@ -419,6 +419,24 @@ I dette scenarie vil hver enkelt tables i et datasets i data platformen være fr
 
 *Figur 6a*
 
+### Til inspiration:
+Jeg har selv lavet et setup for en kunde ved hjælp af VIBE programming. Her kan du læse mere om VIBE i en Microsoft‑kontekst.
+(https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
+
+Jeg startede med at beskrive denne ide (i CoPilot):
+
+![Vibe-idea](images/VIBE-prog1.png)
+
+CopilotHer er oversættelsen, igen med de tekniske begreber bibeholdt:
+
+Jeg brugte derefter Visual Studio Code til at oprette en applikation ved hjælp af GitHub Copilot.
+
+![Vibe-prog](images/VIBE-prog2.png)
+
+Og fik dannet denne apllication
+
+![Vibe-application](images/VIBE-prog3.png)
+
 ## Miljøer
 
 Dette afsnit afsøger, hvordan man kunne bruge seks miljøer til implementering af et dataplatformsprojekt. Afhængigt af præferencer kan man 

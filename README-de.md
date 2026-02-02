@@ -348,6 +348,21 @@ In diesem Szenario würde jede einzelne table eines datasets in der data platfor
 
 *Abbildung 6a*
 
+Ich habe selbst ein Setup für einen Kunden unter Verwendung von VIBE programming erstellt. Hier können Sie mehr über VIBE im Microsoft‑Kontext lesen.
+(https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
+
+I used this stating my idea as follows (in CoPilot):
+
+![Vibe-idea](images/VIBE-prog1.png)
+
+Anschließend habe ich Visual Studio Code verwendet, um mithilfe von GitHub Copilot eine Anwendung zu erstellen.
+
+![Vibe-prog](images/VIBE-prog2.png)
+
+Und habe diese Application erhalten.
+
+![Vibe-application](images/VIBE-prog3.png)
+
 ## Umgebungen
 
 In diesem Abschnitt wird erläutert, wie sechs Umgebungen zum Implementieren eines Datenplattformprojekts verwendet werden können. Je nach Vorlieben können Sie natürlich entscheiden, wie viele dieser Umgebungen Sie haben möchten und wie Sie die beschriebenen Aufgaben auf weniger oder mehr Umgebungen verteilen.

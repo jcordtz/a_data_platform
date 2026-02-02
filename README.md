@@ -372,11 +372,27 @@ Each of these agents describes the capabilities of the individual table like wha
 
 And then in front of these agents sits a master agent that is configured(grounded) for each case where the relevant people can use this master agent to prompt for answers. They can also create an application that fits the case in question and then provide that to help-workers.
 
-In this case each datasets individual tables in the data platform would be fronted by an agent. These agents can then be put in to action depending of task in question.
+In this case each datasets individual tables in the data platform would be fronted by an agent. These agents can then be put in to action depending of the task in question.
 
 ![Figure 6a](images/english/slide27.jpg)
 
 *Figure 6a*
+
+### For inspiration:
+I have made a setup myself for a customer using VIBE programming. Here can you read more about VIBE in a Microsoft context.
+(https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
+
+I used this stating my idea as follows (in CoPilot):
+
+![Vibe-idea](images/VIBE-prog1.png)
+
+I then used Visual Studio Code to create an application using Github Copilot:
+
+![Vibe-prog](images/VIBE-prog2.png)
+
+And got this application
+
+![Vibe-application](images/VIBE-prog3.png)
 
 ## Environments
 
