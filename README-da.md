@@ -459,7 +459,7 @@ Update the document directly with your improvements.
 
 Og fik dannet denne apllication
 
-![Vibe-application](images/VIBE-prog3.png)
+![Vibe-application](images/VIBE-prog1.png)
 
 ## Miljøer
 

@@ -388,7 +388,7 @@ Update the document directly with your improvements.
 
 Und habe diese Application erhalten.
 
-![Vibe-application](images/VIBE-prog3.png)
+![Vibe-application](images/VIBE-prog1.png)
 
 ## Umgebungen
 

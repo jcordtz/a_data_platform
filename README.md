@@ -418,7 +418,7 @@ Update the document directly with your improvements.
 
 And got this application
 
-![Vibe-application](images/VIBE-prog3.png)
+![Vibe-application](images/VIBE-prog1.png)
 
 ## Environments
 
