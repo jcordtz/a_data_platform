@@ -351,9 +351,25 @@ In diesem Szenario würde jede einzelne table eines datasets in der data platfor
 Ich habe selbst ein Setup für einen Kunden unter Verwendung von VIBE programming erstellt. Hier können Sie mehr über VIBE im Microsoft‑Kontext lesen.
 (https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
 
-I used this stating my idea as follows (in CoPilot):
+Ich habe dies verwendet und meine Idee wie folgt formuliert. Ich habe Englisch verwendet, hätte dies aber genauso gut auf Deutsch machen können. (verwendete CoPilot):
 
-![Vibe-idea](images/VIBE-prog1.png)
+I am participating in a creative Prompt to Prototype challenge where the end goal is to build a web-based prototype in 4 modules:
+1. Research
+2. Product Requirements Document (PRD)
+3. Branding & Logo
+4. Prototype
+Here is my idea: I would like to create a setup where tables in an AzureSQL Database each are represented by an agent. Each agent provides information about what the content represent, what columns can be returned and which if these columns could be used to join with other tables also provided through agents. In this way each agent would be able to return the appropriate part of information needed to answer an overall task request. Notice that each agent must be able to connect to AzureSQL database.
+Please help me scope it by filling out the following details:
+* Scenario (theme or context)
+* Audience (target users)
+* Vibe Words (2–3 adjectives for style and tone)
+* Format (type of web experience — app, game, dashboard, interactive toy, quiz etc.)
+* Concept (short description)
+* Goal (what it aims to achieve)
+* Title (placeholder name)
+* MVP Features (small, completable in <2 hours)
+* Stretch Goals (2–3 enhancements)
+Output the result in a table with these columns: Scenario | Audience | Vibe Words | Format | Concept | Goal | Title | MVP Features | Stretch Goals.
 
 Anschließend habe ich Visual Studio Code verwendet, um mithilfe von GitHub Copilot eine Anwendung zu erstellen.
 
