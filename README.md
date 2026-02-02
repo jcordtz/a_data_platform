@@ -384,6 +384,7 @@ I have made a setup myself for a customer using VIBE programming. Here can you r
 
 I used this stating my idea as follows (used CoPilot):
 
+---
 I am participating in a creative Prompt to Prototype challenge where the end goal is to build a web-based prototype in 4 modules:
 1. Research
 2. Product Requirements Document (PRD)
@@ -401,10 +402,17 @@ Please help me scope it by filling out the following details:
 * MVP Features (small, completable in <2 hours)
 * Stretch Goals (2–3 enhancements)
 Output the result in a table with these columns: Scenario | Audience | Vibe Words | Format | Concept | Goal | Title | MVP Features | Stretch Goals.
+---
 
 I then used Visual Studio Code to create an application using Github Copilot:
 
-![Vibe-prog](images/VIBE-prog2.png)
+---
+Attached is my Product Requirements document named DataAgentHub-vs_PRD.md. Please refine and update this document to be optimized for vibe coding a lightweight client-side web application.
+
+Make the purpose clear, identify core features for a simple prototype, outline key user flows, and ensure it supports building with limited time.
+
+Update the document directly with your improvements.
+---
 
 And got this application
 
