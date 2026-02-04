@@ -378,11 +378,12 @@ In this case each datasets individual tables in the data platform would be front
 
 *Figure 6a*
 
-### For inspiration:
+### For inspiration
+
 I have made a setup myself for a customer using VIBE programming. Here can you read more about VIBE in a Microsoft context.
 (https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
 
-I used this stating my idea as follows (used CoPilot):
+I used this stating my idea as follows (using CoPilot):
 
 ---
   
@@ -412,6 +413,7 @@ I used this stating my idea as follows (used CoPilot):
 I then used Visual Studio Code to create an application using Github Copilot:
 
 ---
+
 *Attached is my Product Requirements document named DataAgentHub-vs_PRD.md. Please refine and update this document to be optimized*  
 *for vibe coding a lightweight client-side web application.*  
   

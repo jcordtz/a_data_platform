@@ -423,7 +423,7 @@ I dette scenarie vil hver enkelt tables i et datasets i data platformen være fr
 Jeg har selv lavet et setup for en kunde ved hjælp af VIBE programming. Her kan du læse mere om VIBE i en Microsoft‑kontekst.
 (https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
 
-Jeg startede med at beskrive denne ide - jeg brugte engelsk men kunne lige så godt have gjort dette på dansk (brugte CoPilot):
+Jeg startede med at beskrive denne ide - jeg brugte engelsk som sprog (*arbejdsskade* :smile:) men man kan selvfølgelig lige så godt have gjort dette på dansk (brugte CoPilot):
 
 ---
   

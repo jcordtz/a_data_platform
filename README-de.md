@@ -351,7 +351,7 @@ In diesem Szenario würde jede einzelne table eines datasets in der data platfor
 Ich habe selbst ein Setup für einen Kunden unter Verwendung von VIBE programming erstellt. Hier können Sie mehr über VIBE im Microsoft‑Kontext lesen.
 (https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
 
-Ich habe dies verwendet und meine Idee wie folgt formuliert. Ich habe Englisch verwendet, hätte dies aber genauso gut auf Deutsch machen können. (verwendete CoPilot):
+Ich habe dies verwendet und meine Idee wie folgt formuliert. Ich verwendete Englisch als Sprache (Arbeitsmerkmal 😄), aber man hätte das natürlich genauso gut auf Deutsch machen können (mit Copilot verwendet).
 
 ---
 *I am participating in a creative Prompt to Prototype challenge where the end goal is to build a web-based prototype in 4 modules:*  
@@ -382,7 +382,7 @@ Anschließend habe ich Visual Studio Code verwendet, um mithilfe von GitHub Copi
 ---
   
 *Attached is my Product Requirements document named DataAgentHub-vs_PRD.md. Please refine and update this document to be optimized*  
-*for vibe coding a *lightweight client-side web application.*  
+*for vibe coding a lightweight client-side web application.*  
   
 *Make the purpose clear, identify core features for a simple prototype, outline key user flows, and ensure it supports building with limited time.*  
   
