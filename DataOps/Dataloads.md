@@ -1,7 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - Loading and performance, 
-## Considerations on what to observe 
+# A data platform - Loading and performance<br>Considerations on what to observe 
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
