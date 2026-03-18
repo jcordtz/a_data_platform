@@ -2,9 +2,9 @@
 
 # A data platform - Loading and performance
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 ## Ingesting Data into a Data Warehouse Using a Medallion Architecture 
@@ -211,7 +211,7 @@ Cost-efficient
 Easy to govern and evolve 
 The architecture supports both traditional BI and advanced analytical workloads, making it a solid foundation for data-driven organizations. 
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,9 +2,9 @@
 
 # En data platform - Load og performance
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Datalods-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Datalods-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 
@@ -215,7 +215,7 @@ Omkostningseffektiv
 Let at governere og videreudvikle
 Arkitekturen understøtter både klassiske BI-scenarier og moderne analytiske workloads og udgør dermed et solidt fundament for datadrevne organisationer.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)

@@ -2,9 +2,9 @@
 
 # Eine Datenplattform - Laden und performance
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 
@@ -215,7 +215,7 @@ Kosteneffizient betrieben werden kann
 Einfach zu governieren und weiterzuentwickeln ist
 Die Architektur unterstützt sowohl klassische BI-Szenarien als auch moderne analytische Workloads und bildet damit ein tragfähiges Fundament für datengetriebene Organisationen.
 
-[![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
