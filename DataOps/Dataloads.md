@@ -30,6 +30,7 @@ This section is based on modern cloud platforms like Azure, AWS, or GCP, but the
 As descibed in the *main document* the Medallion architecture divides the data lifecycle into clearly separated layers: 
 
 |Layer|Purpose|
+|-----|---------------|
 |Bronze|Raw data from source systems – unchanged and complete|
 |Silver|Cleaned, standardized, and enriched data|
 |Gold|Business-ready, aggregated, and performance-optimized data|
