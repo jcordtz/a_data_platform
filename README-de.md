@@ -49,7 +49,7 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 |[Daten-Modellierung](./DataModelling/DataModel-de.md)|[Daten-ermiteln](./Operations/establish-data-de.md)|[Project Rollen](./Operations/project-roles-de.md)|[Anwender Rollen](./Operations/user-roles-de.md)|
 |[Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)|[Data-Operationen](./DataOps/DataOps-de.md)|[Data Mesh](./DataOps/Data-mesh-de.md)|[Selbstbedienung](./DataOps/Self-service-de.md)|
 |[Generative AI](./GenAI/GenAI-de.md)|[Cloud-Umgebungen](./DataOps/Cloud-env-de.md)|[Namensstandards](./DataOps/Naming-standards-de.md)|[Meta data Handhabung](./DataOps/Data-mesh-de.md)|
-|[Daten Agenten](./GenAI/Agent-de.md)|[Datenmarketsplatz](./GenAI/Marketplace-de.md)|Loading & Perfomance](./DataOps/DataLoads-de.md)||
+|[Daten Agenten](./GenAI/Agent-de.md)|[Datenmarketsplatz](./GenAI/Marketplace-de.md)|[Loading & Perfomance](./DataOps/DataLoads-de.md)||
 
 
 ## Hintergrund
