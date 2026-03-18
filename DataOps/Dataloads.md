@@ -6,7 +6,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Ingesting Data into the data platform based on the Medallion Architecture 
 
@@ -236,4 +236,4 @@ The architecture supports both traditional BI and advanced analytical workloads,
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

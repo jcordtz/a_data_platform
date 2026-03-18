@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 
 Datenintegration in ein Data Warehouse mit einer Medallion-Architektur
@@ -218,4 +218,4 @@ Die Architektur unterstützt sowohl klassische BI-Szenarien als auch moderne ana
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
