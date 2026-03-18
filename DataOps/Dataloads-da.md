@@ -3,8 +3,8 @@
 # En data platform - Load og performance
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
-[![dk](https://img.shields.io/badge/lang-da-red.svg)](Datalods-da.md)
-[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Datalods-de.md)
+[![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
+[![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 
