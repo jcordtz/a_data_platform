@@ -65,35 +65,30 @@ As you will learn in the rest of this section files places and overall role. And
 lets have a look on what is normally seen and hence used in the data platform.
 
 ### JSON (JavaScript Object Notation)
-**Typical use cases**: API payloads, Configuration files, Semi-structured data exchange between applications, 
-                   Event and streaming data (telemetry, logs)  
-**Key characteristics**: Text-based and human-readable, Schema-less or loosely enforced, Hierarchical and nested structure,
-                     Widely supported across programming languages  
+
+**Typical use cases**: API payloads, Configuration files, Semi-structured data exchange between applications, Event and streaming data (telemetry, logs)  
+**Key characteristics**: Text-based and human-readable, Schema-less or loosely enforced, Hierarchical and nested structure, Widely supported across programming languages.  
 **Strengths**: Excellent for data exchange and APIs, Flexible data structure, Easy to read and debug.  
 **Limitations**: Poor compression, Not columnar, Inefficient for large-scale analytics  
 
 ### Avro
 
-**Typical use cases**: Data serialization in distributed systems,Streaming platforms (Kafka, Event Hubs), 
-                   Data pipelines and system-to-system integration  
-**Key characteristics**: Binary format (not human-readable), Strong explicit schema, Schema stored with/alongside the data,
-                     Row-oriented  
+**Typical use cases**: Data serialization in distributed systems,Streaming platforms (Kafka, Event Hubs), Data pipelines and system-to-system integration  
+**Key characteristics**: Binary format (not human-readable), Strong explicit schema, Schema stored with/alongside the data , Row-oriented  
 **Strengths**: Compact and fast serialization, Supports schema evolution, Well suited for streaming workloads  
 **Limitations**: Not optimized for analytics, Requires tooling to inspect, Less intuitive for manual inspection  
 
 ### ORC (Optimized Row Columnar)
 
 **Typical use cases**: Large-scale analytics, Data warehousing, OLAP workloads in big data platforms  
-**Key characteristics**: Columnar storage format, High compression, Column-level statistics and indexing,  
-                     Strong schema support  
+**Key characteristics**: Columnar storage format, High compression, Column-level statistics and indexing, Strong schema support  
 **Strengths**: High query performance, Efficient storage utilization, Effective for aggregations and filtering.  
 **Limitations**: Less flexible than Parquet, Tightly coupled with big data engines, Not designed for frequent updates  
 
 
 ### XML (eXtensible Markup Language)
 
-**Typical use cases**: Enterprise system integration, Document-centric data,  
-                   Industry standards (like finance, healthcare, public sector)  
+**Typical use cases**: Enterprise system integration, Document-centric data, Industry standards (like finance, healthcare, public sector)  
 **Key characteristics**: Text-based and verbose, Tag-oriented hierarchical structure, Strong schema validation via XSD  
 **Strengths**: Mature ecosystem, Strong validation capabilities, Suitable for document-style data  
 **Limitations**: Large file sizes, Expensive parsing, Not suitable for analytics  
@@ -116,24 +111,20 @@ lets have a look on what is normally seen and hence used in the data platform.
 
 **Typical use cases**: Data lakes, Analytical workloads, BI, reporting, machine learning  
 **Key characteristics**: Columnar, binary format, Schema-aware, Designed for distributed processing  
-**Strengths**: Excellent performance for analytics, High compression, Column pruning and predicate pushdown,  
-           Broad ecosystem support  
+**Strengths**: Excellent performance for analytics, High compression, Column pruning and predicate pushdown, Broad ecosystem support  
 **Limitations**: Not human-readable, Not suitable for row-level updates, Requires analytical engines  
 
 ### XLS / XLSX (Excel)
 
 **Typical use cases**: Business reporting, Ad-hoc data analysis, Small to medium datasets, Data sharing with business users  
-**Key characteristics**: Binary (XLS) or XML-based container (XLSX), Supports formulas, charts, formatting, 
-                     Strongly interactive  
+**Key characteristics**: Binary (XLS) or XML-based container (XLSX), Supports formulas, charts, formatting, Strongly interactive  
 **Strengths**: Very user-friendly, Rich functionality, Widely adopted  
 **Limitations**: Not scalable, Poor performance at large volumes, Not suitable as a system of record  
 
 ### Delta Lake
 
-**Typical use cases**: Governed data lakes, Medallion architectures (bronze/silver/gold),  
-                   Incremental and streaming data processing  
-**Key characteristics**: Built on top of Parquet, Transaction log (`_delta_log`), ACID transactions on data lakes,  
-                     Schema enforcement and evolution, Time travel and versioning  
+**Typical use cases**: Governed data lakes, Medallion architectures (bronze/silver/gold), Incremental and streaming data processing  
+**Key characteristics**: Built on top of Parquet, Transaction log (`_delta_log`), ACID transactions on data lakes, Schema enforcement and evolution, Time travel and versioning  
 **Strengths**: Combines lakes and databases, Supports updates, deletes, and merges, Ideal for modern analytics platforms  
 **Limitations**: Requires compatible engines, Slight overhead compared to raw Parquet  
 
@@ -159,7 +150,7 @@ So, seen from a data platform these are the suggested formats in the different l
 |Bronze|Streaming input|JSON/Avro|
 |Silver|Curated data|Delta Lake|
 |Gold|Analytics & ML|Delta Lake|
-|Archiv|Long-term storage|Parquet|
+|Archive|Long-term storage|Parquet|
 
 ## Step 1: Data Ingestion into the Bronze Layer
 
@@ -195,9 +186,9 @@ Amazon S3 or Google Cloud Storage in recommended file formats.
 
 ### Performance Optimizations considerations in the Bronze Layer
 
-To achieve as high as possible load speed the following is worth considering:
+To achieve as fast as possible load speed the following is worth considering:
 
-* Parallel ingestion (partitioned by table, date, or business key)
+* Parallel ingestion (partitioned by e.g. table, date, or business key)
 * Large file sizes (typically 100–1000 MB per file)
 * Compression (Snappy, Gzip)
 * Partitioning by ingestion time or business attribute
@@ -214,6 +205,8 @@ The Silver layer represents cleaned, consistent, and technically correct data.
 At this stage, the focus shifts from the source system structure to a shared and standardized approach.
 The focus is to have data that can be easily combined towards the *end result* in the Gold layer.
 
+This layer doew not contain structures that **are** joined but structures that **can easily** be joined.
+
 To achieve this typical transformations are functions like:
 
 * Data type normalization
@@ -222,20 +215,24 @@ To achieve this typical transformations are functions like:
 * Referential integrity validation
 * Time zone normalization
 * Code and reference data harmonization
+* Aligned with a/the ![Naming standards](../DataModelling/NamingStandard.md)
 
 It is immportant that all transformations are deterministic, version-controlled and Idempotent
 
 ### Performance Design in the Silver Layer
+
+In the Siler layer you will most likely use Python and/or SQL hence the format we use should support this
+in the best possible maner.
 
 1. **Columnar Storage Formats**
 Silver data should be stored using columnar formats such as Parquet, Delta Lake, Iceberg and Hudi.
 This enables predicate pushdown, selective column reads and efficient compression.
 
 2. **Partitioning and Clustering**
-
 To achieve the best performance when adressing data in the Silver layer for processing towards the
-Gold layer a correct partitioning is critical. The key for this partioning could items like Date (e.g., event_date),
-Customer / tenant or Region. Optionally enhanced with Z-ordering or clustering techniques.
+Gold layer a correct partitioning is important to consider. The key for this partioning could be items
+like Date (e.g., event_date), Customer / tenant or Region.  
+Optionally enhanced with Z-ordering or clustering techniques.
 
 Please note that over-partitioning can significantly degrade performance.
 
@@ -244,10 +241,21 @@ Please note that over-partitioning can significantly degrade performance.
 Use cloud warehouse or lakehouse compute engines for transformations. And when choosing which services to use it is
 worth choosing services that seperates compute power from storage.
 
-This approach of bringing compute to the data which ensures the ability to scale on demand and
-minimizes unnecessary data movement.
+This approach of bringing compute to the data and not "hide" the data in a technology on a compute ensures the
+ability to scale on demand and minimizes unnecessary data movement. It also significantly increases you ability to
+choose the right service(s) for the job in question.
 
-Examples of services using this approach are:
+If you are familiar with a Linux environment it is the thought behind the pipe symbol ("|").
+
+If you on Linux would like to - as an example - would like to take certain rows and columns out of a big file and then sort these data and change some formatting to end out in a formated report, this could look some thing like this:
+
+cat file | grep "A pattern" | cut -d, -f1,3,5 | sort -u | sed -e "s/DEMO/Demo" | awk
+
+So, in this case you fist *print* the file to the screen (cat), this about is then send to the *greb* command that only returns line with the patter *A pattern*. Then the output goer to the *cut* command that - using , as a seperator - returns only the column in position 1, 3 and 5. Then the output is sorted uniqly (-u) and before the formating with awk the word *DEMO* is changed to *Demo* using the streaming editor *sed*.
+
+Here you brining different services (linux commands, that is) to the data. And, in this case each command can only do **one** thing. It might have options like the cut command where you can use -d<something> to tell have your data is seperated, but the *cut* command can still only do a "cut".
+
+Examples of services using this approach (with much funtionality than the *cut* command :smile:) are:
 
 * DataBricks - available in Azure, AWS and GSP.
 * Microsoft Fabric
