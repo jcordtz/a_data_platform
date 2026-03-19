@@ -160,7 +160,6 @@ to the source as possible, both semantically and structurally.
 ### Design Principles for Bronze layer
 
 1. **No/Minimal Transformation**
-
 In the bronze layer data should be stored in its raw format avoiding data type mappings, business rules, and joins.
 This means that you will preserve source columns, field names, and formats together with keeping the content "as is".
 
@@ -170,7 +169,6 @@ The *minimal transformation* addresses the fact that you most likely will store 
 Simply stating that a table stored in a database will not be moved into *yet another* database.
 
 2. **Incremental Ingestion**
-
 To obtain the best performance and scalability, data should - if possible - be ingested incrementally using mechanism like
 change data capture (CDC), watermarks (e.g. timestamps, identity columns) or Event streams (e.g., Kafka, Event Hubs).
 
@@ -180,7 +178,6 @@ So you should try to avoid full reloads, unless data volumes are very small.
 >Most likely the first load would probably be a full load.
 
 3. **Cloud Storage as a Landing Zone**
-
 The Bronze layer should reside in low-cost, elastic object storage, like Azure Data Lake Gen2,
 Amazon S3 or Google Cloud Storage in recommended file formats.
 
@@ -237,7 +234,6 @@ Optionally enhanced with Z-ordering or clustering techniques.
 Please note that over-partitioning can significantly degrade performance.
 
 3. **ELT Instead of ETL**
-
 Use cloud warehouse or lakehouse compute engines for transformations. And when choosing which services to use it is
 worth choosing services that seperates compute power from storage.
 
@@ -255,7 +251,7 @@ So, in this case you fist *print* the file to the screen (cat), this about is th
 
 Here you brining different services (linux commands, that is) to the data. And, in this case each command can only do **one** thing. It might have options like the cut command where you can use -d<something> to tell have your data is seperated, but the *cut* command can still only do a "cut".
 
-Examples of services using this approach (with much funtionality than the *cut* command :smile:) are:
+Examples of services using this approach (wihch have much funtionality than the *cut* command :smile:) are:
 
 * DataBricks - available in Azure, AWS and GSP.
 * Microsoft Fabric
@@ -266,29 +262,27 @@ Examples of services using this approach (with much funtionality than the *cut* 
 
 ## Step 3: Modeling in the Gold Layer
 
-The Gold layer is the consumer-facing layer, optimized for:
+The Gold layer is the consumer-facing layer, where data is optimized for the usage with Business Intelligence (BI), Reporting, Machine Learning, AI, GenAI, AgenticAI and API-based access.
 
-* Business Intelligence (BI)
-* Reporting
-* Machine Learning
-* AI, GenAI, AgenticAI
-* API-based data access
+Here is where you will find the datasets, data marts and even data warehouses.
 
-At this stage, performance, stability, and semantic consistency are paramount.
+At this stage, performance, stability, and semantic consistency are paramount. Hence the concept of a dataset *only* having the rows and columns needed to fulfill that task in question is important - not only from a governance perspective but also from a performance perspective.
 
 ### Data Modeling Approaches
 
-To make the Gold layer user friendly datamodels comes into plæay and common modeling patterns include:
+To make the Gold layer user friendly datamodels comes into play and common modeling patterns include:
 
 * Star schemas (facts and dimensions)
 * Aggregated tables
 * Feature stores for machine learning
 * Datasets
 
-To make these modeæs easier to use metadata should be explicitly defined, including
+To make these models easier to use metadata should be explicitly defined, including
 business definitions, KPI logic, documentation and ownership
 
 ### Performance Optimization in the Gold Layer
+
+To ensure as fast performance as possible there are some technics worth considering.
 
 * Precomputed aggregations
 * Materialized views
@@ -296,63 +290,60 @@ business definitions, KPI logic, documentation and ownership
 * Caching (warehouse engine or BI tools)
 * Separate compute pools per workload
 
-The Gold layer must deliver low query latency hence mujst be isolated from heavy ingestion and transformation workloads.
-This means that data in any of the above describes modeling patterns will only cotain the required rows and columns to fullfill
+The Gold layer must deliver low query latency hence must be isolated from any heavy ingestion and transformation workloads.
+This means that data in any of the above described modeling patterns will only cotain the required rows and columns to fullfill
 the task it is designed for.
 
 ## Cloud-Native Considerations
 
+The reasoning and benefits for using cloud for a data platform has several different aspects.
+
 1. **Decouple Storage and Compute**
 
-Cloud platforms make it possible to:
+The idea how bring compute (=functionality) to the data and not the other way around is really possible with cloud services.
 
-Scale storage and compute independently
-Pause or downscale compute when idle
-Optimize costs without sacrificing performance
+Cloud platforms make it possible to Scale storage and compute independently up (and down) and without downtime. You can
+also Pause or downscale services when idle/not required and it gover you a more flexible way of Optimizing costs 
+without sacrificing performance.
 
 2. **Infrastructure as Code (IaC)**
-Deploy pipelines, storage, and compute consistently using IaC
-Ensure environment parity across development, test, and production
+Use the IaC to deploy pipelines, storage, and compute consistently. This helps you ensure environment parity across development, test, and production and hence a possibilty to automatically deploy new functionality to your analytical platform.
 
 3. **Security and Governance**
 
-Managed identities and IAM
-Encryption at rest and in transit
-Row-level and column-level security
-Data classification, lineage, and compliance controls
+From a security and governance point of view identities plays an important role. Using Managed identities and role basec access control (RBAC) with your services makes it possiblefor you to create a setup where it is only a given service that is alloweed to get to your data.
+
+Also encryption at rest and in transit is part of most cloud setups meaning that by automatic this is in place when a service is being implemnted and used.
+
+And to ensure that you know the nature of tour data tou can also establish data classification, lineage, and compliance controls easier on a cloud.
 
 4. **Observability and Monitoring**
 
-Pipeline metrics and logging
-Data quality validation
-SLA and SLO monitoring
-Automated alerting
+Ensure that you enable and utilize the build logging mechanism for the different services enabling you to monitor Pipeline metrics and logging.
+
+Also as needed implement necessary projects regarding Data quality and being able to validate any action but in place to increase such quality.
 
 **Balancing Performance and Cost**
+
 In the cloud, performance and cost are tightly coupled:
 
-Use low-cost storage for Bronze data
-Consume compute only when needed in Silver transformations
-Optimize queries and models in the Gold layer
-Separate ingestion and analytics workloads
-“Scale when busy – stop when idle” should be a guiding design principle.
-
+* Use low-cost storage for Bronze data
+* Consume compute only when needed in Silver transformations
+* Optimize queries and models in the Gold layer
+* Separate ingestion and analytics workloads
+* “Scale when busy – stop when idle” should be a guiding design principle.
 
 ## Conclusion
 
-The Medallion architecture provides a robust, scalable, and performance-optimized approach to data ingestion and processing in modern data warehouses.  
+The Medallion architecture provides a robust, scalable, and performance-optimized approach to data ingestion and processing in a modern data platform.  
 
-Keeping the Bronze layer raw and inexpensive
-Optimizing the Silver layer for efficient transformations
-Designing the Gold layer for consumer performance
-…and fully leveraging cloud-native capabilities, organizations can establish a data platform that is:
+* Keeping the Bronze layer raw and inexpensive
+* Optimizing the Silver layer for efficient transformations
+* Designing the Gold layer for consumer performance
+…and fully leveraging cloud-native capabilities, organizations can establish a data platform that is Future-proof,
+Cost-efficient and Easy to govern and evolve.
 
-Future-proof
-Cost-efficient
-
-Easy to govern and evolve
-
-The architecture supports both traditional BI and advanced analytical workloads, making it a solid foundation for data-driven organizations.
+In that regard this architecture and approach gives you support for both traditional BI and advanced analytical workloads, making it a solid foundation for data-driven organizations.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
