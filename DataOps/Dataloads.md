@@ -215,7 +215,7 @@ To achieve this typical transformations are functions like:
 * Referential integrity validation
 * Time zone normalization
 * Code and reference data harmonization
-* Aligned with a/the ![Naming standards](../DataModelling/NamingStandard.md)
+* Aligned with a/the [Naming standards](../DataModelling/NamingStandard.md)
 
 It is immportant that all transformations are deterministic, version-controlled and Idempotent
 
@@ -249,7 +249,7 @@ If you are familiar with a Linux environment it is the thought behind the pipe s
 
 If you on Linux would like to - as an example - would like to take certain rows and columns out of a big file and then sort these data and change some formatting to end out in a formated report, this could look some thing like this:
 
-cat file | grep "A pattern" | cut -d, -f1,3,5 | sort -u | sed -e "s/DEMO/Demo" | awk
+**cat file | grep "A pattern" | cut -d, -f1,3,5 | sort -u | sed -e "s/DEMO/Demo" | awk**
 
 So, in this case you fist *print* the file to the screen (cat), this about is then send to the *greb* command that only returns line with the patter *A pattern*. Then the output goer to the *cut* command that - using , as a seperator - returns only the column in position 1, 3 and 5. Then the output is sorted uniqly (-u) and before the formating with awk the word *DEMO* is changed to *Demo* using the streaming editor *sed*.
 
