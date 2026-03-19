@@ -49,7 +49,7 @@ i forbindelse med dataplatformen. Disse er følgende (findes i egne sektioner af
 |[Sikkerhed](./Security/Security-da.md)|[Lovgivning](./Security/Legislation-da.md)|[Exit-strategi](./Security/Exit-and-risc-strategies-da.md)|[Risikovurdering](./Security/Exit-and-risc-strategies-da.md)|
 |[Data-modellering](./DataModelling/DataModel-da.md)|[Etablering-af-data](./Operations/establish-data-da.md)|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)|
 |[Drift/Modstandsdygtighed](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|[Selvbetjening](./DataOps/Self-service-da.md)|
-|[Generativ AI](./GenAI/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataOps/Naming-standards-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
+|[Generativ AI](./GenAI/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataModelling/NamingStandard-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
 |[Data agents](./GenAI/Agent-da.md)|[Datamarkedsplads](./GenAI/Marketplace-da.md)||[Loading & Perfomance](./DataOps/Dataloads-da.md)|
 
 ## Baggrund
