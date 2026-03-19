@@ -66,10 +66,10 @@ lets have a look on what is normally seen and hence used in the data platform.
 
 ### JSON (JavaScript Object Notation)
 **Typical use cases**: API payloads, Configuration files, Semi-structured data exchange between applications, 
-                   Event and streaming data (telemetry, logs)
+                   Event and streaming data (telemetry, logs)  
 **Key characteristics**: Text-based and human-readable, Schema-less or loosely enforced, Hierarchical and nested structure,
                      Widely supported across programming languages  
-**Strengths**: Excellent for data exchange and APIs, Flexible data structure, Easy to read and debug
+**Strengths**: Excellent for data exchange and APIs, Flexible data structure, Easy to read and debug.  
 **Limitations**: Poor compression, Not columnar, Inefficient for large-scale analytics  
 
 ### Avro
@@ -84,15 +84,15 @@ lets have a look on what is normally seen and hence used in the data platform.
 ### ORC (Optimized Row Columnar)
 
 **Typical use cases**: Large-scale analytics, Data warehousing, OLAP workloads in big data platforms  
-**Key characteristics**: Columnar storage format, High compression, Column-level statistics and indexing,
+**Key characteristics**: Columnar storage format, High compression, Column-level statistics and indexing,  
                      Strong schema support  
-**Strengths**: High query performance, Efficient storage utilization, Effective for aggregations and filtering
+**Strengths**: High query performance, Efficient storage utilization, Effective for aggregations and filtering.  
 **Limitations**: Less flexible than Parquet, Tightly coupled with big data engines, Not designed for frequent updates  
 
 
 ### XML (eXtensible Markup Language)
 
-**Typical use cases**: Enterprise system integration, Document-centric data,
+**Typical use cases**: Enterprise system integration, Document-centric data,  
                    Industry standards (like finance, healthcare, public sector)  
 **Key characteristics**: Text-based and verbose, Tag-oriented hierarchical structure, Strong schema validation via XSD  
 **Strengths**: Mature ecosystem, Strong validation capabilities, Suitable for document-style data  
@@ -116,7 +116,7 @@ lets have a look on what is normally seen and hence used in the data platform.
 
 **Typical use cases**: Data lakes, Analytical workloads, BI, reporting, machine learning  
 **Key characteristics**: Columnar, binary format, Schema-aware, Designed for distributed processing  
-**Strengths**: Excellent performance for analytics, High compression, Column pruning and predicate pushdown,
+**Strengths**: Excellent performance for analytics, High compression, Column pruning and predicate pushdown,  
            Broad ecosystem support  
 **Limitations**: Not human-readable, Not suitable for row-level updates, Requires analytical engines  
 
@@ -130,9 +130,9 @@ lets have a look on what is normally seen and hence used in the data platform.
 
 ### Delta Lake
 
-**Typical use cases**: Governed data lakes, Medallion architectures (bronze/silver/gold),
+**Typical use cases**: Governed data lakes, Medallion architectures (bronze/silver/gold),  
                    Incremental and streaming data processing  
-**Key characteristics**: Built on top of Parquet, Transaction log (`_delta_log`), ACID transactions on data lakes,
+**Key characteristics**: Built on top of Parquet, Transaction log (`_delta_log`), ACID transactions on data lakes,  
                      Schema enforcement and evolution, Time travel and versioning  
 **Strengths**: Combines lakes and databases, Supports updates, deletes, and merges, Ideal for modern analytics platforms  
 **Limitations**: Requires compatible engines, Slight overhead compared to raw Parquet  
