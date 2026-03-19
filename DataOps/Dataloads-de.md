@@ -26,6 +26,9 @@ Architektur, mit besonderem Fokus auf:
 
 Dieser Abschnitt basiert auf modernen Cloud-Plattformen wie Azure, AWS oder GCP, aber die Prinzipien sind generisch und plattformunabhängig.
 
+>![Note]
+>In diesem Abschnitt verwenden wir die Bezeichnungen Bronze, Silber und Gold anstelle von Ingest, Transform und Publish, da sich die Diskussion hier auf die Verwendung der Medallion-Architektur stützt.
+
 ## Allgemeine Architekturprinzipien
 
 Um zusammenzufassen, was aus dem *Hauptdokument* gelernt werden kann  : Die Medallion-Architektur teilt den Datenlebenszyklus in klar getrennte Schichten auf:

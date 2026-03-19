@@ -25,6 +25,10 @@ architecture, with particular focus on:
 
 This section is based on modern cloud platforms like Azure, AWS, or GCP, but the principles are generic and platform-agnostic.
 
+>[!Note]
+>In this section we will use the names bronze, silver and gold instead of ingest, transform and publish as the discussion here is based on using the Medallion architecture.
+
+
 ## Overall Architecture Principles
 
 Just to summarize what can be learned from the *main document* the Medallion architecture divides the data lifecycle into clearly separated layers:

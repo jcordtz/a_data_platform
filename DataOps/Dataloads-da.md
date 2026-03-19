@@ -26,6 +26,9 @@ arkitektur, med særligt fokus på:
 
 Denne sektion er baseret på moderne cloud-platforme som Azure, AWS eller GCP, men principperne er generiske og platform-agnostiske.
 
+>![Note]
+>I dette afsnit vil vi bruge betegnelserne bronze, silver og gold i stedet for ingest, transform og publish, da diskussionen her er baseret på anvendelsen af Medallion-arkitekturen.
+
 ## Overordnede arkitekturprincipper
 
 For at opsummere, hvad der kan læres fra *hoveddokumentet* , opdeler Medallion-arkitekturen datalivscyklussen i klart adskilte lag:
@@ -121,7 +124,7 @@ Lad os se på, hvad der normalt ses og derfor bruges i dataplatformen.
 **Styrker**: Meget brugervenlig, rig funktionalitet, bredt anvendt  
 **Begrænsninger**: Ikke skalerbar, dårlig ydeevne ved store volumener, ikke egnet som registreringssystem  
 
-### Delta-søen
+### Delta-Lake
 
 **Typiske anvendelsestilfælde**: Styrede datasøer, Medallion-arkitekturer (bronze/sølv/guld), inkrementell og streaming databehandling  
 **Nøglekarakteristika**: Bygget oven på Parquet, transaktionslog ('_delta_log'), ACID-transaktioner på datalakes, skemahåndhævelse og -udvikling, tidsrejser og versionsstyring  
