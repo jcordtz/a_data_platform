@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -104,4 +104,4 @@ Datamodellering er en uundværlig del af datastyring, der giver en struktureret 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
