@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Roller
 
@@ -77,4 +77,4 @@ Behovene i de forskellige roller vil naturligvis variere gennem et projekt. Føl
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](project-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](project-roles-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](project-roles-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
 
 <p align="center">
   <img width="200" src="../../images/snowflake.png"">
@@ -44,4 +44,4 @@ Integrationen af *Snowflake* med *Microsoft Azure* giver en effektiv løsning ti
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Snowflake.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](Snowflake-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Snowflake-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)

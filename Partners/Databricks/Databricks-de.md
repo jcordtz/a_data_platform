@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 <p align="center">
   <img width="200" src="../../images/Databricks_Logo.png">
@@ -60,4 +60,4 @@ Weitere Informationen zu *Azure Databricks* finden Sie unter [*Azure Databricks*
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Databricks.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](Databricks-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Databricks-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)

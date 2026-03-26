@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 I en tid med digital transformation er cloud computing blevet rygraden i moderne it-drift. Selvom cloud'en tilbyder skalerbarhed, fleksibilitet og omkostningseffektivitet, er det fortsat afgørende at sikre **databeskyttelse** og **operationel modstandsdygtighed**. I denne sektion ser vi på nogle af de overvejelser man bør gøre sig i forhold til bedste praksis, strategier og værktøjer til styring af it-drift i cloud'en med fokus på **backup** og **robusthed**.
 
@@ -109,4 +109,4 @@ fejl kan organisationer sikre forretningskontinuitet, beskytte kritiske data og 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 # Datenresilienz: Was sie ist und wie man sie erreicht
 
@@ -113,4 +113,4 @@ Datenresilienz ist nicht nur eine technische Notwendigkeit – sie ist eine stra
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Ops-Data-Resilience.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Ops-Data-Resilience-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Ops-Data-Resilience-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

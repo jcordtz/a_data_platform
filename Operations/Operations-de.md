@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 Im Zeitalter der digitalen Transformation ist Cloud Computing zum Rückgrat des modernen IT-Betriebs geworden. Die Cloud bietet zwar Skalierbarkeit, Flexibilität und Kosteneffizienz, aber die Gewährleistung von **Datenschutz** und **betrieblicher Resilienz** bleibt von entscheidender Bedeutung. In diesem Artikel werden Best Practices, Strategien und Tools für die Verwaltung des IT-Betriebs in der Cloud mit Schwerpunkt auf **Backup** und **Resilienz** untersucht.
 
@@ -109,4 +109,4 @@ Prozessen und die Entwicklung für Ausfälle können Unternehmen die Geschäftsk
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Operations.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Operations-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Operations-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 CoPilot generated content, not yet revised by author.
 
@@ -66,4 +66,4 @@ Datenplattformen stellen vielschichtige Umgebungen dar, die sowohl technische al
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](user-roles.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](user-roles-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](user-roles-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

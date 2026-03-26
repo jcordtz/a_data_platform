@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 ## Daten ermitteln
 
@@ -101,4 +101,4 @@ Hierfür können Data Factory-Dataflows/Azure Databricks verwendet werden.
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](establish-data.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](establish-data-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](establish-data-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
