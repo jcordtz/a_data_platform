@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
+
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
@@ -39,15 +39,18 @@ It is based on the experience from different Microsoft-customers, that had a wis
 Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in 
 connection with the data platform are also addressed, these can be found in separate sections of this repository.
 
-These are follows:
-
-|Section|Section|Section|Section|
-|-------|-------|-------|-------|
-|[Security](./Security/Security.md)|[Legislation](./Security/Legislation.md)|[Exit-strategy](./Security/Exit-and-risc-strategies.md)|[Risk-assessment](./Security/Exit-and-risc-strategies.md)|
-|[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)|
-|[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|[Data Mesh](./DataOps/Data-mesh.md)|[Self-service](./DataOps/Self-service.md)|
-|[Generative AI](./GenAI/GenAI.md)|[Cloud-environments](./DataOps/Cloud-env.md)|[Naming Standards](./DataModelling/NamingStandard.md)|[Meta data handling](./DataOps/Meta-management.md)|
-|[Data Agents](./GenAI/Agent.md)|[Datamarketplace](./GenAI/Marketplace.md)||[Loading & Perfomance](./DataOps/Dataloads.md)|
+|Topic|Section|Section|
+|-------|-------|---------|
+|Data|[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|
+||[Data Mesh](./DataOps/Data-mesh.md)|[Self-service](./DataOps/Self-service.md)|
+||[Generative AI](./GenAI/GenAI.md)|[Data Agents](./GenAI/Agent.md)|
+||[Datamarketplace](./GenAI/Marketplace.md)|
+|Project|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)|
+|Operations|[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|
+||[Cloud-environments](./DataOps/Cloud-env.md)|[Loading & Perfomance](./DataOps/Dataloads.md)|
+|Governance|[Security](./Security/Security.md)|[Legislation](./Security/Legislation.md)|
+||[Exit-strategy](./Security/Exit-and-risc-strategies.md)|[Risk-assessment](./Security/Exit-and-risc-strategies.md)|
+||[Naming Standards](./DataModelling/NamingStandard.md)|[Meta data handling](./DataOps/Meta-management.md)|
 
 ## Background
 
@@ -634,4 +637,3 @@ is technology independence hence you should “mix and match” what suites best
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)

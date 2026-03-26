@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
+
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
@@ -43,14 +43,18 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 
 Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden (in separaten Abschnitten):
 
-|Sektion|Sektion|Section|Sektion|
-|-------|-------|-------|-------|
-|[Sicherheit](./Security/Security-de.md)|[Gesetzgebung](./Security/Legislation-de.md)|[Exit-Strategie](./Security/Exit-and-risc-strategies-de.md)|[Risikobewertung](./Security/Exit-and-risc-strategies-de.md)|
-|[Daten-Modellierung](./DataModelling/DataModel-de.md)|[Daten-ermiteln](./Operations/establish-data-de.md)|[Project Rollen](./Operations/project-roles-de.md)|[Anwender Rollen](./Operations/user-roles-de.md)|
-|[Operationen/Widerstandsfähigkeit](./Operations/Operations-de.md)|[Data-Operationen](./DataOps/DataOps-de.md)|[Data Mesh](./DataOps/Data-mesh-de.md)|[Selbstbedienung](./DataOps/Self-service-de.md)|
-|[Generative AI](./GenAI/GenAI-de.md)|[Cloud-Umgebungen](./DataOps/Cloud-env-de.md)|[Namensstandards](./DataModelling/NamingStandard-de.md)|[Meta data Handhabung](./DataOps/Data-mesh-de.md)|
-|[Daten Agenten](./GenAI/Agent-de.md)|[Datenmarketsplatz](./GenAI/Marketplace-de.md)|[Loading & Perfomance](./DataOps/Dataloads-de.md)||
-
+|Thmea|Abschnit|Abschnit|
+|-------|-------|---------|
+|Data|[Data-modelling](./DataModelling/DataModel-de.md)|[Data-establishment](./Operations/establish-data-de.md)|
+||[Data Mesh](./DataOps/Data-mesh-de.md)|[Self-service](./DataOps/Self-service-de.md)|
+||[Generative AI](./GenAI/GenAI-de.md)|[Data Agents](./GenAI/Agent-de.md)|
+||[Datamarketplace](./GenAI/Marketplace-de.md)|
+|Project|[Project roles](./Operations/project-roles-de.md)|[User roles](./Operations/user-roles-de.md)|
+|Operations|[Operations/Resilience](./Operations/Operations-de.md)|[Data-operations](./DataOps/DataOps-de.md)|
+||[Cloud-environments](./DataOps/Cloud-env-de.md)|[Loading & Perfomance](./DataOps/Dataloads-de.md)|
+|Governance|[Security](./Security/Security-de.md)|[Legislation](./Security/Legislation-de.md)|
+||[Exit-strategy](./Security/Exit-and-risc-strategies-de.md)|[Risk-assessment](./Security/Exit-and-risc-strategies-de.md)|
+||[Naming Standards](./DataModelling/NamingStandard-de.md)|[Meta data handling](./DataOps/Meta-management-de.md)|
 
 ## Hintergrund
 
@@ -194,9 +198,9 @@ Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bede
 
 Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten Datensatz mithilfe von Code in diese Datenbank zu laden.
 
-Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env.md) näher erläutert.
+Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env-de.md) näher erläutert.
 
-Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem Abschnitt [Abschnitt](DataOps/DataOps.md) näher erläutert.
+Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem Abschnitt [Abschnitt](DataOps/DataOps-de.md) näher erläutert.
 
 
 ## Logische Architektur
@@ -542,4 +546,3 @@ Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

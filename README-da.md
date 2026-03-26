@@ -5,7 +5,6 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
 
 <div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
@@ -44,14 +43,18 @@ af cloud-tjenester til analytiske opgaver.
 Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner 
 i forbindelse med dataplatformen. Disse er følgende (findes i egne sektioner af dette repository):
 
-|Sektion|Sektion|Sektion|Sektion|
-|-------|-------|-------|-------|
-|[Sikkerhed](./Security/Security-da.md)|[Lovgivning](./Security/Legislation-da.md)|[Exit-strategi](./Security/Exit-and-risc-strategies-da.md)|[Risikovurdering](./Security/Exit-and-risc-strategies-da.md)|
-|[Data-modellering](./DataModelling/DataModel-da.md)|[Etablering-af-data](./Operations/establish-data-da.md)|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)|
-|[Drift/Modstandsdygtighed](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|[Selvbetjening](./DataOps/Self-service-da.md)|
-|[Generativ AI](./GenAI/GenAI-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Navngivnings-standard](./DataModelling/NamingStandard-da.md)|[Meta Data håndtering](./DataOps/Data-mesh-da.md)|
-|[Data agents](./GenAI/Agent-da.md)|[Datamarkedsplads](./GenAI/Marketplace-da.md)||[Loading & Perfomance](./DataOps/Dataloads-da.md)|
-
+|Emne|Afsnit|Afsnit|
+|-------|-------|---------|
+|Data|[Data-modelling](./DataModelling/DataModel-da.md)|[Data-establishment](./Operations/establish-data-da.md)|
+||[Data Mesh](./DataOps/Data-mesh-da.md)|[Self-service](./DataOps/Self-service-da.md)|
+||[Generative AI](./GenAI/GenAI-da.md)|[Data Agents](./GenAI/Agent-da.md)|
+||[Datamarketplace](./GenAI/Marketplace-da.md)|
+|Project|[Project roles](./Operations/project-roles-da.md)|[User roles](./Operations/user-roles-da.md)|
+|Operations|[Operations/Resilience](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|
+||[Cloud-environments](./DataOps/Cloud-env-da.md)|[Loading & Perfomance](./DataOps/Dataloads-da.md)|
+|Governance|[Security](./Security/Security-da.md)|[Legislation](./Security/Legislation-da.md)|
+||[Exit-strategy](./Security/Exit-and-risc-strategies-da.md)|[Risk-assessment](./Security/Exit-and-risc-strategies-da.md)|
+||[Naming Standards](./DataModelling/NamingStandard-da.md)|[Meta data handling](./DataOps/Meta-management-da.md)|
 ## Baggrund
 
 Diskussionen i dette dokument handler om, hvad data kan bruges til, og hvordan du sikrer, at du altid er forberedt på enhver ny situation, 
@@ -226,9 +229,9 @@ Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform 
 database og herefter indlæse et givent datasæt i denne database, alt samme ved hjælp af kode.
 
 Denne model rejser også en diskussion om, hvilke elementer i den underliggende infrastruktur cloud-udbyderen såvel som kunden er ansvarlig 
-for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i dette [afsnit](DataOps/Cloud-env.md)
+for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i dette [afsnit](DataOps/Cloud-env-da.md)
 
-Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i dette afsnit [afsnit](DataOps/DataOps.md).
+Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i dette afsnit [afsnit](DataOps/DataOps-da.md).
 
 ## Logisk arkitektur
 
@@ -668,4 +671,3 @@ Infrastructure-as-Code.
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](README.md)
