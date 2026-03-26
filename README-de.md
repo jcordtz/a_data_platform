@@ -41,9 +41,9 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 
 ## Inhalt
 
-Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt. Dies sind die folgenden (in separaten Abschnitten):
+Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Disziplinen, die berücksichtigt werden sollten, werden auch andere Themen im Zusammenhang mit der Datenplattform behandelt.
 
-|Thmea|Abschnit|Abschnit|
+|Thema|Abschnit|Abschnit|
 |-------|-------|---------|
 |Data|[Data-modelling](./DataModelling/DataModel-de.md)|[Data-establishment](./Operations/establish-data-de.md)|
 ||[Data Mesh](./DataOps/Data-mesh-de.md)|[Self-service](./DataOps/Self-service-de.md)|
