@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Marketplace.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Marketplace-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Marketplace-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 ## 1. Was ist ein Data Marketplace?
 Ein **Datenmarktplatz** ist eine Online-Plattform, die **Datenanbieter** (Organisationen oder Einzelpersonen, die Datensätze anbieten) mit **Datenkonsumenten** (Unternehmen oder Analysten, die Daten suchen) verbindet. Es funktioniert wie eine E-Commerce-Plattform, aber für Datenbestände und nicht für physische Güter. Diese Marktplätze ermöglichen den Kauf, Verkauf oder die gemeinsame Nutzung von Datensätzen in einer sicheren, kontrollierten Umgebung.
@@ -102,4 +102,4 @@ So maximieren Sie den Wert:
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Marketplace.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Marketplace-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Marketplace-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Agent.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Agent-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Agent-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 # **Indledning**
 
@@ -116,4 +116,4 @@ curl -X POST https://api.myagent.com/process \
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Agent.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Agent-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Agent-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

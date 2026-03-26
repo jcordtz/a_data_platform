@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](GenAI-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 ## Was ist eine Datenplattform mit generativer KI?
 
@@ -60,4 +60,4 @@ Generative KI-Modelle (z. B. LLMs) sind auf massiven, qualitativ hochwertigen Da
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](GenAI-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

@@ -7,7 +7,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Marketplace.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Marketplace-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Marketplace-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## 1. Hvad er en datamarkedsplads?
 En **datamarkedsplads** er en onlineplatform, der forbinder **dataudbydere** (organisationer eller enkeltpersoner, der tilbyder datasæt) med **dataforbrugere** (virksomheder eller analytikere, der søger data). Det fungerer som en e-handelsplatform, men for dataaktiver snarere end fysiske varer. Disse markedspladser gør det muligt at købe, sælge eller dele datasæt i et sikkert, styret miljø.
@@ -102,4 +102,4 @@ Sådan maksimerer du værdien:
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Marketplace.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Marketplace-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Marketplace-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
