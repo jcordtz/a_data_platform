@@ -27,15 +27,18 @@ Das Dokument basiert nicht auf dem, was "Best Practice" ist, sondern ist als "wa
 
 Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die die Erstellung einer Datenplattform mithilfe von Clouddiensten für analytische Aufgaben optimieren wollten.
 
->[!Hinweis]
->Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
->Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit > den verschiedenen Implementierungen erfahren, die wir von 
+>[!Note]
+>Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue 
+Dinge lernen.
+>Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance 
+und GenAI sein, da wir mehr darüber im Zusammenhang mit > den 
+verschiedenen Implementierungen erfahren, die wir von 
 >Datenplattformen im Einsatz haben.
 
->[!Hinweis]
+>[!Note]
 >Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
->[!Hinweis]
+>[!Note]
 >Die Wörter "Daten" und "Datenset" wird verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
 
 
