@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](GenAI-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 > *"Bei der kontrollierten GenKI geht es nicht darum, die Intelligenz einzuschränken. Es geht darum, sie verantwortungsvoll zu kanalisieren." *
 
@@ -119,4 +119,4 @@ PS - vielleicht lohnt es sich, darüber nachzudenken, wo die "Person" Louise und
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](GenAI.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](GenAI-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](GenAI-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

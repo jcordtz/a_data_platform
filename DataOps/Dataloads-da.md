@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 
 ## Indlæsning af data til dataplatformen baseret på Medallion-arkitekturen
@@ -350,4 +350,4 @@ I den henseende giver denne arkitektur og tilgang dig støtte til både traditio
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

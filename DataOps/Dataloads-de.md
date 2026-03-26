@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 
 ## Daten auf Basis der Medallion-Architektur in die Datenplattform aufnehmen
@@ -352,4 +352,4 @@ In dieser Hinsicht bietet diese Architektur und dieser Ansatz Unterstützung sow
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Dataloads.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Dataloads-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Dataloads-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

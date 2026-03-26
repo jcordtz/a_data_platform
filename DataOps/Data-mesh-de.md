@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 ## Einleitung
 
@@ -81,4 +81,4 @@ Data Mesh stellt eine bedeutende Veränderung in der Art und Weise dar, wie Unte
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
