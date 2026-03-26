@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 ## Einleitung
 
@@ -791,4 +791,4 @@ Im Folgenden finden Sie eine Liste von Gesetzen zum Schutz von Daten und Privats
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

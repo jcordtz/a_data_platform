@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 ## Einleitung
 
@@ -44,4 +44,4 @@ Data Governance ist ein fortlaufendes Gespräch, das die Verwaltung und Regulier
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)

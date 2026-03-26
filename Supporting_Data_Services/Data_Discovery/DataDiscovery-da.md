@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
 
 ## Introduktion
 
@@ -66,4 +66,4 @@ Konklusion
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataDiscovery.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataDiscovery-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataDiscovery-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)

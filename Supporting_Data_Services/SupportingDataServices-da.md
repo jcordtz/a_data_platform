@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 [Datakatalog](/Data_Catalog/DataCatalog-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og datasæt der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
 
@@ -22,4 +22,4 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

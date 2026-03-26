@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 ## Einleitung
 
@@ -76,4 +76,4 @@ Ein Datenkatalog ist ein unverzichtbares Werkzeug für moderne Unternehmen, die 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)

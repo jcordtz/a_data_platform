@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -791,5 +791,5 @@ Følgende er en liste over love, der beskytter data og privatliv efter land - ku
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Legislation.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Legislation-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Legislation-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 

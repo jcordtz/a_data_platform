@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
 
 [Datenkatalog](Data_Catalog/DataCatalog-de.md) – eine "Verzeichnisdatenbank", in der wir aufzeichnen und erklären, welche Daten und Datensätze auf der Datenplattform verfügbar sind. Dazu gehören auch Elemente wie Eigentum, Nutzungsrichtlinien usw.
 
@@ -22,4 +22,4 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)

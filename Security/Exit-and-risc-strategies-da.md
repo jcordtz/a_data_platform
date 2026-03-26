@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Exit-and-risc-strategies.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Exit-and-risc-strategies-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Exit-and-risc-strategies-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -184,4 +184,4 @@ Henvisning : <https://gdpr.eu/data-protection-impact-assessment-template>
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Exit-and-risc-strategies.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Exit-and-risc-strategies-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Exit-and-risc-strategies-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

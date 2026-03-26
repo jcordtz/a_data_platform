@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](CommonDataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 ## Einleitung
 
@@ -62,4 +62,4 @@ Die Möglichkeit, das Schema und die Common Data Model-Standardentitäten zu erw
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](CommonDataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)

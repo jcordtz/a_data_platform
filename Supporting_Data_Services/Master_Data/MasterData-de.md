@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 ## Einleitung
 
@@ -54,4 +54,4 @@ Ich hoffe, dieser Artikel bietet einen umfassenden Überblick über Stammdaten u
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](MasterData.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](MasterData-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](MasterData-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
