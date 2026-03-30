@@ -48,10 +48,11 @@ i forbindelse med dataplatformen.
 |Data|[Data-modelering](./DataModelling/DataModel-da.md)|[Data-etablering](./Operations/establish-data-da.md)|
 ||[Data Mesh](./DataOps/Data-mesh-da.md)|[Self-service](./DataOps/Self-service-da.md)|
 ||[Generativ AI](./GenAI/GenAI-da.md)|[Data Agenter](./GenAI/Agent-da.md)|
-||[Data markedsplads](./GenAI/Marketplace-da.md)|
+||[Data markedsplads](./GenAI/Marketplace-da.md)||
 |Projekt|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)|
 |Operationel|[Resilience](./Operations/Operations-da.md)|[Data-operationer](./DataOps/DataOps-da.md)|
 ||[Cloud-miljøer](./DataOps/Cloud-env-da.md)|[Load og perfomance](./DataOps/Dataloads-da.md)|
+||[Supportende services](./Supporting_Data_Services/SupportingDataServices-da.md)||
 |Governance|[Sikkerhed](./Security/Security-da.md)|[Lovgivning](./Security/Legislation-da.md)|
 ||[Exit-strategi](./Security/Exit-and-risc-strategies-da.md)|[Risiko vurdering](./Security/Exit-and-risc-strategies-da.md)|
 ||[Navne standarder](./DataModelling/NamingStandard-da.md)|[Meta data håndtering](./DataOps/Meta-management-da.md)|
