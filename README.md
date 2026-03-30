@@ -1,4 +1,4 @@
-<div style="text-align: center"><img src="images/tiger.jpg" width="800" /></div>
+<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
 
                    If data is not available today, it will be available tomorrow.
 

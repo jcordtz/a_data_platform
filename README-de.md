@@ -1,7 +1,7 @@
-<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
+<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
 
                    Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.
-                   
+
 # Eine Datenplattform - *"zukunftssicher"*
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)

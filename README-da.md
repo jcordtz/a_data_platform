@@ -1,4 +1,4 @@
-<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
+<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
 
                    Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.
 
