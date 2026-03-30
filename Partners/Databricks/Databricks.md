@@ -8,7 +8,7 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
 
 <p align="center">
-  <img width="200" src="../../images/Databricks_Logo.png">
+  <img width="200" src="../images/Databricks_Logo.png">
 </p>
 
 ## Introduction
@@ -19,7 +19,7 @@ You can also use *Azure Databricks* instead of *Azure SQL Server* if you want.
 
 Technological independence is in the fact that Databricks is based on *Python* and *Spark*. But you will have an approach where more of the “programming” is done in the same tool.
 
-![figure1](../../images/english/Slide6.JPG)
+![figure1](../images/english/Slide6.JPG)
 
 Figure 1
 

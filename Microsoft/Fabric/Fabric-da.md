@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # A Data Platform - Microsoft Fabric based
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 *Microsoft Fabric* er en alt-i-én-analyseløsning, der dækker alt fra dataflytning til datavidenskab, realtidsanalyse og Business Intelligence.
 
@@ -13,7 +13,7 @@
 
 *Microsoft Fabric* samler nye og eksisterende komponenter som *Power BI*, *Azure Synapse* og *Azure Data Factory* i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
 
-![figur1](../../images/danish/Slide11.JPG)
+![figur1](../images/danish/Slide11.JPG)
 
 *Figur 1*
 
@@ -22,7 +22,7 @@ Man kan bygge en dataplatform ved hjælp af *Microsoft Fabric*, men på grund af
 
 I *figur 2* illustreres forskellige måder at bruge *Microsoft Fabric* på inden for dataplatformskonceptet.
 
-![figur2](../../images/danish/Slide9.JPG)
+![figur2](../images/danish/Slide9.JPG)
 
 *Figur 2*
 
@@ -37,4 +37,4 @@ Du kan finde flere oplysninger om Microsoft Fabric her (<https://www.microsoft.c
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

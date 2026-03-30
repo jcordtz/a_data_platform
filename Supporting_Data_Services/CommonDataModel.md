@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Supporting Data Services - Common Data Model
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](CommonDataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduction
 
@@ -61,4 +61,4 @@ The ability to extend the schema and Common Data Model standard entities to tail
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](CommonDataModel.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](CommonDataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](CommonDataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

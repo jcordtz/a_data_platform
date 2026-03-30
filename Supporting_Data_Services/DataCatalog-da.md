@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Supporting Data Services - Data Catalog
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -76,4 +76,4 @@ Et datakatalog er et vigtigt værktøj for moderne virksomheder, der ønsker at 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataCatalog.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataCatalog-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataCatalog-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

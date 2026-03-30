@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ### Achieving Self-Service in Business Intelligence Setup
 
@@ -59,4 +59,4 @@ By implementing these strategies, organizations could successfully achieve self-
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Self-service.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Self-service-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Self-service-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

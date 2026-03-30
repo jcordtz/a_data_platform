@@ -8,7 +8,7 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
 
 <p align="center">
-  <img width="200" src="../../images/Databricks_Logo.png">
+  <img width="200" src="../images/Databricks_Logo.png">
 </p>
 
 ## Indledning
@@ -19,7 +19,7 @@ Du kan også bruge *Databricks* i stedet for SQL Server, hvis du vil.
 
 Teknologisk uafhængighed ligger i, at *Databricks* er baseret på Python og Spark. Men du vil have en tilgang, hvor mere af "programmeringen" udføres i det samme værktøj.
 
-![figur 1](../../images/danish/Slide6.JPG)
+![figur 1](../images/danish/Slide6.JPG)
 
 Figur 1
 

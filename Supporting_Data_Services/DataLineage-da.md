@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Supporting Data Services - Data Lineage - Under construction
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -42,4 +42,4 @@ Dette skulle give dig følgende fordele:
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)

@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # A Data Platform - Microsoft Fabric based
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 *Microsoft Fabric* ist eine All-in-One-Analyselösung, die alles abdeckt, von Datenbewegungen bis hin zu Data Science, Echtzeitanalysen und Business Intelligence.
 
@@ -13,7 +13,7 @@
 
 *Microsoft Fabric* vereint neue und vorhandene Komponenten wie *Power BI*, *Azure Synapse* und *Azure Data Factory* in einer einzigen integrierten Umgebung. Diese Komponenten werden dann in verschiedenen maßgeschneiderten Benutzererlebnissen präsentiert.
 
-![abbildung1](../../images/german/Slide11.JPG)
+![abbildung1](../images/german/Slide11.JPG)
 
 *Abbildung 1*
 
@@ -22,7 +22,7 @@ Sie können mit *Microsoft Fabric* eine Datenplattform erstellen, aber da es sic
 
 In *Abbildung 2* werden verschiedene Möglichkeiten der Verwendung von *Microsoft Fabric* innerhalb des Datenplattformkonzepts dargestellt.
 
-![abbildung2](../../images/german/Slide9.JPG)
+![abbildung2](../images/german/Slide9.JPG)
 
 *Abbildung 2*
 
@@ -36,4 +36,4 @@ Weitere Informationen zu *Microsoft Fabric* finden Sie hier (<https://www.micros
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Fabric.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Fabric-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Fabric-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

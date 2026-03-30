@@ -1,17 +1,17 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Eine Data Platform - Basierend auf Azure-Diensten
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 Die Implementierung der Datenplattform mithilfe von Azure-Diensten führt zu einem sehr flexiblen und agilen Ansatz. Damit sind alle Themen erfüllt, die im Kapitel "Gesamtparadigma" aufgeführt sind.
 
 Abbildung 1 zeigt die Azure-Dienste, die normalerweise bei diesem Ansatz verwendet werden.
 
-![figure 1](../../images/german/Slide5.JPG)
+![figure 1](../images/german/Slide5.JPG)
 
 Abbildung 1
 
@@ -26,4 +26,4 @@ Im Bereich **Verbrauchen** finden Sie *PowerBI/Fabric* zusammen mit *Azure Machi
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Azure.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Azure-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Azure-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

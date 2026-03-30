@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Supporting Data Services - Data Lineage - Under construction
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 ## Introduction
 
@@ -39,4 +39,4 @@ Data lineage is critical in modern data ecosystems because it ensures transparen
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataLineage.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataLineage-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataLineage-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)

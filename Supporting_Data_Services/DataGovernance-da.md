@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Supporting Data Services - Data Governance - Under construction
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## Indledning
 
@@ -44,5 +44,5 @@ Datastyring er en løbende samtale, der involverer styring og regulering af data
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataGovernance.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](DataGovernance-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataGovernance-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 

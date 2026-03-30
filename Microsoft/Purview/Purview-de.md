@@ -1,4 +1,4 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Eine Daten Plattform -  Microsoft Purview
 
@@ -6,7 +6,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Purview.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Purview-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
 
 Microsoft Purview ist eine umfassende Reihe von Lösungen, die Organisationen dabei unterstützen können, Daten zu verwalten, zu schützen und zu verwalten, unabhängig davon, wo sie sich befinden. Microsoft Purview-Lösungen bieten eine integrierte Abdeckung und helfen, die Fragmentierung von Daten in Organisationen, den Mangel an Transparenz, der den Datenschutz und die Governance behindert, und die Verwischung traditioneller IT-Verwaltungsrollen zu bewältigen.
 
@@ -37,4 +37,4 @@ Weitere Informationen zu *Microsoft Purview* finden Sie hier (<https://learn.mic
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Purview.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Purview-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Purview-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
