@@ -192,7 +192,7 @@ kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og s
 - Et *datasæt* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
 - Adgang til et *datasæt* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
 - Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer. 
-- Et *datasæt* kan leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database.
+- Et *datasæt* kan leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database eller en Kafka kø.
 
 ## Cloud-tilgang
 
@@ -280,7 +280,7 @@ databaser).
 de finder mest egnede.
 
 >[!NOTE]
->Dette paradigme er i dag måske bedre kendt som *"medallion data architecture"*, hvor *bronze* er *ingest området*, *sølv* er 
+>Dette paradigme er i dag nok bedre kendt som *"medallion data architecture"*, hvor *bronze* er *ingest området*, *sølv* er 
 >*transform* og *guld* er *publish*. *Medallion* arkitekturen indeholder ikke et *consume område*. Dette dokument vil bruge 
 >begreberne *ingest*, *transform*, *publish*, og *consume* da det afspejler hvad de kunder der er inspiration til dette dokument 
 >oftest bruger.
@@ -648,6 +648,28 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen** kan da understøttes.
 
 ## Eksempler på implementeringer
+
+![figur 11](images/english/slide28.jpg)
+
+*Figur 11*
+
+På figur 11 se hvorledes den beskrevne data platform kan implementeres.
+
+Til venstre er der 2 kilde systemer "A" og "B" som understøtter de arbejdsprocesser der i de 2 afdelinger "1" og "2".
+
+Relevante data hentes ind i en fælles data platform i respektive ingest områder. Her fra foretages den første grundlæggende validering og rensing af data. De 2 systemers data holdes adskilt - evt i 2 forskellige Azure subscriptions og/eller resource grupper.
+
+Her fra bevæger de data elementer der skal bruges i en fælles data platform til dette område og de resterende data elementer føres
+til de respektive transforms områder - kan også benævnes **modtage områder**. Der kan sagtens være flere af sådanne områder per afdeling.
+
+I fælles området forarbejdes data til en ensformighed, så de kan bringes videre til de områder i de enkelte modtage områder for de enkelte afdelinger hvor disse skal finde anvendelse.
+
+I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de rette datasets i deres *publish områder*, som så kan bruges i de tihørende *consume områder*
+
+>![Note]
+> i ovenstående skal ordet **afdeling** erstatetes af den passende betegnelse i forhold til den enkelte organisation.
+
+### Forskellige mulige tjenester
 
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester. 
 Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer bedst i forhold til de 

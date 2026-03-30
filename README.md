@@ -170,7 +170,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 - A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
 - Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
 - A *dataset* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based.
-- A *dataset* can be provided with the appropriate technology for the task in question – like a relational database.
+- A *dataset* can be provided within the appropriate technology for the task in question – like a relational database or a Kafka queue.
 
 ## Cloud aspects
 
@@ -634,6 +634,27 @@ This also represents how the data platform should be able to exactly support the
 So, the overall term **if it is not available today, it will be tomorrow** can be achieved.
 
 ## Examples of implementations
+
+![figure 11](images/english/slide28.jpg)
+
+*Figure 11*
+
+Figure 11 shows how the described data platform can be implemented.
+
+On the left there are 2 source systems "A" and "B" that support the work processes in the 2 departments "1" and "2".
+
+Relevant data is retrieved into a common data platform in respective ingest areas. From here, the first basic validation and cleaning of data is done. The 2 systems' data is kept separate - possibly in 2 different Azure subscriptions and/or resource groups.
+
+From here, the data elements that will be used in a common data platform move to that area, and the remaining data elements are passed
+to the respective transform's areas - can also be referred to as **receive areas**. There can easily be several of such areas per department.
+
+In the common area, data is processed into a monotony so that it can be passed on to the areas in the individual receiving areas for the individual departments where these are to be used.
+
+In the individual departments' areas, further work is then done so that the right datasets are created in their *publish areas*, which can then be used in the associated *consume areas*
+
+>![Note]
+> in the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
+
 
 The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm
 is technology independence hence you should “mix and match” what suites best in regards of your business opportunities and challenges.

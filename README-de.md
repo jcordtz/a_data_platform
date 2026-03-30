@@ -165,7 +165,7 @@ Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige s
 - Einem *Datensatz* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
 - Der Zugriff auf einen *Datensatz* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
 - Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das Dataset wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. 
-- Ein *Datensatz* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank sein.
+- Ein *Datensatz* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank order ein Kafka Queue sein.
 
 ## Cloud-Zugang
 
@@ -527,6 +527,28 @@ Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsa
 Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
 
 ## Beispiele für Implementierungen
+
+![Abbildung 11](images/english/slide28.jpg)
+
+*Abbildung 11*
+
+Abbildung 11 zeigt, wie die beschriebene Datenplattform implementiert werden kann.
+
+Links befinden sich 2 Quellsysteme "A" und "B", die die Arbeitsprozesse in den beiden Abteilungen "1" und "2" unterstützen.
+
+Relevante Daten werden in den jeweiligen Eingabebereichen auf einer gemeinsamen Datenplattform abgerufen. Von hier aus erfolgt die erste grundlegende Validierung und Bereinigung der Daten. Die Daten der beiden Systeme werden getrennt gehalten – möglicherweise in zwei verschiedenen Azure-Abonnements und/oder Ressourcengruppen.
+
+Von dort aus bewegen sich die Datenelemente, die in einer gemeinsamen Datenplattform verwendet werden, in diesen Bereich, und die übrigen Datenelemente werden weitergegeben
+zu den jeweiligen Flächen der Transformation – auch als **Empfangsbereiche** bezeichnet werden. Es kann leicht mehrere solcher Bereiche pro Fachbereich geben.
+
+Im Gemeinschaftsbereich werden die Daten monotonie verarbeitet, sodass sie an die Bereiche der einzelnen Empfangsbereiche der jeweiligen Abteilungen weitergegeben werden können, in denen diese verwendet werden sollen.
+
+In den jeweiligen Bereichen der einzelnen Abteilungen wird dann weiter gearbeitet, damit die richtigen Datensätze in ihren *Veröffentlichungsbereichen* erstellt werden, die dann in den zugehörigen *Konsumbereichen* verwendet werden können
+
+>![Anmerkung]
+> oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
+
+### Vershidende dienste
 
 Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
 
