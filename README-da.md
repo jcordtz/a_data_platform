@@ -655,7 +655,7 @@ Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver de
 
 På figur 11 se hvorledes den beskrevne data platform kan implementeres.  
 
-Bemærk at hver af de enkelte områder repræsenetere dele af data platformen.  
+Bemærk at hver af de enkelte områder repræsenetere dele af data platformen brugt multiple gange.  
 
 Til venstre er der 2 kilde systemer "A" og "B" som understøtter de arbejdsprocesser der i de 2 afdelinger "1" og "2".
 

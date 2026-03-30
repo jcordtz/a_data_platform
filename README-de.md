@@ -534,7 +534,7 @@ Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für m
 
 Abbildung 11 zeigt, wie die beschriebene Datenplattform implementiert werden kann.  
 
-Bitte beachten Sie, dass jeder der einzelnen Bereiche Teile der Datenplattform repräsentiert.  
+Bitte beachten Sie, dass jeder der einzelnen Bereiche Teile der Datenplattform mehrmals repräsentiert.  
 
 Links befinden sich 2 Quellsysteme "A" und "B", die die Arbeitsprozesse in den beiden Abteilungen "1" und "2" unterstützen.
 

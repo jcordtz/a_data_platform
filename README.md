@@ -641,7 +641,7 @@ So, the overall term **if it is not available today, it will be tomorrow** can b
 
 Figure 11 shows how the described data platform can be implemented.  
 
-Note that each of the individual areas represents parts of the data platform.  
+Note that each of the individual areas represents parts of the data platform used multiple times.  
 
 On the left there are 2 source systems "A" and "B" that support the work processes in the 2 departments "1" and "2".
 
