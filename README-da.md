@@ -667,7 +667,7 @@ I fælles området forarbejdes data til en ensformighed, så de kan bringes vide
 I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de rette datasets i deres *publish områder*, som så kan bruges i de tihørende *consume områder*
 
 >![Note]
-> i ovenstående skal ordet **afdeling** erstatetes af den passende betegnelse i forhold til den enkelte organisation.
+> i ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
 
 ### Forskellige mulige tjenester
 

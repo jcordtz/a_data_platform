@@ -655,6 +655,7 @@ In the individual departments' areas, further work is then done so that the righ
 >![Note]
 > in the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
 
+### Services that can be used
 
 The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm
 is technology independence hence you should “mix and match” what suites best in regards of your business opportunities and challenges.
