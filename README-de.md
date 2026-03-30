@@ -1,12 +1,12 @@
-![microsoft](images/microsoft.png)
+<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
+                   Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.
+                   
 # Eine Datenplattform - *"zukunftssicher"*
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-
-<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
 ## Einführung
 

@@ -1,12 +1,12 @@
-![microsoft](images/microsoft.png)
+<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
+
+                   Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.
 
 # En data platform - *"fremtidssikret"*
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](README-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](README-de.md)
-
-<div style="text-align: center"><img src="images/tiger.jpg" width="400" /></div>
 
 ## Introduktion
 
