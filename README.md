@@ -633,13 +633,15 @@ This also represents how the data platform should be able to exactly support the
 
 So, the overall term **if it is not available today, it will be tomorrow** can be achieved.
 
-## Examples of implementations
+## Example of an implementations
 
 ![figure 11](images/english/slide28.jpg)
 
 *Figure 11*
 
-Figure 11 shows how the described data platform can be implemented.
+Figure 11 shows how the described data platform can be implemented.  
+
+Note that each of the individual areas represents parts of the data platform.  
 
 On the left there are 2 source systems "A" and "B" that support the work processes in the 2 departments "1" and "2".
 

@@ -526,13 +526,15 @@ Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsa
 
 Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
 
-## Beispiele für Implementierungen
+## Beispiel für eine Implementierungen
 
-![Abbildung 11](images/english/slide28.jpg)
+![Abbildung 11](images/german/slide28.jpg)
 
 *Abbildung 11*
 
-Abbildung 11 zeigt, wie die beschriebene Datenplattform implementiert werden kann.
+Abbildung 11 zeigt, wie die beschriebene Datenplattform implementiert werden kann.  
+
+Bitte beachten Sie, dass jeder der einzelnen Bereiche Teile der Datenplattform repräsentiert.  
 
 Links befinden sich 2 Quellsysteme "A" und "B", die die Arbeitsprozesse in den beiden Abteilungen "1" und "2" unterstützen.
 

@@ -647,13 +647,15 @@ Dette repræsenterer også, hvordan dataplatformen skal være i stand til at und
 
 Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver det klar til i morgen** kan da understøttes.
 
-## Eksempler på implementeringer
+## Eksempel på en implementering
 
-![figur 11](images/english/slide28.jpg)
+![figur 11](images/danish/slide28.jpg)
 
 *Figur 11*
 
-På figur 11 se hvorledes den beskrevne data platform kan implementeres.
+På figur 11 se hvorledes den beskrevne data platform kan implementeres.  
+
+Bemærk at hver af de enkelte områder repræsenetere dele af data platformen.  
 
 Til venstre er der 2 kilde systemer "A" og "B" som understøtter de arbejdsprocesser der i de 2 afdelinger "1" og "2".
 
@@ -667,7 +669,7 @@ I fælles området forarbejdes data til en ensformighed, så de kan bringes vide
 I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de rette datasets i deres *publish områder*, som så kan bruges i de tihørende *consume områder*
 
 >![Note]
-> i ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
+> I ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
 
 ### Forskellige mulige tjenester
 
