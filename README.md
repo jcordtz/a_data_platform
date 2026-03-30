@@ -47,7 +47,7 @@ connection with the data platform are also addressed.
 |Project|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)|
 |Operations|[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|
 ||[Cloud-environments](./DataOps/Cloud-env.md)|[Loading & Perfomance](./DataOps/Dataloads.md)|
-||[Supporting services](./Supporting_Data_Services/SupportingDataServices-da.md)||
+||[Supporting services](./Supporting_Data_Services/SupportingDataServices.md)||
 |Governance|[Security](./Security/Security.md)|[Legislation](./Security/Legislation.md)|
 ||[Exit-strategy](./Security/Exit-and-risc-strategies.md)|[Risk-assessment](./Security/Exit-and-risc-strategies.md)|
 ||[Naming Standards](./DataModelling/NamingStandard.md)|[Meta data handling](./DataOps/Meta-management.md)|
