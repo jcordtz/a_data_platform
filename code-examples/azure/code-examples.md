@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# A data platform - SCode examples
+# A data platform - Code examples
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
@@ -17,8 +17,13 @@ The code has **only** been tested in my own demo environment.
 
 ## Examples
 
-Creation of a data platform that follows the Medallion architecture.
-Code: ![resources](./gen_resources.tf)
+Scripts for a data platform that follows the Medallion architecture.
+
+|Task|Code|
+|-----|------| 
+|Init|[init **shell** script](./init-project.sh)|
+|Create|[**terraform** resources generate script](./gen_resources.tf)|
+|Delete|[delete **shell** script](./destroy_resources.sh)|
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)

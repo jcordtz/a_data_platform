@@ -1,6 +1,6 @@
 ![microsoft](../images/microsoft.png)
 
-# Eine Datenplattform - Sicherheit
+# Eine Datenplattform - Code beispiele
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
@@ -18,7 +18,12 @@ Der Code wurde **nur** in meiner eigenen Demo-Umgebung getestet.
 ## Beispiele
 
 Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
-Code: ![resources](./gen_resources.tf)
+
+|Aufgabe|Code|
+|-----|------| 
+|Init|[init **shell** script](./init-project.sh)|
+|Create|[**terraform** resources generate script](./gen_resources.tf)|
+|Delete|[delete **shell** script](./destroy_resources.sh)|
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)

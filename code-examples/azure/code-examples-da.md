@@ -18,7 +18,12 @@ Koden er **kun** forsøgt brugt i mit eget demo miljø.
 ## Eksempler
 
 Oprettelse af et data platform der følger medallion arkitekturen.
-Code: ![resources](./gen_resources.tf)
+
+|Opgave|Kode|
+|-----|------| 
+|Init|[init **shell** script](./init-project.sh)|
+|Create|[**terraform** resources generate script](./gen_resources.tf)|
+|Delete|[delete **shell** script](./destroy_resources.sh)|
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
