@@ -671,6 +671,9 @@ I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de r
 >[!Note]
 >I ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
 
+>[!Note]
+Et Terraform‑baseret script er tilgængeligt som inspiration - [terraform script](./code-examples/azure/code-examples-da.md)
+
 ### Forskellige mulige tjenester
 
 Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester. 

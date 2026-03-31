@@ -550,12 +550,13 @@ In den jeweiligen Bereichen der einzelnen Abteilungen wird dann weiter gearbeite
 >[!Note]
 >Oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
 
+>[!Note]
+>Ein Terraform-basiertes Skript steht zur Inspiration zur Verfügung - [terraform script](./code-examples/azure/code-examples-de.md)
+
 ### Vershidende dienste
 
 Im Folgenden finden Sie Beispiele für die Implementierung einer Datenplattform mit verschiedenen Diensten. Denken Sie daran, dass das übergreifende Paradigma die technologische Unabhängigkeit ist, daher sollte man "mischen und anpassen", was zu den eigenen Geschäftsmöglichkeiten und Herausforderungen passt.
 
->[!Note]
->Diese Bereiche enthalten derzeit nur zusätzliche beschreibende Informationen, werden aber später auch Beispiele für Infrastructure-as-Code enthalten.
 
 [Azure-basiert](Microsoft/Azure/Azure-de.md) – Verwendung von PaaS-Diensten von Azure
 
