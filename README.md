@@ -633,7 +633,7 @@ This also represents how the data platform should be able to exactly support the
 
 So, the overall term **if it is not available today, it will be tomorrow** can be achieved.
 
-## Example of an implementations
+## Example of an implementation
 
 ![figure 11](images/english/slide28.jpg)
 

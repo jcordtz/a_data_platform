@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#example-of-an-implementations)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#example-of-an-implementation)
 
 ## Introduction
 
@@ -46,4 +46,4 @@ These examples are provided as **inspiration** and therefore require adjustments
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#example-of-an-implementations)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#example-of-an-implementation)
