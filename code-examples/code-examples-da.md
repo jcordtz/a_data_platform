@@ -23,7 +23,7 @@ Oprettelse af et data platform der følger medallion arkitekturen.
 ### Azure med Data Factory i bronze laget og Data Factory Data Flow i sølv laget
 
 |Opgave|Kode|
-|-----|------| 
+|-----|------|
 |Init|[init **shell** script](./azure/init-project.sh)|
 |Create|[**terraform** resources generate script](./azure/gen_resources.tf)|
 |Delete|[delete **shell** script](./azure/destroy_resources.sh)|

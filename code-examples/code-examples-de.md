@@ -23,7 +23,7 @@ Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
 ### Azure mit Data Factory im bronze und Data Factory Data Flow im silber.
 
 |Aufgabe|Code|
-|-----|------| 
+|-----|------|
 |Init|[init **shell** script](./azure/init-project.sh)|
 |Create|[**terraform** resources generate script](./azure/gen_resources.tf)|
 |Delete|[delete **shell** script](./azure/destroy_resources.sh)|
@@ -31,7 +31,7 @@ Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
 ### Azure mit Data Factory im bronze und Azure Databricks im silber.
 
 |Aufgabe|Code|
-|-----|------| 
+|-----|------|
 |Init|[init **shell** script](./Databricks/init-project.sh)|
 |Create|[**terraform** resources generate script](./Databricks/gen_resources.tf)|
 |Delete|[delete **shell** script](./Databricks/destroy_resources.sh)|
@@ -39,7 +39,7 @@ Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
 ### Azure mit Synapse im bronze und silber
 
 |Aufgabe|Code|
-|-----|------| 
+|-----|------|
 |Init|[init **shell** script](./Synapse/init-project.sh)|
 |Create|[**terraform** resources generate script](./Synapse/gen_resources.tf)|
 |Delete|[delete **shell** script](./Synapse/destroy_resources.sh)|

@@ -21,7 +21,7 @@ These examples are provided as **inspiration** and therefore require adjustments
 ### Azure with Data Factory in bronze layer and Data Factory Data Flow in silver layer
 
 |Task|Code|
-|-----|------| 
+|-----|------|
 |Init|[init **shell** script](./azure/init-project.sh)|
 |Create|[**terraform** resources generate script](./azure/gen_resources.tf)|
 |Delete|[delete **shell** script](./azure/destroy_resources.sh)|
