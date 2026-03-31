@@ -3,6 +3,10 @@
 # 
 # This file contains all variable values for the medallion architecture
 # data platform deployment. Modify these values according to your environment.
+#
+# Layer Deployment:
+# Set enable_<layer>_layer = false to skip deployment of specific layers.
+# This allows flexible deployment for different environments or use cases.
 #===============================================================================
 
 #-------------------------------------------------------------------------------
@@ -57,3 +61,23 @@ tags = {
 # List of admin user principal names (UPNs) for Microsoft Fabric capacity
 # Example: ["admin@contoso.com", "dataadmin@contoso.com"]
 fabric_capacity_admins = []
+
+#-------------------------------------------------------------------------------
+# Medallion Layer Deployment Configuration
+#-------------------------------------------------------------------------------
+
+# Enable deployment of the Bronze (raw/ingest) layer
+# Includes: Resource Group, Data Lake Storage, Data Factory
+enable_bronze_layer = true
+
+# Enable deployment of the Silver (transform) layer
+# Includes: Resource Group, Data Lake Storage, Databricks Workspace
+enable_silver_layer = true
+
+# Enable deployment of the Gold (publish) layer
+# Includes: Resource Group, Data Lake Storage
+enable_gold_layer = true
+
+# Enable deployment of the Consume (reporting) layer
+# Includes: Resource Group, Data Lake Storage, Microsoft Fabric Capacity
+enable_consume_layer = true

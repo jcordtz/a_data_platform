@@ -7,8 +7,15 @@
 # - Gold (Publish): Business-ready, analytics-optimized data products
 # - Consume: Reports, dashboards, and end-user data products
 #
-# Resources created:
-# - Resource Groups per medallion layer including the consume layer
+# Layer Deployment Control:
+# Each layer can be independently enabled/disabled using variables:
+# - enable_bronze_layer  (Data Factory + Storage)
+# - enable_silver_layer  (Databricks + Storage)
+# - enable_gold_layer    (Storage only)
+# - enable_consume_layer (Fabric Capacity + Storage)
+#
+# Resources created (when layer is enabled):
+# - Resource Groups per medallion layer
 # - Azure Data Lake Gen2 Storage Accounts per medallion layer
 # - Azure Data Factory for bronze layer data ingestion
 # - Azure Databricks Workspace for silver layer transformation
@@ -119,6 +126,30 @@ variable "fabric_capacity_admins" {
   default     = []
 }
 
+variable "enable_bronze_layer" {
+  description = "Enable deployment of the Bronze (raw/ingest) layer"
+  type        = bool
+  default     = true
+}
+
+variable "enable_silver_layer" {
+  description = "Enable deployment of the Silver (transform) layer"
+  type        = bool
+  default     = true
+}
+
+variable "enable_gold_layer" {
+  description = "Enable deployment of the Gold (publish) layer"
+  type        = bool
+  default     = true
+}
+
+variable "enable_consume_layer" {
+  description = "Enable deployment of the Consume (reporting) layer"
+  type        = bool
+  default     = true
+}
+
 #-------------------------------------------------------------------------------
 # Local Variables
 #-------------------------------------------------------------------------------
@@ -132,8 +163,8 @@ locals {
     prod    = "p"
   }
 
-  # Medallion layers configuration
-  medallion_layers = {
+  # Medallion layers configuration (all layers defined)
+  all_medallion_layers = {
     bronze = {
       name        = "bronze"
       short       = "brz"
@@ -158,6 +189,20 @@ locals {
       description = "Consumption layer - reports, dashboards, and end-user data products"
       containers  = ["reports", "dashboards", "exports"]
     }
+  }
+
+  # Layer enablement map
+  layer_enabled = {
+    bronze  = var.enable_bronze_layer
+    silver  = var.enable_silver_layer
+    gold    = var.enable_gold_layer
+    consume = var.enable_consume_layer
+  }
+
+  # Filtered medallion layers based on enabled flags
+  medallion_layers = {
+    for key, layer in local.all_medallion_layers : key => layer
+    if local.layer_enabled[key]
   }
 
   # Common tags with environment and project info
@@ -269,6 +314,8 @@ resource "azurerm_storage_data_lake_gen2_filesystem" "containers" {
 #-------------------------------------------------------------------------------
 
 resource "azurerm_data_factory" "bronze" {
+  count = var.enable_bronze_layer ? 1 : 0
+
   name                = "adf-${var.project_name}-bronze-${var.environment}-${var.location_short}"
   resource_group_name = azurerm_resource_group.medallion["bronze"].name
   location            = azurerm_resource_group.medallion["bronze"].location
@@ -294,9 +341,11 @@ resource "azurerm_data_factory" "bronze" {
 # Data Factory read/write access to Bronze layer via managed identity (Storage Blob Data Contributor)
 # Bronze layer has shared access keys disabled, requiring managed identity authentication
 resource "azurerm_role_assignment" "adf_bronze_contributor" {
+  count = var.enable_bronze_layer ? 1 : 0
+
   scope                = azurerm_storage_account.datalake["bronze"].id
   role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_data_factory.bronze.identity[0].principal_id
+  principal_id         = azurerm_data_factory.bronze[0].identity[0].principal_id
 }
 
 #-------------------------------------------------------------------------------
@@ -304,6 +353,8 @@ resource "azurerm_role_assignment" "adf_bronze_contributor" {
 #-------------------------------------------------------------------------------
 
 resource "azurerm_databricks_workspace" "silver" {
+  count = var.enable_silver_layer ? 1 : 0
+
   name                = "dbw-${var.project_name}-silver-${var.environment}-${var.location_short}"
   resource_group_name = azurerm_resource_group.medallion["silver"].name
   location            = azurerm_resource_group.medallion["silver"].location
@@ -337,23 +388,29 @@ resource "azurerm_databricks_workspace" "silver" {
 
 # Databricks read access to Bronze layer via managed identity (Storage Blob Data Reader)
 resource "azurerm_role_assignment" "databricks_bronze_reader" {
+  count = var.enable_silver_layer && var.enable_bronze_layer ? 1 : 0
+
   scope                = azurerm_storage_account.datalake["bronze"].id
   role_definition_name = "Storage Blob Data Reader"
-  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+  principal_id         = azurerm_databricks_workspace.silver[0].storage_account_identity[0].principal_id
 }
 
 # Databricks read/write access to Silver layer via managed identity (Storage Blob Data Contributor)
 resource "azurerm_role_assignment" "databricks_silver_contributor" {
+  count = var.enable_silver_layer ? 1 : 0
+
   scope                = azurerm_storage_account.datalake["silver"].id
   role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+  principal_id         = azurerm_databricks_workspace.silver[0].storage_account_identity[0].principal_id
 }
 
 # Databricks read/write access to Gold layer via managed identity (Storage Blob Data Contributor)
 resource "azurerm_role_assignment" "databricks_gold_contributor" {
+  count = var.enable_silver_layer && var.enable_gold_layer ? 1 : 0
+
   scope                = azurerm_storage_account.datalake["gold"].id
   role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+  principal_id         = azurerm_databricks_workspace.silver[0].storage_account_identity[0].principal_id
 }
 
 #-------------------------------------------------------------------------------
@@ -361,6 +418,8 @@ resource "azurerm_role_assignment" "databricks_gold_contributor" {
 #-------------------------------------------------------------------------------
 
 resource "azurerm_fabric_capacity" "consume" {
+  count = var.enable_consume_layer ? 1 : 0
+
   name                = "fc-${var.project_name}-consume-${var.environment}-${var.location_short}"
   resource_group_name = azurerm_resource_group.medallion["consume"].name
   location            = azurerm_resource_group.medallion["consume"].location
@@ -418,41 +477,51 @@ output "datalake_filesystems" {
 
 output "data_factory" {
   description = "Azure Data Factory details for bronze layer ingestion"
-  value = {
-    name               = azurerm_data_factory.bronze.name
-    id                 = azurerm_data_factory.bronze.id
-    identity_id        = azurerm_data_factory.bronze.identity[0].principal_id
-    bronze_role        = azurerm_role_assignment.adf_bronze_contributor.role_definition_name
-  }
+  value = var.enable_bronze_layer ? {
+    name               = azurerm_data_factory.bronze[0].name
+    id                 = azurerm_data_factory.bronze[0].id
+    identity_id        = azurerm_data_factory.bronze[0].identity[0].principal_id
+    bronze_role        = azurerm_role_assignment.adf_bronze_contributor[0].role_definition_name
+  } : null
 }
 
 output "databricks_workspace" {
   description = "Azure Databricks workspace details for silver layer transformation"
-  value = {
-    name                       = azurerm_databricks_workspace.silver.name
-    id                         = azurerm_databricks_workspace.silver.id
-    workspace_url              = azurerm_databricks_workspace.silver.workspace_url
-    managed_resource_group_id  = azurerm_databricks_workspace.silver.managed_resource_group_id
-    storage_account_identity   = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
-  }
+  value = var.enable_silver_layer ? {
+    name                       = azurerm_databricks_workspace.silver[0].name
+    id                         = azurerm_databricks_workspace.silver[0].id
+    workspace_url              = azurerm_databricks_workspace.silver[0].workspace_url
+    managed_resource_group_id  = azurerm_databricks_workspace.silver[0].managed_resource_group_id
+    storage_account_identity   = azurerm_databricks_workspace.silver[0].storage_account_identity[0].principal_id
+  } : null
 }
 
 output "databricks_role_assignments" {
   description = "Role assignments for Databricks access to data lake layers"
-  value = {
-    bronze_reader      = azurerm_role_assignment.databricks_bronze_reader.role_definition_name
-    silver_contributor = azurerm_role_assignment.databricks_silver_contributor.role_definition_name
-    gold_contributor   = azurerm_role_assignment.databricks_gold_contributor.role_definition_name
-  }
+  value = var.enable_silver_layer ? {
+    bronze_reader      = var.enable_bronze_layer ? azurerm_role_assignment.databricks_bronze_reader[0].role_definition_name : null
+    silver_contributor = azurerm_role_assignment.databricks_silver_contributor[0].role_definition_name
+    gold_contributor   = var.enable_gold_layer ? azurerm_role_assignment.databricks_gold_contributor[0].role_definition_name : null
+  } : null
 }
 
 output "fabric_capacity" {
   description = "Microsoft Fabric capacity details for consume layer"
+  value = var.enable_consume_layer ? {
+    name     = azurerm_fabric_capacity.consume[0].name
+    id       = azurerm_fabric_capacity.consume[0].id
+    sku      = azurerm_fabric_capacity.consume[0].sku[0].name
+    location = azurerm_fabric_capacity.consume[0].location
+  } : null
+}
+
+output "enabled_layers" {
+  description = "Summary of which medallion layers are enabled"
   value = {
-    name     = azurerm_fabric_capacity.consume.name
-    id       = azurerm_fabric_capacity.consume.id
-    sku      = azurerm_fabric_capacity.consume.sku[0].name
-    location = azurerm_fabric_capacity.consume.location
+    bronze  = var.enable_bronze_layer
+    silver  = var.enable_silver_layer
+    gold    = var.enable_gold_layer
+    consume = var.enable_consume_layer
   }
 }
 
@@ -467,11 +536,11 @@ output "naming_summary" {
       fabric_capacity      = "fc-<project>-<layer>-<environment>-<region>"
     }
     examples = {
-      bronze_rg      = azurerm_resource_group.medallion["bronze"].name
-      bronze_storage = azurerm_storage_account.datalake["bronze"].name
-      bronze_adf     = azurerm_data_factory.bronze.name
-      silver_dbw     = azurerm_databricks_workspace.silver.name
-      consume_fabric = azurerm_fabric_capacity.consume.name
+      bronze_rg      = var.enable_bronze_layer ? azurerm_resource_group.medallion["bronze"].name : null
+      bronze_storage = var.enable_bronze_layer ? azurerm_storage_account.datalake["bronze"].name : null
+      bronze_adf     = var.enable_bronze_layer ? azurerm_data_factory.bronze[0].name : null
+      silver_dbw     = var.enable_silver_layer ? azurerm_databricks_workspace.silver[0].name : null
+      consume_fabric = var.enable_consume_layer ? azurerm_fabric_capacity.consume[0].name : null
     }
   }
 }
