@@ -63,15 +63,26 @@ tags = {
 fabric_capacity_admins = []
 
 #-------------------------------------------------------------------------------
+# Azure Synapse Configuration
+#-------------------------------------------------------------------------------
+
+# SQL administrator username for Synapse workspaces
+synapse_sql_admin_username = "sqladmin"
+
+# SQL administrator password for Synapse workspaces
+# IMPORTANT: Change this password and consider using Azure Key Vault for production
+synapse_sql_admin_password = "ChangeMe123!"
+
+#-------------------------------------------------------------------------------
 # Medallion Layer Deployment Configuration
 #-------------------------------------------------------------------------------
 
 # Enable deployment of the Bronze (raw/ingest) layer
-# Includes: Resource Group, Data Lake Storage, Data Factory
+# Includes: Resource Group, Data Lake Storage, Synapse Workspace
 enable_bronze_layer = true
 
 # Enable deployment of the Silver (transform) layer
-# Includes: Resource Group, Data Lake Storage, Data Factory
+# Includes: Resource Group, Data Lake Storage, Synapse Workspace
 enable_silver_layer = true
 
 # Enable deployment of the Gold (publish) layer

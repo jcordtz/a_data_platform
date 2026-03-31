@@ -672,7 +672,7 @@ I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de r
 >I ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
 
 >[!Note]
-Et Terraform‑baseret script er tilgængeligt som inspiration - [terraform script](./code-examples/azure/code-examples-da.md)
+Et Terraform‑baseret script er tilgængeligt som inspiration - [terraform script](./code-examples/code-examples-da.md)
 
 ### Forskellige mulige tjenester
 

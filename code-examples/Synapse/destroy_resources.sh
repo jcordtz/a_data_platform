@@ -115,27 +115,29 @@ if [ -z "$AUTO_APPROVE" ]; then
     print_warning "This will destroy ALL resources in the following order:"
     echo ""
     echo "  1. Role Assignments (RBAC)"
-    echo "     - Bronze Data Factory Contributor"
-    echo "     - Silver Data Factory Bronze Reader"
-    echo "     - Silver Data Factory Silver Contributor"
-    echo "     - Silver Data Factory Gold Contributor"
+    echo "     - Bronze Synapse Contributor"
+    echo "     - Silver Synapse Bronze Reader"
+    echo "     - Silver Synapse Silver Contributor"
+    echo "     - Silver Synapse Gold Contributor"
     echo ""
     echo "  2. Microsoft Fabric Capacity (Consume Layer)"
     echo ""
-    echo "  3. Azure Data Factory (Silver Layer)"
+    echo "  3. Synapse Firewall Rules"
     echo ""
-    echo "  4. Azure Data Factory (Bronze Layer)"
+    echo "  4. Azure Synapse Workspace (Silver Layer)"
     echo ""
-    echo "  5. Data Lake Gen2 Filesystems/Containers"
+    echo "  5. Azure Synapse Workspace (Bronze Layer)"
+    echo ""
+    echo "  6. Data Lake Gen2 Filesystems/Containers"
     echo "     - Bronze: raw, landing, archive"
     echo "     - Silver: cleansed, conformed, enriched"
     echo "     - Gold: analytics, curated, ml-features"
     echo "     - Consume: reports, dashboards, exports"
     echo ""
-    echo "  6. Data Lake Gen2 Storage Accounts"
+    echo "  7. Data Lake Gen2 Storage Accounts"
     echo "     - Bronze, Silver, Gold, Consume layers"
     echo ""
-    echo "  7. Resource Groups"
+    echo "  8. Resource Groups"
     echo "     - Bronze, Silver, Gold, Consume layers"
     echo ""
     read -p "Are you sure you want to destroy all resources? (yes/no): " confirm
@@ -165,27 +167,31 @@ print_status "All medallion architecture resources have been destroyed."
 # If you need more control, you can destroy resources in targeted order:
 #
 # # Step 1: Destroy Role Assignments
-# terraform destroy -target=azurerm_role_assignment.adf_bronze_contributor $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_bronze_reader $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_contributor $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_gold_contributor $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.synapse_bronze_contributor $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.synapse_silver_bronze_reader $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.synapse_silver_contributor $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.synapse_silver_gold_contributor $AUTO_APPROVE
 #
 # # Step 2: Destroy Fabric Capacity
 # terraform destroy -target=azurerm_fabric_capacity.consume $AUTO_APPROVE
 #
-# # Step 3: Destroy Silver Data Factory
-# terraform destroy -target=azurerm_data_factory.silver $AUTO_APPROVE
+# # Step 3: Destroy Synapse Firewall Rules
+# terraform destroy -target=azurerm_synapse_firewall_rule.silver_allow_azure $AUTO_APPROVE
+# terraform destroy -target=azurerm_synapse_firewall_rule.bronze_allow_azure $AUTO_APPROVE
 #
-# # Step 4: Destroy Bronze Data Factory
-# terraform destroy -target=azurerm_data_factory.bronze $AUTO_APPROVE
+# # Step 4: Destroy Silver Synapse Workspace
+# terraform destroy -target=azurerm_synapse_workspace.silver $AUTO_APPROVE
 #
-# # Step 5: Destroy Data Lake Filesystems
+# # Step 5: Destroy Bronze Synapse Workspace
+# terraform destroy -target=azurerm_synapse_workspace.bronze $AUTO_APPROVE
+#
+# # Step 6: Destroy Data Lake Filesystems
 # terraform destroy -target=azurerm_storage_data_lake_gen2_filesystem.containers $AUTO_APPROVE
 #
-# # Step 6: Destroy Storage Accounts
+# # Step 7: Destroy Storage Accounts
 # terraform destroy -target=azurerm_storage_account.datalake $AUTO_APPROVE
 #
-# # Step 7: Destroy Resource Groups
+# # Step 8: Destroy Resource Groups
 # terraform destroy -target=azurerm_resource_group.medallion $AUTO_APPROVE
 #
 #===============================================================================

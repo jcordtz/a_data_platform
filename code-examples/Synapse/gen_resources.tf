@@ -9,28 +9,28 @@
 #
 # Layer Deployment Control:
 # Each layer can be independently enabled/disabled using variables:
-# - enable_bronze_layer  (Data Factory + Storage)
-# - enable_silver_layer  (Data Factory + Storage)
+# - enable_bronze_layer  (Synapse Workspace + Storage)
+# - enable_silver_layer  (Synapse Workspace + Storage)
 # - enable_gold_layer    (Storage only)
 # - enable_consume_layer (Fabric Capacity + Storage)
 #
 # Resources created (when layer is enabled):
 # - Resource Groups per medallion layer
 # - Azure Data Lake Gen2 Storage Accounts per medallion layer
-# - Azure Data Factory for bronze layer data ingestion
-# - Azure Data Factory for silver layer transformation
+# - Azure Synapse Workspace for bronze layer data ingestion
+# - Azure Synapse Workspace for silver layer transformation
 # - Microsoft Fabric Capacity for consume layer reporting and analytics
-# - Role assignments for Data Factory access to data lake layers
+# - Role assignments for Synapse access to data lake layers
 #
 # Security:
 # - Bronze, Silver, and Gold layers enforce managed identity authentication (shared access keys disabled)
 # - Consume layer allows shared access keys for end-user/reporting flexibility
-# - Data Factory uses system-assigned managed identity for data lake access
+# - Synapse uses system-assigned managed identity for data lake access
 #
 # Naming Convention follows Azure CAF standards:
 # - Resource Groups: rg-<workload>-<layer>-<environment>-<region>
 # - Storage Accounts: st<workload><layer><env><region>
-# - Data Factory: adf-<workload>-<layer>-<environment>-<region>
+# - Synapse Workspace: synw-<workload>-<layer>-<environment>-<region>
 # - Fabric Capacity: fc-<workload>-<layer>-<environment>-<region>
 #===============================================================================
 
@@ -122,6 +122,18 @@ variable "fabric_capacity_admins" {
   description = "List of admin user principal names (UPNs) for Microsoft Fabric capacity"
   type        = list(string)
   default     = []
+}
+
+variable "synapse_sql_admin_username" {
+  description = "SQL administrator username for Synapse workspaces"
+  type        = string
+  default     = "sqladmin"
+}
+
+variable "synapse_sql_admin_password" {
+  description = "SQL administrator password for Synapse workspaces"
+  type        = string
+  sensitive   = true
 }
 
 variable "enable_bronze_layer" {
@@ -308,57 +320,19 @@ resource "azurerm_storage_data_lake_gen2_filesystem" "containers" {
 }
 
 #-------------------------------------------------------------------------------
-# Azure Data Factory - Bronze Layer (Data Ingestion)
+# Azure Synapse Workspace - Bronze Layer (Data Ingestion)
 #-------------------------------------------------------------------------------
 
-resource "azurerm_data_factory" "bronze" {
+resource "azurerm_synapse_workspace" "bronze" {
   count = var.enable_bronze_layer ? 1 : 0
 
-  name                = "adf-${var.project_name}-bronze-${var.environment}-${var.location_short}"
-  resource_group_name = azurerm_resource_group.medallion["bronze"].name
-  location            = azurerm_resource_group.medallion["bronze"].location
+  name                                 = "synw-${var.project_name}-bronze-${var.environment}-${var.location_short}"
+  resource_group_name                  = azurerm_resource_group.medallion["bronze"].name
+  location                             = azurerm_resource_group.medallion["bronze"].location
+  storage_data_lake_gen2_filesystem_id = azurerm_storage_data_lake_gen2_filesystem.containers["bronze-raw"].id
 
-  # Enable managed virtual network for secure data movement
-  managed_virtual_network_enabled = true
-
-  # Enable system-assigned managed identity (required for bronze layer access)
-  identity {
-    type = "SystemAssigned"
-  }
-
-  # Public network access (set to false for private endpoints in production)
-  public_network_enabled = true
-
-  tags = merge(local.common_tags, {
-    Layer       = "bronze"
-    Description = "Data Factory for data ingestion into bronze layer"
-    Purpose     = "ETL/ELT Orchestration"
-  })
-}
-
-# Data Factory read/write access to Bronze layer via managed identity (Storage Blob Data Contributor)
-# Bronze layer has shared access keys disabled, requiring managed identity authentication
-resource "azurerm_role_assignment" "adf_bronze_contributor" {
-  count = var.enable_bronze_layer ? 1 : 0
-
-  scope                = azurerm_storage_account.datalake["bronze"].id
-  role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_data_factory.bronze[0].identity[0].principal_id
-}
-
-#-------------------------------------------------------------------------------
-# Azure Data Factory - Silver Layer (Data Transformation)
-#-------------------------------------------------------------------------------
-
-resource "azurerm_data_factory" "silver" {
-  count = var.enable_silver_layer ? 1 : 0
-
-  name                = "adf-${var.project_name}-silver-${var.environment}-${var.location_short}"
-  resource_group_name = azurerm_resource_group.medallion["silver"].name
-  location            = azurerm_resource_group.medallion["silver"].location
-
-  # Enable managed virtual network for secure data movement
-  managed_virtual_network_enabled = true
+  sql_administrator_login          = var.synapse_sql_admin_username
+  sql_administrator_login_password = var.synapse_sql_admin_password
 
   # Enable system-assigned managed identity (required for data lake access)
   identity {
@@ -366,45 +340,111 @@ resource "azurerm_data_factory" "silver" {
   }
 
   # Public network access (set to false for private endpoints in production)
-  public_network_enabled = true
+  public_network_access_enabled = true
+
+  # Managed Virtual Network for secure data movement
+  managed_virtual_network_enabled = true
+
+  tags = merge(local.common_tags, {
+    Layer       = "bronze"
+    Description = "Synapse workspace for data ingestion into bronze layer"
+    Purpose     = "Data Ingestion and ETL/ELT Orchestration"
+  })
+}
+
+# Synapse Firewall Rule - Allow Azure Services
+resource "azurerm_synapse_firewall_rule" "bronze_allow_azure" {
+  count = var.enable_bronze_layer ? 1 : 0
+
+  name                 = "AllowAllWindowsAzureIps"
+  synapse_workspace_id = azurerm_synapse_workspace.bronze[0].id
+  start_ip_address     = "0.0.0.0"
+  end_ip_address       = "0.0.0.0"
+}
+
+# Bronze Synapse read/write access to Bronze layer via managed identity (Storage Blob Data Contributor)
+# Bronze layer has shared access keys disabled, requiring managed identity authentication
+resource "azurerm_role_assignment" "synapse_bronze_contributor" {
+  count = var.enable_bronze_layer ? 1 : 0
+
+  scope                = azurerm_storage_account.datalake["bronze"].id
+  role_definition_name = "Storage Blob Data Contributor"
+  principal_id         = azurerm_synapse_workspace.bronze[0].identity[0].principal_id
+}
+
+#-------------------------------------------------------------------------------
+# Azure Synapse Workspace - Silver Layer (Data Transformation)
+#-------------------------------------------------------------------------------
+
+resource "azurerm_synapse_workspace" "silver" {
+  count = var.enable_silver_layer ? 1 : 0
+
+  name                                 = "synw-${var.project_name}-silver-${var.environment}-${var.location_short}"
+  resource_group_name                  = azurerm_resource_group.medallion["silver"].name
+  location                             = azurerm_resource_group.medallion["silver"].location
+  storage_data_lake_gen2_filesystem_id = azurerm_storage_data_lake_gen2_filesystem.containers["silver-cleansed"].id
+
+  sql_administrator_login          = var.synapse_sql_admin_username
+  sql_administrator_login_password = var.synapse_sql_admin_password
+
+  # Enable system-assigned managed identity (required for data lake access)
+  identity {
+    type = "SystemAssigned"
+  }
+
+  # Public network access (set to false for private endpoints in production)
+  public_network_access_enabled = true
+
+  # Managed Virtual Network for secure data movement
+  managed_virtual_network_enabled = true
 
   tags = merge(local.common_tags, {
     Layer       = "silver"
-    Description = "Data Factory for silver layer transformation"
+    Description = "Synapse workspace for silver layer transformation"
     Purpose     = "Data Transformation and Processing"
   })
 }
 
+# Synapse Firewall Rule - Allow Azure Services
+resource "azurerm_synapse_firewall_rule" "silver_allow_azure" {
+  count = var.enable_silver_layer ? 1 : 0
+
+  name                 = "AllowAllWindowsAzureIps"
+  synapse_workspace_id = azurerm_synapse_workspace.silver[0].id
+  start_ip_address     = "0.0.0.0"
+  end_ip_address       = "0.0.0.0"
+}
+
 #-------------------------------------------------------------------------------
-# Role Assignments - Silver Data Factory Access to Data Lake Storage (Managed Identity)
+# Role Assignments - Silver Synapse Access to Data Lake Storage (Managed Identity)
 # Note: Bronze, Silver, and Gold layers require managed identity auth (shared keys disabled)
 #-------------------------------------------------------------------------------
 
-# Silver Data Factory read access to Bronze layer via managed identity (Storage Blob Data Reader)
-resource "azurerm_role_assignment" "adf_silver_bronze_reader" {
+# Silver Synapse read access to Bronze layer via managed identity (Storage Blob Data Reader)
+resource "azurerm_role_assignment" "synapse_silver_bronze_reader" {
   count = var.enable_silver_layer && var.enable_bronze_layer ? 1 : 0
 
   scope                = azurerm_storage_account.datalake["bronze"].id
   role_definition_name = "Storage Blob Data Reader"
-  principal_id         = azurerm_data_factory.silver[0].identity[0].principal_id
+  principal_id         = azurerm_synapse_workspace.silver[0].identity[0].principal_id
 }
 
-# Silver Data Factory read/write access to Silver layer via managed identity (Storage Blob Data Contributor)
-resource "azurerm_role_assignment" "adf_silver_contributor" {
+# Silver Synapse read/write access to Silver layer via managed identity (Storage Blob Data Contributor)
+resource "azurerm_role_assignment" "synapse_silver_contributor" {
   count = var.enable_silver_layer ? 1 : 0
 
   scope                = azurerm_storage_account.datalake["silver"].id
   role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_data_factory.silver[0].identity[0].principal_id
+  principal_id         = azurerm_synapse_workspace.silver[0].identity[0].principal_id
 }
 
-# Silver Data Factory read/write access to Gold layer via managed identity (Storage Blob Data Contributor)
-resource "azurerm_role_assignment" "adf_silver_gold_contributor" {
+# Silver Synapse read/write access to Gold layer via managed identity (Storage Blob Data Contributor)
+resource "azurerm_role_assignment" "synapse_silver_gold_contributor" {
   count = var.enable_silver_layer && var.enable_gold_layer ? 1 : 0
 
   scope                = azurerm_storage_account.datalake["gold"].id
   role_definition_name = "Storage Blob Data Contributor"
-  principal_id         = azurerm_data_factory.silver[0].identity[0].principal_id
+  principal_id         = azurerm_synapse_workspace.silver[0].identity[0].principal_id
 }
 
 #-------------------------------------------------------------------------------
@@ -469,29 +509,31 @@ output "datalake_filesystems" {
   }
 }
 
-output "data_factory" {
-  description = "Azure Data Factory details for bronze and silver layers"
+output "synapse_workspaces" {
+  description = "Azure Synapse Workspace details for bronze and silver layers"
   value = {
     bronze = var.enable_bronze_layer ? {
-      name        = azurerm_data_factory.bronze[0].name
-      id          = azurerm_data_factory.bronze[0].id
-      identity_id = azurerm_data_factory.bronze[0].identity[0].principal_id
+      name                     = azurerm_synapse_workspace.bronze[0].name
+      id                       = azurerm_synapse_workspace.bronze[0].id
+      identity_id              = azurerm_synapse_workspace.bronze[0].identity[0].principal_id
+      connectivity_endpoints   = azurerm_synapse_workspace.bronze[0].connectivity_endpoints
     } : null
     silver = var.enable_silver_layer ? {
-      name        = azurerm_data_factory.silver[0].name
-      id          = azurerm_data_factory.silver[0].id
-      identity_id = azurerm_data_factory.silver[0].identity[0].principal_id
+      name                     = azurerm_synapse_workspace.silver[0].name
+      id                       = azurerm_synapse_workspace.silver[0].id
+      identity_id              = azurerm_synapse_workspace.silver[0].identity[0].principal_id
+      connectivity_endpoints   = azurerm_synapse_workspace.silver[0].connectivity_endpoints
     } : null
   }
 }
 
-output "data_factory_role_assignments" {
-  description = "Role assignments for Data Factory access to data lake layers"
+output "synapse_role_assignments" {
+  description = "Role assignments for Synapse access to data lake layers"
   value = {
-    bronze_adf_contributor = var.enable_bronze_layer ? azurerm_role_assignment.adf_bronze_contributor[0].role_definition_name : null
-    silver_adf_bronze_reader = var.enable_silver_layer && var.enable_bronze_layer ? azurerm_role_assignment.adf_silver_bronze_reader[0].role_definition_name : null
-    silver_adf_silver_contributor = var.enable_silver_layer ? azurerm_role_assignment.adf_silver_contributor[0].role_definition_name : null
-    silver_adf_gold_contributor = var.enable_silver_layer && var.enable_gold_layer ? azurerm_role_assignment.adf_silver_gold_contributor[0].role_definition_name : null
+    bronze_synapse_contributor = var.enable_bronze_layer ? azurerm_role_assignment.synapse_bronze_contributor[0].role_definition_name : null
+    silver_synapse_bronze_reader = var.enable_silver_layer && var.enable_bronze_layer ? azurerm_role_assignment.synapse_silver_bronze_reader[0].role_definition_name : null
+    silver_synapse_silver_contributor = var.enable_silver_layer ? azurerm_role_assignment.synapse_silver_contributor[0].role_definition_name : null
+    silver_synapse_gold_contributor = var.enable_silver_layer && var.enable_gold_layer ? azurerm_role_assignment.synapse_silver_gold_contributor[0].role_definition_name : null
   }
 }
 
@@ -521,14 +563,14 @@ output "naming_summary" {
     pattern = {
       resource_groups      = "rg-<project>-<layer>-<environment>-<region>"
       storage_accounts     = "st<project><layer><env><region>"
-      data_factory         = "adf-<project>-<layer>-<environment>-<region>"
+      synapse_workspace    = "synw-<project>-<layer>-<environment>-<region>"
       fabric_capacity      = "fc-<project>-<layer>-<environment>-<region>"
     }
     examples = {
       bronze_rg      = var.enable_bronze_layer ? azurerm_resource_group.medallion["bronze"].name : null
       bronze_storage = var.enable_bronze_layer ? azurerm_storage_account.datalake["bronze"].name : null
-      bronze_adf     = var.enable_bronze_layer ? azurerm_data_factory.bronze[0].name : null
-      silver_adf     = var.enable_silver_layer ? azurerm_data_factory.silver[0].name : null
+      bronze_synapse = var.enable_bronze_layer ? azurerm_synapse_workspace.bronze[0].name : null
+      silver_synapse = var.enable_silver_layer ? azurerm_synapse_workspace.silver[0].name : null
       consume_fabric = var.enable_consume_layer ? azurerm_fabric_capacity.consume[0].name : null
     }
   }

@@ -1,6 +1,6 @@
 ![microsoft](../../images/microsoft.png)
 
-# Eine Datenplattform - Code beispiele
+# Eine Datenplattform - Code beispiele für Azure
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
@@ -13,17 +13,36 @@ Die folgenden Dateien sind Beispiele dafür, wie eine Datenplattform eingerichte
 
 Diese Beispiele dienen als **Inspiration** und erfordern daher Anpassungen, um zur jeweiligen Umgebung zu passen.
 
-Der Code wurde **nur** in meiner eigenen Demo-Umgebung getestet.
+>[!Note]
+>Der Code wurde ausschließlich in meiner eigenen Demo-Umgebung getestet. Daher gibt es keine Garantie dafür, dass er funktioniert!!!!!!!
 
 ## Beispiele
 
 Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
 
+### Azure mit Data Factory im bronze und Data Factory Data Flow im silber.
+
 |Aufgabe|Code|
 |-----|------| 
-|Init|[init **shell** script](./init-project.sh)|
-|Create|[**terraform** resources generate script](./gen_resources.tf)|
-|Delete|[delete **shell** script](./destroy_resources.sh)|
+|Init|[init **shell** script](./azure/init-project.sh)|
+|Create|[**terraform** resources generate script](./azure/gen_resources.tf)|
+|Delete|[delete **shell** script](./azure/destroy_resources.sh)|
+
+### Azure mit Data Factory im bronze und Azure Databricks im silber.
+
+|Aufgabe|Code|
+|-----|------| 
+|Init|[init **shell** script](./Databricks/init-project.sh)|
+|Create|[**terraform** resources generate script](./Databricks/gen_resources.tf)|
+|Delete|[delete **shell** script](./Databricks/destroy_resources.sh)|
+
+### Azure mit Synapse im bronze und silber
+
+|Aufgabe|Code|
+|-----|------| 
+|Init|[init **shell** script](./Synapse/init-project.sh)|
+|Create|[**terraform** resources generate script](./Synapse/gen_resources.tf)|
+|Delete|[delete **shell** script](./Synapse/destroy_resources.sh)|
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)

@@ -551,7 +551,7 @@ In den jeweiligen Bereichen der einzelnen Abteilungen wird dann weiter gearbeite
 >Oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
 
 >[!Note]
->Ein Terraform-basiertes Skript steht zur Inspiration zur Verfügung - [terraform script](./code-examples/azure/code-examples-de.md)
+>Ein Terraform-basiertes Skript steht zur Inspiration zur Verfügung - [terraform script](./code-examples/code-examples-de.md)
 
 ### Vershidende dienste
 

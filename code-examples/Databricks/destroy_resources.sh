@@ -115,14 +115,14 @@ if [ -z "$AUTO_APPROVE" ]; then
     print_warning "This will destroy ALL resources in the following order:"
     echo ""
     echo "  1. Role Assignments (RBAC)"
-    echo "     - Bronze Data Factory Contributor"
-    echo "     - Silver Data Factory Bronze Reader"
-    echo "     - Silver Data Factory Silver Contributor"
-    echo "     - Silver Data Factory Gold Contributor"
+    echo "     - Data Factory Bronze Contributor"
+    echo "     - Databricks Bronze Reader"
+    echo "     - Databricks Silver Contributor"
+    echo "     - Databricks Gold Contributor"
     echo ""
     echo "  2. Microsoft Fabric Capacity (Consume Layer)"
     echo ""
-    echo "  3. Azure Data Factory (Silver Layer)"
+    echo "  3. Azure Databricks Workspace (Silver Layer)"
     echo ""
     echo "  4. Azure Data Factory (Bronze Layer)"
     echo ""
@@ -166,17 +166,17 @@ print_status "All medallion architecture resources have been destroyed."
 #
 # # Step 1: Destroy Role Assignments
 # terraform destroy -target=azurerm_role_assignment.adf_bronze_contributor $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_bronze_reader $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_contributor $AUTO_APPROVE
-# terraform destroy -target=azurerm_role_assignment.adf_silver_gold_contributor $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.databricks_bronze_reader $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.databricks_silver_contributor $AUTO_APPROVE
+# terraform destroy -target=azurerm_role_assignment.databricks_gold_contributor $AUTO_APPROVE
 #
 # # Step 2: Destroy Fabric Capacity
 # terraform destroy -target=azurerm_fabric_capacity.consume $AUTO_APPROVE
 #
-# # Step 3: Destroy Silver Data Factory
-# terraform destroy -target=azurerm_data_factory.silver $AUTO_APPROVE
+# # Step 3: Destroy Databricks Workspace
+# terraform destroy -target=azurerm_databricks_workspace.silver $AUTO_APPROVE
 #
-# # Step 4: Destroy Bronze Data Factory
+# # Step 4: Destroy Data Factory
 # terraform destroy -target=azurerm_data_factory.bronze $AUTO_APPROVE
 #
 # # Step 5: Destroy Data Lake Filesystems

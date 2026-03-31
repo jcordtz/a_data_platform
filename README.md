@@ -658,7 +658,7 @@ In the individual departments' areas, further work is then done so that the righ
 >In the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
 
 >[!Note]
->A terraform based script is available for inspiration - [terraform script](./code-examples/azure/code-examples.md)
+>A terraform based script is available for inspiration - [terraform script](./code-examples/code-examples.md)
 
 ### Services that can be used
 

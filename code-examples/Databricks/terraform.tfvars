@@ -71,7 +71,7 @@ fabric_capacity_admins = []
 enable_bronze_layer = true
 
 # Enable deployment of the Silver (transform) layer
-# Includes: Resource Group, Data Lake Storage, Data Factory
+# Includes: Resource Group, Data Lake Storage, Databricks Workspace
 enable_silver_layer = true
 
 # Enable deployment of the Gold (publish) layer
