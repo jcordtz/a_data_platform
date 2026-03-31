@@ -547,8 +547,8 @@ Im Gemeinschaftsbereich werden die Daten monotonie verarbeitet, sodass sie an di
 
 In den jeweiligen Bereichen der einzelnen Abteilungen wird dann weiter gearbeitet, damit die richtigen Datensätze in ihren *Veröffentlichungsbereichen* erstellt werden, die dann in den zugehörigen *Konsumbereichen* verwendet werden können
 
->![Anmerkung]
-> oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
+>[!Note]
+>Oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
 
 ### Vershidende dienste
 

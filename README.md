@@ -654,8 +654,8 @@ In the common area, data is processed into a monotony so that it can be passed o
 
 In the individual departments' areas, further work is then done so that the right datasets are created in their *publish areas*, which can then be used in the associated *consume areas*
 
->![Note]
-> in the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
+>[!Note]
+>In the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
 
 ### Services that can be used
 
