@@ -203,7 +203,7 @@ Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Date
 
 Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env-de.md) näher erläutert.
 
-Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem Abschnitt [Abschnitt](DataOps/DataOps-de.md) näher erläutert.
+Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem [Abschnitt](./README-de.md#daten-operationen) näher erläutert.
 
 
 ## Logische Architektur

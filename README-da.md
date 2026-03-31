@@ -232,7 +232,7 @@ database og herefter indlæse et givent datasæt i denne database, alt samme ved
 Denne model rejser også en diskussion om, hvilke elementer i den underliggende infrastruktur cloud-udbyderen såvel som kunden er ansvarlig 
 for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i dette [afsnit](DataOps/Cloud-env-da.md)
 
-Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i dette afsnit [afsnit](DataOps/DataOps-da.md).
+Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i dette [afsnit](./README-da.md#dataops).
 
 ## Logisk arkitektur
 
