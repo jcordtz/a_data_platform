@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # En data platform - Eksempler på kode til at danne en data platform i Azure
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md#eksempel-på-en-implementering)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md#eksempel-på-en-implementering)
 
 ## Indledning
 
@@ -47,4 +47,4 @@ Oprettelse af et data platform der følger medallion arkitekturen.
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md#eksempel-på-en-implementering)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md#eksempel-på-en-implementering)

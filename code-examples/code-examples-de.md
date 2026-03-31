@@ -1,11 +1,11 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # Eine Datenplattform - Code beispiele für Azure
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md#beispiel-für-eine-implementierungen)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md#beispiel-für-eine-implementierungen)
 
 ## Einleitung
 
@@ -47,4 +47,4 @@ Erstellung einer Datenplattform, die der Medallion-Architektur folgt.
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](code-examples.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](code-examples-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](code-examples-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md#beispiel-für-eine-implementierungen)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md#beispiel-für-eine-implementierungen)
