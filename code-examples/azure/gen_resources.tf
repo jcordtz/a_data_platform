@@ -5,14 +5,28 @@
 # - Bronze (Raw/Ingest): Landing zone for raw data from source systems
 # - Silver (Transform): Cleansed, conformed, and integrated data
 # - Gold (Publish): Business-ready, analytics-optimized data products
+# - Consume: Reports, dashboards, and end-user data products
 #
 # Resources created:
-# - Resource Groups per medallion layer
+# - Resource Groups per medallion layer including the consume layer
 # - Azure Data Lake Gen2 Storage Accounts per medallion layer
+# - Azure Data Factory for bronze layer data ingestion
+# - Azure Databricks Workspace for silver layer transformation
+# - Microsoft Fabric Capacity for consume layer reporting and analytics
+# - Role assignments for Databricks access to bronze (read), silver (read/write), gold (read/write)
+#
+# Security:
+# - Bronze, Silver, and Gold layers enforce managed identity authentication (shared access keys disabled)
+# - Consume layer allows shared access keys for end-user/reporting flexibility
+# - Data Factory uses system-assigned managed identity for bronze layer access
+# - Databricks uses managed identity for data lake access across layers
 #
 # Naming Convention follows Azure CAF standards:
 # - Resource Groups: rg-<workload>-<layer>-<environment>-<region>
-# - Storage Accounts: st<workload><layer><env><region><instance>
+# - Storage Accounts: st<workload><layer><env><region>
+# - Data Factory: adf-<workload>-<layer>-<environment>-<region>
+# - Databricks Workspace: dbw-<workload>-<layer>-<environment>-<region>
+# - Fabric Capacity: fc-<workload>-<layer>-<environment>-<region>
 #===============================================================================
 
 terraform {
@@ -59,13 +73,13 @@ variable "environment" {
 variable "location" {
   description = "Azure region for resource deployment"
   type        = string
-  default     = "westeurope"
+  default     = "francecentral"
 }
 
 variable "location_short" {
   description = "Short code for Azure region (used in storage account naming)"
   type        = string
-  default     = "weu"
+  default     = "frc"
 
   validation {
     condition     = can(regex("^[a-z]{2,4}$", var.location_short))
@@ -99,6 +113,12 @@ variable "storage_tier" {
   default     = "Standard"
 }
 
+variable "fabric_capacity_admins" {
+  description = "List of admin user principal names (UPNs) for Microsoft Fabric capacity"
+  type        = list(string)
+  default     = []
+}
+
 #-------------------------------------------------------------------------------
 # Local Variables
 #-------------------------------------------------------------------------------
@@ -130,7 +150,13 @@ locals {
       name        = "gold"
       short       = "gld"
       description = "Publish layer - business-ready analytics and data products"
-      containers  = ["analytics", "reporting", "ml-features"]
+      containers  = ["analytics", "curated", "ml-features"]
+    }
+    consume = {
+      name        = "consume"
+      short       = "csm"
+      description = "Consumption layer - reports, dashboards, and end-user data products"
+      containers  = ["reports", "dashboards", "exports"]
     }
   }
 
@@ -180,7 +206,9 @@ resource "azurerm_storage_account" "datalake" {
   # Security settings
   min_tls_version                 = "TLS1_2"
   allow_nested_items_to_be_public = false
-  shared_access_key_enabled       = true
+  # Only consume layer allows shared access keys for end-user/reporting flexibility
+  # Bronze, silver, and gold layers enforce managed identity authentication
+  shared_access_key_enabled       = each.key == "consume" ? true : false
   public_network_access_enabled   = true # Set to false for private endpoints
 
   # Blob properties
@@ -237,6 +265,121 @@ resource "azurerm_storage_data_lake_gen2_filesystem" "containers" {
 }
 
 #-------------------------------------------------------------------------------
+# Azure Data Factory - Bronze Layer (Data Ingestion)
+#-------------------------------------------------------------------------------
+
+resource "azurerm_data_factory" "bronze" {
+  name                = "adf-${var.project_name}-bronze-${var.environment}-${var.location_short}"
+  resource_group_name = azurerm_resource_group.medallion["bronze"].name
+  location            = azurerm_resource_group.medallion["bronze"].location
+
+  # Enable managed virtual network for secure data movement
+  managed_virtual_network_enabled = true
+
+  # Enable system-assigned managed identity (required for bronze layer access)
+  identity {
+    type = "SystemAssigned"
+  }
+
+  # Public network access (set to false for private endpoints in production)
+  public_network_enabled = true
+
+  tags = merge(local.common_tags, {
+    Layer       = "bronze"
+    Description = "Data Factory for data ingestion into bronze layer"
+    Purpose     = "ETL/ELT Orchestration"
+  })
+}
+
+# Data Factory read/write access to Bronze layer via managed identity (Storage Blob Data Contributor)
+# Bronze layer has shared access keys disabled, requiring managed identity authentication
+resource "azurerm_role_assignment" "adf_bronze_contributor" {
+  scope                = azurerm_storage_account.datalake["bronze"].id
+  role_definition_name = "Storage Blob Data Contributor"
+  principal_id         = azurerm_data_factory.bronze.identity[0].principal_id
+}
+
+#-------------------------------------------------------------------------------
+# Azure Databricks Workspace - Silver Layer (Data Transformation)
+#-------------------------------------------------------------------------------
+
+resource "azurerm_databricks_workspace" "silver" {
+  name                = "dbw-${var.project_name}-silver-${var.environment}-${var.location_short}"
+  resource_group_name = azurerm_resource_group.medallion["silver"].name
+  location            = azurerm_resource_group.medallion["silver"].location
+  sku                 = "premium"
+
+  # Managed resource group for Databricks-managed resources
+  managed_resource_group_name = "rg-${var.project_name}-dbw-managed-${var.environment}-${var.location_short}"
+
+  # Public network access (set to false for private link in production)
+  public_network_access_enabled = true
+
+  # Custom parameters for workspace configuration
+  custom_parameters {
+    no_public_ip                                         = false # Set to true for enhanced security
+    public_subnet_network_security_group_association_id  = null
+    private_subnet_network_security_group_association_id = null
+    storage_account_name                                 = null  # Let Databricks create its own DBFS storage
+  }
+
+  tags = merge(local.common_tags, {
+    Layer       = "silver"
+    Description = "Databricks workspace for data transformation"
+    Purpose     = "Data Engineering and Processing"
+  })
+}
+
+#-------------------------------------------------------------------------------
+# Role Assignments - Databricks Access to Data Lake Storage (Managed Identity)
+# Note: Bronze, Silver, and Gold layers require managed identity auth (shared keys disabled)
+#-------------------------------------------------------------------------------
+
+# Databricks read access to Bronze layer via managed identity (Storage Blob Data Reader)
+resource "azurerm_role_assignment" "databricks_bronze_reader" {
+  scope                = azurerm_storage_account.datalake["bronze"].id
+  role_definition_name = "Storage Blob Data Reader"
+  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+}
+
+# Databricks read/write access to Silver layer via managed identity (Storage Blob Data Contributor)
+resource "azurerm_role_assignment" "databricks_silver_contributor" {
+  scope                = azurerm_storage_account.datalake["silver"].id
+  role_definition_name = "Storage Blob Data Contributor"
+  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+}
+
+# Databricks read/write access to Gold layer via managed identity (Storage Blob Data Contributor)
+resource "azurerm_role_assignment" "databricks_gold_contributor" {
+  scope                = azurerm_storage_account.datalake["gold"].id
+  role_definition_name = "Storage Blob Data Contributor"
+  principal_id         = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+}
+
+#-------------------------------------------------------------------------------
+# Microsoft Fabric Capacity - Consume Layer (Reporting & Analytics)
+#-------------------------------------------------------------------------------
+
+resource "azurerm_fabric_capacity" "consume" {
+  name                = "fc-${var.project_name}-consume-${var.environment}-${var.location_short}"
+  resource_group_name = azurerm_resource_group.medallion["consume"].name
+  location            = azurerm_resource_group.medallion["consume"].location
+
+  sku {
+    name = "F8"
+    tier = "Fabric"
+  }
+
+  administration_members = var.fabric_capacity_admins
+
+  tags = merge(local.common_tags, {
+    Layer       = "consume"
+    Description = "Microsoft Fabric capacity for reporting and analytics"
+    Purpose     = "BI and Reporting"
+  })
+}
+
+#-------------------------------------------------------------------------------
 # Outputs
 #-------------------------------------------------------------------------------
 
@@ -273,16 +416,62 @@ output "datalake_filesystems" {
   }
 }
 
+output "data_factory" {
+  description = "Azure Data Factory details for bronze layer ingestion"
+  value = {
+    name               = azurerm_data_factory.bronze.name
+    id                 = azurerm_data_factory.bronze.id
+    identity_id        = azurerm_data_factory.bronze.identity[0].principal_id
+    bronze_role        = azurerm_role_assignment.adf_bronze_contributor.role_definition_name
+  }
+}
+
+output "databricks_workspace" {
+  description = "Azure Databricks workspace details for silver layer transformation"
+  value = {
+    name                       = azurerm_databricks_workspace.silver.name
+    id                         = azurerm_databricks_workspace.silver.id
+    workspace_url              = azurerm_databricks_workspace.silver.workspace_url
+    managed_resource_group_id  = azurerm_databricks_workspace.silver.managed_resource_group_id
+    storage_account_identity   = azurerm_databricks_workspace.silver.storage_account_identity[0].principal_id
+  }
+}
+
+output "databricks_role_assignments" {
+  description = "Role assignments for Databricks access to data lake layers"
+  value = {
+    bronze_reader      = azurerm_role_assignment.databricks_bronze_reader.role_definition_name
+    silver_contributor = azurerm_role_assignment.databricks_silver_contributor.role_definition_name
+    gold_contributor   = azurerm_role_assignment.databricks_gold_contributor.role_definition_name
+  }
+}
+
+output "fabric_capacity" {
+  description = "Microsoft Fabric capacity details for consume layer"
+  value = {
+    name     = azurerm_fabric_capacity.consume.name
+    id       = azurerm_fabric_capacity.consume.id
+    sku      = azurerm_fabric_capacity.consume.sku[0].name
+    location = azurerm_fabric_capacity.consume.location
+  }
+}
+
 output "naming_summary" {
   description = "Summary of naming convention used"
   value = {
     pattern = {
-      resource_groups  = "rg-<project>-<layer>-<environment>-<region>"
-      storage_accounts = "st<project><layer><env><region>"
+      resource_groups      = "rg-<project>-<layer>-<environment>-<region>"
+      storage_accounts     = "st<project><layer><env><region>"
+      data_factory         = "adf-<project>-<layer>-<environment>-<region>"
+      databricks_workspace = "dbw-<project>-<layer>-<environment>-<region>"
+      fabric_capacity      = "fc-<project>-<layer>-<environment>-<region>"
     }
     examples = {
       bronze_rg      = azurerm_resource_group.medallion["bronze"].name
       bronze_storage = azurerm_storage_account.datalake["bronze"].name
+      bronze_adf     = azurerm_data_factory.bronze.name
+      silver_dbw     = azurerm_databricks_workspace.silver.name
+      consume_fabric = azurerm_fabric_capacity.consume.name
     }
   }
 }
