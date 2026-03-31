@@ -14,7 +14,7 @@ Die folgenden Dateien sind Beispiele dafür, wie eine Datenplattform eingerichte
 Diese Beispiele dienen als **Inspiration** und erfordern daher Anpassungen, um zur jeweiligen Umgebung zu passen.
 
 >[!Note]
->Der Code wurde ausschließlich in meiner eigenen Demo-Umgebung getestet. Daher gibt es keine Garantie dafür, dass er funktioniert!!!!!!!
+>Der Code wurde nur in meiner eigenen Demo-Umgebung ausprobiert und daher gibt es keine Garantie dafür, dass er überall funktioniert!!!!! 
 
 ## Beispiele
 

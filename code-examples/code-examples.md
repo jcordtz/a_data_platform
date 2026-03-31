@@ -14,7 +14,7 @@ The following files are examples of how a data platform can be set up.
 These examples are provided as **inspiration** and therefore require adjustments to fit the specific environment.
 
 >[!Note]
->The code has **only** been tested in my own demo environment. So, their is no guarantee that it will work!!!!!!!
+>The code has **only** been tried out in my own demo environment. So, their is no guarantee that it will work!!!!!!!
 
 ## Examples
 
