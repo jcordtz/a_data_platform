@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md#data-model)
 
 ## Einleitung
 
@@ -106,4 +106,4 @@ Die Datenmodellierung ist ein unverzichtbarer Bestandteil des Datenmanagements, 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-de.md#data-model)

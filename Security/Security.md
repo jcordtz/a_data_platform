@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-and-security)
 
 ## Introduction
 
@@ -284,4 +284,4 @@ In *Figure 1* you will find several ways to protect data which are available in 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Security-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-and-security)

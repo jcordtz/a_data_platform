@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md#dataplatform-og-data-mesh-paradigmet)
 
 ## Indledning
 
@@ -81,4 +81,4 @@ Data mesh repræsenterer et betydeligt skift i, hvordan organisationer griber da
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md#dataplatform-og-data-mesh-paradigmet)

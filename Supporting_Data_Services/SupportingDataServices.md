@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#supporting-data-services)
 
 [Data Catalog](./DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
@@ -22,4 +22,4 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#supporting-data-services)

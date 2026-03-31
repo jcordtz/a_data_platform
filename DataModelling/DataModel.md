@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-models)
 
 ## Introduction
 
@@ -107,4 +107,4 @@ Data modelling is an indispensable part of data management that provides a struc
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataModel.md)
 [![dk](https://img.shields.io/badge/lang-dk-red.svg)](DataModel-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](DataModel-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-models)

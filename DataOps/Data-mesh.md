@@ -5,7 +5,7 @@
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-platform-and-the-data-mesh-paradigm)
 ## Introduction
 
 Understanding Data Mesh: A Paradigm Shift in Data Architecture
@@ -76,4 +76,4 @@ Data mesh represents a significant shift in how organizations approach data mana
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Data-mesh.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Data-mesh-da.md)
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](Data-mesh-de.md)
-[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md)
+[![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#data-platform-and-the-data-mesh-paradigm)
