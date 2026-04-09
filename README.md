@@ -572,7 +572,7 @@ revoking people from the corresponding AD-Groups.
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 8](images/english/Slide5.JPG)
+![figure 8](images/english/Slide4.png)
 
 *Figure 8*
 

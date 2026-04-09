@@ -117,7 +117,7 @@ These elements are discussed in further details in the context of the data platf
 ## An example of a Data Platform strategy
 
 Based on the "standard" Data Platform as shown in figure 1 the following discusses a strategy on what to take a backup of and how to restore.
-![figure 5](../images/english/Slide5.JPG)
+![figure 5](../images/english/Slide5.png)
 
 Because the discussed data platform relies on automation and infrastructure as code, code besides of the data itself is an important part of the backup strategy.
 

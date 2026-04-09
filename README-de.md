@@ -482,7 +482,7 @@ Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepfl
 
 Die folgende Abbildung 8 zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
 
-![Abbildung 8](images/german/Slide5.JPG) 
+![Abbildung 8](images/german/Slide4.png) 
 
 *Abbildung 8*
 

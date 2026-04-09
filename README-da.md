@@ -592,7 +592,7 @@ tilbagekalde personer fra de tilsvarende grupper.
 
 I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
 
-![figur 8](images/danish/Slide5.JPG) 
+![figur 8](images/danish/Slide4.png) 
 
 *Figur 8*
 
