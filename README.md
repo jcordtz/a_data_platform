@@ -564,11 +564,17 @@ tags that could be attached to the different environments.
 
 ### Development environment - Project room
 
-A way of establishing a secure development environment could be to use what is called a Project room in this document. These project rooms
+A way of establishing a secure development environment is to use what is called a Project room in this document. These project rooms
 represent an isolated environment normally owned by a unique AD-Group (one or more).
 
 In the project room data, tools and code are established/maintained completely isolated. Access to a project room is done by adding or
 revoking people from the corresponding AD-Groups.
+
+In the project room you will find a "mini" data platform. This means that you will find bronze, silver and gold areas, most likely as
+directories (not storage accounts) and all the tools in the data platform and a desktop to uses these tools.
+
+You might decide to have a few different types of project rooms - i.e. one for the ingest process, on for the transform process and
+one for the publishing part. But it should be at such a level, do not have a project room type per tool !!!
 
 The following figure shows an example of a project room in the data platform environment.
 
@@ -576,12 +582,14 @@ The following figure shows an example of a project room in the data platform env
 
 *Figure 8*
 
-Development being done in a project room can then be “checked in” to the overall data platform using i.e. a CI/CD process. An example of
-this is shown later in this document. Any data needed for doing the development could/should undergo a process that makes it a
-“non-production” *data*/*dataset*.
+A project room is created getting the setup (terraform/bicep approach) from a repository. These scrips creates the
+resource-groups/resources that the project room consists of. It will also - if needed - bring in the data the development needs
+and is allowed to use. This part of the process most likely will introduce some kind of "masking" being done. This is the (1) on the figure.
 
-In case *data*/*datasets* in these project rooms need to be read-only, the ownership should be assigned to a second yet still unique
-AD-group.
+When development is done/ready, it is commited to the repo. (2) on the figure.
+
+This development when “checked in” is then captured by pipelines that then handles the code depolyment to the overall data platform using
+a CI/CD process. An example of this is shown later in this document.
 
 In the rare situations where an integration connection between project rooms is needed, the ownership should be set to a third AD-group,
 still being unique to the project-room.

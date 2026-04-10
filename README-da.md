@@ -583,27 +583,34 @@ knyttes til de forskellige miljøer.
 
 ## Udviklingsmiljø - Projektrum
 
-En måde at etablere et sikkert udviklingsmiljø på kunne være at bruge et projektrum.
+En måde at etablere et sikkert udviklingsmiljø på er at bruge det, der kaldes et projektrum i dette dokument. Disse projektrum
+repræsenterer et isoleret miljø, normalt ejet af en unik AD-Gruppe (en eller flere).
 
-Disse projektrum repræsenterer et isoleret miljø, der normalt ejes af en gruppe.
+I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændigt isoleret. Adgang til et projektrum sker ved at tilføje eller
+at tilbagekalde folk fra de tilsvarende AD-grupper.
 
-I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændig isoleret. Adgang til et projektrum sker ved at tilføje eller 
-tilbagekalde personer fra de tilsvarende grupper.
+I projektrummet finder du en "mini" dataplatform. Det betyder, at du vil finde bronze-, sølv- og guldområder, sandsynligvis som
+Mapper (ikke lagringskonti) og alle værktøjerne i dataplatformen og et skrivebord bruger disse værktøjer.
 
-I følgende figur vises et eksempel på et projektrum i dataplatformsmiljøet.
+Du kan vælge at have flere forskellige typer projektrum – f.eks. ét til indskrivningsprocessen, et til transformationsprocessen og
+En til udgivelsesdelen. Men det skal være på et sådant niveau, at man ikke har en projektrumstype pr. værktøj!!
+
+Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
 ![figur 8](images/danish/Slide4.png) 
 
 *Figur 8*
 
-Udvikling, der foregår i et projektrum, kan derefter "checkes ind" i den samlede dataplatform ved hjælp af f.eks. en CI/CD-proces. Et 
-eksempel på dette kan ses i kapitlet ”CI/CD-eksempel”. 
+Et projektrum oprettes ved at få opsætningen (terraform/biceps-tilgang) fra et repository. Disse scrips skaber
+Ressourcegrupper/ressourcer, som projektrummet består af. Den vil også – hvis nødvendigt – bringe de data, som udviklingen har brug for
+og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er (1) på figuren.
 
-Alle data, der er nødvendige for at udføre udviklingen, kan/bør gennemgå en proces, der gør det til en "ikke-produktion" data/datasæt.
+Når udviklingen er færdig/klar, bliver det tilsendt repoet. (2) på figuren.
 
-Hvis data/datasæt i disse projektrum skal være skrivebeskyttede, skal ejerskabet tildeles en anden, men unik gruppe.
-I de sjældne situationer, hvor der er behov for en integrationsforbindelse mellem forskellige projektrum, bør ejerskabet placeres i en 
-gruppe for sig selv, der stadig er unik for disse projektrum.
+Denne udvikling, når den er "checket ind", fanges derefter af pipelines, som håndterer kodedepolymentet til den samlede dataplatform ved hjælp af en CI/CD-proces. Et eksempel på dette vises senere i dette dokument.
+
+I de sjældne situationer, hvor en integrationsforbindelse mellem projektrum er nødvendig, bør ejerskabet sættes til en tredje AD-gruppe,
+stadig unikt for projektrummet.
 
 ## CI/CD-eksempel
 

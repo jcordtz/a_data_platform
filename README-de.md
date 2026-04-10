@@ -474,24 +474,29 @@ In den verschiedenen Umgebungen müssen unterschiedliche Tags verwendet werden, 
 
 ## Entwicklungsumgebung - Projektraum
 
-Eine Möglichkeit, eine sichere Entwicklungsumgebung einzurichten, könnte die Verwendung eines Projektraums sein.
+Eine Möglichkeit, eine sichere Entwicklungsumgebung zu schaffen, besteht darin, in diesem Dokument einen sogenannten Projektraum zu verwenden. Diese Projekträume stellen eine isolierte Umgebung dar, die normalerweise einer einzigartigen AD-Gruppe gehört (eine oder mehrere).
 
-Diese Projekträume stellen eine isolierte Umgebung dar, die sich in der Regel im Besitz einer Gruppe befindet.
+Im Projektraum werden Daten, Werkzeuge und Code vollständig isoliert etabliert und gepflegt. Der Zugang zu einem Projektraum erfolgt durch das Hinzufügen von oder Er entzieht Personen aus den entsprechenden AD-Gruppen.
 
-Im Projektraum werden Daten, Tools und Code vollständig isoliert erstellt/gepflegt. Der Zugriff auf einen Projektraum erfolgt durch Hinzufügen oder Abrufen von Personen aus den entsprechenden Gruppen.
+Im Projektraum findest du eine "Mini"-Datenplattform. Das bedeutet, dass Sie Bronze-, Silber- und Goldbereiche finden werden, höchstwahrscheinlich als Verzeichnisse (keine Speicherkonten) und alle Werkzeuge in der Datenplattform und einem Desktop, um diese Tools zu nutzen.
 
-Die folgende Abbildung 8 zeigt ein Beispiel für einen Projektbereich in der Datenplattformumgebung.
+Du könntest dich entscheiden, verschiedene Arten von Projekträumen zu haben – z. B. einen für den Eingabeprozess, einen für den Transformationsprozess und eine für den Verlagsteil. Aber es sollte auf einem solchen Niveau sein, dass man nicht per Tool einen Projektraumtyp hat!!
+
+Die folgende Abbildung zeigt ein Beispiel für einen Projektraum in der Datenplattform-Umgebung.
 
 ![Abbildung 8](images/german/Slide4.png) 
 
 *Abbildung 8*
 
-Entwicklungen, die in einem Projektraum stattfinden, können dann z.B. über einen CI/CD-Prozess in die einheitliche Datenplattform "eingecheckt" werden. Ein Beispiel hierfür finden Sie im Kapitel "CI/CD-Beispiel".
+Ein Projektraum wird erstellt, indem das Setup (Terraform/Bizeps-Ansatz) aus einem Repository erhalten wird. Diese Rezepte schaffen das
+Ressourcengruppen/Ressourcen, aus denen der Projektraum besteht. Es wird auch – falls nötig – die Daten einbringen, die die Entwicklung benötigt und es ist erlaubt, sie zu verwenden. Dieser Teil des Prozesses wird höchstwahrscheinlich eine Art "Maskierung" einführen. Dies ist das (1) auf der Figur.
 
-Alle Daten, die für die Durchführung der Entwicklung benötigt werden, können/sollten einen Prozess durchlaufen, der sie zu "Nicht-Produktionsdaten/-datensätzen" macht.
+Wenn die Entwicklung abgeschlossen oder bereit ist, wird sie dem Repo verpflichtet. (2) auf der Figur.
 
-Damit Daten/Datensätze in diesen Projektbereichen schreibgeschützt sind, muss der Besitz einer anderen, aber eindeutigen Gruppe zugewiesen werden.
-In den seltenen Situationen, in denen eine Integrationsverbindung zwischen verschiedenen Projekträumen erforderlich ist, sollte das Eigentum in einer eigenen Gruppe platziert werden, die für diese Projekträume noch einzigartig ist.
+Diese Entwicklung wird beim "Check-in" dann von Pipelines erfasst, die dann die Code-Depolymentierung für die gesamte Datenplattform mit
+ein CI/CD-Prozess. Ein Beispiel dafür wird später in diesem Dokument gezeigt.
+
+In den seltenen Fällen, in denen eine Integrationsverbindung zwischen Projekträumen erforderlich ist, sollte das Eigentum auf eine dritte AD-Gruppe gesetzt werden, immer noch einzigartig für den Projektraum.
 
 
 ## CI/CD-Beispiel
