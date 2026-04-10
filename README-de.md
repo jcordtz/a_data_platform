@@ -1,3 +1,4 @@
+<!-- Mit tiger billed -->
 <div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
 
                    Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.
