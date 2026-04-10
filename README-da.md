@@ -603,11 +603,13 @@ Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
 Et projektrum oprettes ved at få opsætningen (terraform/biceps-tilgang) fra et repository. Disse scrips skaber
 Ressourcegrupper/ressourcer, som projektrummet består af. Den vil også – hvis nødvendigt – bringe de data, som udviklingen har brug for
-og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er (1) på figuren.
+og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er ① på figuren.
 
-Når udviklingen er færdig/klar, bliver det tilsendt repoet. (2) på figuren.
+Når udviklingen er færdig/klar, bliver det tilsendt repoet. ② på figuren.
 
-Denne udvikling, når den er "checket ind", fanges derefter af pipelines, som håndterer kodedepolymentet til den samlede dataplatform ved hjælp af en CI/CD-proces. Et eksempel på dette vises senere i dette dokument.
+Denne udvikling, når den er "checket ind", fanges derefter af pipelines, som håndterer kodedepolymentet til den samlede dataplatform ved hjælp af en CI/CD-proces. ③ på figuren.
+
+Et eksempel på dette vises senere i dette dokument.
 
 I de sjældne situationer, hvor en integrationsforbindelse mellem projektrum er nødvendig, bør ejerskabet sættes til en tredje AD-gruppe,
 stadig unikt for projektrummet.

@@ -489,12 +489,14 @@ Die folgende Abbildung zeigt ein Beispiel für einen Projektraum in der Datenpla
 *Abbildung 8*
 
 Ein Projektraum wird erstellt, indem das Setup (Terraform/Bizeps-Ansatz) aus einem Repository erhalten wird. Diese Rezepte schaffen das
-Ressourcengruppen/Ressourcen, aus denen der Projektraum besteht. Es wird auch – falls nötig – die Daten einbringen, die die Entwicklung benötigt und es ist erlaubt, sie zu verwenden. Dieser Teil des Prozesses wird höchstwahrscheinlich eine Art "Maskierung" einführen. Dies ist das (1) auf der Figur.
+Ressourcengruppen/Ressourcen, aus denen der Projektraum besteht. Es wird auch – falls nötig – die Daten einbringen, die die Entwicklung benötigt und es ist erlaubt, sie zu verwenden. Dieser Teil des Prozesses wird höchstwahrscheinlich eine Art "Maskierung" einführen. Dies ist das ① auf der Figur.
 
-Wenn die Entwicklung abgeschlossen oder bereit ist, wird sie dem Repo verpflichtet. (2) auf der Figur.
+Wenn die Entwicklung abgeschlossen oder bereit ist, wird sie dem Repo verpflichtet. ② auf der Figur.
 
 Diese Entwicklung wird beim "Check-in" dann von Pipelines erfasst, die dann die Code-Depolymentierung für die gesamte Datenplattform mit
-ein CI/CD-Prozess. Ein Beispiel dafür wird später in diesem Dokument gezeigt.
+ein CI/CD-Prozess. ③ auf der figur.
+
+Ein Beispiel dafür wird später in diesem Dokument gezeigt.
 
 In den seltenen Fällen, in denen eine Integrationsverbindung zwischen Projekträumen erforderlich ist, sollte das Eigentum auf eine dritte AD-Gruppe gesetzt werden, immer noch einzigartig für den Projektraum.
 

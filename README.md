@@ -584,12 +584,14 @@ The following figure shows an example of a project room in the data platform env
 
 A project room is created getting the setup (terraform/bicep approach) from a repository. These scrips creates the
 resource-groups/resources that the project room consists of. It will also - if needed - bring in the data the development needs
-and is allowed to use. This part of the process most likely will introduce some kind of "masking" being done. This is the (1) on the figure.
+and is allowed to use. This part of the process most likely will introduce some kind of "masking" being done. This is the ① on the figure.
 
-When development is done/ready, it is commited to the repo. (2) on the figure.
+When development is done/ready, it is commited to the repo. ② on the figure.
 
 This development when “checked in” is then captured by pipelines that then handles the code depolyment to the overall data platform using
-a CI/CD process. An example of this is shown later in this document.
+a CI/CD process. ③ on the figure.
+
+An example of this is shown later in this document.
 
 In the rare situations where an integration connection between project rooms is needed, the ownership should be set to a third AD-group,
 still being unique to the project-room.
