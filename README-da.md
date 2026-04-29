@@ -209,62 +209,40 @@ De enkelte data elementer i *Transform området* er ”selvstændige objekter”
 
 *Data* i *Transform området* forefindes således som "rene" objekter, der er praktiske at arbejde med, når de bruges til at danne *datasæt*.
 
-En anden opgave er at sikre, at de forskellige data, vi ønsker at have tilgængelige på dette område, let kan sammenføjes, hvilket betyder,
-at det enkelte dataobjekt har de "referencenøgler", der er nødvendige for at kunne forbinde med andre dataobjekter.
+En anden opgave er at sikre, at de forskellige data, vi ønsker at have tilgængelige på dette område, let kan sammenføjes, hvilket betyder, at det enkelte dataobjekt har de "referencenøgler", der er nødvendige for at kunne forbinde med andre dataobjekter.
 
-I **publish området** skabes de *datasæt*, der er nødvendige for at opfylde de forskellige forretningsbehov, der har behov for data fra
-dataplatformen. Her anvendes modeller som for eksempel stjerneskemaer og leverance af disse datasæt sker oftest via data marts (relations
-databaser).
+I **publish området** skabes de *datasæt*, der er nødvendige for at opfylde de forskellige forretningsbehov, der har behov for data fra dataplatformen. Her anvendes modeller som for eksempel stjerneskemaer og leverance af disse datasæt sker oftest via data marts (relations databaser).
 
-*Publish området* er det sted, hvor slutbrugerne af dataplatformen får adgang til de datasæt de skal bruge og ved hjælp af de værktøjer,
-de finder mest egnede.
+*Publish området* er det sted, hvor slutbrugerne af dataplatformen får adgang til de datasæt de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
 
 >[!NOTE]
->Dette paradigme er i dag nok bedre kendt som *"medallion data architecture"*, hvor *bronze* er *ingest området*, *sølv* er
->*transform* og *guld* er *publish*. *Medallion* arkitekturen indeholder ikke et *consume område*. Dette dokument vil bruge
->begreberne *ingest*, *transform*, *publish*, og *consume* da det afspejler hvad de kunder der er inspiration til dette dokument
->oftest bruger.
+>Dette paradigme er i dag nok bedre kendt som *"medallion data architecture"*, hvor *bronze* er *ingest området*, *sølv* er >*transform* og *guld* er *publish*. *Medallion* arkitekturen indeholder ikke et *consume område*. Dette dokument vil bruge begreberne *ingest*, *transform*, *publish*, og *consume* da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
 
 ### Dataplatform og Data Mesh-paradigmet
 
-Data mesh er et arkitektonisk paradigme, der er designet til at løse udfordringerne ved skalering af datastyring og -analyse i store,
-komplekse organisationer. Det skifter fra centraliserede datasøer og lagre til en decentraliseret tilgang, der gør det muligt for
-forskellige teams at administrere og bruge data uafhængigt.
+Data mesh er et arkitektonisk paradigme, der er designet til at løse udfordringerne ved skalering af datastyring og -analyse i store, komplekse organisationer. Det skifter fra centraliserede datasøer og lagre til en decentraliseret tilgang, der gør det muligt for forskellige teams at administrere og bruge data uafhængigt.
 
 Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i dette [afsnit](DataOps/Data-mesh-da.md)
 
 ### Grænseflader
 
-*Figur 3* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal
-sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender
-de veje data flyder af.
+*Figur 3* angiver, at grænsefladen mellem de forskellige områder er lige så vigtig som indholdet af områderne. Disse grænseflader skal sikre den teknologiske uafhængighed, vi ønsker i platformen – det skal være nemt at ændre/tilføje nye services – samt sikre, at vi kender de veje data flyder af.
 
 De fleste virksomheder/institutioner foretrækker at bruge en eller flere af følgende muligheder for grænseflade.  
 
-**REST API** - den "grundlæggende" grænseflade, som de fleste (alle) nye tjenester bruger til at tilbyde deres funktionalitet. Dette
-niveau er meget teknisk og er ikke egnet til low code/no-code tilgange.
+**REST API** - den "grundlæggende" grænseflade, som de fleste (alle) nye tjenester bruger til at tilbyde deres funktionalitet. Dette niveau er meget teknisk og er ikke egnet til low code/no-code tilgange.
 
-**SQL** – standard dataforespørgsels sprog, der er meget udbredt og understøttet af mange forskellige database systemer. Mange er bekendt
-med SQL fra dets anvendelse i relationelle databaser, men det er også tilgængeligt i andre typer af databasesystemer som for eksempel
-NoSQL databaser.
+**SQL** – standard dataforespørgsels sprog, der er meget udbredt og understøttet af mange forskellige database systemer. Mange er bekendt med SQL fra dets anvendelse i relationelle databaser, men det er også tilgængeligt i andre typer af databasesystemer som for eksempel NoSQL databaser.
 
-Hvis man "kun" bruger de funktioner i SQL som er en del af SQL-sprog standarden, vil det give en høj grad af fleksibilitet. Det betyder,
-at man ikke vil bruge specifikke funktioner, som et givent databaseprodukt har udvidet en SQL-implementering med – især brugen af de
-proceduresprog, der findes i for eksempel MS SQL Server eller Oracle DB.
+Hvis man "kun" bruger de funktioner i SQL som er en del af SQL-sprog standarden, vil det give en høj grad af fleksibilitet. Det betyder, at man ikke vil bruge specifikke funktioner, som et givent databaseprodukt har udvidet en SQL-implementering med – især brugen af de proceduresprog, der findes i for eksempel MS SQL Server eller Oracle DB.
 
-**Python** – det "nye" databehandlingssprog. Python er meget udbredt og afspejler den nuværende måde at håndtere data på. Python er et
-programmeringssprog på højt niveau, der fortolkes ved afvikling.
-Pythons syntaks er relativ enkel og dermed nem at lære og giver også en god grad af læsbarhed, hvilket bør sænke omkostningerne ved
-programvedligeholdelse. Python understøtter brugen af moduler og pakker, hvilket fremmer en modul til gang til programmering og genbrug af
-kode.
+**Python** – det "nye" databehandlingssprog. Python er meget udbredt og afspejler den nuværende måde at håndtere data på. Python er et programmeringssprog på højt niveau, der fortolkes ved afvikling. Pythons syntaks er relativ enkel og dermed nem at lære og giver også en god grad af læsbarhed, hvilket bør sænke omkostningerne ved programvedligeholdelse. Python understøtter brugen af moduler og pakker, hvilket fremmer en modul til gang til programmering og genbrug af kode.
 
-Pythons virkelig gode understøttelse af data samt et omfattende standardbibliotek gør det meget populært i forbindelse med dataplatforme.  
-Desuden elsker programmører Python, fordi de føler det gør dem mere produktive.
+Pythons virkelig gode understøttelse af data samt et omfattende standardbibliotek gør det meget populært i forbindelse med dataplatforme. Desuden elsker programmører Python, fordi de føler det gør dem mere produktive.
 
 ### Understøttende datatjenester
 
-En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne
-[sektion](Supporting_Data_Services/SupportingDataServices-da.md)
+En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion](Supporting_Data_Services/SupportingDataServices-da.md)
 
 ### Data model
 
@@ -280,79 +258,59 @@ Realtid kommer i forskellige varianter, i dette dokument vil vi bruge følgende 
 - Næsten realtid – *data*, der er "forsinket" på grund af kommunikation eller behandling.
 - Dynamiske data – *data*, der opdateres og kræver opmærksomhed.
 
-Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til nær realtid og dynamiske data.
-Dynamiske data – som er baseret på hændelser – behandles på samme måde som nær realtid data i dataplatformen.
+Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til nær realtid og dynamiske data. Dynamiske data – som er baseret på hændelser – behandles på samme måde som nær realtid data i dataplatformen.
 
-Den generelle tilgang er, at alle eller alle *data i realtid* også opbevares i *consume området* for mere behandling.
-Dette gør det muligt for dataplatformen at have funktioner, der kan understøtte en realtidsproces, hvor det er relevant, men også at styre
-al viden, der kan genereres over tid fra realtidssituationer.
-Dette kan så hjælpe med at undgå, at en uønsket hændelse opstår - såsom en togforsinkelse.
+Den generelle tilgang er, at alle eller alle *data i realtid* også opbevares i *consume området* for mere behandling. Dette gør det muligt for dataplatformen at have funktioner, der kan understøtte en realtidsproces, hvor det er relevant, men også at styre al viden, der kan genereres over tid fra realtidssituationer. Dette kan så hjælpe med at undgå, at en uønsket hændelse opstår - såsom en togforsinkelse.
 
-Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og derefter være i stand til at ændre odds hurtigt baseret på
-de historiske data, der er tilgængelige i dataplatformen.
+Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og derefter være i stand til at ændre odds hurtigt baseret på de historiske data, der er tilgængelige i dataplatformen.
 
-For at illustrere dette kan man forestille sig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen,
-vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
+For at illustrere dette kan man forestille sig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen, vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
 
 ![Figur 5](images/danish/Slide3.JPG)
 
 *Figur 5*
 
-Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter
-for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
+Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
 
 ## Endnu et særligt tilfælde - ChatGPT/CoPilot
 
-I takt med at AI/ML/GenAI bliver mere og mere tilgængelige, bliver kravene og dermed udfordringerne på de dataelementer, der bruges i
-sådanne løsninger, endnu vigtigere.
+I takt med at AI/ML/GenAI bliver mere og mere tilgængelige, bliver kravene og dermed udfordringerne på de dataelementer, der bruges i sådanne løsninger, endnu vigtigere.
 
-En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-løsning er at bruge en metode kendt som RAG, der står for
-Retrieval Augmented Generation.
+En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-løsning er at bruge en metode kendt som RAG, der står for Retrieval Augmented Generation.
 
-RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem,
-der giver **grounding** data. Tilføjelse af et informationshentningssystem giver kontrol over de data der bruges til at "ground" LLM modellerne,
-når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, man kan begrænse generativ
-AI til ens virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis man har
-integreringsmodeller for det pågældende indhold.
+RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **grounding** data. Tilføjelse af et informationshentningssystem giver kontrol over de data der bruges til at "ground" LLM modellerne, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, man kan begrænse generativ AI til ens virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis man har integreringsmodeller for det pågældende indhold.
 
 ![Figur 6](images/architecture-diagram.png)
 
 *Figur 6*
 
-Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM.
+Beslutningen om, hvilket informationssøgningssystem der skal bruges, er afgørende, fordi det bestemmer inputtene til LLM.  
+
 Informationssøgningssystemet skal indeholde:
 
 1. Indekseringsstrategier, der indlæses og opdateres i stor skala for alt dit indhold med den frekvens, man har brug for.
 
-1. Forespørgselsfunktioner og relevansjustering. Systemet bør returnere relevante resultater i de korte formater, der er nødvendige for at
-opfylde kravene til tokenlængde for LLM-input.
+1. Forespørgselsfunktioner og relevansjustering. Systemet bør returnere relevante resultater i de korte formater, der er nødvendige for at opfylde kravene til tokenlængde for LLM-input.
 
 1. Sikkerhed, global rækkevidde og pålidelighed for både data og drift.
 
 1. Integration med indlejringsmodeller til indeksering og chatmodeller eller sprogforståelsesmodeller til hentning.
 
-Azure AI Search er et eksempel på en sådan "database", der giver indekserings- og forespørgselsfunktioner med infrastrukturen og
-sikkerheden i Azure-cloudmiljøet.
+Azure AI Search er et eksempel på en sådan "database", der giver indekserings- og forespørgselsfunktioner med infrastrukturen og sikkerheden i Azure-cloudmiljøet.
 
-Gennem kode og andre komponenter kan man designe en omfattende RAG-løsning, der inkluderer alle elementerne til generativ AI over dit
-proprietære indhold.
+Gennem kode og andre komponenter kan man designe en omfattende RAG-løsning, der inkluderer alle elementerne til generativ AI over dit proprietære indhold.
 
-På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til,
-så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer
-datasæt med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes
-efter brug.
+På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til, så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer datasæt med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes efter brug.
 
 ## Og et tredje special-tilfælde – Agentic AI / Agents
 
 Den generative AI-tilgang har i høj grad bevæget sig i retning af agents.
 
-Et koncept, hvor en agent løser en specifik opgave og derefter returnerer sit svar til en “overordnet” service, som så kombinerer de forskellige agents’ delvise svar på en forespørgsel for at danne det “fuldstændige” svar (ved brug af en MCP-server).
-Som eksempel har jeg en igangværende dialog med en NGO, der hjælper, når en katastrofe indtræffer (jordskælv, storme, jordskred osv.). Ingen katastrofer er ens, så den nødvendige hjælp afhænger af mange faktorer såsom geografi, tilgængelige leverandører, infrastruktur, religion osv. Det betyder også, at den proces, der er nødvendig, varierer fra gang til gang.
+Et koncept, hvor en agent løser en specifik opgave og derefter returnerer sit svar til en "overordnet" service, som så kombinerer de forskellige agents' delvise svar på en forespørgsel for at danne det "fuldstændige" svar (ved brug af en MCP-server). Som eksempel har jeg en igangværende dialog med en NGO, der hjælper, når en katastrofe indtræffer (jordskælv, storme, jordskred osv.). Ingen katastrofer er ens, så den nødvendige hjælp afhænger af mange faktorer såsom geografi, tilgængelige leverandører, infrastruktur, religion osv. Det betyder også, at den proces, der er nødvendig, varierer fra gang til gang.
 
 Dette passer ikke godt ind i et standardiseret framework. Derfor er de altid nødt til på en eller anden måde at sammensætte løsninger, og afhængigt af situationen kan dette spænde fra relativt overkommeligt til meget komplekst.
 
-Det, vi diskuterer, er derfor, om – og hvordan – vi kan anvende en tilgang, hvor de relevante tables i deres system-landskab hver især frontes af en agent.
-Hver af disse agents beskriver kapabiliteterne for den enkelte table, såsom hvad den indeholder, hvordan den kan anvendes, og hvordan den kan kombineres med andre informationsdele osv.
+Det, vi diskuterer, er derfor, om – og hvordan – vi kan anvende en tilgang, hvor de relevante tables i deres system-landskab hver især frontes af en agent. Hver af disse agents beskriver kapabiliteterne for den enkelte table, såsom hvad den indeholder, hvordan den kan anvendes, og hvordan den kan kombineres med andre informationsdele osv.
 
 Foran disse agents placeres der så en master agent, som konfigureres (grounded) til hver enkelt situation, hvor de relevante personer kan bruge denne master agent til at prompte efter svar. De kan også opbygge en applikation, der passer til den konkrete situation, og derefter stille den til rådighed for hjælpearbejdere.
 
@@ -412,9 +370,7 @@ Og fik dannet denne apllication
 
 ## Miljøer
 
-Dette afsnit afsøger, hvordan man kunne bruge seks miljøer til implementering af et dataplatformsprojekt. Afhængigt af præferencer kan man
-selvfølgelig bestemme, hvor mange af disse miljøer man ønsker at have, og hvordan man fordeler de opgaver, som beskrives blandt færre
-eller flere miljøer.
+Dette afsnit afsøger, hvordan man kunne bruge seks miljøer til implementering af et dataplatformsprojekt. Afhængigt af præferencer kan man selvfølgelig bestemme, hvor mange af disse miljøer man ønsker at have, og hvordan man fordeler de opgaver, som beskrives blandt færre eller flere miljøer.
 
 1. Sandkasse - dette miljø bruges til MVP-test.
 2. Projektrum - udviklingsmiljøer.
@@ -426,69 +382,45 @@ eller flere miljøer.
 
 ## Datapolitikker
 
-For at kontrollere de data-politikker man ønsker at bruge, skal der sikres en forståelse af hvilken type miljø et givent arbejde udføres.
-Dette dokument bruger 5 miljøtyper i diskussionen af processerne.
+For at kontrollere de data-politikker man ønsker at bruge, skal der sikres en forståelse af hvilken type miljø et givent arbejde udføres. Dette dokument bruger 5 miljøtyper i diskussionen af processerne.
 
-1. Sandkasse – miljø, der bruges til at teste funktionaliteten for de enkelte tjenester. Disse miljøer indeholder IKKE nogen forretnings-/
-virksomhedsdata.
-2. Projektrum – Disse miljøer bruges til at etablere miljøer, der indeholder værktøjer og data, der bruges til at udføre en
-udviklingsopgave.
+1. Sandkasse – miljø, der bruges til at teste funktionaliteten for de enkelte tjenester. Disse miljøer indeholder IKKE nogen forretnings-/virksomhedsdata.
+2. Projektrum – Disse miljøer bruges til at etablere miljøer, der indeholder værktøjer og data, der bruges til at udføre en udviklingsopgave.
 3. Ikke-produktion – miljøer, der indeholder udviklings-, kvalitetssikrings- og testscenarier.
 4. Produktion – miljøer, der understøtter præproduktions- og produktionsscenarier.
 5. Fortroligt – miljøer, der understøtter databehandling af meget fortrolige data.
 
 ## Data og sikkerhed
 
-Datasikkerhed er et kritisk element i driften af enhver organisation. Det omhandler beskyttelsen af data mod ulovlig adgang, forringelse
-eller tyveri over hele dataenes levetid. Med indførelsen af robuste datasikkerhedstiltag kan firmaer sikre deres vigtige ressourcer, opnå
-overholdelse af regler og fastholde kundetilliden til, hvordan de håndterer data.
+Datasikkerhed er et kritisk element i driften af enhver organisation. Det omhandler beskyttelsen af data mod ulovlig adgang, forringelse eller tyveri over hele dataenes levetid. Med indførelsen af robuste datasikkerhedstiltag kan firmaer sikre deres vigtige ressourcer, opnå overholdelse af regler og fastholde kundetilliden til, hvordan de håndterer data.
 
-Datasikkerhed er kritisk, da den sikrer organisationer mod cyberangreb, insidertrusler og menneskelige fejl, som kan resultere i databrud.
-De væsentlige faktorer inden for datasikkerhed omfatter fortrolighed, integritet, tilgængelighed og overholdelse. Med voksende trusler mod
-data skal organisationer beskytte deres data ved kilden for at kunne opretholde datasikkerheden og hurtigt genoprette data efter et
-angreb. Formålet med datasikkerhed er at beskytte data imod alle former for misbrug, inklusive cyberangreb og menneskelige fejl.
+Datasikkerhed er kritisk, da den sikrer organisationer mod cyberangreb, insidertrusler og menneskelige fejl, som kan resultere i databrud. De væsentlige faktorer inden for datasikkerhed omfatter fortrolighed, integritet, tilgængelighed og overholdelse. Med voksende trusler mod data skal organisationer beskytte deres data ved kilden for at kunne opretholde datasikkerheden og hurtigt genoprette data efter et angreb. Formålet med datasikkerhed er at beskytte data imod alle former for misbrug, inklusive cyberangreb og menneskelige fejl.
 
-For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden, integriteten og tilgængeligheden af en organisations
-oplysninger. Det understøtter beskyttelsen af vigtige ressourcer, hjælper med at imødekomme de specificerede standarders compliance krav
-og fastholder kundetillid.
+For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden, integriteten og tilgængeligheden af en organisations oplysninger. Det understøtter beskyttelsen af vigtige ressourcer, hjælper med at imødekomme de specificerede standarders compliance krav og fastholder kundetillid.
 
 I afsnittet [Sikkerhed](Security/Security-da.md) findes en meget mere detaljeret diskussion om sikkerhedsaspektet.
 Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
-*Figur 7* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed
-eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+*Figur 7* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
 ![figur 7](images/danish/Slide8.JPG)
 
 *Figur 7*
 
-**Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og
-dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en
-(relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto.
-Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært
-sagt - kan man komme til lagerkontoen?
+**Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto.
+Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
 
-**Attributbaseret adgangskontrol** – også kendt som ABAC - giver ofte ekstra mekanisme til at give adgang til at foretage et "opslag" i et
-andet system. For eksempel kan man muligvis komme til en storage-konto, men deres kan være en mappe, der kræver, at man er en del af et
-givet projekt. I dette tilfælde kan man lave et ABAC "opslag", der kontrollerer dette, før man giver adgang - afhængigt af dette resultat.
+**Attributbaseret adgangskontrol** – også kendt som ABAC - giver ofte ekstra mekanisme til at give adgang til at foretage et "opslag" i et andet system. For eksempel kan man muligvis komme til en storage-konto, men deres kan være en mappe, der kræver, at man er en del af et givet projekt. I dette tilfælde kan man lave et ABAC "opslag", der kontrollerer dette, før man giver adgang - afhængigt af dette resultat.
 
-**Identitetsbaseret adgangskontrol** - dækker den mulighed, som en given ressource kan tildeles en identitet (bliver "et menneske"). Og så
-sørger man for, at adgang til en given lagerkonto kun gives til dette "menneske", og derfor skal man bruge denne applikation til at komme
-til dataene.
+**Identitetsbaseret adgangskontrol** - dækker den mulighed, som en given ressource kan tildeles en identitet (bliver "et menneske"). Og så sørger man for, at adgang til en given lagerkonto kun gives til dette "menneske", og derfor skal man bruge denne applikation til at komme til dataene.
 
-**Krypteringsbaseret adgangskontrol** - dette er ikke rigtig adgangskontrol, fordi datalagringen vil være tilgængelig, men man kan kun
-læse / bruge dataene, hvis man har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
+**Krypteringsbaseret adgangskontrol** - dette er ikke rigtig adgangskontrol, fordi datalagringen vil være tilgængelig, men man kan kun læse / bruge dataene, hvis man har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
 
-**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i *publish rområdet*. Denne tilgang bruger det aspekt af *publish
-området*, at et *datasæt* kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen
-til at kunne genskabe et givet *datasæt*, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste
-måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
+**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i *publish rområdet*. Denne tilgang bruger det aspekt af *publish området*, at et *datasæt* kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
 
 ## DataOps
 
-Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data
-med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende
-forbedringer omkring dataanalyse.
+Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
 
 A mere detaljeret diskussion om DataOps er tilgængelig i denne [sektion](DataOps/DataOps-da.md)
 
@@ -507,8 +439,7 @@ I forskellige miljøer kunne visse politikker vedrørende kryptering håndhæves
 
 ### Miljøer og tags
 
-I de forskellige miljøer skal forskellige tags bruges til at identificere miljøets natur. Følgende tabel er eksempler på mærker, der kan
-knyttes til de forskellige miljøer.
+I de forskellige miljøer skal forskellige tags bruges til at identificere miljøets natur. Følgende tabel er eksempler på mærker, der kan knyttes til de forskellige miljøer.
 
 |Miljø/Tag|Sandkasse|Projektrum|Ikke-produktion|Produktion|Fortrolig|Værdier|
 |---------|---------|----------|---------------|----------|---------|-------|
@@ -522,17 +453,13 @@ knyttes til de forskellige miljøer.
 
 ## Udviklingsmiljø - Projektrum
 
-En måde at etablere et sikkert udviklingsmiljø på er at bruge det, der kaldes et projektrum i dette dokument. Disse projektrum
-repræsenterer et isoleret miljø, normalt ejet af en unik AD-Gruppe (en eller flere).
+En måde at etablere et sikkert udviklingsmiljø på er at bruge det, der kaldes et projektrum i dette dokument. Disse projektrum repræsenterer et isoleret miljø, normalt ejet af en unik AD-Gruppe (en eller flere).
 
-I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændigt isoleret. Adgang til et projektrum sker ved at tilføje eller
-at tilbagekalde folk fra de tilsvarende AD-grupper.
+I projektrummet etableres/vedligeholdes data, værktøjer og kode fuldstændigt isoleret. Adgang til et projektrum sker ved at tilføje eller at tilbagekalde folk fra de tilsvarende AD-grupper.
 
-I projektrummet finder man en "mini" dataplatform. Det betyder, at man vil finde bronze-, sølv- og guldområder, sandsynligvis som
-Mapper (ikke lagringskonti) og alle værktøjerne i dataplatformen og et skrivebord bruger disse værktøjer.
+I projektrummet finder man en "mini" dataplatform. Det betyder, at man vil finde bronze-, sølv- og guldområder, sandsynligvis som Mapper (ikke lagringskonti) og alle værktøjerne i dataplatformen og et skrivebord bruger disse værktøjer.
 
-man kan vælge at have flere forskellige typer projektrum – f.eks. ét til indskrivningsprocessen, et til transformationsprocessen og
-En til udgivelsesdelen. Men det skal være på et sådant niveau, at man ikke har en projektrumstype pr. værktøj!!
+man kan vælge at have flere forskellige typer projektrum – f.eks. ét til indskrivningsprocessen, et til transformationsprocessen og En til udgivelsesdelen. Men det skal være på et sådant niveau, at man ikke har en projektrumstype pr. værktøj!!
 
 Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
@@ -540,9 +467,7 @@ Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
 *Figur 8*
 
-Et projektrum oprettes ved at få opsætningen (terraform/biceps-tilgang) fra et repository. Disse scrips skaber
-Ressourcegrupper/ressourcer, som projektrummet består af. Den vil også – hvis nødvendigt – bringe de data, som udviklingen har brug for
-og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er ① på figuren.
+Et projektrum oprettes ved at få opsætningen (terraform/biceps-tilgang) fra et repository. Disse scrips skaber Ressourcegrupper/ressourcer, som projektrummet består af. Den vil også – hvis nødvendigt – bringe de data, som udviklingen har brug for og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er ① på figuren.
 
 Når udviklingen er færdig/klar, bliver det tilsendt repoet. ② på figuren.
 
@@ -550,13 +475,11 @@ Denne udvikling, når den er "checket ind", fanges derefter af pipelines, som h�
 
 Et eksempel på dette vises senere i dette dokument.
 
-I de sjældne situationer, hvor en integrationsforbindelse mellem projektrum er nødvendig, bør ejerskabet sættes til en tredje AD-gruppe,
-stadig unikt for projektrummet.
+I de sjældne situationer, hvor en integrationsforbindelse mellem projektrum er nødvendig, bør ejerskabet sættes til en tredje AD-gruppe, stadig unikt for projektrummet.
 
 ## CI/CD-eksempel
 
-Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i
-dataplatformen håndteres ensartet.
+Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet.
 Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
 
 Figur 9 viser et – forenklet- eksempel på en sådan arbejdsgang.
@@ -565,25 +488,15 @@ Figur 9 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
 *Figur 9*
 
-I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har
-sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere
-defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
+I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
 
 ## En praktisk tilgang
 
-Baseret på diskussionerne i dette dokument viser *figur 10*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur
-ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at
-dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af
-en systemejer hvis navn er System ejer 1 til 3.
+Baseret på diskussionerne i dette dokument viser *figur 10*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3.
 
-I midten finder vi dataplatformen med områderne *ingest*, *transform* og *publish*. I området *ingest* ser man, at data hentes "en-til-en"
-fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand.
-På højre side af figuren ses, hvad der kræves af slutbrugerne i *publish området*. Den første bruger, der kaldes Data-bruger 1, har brug
-for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces.
+I midten finder vi dataplatformen med områderne *ingest*, *transform* og *publish*. I området *ingest* ser man, at data hentes "en-til-en" fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. På højre side af figuren ses, hvad der kræves af slutbrugerne i *publish området*. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces.
 
-Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, der findes i App 3, skal frasorteres dette datasæt, så i
-dette tilfælde er processen lidt mere kompliceret, men fordi *transform området* repræsenterer et område, hvor data let kan kombinere (og
-også udelukkes), er fundamentet for at gøre dette på plads, derfor gøres det ret nemt.
+Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, der findes i App 3, skal frasorteres dette datasæt, så i dette tilfælde er processen lidt mere kompliceret, men fordi *transform området* repræsenterer et område, hvor data let kan kombinere (og også udelukkes), er fundamentet for at gøre dette på plads, derfor gøres det ret nemt.
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
@@ -601,7 +514,7 @@ Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver de
 
 *Figur 11*
 
-På figur 11 se hvorledes den beskrevne data platform kan implementeres.  
+På figur 11 ses hvorledes den beskrevne data platform kan implementeres.  
 
 Bemærk at hver af de enkelte områder repræsenetere dele af data platformen brugt multiple gange.  
 
@@ -609,8 +522,7 @@ Til venstre er der 2 kilde systemer "A" og "B" som understøtter de arbejdsproce
 
 Relevante data hentes ind i en fælles data platform i respektive ingest områder. Her fra foretages den første grundlæggende validering og rensing af data. De 2 systemers data holdes adskilt - evt i 2 forskellige Azure subscriptions og/eller resource grupper.
 
-Her fra bevæger de data elementer der skal bruges i en fælles data platform til dette område og de resterende data elementer føres
-til de respektive transforms områder - kan også benævnes **modtage områder**. Der kan sagtens være flere af sådanne områder per afdeling.
+Her fra bevæger de data elementer der skal bruges i en fælles data platform til dette område og de resterende data elementer føres til de respektive transforms områder - kan også benævnes **modtage områder**. Der kan sagtens være flere af sådanne områder per afdeling.
 
 I fælles området forarbejdes data til en ensformighed, så de kan bringes videre til de områder i de enkelte modtage områder for de enkelte afdelinger hvor disse skal finde anvendelse.
 
@@ -624,13 +536,10 @@ Et Terraform‑baseret script er tilgængeligt som inspiration - [terraform scri
 
 ### Forskellige mulige tjenester
 
-Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester.
-Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer bedst i forhold til de
-muligheder og udfordringer man måtte have.
+Følgende er eksempler på måder man kan implementere en dataplatform ved hjælp af forskellige tjenester. Husk, at det overordnede paradigme er teknologisk uafhængighed, derfor bør man "blande og matche", hvad der passer bedst i forhold til de muligheder og udfordringer man måtte have.
 
 >[!Note]
->Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på
-Infrastructure-as-Code.
+>Disse områder indeholder pt. kun yderligere beskrivende information men vil senere ligeledes indeholder eksempler på Infrastructure-as-Code.
 
 [Azure Baseret](Microsoft/Azure/Azure-da.md) - en data platform lavet v.h.a. Azure PaaS Services
 
