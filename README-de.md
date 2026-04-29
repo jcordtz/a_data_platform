@@ -36,11 +36,13 @@ verschiedenen Implementierungen erfahren, die wir von
 >Datenplattformen im Einsatz haben.
 
 >[!Note]
+>Die Wörter "Daten" und "Datenset" wird verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
+
+>[!Note]
 >Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
 >[!Note]
->Die Wörter "Daten" und "Datenset" wird verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
-
+> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:[Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
 
 ## Inhalt
 

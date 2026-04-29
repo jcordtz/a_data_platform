@@ -34,10 +34,14 @@ af cloud-tjenester til analytiske opgaver.
 >med dataplatforme som er i brug.
 
 >[!Note]
-> Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
+>Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
 
 >[!Note]
->Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
+> Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
+
+
+>[!Note]
+> Der er et slidedeck der passer til dette indhold her: [Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
 
 ## Indhold
 

@@ -34,6 +34,9 @@ It is based on the experience from different Microsoft-customers, that had a wis
 >[!Note]
 > The document is mainly based on Microsoft technology components.
 
+>[!Note]
+> There is supporting slidedeck to be found here : [Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
+
 ## Content
 
 Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in
