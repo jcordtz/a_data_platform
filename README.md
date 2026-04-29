@@ -116,7 +116,7 @@ Any combination of these are "correct", the important part is that it is documen
 
 ## The Vision
 
-The vision of the data platform described in this document is to have a platform where **Governance** and **Compliance** are the main drivers for providing access to data./ 4
+The vision of the data platform described in this document is to have a platform where **Governance** and **Compliance** are the main drivers for providing access to data.
 
 Hence the concept of a self consistent dataset is a key element of this approach.
 
