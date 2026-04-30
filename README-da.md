@@ -175,6 +175,8 @@ Som vist på *figur 3* giver brug af cloud teknologier adgang til forskellige ty
 
 Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS. Dette er angivet af trafiklysene – drej til højre, ikke til venstre. :smile:
 
+Dette kan også overføres til den måde, du efterspørger ting i en cloud – spørg hvordan du kan opnå den ønskede funktionalitet og få dermed den mest passende service. Find ikke først et produkt og forsøg derefter at få det til at håndtere dine funktionelle krav. Med andre ord – det er ikke et krav at bruge en relationel database som MS SQL Server for at have et data warehouse, men det kan være et meget passende sted at lagre dine data, fordi du ønsker en egnet motor til at håndtere dine SQL-forespørgsler.
+
 I kapitlet "Eksempler på Implementeringer" er der beskrevet forskellige måder at gøre dette på med forskellige PaaS- eller SaaS-tjenester.
 
 Et andet centralt aspekt af skyen er, at "alt er software". Det betyder, at når vi for eksempel skal oprette en ny server, genereres de forskellige komponenter, som serveren bruger - som diske, netværkskort osv. - ved at sende kommandoer til cloud-infrastrukturen. Så vi kan altså bruge software til at producere disse komponenter.

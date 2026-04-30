@@ -168,6 +168,8 @@ Wie in *Abbildung 3* dargestellt, bietet die Verwendung von Cloud-Technologien Z
 
 Die diskutierte Datenplattform basiert "nur" auf PaaS- und/oder SaaS-Diensten und damit in sehr begrenztem Umfang auf IaaS. Dies wird durch die Ampeln angezeigt – biegen Sie nach rechts ab, nicht nach links. :smile:
 
+Dies lässt sich auch auf die Art und Weise übertragen, wie Sie Ressourcen in der Cloud anfordern – fragen Sie, wie Sie die gewünschte Funktionalität erreichen können, und erhalten Sie so den am besten geeigneten Dienst. Wählen Sie nicht zuerst ein Produkt und versuchen dann, es an Ihre funktionalen Anforderungen anzupassen. Mit anderen Worten – es ist keine Voraussetzung, eine relationale Datenbank wie MS SQL Server zu verwenden, um ein Data Warehouse zu betreiben, aber es kann ein sehr geeigneter Ort sein, um Ihre Daten zu speichern, da Sie eine passende Engine zur Verarbeitung Ihrer SQL-Abfragen benötigen.
+
 Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten beschrieben, dies mit verschiedenen PaaS- oder SaaS-Diensten zu tun.
 
 Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bedeutet, dass beim Erstellen eines neuen Servers beispielsweise die verschiedenen Komponenten, die der Server verwendet - wie Festplatten, Netzwerkkarten usw. - durch Senden von Befehlen an die Cloud-Infrastruktur generiert werden. Wir können also Software verwenden, um diese Komponenten herzustellen.
