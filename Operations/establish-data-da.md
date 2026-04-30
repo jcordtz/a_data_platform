@@ -1,4 +1,4 @@
-![microsoft](images/microsoft.png)
+![microsoft](../images/microsoft.png)
 
 # En data platform - etablering af data
 
