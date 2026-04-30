@@ -171,7 +171,7 @@ This choice can/should/must differ from project to project, so that a customer a
 '
 ![Figure 2](../images/slides/Slide39.png)
 
-:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
+:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider, :yellow_large_square: - modeldependent
 
 In the context of AI, the responsibilities of the cloud provider and the customer differ significantly across Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
 
