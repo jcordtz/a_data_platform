@@ -88,9 +88,9 @@ Stellen Sie sich schließlich vor, Sie wohnen in einem luxuriösen Hotel. SaaS l
 
 Es ist wichtig zu verstehen, wer die Verantwortung für die verschiedenen Schichten in der Infrastruktur trägt, wenn Sie entweder On-Premise oder eine Cloud nutzen, und in der Cloud dies über Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (Paas) und Software-as-a-Service hinweg zu verstehen.
 
-![Abbildung 2](../images/german/Slide20.png)
+![Abbildung 1](../images/slides/Slide37.png)
 
-![expl1](../images/german/Slide21.png)
+![expl1](../images/slides/Slide38.png)
 
 In Abbildung 1 sind die Unterschiede zwischen On-Premise, IaaS, PaaS und SaaS in Bezug auf die Verantwortlichkeiten des Cloud-Anbieters und des Kunden dargestellt.
 
@@ -168,10 +168,9 @@ Diese Wahl kann/sollte von Projekt zu Projekt unterschiedlich sein, damit ein Ku
 
 ## Gemeinsame Verantwortung in einer KI-Cloud-Umgebung
 '
-![Abbildung 3](../images/german/Slide22.png)
+![Abbildung 2](../images/slides/Slide39.png)
 
-![expl1](../images/german/Slide23.png)
-
+![expl2](../images/slides/Slide40.png)
 Im Zusammenhang mit KI unterscheiden sich die Verantwortlichkeiten des Cloud-Anbieters und des Kunden je nach Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) und Software-as-a-Service (SaaS) erheblich.
 
 Hier ist ein Überblick über diese Unterschiede:
@@ -232,9 +231,9 @@ Im weiteren Verlauf dieses Abschnitts wird die Struktur innerhalb von Microsoft 
 
 Die verschiedenen Aspekte der geteilten Verantwortung in Microsoft werden in mehreren Dokumenten behandelt.
 
-![Abbildung 4](../images/german/Slide14.png)
+![Abbildung 3](../images/slides/Slide31.png)
 
-Dies ist in Abbildung 4 dargestellt.
+Dies ist in Abbildung 3 dargestellt.
 
 Der **Hauptvertrag (MCA oder MBSA & EA)** ist der "Hauptvertrag", der die "Einkaufsbedingungen" beschreibt
 
@@ -349,7 +348,7 @@ Basierend auf der Art der Cloud-Dienste (IaaS, PaaS und SaaS), die auf der Daten
 
 In diesem Prozess sollte klar sein, wer die Verantwortung für die verschiedenen Elemente in der Plattform trägt.
 
-! [Abbildung 5](.. /images/english/Slide16.png)
+![Abbildung 4](../images/slides/Slide33.png)
 
 Der erste Schritt sollte sein, "zu welchen Bedingungen" wir arbeiten, d.h. die **Vertragseinhaltung** , die die Verpflichtungen zwischen den Parteien definiert und auch festlegt, wie die Einhaltung der Verpflichtungen nachgewiesen werden muss.
 

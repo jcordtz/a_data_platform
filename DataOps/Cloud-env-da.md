@@ -88,9 +88,10 @@ Endelig, forestil dig at bo på et luksushotel. SaaS leverer softwareapplikation
 
 Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når man bruger enten on-premise eller cloud, og i cloud forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service (SaaS).
 
-![Figur 2](../images/danish/Slide20.png)
+![Figur 1](../images/slides/Slide37.png)
 
-![udl. 1](../images/danish/Slide21.png)
+![expl1](../images/slides/Slide38.png)
+
 
 I figur 1 vises forskelle mellem on-premise, IaaS, PaaS og SaaS med hensyn til cloud-udbyderens og kundens ansvar.
 
@@ -169,9 +170,10 @@ Dette valg kan/skal/bør variere fra projekt til projekt, så en kunde altid opn
 
 ## Delt ansvar i et AI-cloudmiljø
 
-![Figur 3](../images/danish/Slide22.png)
+![Figur 2](../images/slides/Slide39.png)
 
-![udl. 1](../images/danish/Slide23.png)
+![expl2](../images/slides/Slide40.png)
+
 
 I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS) i forhold til en *standard* cloud model, som beskrevet ovenfor.
 
@@ -232,9 +234,9 @@ Resten af dette afsnit beskriver strukturen i Microsoft og dermed en dataplatfor
 
 De forskellige aspekter af det beskrevne delte ansvar i Microsoft håndteres i flere dokumenter.
 
-![Figur 4](../images/danish/Slide14.png)
+![Figur 3](../images/slides/Slide31.png)
 
-Dette er vist i figur 4.
+Dette er vist i figur 3.
 
 **Hovedaftalen (MCA eller MBSA & EA)** er den "hovedkontrakt", der beskriver "købsbetingelserne".
 
@@ -349,7 +351,7 @@ Baseret på arten af de cloud-tjenester (IaaS, PaaS og SaaS), der bruges i ens d
 
 I denne proces bør det være klart, hvem der har ansvaret for de forskellige elementer i platformen.
 
-! [figur 5](.. /images/dansk/Slide16.png)
+![figur 4](../images/slides/Slide33.png)
 
 Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **Kontraktlig overholdelse**,  der definerer forpligtelserne mellem parterne og også fastsætter, hvordan overholdelse af forpligtelser skal påvises.
 
