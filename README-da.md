@@ -76,13 +76,13 @@ Her er skitseret følgende:
 7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og eventuel oprettelse, og dermed at nye datasæt automatisk dannes af dataplatformen.
 8. **Kilder** dækker over hvilke og hvorledes data bringes ind fra disse i dataplatformen. Se figur 2.
 
-![Figur 1](images/danish/Slide24.jpeg)
+![Figur 1](images/slides/Slide4.png)
 
 *Figur 1*
 
 Når vi diskuterer, hvor data kommer fra, hvor de bliver brugt, vil det være sådan, at (højst sandsynligt) mange applikationer, man har, allerede indeholder en form for rapporterings-/analysedel. I dette tilfælde er det meget værd at træffe en beslutning om, hvordan man udnytter dette på den rigtige måde til dine formål.
 
-![Figur 2](images/danish/Slide25.jpeg)
+![Figur 2](images/slides/Slide5.png)
 
 *Figur 2*
 
@@ -160,7 +160,7 @@ Den dataplatform der beskrives i dette dokument, er baseret på cloud teknologie
 
 Og den beskrevne tilgang til en dataplatform har nogle funktioner, der kun kan opnås med en sådan cloud-tilgang.
 
-![figur 3](images/danish/Slide1.JPG)
+![figur 3](images/slides/Slide7.png)
 
 *Figur 3*
 
@@ -188,7 +188,7 @@ Operationerne i denne model - kendt som Data Operations eller DataOps - diskuter
 
 Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på *Figur 2*. Dette for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt.
 
-![figur 4](images/danish/Slide2.JPG)
+![figur 4](images/slides/Slide11.png)
 
 *Figur 4*
 
@@ -221,7 +221,7 @@ I **publish området** skabes de *datasæt*, der er nødvendige for at opfylde d
 
 Data mesh er et arkitektonisk paradigme, der er designet til at løse udfordringerne ved skalering af datastyring og -analyse i store, komplekse organisationer. Det skifter fra centraliserede datasøer og lagre til en decentraliseret tilgang, der gør det muligt for forskellige teams at administrere og bruge data uafhængigt.
 
-Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i dette [afsnit](DataOps/Data-mesh-da.md)
+Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i dette [afsnit om DataOps](DataOps/Data-mesh-da.md)
 
 ### Grænseflader
 
@@ -241,11 +241,11 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 ### Understøttende datatjenester
 
-En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion](Supporting_Data_Services/SupportingDataServices-da.md)
+En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion om Data Services](Supporting_Data_Services/SupportingDataServices-da.md)
 
 ### Data model
 
-Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i denne [sektion](DataModelling/DataModel-da.md).
+Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i denne [sektion om data modellering](DataModelling/DataModel-da.md).
 
 ## Et særligt tilfælde – Real Time
 
@@ -265,7 +265,7 @@ Eller giv mere detaljerede oplysninger om en målbegivenhed i en fodboldkamp og 
 
 For at illustrere dette kan man forestille sig et tog, der er forsinket. Systemet, der viser oplysningerne til passagererne på stationen, vil modtage realtidsdata om forsinkelsen med det samme og opdatere skiltene i overensstemmelse hermed. I denne proces behandles selve dataene ikke meget.
 
-![Figur 5](images/danish/Slide3.JPG)
+![Figur 5](images/slides/Slide12.png)
 
 *Figur 5*
 
@@ -402,7 +402,7 @@ Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
 *Figur 7* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-![figur 7](images/danish/Slide8.JPG)
+![figur 7](images/slides/Slide20.png)
 
 *Figur 7*
 
@@ -421,7 +421,7 @@ Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til 
 
 Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
 
-A mere detaljeret diskussion om DataOps er tilgængelig i denne [sektion](DataOps/DataOps-da.md)
+A mere detaljeret diskussion om DataOps er tilgængelig i denne [sektion om DataOps](DataOps/DataOps-da.md)
 
 ### Miljøer og krypteringspolitikker
 
@@ -462,7 +462,7 @@ man kan vælge at have flere forskellige typer projektrum – f.eks. ét til ind
 
 Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
-![figur 8](images/danish/Slide4.png)
+![figur 8](images/slides/Slide15.png)
 
 *Figur 8*
 
@@ -483,7 +483,7 @@ Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode
 
 Figur 9 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 9](images/danish/Slide10.JPG)
+![figur 9](images/slides/Slide21.png)
 
 *Figur 9*
 
@@ -499,7 +499,7 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 10](images/danish/Slide7.JPG)
+![figur 10](images/slides/Slide13.png)
 
 *Figur 10*
 
@@ -509,7 +509,7 @@ Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver de
 
 ## Eksempel på en implementering
 
-![figur 11](images/danish/slide28.jpg)
+![figur 11](images/slides/Slide24.png)
 
 *Figur 11*
 
