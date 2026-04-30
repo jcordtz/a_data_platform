@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../images/others/microsoft.png)
 
 # A data platform - Exit strategy and Risk assessment
 

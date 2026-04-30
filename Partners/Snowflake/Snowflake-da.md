@@ -1,4 +1,4 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../../images/others/microsoft.png)
 
 # En data platform - Partner løsning - Snowflake
 
@@ -8,7 +8,7 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
 
 <p align="center">
-  <img width="200" src="../../images/snowflake.png"">
+  <img width="200" src="../../images/others/snowflake.png"">
 </p>
 
 

@@ -1,5 +1,5 @@
 
-![microsoft](../images/microsoft.png)
+![microsoft](../images/others/microsoft.png)
 
 # Eine Datenplattform - Azure Synapse
 

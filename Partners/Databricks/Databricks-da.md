@@ -1,4 +1,4 @@
-![microsoft](../../images/microsoft.png)
+![microsoft](../../images/others/microsoft.png)
 
 # En data platform - Partnerløsning – *Azure Databricks*
 
@@ -8,7 +8,7 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README-da.md)
 
 <p align="center">
-  <img width="200" src="../../images/Databricks_Logo.png">
+  <img width="200" src="../../images/others/Databricks_Logo.png">
 </p>
 
 ## Indledning

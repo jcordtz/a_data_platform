@@ -1,5 +1,5 @@
 <!-- Mit tiger billed -->
-<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
+<div style="text-align: center"><img src="images/others/tiger.jpg" width="700" /></div>
 
                    Hvis data ikke er tilgængelig i dag, vil de være tilgængelige i morgen.
 
@@ -283,7 +283,7 @@ En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-
 
 RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **grounding** data. Tilføjelse af et informationshentningssystem giver kontrol over de data der bruges til at "ground" LLM modellerne, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, man kan begrænse generativ AI til ens virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis man har integreringsmodeller for det pågældende indhold.
 
-![Figur 6](images/architecture-diagram.png)
+![Figur 6](images/others/architecture-diagram.png)
 
 *Figur 6*
 
@@ -369,7 +369,7 @@ Jeg brugte derefter Visual Studio Code til at oprette en applikation ved hjælp 
 
 Og fik dannet denne apllication
 
-![Vibe-application](images/VIBE-prog1.png)
+![Vibe-application](images/others/VIBE-prog1.png)
 
 ## Miljøer
 

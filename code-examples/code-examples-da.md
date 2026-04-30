@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../images/others/microsoft.png)
 
 # En data platform - Eksempler på kode til at danne en data platform i Azure
 

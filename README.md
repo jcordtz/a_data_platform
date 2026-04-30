@@ -1,5 +1,5 @@
 <!-- Mit tiger billed -->
-<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
+<div style="text-align: center"><img src="images/others/tiger.jpg" width="700" /></div>
 
                    If data is not available today, it will be available tomorrow.
 
@@ -272,7 +272,7 @@ A typical approach for bringing your own data in scope of especially a GenAI sol
 
 RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data. Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
 
-![Figure 6](images/architecture-diagram.png)
+![Figure 6](images/others/architecture-diagram.png)
 
 *Figure 6*
 
@@ -359,7 +359,7 @@ I then used Visual Studio Code to create an application using Github Copilot:
 
 And got this application
 
-![Vibe-application](images/VIBE-prog1.png)
+![Vibe-application](images/others/VIBE-prog1.png)
 
 ## Environments
 

@@ -1,5 +1,5 @@
 <!-- Mit tiger billed -->
-<div style="text-align: center"><img src="images/tiger.jpg" width="700" /></div>
+<div style="text-align: center"><img src="images/others/tiger.jpg" width="700" /></div>
 
                    Wenn Data heute nicht verfügbar ist, wird es morgen verfügbar sein.
 
@@ -279,7 +279,7 @@ Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-L
 
 RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
 
-![Abbildung 6](images/architecture-diagram.png)
+![Abbildung 6](images/others/architecture-diagram.png)
 
 *Abbildung 6*
 
@@ -365,7 +365,7 @@ Anschließend habe ich Visual Studio Code verwendet, um mithilfe von GitHub Copi
 
 Und habe diese Application erhalten.
 
-![Vibe-application](images/VIBE-prog1.png)
+![Vibe-application](images/others/VIBE-prog1.png)
 
 ## Umgebungen
 

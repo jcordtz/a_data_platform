@@ -1,4 +1,4 @@
-![Microsoft](../images/microsoft.png)
+![Microsoft](../images/others/microsoft.png)
 
 # En dataplatform - Lovgivning
 

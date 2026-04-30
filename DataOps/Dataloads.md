@@ -1,4 +1,4 @@
-![microsoft](../images/microsoft.png)
+![microsoft](../images/others/microsoft.png)
 
 # A data platform - Loading and performance<br>Considerations on what to observe
 
