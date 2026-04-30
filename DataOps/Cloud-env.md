@@ -90,7 +90,7 @@ It is important to understand who has the responsibility regarding the different
 
 ![Figure 1](../images/slides/Slide37.png)
 
-![expl1](../images/slides/Slide38.png)
+:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
 
 In figure 1 differences between on-premise, IaaS, PaaS, and SaaS in terms of the responsibilities of the cloud provider and the customer are shown.
 
@@ -171,7 +171,7 @@ This choice can/should/must differ from project to project, so that a customer a
 '
 ![Figure 2](../images/slides/Slide39.png)
 
-![expl2](../images/slides/Slide40.png)
+:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
 
 In the context of AI, the responsibilities of the cloud provider and the customer differ significantly across Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).
 

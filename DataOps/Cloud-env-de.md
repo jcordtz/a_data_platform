@@ -90,7 +90,7 @@ Es ist wichtig zu verstehen, wer die Verantwortung für die verschiedenen Schich
 
 ![Abbildung 1](../images/slides/Slide37.png)
 
-![expl1](../images/slides/Slide38.png)
+:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
 
 In Abbildung 1 sind die Unterschiede zwischen On-Premise, IaaS, PaaS und SaaS in Bezug auf die Verantwortlichkeiten des Cloud-Anbieters und des Kunden dargestellt.
 
@@ -170,7 +170,8 @@ Diese Wahl kann/sollte von Projekt zu Projekt unterschiedlich sein, damit ein Ku
 '
 ![Abbildung 2](../images/slides/Slide39.png)
 
-![expl2](../images/slides/Slide40.png)
+:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
+
 Im Zusammenhang mit KI unterscheiden sich die Verantwortlichkeiten des Cloud-Anbieters und des Kunden je nach Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) und Software-as-a-Service (SaaS) erheblich.
 
 Hier ist ein Überblick über diese Unterschiede:
