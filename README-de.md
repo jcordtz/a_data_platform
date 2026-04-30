@@ -31,7 +31,7 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 >Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
 >[!Note]
-> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:[Slidedeck](./office-documents/Data%20Platform.pptx)
+> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:[Slidedeck](./office-documents/Data%20Platform.pptx).
 
 ## Inhalt
 
@@ -74,13 +74,13 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und - vieleicht - die Erstellung neuer Datensätze automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
-![Abbildung 1](images/german/Slide24.jpeg)
+![Abbildung 1](images/slides/slide4.png)
 
 *Abbildung 1*
 
 Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten. In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
 
-! [Abbildung 2](images/german/Slide25.jpeg)
+![Abbildung 2](images/slides/slide5.png)
 
 *Abbildung 2*
 
@@ -92,10 +92,8 @@ Die Themen, die diskutiert werden müssten, wären dann (evtl. pro Anwendung):
 
 Jede Kombination davon ist "richtig", wichtig ist, dass dokumentiert ist, was zu tun ist.
 
->[! HINWEIS]
->Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) 
->Ihre Daten aus diesen Anwendungen herausholen können und dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf
->einem Standard wie REST API, SQL oder Python SDK basiert ist.
+>[!Note]
+>Es ist erforderlich, dass 2 und 3 funktionieren, dass Sie sichergestellt haben, dass Sie problemlos und ohne weitere Kosten (Lizenzen) Ihre Daten aus diesen Anwendungen herausholen können und dass es dafür eine dokumentierte und gepflegte Schnittstelle gibt, die auf einem Standard wie REST API, SQL oder Python SDK basiert ist.
 
 ## Die Vision
 Die Vision der in diesem Dokument beschriebenen Datenplattform ist eine Plattform, bei der **Governance** und **Compliance** die Haupttreiber sind.
@@ -156,7 +154,7 @@ Die in diesem Dokument beschriebene Datenplattform basiert auf Cloud-Technologie
 
 Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit einem solchen Cloud-Ansatz erreicht werden können.
 
-![Abbildung 3](images/german/Slide1.JPG)
+![Abbildung 3](images/slides/Slide7.png)
 
 *Abbildung 3*
 
@@ -187,7 +185,7 @@ Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen ge
 
 Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
 
-![Abbildung 4](images/german/Slide2.JPG)
+![Abbildung 4](images/slides/Slide11.png)
 
 *Abbildung 4*
 
@@ -265,7 +263,7 @@ Oder geben Sie detailliertere Informationen über ein Torereignis in einem Fußb
 
 Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat. Das System, das den Fahrgästen am Bahnhof die Informationen anzeigt, erhält sofort die Echtzeitdaten über die Verspätung und aktualisiert die Schilder entsprechend. Dabei werden die Daten selbst nur wenig verarbeitet.
 
-![Abbildung 5](images/german/Slide3.JPG)
+![Abbildung 5](images/slides/Slide12.png)
 
 *Abbildung 5*
 
@@ -317,7 +315,7 @@ Vor diesen agents befindet sich dann ein master agent, der für jeden einzelnen 
 
 In diesem Szenario würde jede einzelne table eines datasets in der data platform von einem agent fronted werden. Diese agents können dann je nach der jeweiligen Aufgabe in Aktion treten.
 
-![Abbildung 6a](images/german/slide27.jpg)
+![Abbildung 6a](images/slides/Slide27.png)
 
 *Abbildung 6a*
 
@@ -400,11 +398,11 @@ Zusammenfassend lässt sich sagen, dass die Wahrung der Vertraulichkeit, Integri
 Im Abschnitt [Sicherheit/Security-de.md] finden Sie eine viel detailliertere Diskussion des Sicherheitsaspekts.
 In diesem Abschnitt geht es weiter mit einigen weiteren technischen Möglichkeiten.
 
-Abbildung 7 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
+Abbildung 8 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 
-![Abbildung 7](images/german/Slide8.JPG)
+![Abbildung 8](images/slides/Slide20.png)
 
-*Abbildung 7*
+*Abbildung 8*
 
 **Anwendungsbasierte Zugriffskontrolle** - deckt die Tatsache ab, dass eine Anwendung wie SAP, Snowflake, Fabric, Dynamics usw. eine Anmeldung erfordert und somit den korrekten Zugriff auf die zugrunde liegenden Daten ermöglicht, die in der Anwendung verwendet werden. Häufig ist der zugrunde liegende Datenspeicher eine (relationale) Datenbank, auf die von der Anwendung aus über ein Dienstkonto zugegriffen werden kann. Rollenbasierte Zugriffskontrolle – auch bekannt als RBAC. Dies steuert den Zugriff auf eine bestimmte Ressource und wie sie verwendet werden kann. Also in populären Begriffen - können Sie auf das Speicherkonto zugreifen?
 
@@ -449,9 +447,9 @@ Du könntest dich entscheiden, verschiedene Arten von Projekträumen zu haben �
 
 Die folgende Abbildung zeigt ein Beispiel für einen Projektraum in der Datenplattform-Umgebung.
 
-![Abbildung 8](images/german/Slide4.png) 
+![Abbildung 9](images/slides/Slide15.png)
 
-*Abbildung 8*
+*Abbildung 9*
 
 Ein Projektraum wird erstellt, indem das Setup (Terraform/Bizeps-Ansatz) aus einem Repository erhalten wird. Diese Rezepte schaffen das Ressourcengruppen/Ressourcen, aus denen der Projektraum besteht. Es wird auch – falls nötig – die Daten einbringen, die die Entwicklung benötigt und es ist erlaubt, sie zu verwenden. Dieser Teil des Prozesses wird höchstwahrscheinlich eine Art "Maskierung" einführen. Dies ist das ① auf der Figur.
 
@@ -468,11 +466,11 @@ In den seltenen Fällen, in denen eine Integrationsverbindung zwischen Projektr�
 
 Wie oben erwähnt, sollte die Verwendung von CI/CD-Prinzipien (Continuous Integration/Continuous Deployment) in Betracht gezogen werden, um sicherzustellen, dass die Codierung in der Datenplattform konsistent gehandhabt wird. Solche Prozesse verfügen über Pipelinestrukturen, die beschreiben, welche Prozesse Code durchläuft, wenn er in der Produktion bereitgestellt wird.
 
-Abbildung 9 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
+Abbildung 10 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-![Abbildung 9](images/german/Slide10.JPG) 
+![Abbildung 10](images/slides/Slide21.png)
 
-*Abbildung 9*
+*Abbildung 10*
 
 Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig in der Lage sein, Daten in Nicht-Produktionsumgebungen zu verarbeiten. Wahrscheinlich haben Sie keine Berechtigung oder möchten Produktionsdaten in diesen Umgebungen verwenden. Zu Testzwecken können fehlerhafte Daten auch in Datensätze eingefügt werden, um mögliche Ausnahmeszenarien zu adressieren.
 
@@ -486,9 +484,9 @@ Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-![Abbildung 10](images/german/Slide7.JPG)
+![Abbildung 11](images/slides/Slide13.png)
 
-*Abbildung 10*
+*Abbildung 11*
 
 Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen.
 
@@ -496,11 +494,11 @@ Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für m
 
 ## Beispiel für eine Implementierungen
 
-![Abbildung 11](images/german/slide28.jpg)
+![Abbildung 12](images/slides/Slide24.png)
 
-*Abbildung 11*
+*Abbildung 12*
 
-Abbildung 11 zeigt, wie die beschriebene Datenplattform implementiert werden kann.  
+Abbildung 12 zeigt, wie die beschriebene Datenplattform implementiert werden kann.  
 
 Bitte beachten Sie, dass jeder der einzelnen Bereiche Teile der Datenplattform mehrmals repräsentiert.  
 

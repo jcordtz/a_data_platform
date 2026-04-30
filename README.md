@@ -33,7 +33,7 @@ It is based on the experience from different Microsoft-customers, that had a wis
 > The document is mainly based on Microsoft technology components.
 
 >[!Note]
-> There is supporting slidedeck to be found here : [Slidedeck](./office-documents/Data%20Platform.pptx)
+> There is supporting slidedeck to be found here : [Slidedeck](./office-documents/Data%20Platform.pptx). The images used in this repo can also be found in that slidedeck.
 
 ## Content
 
@@ -76,14 +76,14 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and - maybe - creation of new datasets handled automatically by the data platform.
 8. **Sources** covers which and how data is brought into the data platform. See figure 2.
 
-![Figure 1](images/english/Slide24.jpeg)
+![Figure 1](images/slides/Slide4.png)
 
 *Figure 1*
 
 When we are discussing where data comes from at where they are being used it will be so that (most likely) many applications you have already contains some kind of reporting/analytics part.
 In this case it very much worth to make a decision on how to utilize this in the right way for your purposes.
 
-![Figure 2](images/english/Slide25.jpeg)
+![Figure 2](images/slides/Slide5.png)
 
 *Figure 2*
 
@@ -150,7 +150,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 This document explains how to create a data platform using cloud technology. And the described approach to a data platform has some features that are only achievable with a cloud approach.
 
-![Figure 3](images/english/Slide1.JPG)
+![Figure 3](images/slides/Slide7.png)
 
 *Figure 3*
 
@@ -176,7 +176,7 @@ The operations of this model - known as Data Operations, or DataOps - is further
 
 The data platform arranges *data* and *datasets* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach can comply with the "rules" of the paradigm as mentioned previously.
 
-![Figure 4](images/english/Slide2.JPG)
+![Figure 4](images/slides/Slide11.png)
 
 *Figure 4*
 
@@ -255,7 +255,7 @@ Or give more detailed information about a goal event in a football match and the
 
 To illustrate this, imagine a train that is delayed. The system that displays the information to the passengers at the station will receive the Real Time data about the delay right away and update the signs accordingly. In this process, the data itself is not much processed.
 
-![figure 5](images/english/Slide3.JPG)
+![figure 5](images/slides/Slide12.png)
 
 *Figure 5*
 
@@ -305,7 +305,7 @@ And then in front of these agents sits a master agent that is configured(grounde
 
 In this case each datasets individual tables in the data platform would be fronted by an agent. These agents can then be put in to action depending of the task in question.
 
-![Figure 6a](images/english/slide27.jpg)
+![Figure 6a](images/slides/Slide27.png)
 
 *Figure 6a*
 
@@ -393,11 +393,11 @@ In summary, data security is essential for maintaining the confidentiality, inte
 In the section [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect.
 This section will continue with some more technical possibilities.
 
-In *Figure 7* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
+In *Figure 8* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 7](images/english/Slide8.JPG)
+![figure 8](images/slides/Slide20.png)
 
-*Figure 7*
+*Figure 8*
 
 **Application Based Access Control** – covers that an Application like SAP, Snowflake, Fabric, Dynamics etc. requires a login and hence grants the correct access to the underlying data used in the application. Often the underlying data store is a (relational) database, which is accessed from the application using a service account.
 
@@ -457,9 +457,9 @@ You might decide to have a few different types of project rooms - i.e. one for t
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 8](images/english/Slide4.png)
+![figure 9](images/slides/Slide15.png)
 
-*Figure 8*
+*Figure 9*
 
 A project room is created getting the setup (terraform/bicep approach) from a repository. These scrips creates the resource-groups/resources that the project room consists of. It will also - if needed - bring in the data the development needs and is allowed to use. This part of the process most likely will introduce some kind of "masking" being done. This is the ① on the figure.
 
@@ -475,11 +475,11 @@ In the rare situations where an integration connection between project rooms is 
 
 As mentioned above, a way of making sure coding in the data platform is done the "right away" you should consider using Continuous Integration/Continuous Deployment (CI/CD) principles. Such processes have pipeline workflow that describes what processes code goes through when being deployed to production.
 
-The following Figure 9 show a simplified workflow.
+The following Figure 10 show a simplified workflow.
 
-![Figure 9](images/english/Slide10.JPG)
+![Figure 10](images/slides/Slide21.png)
 
-*Figure 9*
+*Figure 10*
 
 A deeper discussion on CI/CD and the data platform can be found in this section [DataOps](DataOps/DataOps.md)
 
@@ -499,9 +499,9 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 10](images/english/Slide7.JPG)
+![figure 11](images/slides/Slide13.png)
 
-*Figure 10*
+*Figure 11*
 
 This also represents how the data platform should be able to exactly support the business needs quickly and smoothly.
 
@@ -509,11 +509,11 @@ So, the overall term **if it is not available today, it will be tomorrow** can b
 
 ## Example of an implementation
 
-![figure 11](images/english/slide28.jpg)
+![figure 12](images/slides/Slide24.png)
 
-*Figure 11*
+*Figure 12*
 
-Figure 11 shows how the described data platform can be implemented.  
+Figure 12 shows how the described data platform can be implemented.  
 
 Note that each of the individual areas represents parts of the data platform used multiple times.  
 

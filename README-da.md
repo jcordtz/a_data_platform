@@ -316,7 +316,7 @@ Foran disse agents placeres der så en master agent, som konfigureres (grounded)
 
 I dette scenarie vil hver enkelt tables i et datasets i data platformen være frontet af en agent. Disse agents kan derefter sættes i aktion afhængigt af den aktuelle opgave.
 
-![Figur 6a](images/danish/slide27.jpg)
+![Figur 6a](images/slides/Slide27.png)
 
 *Figur 6a*
 
@@ -401,11 +401,11 @@ For at konkludere er det væsentligt for datasikkerhed at bevare fortroligheden,
 I afsnittet [Sikkerhed](Security/Security-da.md) findes en meget mere detaljeret diskussion om sikkerhedsaspektet.
 Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
-*Figur 7* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
+*Figur 8* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-![figur 7](images/slides/Slide20.png)
+![figur 8](images/slides/Slide20.png)
 
-*Figur 7*
+*Figur 8*
 
 **Applikationsbaseret adgangskontrol** - dækker over, at en applikation som SAP, Snowflake, Fabric, Dynamics osv. kræver et login og dermed giver den korrekte adgang til de underliggende data, der bruges i applikationen. Ofte er det underliggende datalager en (relationel) database, som der er adgang til fra programmet ved hjælp af en tjenestekonto.
 Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til en given ressource, og hvordan den kan bruges. Så populært sagt - kan man komme til lagerkontoen?
@@ -463,9 +463,9 @@ man kan vælge at have flere forskellige typer projektrum – f.eks. ét til ind
 
 Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
-![figur 8](images/slides/Slide15.png)
+![figur 9](images/slides/Slide15.png)
 
-*Figur 8*
+*Figur 9*
 
 Et projektrum oprettes ved at få opsætningen (terraform/biceps-tilgang) fra et repository. Disse scrips skaber Ressourcegrupper/ressourcer, som projektrummet består af. Den vil også – hvis nødvendigt – bringe de data, som udviklingen har brug for og må bruges. Denne del af processen vil sandsynligvis introducere en form for "maskering". Dette er ① på figuren.
 
@@ -482,17 +482,17 @@ I de sjældne situationer, hvor en integrationsforbindelse mellem projektrum er 
 Som nævnt ovenfor bør man overveje at bruge CI/CD-principper (Continuous Integration/Continuous Deployment) for at sikre, at kodning i dataplatformen håndteres ensartet.
 Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode gennemgår, når denne udrulles i produktionen.
 
-Figur 9 viser et – forenklet- eksempel på en sådan arbejdsgang.
+Figur 10 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 9](images/slides/Slide21.png)
+![figur 10](images/slides/Slide21.png)
 
-*Figur 9*
+*Figur 10*
 
 I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i datasæt for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
 
 ## En praktisk tilgang
 
-Baseret på diskussionerne i dette dokument viser *figur 10*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3.
+Baseret på diskussionerne i dette dokument viser *figur 11*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3.
 
 I midten finder vi dataplatformen med områderne *ingest*, *transform* og *publish*. I området *ingest* ser man, at data hentes "en-til-en" fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. På højre side af figuren ses, hvad der kræves af slutbrugerne i *publish området*. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige datasæt kaldet Data produkt A er en ligetil proces.
 
@@ -500,9 +500,9 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 10](images/slides/Slide13.png)
+![figur 11](images/slides/Slide13.png)
 
-*Figur 10*
+*Figur 11*
 
 Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit.
 
@@ -510,11 +510,11 @@ Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver de
 
 ## Eksempel på en implementering
 
-![figur 11](images/slides/Slide24.png)
+![figur 12](images/slides/Slide24.png)
 
-*Figur 11*
+*Figur 12*
 
-På figur 11 ses hvorledes den beskrevne data platform kan implementeres.  
+På figur 12 ses hvorledes den beskrevne data platform kan implementeres.  
 
 Bemærk at hver af de enkelte områder repræsenetere dele af data platformen brugt multiple gange.  
 
