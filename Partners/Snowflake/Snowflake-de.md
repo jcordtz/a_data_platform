@@ -8,7 +8,7 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 <p align="center">
-  <img width="200" src="../images/snowflake.png"">
+  <img width="200" src="../../images/snowflake.png"">
 </p>
 
 ## Einleitung

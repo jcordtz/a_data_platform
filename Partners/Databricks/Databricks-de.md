@@ -8,9 +8,8 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../../README-de.md)
 
 <p align="center">
-  <img width="200" src="../images/Databricks_Logo.png">
+  <img width="200" src="../../images/Databricks_Logo.png">
 </p>
-
 ## Einleitung
 
 Dieser Ansatz ähnelt dem Azure-basierten Ansatz, mit der Ausnahme, dass *Databricks* anstelle von Data Factory Data Flow und möglicherweise Synapse DW verwendet wird.
