@@ -89,7 +89,6 @@ lets have a look on what is normally seen and hence used in the data platform.
 **Strengths**: High query performance, Efficient storage utilization, Effective for aggregations and filtering.  
 **Limitations**: Less flexible than Parquet, Tightly coupled with big data engines, Not designed for frequent updates  
 
-
 ### XML (eXtensible Markup Language)
 
 **Typical use cases**: Enterprise system integration, Document-centric data, Industry standards (like finance, healthcare, public sector)  
