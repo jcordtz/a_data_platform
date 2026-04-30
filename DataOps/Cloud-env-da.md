@@ -90,7 +90,7 @@ Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infras
 
 ![Figur 1](../images/slides/Slide37.png)
 
-:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
+:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
 
 I figur 1 vises forskelle mellem on-premise, IaaS, PaaS og SaaS med hensyn til cloud-udbyderens og kundens ansvar.
 
@@ -171,7 +171,7 @@ Dette valg kan/skal/bør variere fra projekt til projekt, så en kunde altid opn
 
 ![Figur 2](../images/slides/Slide39.png)
 
-:blue_square: - Customer, :grey_square: - Shared, :black_square: - Cloud provider
+:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
 
 I forbindelse med AI er cloud-udbyderens og kundens ansvar betydeligt forskelligt på tværs af Infrastructure as a Service (IaaS), Platform as a Service (PaaS) og Software as a Service (SaaS) i forhold til en *standard* cloud model, som beskrevet ovenfor.
 
