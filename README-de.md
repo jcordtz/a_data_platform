@@ -31,7 +31,7 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 >Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
 >[!Note]
-> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:
+> Es gibt ein unterstützendes Foliensetund die in diesem Repository verwendeten Bilder sind im English ebenfalls in diesem Folienset enthalten. 
 >[Click here download](https://raw.githubusercontent.com/jcordtz/a_data_platform/main/office-documents/Data%20Platform.pptx)
 ## Inhalt
 

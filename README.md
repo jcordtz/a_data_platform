@@ -33,7 +33,7 @@ It is based on the experience from different Microsoft-customers, that had a wis
 > The document is mainly based on Microsoft technology components.
 
 >[!Note]
->Es gibt ein unterstützendes Foliensetund die in diesem Repository verwendeten Bilder sind im English ebenfalls in diesem Folienset enthalten. 
+> There is supporting slidedeck to be found and the images used in this repo can also be found in that slidedeck.
 >[Click here download](https://raw.githubusercontent.com/jcordtz/a_data_platform/main/office-documents/Data%20Platform.pptx) 
 
 ## Content
