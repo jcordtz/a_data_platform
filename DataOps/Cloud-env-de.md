@@ -170,7 +170,7 @@ Diese Wahl kann/sollte von Projekt zu Projekt unterschiedlich sein, damit ein Ku
 '
 ![Abbildung 2](../images/slides/Slide39.png)
 
-:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider, :yellow_large_square: - modeldependent
+:blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider, :yellow_square: - modeldependent
 
 Im Zusammenhang mit KI unterscheiden sich die Verantwortlichkeiten des Cloud-Anbieters und des Kunden je nach Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (PaaS) und Software-as-a-Service (SaaS) erheblich.
 
