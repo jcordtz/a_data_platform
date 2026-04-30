@@ -38,7 +38,7 @@ Besides the above mentioned techniques the Data Platform introduces a couple of 
 
 Figure 1 shows these data models in the Data Platform.
 
-![figure 1](../images/english/Slide13.png)
+![figure 1](../images/slides/Slide30.png)
 
 ### Table model
 

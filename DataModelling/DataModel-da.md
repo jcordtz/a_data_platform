@@ -35,7 +35,7 @@ Udover de ovennævnte teknikker introducerer Dataplatformen et par ekstra aspekt
 
 Figur 1 viser disse datamodeller i Dataplatformen.
 
-![Figur1](../images/danish/Slide13.png)
+![Figur1](../images/slides/Slide30.png)
 
 ### Tabel model
 
