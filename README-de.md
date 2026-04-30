@@ -74,13 +74,13 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und - vieleicht - die Erstellung neuer Datensätze automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
 
-![Abbildung 1](images/slides/slide4.png)
+![Abbildung 1](images/slides/Slide4.png)
 
 *Abbildung 1*
 
 Wenn wir darüber sprechen, woher Daten kommen und wo sie verwendet werden, dann wird es so sein, dass (höchstwahrscheinlich) viele Anwendungen, die Sie haben, bereits eine Art Berichts-/Analyseteil enthalten. In diesem Fall lohnt es sich sehr, eine Entscheidung darüber zu treffen, wie Sie dies für Ihre Zwecke richtig einsetzen können.
 
-![Abbildung 2](images/slides/slide5.png)
+![Abbildung 2](images/slides/Slide5.png)
 
 *Abbildung 2*
 
