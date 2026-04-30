@@ -173,7 +173,7 @@ Som vist på *figur 3* giver brug af cloud teknologier adgang til forskellige ty
 
 **Software som en service** (SaaS) – en SaaS-service er en komplet løsning som et ERP- eller HR-system. Her sikrer cloud-leverandøren adgang til en komplet pakke af applikationer, databaser og infrastruktur, der er nødvendig for, at SaaS-tjenesten kan fungere.
 
-Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS.
+Den diskuterede dataplatform er ”kun” baseret på PaaS- og/eller SaaS-tjenester og dermed i meget begrænset omfang IaaS. Dette er angivet af trafiklysene – drej til højre, ikke til venstre. :smile:
 
 I kapitlet "Eksempler på Implementeringer" er der beskrevet forskellige måder at gøre dette på med forskellige PaaS- eller SaaS-tjenester.
 
@@ -316,9 +316,9 @@ Foran disse agents placeres der så en master agent, som konfigureres (grounded)
 
 I dette scenarie vil hver enkelt tables i et datasets i data platformen være frontet af en agent. Disse agents kan derefter sættes i aktion afhængigt af den aktuelle opgave.
 
-![Figur 6a](images/slides/Slide27.png)
+![Figur 7](images/slides/Slide27.png)
 
-*Figur 6a*
+*Figur 7*
 
 ### Til inspiration:
 Jeg har selv lavet et setup for en kunde ved hjælp af VIBE programming. Her kan man læse mere om VIBE i en Microsoft‑kontekst.

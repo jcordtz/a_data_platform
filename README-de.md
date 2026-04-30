@@ -166,7 +166,7 @@ Wie in *Abbildung 3* dargestellt, bietet die Verwendung von Cloud-Technologien Z
 
 **Software as a Service (SaaS)** – Ein SaaS-Service ist eine Komplettpetllösung wie ein ERP- oder HR-System. Hier stellt der Cloud-Anbieter den Zugriff auf eine vollständige Suite von Anwendungen, Datenbanken und Infrastrukturen sicher, die für das Funktionieren des SaaS-Dienstes erforderlich sind.
 
-Die diskutierte Datenplattform basiert "nur" auf PaaS- und/oder SaaS-Diensten und damit in sehr begrenztem Umfang auf IaaS. 
+Die diskutierte Datenplattform basiert "nur" auf PaaS- und/oder SaaS-Diensten und damit in sehr begrenztem Umfang auf IaaS. Dies wird durch die Ampeln angezeigt – biegen Sie nach rechts ab, nicht nach links. :smile:
 
 Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten beschrieben, dies mit verschiedenen PaaS- oder SaaS-Diensten zu tun.
 
@@ -315,9 +315,9 @@ Vor diesen agents befindet sich dann ein master agent, der für jeden einzelnen 
 
 In diesem Szenario würde jede einzelne table eines datasets in der data platform von einem agent fronted werden. Diese agents können dann je nach der jeweiligen Aufgabe in Aktion treten.
 
-![Abbildung 6a](images/slides/Slide27.png)
+![Abbildung 7](images/slides/Slide27.png)
 
-*Abbildung 6a*
+*Abbildung 7*
 
 Ich habe selbst ein Setup für einen Kunden unter Verwendung von VIBE programming erstellt. Hier können Sie mehr über VIBE im Microsoft‑Kontext lesen.
 (https://learn.microsoft.com/en-us/training/modules/introduction-vibe-coding/)
