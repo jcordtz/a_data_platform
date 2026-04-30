@@ -23,7 +23,6 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 
 >[!Note]
 >Dieses Dokument ist ständig *in Vorbereitung*, da wir ständig neue Dinge lernen.
->Die nächsten Themen werden höchstwahrscheinlich Governance/Compliance und GenAI sein, da wir mehr darüber im Zusammenhang mit den verschiedenen Implementierungen erfahren, die wir von Datenplattformen im Einsatz haben.
 
 >[!Note]
 >Die Wörter "Daten" und "Datenset" wird verwendet, um sich auf jede Darstellung von Information (Text/Bilder/Ton/Zahlen...) zu beziehen.
@@ -32,7 +31,7 @@ Dieses Dokument basiert auf den Erfahrungen verschiedener Microsoft-Kunden, die 
 >Das Dokument basiert hauptsächlich auf Microsoft-Technologiekomponenten.
 
 >[!Note]
-> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:[Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
+> Hier finden Sie das zugehörige Foliendeck zur Unterstützung:[Slidedeck](./office-documents/Data%20Platform.pptx)
 
 ## Inhalt
 

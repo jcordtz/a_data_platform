@@ -25,8 +25,6 @@ It is based on the experience from different Microsoft-customers, that had a wis
 
 >[!Note]
 >This document will represent an ever lasting *work in progress*, as we learn new stuff all the time.
->The next topics will most likely be Governance/Compliance and GenAI, as we learn more about this in connection with
->the different implementations we have of data platforms in use.
 
 >[!Note]
 >The words "data" and "dataset" are used to refer to any representation of information (text/images/sound/numbers....)
@@ -35,7 +33,7 @@ It is based on the experience from different Microsoft-customers, that had a wis
 > The document is mainly based on Microsoft technology components.
 
 >[!Note]
-> There is supporting slidedeck to be found here : [Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
+> There is supporting slidedeck to be found here : [Slidedeck](./office-documents/Data%20Platform.pptx)
 
 ## Content
 

@@ -23,7 +23,6 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 
 >[!Note]
 >Dette dokument er for evigt *under udarbejdelse*, de vi hele tiden lærer nye ting.
->De næste emner bliver nok Governance/Compliance og GenAI, efterhånden som vi lærer mere om dette i forbindelse med dataplatforme som er i brug.
 
 >[!Note]
 >Brugen af ordene "data" og "datasæt" henviser til enhver repræsentation af information (tekst/billeder/lyd/tal....)
@@ -32,7 +31,7 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 > Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
 
 >[!Note]
-> Der er et slidedeck der passer til dette indhold her: [Slidedeck](./office-documents/Data%20Platform%20v9.pdf)
+> Der er et slidedeck der passer til dette indhold her: [Slidedeck](./office-documents/Data%20Platform.pptx)
 
 ## Indhold
 
