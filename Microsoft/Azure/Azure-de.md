@@ -11,7 +11,7 @@ Die Implementierung der Datenplattform mithilfe von Azure-Diensten führt zu ein
 
 Abbildung 1 zeigt die Azure-Dienste, die normalerweise bei diesem Ansatz verwendet werden.
 
-![figure 1](../images/german/Slide5.png)
+![Abbildung 1](../../images/slides/Slide16.png)
 
 Abbildung 1
 

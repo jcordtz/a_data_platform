@@ -13,7 +13,7 @@
 
 *Microsoft Fabric* brings together new and existing components like *Power BI*, *Azure Synapse*, and *Azure Data Factory* into a single integrated environment. These components are then presented in various customized user experiences.
 
-![figur1](../images/english/Slide11.JPG)
+![Figur 1](../../images/slides/Slide28.png)
 
 *Figure 1*
 
@@ -22,7 +22,7 @@ You can build a data platform using *Microsoft Fabric* but due to the nature of 
 
 In *figure 2* different ways of using *Microsoft Fabric* within the data platform concept are illustrated.
 
-![figur2](../images/english/Slide9.JPG)
+![Figur 2](../../images/slides/Slide18.png)
 
 *Figure 2*
 

@@ -13,7 +13,7 @@
 
 *Microsoft Fabric* samler nye og eksisterende komponenter som *Power BI*, *Azure Synapse* og *Azure Data Factory* i et enkelt integreret miljø. Disse komponenter præsenteres derefter i forskellige tilpassede brugeroplevelser.
 
-![figur1](../images/danish/Slide11.JPG)
+![Figur 1](../../images/slides/Slide28.png)
 
 *Figur 1*
 
@@ -22,7 +22,7 @@ Man kan bygge en dataplatform ved hjælp af *Microsoft Fabric*, men på grund af
 
 I *figur 2* illustreres forskellige måder at bruge *Microsoft Fabric* på inden for dataplatformskonceptet.
 
-![figur2](../images/danish/Slide9.JPG)
+![Figur 2](../../images/slides/Slide18.png)
 
 *Figur 2*
 
