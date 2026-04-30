@@ -31,10 +31,9 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 > Dokumentet er hovedsageligt baseret på Microsoft-teknologikomponenter.
 
 >[!Note]
-> Der er et slidedeck der passer til dette indhold her: [Slidedeck](./office-documents/Data%20Platform.pptx)
-[Download]
-(https://raw.githubusercontent.com/jcordtz/a_data_platform/main/office-documents/Data%20Platform.pptx)
-> Bemærk at billeder der er på siderne i repo'et findes i samme slidedeck og at disse er med *engelsk* tekst.
+> Der er et slidedeck der passer til dette indhold og billeder der er på siderne i repo'et findes i samme slidedeck. Disse er med *engelsk* tekst.
+>[Click here download](https://raw.githubusercontent.com/jcordtz/a_data_platform/main/office-documents/Data%20Platform.pptx)
+ 
 
 ## Indhold
 
