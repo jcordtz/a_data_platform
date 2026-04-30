@@ -32,6 +32,8 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 
 >[!Note]
 > Der er et slidedeck der passer til dette indhold her: [Slidedeck](./office-documents/Data%20Platform.pptx)
+[Download]
+(https://raw.githubusercontent.com/jcordtz/a_data_platform/main/office-documents/Data%20Platform.pptx)
 > Bemærk at billeder der er på siderne i repo'et findes i samme slidedeck og at disse er med *engelsk* tekst.
 
 ## Indhold
