@@ -265,7 +265,7 @@ Some useful governance actions you can enforce using Azure Policy are:
 
 In *Figure 1* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 1](../images/english/Slide8.JPG)
+![figure 1](../images/slides/Slide20.png)
 
 *Figure 1*
 

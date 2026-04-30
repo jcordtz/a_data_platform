@@ -240,7 +240,7 @@ Nogle nyttige styringshandlinger, du kan gennemtvinge ved hjælp af Azure Policy
 
 I *figur 1* finder du flere måder at beskytte data på, som er tilgængelige i Azure. Dette adresserer ikke de mere generelle ting som netværkssikkerhed, Multi Factor Authentication osv., som antages at være på plads.
 
-! [Figur 1](.. /images/dansk/Slide8.JPG)
+![Figur 1](../images/slides/Slide20.png)
 
 *Figur 1*
 

@@ -254,7 +254,7 @@ Einige nützliche Governanceaktionen, die Sie mithilfe von Azure Policy erzwinge
 
 In *Abbildung 1* finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in Azure verfügbar sind. Dies befasst sich nicht mit den allgemeineren Dingen wie Netzwerksicherheit, Multi-Faktor-Authentifizierung usw., von denen angenommen wird, dass sie vorhanden sind.
 
-! [Abbildung 1](.. /Bilder/Deutsch/Slide8.JPG)
+![Abbildung 1](../images/slides/Slide20.png)
 
 *Abbildung 1*
 
