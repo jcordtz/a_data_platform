@@ -203,7 +203,7 @@ The **consume area** is where the end users of the data platform will access the
 
 >[!Note]
 >The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the *ingest area*, *silver* is
->*transform* and *gold* is *publish*. The *medallion architecture* does not reflect on the *consume area*. This document will use the
+>*transform* and *gold* is *publish*. The *medallion architecture* does not reflect on the *consume area*. This document will primarily use the
 >terms *ingest*, *transform*, *publish*, and *consume* as this reflects what has been used at the customers that is the inspiration for
 >this document. And it also reflects better the purpose of the different areas in the context of this document.
 
@@ -272,7 +272,7 @@ A typical approach for bringing your own data in scope of especially a GenAI sol
 
 RAG is an architecture that augments the capabilities of a Large Language Model (LLM) like ChatGPT by adding an information retrieval system that provides **grounding** data. Adding an information retrieval system gives you control over grounding data used by an LLM when it formulates a response. For an enterprise solution, RAG architecture means that you can constrain generative AI to your enterprise content sourced from **vectorized** documents and images, and other data formats if you have embedding models for that content.
 
-![Figure 6](images/others/architecture-diagram.png)
+![Figure 6](images/slides/Slide30.png)
 
 *Figure 6*
 
@@ -308,7 +308,7 @@ And then in front of these agents sits a master agent that is configured(grounde
 
 In this case each datasets individual tables in the data platform would be fronted by an agent. These agents can then be put in to action depending of the task in question.
 
-![Figure 7](images/slides/Slide27.png)
+![Figure 7](images/slides/Slide13.png)
 
 *Figure 7*
 
@@ -398,7 +398,7 @@ This section will continue with some more technical possibilities.
 
 In *Figure 8* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
 
-![figure 8](images/slides/Slide20.png)
+![figure 8](images/slides/Slide21.png)
 
 *Figure 8*
 
@@ -460,7 +460,7 @@ You might decide to have a few different types of project rooms - i.e. one for t
 
 The following figure shows an example of a project room in the data platform environment.
 
-![figure 9](images/slides/Slide15.png)
+![figure 9](images/slides/Slide16.png)
 
 *Figure 9*
 
@@ -480,7 +480,7 @@ As mentioned above, a way of making sure coding in the data platform is done the
 
 The following Figure 10 show a simplified workflow.
 
-![Figure 10](images/slides/Slide21.png)
+![Figure 10](images/slides/Slide22.png)
 
 *Figure 10*
 
@@ -502,7 +502,7 @@ The Data User 2 needs data that comes from both App 1 and 2, but data present in
 
 The same goes for the Data Product C which represents data from App 2 excluding data present in App 3.
 
-![figure 11](images/slides/Slide13.png)
+![figure 11](images/slides/Slide14.png)
 
 *Figure 11*
 
@@ -512,7 +512,7 @@ So, the overall term **if it is not available today, it will be tomorrow** can b
 
 ## Example of an implementation
 
-![figure 12](images/slides/Slide24.png)
+![figure 12](images/slides/Slide25.png)
 
 *Figure 12*
 

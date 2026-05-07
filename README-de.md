@@ -279,7 +279,7 @@ Ein typischer Ansatz, um Ihre eigenen Daten in den Geltungsbereich einer GenAI-L
 
 RAG ist eine Architektur, die die Fähigkeiten eines Large Language Model (LLM) wie ChatGPT um ein Informationsabrufsystem erweitert, das **erding** Daten liefert. Durch das Hinzufügen eines Informationsabrufsystems haben Sie die Kontrolle über die Erdungsdaten, die von einem LLM verwendet werden, wenn es eine Antwort formuliert. Für eine Unternehmenslösung bedeutet die RAG-Architektur, dass Sie generative KI auf Ihre Unternehmensinhalte beschränken können, die aus **vektorisierten** Dokumenten und Bildern sowie anderen Datenformaten stammen, wenn Sie über Einbettungsmodelle für diese Inhalte verfügen.
 
-![Abbildung 6](images/others/architecture-diagram.png)
+![Abbildung 6](images/slides/Slide30.png)
 
 *Abbildung 6*
 
@@ -317,7 +317,7 @@ Vor diesen agents befindet sich dann ein master agent, der für jeden einzelnen 
 
 In diesem Szenario würde jede einzelne table eines datasets in der data platform von einem agent fronted werden. Diese agents können dann je nach der jeweiligen Aufgabe in Aktion treten.
 
-![Abbildung 7](images/slides/Slide27.png)
+![Abbildung 7](images/slides/Slide13.png)
 
 *Abbildung 7*
 
@@ -402,7 +402,7 @@ In diesem Abschnitt geht es weiter mit einigen weiteren technischen Möglichkeit
 
 Abbildung 8 zeigt verschiedene Datenschutzmethoden, die in Azure verfügbar sind. Allgemeine Themen wie Netzwerksicherheit oder Multi-Faktor-Authentifizierung werden jedoch nicht behandelt, da davon ausgegangen wird, dass diese bereits implementiert sind.
 
-![Abbildung 8](images/slides/Slide20.png)
+![Abbildung 8](images/slides/Slide21.png)
 
 *Abbildung 8*
 
@@ -449,7 +449,7 @@ Du könntest dich entscheiden, verschiedene Arten von Projekträumen zu haben �
 
 Die folgende Abbildung zeigt ein Beispiel für einen Projektraum in der Datenplattform-Umgebung.
 
-![Abbildung 9](images/slides/Slide15.png)
+![Abbildung 9](images/slides/Slide16.png)
 
 *Abbildung 9*
 
@@ -470,7 +470,7 @@ Wie oben erwähnt, sollte die Verwendung von CI/CD-Prinzipien (Continuous Integr
 
 Abbildung 10 zeigt ein – vereinfachtes – Beispiel für einen solchen Workflow.
 
-![Abbildung 10](images/slides/Slide21.png)
+![Abbildung 10](images/slides/Slide22.png)
 
 *Abbildung 10*
 
@@ -486,7 +486,7 @@ Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
-![Abbildung 11](images/slides/Slide13.png)
+![Abbildung 11](images/slides/Slide14.png)
 
 *Abbildung 11*
 
@@ -496,7 +496,7 @@ Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für m
 
 ## Beispiel für eine Implementierungen
 
-![Abbildung 12](images/slides/Slide24.png)
+![Abbildung 12](images/slides/Slide25.png)
 
 *Abbildung 12*
 

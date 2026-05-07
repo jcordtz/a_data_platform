@@ -88,7 +88,7 @@ Endelig, forestil dig at bo på et luksushotel. SaaS leverer softwareapplikation
 
 Det er vigtigt at forstå, hvem der har ansvaret for de forskellige lag i infrastrukturen, når man bruger enten on-premise eller cloud, og i cloud forstå dette på tværs af Infrastructure as a Service (IaaS), Platform as a Service (Paas) og Software as a Service (SaaS).
 
-![Figur 1](../images/slides/Slide37.png)
+![Figur 1](../images/slides/Slide38.png)
 
 :blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
 
@@ -232,7 +232,7 @@ Resten af dette afsnit beskriver strukturen i Microsoft og dermed en dataplatfor
 
 De forskellige aspekter af det beskrevne delte ansvar i Microsoft håndteres i flere dokumenter.
 
-![Figur 3](../images/slides/Slide31.png)
+![Figur 3](../images/slides/Slide32.png)
 
 Dette er vist i figur 3.
 
@@ -349,7 +349,7 @@ Baseret på arten af de cloud-tjenester (IaaS, PaaS og SaaS), der bruges i ens d
 
 I denne proces bør det være klart, hvem der har ansvaret for de forskellige elementer i platformen.
 
-![figur 4](../images/slides/Slide33.png)
+![figur 4](../images/slides/Slide34.png)
 
 Det første skridt bør være "på hvilke vilkår" vi opererer, det vil sige **Kontraktlig overholdelse**,  der definerer forpligtelserne mellem parterne og også fastsætter, hvordan overholdelse af forpligtelser skal påvises.
 

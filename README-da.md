@@ -283,7 +283,7 @@ En typisk tilgang til at bringe dine egne data ind i omfanget af især en GenAI-
 
 RAG er en arkitektur, der udvider mulighederne i en Large Language Model (LLM) som ChatGPT ved at tilføje et informationshentningssystem, der giver **grounding** data. Tilføjelse af et informationshentningssystem giver kontrol over de data der bruges til at "ground" LLM modellerne, når den formulerer et svar. For en virksomhedsløsning betyder RAG-arkitektur, man kan begrænse generativ AI til ens virksomhedsindhold, der stammer fra **vektoriserede** dokumenter og billeder og andre dataformater, hvis man har integreringsmodeller for det pågældende indhold.
 
-![Figur 6](images/others/architecture-diagram.png)
+![Figur 6](images/slides/Slide30.png)
 
 *Figur 6*
 
@@ -319,7 +319,7 @@ Foran disse agents placeres der så en master agent, som konfigureres (grounded)
 
 I dette scenarie vil hver enkelt tables i et datasets i data platformen være frontet af en agent. Disse agents kan derefter sættes i aktion afhængigt af den aktuelle opgave.
 
-![Figur 7](images/slides/Slide27.png)
+![Figur 7](images/slides/Slide13.png)
 
 *Figur 7*
 
@@ -406,7 +406,7 @@ Dette afsnit fortsætter med nogle flere tekniske muligheder.
 
 *Figur 8* viser forskellige metoder til databeskyttelse tilgængelige i Azure. Det dækker dog ikke generelle emner som netværkssikkerhed eller multifaktorgodkendelse, da det antages, at disse allerede er implementeret.
 
-![figur 8](images/slides/Slide20.png)
+![figur 8](images/slides/Slide21.png)
 
 *Figur 8*
 
@@ -466,7 +466,7 @@ man kan vælge at have flere forskellige typer projektrum – f.eks. ét til ind
 
 Følgende figur viser et eksempel på et projektrum i dataplatformmiljøet.
 
-![figur 9](images/slides/Slide15.png)
+![figur 9](images/slides/Slide16.png)
 
 *Figur 9*
 
@@ -487,7 +487,7 @@ Sådanne processer har pipeline-strukturer, der beskriver, hvilke processer kode
 
 Figur 10 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
-![figur 10](images/slides/Slide21.png)
+![figur 10](images/slides/Slide22.png)
 
 *Figur 10*
 
@@ -503,7 +503,7 @@ Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, de
 
 Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive data i App 3.
 
-![figur 11](images/slides/Slide13.png)
+![figur 11](images/slides/Slide14.png)
 
 *Figur 11*
 
@@ -513,7 +513,7 @@ Så den samlede tilgang **hvis et datasæt ikke er tilgængelig i dag, bliver de
 
 ## Eksempel på en implementering
 
-![figur 12](images/slides/Slide24.png)
+![figur 12](images/slides/Slide25.png)
 
 *Figur 12*
 

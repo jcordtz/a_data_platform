@@ -88,7 +88,7 @@ Stellen Sie sich schließlich vor, Sie wohnen in einem luxuriösen Hotel. SaaS l
 
 Es ist wichtig zu verstehen, wer die Verantwortung für die verschiedenen Schichten in der Infrastruktur trägt, wenn Sie entweder On-Premise oder eine Cloud nutzen, und in der Cloud dies über Infrastructure-as-a-Service (IaaS), Platform-as-a-Service (Paas) und Software-as-a-Service hinweg zu verstehen.
 
-![Abbildung 1](../images/slides/Slide37.png)
+![Abbildung 1](../images/slides/Slide38.png)
 
 :blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
 
@@ -232,7 +232,7 @@ Im weiteren Verlauf dieses Abschnitts wird die Struktur innerhalb von Microsoft 
 
 Die verschiedenen Aspekte der geteilten Verantwortung in Microsoft werden in mehreren Dokumenten behandelt.
 
-![Abbildung 3](../images/slides/Slide31.png)
+![Abbildung 3](../images/slides/Slide32.png)
 
 Dies ist in Abbildung 3 dargestellt.
 
@@ -349,7 +349,7 @@ Basierend auf der Art der Cloud-Dienste (IaaS, PaaS und SaaS), die auf der Daten
 
 In diesem Prozess sollte klar sein, wer die Verantwortung für die verschiedenen Elemente in der Plattform trägt.
 
-![Abbildung 4](../images/slides/Slide33.png)
+![Abbildung 4](../images/slides/Slide34.png)
 
 Der erste Schritt sollte sein, "zu welchen Bedingungen" wir arbeiten, d.h. die **Vertragseinhaltung** , die die Verpflichtungen zwischen den Parteien definiert und auch festlegt, wie die Einhaltung der Verpflichtungen nachgewiesen werden muss.
 

@@ -35,7 +35,7 @@ Neben den oben genannten Techniken führt die Datenplattform einige Aspekte der 
 
 Abbildung 1 zeigt diese Datenmodelle in der Data Platform.
 
-![abbildung1](../images/slides/Slide30.png)
+![abbildung1](../images/slides/Slide31.png)
 
 ### Tabellenmodell
 

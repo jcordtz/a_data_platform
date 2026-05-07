@@ -88,7 +88,7 @@ Finally, imagine staying in a luxurious hotel. SaaS delivers software applicatio
 
 It is important to understand who has the responsibility regarding the different layers in the infrastructure when you use either on-premise or a cloud, and in the cloud understand this across Infrastructure as a Service (IaaS), Platform as a Service (Paas) and Software as a Service (SaaS).
 
-![Figure 1](../images/slides/Slide37.png)
+![Figure 1](../images/slides/Slide38.png)
 
 :blue_square: - Customer, :white_large_square: - Shared, :black_large_square: - Cloud provider
 
@@ -233,7 +233,7 @@ The rest of this section describes the structure within Microsoft and hence a da
 
 The different aspects of shared responsibility in Microsoft are handled in multiple documents.
 
-![Figure 3](../images/slides/Slide31.png)
+![Figure 3](../images/slides/Slide32.png)
 
 This is shown in figure 3.
 
@@ -350,7 +350,7 @@ Based on the nature of the cloud services (IaaS, PaaS, and SaaS) being used in o
 
 In this process it should be clear who has the responsibility for the different elements in the platform.
 
-![figure 4](../images/slides/Slide33.png)
+![figure 4](../images/slides/Slide34.png)
 
 The first step should be "on which terms" do we operate, that is the **Contractual Compliance** defining the obligations between the parties and also sets out how adherence with obligations must be demonstrated.
 
