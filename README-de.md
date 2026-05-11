@@ -99,7 +99,9 @@ Daher ist das Konzept eines in sich konsistenten Datensatzes ein Schlüsseleleme
 
 Stellen Sie auch eine Plattform bereit, die alles abdeckt, was kommt, und eine Situation schafft, in der Sie sagen können: „Wenn es heute nicht auf der Plattform ist, wird es morgen da sein.“
 
-Allerdings kann die beschriebene Datenplattform in jedem Szenario eingesetzt und an den tatsächlichen Anwendungsfall angepasst werden.
+Allerdings kann die beschriebene Datenplattform in jedem Szenario eingesetzt und an die tatsächlichen Anwendungsfälle angepasst werden.
+
+Im Abschnitt über einen [ein-praktischer-ansatz](#ein-praktischer-ansatz) wird gezeigt, wie dies funktionieren könnte.
 
 ## Gesamtparadigma
 

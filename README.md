@@ -106,7 +106,9 @@ Hence the concept of a self consistent *dataset* is a key element of this approa
 
 Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the platform today, it will be there tomorrow*.
 
-Having said that, the described data platform can be used in many different scenarios and of course should be adopted to an actual use case.
+Having said that, the described data platform can be used in many different scenarios and of course should be adopted to the actual use cases in question.
+
+In the section on a [practial approach](#a-practical-approach), it is shown how this could work.
 
 ## Overall paradigm
 

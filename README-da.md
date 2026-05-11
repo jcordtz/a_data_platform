@@ -103,7 +103,9 @@ Derfor er konceptet med et selvkonsistent *datasæt* et nøgleelement i denne ti
 
 Desuden skal platformen også kunne dække "hvad der måtte komme" og give en situation, hvor man kan sige - *hvis det ikke er i platformen i dag, vil det være der i morgen*.
 
-Når det er sagt, kan den beskrevne dataplatform bruges i flere forskellige scenarier og naturligt nok tilpasses til den faktiske brugssituation.
+Når det er sagt, kan den beskrevne dataplatform bruges i flere forskellige scenarier og naturligt nok tilpasses til de faktiske brugssituationer.
+
+I afsnittet om en [praktisk tilgang](#en-praktisk-tilgang) er vist hvorledes dette kunne virke.
 
 ## Overordnet paradigme
 
