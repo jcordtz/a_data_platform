@@ -321,6 +321,7 @@ In diesem Szenario würde jede einzelne table eines datasets in der data platfor
 
 *Abbildung 7*
 
+Du kannst einige inspirierende Anleitungen dazu finden, wie dies mithilfe von Vibe-Coding in diesem [Abschnitt](./Development/Vibe-example/VibeExample-de.md) umgesetzt werden kann.
 
 ## Umgebungen
 

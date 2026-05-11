@@ -323,6 +323,7 @@ I dette scenarie vil hver enkelt tables i et datasets i data platformen være fr
 
 *Figur 7*
 
+Du kan finde noget inspirerende vejledning i, hvordan dette kan gøres ved hjælp af Vibe-Coding i dette [afsnit](./Development/Vibe-example/VibeExample-da.md).
 
 ## Miljøer
 

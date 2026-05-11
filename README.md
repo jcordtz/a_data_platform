@@ -312,7 +312,7 @@ In this case each datasets individual tables in the data platform would be front
 
 *Figure 7*
 
-You can find some inspirational advise on how this can be done using Vibe-Coding in this [section] 
+You can find some inspirational advise on how this can be done using Vibe-Coding in this [section](./Development/Vibe-example/VibeExample.md)
 
 ## Environments
 
@@ -443,7 +443,7 @@ In connection with the continuous development and testing you often need to be a
 
 ## A practical approach
 
-Based on the discussions in this document *Figure 10* shows what this could look like in “real life”.
+Based on the discussions in this document *Figure 11* shows what this could look like in “real life”.
 
 On the left in this figure, you see the source system which is owned by "someone", usually known as the system owners. These system owners are responsible for assuring that the data platform has access to the right systems. So, on the figure we have 3 systems called App 1, App 2 and App 3 and they are each owned by a system owner here named System Owner 1 to 3.
 
