@@ -39,8 +39,8 @@ Indholdet er baseret på erfaringerne fra forskellige Microsoft-kunder, der øns
 
 Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direkte discipliner, der bør overvejes, dækkes også andre emner i forbindelse med dataplatformen.
 
-|Emne|Afsnit|Afsnit|
-|-------|-------|---------|
+|Emne|Afsnit|Afsnit|Afsnit|
+|-------|-------|---------|---------|
 |Data|[Data-modelering](./DataModelling/DataModel-da.md)|[Data-etablering](./Operations/establish-data-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|
 ||[Self-service](./DataOps/Self-service-da.md)|[Generativ AI](./GenAI/GenAI-da.md)|[Data Agenter](./GenAI/Agent-da.md)|
 ||[Data markedsplads](./GenAI/Marketplace-da.md)|||
