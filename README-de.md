@@ -41,7 +41,7 @@ Neben dem Hauptthema der Erstellung einer Datenplattform und den direkten Diszip
 |-------|-------|---------|---------|
 |Data|[Data-modelling](./DataModelling/DataModel-de.md)|[Data-establishment](./Operations/establish-data-de.md)|[Data Mesh](./DataOps/Data-mesh-de.md)|
 ||[Self-service](./DataOps/Self-service-de.md)|[Generative AI](./GenAI/GenAI-de.md)|[Data Agents](./GenAI/Agent-de.md)|
-||[Datamarketplace](./GenAI/Marketplace-de.md)||
+||[Datamarketplace](./GenAI/Marketplace-de.md)|[Storage & Security](./Development/Storage/DataStorage-de.md)||
 |Project|[Project roles](./Operations/project-roles-de.md)|[User roles](./Operations/user-roles-de.md)||
 |Operations|[Operations/Resilience](./Operations/Operations-de.md)|[Data-operations](./DataOps/DataOps-de.md)|[Cloud-environments](./DataOps/Cloud-env-de.md)|
 ||[Loading & Perfomance](./DataOps/Dataloads-de.md)|[Supporting services](./Supporting_Data_Services/SupportingDataServices-de.md)||

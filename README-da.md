@@ -43,7 +43,7 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 |-------|-------|---------|---------|
 |Data|[Data-modelering](./DataModelling/DataModel-da.md)|[Data-etablering](./Operations/establish-data-da.md)|[Data Mesh](./DataOps/Data-mesh-da.md)|
 ||[Self-service](./DataOps/Self-service-da.md)|[Generativ AI](./GenAI/GenAI-da.md)|[Data Agenter](./GenAI/Agent-da.md)|
-||[Data markedsplads](./GenAI/Marketplace-da.md)|||
+||[Data markedsplads](./GenAI/Marketplace-da.md)|[Storage & Security](./Development/Storage/DataStorage-da.md)||
 |Projekt|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)||
 |Operationel|[Resilience](./Operations/Operations-da.md)|[Data-operationer](./DataOps/DataOps-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|
 ||[Load og perfomance](./DataOps/Dataloads-da.md)|[Supportende services](./Supporting_Data_Services/SupportingDataServices-da.md)||

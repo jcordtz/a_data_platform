@@ -44,7 +44,7 @@ Besides covering the main topic on how to create a data platform and the direct 
 |-------|-------|---------|--------|
 |Data|[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|[Data Mesh](./DataOps/Data-mesh.md)|
 ||[Self-service](./DataOps/Self-service.md)|[Generative AI](./GenAI/GenAI.md)|[Data Agents](./GenAI/Agent.md)|
-||[Datamarketplace](./GenAI/Marketplace.md)|||
+||[Datamarketplace](./GenAI/Marketplace.md)|[Storage & Security](./Development/Storage/DataStorage.md)||
 |Project|[Project roles](./Operations/project-roles.md)|[User roles](./Operations/user-roles.md)||
 |Operations|[Operations/Resilience](./Operations/Operations.md)|[Data-operations](./DataOps/DataOps.md)|[Cloud-environments](./DataOps/Cloud-env.md)|
 ||[Loading & Perfomance](./DataOps/Dataloads.md)|[Supporting services](./Supporting_Data_Services/SupportingDataServices.md)||
