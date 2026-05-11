@@ -15,9 +15,8 @@ Efterhånden som organisationer i stigende grad benytter cloud-platforme til at 
 
 I stedet for at basere sig på ét enkelt sikkerhedslag anvender Azure en holistisk tilgang, hvor storage, kryptering, identitetsstyring og overvågning kombineres i en samlet ramme. Denne integrerede tilgang gør det muligt for organisationer at beskytte deres data gennem hele dets livscyklus.
 
----
 
-## Kapitel 1: Fundamentet for datalagring i Azure  
+## Fundamentet for datalagring i Azure  
 
 Udgangspunktet for Azures datastrategi er et bredt udvalg af storage-services, der er tilpasset forskellige behov. Strukturerede data lagres typisk i services som Azure SQL Database eller andre managed relationelle databaser, mens semi-strukturerede og ustrukturerede data lagres i Azure Cosmos DB eller Azure Storage.  
 
@@ -25,17 +24,15 @@ Azure Storage understøtter flere typer lagring, herunder Blob Storage til objek
 
 Disse services er designet til høj skalerbarhed og robusthed og tilbyder avancerede replikeringsmuligheder, som sikrer høj tilgængelighed — selv i tilfælde af infrastrukturelle fejl. Dette giver organisationer et stærkt fundament for fleksible og robuste dataplatforme.
 
----
 
-## Kapitel 2: En lagdelt sikkerhedsmodel  
+## En lagdelt sikkerhedsmodel  
 
 At lagre data er blot første skridt. For at beskytte data kræves en lagdelt sikkerhedsmodel. Azure implementerer en såkaldt "defense-in-depth"-strategi, hvor flere sikkerhedslag beskytter data på tværs af identitet, netværk, applikation og data.
 
 Denne tilgang betyder, at hvis ét lag kompromitteres, findes der stadig andre mekanismer, der begrænser risikoen. Det afspejler moderne cloud-sikkerhedsprincipper, hvor sikkerhed distribueres på tværs af arkitekturen og ikke samles ét sted.
 
----
 
-## Kapitel 3: Kryptering gennem hele dataets livscyklus  
+## Kryptering gennem hele dataets livscyklus  
 
 Kryptering er en central søjle i Azures sikkerhedsmodel og beskytter data i alle dets tilstande.
 
@@ -47,9 +44,8 @@ For særligt følsomme scenarier tilbyder Azure også beskyttelse af data under 
 
 Samlet set sikrer disse mekanismer, at data er beskyttet uanset om det er lagret, transmitteret eller behandlet.
 
----
 
-## Kapitel 4: Håndtering af nøgler og hemmeligheder  
+## Håndtering af nøgler og hemmeligheder  
 
 Kryptering kræver sikker håndtering af nøgler. Azure leverer dette via Azure Key Vault, en central service til sikker opbevaring af nøgler, hemmeligheder og certifikater.
 
@@ -57,9 +53,8 @@ Ved at anvende Key Vault kan organisationer adskille krypteringsnøgler fra data
 
 Key Vault understøtter samtidig Zero Trust-principper ved at sikre, at adgang altid verificeres eksplicit og tildeles med mindst mulige rettigheder.
 
----
 
-## Kapitel 5: Identitet og adgangsstyring  
+## Identitet og adgangsstyring  
 
 Selvom kryptering beskytter data mod at blive læst, er det lige så vigtigt at styre, hvem der har adgang til data. Azure tilbyder en stærk identitets- og adgangsmodel via Microsoft Entra ID.
 
@@ -71,9 +66,8 @@ Desuden giver Privileged Identity Management mulighed for tidsbegrænset adgang 
 
 Moderne applikationer kan også anvende managed identities, som gør det muligt at autentificere uden at gemme credentials i kode — en væsentlig forbedring af sikkerheden.
 
----
 
-## Kapitel 6: Netværksbeskyttelse og isolation  
+## Netværksbeskyttelse og isolation  
 
 Netværkssikkerhed er en vigtig del af Azures sikkerhedsmodel. Organisationer kan afgrænse deres miljøer ved hjælp af virtuelle netværk, firewalls og private endpoints.
 
@@ -81,9 +75,8 @@ Ved at begrænse adgangen til bestemte netværk eller IP-adresser kan man reduce
 
 Disse mekanismer fungerer som en første forsvarslinje, før identitets- og applikationskontrol træder i kraft.
 
----
 
-## Kapitel 7: Databeskyttelse og gendannelse  
+## Databeskyttelse og gendannelse  
 
 Ud over at beskytte data mod uautoriseret adgang tilbyder Azure også mekanismer til beskyttelse mod datatab.
 
@@ -91,15 +84,12 @@ Funktioner som backup, versionering og geo-replikering gør det muligt at gendan
 
 Replikering på tværs af regioner sikrer samtidig høj tilgængelighed, selv ved større driftsforstyrrelser.
 
----
 
-## Kapitel 8: Overvågning og trusselsdetektion  
+## Overvågning og trusselsdetektion  
 
 Sikkerhed handler ikke kun om forebyggelse, men også om detektion og respons. Azure tilbyder omfattende værktøjer til overvågning og analyse af aktivitetsdata.
 
 Ved hjælp af logs, auditing og trusselsdetektion kan organisationer identificere afvigelser og reagere hurtigt på mistænkelig aktivitet. Dette er afgørende for at opretholde et sikkert miljø og leve op til compliance-krav.
-
----
 
 ## Konklusion  
 

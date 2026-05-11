@@ -15,9 +15,8 @@ Da Organisationen zunehmend Cloud-Plattformen zur Speicherung und Verarbeitung k
 
 Anstatt sich auf eine einzelne Sicherheitsschicht zu verlassen, verfolgt Azure einen ganzheitlichen Ansatz, bei dem Speicher, Verschlüsselung, Identitätsmanagement und Überwachung in einer integrierten Architektur kombiniert werden. Dieser Ansatz ermöglicht es Organisationen, ihre Daten über den gesamten Lebenszyklus hinweg zu schützen.
 
----
 
-## Kapitel 1: Grundlagen der Datenspeicherung in Azure  
+## Grundlagen der Datenspeicherung in Azure  
 
 Die Grundlage der Azure-Datenstrategie bildet eine breite Palette von Speicherlösungen, die auf unterschiedliche Anforderungen zugeschnitten sind. Strukturierte Daten werden typischerweise in Diensten wie Azure SQL Database oder anderen verwalteten relationalen Datenbanken gespeichert, während halbstrukturierte und unstrukturierte Daten in Azure Cosmos DB oder Azure Storage abgelegt werden.
 
@@ -25,17 +24,15 @@ Azure Storage unterstützt verschiedene Speicherarten, darunter Blob Storage fü
 
 Diese Dienste sind auf hohe Skalierbarkeit und Ausfallsicherheit ausgelegt und bieten fortschrittliche Replikationsmechanismen, die eine hohe Verfügbarkeit auch bei Infrastrukturproblemen sicherstellen. Dadurch entsteht eine solide Grundlage für flexible und robuste Datenplattformen.
 
----
 
-## Kapitel 2: Ein mehrschichtiges Sicherheitsmodell  
+## Ein mehrschichtiges Sicherheitsmodell  
 
 Das Speichern von Daten ist nur der erste Schritt. Der Schutz dieser Daten erfordert ein mehrschichtiges Sicherheitsmodell. Azure setzt auf einen sogenannten "Defense-in-Depth"-Ansatz, bei dem mehrere Schutzebenen über Identität, Netzwerk, Anwendung und Daten hinweg implementiert werden.
 
 Dieser Ansatz stellt sicher, dass selbst bei einem Kompromittieren einer einzelnen Schicht weitere Sicherheitsmaßnahmen bestehen bleiben, um Risiken zu minimieren. Dies entspricht modernen Prinzipien der Cloud-Sicherheit, bei denen Sicherheitskontrollen über die gesamte Architektur verteilt sind.
 
----
 
-## Kapitel 3: Verschlüsselung über den gesamten Datenlebenszyklus  
+## Verschlüsselung über den gesamten Datenlebenszyklus  
 
 Eine zentrale Säule der Azure-Sicherheitsarchitektur ist die Verschlüsselung, die Daten in allen Phasen ihres Lebenszyklus schützt.
 
@@ -47,9 +44,8 @@ Für besonders sensible Szenarien bietet Azure zudem Schutz für Daten während 
 
 Damit wird sichergestellt, dass Daten unabhängig davon geschützt sind, ob sie gespeichert, übertragen oder verarbeitet werden.
 
----
 
-## Kapitel 4: Verwaltung von Schlüsseln und Geheimnissen  
+## Verwaltung von Schlüsseln und Geheimnissen  
 
 Verschlüsselung erfordert eine sichere Verwaltung von Schlüsseln. Azure bietet hierfür den Dienst Azure Key Vault, der als zentrale Plattform zur sicheren Speicherung von Schlüsseln, Geheimnissen und Zertifikaten dient.
 
@@ -57,9 +53,8 @@ Durch die Nutzung von Key Vault können Organisationen Schlüssel strikt von den
 
 Darüber hinaus unterstützt Key Vault Zero-Trust-Prinzipien, indem sichergestellt wird, dass der Zugriff auf sensible Informationen stets explizit überprüft wird.
 
----
 
-## Kapitel 5: Identitäts- und Zugriffsmanagement  
+## Identitäts- und Zugriffsmanagement  
 
 Während Verschlüsselung den Zugriff auf Daten schützt, ist es ebenso entscheidend zu kontrollieren, wer Zugriff erhält. Azure bietet hierfür ein umfassendes Identitäts- und Zugriffsmanagement über Microsoft Entra ID.
 
@@ -71,18 +66,14 @@ Zusätzlich ermöglicht Privileged Identity Management eine zeitlich begrenzte V
 
 Moderne Anwendungen profitieren zudem von Managed Identities, die eine sichere Authentifizierung ohne das Speichern von Zugangsdaten im Code ermöglichen.
 
----
 
-## Kapitel 6: Netzwerkschutz und Isolation  
+## Netzwerkschutz und Isolation  
 
 Ein weiterer wichtiger Bestandteil der Datensicherheit in Azure ist der Netzwerkschutz. Organisationen können ihre Umgebungen durch virtuelle Netzwerke, Firewalls und Private Endpoints absichern.
 
 Durch die Beschränkung des Zugriffs auf vertrauenswürdige Netzwerke oder IP-Adressen wird die Angriffsfläche erheblich reduziert. Beispielsweise können Datenbanken so konfiguriert werden, dass sie nur Verbindungen aus definierten Quellen akzeptieren.
 
 Diese Maßnahmen fungieren als erste Verteidigungslinie, bevor weitere Sicherheitsmechanismen greifen.
-
----
-
 
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](DataStorage.md)
