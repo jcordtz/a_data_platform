@@ -48,7 +48,7 @@ Datakataloger finder applikationer i forskellige brancher og use cases, herunder
 1) Datastyring og overholdelse – I brancher med strenge lovkrav, såsom finans og sundhedspleje, hjælper et datakatalog organisationer med at sikre overholdelse af datastyringspolitikker og -regler. Det giver et klart revisionsspor og letter datarevisioner og inspektioner.
 2) Dataintegration og migrering – Når du integrerer data fra flere kilder eller migrerer data til nye systemer, fungerer et datakatalog som et værdifuldt værktøj til at spore dataafstamning og sikre, at datatransformationer dokumenteres nøjagtigt.
 3) Business Intelligence og Analytics – Forretningsanalytikere og dataloger er afhængige af datakataloger for effektivt at få adgang til og analysere data. Med et datakatalog kan de hurtigt finde relevante datasæt, forstå deres kontekst og få handlingsrettet indsigt.
-4) Indtægtsgenerering af data – Virksomheder, der ønsker at tjene penge på deres dataaktiver, kan bruge et datakatalog til at identificere værdifulde datasæt og gøre dem tilgængelige for eksterne partnere eller kunder. Dette kan skabe nye indtægtsstrømme og øge den samlede værdi af dataene.
+4) Indtægtsgenerering af data – Virksomheder, der ønsker at tjene penge på deres dataaktiver, kan bruge et datakatalog til at identificere værdifulde *datasæt* og gøre dem tilgængelige for eksterne partnere eller kunder. Dette kan skabe nye indtægtsstrømme og øge den samlede værdi af dataene.
 
 ## Udfordringer ved implementering af et datakatalog
 

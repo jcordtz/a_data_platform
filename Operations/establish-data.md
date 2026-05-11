@@ -62,7 +62,7 @@ Tools to create fake data within a Python environment, could be:
 
 #### Anonymization
 
-Anonymization is used when you can scramble a production dataset and bring it to a non-production environment. Anonymous data is data that has been changed so that re-identification of the individual is impossible.
+Anonymization is used when you can scramble a production *dataset* and bring it to a non-production environment. Anonymous data is data that has been changed so that re-identification of the individual is impossible.
 
 The scrambling can be done in many ways, using different technics like noise addition, substitution, and aggregation.
 

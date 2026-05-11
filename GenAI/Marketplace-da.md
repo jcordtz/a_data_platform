@@ -10,10 +10,10 @@
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md)
 
 ## 1. Hvad er en datamarkedsplads?
-En **datamarkedsplads** er en onlineplatform, der forbinder **dataudbydere** (organisationer eller enkeltpersoner, der tilbyder datasæt) med **dataforbrugere** (virksomheder eller analytikere, der søger data). Det fungerer som en e-handelsplatform, men for dataaktiver snarere end fysiske varer. Disse markedspladser gør det muligt at købe, sælge eller dele datasæt i et sikkert, styret miljø.
+En **datamarkedsplads** er en onlineplatform, der forbinder **dataudbydere** (organisationer eller enkeltpersoner, der tilbyder datasæt) med **dataforbrugere** (virksomheder eller analytikere, der søger data). Det fungerer som en e-handelsplatform, men for dataaktiver snarere end fysiske varer. Disse markedspladser gør det muligt at købe, sælge eller dele *datasæt* i et sikkert, styret miljø.
 
 ### Vigtigste egenskaber
-- **Tosidet platform**: Udbydere tjener penge på data; Forbrugerne erhverver datasæt af høj kvalitet.
+- **Tosidet platform**: Udbydere tjener penge på data; Forbrugerne erhverver *datasæt* af høj kvalitet.
 - **Typer af markedspladser**:
   - **Offentlige markedspladser**: Åben for alle (f.eks. AWS Data Exchange, Snowflake Marketplace).
   - **Private/interne markedspladser**: Til intern organisatorisk brug eller betroede partnere.

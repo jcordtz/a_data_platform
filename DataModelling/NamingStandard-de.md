@@ -254,7 +254,7 @@ Reife und beabsichtigte Nutzung der Daten. Ein Gold-Datensatz soll geschäftsber
 breite Nutzung in Analytics, Reporting oder Downstream-Anwendungen. Indem die Schicht im Namen explizit ist, sind beide Menschen
 und automatisierte Systeme können sofort erkennen, welche Governance-Regeln, Qualitätserwartungen und Zugangsrichtlinien gelten.
 
-Das fünfte und letzte Element, 'Kunde', bezeichnet den **logischen Datensatz oder Geschäftseinheit**, der  durch das Datenobjekt repräsentiert wird.
+Das fünfte und letzte Element, 'Kunde', bezeichnet den **logischen *Datensatz* oder Geschäftseinheit**, der  durch das Datenobjekt repräsentiert wird.
 Auf der Gold-Ebene sollte dieses Element mit kanonischer Geschäftsterminologie ausgedrückt werden, die mit gemeinsamen Definitionen übereinstimmt
 Innerhalb der gesamten Organisation. Die Verwendung stabiler und gut verstandener Entitätsnamen erhöht das Vertrauen in die Daten, unterstützt die Wiederverwendung und verringert
 der Bedarf an zusätzlicher Dokumentation, wenn Datensätze von Geschäftsanwendern, Analysten oder externen Berichtsprozessen genutzt werden.

@@ -135,19 +135,20 @@ Ein sehr wichtiger Aspekt insbesondere von *Daten*, aber auch bis zu einem gewis
 
 Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
 
-Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt. Der Datensatz ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
+Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt. Der *Datensatz* ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
 
-- Der Datensatz ist in sich geschlossen, d. h. er ist nicht von anderen Quellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
+- Der *Datensatz* ist in sich geschlossen, d. h. er ist nicht von anderen Quellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
 - Nur die Spalten/Zeilen, die für die ausgeführte Aufgabe relevant sind, sind im *Datensatz* vorhanden.
+- Ein *Datensatz* ist nicht versioniert und unterstützt keine Konzepte wie „Slowly Changing Dimension Tables“. Wenn eine neue Version eines Datensatzes benötigt wird, wird ein neuer *Datensatz* erstellt. Durch eine einfache Namenskonvention (z. B. à la dimensionX_v2) kann ein Paradigma geschaffen werden, das einer Versionsverwaltung ähnelt.
 - Ein *Datensatz* gehört zu einer Gruppe und nicht zu bestimmten Personen – daher ist der Besitzer in einer Azure-Konfiguration eine Gruppe mit einer Entra ID.
 - Einem *Datensatz* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
 - Der Zugriff auf einen *Datensatz* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
-- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das Dataset wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. 
+- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das *dataset* wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien. 
 - Ein *Datensatz* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank order ein Kafka Queue sein.
 
 ## Cloud-Zugang
 
-Die in diesem Dokument beschriebene Datenplattform basiert auf Cloud-Technologien.
+Die in diesem Dokument beschriebene Datenplattform basiert sich auf Cloud-Technologien.
 
 Und dieser Ansatz für eine Datenplattform hat einige Funktionen, die nur mit einem solchen Cloud-Ansatz erreicht werden können.
 
@@ -171,7 +172,7 @@ Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten
 
 Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bedeutet, dass beim Erstellen eines neuen Servers beispielsweise die verschiedenen Komponenten, die der Server verwendet - wie Festplatten, Netzwerkkarten usw. - durch Senden von Befehlen an die Cloud-Infrastruktur generiert werden. Wir können also Software verwenden, um diese Komponenten herzustellen.
 
-Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten Datensatz mithilfe von Code in diese Datenbank zu laden.
+Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten *Datensatz* mithilfe von Code in diese Datenbank zu laden.
 
 Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env-de.md) näher erläutert.
 
@@ -433,9 +434,9 @@ Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig
 
 Basierend auf den Diskussionen in diesem Dokument zeigt *Abbildung 11*, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
-In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche Dataset mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
+In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche *dataset* mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
 
-Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem Datensatz herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
+Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem *Datensatz* herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
@@ -445,7 +446,7 @@ Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darst
 
 Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen.
 
-Der Gesamtansatz **Wenn ein Datensatz heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
+Der Gesamtansatz **Wenn ein *Datensatz* heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
 
 ## Beispiel für eine Implementierungen
 

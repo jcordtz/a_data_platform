@@ -102,7 +102,7 @@ Any combination of these are "correct", the important part is that it is documen
 
 The vision of the data platform described in this document is to have a platform where **Governance** and **Compliance** are the main drivers for providing access to data.
 
-Hence the concept of a self consistent dataset is a key element of this approach.
+Hence the concept of a self consistent *dataset* is a key element of this approach.
 
 Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the platform today, it will be there tomorrow*.
 
@@ -138,6 +138,7 @@ The *dataset* is the key component of the data platform, and it has some specifi
 
 - The *dataset* is self-sufficient, meaning it does not depend on any other sources. It contains all the information needed.
 - Only the columns/rows that are relevant for the task being supported are included.
+- A *dataset* is not versioned and does not support concepts such as "slowly changing dimension tables." If a new version of a *dataset* is needed, a new *dataset* is created. A simple naming convention (e.g., à la dimensionX_v2) can be used to establish a paradigm that resembles version control.
 - A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
 - A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
 - Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
@@ -362,7 +363,7 @@ In *Figure 8* you will find several ways to protect data which are available in 
 
 **Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
 
-**Removal Based Access Control** – this approach is only feasible in the *publish area*. This approach utilizes the aspect of the *publish area* that a dataset store only "lives as long as being used", in this case "...being used correctly". Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
+**Removal Based Access Control** – this approach is only feasible in the *publish area*. This approach utilizes the aspect of the *publish area* that a *dataset* store only "lives as long as being used", in this case "...being used correctly". Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
 
 ## Data Operations
 
@@ -446,7 +447,7 @@ On the left in this figure, you see the source system which is owned by "someone
 
 In the middle we find the data platform with the *Ingest*, *Transform* and *publish area*. In the *ingest area* you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
 
-Then on the right side of the figure we see what is required by the end-users in the *consume area*. The first user called data User 1 needs *data* that only comes from App 1, so the dataset needed called *data* Product A is a straightforward process.
+Then on the right side of the figure we see what is required by the end-users in the *consume area*. The first user called data User 1 needs *data* that only comes from App 1, so the *dataset* needed called *data* Product A is a straightforward process.
 
 The Data User 2 needs data that comes from both App 1 and 2, but data present in App 3 most be excluded from that dataset, so in this case the process is a little more complicated, but because the *transform area* represents an area where easily can combine (and also exclude) data the fundamentals for doing this is in place, hence it be done rather smoothly.
 

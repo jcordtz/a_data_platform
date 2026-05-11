@@ -75,7 +75,7 @@ enheder og standardiserede strukturer. På dette stadie skifter navne typisk fra
 
 Publish/Gold-laget repræsenterer forretningsklare dataprodukter, ofte designet omkring analyse-brugsscenarier og rapportering
 krav, eller maskinlæringsfunktioner. Navngivning på dette lag bør prioritere klarhed, forretningsmæssig tilpasning og stabilitet,
-da disse datasæt typisk forbruges bredt og ofte er underlagt strengere styring, certificering og forandringsstyring
+da disse *datasæt* typisk forbruges bredt og ofte er underlagt strengere styring, certificering og forandringsstyring
 processer.
 
 ## Dataaktivnavngivning inden for lagrings- og analysetjenester
@@ -105,7 +105,7 @@ Ansvarlighed. Når navne konsekvent koder domænekontekst, bliver værktøjer so
 betydeligt mere effektivt.
 
 Forretningssemantik bør introduceres gradvist, efterhånden som data modnes. Mens rådata bør undgå for tidlig fortolkning,
-Kuraterede og forbrugsklare datasæt bør bruge navne, der resonerer med forretningsbrugere og stemmer overens med fælles definitioner.
+Kuraterede og forbrugsklare *datasæt* bør bruge navne, der resonerer med forretningsbrugere og stemmer overens med fælles definitioner.
 Dette reducerer gnidninger mellem tekniske og ikke-tekniske interessenter og øger tilliden til platformen.
 
 ## Støtte til governance, sikkerhed og overholdelse gennem navngivning
@@ -138,7 +138,7 @@ afvigelser og onboarding af nye teammedlemmer bliver lettere, fordi miljøet sel
 
 ## Lang levetid og udvikling af navngivningsstandarder
 
-Navngivningsstandarder bør designes med lang levetid for øje. I dataplatforme overlever datasæt ofte længere end teams eller teknologier
+Navngivningsstandarder bør designes med lang levetid for øje. I dataplatforme overlever *datasæt* ofte længere end teams eller teknologier
 Der skabte dem, og dårligt valgte navne kan blive en permanent kilde til forvirring.
 
 En god navngivningsstandard balancerer præcision med fleksibilitet, undgår unødvendige forkortelser og forbliver kortfattet.
@@ -254,10 +254,10 @@ modenhed og tilsigtet brug af dataene. Et Gold-datasæt forventes at være forre
 bred forbrug på tværs af analyse, rapportering eller downstream-applikationer. Ved at gøre laget eksplicit i navnet, begge mennesker
 og automatiserede systemer kan straks udlede, hvilke styringsregler, kvalitetsforventninger og adgangspolitikker der gælder.
 
-Det femte og sidste element, 'kunde', identificerer det **logiske datasæt eller forretningsenhed**, som  dataressourcen repræsenterer.
+Det femte og sidste element, 'kunde', identificerer det **logiske *datasæt* eller forretningsenhed**, som  dataressourcen repræsenterer.
 På Gold-laget bør dette element udtrykkes ved hjælp af kanonisk forretningsterminologi, der stemmer overens med fælles definitioner
 På tværs af organisationen. Brug af stabile og velkendte entitetsnavne øger tilliden til dataene, understøtter genbrug og reducerer
-Behovet for yderligere dokumentation, når datasæt forbruges af forretningsbrugere, analytikere eller eksterne rapporteringsprocesser.
+Behovet for yderligere dokumentation, når *datasæt* forbruges af forretningsbrugere, analytikere eller eksterne rapporteringsprocesser.
 
 ## Hvorfor dette mønster fungerer godt i Azure Data Platforms
 

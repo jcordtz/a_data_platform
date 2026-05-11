@@ -84,7 +84,7 @@ Azure data platforms often rely on services such as Azure Data Lake Storage Gen2
 and/or Microsoft Fabric. Regardless of the underlying technology, consistent naming of containers, schemas, tables, and files
 is essential.
 
-In data lakes, folder and file naming conventions should encode the medallion layer, logical domain, and dataset identity
+In data lakes, folder and file naming conventions should encode the medallion layer, logical domain, and *dataset* identity
 in a predictable way. This enables simple path-based access control, efficient data discovery, and automation of ingestion,
 transformation, and lifecycle management processes. Temporal partitioning, when used, should follow a consistent format to
 support pruning and query optimization without introducing ambiguity.
@@ -232,7 +232,7 @@ across the platform.
 ## Explanation of Each Naming Element
 
 The first element, `dlk`, represents the **platform or service type**. In this example, it is an abbreviation for a data lake
-or data platform capability. This element immediately signals the technical role of the resource or dataset and makes it easy
+or data platform capability. This element immediately signals the technical role of the resource or *dataset* and makes it easy
 to distinguish analytics-related assets from other Azure components such as networking, security, or application platforms.
 Using a controlled and well-documented set of platform abbreviations prevents ambiguity and supports automation, especially
 when names are parsed by scripts or policies.
@@ -250,11 +250,11 @@ as new domains can be introduced without disrupting existing naming conventions,
 principles and federated governance models.
 
 The fourth element, `gold`, indicates the **medallion layer** within the data architecture. This element communicates the
-maturity and intended usage of the data. A Gold dataset is expected to be business-ready, curated, validated, and suitable for
+maturity and intended usage of the data. A Gold *dataset* is expected to be business-ready, curated, validated, and suitable for
 wide consumption across analytics, reporting, or downstream applications. By making the layer explicit in the name, both humans
 and automated systems can immediately infer which governance rules, quality expectations, and access policies apply.
 
-The fifth and final element, `customer`, identifies the **logical dataset or business entity** represented by the data asset.
+The fifth and final element, `customer`, identifies the **logical *dataset* or business entity** represented by the data asset.
 At the Gold layer, this element should be expressed using canonical business terminology that aligns with shared definitions
 across the organization. Using stable and well-understood entity names increases trust in the data, supports reuse, and reduces
 the need for additional documentation when datasets are consumed by business users, analysts, or external reporting processes.

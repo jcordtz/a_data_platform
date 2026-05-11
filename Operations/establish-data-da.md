@@ -32,25 +32,25 @@ Processen med at oprette data, der kan bruges i ikke-produktionsmiljøer, kan v�
 3. Anonymisering.
 4. Pseudonymisering.
 5. Kryptering + ordbog.
-6. Datasæt af typen "Ingen relationer".
+6. *datasæt* af typen "Ingen relationer".
 
 Den eller de metoder, der anvendes, vil normalt afhænge af klassificeringen af de forskellige dataelementer. Med henblik på at fastlægge klassificeringen af forskellige data/datasæt bør der føres en "database" med disse oplysninger. Dette skal derefter være "opslagsstedet" for at etablere den rigtige databehandling.
 
 ### Databehandling i detaljer
 
-I dette afsnit diskuterer vi de forskellige muligheder, der kan bruges til at etablere et eller flere datasæt i et ikke-produktionsmiljø. Man vil højst sandsynligt skulle bruge en kombination af disse.
+I dette afsnit diskuterer vi de forskellige muligheder, der kan bruges til at etablere et eller flere *datasæt* i et ikke-produktionsmiljø. Man vil højst sandsynligt skulle bruge en kombination af disse.
 Vigtigt for EU-reglement: pseudonymisering og anonymisering af data behandles forskelligt i henhold til GDPR, EU's databeskyttelseslov.
 Henvisning til EU-dokument
 
 #### Kopi af produktionsdata
 
-Selvom dette ikke er en anbefalet fremgangsmåde, er det nogle gange muligt og tilladt at bruge (eventuel en delmængde af) produktionsdata i et ikke-produktionsmiljø. Disse datasæt vil sandsynligvis blive markeret som skrivebeskyttede.
+Selvom dette ikke er en anbefalet fremgangsmåde, er det nogle gange muligt og tilladt at bruge (eventuel en delmængde af) produktionsdata i et ikke-produktionsmiljø. Disse *datasæt* vil sandsynligvis blive markeret som skrivebeskyttede.
 En Azure-tjeneste, der er egnet til denne opgave, kan være Data Factory-Copy Pipelines.
 
 #### Datagenerering af falske data
 
 I denne proces opretter man falske data baseret på oplysningerne om datatype, længde, mønster, indhold osv., disse data skal overholde. Det er vigtigt, at dette er ægte falske data og ikke data, der er et forfalsket produktionsdatasæt.
-Oprettelse af et falsk datasæt er oftest en vanskelig opgave, så det er værd at sørge for, at processen, der etableres, kan genanvendes, automatiseres, skaleres og er parameterstyret.
+Oprettelse af et falsk *datasæt* er oftest en vanskelig opgave, så det er værd at sørge for, at processen, der etableres, kan genanvendes, automatiseres, skaleres og er parameterstyret.
 
 Værktøjer til at oprette falske data ved brug af Python kan være
 - Faker
@@ -82,7 +82,7 @@ Denne nøgle kan opbevares i en Azure Key Vault.
 >[!Note]
 >Dette er ikke en gyldig GDPR "beskyttelsesmekanisme", fordi den "kun" beskytter adgangen til dataene, ikke brugen af dataene.
 
-#### Datasæt af typen "Ingen relationer"
+#### *datasæt* af typen "Ingen relationer"
 
 I denne tilgang opretter man datasæt, der indeholder "rigtige" data på kolonneniveau. 
 

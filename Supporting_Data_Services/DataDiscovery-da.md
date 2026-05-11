@@ -41,7 +41,7 @@ det pågældende projekt forsøger at opnå.
 *Data Discovery* processen er cyklisk og iterativ og omfatter flere vigtige trin:
 
 1) Målsætning: Definer målene og de ønskede resultater af *Data Discovery* processen.
-2) Aggregering: Indsaml data fra forskellige kilder, herunder interne databaser, eksterne datasæt og tredjepartsudbydere.
+2) Aggregering: Indsaml data fra forskellige kilder, herunder interne databaser, eksterne *datasæt* og tredjepartsudbydere.
 3) Forberedelse: Rengør, transformer og organiser dataene for at sikre nøjagtighed og fuldstændighed.
 4) Visualisering: Brug visuelle værktøjer til at udforske datarelationer og registrere mønstre, tendenser og afvigelser.
 5) Analyse: Anvend avancerede analyser til at udtrække handlingsorienteret indsigt og fremme informeret beslutningstagning.
@@ -51,7 +51,7 @@ det pågældende projekt forsøger at opnå.
 
 Dataregistrering giver flere fordele, der forbedrer forretningsbeslutninger og ydeevne:
 
-1) Forbedret beslutningstagning: Gør det muligt for ikke-tekniske virksomhedsledere at forstå komplekse datasæt ved hjælp af visuelle værktøjer, hvilket forbedrer business intelligence og giver interessenter mulighed for at forbedre effektiviteten.
+1) Forbedret beslutningstagning: Gør det muligt for ikke-tekniske virksomhedsledere at forstå komplekse *datasæt* ved hjælp af visuelle værktøjer, hvilket forbedrer business intelligence og giver interessenter mulighed for at forbedre effektiviteten.
 2) Reduceret afhængighed af it-teams: Bygger bro mellem dataforberedere og beslutningstagere og sikrer, at de, der fortolker dataene, kan gøre det uden stor afhængighed af it-eksperter.
 3) Optimerede forretningsprocesser: Identificerer muligheder for omkostningsbesparelser, sikrer datasikkerhed og nøjagtighed og overholder reglerne om beskyttelse af personlige oplysninger.
 4) Forbedrede kundeoplevelser: Afslører friktionspunkter i brugerkampagneforløb, giver indsigt til mere tilpassede oplevelser og identificerer områder, der kan forbedres i produkter eller tjenester.

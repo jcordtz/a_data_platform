@@ -269,7 +269,7 @@ The Gold layer is the consumer-facing layer, where data is optimized for the usa
 
 Here is where you will find the datasets, data marts and even data warehouses.
 
-At this stage, performance, stability, and semantic consistency are paramount. Hence the concept of a dataset *only* having the rows and columns needed to fulfill that task in question is important - not only from a governance perspective but also from a performance perspective.
+At this stage, performance, stability, and semantic consistency are paramount. Hence the concept of a *dataset* *only* having the rows and columns needed to fulfill that task in question is important - not only from a governance perspective but also from a performance perspective.
 
 ### Data Modeling Approaches
 
