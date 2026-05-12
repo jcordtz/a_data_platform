@@ -101,7 +101,7 @@ Stellen Sie auch eine Plattform bereit, die alles abdeckt, was kommt, und eine S
 
 Allerdings kann die beschriebene Datenplattform in jedem Szenario eingesetzt und an die tatsächlichen Anwendungsfälle angepasst werden.
 
-Im Abschnitt über einen [ein-praktischer-ansatz](#ein-praktischer-ansatz) wird gezeigt, wie dies funktionieren könnte.
+Im Abschnitt über einen [ein praktischer ansatz](#ein-praktischer-ansatz) wird gezeigt, wie dies funktionieren könnte.
 
 ## Gesamtparadigma
 
@@ -176,9 +176,9 @@ Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bede
 
 Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten *Datensatz* mithilfe von Code in diese Datenbank zu laden.
 
-Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in diesem [Abschnitt](DataOps/Cloud-env-de.md) näher erläutert.
+Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in  Abschnitt [Cloud Environments](DataOps/Cloud-env-de.md) näher erläutert.
 
-Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in diesem [Abschnitt](./README-de.md#daten-operationen) näher erläutert.
+Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werden in Abschnitt [Datenoperationen]](./README-de.md#daten-operationen) näher erläutert.
 
 
 ## Logische Architektur
@@ -221,7 +221,7 @@ Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die be
 
 Data Mesh ist ein Architekturparadigma, das entwickelt wurde, um die Herausforderungen bei der Skalierung von Datenmanagement und -analyse in großen, komplexen Organisationen zu bewältigen. Es verlagert sich von zentralisierten Data Lakes und Warehouses zu einem dezentralen Ansatz, der es verschiedenen Teams ermöglicht, Daten unabhängig voneinander zu verwalten und zu nutzen.
 
-Dieses Thema im Zusammenhang mit der *Datenplattform* wird in diesem [Abschnitt](DataOps/Data-mesh-de.md) ausführlicher behandelt
+Dieses Thema im Zusammenhang mit der *Datenplattform* wird in Abschnitt [Data Mesh]](DataOps/Data-mesh-de.md) ausführlicher behandelt
 
 ### Schnittstellen
 
@@ -241,11 +241,11 @@ Die wirklich gute Unterstützung von Daten sowie eine umfangreiche Standardbibli
 
 ### Unterstützende Datendienste
 
-Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter beschreibt in diesem [sektion](Supporting_Data_Services/SupportingDataServices-de.md)
+Eine zusätzliche Komponente der Implementierung sind, wie Abbildung 2 zeigt, einige unterstützende Datendienste. Diesem sind weiter beschreibt in Abshnitt [Data Services](Supporting_Data_Services/SupportingDataServices-de.md)
 
 ### Data model
 
-Das Thema des Umgangs mit der Modellierung von Daten in diesem Setup wird in diesem [section](DataModelling/DataModel-de.md) näher erläutert.
+Das Thema des Umgangs mit der Modellierung von Daten in diesem Setup wird in Abschnitt [Data Modellierung](DataModelling/DataModel-de.md) näher erläutert.
 
 ## Ein Sonderfall – Echtzeit
 
@@ -321,7 +321,7 @@ In diesem Szenario würde jede einzelne table eines datasets in der data platfor
 
 *Abbildung 7*
 
-Du kannst einige inspirierende Anleitungen dazu finden, wie dies mithilfe von Vibe-Coding in diesem [Abschnitt](./Development/Vibe-example/VibeExample-de.md) umgesetzt werden kann.
+Du kannst einige inspirierende Anleitungen dazu finden, wie dies mithilfe von Vibe-Coding in Abschnitt [Vibe beispiel]](./Development/Vibe-example/VibeExample-de.md) umgesetzt werden kann.
 
 ## Umgebungen
 
@@ -376,7 +376,7 @@ Die **Attributbasierte Zugriffskontrolle** – auch bekannt als ABAC – bietet 
 
 Laut Wikipedia ist DataOps eine Sammlung von Praktiken, Prozessen und Technologien, die eine ganzheitliche und prozessorientierte Sicht auf Daten mit Automatisierung und Methoden aus dem agilen Software-Engineering kombiniert, um Qualität, Geschwindigkeit und Zusammenarbeit zu verbessern und eine Kultur der kontinuierlichen Verbesserung rund um die Datenanalyse zu fördern.
 
-DataOps sind weiter beschreibt in diesem [sektion](DataOps/DataOps-de.md)
+DataOps sind weiter beschreibt in Abschnitt [Datenoperationen](DataOps/DataOps-de.md)
 
 
 ### Umgebungen und Tags
@@ -474,7 +474,7 @@ In den jeweiligen Bereichen der einzelnen Abteilungen wird dann weiter gearbeite
 >Oben ist das Wort **Abteilung** in Bezug auf die jeweilige Organisation durch die passende Bezeichnung zu ersetzen.
 
 >[!Note]
->Ein Terraform-basiertes Skript steht zur Inspiration zur Verfügung - [terraform script](./code-examples/code-examples-de.md)
+>Ein Terraform-basiertes Skript steht zur Inspiration zur Verfügung in Abschnitt [terraform script](./code-examples/code-examples-de.md)
 
 ### Vershidende dienste
 

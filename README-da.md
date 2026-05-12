@@ -184,9 +184,9 @@ Et andet centralt aspekt af skyen er, at "alt er software". Det betyder, at når
 
 Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform bruges dette til for eksempel at oprette en relations database og herefter indlæse et givent *datasæt* i denne database, alt samme ved hjælp af kode.
 
-Denne model rejser også en diskussion om, hvilke elementer i den underliggende infrastruktur cloud-udbyderen såvel som kunden er ansvarlig for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i dette [afsnit](DataOps/Cloud-env-da.md)
+Denne model rejser også en diskussion om, hvilke elementer i den underliggende infrastruktur cloud-udbyderen såvel som kunden er ansvarlig for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i [Cloud Miljøer](DataOps/Cloud-env-da.md)
 
-Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i dette [afsnit](./README-da.md#dataops).
+Operationerne i denne model - kendt som Data Operations eller DataOps - diskuteres yderligere i [Data Operationer](./README-da.md#dataops).
 
 ## Logisk arkitektur
 
@@ -225,7 +225,7 @@ I **publish området** skabes de *datasæt*, der er nødvendige for at opfylde d
 
 Data mesh er et arkitektonisk paradigme, der er designet til at løse udfordringerne ved skalering af datastyring og -analyse i store, komplekse organisationer. Det skifter fra centraliserede datasøer og lagre til en decentraliseret tilgang, der gør det muligt for forskellige teams at administrere og bruge data uafhængigt.
 
-Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i dette [afsnit om DataOps](DataOps/Data-mesh-da.md)
+Dette emne i forbindelse med **dataplatformen** diskuteres mere detaljeret i afsnitet om [Data Operationer](DataOps/Data-mesh-da.md)
 
 ### Grænseflader
 
@@ -245,11 +245,11 @@ Pythons virkelig gode understøttelse af data samt et omfattende standardbibliot
 
 ### Understøttende datatjenester
 
-En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i denne [sektion om Data Services](Supporting_Data_Services/SupportingDataServices-da.md)
+En yderligere komponent i implementeringen, som *figur 2* viser, er understøttende datatjenester. Disse er yderligere beskrevet i afsnittet om [Data Services](Supporting_Data_Services/SupportingDataServices-da.md)
 
 ### Data model
 
-Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i denne [sektion om data modellering](DataModelling/DataModel-da.md).
+Håndteringen af modellering af data i forhold til ovenstående diskutteres videre i afsnittet om [data modellering](DataModelling/DataModel-da.md).
 
 ## Et særligt tilfælde – Real Time
 
@@ -323,7 +323,7 @@ I dette scenarie vil hver enkelt tables i et datasets i data platformen være fr
 
 *Figur 7*
 
-Du kan finde noget inspirerende vejledning i, hvordan dette kan gøres ved hjælp af Vibe-Coding i dette [afsnit](./Development/Vibe-example/VibeExample-da.md).
+Du kan finde noget inspirerende vejledning i, hvordan dette kan gøres ved hjælp af Vibe-Coding, se yderligere i afsnittet med et eksempel på [Vibe Programmering](./Development/Vibe-example/VibeExample-da.md).
 
 ## Miljøer
 
@@ -379,7 +379,7 @@ Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til 
 
 Ifølge Wikipedia er DataOps en samling af praksis, processer og teknologier, der kombinerer et holistisk og procesorienteret syn på data med automatisering og metoder fra agil softwareudvikling for at forbedre kvalitet, hastighed og samarbejde og fremme en kultur med løbende forbedringer omkring dataanalyse.
 
-A mere detaljeret diskussion om DataOps er tilgængelig i denne [sektion om DataOps](DataOps/DataOps-da.md)
+A mere detaljeret diskussion om DataOps er tilgængelig i afsnittet om [Data Operationer](DataOps/DataOps-da.md)
 
 ### Miljøer og krypteringspolitikker
 
@@ -489,7 +489,7 @@ I de enkelte afdelingers områder forabrejdes så yderligere så der dannes de r
 >I ovenstående skal ordet **afdeling** erstattes af den passende betegnelse i forhold til den enkelte organisation.
 
 >[!Note]
-Et Terraform‑baseret script er tilgængeligt som inspiration - [terraform script](./code-examples/code-examples-da.md)
+Et Terraform‑baseret script er tilgængeligt som inspiration i afsnittet [terraform script](./code-examples/code-examples-da.md)
 
 ### Forskellige mulige tjenester
 

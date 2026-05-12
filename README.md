@@ -40,7 +40,7 @@ It is based on the experience from different Microsoft-customers, that had a wis
 
 Besides covering the main topic on how to create a data platform and the direct disciplines that should be considered, other topics in connection with the data platform are also addressed.
 
-|Topic|Section|Section|Sectio|
+|Topic|Section|Section|Section|
 |-------|-------|---------|--------|
 |Data|[Data-modelling](./DataModelling/DataModel.md)|[Data-establishment](./Operations/establish-data.md)|[Data Mesh](./DataOps/Data-mesh.md)|
 ||[Self-service](./DataOps/Self-service.md)|[Generative AI](./GenAI/GenAI.md)|[Data Agents](./GenAI/Agent.md)|
@@ -171,9 +171,9 @@ A key aspect of the cloud is that "everything is software". This means that when
 
 This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a *dataset* into this database using code.
 
-This model also raises a discussion around which elements in the underlying infrastructure the cloud provider as well as the customer is responsible for in the different "silos" of on-prem, IaaS, PaaS and SaaS. This is discussed further this [section](DataOps/Cloud-env.md)
+This model also raises a discussion around which elements in the underlying infrastructure the cloud provider as well as the customer is responsible for in the different "silos" of on-prem, IaaS, PaaS and SaaS. This is discussed further in [Cloud Environments](DataOps/Cloud-env.md)
 
-The operations of this model - known as Data Operations, or DataOps - is further discussed in this [section](./README.md#data-operations).
+The operations of this model - known as Data Operations, or DataOps - is further discussed in [Data Operations](./README.md#data-operations).
 
 ## Logical architecture
 
@@ -211,7 +211,7 @@ The **consume area** is where the end users of the data platform will access the
 
 Data mesh is an architectural paradigm designed to address the challenges of scaling data management and analytics in large, complex organizations. It shifts from centralized data lakes and warehouses to a decentralized approach, enabling different teams to manage and utilize data independently.
 
-This topic in the context of the **data platform** is discussed in more details in this [section](DataOps/Data-mesh.md)
+This topic in the context of the **data platform** is discussed in more details in [Data Mesh](DataOps/Data-mesh.md)
 
 ### Interfaces
 
@@ -234,11 +234,11 @@ Python's syntax is simple, easy to learn and emphasizes readability, which lower
 ### Supporting Data Services
 
 One more component of the implementation that *Figure 2* displays are Supporting data Services.
-These service are described further in this [section](Supporting_Data_Services/SupportingDataServices.md)
+These service are described further in [Supporting Data Services](Supporting_Data_Services/SupportingDataServices.md)
 
 ### Data models
 
-The topic of handling the modelling of data in this setup is discussed further in this [section](DataModelling/DataModel.md)
+The topic of handling the modelling of data in this setup is discussed further in [Data Modelling](DataModelling/DataModel.md)
 
 ## A *special* case – Real Time
 
@@ -312,7 +312,7 @@ In this case each datasets individual tables in the data platform would be front
 
 *Figure 7*
 
-You can find some inspirational advise on how this can be done using Vibe-Coding in this [section](./Development/Vibe-example/VibeExample.md)
+You can find some inspirational advise on how this can be done using Vibe-Coding in [Vibe Example](./Development/Vibe-example/VibeExample.md)
 
 ## Environments
 
@@ -346,7 +346,7 @@ Data security is important because it helps organizations guard against cyber at
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization's data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
 
-In the section [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect.
+In [Security](Security/Security.md) you will find a much more detailed discussion on the security aspect.
 This section will continue with some more technical possibilities.
 
 In *Figure 8* you will find several ways to protect data which are available in Azure. This does not address the more general things like network security, Multi Factor Authentication etc. which is assumed to be in place.
@@ -371,7 +371,7 @@ In *Figure 8* you will find several ways to protect data which are available in 
 
 According to Wikipedia, DataOps is a collection of practices, processes and technologies that combines a holistic and process-oriented view of data with automation and methods from agile software engineering to enhance quality, speed, and collaboration and foster a culture of continuous improvement around data analytics.
 
-A more detailed discussion about DataOps can be found in this [section](DataOps/DataOps.md)
+A more detailed discussion about DataOps can be found in [Data Operations](DataOps/DataOps.md)
 
 ### Environments and encryption policies
 
@@ -437,7 +437,7 @@ The following Figure 10 show a simplified workflow.
 
 *Figure 10*
 
-A deeper discussion on CI/CD and the data platform can be found in this section [DataOps](DataOps/DataOps.md)
+A deeper discussion on CI/CD and the data platform can be found in [Data Operations](DataOps/DataOps.md)
 
 In connection with the continuous development and testing you often need to be able to handle data in non-production environments. Most likely you are not allowed to or do not want to use production data in these environments. Also, for testing purposes you may want to introduce faulty data in your datasets to be able to handle any exception handling scenarios.
 
@@ -487,13 +487,11 @@ In the individual departments' areas, further work is then done so that the righ
 >In the above, the word **department** shall be replaced by the appropriate designation in relation to the individual organisation.
 
 >[!Note]
->A terraform based script is available for inspiration - [terraform script](./code-examples/code-examples.md)
+>A terraform based script is available for inspiration at [terraform script](./code-examples/code-examples.md)
 
 ### Services that can be used
 
 The following are some examples of ways to implement a data platform using different services. Please remember that the overall paradigm is technology independence hence you should "mix and match" what suites best in regards of your business opportunities and challenges.
-
-
 
 [Azure Based](Microsoft/Azure/Azure.md) - using PaaS services from Azure
 
@@ -506,7 +504,6 @@ The following are some examples of ways to implement a data platform using diffe
 [Snowflake based](Partners/Snowflake/Snowflake.md) - using the SaaS service Snowflake together with Azure services
 
 [Microsoft Purview and the data platform](Microsoft/Purview/Purview.md) - governance and compliance of the data platform using Purview
-
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](README.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](README-da.md)
