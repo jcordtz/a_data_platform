@@ -93,10 +93,10 @@ content filters. These payloads can be reconstructed on the other side of the fi
 ## Data and security
 
 Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle.
-By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
+By implementing strong *<u>data</u>* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
 
 Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data
-security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and
+security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *<u>data</u>* to keep data safe and
 be able to recover it faster. The goal of data security is to make your data as resilient as possible against any kind of misuse that being attacks, errors etc.
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization’s data. It helps protect valuable assets, meet compliance
@@ -245,7 +245,7 @@ Examples of such regulations are as flows:
 Classifications are expressions or patterns that can help identify what kind of data can be found in a file or a column in a table.
 Examples of such classifications are Social Security Number, Drive license number, Bank account number, etc.
 
-A combination of classification often helps setting the right sensitivity to a given *data* or *dataset* - either manually or during a scanning process.
+A combination of classification often helps setting the right sensitivity to a given *<u>data</u>* or *<u>dataset</u>* - either manually or during a scanning process.
 
 ### Policies
 
@@ -277,9 +277,9 @@ In *Figure 1* you will find several ways to protect data which are available in 
 
 **Identity Based Access Control** – covers the capability that a given resource can be assigned an identity (becoming “a human”). And then you make sure that access to a given storage account is only provided to this “human” and hence you need to use this application to get to the data.
 
-**Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
+**Encryption Based Access Control** – this not really Access Control, because the *<u>data</u>* storage will be accessible, but I can only read/use the *<u>data</u>* if I have the Key for decryption. So, it can(should) be part of your defense.
 
-**Removal Based Access Control** – this approach is only feasible in the **publish area**. This approach uses the aspect of the **publish area** that a *dataset* store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
+**Removal Based Access Control** – this approach is only feasible in the **publish area (gold)**. This approach uses the aspect of the **publish area (gold)** that a *<u>dataset</u>* store only “lives as long as being used”, in this case “...being used correctly”. Because this approach requires the ability to be able to recreate a given *<u>dataset</u>* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *<u>dataset</u>* loss.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)

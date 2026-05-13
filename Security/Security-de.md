@@ -88,7 +88,7 @@ Datensicherheit ist ein entscheidender Aspekt des Betriebs eines jeden Unternehm
 Durch die Implementierung starker *Daten *-Sicherheitsmaßnahmen können Unternehmen dazu beitragen, ihre wertvollen Ressourcen zu schützen, relevante Compliance-Anforderungen zu erfüllen und das Vertrauen der Kunden in die Nutzung von Daten zu erhalten.
 
 Datensicherheit ist wichtig, weil sie Unternehmen hilft, sich vor Cyberangriffen, Insider-Bedrohungen und menschlichem Versagen zu schützen, die alle zu Datenschutzverletzungen führen können. Die vier Schlüsselfragen im Bereich der
-Sicherheit sind Vertraulichkeit, Integrität, Verfügbarkeit und Compliance. Da Daten zunehmend zum Ziel von Angreifern werden, benötigen Unternehmen Sicherheit am Ort der *Daten*, um die Sicherheit und
+Sicherheit sind Vertraulichkeit, Integrität, Verfügbarkeit und Compliance. Da Daten zunehmend zum Ziel von Angreifern werden, benötigen Unternehmen Sicherheit am Ort der *<u>Daten</u>*, um die Sicherheit und
 in der Lage sein, es schneller wiederherzustellen. Das Ziel der Datensicherheit ist es, Ihre Daten so widerstandsfähig wie möglich gegen jede Art von Missbrauch zu machen, z. B. Angriffe, Fehler usw.
 
 Zusammenfassend lässt sich sagen, dass die Datensicherheit für die Wahrung der Vertraulichkeit, Integrität und Verfügbarkeit der Daten eines Unternehmens unerlässlich ist. Es hilft, wertvolle Vermögenswerte zu schützen und Compliance zu erfüllen Anforderungen zu erfüllen und das Vertrauen der Kunden zu erhalten.
@@ -234,7 +234,7 @@ Beispiele für solche Regelungen sind wie Flows:
 Klassifizierungen sind Ausdrücke oder Muster, mit deren Hilfe identifiziert werden kann, welche Art von Daten in einer Datei oder Spalte in einer Tabelle zu finden sind.
 Beispiele für solche Klassifizierungen sind die Sozialversicherungsnummer, die Führerscheinnummer, die Bankkontonummer usw.
 
-Eine Kombination von Klassifizierungen hilft oft, die richtige Empfindlichkeit für einen bestimmten *Daten* oder *Datensatz* einzustellen  - entweder manuell oder während eines Scanvorgangs.
+Eine Kombination von Klassifizierungen hilft oft, die richtige Empfindlichkeit für einen bestimmten *<u>Daten</u>* oder *<u>Datensatz</u>* einzustellen  - entweder manuell oder während eines Scanvorgangs.
 
 ### Richtlinien
 
@@ -266,9 +266,9 @@ In *Abbildung 1* finden Sie mehrere Möglichkeiten zum Schutz von Daten, die in 
 
 **Identitätsbasierte Zugriffskontrolle** – deckt die Funktion ab, mit der einer bestimmten Ressource eine Identität zugewiesen werden kann (indem sie zu einem "Menschen" wird). Und dann stellen Sie sicher, dass der Zugriff auf ein bestimmtes Speicherkonto nur diesem "Menschen" gewährt wird, und daher müssen Sie diese Anwendung verwenden, um auf die Daten zuzugreifen.
 
-**Verschlüsselungsbasierte Zugriffskontrolle** – dies ist keine wirkliche Zugriffskontrolle, da der *Daten*-Speicher zugänglich ist, ich aber die *Daten* nur lesen/verwenden kann,  wenn ich den Schlüssel zur Entschlüsselung habe. Es kann (sollte) also Teil Ihrer Verteidigung sein.
+**Verschlüsselungsbasierte Zugriffskontrolle** – dies ist keine wirkliche Zugriffskontrolle, da der *<u>Daten</u>*-Speicher zugänglich ist, ich aber die *<u>Daten</u>* nur lesen/verwenden kann,  wenn ich den Schlüssel zur Entschlüsselung habe. Es kann (sollte) also Teil Ihrer Verteidigung sein.
 
-**Removal Based Access Control** – dieser Ansatz ist nur im **Veröffentlichungsbereich** möglich. Dieser Ansatz nutzt den Aspekt des **Veröffentlichungsbereichs**, dass ein Datensatzspeicher nur "so lange lebt, wie er verwendet wird", in diesem Fall "... richtig verwendet werden". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten *dataset*-Speicher neu erstellen zu können  , kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn also ein Angriff realisiert wird, besteht der einfachste Weg, dies zu stoppen, darin, die angegriffene Ressource einfach zu entfernen, wenn das Risiko eines  *Datensatzes* Verlusts besteht.
+**Removal Based Access Control** – dieser Ansatz ist nur im **Veröffentlichungsbereich** möglich. Dieser Ansatz nutzt den Aspekt des **Veröffentlichungsbereichs**, dass ein Datensatzspeicher nur "so lange lebt, wie er verwendet wird", in diesem Fall "... richtig verwendet werden". Da dieser Ansatz die Fähigkeit erfordert, einen bestimmten *<u>dataset</u>*-Speicher neu erstellen zu können  , kann dies auch als Verteidigungsmechanismus verwendet werden. Wenn also ein Angriff realisiert wird, besteht der einfachste Weg, dies zu stoppen, darin, die angegriffene Ressource einfach zu entfernen, wenn das Risiko eines  *Datensatzes* Verlusts besteht.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)

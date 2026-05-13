@@ -42,7 +42,7 @@ Figure 1 shows these data models in the Data Platform.
 
 ### Table model
 
-In the **ingest area** a data model called *tabel model* is introduced. This model describes what we has agreed upon that a given ingest stream delivers. And hence this model
+In the **ingest area (bronze)** a data model called *tabel model* is introduced. This model describes what we has agreed upon that a given ingest stream delivers. And hence this model
 can be used to check wether the data provided by a corresponding process is as expected. It can also provide evidence of new "columns" in the data being receivied, so that this can be
 handled appropiate.
 
@@ -56,19 +56,19 @@ This model is maintained by the *data engineers*.
 In the **transformation area** the model created is called *aligned data model*. This model represent a more traditional ER data model, but with that big difference that the data model
 does not implement the relationships. They are described but not enforced. The tables being described in this area are "correct records" where the entities and attributes are aligned with
 overall rules like datatype, date formats, descriptions, keys, foreign keys, decimal precision etc. The outcome must be structures that can very easily be joined to form 
-the datasets in the **publish area**.
+the datasets in the **publish area (gold)**.
 
 This model is maintained by the *data engineers*.
 
 ### Dimensional model
 
-The data models being present in the **publish area** are standard *dimensional models*, where data are joined and the correct columns are in place to support the given business task.
+The data models being present in the **publish area (gold)** are standard *dimensional models*, where data are joined and the correct columns are in place to support the given business task.
 
 This model is maintained by the *designers*
 
 ### Data product
 
-The *dimensional models* in the **publish area** are further enhanced in the **consume area** forming them to *data products*. A *data product* does not change the layout of *dimensional model*
+The *dimensional models* in the **publish area (gold)** are further enhanced in the **consume area** forming them to *data products*. A *data product* does not change the layout of *dimensional model*
 but adds descriptive information like *use case*, *documentation*, *user guides* etc.
 
 This information should be maintained by the business owner that "ordered" the *dimensional model*.

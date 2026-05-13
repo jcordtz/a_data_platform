@@ -18,7 +18,7 @@ I dagens datadrevne verden søger virksomheder konstant effektive og skalerbare 
 
 ## Oversigt over Snowflake og Microsoft Azure
 
-*Snowflake* er en cloud-baseret dataplatform, der leverer datalagring, datasøer og datadelingsfunktioner. Den er designet til at håndtere forskellige *datasæt* og tilbyder høj ydeevne, skalerbarhed og sikkerhed. *Microsoft Azure* er på den anden side en omfattende cloud computing-platform, der tilbyder en bred vifte af tjenester, herunder datalagring, analyse, AI og maskinlæring.
+*Snowflake* er en cloud-baseret dataplatform, der leverer datalagring, datasøer og datadelingsfunktioner. Den er designet til at håndtere forskellige *<u>datasæt</u>* og tilbyder høj ydeevne, skalerbarhed og sikkerhed. *Microsoft Azure* er på den anden side en omfattende cloud computing-platform, der tilbyder en bred vifte af tjenester, herunder datalagring, analyse, AI og maskinlæring.
 
 ## Integration af Snowflake med Azure
 
@@ -34,7 +34,7 @@ Integrationen af *Snowflake* med *Microsoft Azure* giver virksomheder mulighed f
 ## Brugssager og applikationer
 
 1) Data Lakes: *Snowflake* på *Microsoft Azure* kan bruges til at oprette datasøer, der gemmer data i deres oprindelige format. Dette giver fleksibilitet til avancerede analyseapplikationer og giver virksomheder mulighed for at analysere data i stor skala effektivt.
-2) Data Warehousing: *Snowflakes* SaaS-byggede data warehouse på Azure håndterer forskellige *datasæt* i et enkelt, oprindeligt system. Dette muliggør sikker datalagring, analyse i realtid og datadeling i hele virksomheden.
+2) Data Warehousing: *Snowflakes* SaaS-byggede data warehouse på Azure håndterer forskellige *<u>datasæt</u>* i et enkelt, oprindeligt system. Dette muliggør sikker datalagring, analyse i realtid og datadeling i hele virksomheden.
 3) Datadeling og indtægtsgenerering: Spejling i *Microsoft Fabric* giver en nem oplevelse til at undgå kompleks ETL (Extract Transform Load) og integrere dine eksisterende *Snowflake*-lagerdata med resten af dine data i *Microsoft Fabric*. Du kan løbende replikere dine eksisterende *Snowflake*-data direkte til *Microsoft Fabric's OneLake*. I *Microsoft Fabric* kan du låse op for effektive scenarier for business intelligence, kunstig intelligens, datateknik, datavidenskab og datadeling.
 
 ## Konklusion

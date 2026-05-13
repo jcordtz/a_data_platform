@@ -32,7 +32,7 @@ Klassifikationen præsenteret her er baseret på en omfattende gennemgang af ind
 Dataingeniører udgør det grundlæggende lag af platformens drift. Deres primære opgave er at opbygge og vedligeholde datapipelines, sikre dataintegritet og optimere systemets ydeevne. De har brug for avancerede ETL/ELT-rammer, overvågningsværktøjer og skalerbare lagringsløsninger.
 
 ### **3.2 Dataspecialister**
-Dataspecialister udnytter kuraterede *datasæt* til at udvikle prædiktive modeller og udføre eksplorative analyser. Deres arbejdsgange kræver højtydende computerressourcer, integration med maskinlæringsbiblioteker og adgang til strukturerede og semistrukturerede data.
+Dataspecialister udnytter kuraterede *<u>datasæt</u>* til at udvikle prædiktive modeller og udføre eksplorative analyser. Deres arbejdsgange kræver højtydende computerressourcer, integration med maskinlæringsbiblioteker og adgang til strukturerede og semistrukturerede data.
 
 ### **3.3 Forretningsanalytikere**
 Forretningsanalytikere omsætter rå data til handlingsrettede indsigter gennem beskrivende og diagnostiske analyser. De er afhængige af intuitive Business Intelligence (BI)-værktøjer, selvbetjeningsforespørgselsgrænseflader og rettidig adgang til aggregerede datasæt.

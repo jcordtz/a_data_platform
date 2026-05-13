@@ -99,7 +99,7 @@ Schauen wir uns an, was normalerweise in der Datenplattform gesehen und daher ve
 ### CSV (Komma-getrennte Werte)
 
 **Typische Anwendungsfälle**: Einfacher tabellarischer Datenaustausch, Importe/Exporte, Interoperabilität von Tabellenkalkulationen  
-**Wichtige Merkmale**: Klartext, zeilenbasiert, kein eingebautes Schema oder Metadaten, ein *Datensatz* pro Zeile  
+**Wichtige Merkmale**: Klartext, zeilenbasiert, kein eingebautes Schema oder Metadaten, ein *<u>Datensatz</u>* pro Zeile  
 **Stärken**: Universell unterstützt, leicht zu generieren und zu konsumieren, für Menschen lesbar  
 **Einschränkungen**: Keine Durchsetzung von Datentypen, keine Kompression oder Indexierung, empfindlich gegenüber Trennzeichen und Kodierungsproblemen  
 
@@ -268,7 +268,7 @@ Die Gold-Schicht ist die verbraucherorientierte Schicht, in der Daten für die N
 
 Hier finden Sie die Datensätze, Data Marts und sogar Data Warehouses.
 
-In diesem Stadium sind Leistung, Stabilität und semantische Konsistenz von größter Bedeutung. Daher ist das Konzept, dass ein *Datensatz* *nur* die Zeilen und Spalten enthält, die für diese Aufgabe benötigt werden, wichtig – nicht nur aus Governance-Sicht, sondern auch aus Performance-Sicht.
+In diesem Stadium sind Leistung, Stabilität und semantische Konsistenz von größter Bedeutung. Daher ist das Konzept, dass ein *<u>Datensatz</u>* *nur* die Zeilen und Spalten enthält, die für diese Aufgabe benötigt werden, wichtig – nicht nur aus Governance-Sicht, sondern auch aus Performance-Sicht.
 
 ### Datenmodellierungsansätze
 

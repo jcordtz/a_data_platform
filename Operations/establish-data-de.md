@@ -33,7 +33,7 @@ Der Prozess der Erstellung von Daten, die in Nicht-Produktionsumgebungen verwend
 3. Anonymisierung.
 4. Pseudonymisierung.
 5. Verschlüsselung + Wörterbuch.
-6. *Datensatz* "Keine Beziehungen".
+6. *<u>Datensatz</u>* "Keine Beziehungen".
 
 Die verwendete(n) Methode(n) hängt in der Regel von der Klassifizierung der verschiedenen Datenelemente ab. Um die Klassifizierung verschiedener Daten/Datensätze zu bestimmen, sollte eine "Datenbank" dieser Informationen geführt werden. Dies sollte dann der "Nachschlagepunkt" sein, um die richtige Datenverarbeitung zu etablieren.
 
@@ -85,11 +85,11 @@ Dieser Schlüssel kann in einem Azure Key Vault gespeichert werden.
 >Dies ist kein gültiger DSGVO-"Schutzmechanismus", da er "nur" den Zugriff auf die Daten schützt, nicht die Verwendung der Daten.
 
 
-#### *Datensatz* "Keine Beziehungen"
+#### *<u>Datensatz</u>* "Keine Beziehungen"
 
 Bei diesem Ansatz erstellen Sie Datasets, die "echte" Daten auf Spaltenebene enthalten. 
 
-Wenn Sie beispielsweise eine Postleitzahlenspalte haben, wären die Postleitzahlen hier echt, und wenn Sie einen Straßennamen im selben *Datensatz* haben, wären es auch echte Straßennamen.
+Wenn Sie beispielsweise eine Postleitzahlenspalte haben, wären die Postleitzahlen hier echt, und wenn Sie einen Straßennamen im selben *<u>Datensatz</u>* haben, wären es auch echte Straßennamen.
 
 Der Ansatz "Keine Beziehungen" kommt ins Spiel, wenn Daten aus der einzelnen Zeile angezeigt werden. Im obigen Fall wären der Straßenname, die Hausnummer und die Postleitzahl logisch sinnvoll, aber sie würden "in Wirklichkeit" nicht existieren.
 Ein Ansatz könnte also darin bestehen, Sätze verschiedener Daten zu erstellen, die Elemente darstellen, die personenbezogen sind – könnte eine Datenbank mit Straßennamen in einem Satz sein, alle Postleitzahlen in einem anderen Satz, die 20 häufigsten Vornamen in einem dritten, die 20 am häufigsten verwendeten Nachnamen in einem vierten und so weiter.

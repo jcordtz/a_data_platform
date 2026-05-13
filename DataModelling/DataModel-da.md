@@ -39,7 +39,7 @@ Figur 1 viser disse datamodeller i Dataplatformen.
 
 ### Tabel model
 
-I **ingest area**  introduceres  en datamodel kaldet *tabelmodel*. Denne model beskriver, hvad vi har aftalt, at en given indtagelsesstrøm leverer. Og derfor denne model
+I **ingest area (bronze)**  introduceres  en datamodel kaldet *tabelmodel*. Denne model beskriver, hvad vi har aftalt, at en given indtagelsesstrøm leverer. Og derfor denne model
 kan bruges til at kontrollere, om dataene fra en tilsvarende proces er som forventet. Det kan også give bevis for nye "kolonner" i de data, der modtages, så dette kan
 håndteres passende.
 
@@ -53,19 +53,19 @@ Denne model vedligeholdes af *data engineers*.
 I **transformation area** kaldes den oprettede model *justeret datamodel*. Denne model repræsenterer en mere traditionel ER-datamodel, men med den store forskel, at datamodellen
 implementerer ikke relationerne. De er beskrevet, men håndhæves ikke. De tabeller, der beskrives i dette område, er "korrekte poster", hvor enhederne og attributterne er justeret med
 overordnede regler som datatype, datoformater, beskrivelser, nøgler, fremmede nøgler, decimalpræcision osv. Resultatet skal være strukturer, der meget let kan forenes for at danne 
-datasættene i **publish area**.
+datasættene i **publish area (gold)**.
 
 Denne model vedligeholdes af *data enginees*.
 
 ### Dimensionel model
 
-De datamodeller, der findes i **publish area**, er standard *dimensionelle modeller*, hvor data er sammenføjet, og de korrekte kolonner er på plads for at understøtte den givne forretningsopgave.
+De datamodeller, der findes i **publish area (gold)**, er standard *dimensionelle modeller*, hvor data er sammenføjet, og de korrekte kolonner er på plads for at understøtte den givne forretningsopgave.
 
 Denne model vedligeholdes af *designere*
 
 ### Dataprodukt
 
-De *dimensionelle modeller* i **publish area** forbedres yderligere i **consume area** og danner dem til *dataprodukter*. Et *dataprodukt* ændrer ikke layoutet af *dimensionel model*
+De *dimensionelle modeller* i **publish area (gold)** forbedres yderligere i **consume area** og danner dem til *dataprodukter*. Et *dataprodukt* ændrer ikke layoutet af *dimensionel model*
 men tilføjer beskrivende oplysninger som *use case*, *dokumentation*, *brugervejledninger* osv.
 
 Disse oplysninger skal vedligeholdes af den virksomhedsejer, der "bestilte" den *dimensionelle model*.

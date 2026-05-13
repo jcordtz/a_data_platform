@@ -16,7 +16,7 @@ In today's data-driven world, organizations are constantly seeking ways to harne
 ## What is *Data Discovery*?
 
 *Data Discovery* is the process of detecting elements like outliers, patterns, and trends in data which most likely comes from multiple sources.
-It enables users to visually navigate data relationships and apply advanced analytics to optimize business decisions and performance. By simplifying complex *data* into clear easy to use *datasets*, *Data Discovery* effectively acts as a possible enabler for data-driven actions.
+It enables users to visually navigate data relationships and apply advanced analytics to optimize business decisions and performance. By simplifying complex *<u>data</u>* into clear easy to use *<u>dataset</u>*, *Data Discovery* effectively acts as a possible enabler for data-driven actions.
 
 *Data Discovery* should not be considered a reporting capability as we with *Data Discovery* seeks the “unknown” whereas reporting supports the day-to-day process that needs to be the same and only change slowly over “long time”.
 
@@ -25,12 +25,12 @@ It enables users to visually navigate data relationships and apply advanced anal
 *Data Discovery* can be achieved through both manual and automated processes. Manual processes require extensive knowledge of data organization and involve collecting, cataloging, and sifting through data to find new and yet unknown valuable insights.
 
 Automated processes leverage AI and machine learning to streamline analysis, ensure data reliability, and enhance query execution efficiency.
-These methods enable users to quickly find and use relevant trusted *datasets* through streamlined access request workflows.
+These methods enable users to quickly find and use relevant trusted *<u>dataset</u>* through streamlined access request workflows.
 
 In the *Data Platform* some of our customers has established a [project room](https://github.com/jcordtz/a_data_platform?tab=readme-ov-file#development-environment---project-room), they call *Data Discovery*.
 This gives them the capability to quickly establish an environment to be used for discovery and still be in control of what data is being used.
 
-The data available can then come from the **publish area** making the *Data Discovery* a part of the **consume area**, as well a data that is directly ingest as Raw Data depending of what the 
+The data available can then come from the **publish area (gold)** making the *Data Discovery* a part of the **consume area**, as well a data that is directly ingest as Raw Data depending of what the 
 project in question is trying to achieve.
 
 ## Steps in the *Data Discovery* Process

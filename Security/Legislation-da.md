@@ -172,7 +172,7 @@ Som et stykke produktregulering giver den ikke enkeltpersoner rettigheder, men r
 **AI Act** klassificerer ikke-undtagne AI-applikationer efter deres risiko for at forårsage skade. Der er fire risikokategorier – uacceptabel, høj, begrænset, minimal – plus en ekstra kategori for generel AI.
 
 * Applikationer med uacceptable risici - AI-systemer, der udgør uacceptable risici for grundlæggende rettigheder, sikkerhed og offentlige interesser, er forbudt. Disse omfatter AI-systemer, der bruger subliminale teknikker til at manipulere adfærd, udnytte sårbarheder i specifikke grupper, social scoring baseret på personlige egenskaber og umålrettet skrabning til ansigtsgenkendelsesdatabaser.
-* Højrisikoapplikationer - AI-systemer, såsom AI-baseret medicinsk software eller AI-systemer, der bruges til rekruttering, skal overholde strenge krav, herunder risikobegrænsende systemer, *datasæt* af høj kvalitet, klare brugeroplysninger og menneskeligt tilsyn.
+* Højrisikoapplikationer - AI-systemer, såsom AI-baseret medicinsk software eller AI-systemer, der bruges til rekruttering, skal overholde strenge krav, herunder risikobegrænsende systemer, *<u>datasæt</u>* af høj kvalitet, klare brugeroplysninger og menneskeligt tilsyn.
 * Applikationer med begrænset risiko - Systemer som chatbots skal tydeligt informere brugerne om, at de interagerer med en maskine, og bestemt AI-genereret indhold skal mærkes som sådan.
 * Applikationer med minimal risiko - AI-systemer såsom spamfiltre og AI-aktiverede videospil har ingen forpligtelser i henhold til AI Act, men virksomheder kan frivilligt vedtage yderligere adfærdskodekser.
 

@@ -7,9 +7,9 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README.md#supporting-data-services)
 
-[Data Catalog](./DataCatalog.md) – a “directory database” where we record and explain which *data* and *datasets* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
+[Data Catalog](./DataCatalog.md) – a “directory database” where we record and explain which *<u>data</u>* and *<u>dataset</u>* are available in the data platform. This would also cover elements like ownership, usage guidelines etc.
 
-[Common Data Model](./CommonDataModel.md) – Especially for the **publish area**, existing industry *data* models could be useful/relevant.
+[Common Data Model](./CommonDataModel.md) – Especially for the **publish area (gold)**, existing industry *<u>data</u>* models could be useful/relevant.
 
 [Data Discovery](./DataDiscovery.md) – A data science process oriented to business users that allows them to visually explore data and apply advanced analytics to find patterns, gain insight and answer specific business questions.
 
@@ -17,7 +17,7 @@
 
 [Data Governance](./DataGovernance.md) – Processes, policies, rules and reports to ensure that the data is governed properly. Often based on frameworks like ISO27x or NIST.
 
-[Master Data](./MasterData.md) – Some *data*/*datasets*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
+[Master Data](./MasterData.md) – Some *<u>data</u>*/*<u>dataset</u>*  might benefit from being treated as master data, ensuring that there is only “one record” of i.e. a customer.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](SupportingDataServices.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](SupportingDataServices-da.md)

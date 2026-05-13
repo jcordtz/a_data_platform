@@ -22,10 +22,10 @@ Men lige så vigtigt giver *Microsoft Purview* mulighed for at levere et datakat
 
 Dette er en meget vigtig funktion i forbindelse med dataplatformen, da den giver følgende funktionaliteter:
 
-1) Adgang til en **"søgemaskine"**, hvor brugere, der går ind i **consume** området, kan se/finde hvilke *datasets* der findes.
+1) Adgang til en **"søgemaskine"**, hvor brugere, der går ind i **consume** området, kan se/finde hvilke *<u>dataset</u>* der findes.
 2) Bede om adgang til disse såfremt man ikke har en sådan.
-3) Få en fyldig beskrivelse af hvad et givent *dataset* repræsenterer
-4) Se hvem man skal kontakte i forhold disse *datasets* for hjælp.
+3) Få en fyldig beskrivelse af hvad et givent *<u>dataset</u>* repræsenterer
+4) Se hvem man skal kontakte i forhold disse *<u>dataset</u>* for hjælp.
 
 ## En lidt mere avanceret brug af Microsoft Purview
 

@@ -121,11 +121,11 @@ Based on the "standard" Data Platform as shown in figure 1 the following discuss
 
 Because the discussed data platform relies on automation and infrastructure as code, code besides of the data itself is an important part of the backup strategy.
 
-The data part of the backup **must** take a backup of the ingest lake. And then it might be worth considering if there are data elements in the **publish area** you
+The data part of the backup **must** take a backup of the ingest lake. And then it might be worth considering if there are data elements in the **publish area (gold)** you
 could benefit from having a backup of also that could be useful being able to quickly restore in case of a restore scenario. Simply to gain time in the case of an emergency.
 
 The code part **must** be able to restore independently of the data part and in parallel. And it is important that this restore can be done quickly so that you are able to start the restore 
-of data and hence the re-establish of the services you had in the **transform area** and in the **publish area** as soon as it makes sense.
+of data and hence the re-establish of the services you had in the **transform area (silver)** and in the **publish area (gold)** as soon as it makes sense.
 
 ## Conclusion
 

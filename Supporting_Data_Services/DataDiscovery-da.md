@@ -17,7 +17,7 @@ Dataregistrering giver en dynamisk og iterativ proces, der involverer udforsknin
 
 *Data Discovery* er processen med at opdage elementer som afvigelser, mønstre og tendenser i data, som højst sandsynligt kommer fra flere kilder.
 
-Det gør det muligt for brugere visuelt at navigere i datarelationer og anvende avancerede analyser for at optimere forretningsbeslutninger og ydeevne. Ved at forenkle komplekse *data* til klare, brugervenlige *datasæt*, fungerer *Data Discovery* effektivt som en mulig katalysator for datadrevne handlinger.
+Det gør det muligt for brugere visuelt at navigere i datarelationer og anvende avancerede analyser for at optimere forretningsbeslutninger og ydeevne. Ved at forenkle komplekse *<u>data</u>* til klare, brugervenlige *<u>datasæt</u>*, fungerer *Data Discovery* effektivt som en mulig katalysator for datadrevne handlinger.
 
 Data Discovery bør ikke betragtes som en rapporteringsfunktion, da vi med Data Discovery søger det "ukendte", hvorimod rapportering understøtter den daglige proces, der skal være den samme og kun ændre sig 
 langsomt over "lang tid".
@@ -28,12 +28,12 @@ langsomt over "lang tid".
 
 Automatiserede processer udnytter AI og maskinel indlæring til at strømline analyser, sikre datapålidelighed og forbedre effektiviteten af udførelse af forespørgsler.
 
-Disse metoder gør det muligt for brugere hurtigt at finde og bruge relevante betroede *datasæt* gennem strømlinede arbejdsgange for adgangsanmodninger.
+Disse metoder gør det muligt for brugere hurtigt at finde og bruge relevante betroede *<u>datasæt</u>* gennem strømlinede arbejdsgange for adgangsanmodninger.
 
 Ved etableringen af en *Data Platform* har nogle af vores kunder etableret et [projektrum](https://github.com/jcordtz/a_data_platform/blob/main/README-da.md#udviklingsmilj%C3%B8---projektrum), de kalder *Data Discovery*.
 Dette giver dem mulighed for hurtigt at etablere et miljø, der skal bruges til opdagelse, og stadig have kontrol over, hvilke data der bruges.
 
-De tilgængelige data kan derefter komme fra **publish area**, hvilket gør *Data Discovery* til en del af **consume area**, samt en data, der indtages direkte som rådata, afhængigt af hvad 
+De tilgængelige data kan derefter komme fra **publish area (gold)**, hvilket gør *Data Discovery* til en del af **consume area**, samt en data, der indtages direkte som rådata, afhængigt af hvad 
 det pågældende projekt forsøger at opnå.
 
 ## Trin i dataregistreringsprocessen
@@ -41,7 +41,7 @@ det pågældende projekt forsøger at opnå.
 *Data Discovery* processen er cyklisk og iterativ og omfatter flere vigtige trin:
 
 1) Målsætning: Definer målene og de ønskede resultater af *Data Discovery* processen.
-2) Aggregering: Indsaml data fra forskellige kilder, herunder interne databaser, eksterne *datasæt* og tredjepartsudbydere.
+2) Aggregering: Indsaml data fra forskellige kilder, herunder interne databaser, eksterne *<u>datasæt</u>* og tredjepartsudbydere.
 3) Forberedelse: Rengør, transformer og organiser dataene for at sikre nøjagtighed og fuldstændighed.
 4) Visualisering: Brug visuelle værktøjer til at udforske datarelationer og registrere mønstre, tendenser og afvigelser.
 5) Analyse: Anvend avancerede analyser til at udtrække handlingsorienteret indsigt og fremme informeret beslutningstagning.
@@ -51,7 +51,7 @@ det pågældende projekt forsøger at opnå.
 
 Dataregistrering giver flere fordele, der forbedrer forretningsbeslutninger og ydeevne:
 
-1) Forbedret beslutningstagning: Gør det muligt for ikke-tekniske virksomhedsledere at forstå komplekse *datasæt* ved hjælp af visuelle værktøjer, hvilket forbedrer business intelligence og giver interessenter mulighed for at forbedre effektiviteten.
+1) Forbedret beslutningstagning: Gør det muligt for ikke-tekniske virksomhedsledere at forstå komplekse *<u>datasæt</u>* ved hjælp af visuelle værktøjer, hvilket forbedrer business intelligence og giver interessenter mulighed for at forbedre effektiviteten.
 2) Reduceret afhængighed af it-teams: Bygger bro mellem dataforberedere og beslutningstagere og sikrer, at de, der fortolker dataene, kan gøre det uden stor afhængighed af it-eksperter.
 3) Optimerede forretningsprocesser: Identificerer muligheder for omkostningsbesparelser, sikrer datasikkerhed og nøjagtighed og overholder reglerne om beskyttelse af personlige oplysninger.
 4) Forbedrede kundeoplevelser: Afslører friktionspunkter i brugerkampagneforløb, giver indsigt til mere tilpassede oplevelser og identificerer områder, der kan forbedres i produkter eller tjenester.

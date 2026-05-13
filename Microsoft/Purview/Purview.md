@@ -22,10 +22,10 @@ But just as important, *Microsoft Purview*  provides the ability to provide a da
 
 This is a very important feature in the context of the data platform, as it provides the following functionalities:
 
-1) Access to a **"search engine"**, where users who enter the **consume** area can see/find which *datasets* exist.
+1) Access to a **"search engine"**, where users who enter the **consume** area can see/find which *<u>dataset</u>* exist.
 2) Ask for access to these if you do not have one.
-3) Get a comprehensive description of what a given *dataset* represents
-4) See who to contact in relation to these *datasets* for help.
+3) Get a comprehensive description of what a given *<u>dataset</u>* represents
+4) See who to contact in relation to these *<u>dataset</u>* for help.
 
 ## A slightly more advanced use of Microsoft Purview
 

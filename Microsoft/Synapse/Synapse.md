@@ -11,7 +11,7 @@
 
 ![Figure 1](../../images/slides/Slide29.png)
 
-The usage of *Azure Synapse* will be in the lines of the Azure based approach, but in this case you are not technologically independent in the **ingest**, **transform** and **publish area** because you will do the all the “programming” within the *Azure Synapse* service.
+The usage of *Azure Synapse* will be in the lines of the Azure based approach, but in this case you are not technologically independent in the **ingest**, **transform** and **publish area (gold)** because you will do the all the “programming” within the *Azure Synapse* service.
 
 More information about *Azure Synapse* can be found here (<https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is>)
 

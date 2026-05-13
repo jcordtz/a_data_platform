@@ -9,7 +9,7 @@
 
 ## Roles
 
-We will use roles as a mechanism of controlling access to the *data* and *datasets*  in the data platform as well as assigning the right responsibilities to persons having these roles.
+We will use roles as a mechanism of controlling access to the *<u>data</u>* and *<u>dataset</u>*  in the data platform as well as assigning the right responsibilities to persons having these roles.
 
 Of course, the roles must be delegated to people. How the roles are connected to people, and if certain people have more than one role, doesn't really matter. The most important thing is that the processes comply with the "rules" of the data platform paradigm.
 
@@ -24,15 +24,15 @@ This is a list of common roles seen with our clients:
    - Most like likely coming from “IT”
 
 3. Data Engineer
-   - Creates the integration between a source system and the **ingest area**.
+   - Creates the integration between a source system and the **ingest area (bronze)**.
    - Most likely coming from “IT”
 
 4. Designer
-   - Designs (and creates) the different *dataset* to be used by the business
+   - Designs (and creates) the different *<u>dataset</u>* to be used by the business
    - Most likely coming from “Business”
 
 5. Transform engineer
-   - Creates the transformation processes used in the **transform** and **publish area**
+   - Creates the transformation processes used in the **transform** and **publish area (gold)**
    - Most likely coming from “IT”
 
 6. Data Governance

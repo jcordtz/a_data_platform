@@ -268,7 +268,7 @@ Gold-laget er det forbrugerrettede lag, hvor data optimeres til brug med Busines
 
 Her finder du datasæt, datamarts og endda datavarehuse.
 
-På dette stadie er ydeevne, stabilitet og semantisk konsistens altafgørende. Derfor er konceptet om, at et *datasæt* *kun* har de rækker og kolonner, der er nødvendige for at opfylde den pågældende opgave, vigtigt – ikke kun fra et governance-perspektiv, men også fra et performance-perspektiv.
+På dette stadie er ydeevne, stabilitet og semantisk konsistens altafgørende. Derfor er konceptet om, at et *<u>datasæt</u>* *kun* har de rækker og kolonner, der er nødvendige for at opfylde den pågældende opgave, vigtigt – ikke kun fra et governance-perspektiv, men også fra et performance-perspektiv.
 
 ### Datamodelleringsmetoder
 

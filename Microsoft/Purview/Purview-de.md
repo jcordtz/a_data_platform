@@ -25,7 +25,7 @@ Dies ist ein sehr wichtiges Feature im Zusammenhang mit der Datenplattform, da e
 
 1) Zugang zu einer **"Suchmaschine"**, in der Benutzer, die den Bereich **konsumieren**  betreten, sehen/finden können, welche *Datensätze* existieren.
 2) Bitten Sie um Zugang zu diesen, wenn Sie keinen haben.
-3) Erhalten Sie eine umfassende Beschreibung, was ein bestimmter *Datensatz* darstellt
+3) Erhalten Sie eine umfassende Beschreibung, was ein bestimmter *<u>Datensatz</u>* darstellt
 4) Sehen Sie, an wen Sie sich in Bezug auf diese *Datensätze* wenden können, um Hilfe zu erhalten.
 
 ## Eine etwas fortgeschrittenere Verwendung von Microsoft Purview

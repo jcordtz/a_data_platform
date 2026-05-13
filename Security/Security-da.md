@@ -85,10 +85,10 @@ HTML-smugling gør det muligt for en angriber at smugle en ondsindet kode ind i 
 ## Data og sikkerhed
 
 Datasikkerhed er et afgørende aspekt af enhver organisations drift. Det involverer at beskytte følsomme oplysninger mod uautoriseret adgang, korruption eller tyveri gennem hele dens livscyklus.
-Ved at implementere stærke *data*-sikkerhedsforanstaltninger kan organisationer hjælpe med at beskytte deres værdifulde aktiver, opfylde relevante krav til overholdelse af angivne standarder og bevare kundernes tillid til brugen af data.
+Ved at implementere stærke *<u>data</u>*-sikkerhedsforanstaltninger kan organisationer hjælpe med at beskytte deres værdifulde aktiver, opfylde relevante krav til overholdelse af angivne standarder og bevare kundernes tillid til brugen af data.
 
 Datasikkerhed er vigtig, fordi det hjælper organisationer med at beskytte sig mod cyberangreb, insidertrusler og menneskelige fejl, som alle kan føre til databrud. De fire centrale spørgsmål inden for data
-Sikkerhed er fortrolighed, integritet, tilgængelighed og overholdelse. Da data i stigende grad er målet for angribere, har organisationer brug for sikkerhed på tidspunktet for *data* for at holde data sikre og
+Sikkerhed er fortrolighed, integritet, tilgængelighed og overholdelse. Da data i stigende grad er målet for angribere, har organisationer brug for sikkerhed på tidspunktet for *<u>data</u>* for at holde data sikre og
 være i stand til at gendanne det hurtigere. Målet med datasikkerhed er at gøre dine data så modstandsdygtige som muligt over for enhver form for misbrug, som er angreb, fejl osv.
 
 Sammenfattende er datasikkerhed afgørende for at opretholde fortroligheden, integriteten og tilgængeligheden af en organisations data. Det hjælper med at beskytte værdifulde aktiver og overholde regler og standarder
@@ -220,7 +220,7 @@ Eksempler på sådanne regler er som flows:
 Klassifikationer er udtryk eller mønstre, der kan hjælpe med at identificere, hvilken type data der kan findes i en fil eller en kolonne i en tabel.
 Eksempler på sådanne klassifikationer er CPR-nummer, kørekortnummer, bankkontonummer osv.
 
-En kombination af klassificering hjælper ofte med at indstille den rigtige følsomhed til en given *data* eller *datasæt* - enten manuelt eller under en scanningsproces.
+En kombination af klassificering hjælper ofte med at indstille den rigtige følsomhed til en given *<u>data</u>* eller *<u>datasæt</u>* - enten manuelt eller under en scanningsproces.
 
 ### Politikker
 
@@ -252,9 +252,9 @@ I *figur 1* finder du flere måder at beskytte data på, som er tilgængelige i 
 
 **Identitetsbaseret adgangskontrol** – dækker muligheden for, at en given ressource kan tildeles en identitet (blive "et menneske"). Og så sørger du for, at adgang til en given lagerkonto kun gives til dette "menneske", og derfor skal du bruge denne applikation til at komme til dataene.
 
-**Krypteringsbaseret adgangskontrol** – dette er ikke rigtig adgangskontrol, fordi *data*-lageret vil være tilgængeligt, men jeg kan kun læse/bruge *data*, hvis jeg har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
+**Krypteringsbaseret adgangskontrol** – dette er ikke rigtig adgangskontrol, fordi *<u>data</u>*-lageret vil være tilgængeligt, men jeg kan kun læse/bruge *<u>data</u>*, hvis jeg har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
 
-**Fjernelsesbaseret adgangskontrol** – denne fremgangsmåde er kun mulig i **publiceringsområdet**. Denne tilgang bruger det aspekt af **publiceringsområdet**, at et datasætlager kun "lever så længe det bruges", i dette tilfælde "... bruges korrekt". Da denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*-lager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne den ressource, der er under angreb, hvis der er risiko for tab af *datasæt*.
+**Fjernelsesbaseret adgangskontrol** – denne fremgangsmåde er kun mulig i **publiceringsområdet**. Denne tilgang bruger det aspekt af **publiceringsområdet**, at et datasætlager kun "lever så længe det bruges", i dette tilfælde "... bruges korrekt". Da denne tilgang kræver evnen til at kunne genskabe et givet *<u>datasæt</u>*-lager, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne den ressource, der er under angreb, hvis der er risiko for tab af *<u>datasæt</u>*.
 
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](Security.md)
 [![dk](https://img.shields.io/badge/lang-da-red.svg)](Security-da.md)

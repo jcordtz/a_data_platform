@@ -70,9 +70,9 @@ Her er skitseret følgende:
 2. **Analytics** i denne situation bliver dataene mere aktive, da de vil blive brugt af slutbrugeren til at arbejde videre og få svar på nye spørgsmål. Dette gøres højst sandsynligt ved hjælp af et BI-værktøj som PowerBI.
 3. **AI/ML/GenAI** her bruges dataene til "simuleringer/forudsigelser". Og programmering finder sted, både programmering ved hjælp af kode såvel som no-code/low-code værktøjer. Programmeringen sker i de fleste tilfælde ved hjælp af Python, og de værktøjer, man vil møde her, dækker over produkter som Visual Studio/Eclipse over Azure AI Foundry til CoPilot Studio. Og jo mere man bruger no-code-værktøjer, jo mere skifter sproget fra Python til naturligt sprog ("ChatGPT-tale").
 4. **Delbar** : Når man har data, som man finder interessante, vil man højst sandsynligt gerne kunne dele dem. I de fleste tilfælde skal dette være en kontrolleret operation, så vi er sikre på, at den modtagende part er korrekt, hvilket afspejler den politik, vi bør have til at dække dette.
-5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *data* og *datasæt*.
+5. **Adgangskontrol** er den simple kendsgerning, at vi er nødt til at kontrollere, hvem der ser hvad. Dette er i dette dokument, der er dækket af emnerne *<u>data</u>* og *<u>datasæt</u>*.
 6. **Compliance/Governance** dækker over evnen til at dokumentere, hvem der har adgang til hvad, og sikre, at dette forbliver inden for vores definerede politik.
-7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og eventuel oprettelse, og dermed at nye *datasæt* automatisk dannes af dataplatformen.
+7. **Selvbetjening** er "Nirvana" for håndtering af data. Det betyder, at slutbrugerne selv kan anmode om adgang til og eventuel oprettelse, og dermed at nye *<u>datasæt</u>* automatisk dannes af dataplatformen.
 8. **Kilder** dækker over hvilke og hvorledes data bringes ind fra disse i dataplatformen. Se figur 2.
 
 ![Figur 1](images/slides/Slide4.png)
@@ -99,7 +99,7 @@ Enhver kombination af disse er "korrekt", det vigtige er, at det er dokumenteret
 ## Visionen
 Visionen for dataplatformen, der er beskrevet i dette dokument, er at være en platform, hvor **Governance** og **Compliance** er de vigtigste drivkræfter for at skabe adgang til data.
 
-Derfor er konceptet med et selvkonsistent *datasæt* et nøgleelement i denne tilgang.
+Derfor er konceptet med et selvkonsistent *<u>datasæt</u>* et nøgleelement i denne tilgang.
 
 Desuden skal platformen også kunne dække "hvad der måtte komme" og give en situation, hvor man kan sige - *hvis det ikke er i platformen i dag, vil det være der i morgen*.
 
@@ -135,26 +135,26 @@ Dette overordnede paradigme skal sikre at en dataplatform opfylder følgende ege
 
 11. **Feedback** - Arkitekturen skal løbende justeres og forbedres baseret på feedback fra brugen af dataplatformen.
 
-## *Data* og *datasæt*
+## *<u>data</u>* og *<u>datasæt</u>*
 
-Begreberne *data* og *datasæt* er dataplatformens "kernekomponenter".
+Begreberne *<u>data</u>* og *<u>datasæt</u>* er dataplatformens "kernekomponenter".
 
-Et meget vigtigt aspekt af især *data*, men også til en vis grad *datasæt* er, at et givet objekt skal kunne håndteres, vedligeholdes og sikres i sig selv, det vil sige ikke gennem nogen teknologikomponent som en database, derfor er **fil** håndtering det overordnede aspekt af dette.
+Et meget vigtigt aspekt af især *<u>data</u>*, men også til en vis grad *<u>datasæt</u>* er, at et givet objekt skal kunne håndteres, vedligeholdes og sikres i sig selv, det vil sige ikke gennem nogen teknologikomponent som en database, derfor er **fil** håndtering det overordnede aspekt af dette.
 
-Når udtrykket *data* bruges, refererer det til et enkelt dataobjekt som en fil eller en tabel, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
+Når udtrykket *<u>data</u>* bruges, refererer det til et enkelt dataobjekt som en fil eller en tabel, der kun indeholder dataene fra et givent objekt. Det kan f.eks. være en kildetabel som debitorer eller fakturaer.
 
-På den anden side, når udtrykket *datasæt* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.
+På den anden side, når udtrykket *<u>datasæt</u>* bruges, betyder det en samling af tabeller eller filer, der er forbundet med hinanden. Dette kan for eksempel være et Data Mart med kunde-, produkt- og tidsdimensioner og samt salgstal, også kendt som et stjerneskema.
 
-*Datasættet* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
+*<u>datasættet</u>* er nøglekomponenten i dataplatformen, og det har nogle specifikke egenskaber:
 
-- *Datasættet* er selvforsynende, hvilket betyder, at det ikke afhænger af andre kilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
-- Kun de kolonner/rækker, der er relevante for den opgave, der udføres, er til stede i *datasættet*.
-- Et *datasæt* er ikke versioneret eller understøtter kocepter som "slowly changing dimension tables". Er der behov for en ny versionaf et *datasæt* dannes der et nyt datasæt. Man kan eventuel via simpel navngivning (f.eks a'la dimensionX_v2) lave et paradigme der ligner versions styring.
-- Et *datasæt* tilhører en gruppe og ikke bestemte personer – i en Azure-konfiguration vil ejeren derfor være en gruppe med et Entra-id.
-- Et *datasæt* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
-- Adgang til et *datasæt* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
-- Et *datasæt* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer.
-- Et *datasæt* kan leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database eller en Kafka kø.
+- *<u>datasættet</u>* er selvforsynende, hvilket betyder, at det ikke afhænger af andre kilder. Den indeholder alle de data, der er behov for at understøtte den stillede opgave.
+- Kun de kolonner/rækker, der er relevante for den opgave, der udføres, er til stede i *<u>datasættet</u>*.
+- Et *<u>datasæt</u>* er ikke versioneret eller understøtter kocepter som "slowly changing dimension tables". Er der behov for en ny versionaf et *<u>datasæt</u>* dannes der et nyt datasæt. Man kan eventuel via simpel navngivning (f.eks a'la dimensionX_v2) lave et paradigme der ligner versions styring.
+- Et *<u>datasæt</u>* tilhører en gruppe og ikke bestemte personer – i en Azure-konfiguration vil ejeren derfor være en gruppe med et Entra-id.
+- Et *<u>datasæt</u>* bør have yderligere to grupper tilknyttet, én til oprettelse af indholdet og en anden med læse-adgang til data.
+- Adgang til et *<u>datasæt</u>* gives ved at føje enkeltpersoner til gruppen/grupperne, afhængigt af den opgave, de skal udføre.
+- Et *<u>datasæt</u>* er ikke bundet til en bestemt teknologi som for eksempel en relations database. Datasættet gemmes som filer, ofte som komma separeret (csv) eller parquet filer.
+- Et *<u>datasæt</u>* kan leveres via den teknologi der passer bedst til den pågældende opgave - som så kunne være en relations database eller en Kafka kø.
 
 ## Cloud-tilgang
 
@@ -182,7 +182,7 @@ I kapitlet "Eksempler på Implementeringer" er der beskrevet forskellige måder 
 
 Et andet centralt aspekt af skyen er, at "alt er software". Det betyder, at når vi for eksempel skal oprette en ny server, genereres de forskellige komponenter, som serveren bruger - som diske, netværkskort osv. - ved at sende kommandoer til cloud-infrastrukturen. Så vi kan altså bruge software til at producere disse komponenter.
 
-Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform bruges dette til for eksempel at oprette en relations database og herefter indlæse et givent *datasæt* i denne database, alt samme ved hjælp af kode.
+Dette er kendt som *Infrastruktur som kode* (IaC). I den beskrevne dataplatform bruges dette til for eksempel at oprette en relations database og herefter indlæse et givent *<u>datasæt</u>* i denne database, alt samme ved hjælp af kode.
 
 Denne model rejser også en diskussion om, hvilke elementer i den underliggende infrastruktur cloud-udbyderen såvel som kunden er ansvarlig for i de forskellige "siloer" af on-prem, IaaS, PaaS og SaaS. Dette diskuteres yderligere i [Cloud Miljøer](DataOps/Cloud-env-da.md)
 
@@ -190,33 +190,33 @@ Operationerne i denne model - kendt som Data Operations eller DataOps - diskuter
 
 ## Logisk arkitektur
 
-Dataplatformen arrangerer *data* og *datasæt* i forskellige områder i henhold til en logiske arkitektur, som vist på *Figur 2*. Dette for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt.
+Dataplatformen arrangerer *<u>data</u>* og *<u>datasæt</u>* i forskellige områder i henhold til en logiske arkitektur, som vist på *Figur 2*. Dette for at sikre, at vi kan overholde paradigmets "regler" som tidligere nævnt.
 
 ![figur 4](images/slides/Slide11.png)
 
 *Figur 4*
 
-Områderne repræsenterer forskellige tilstande af rejsen fra data til *datasæt* og dermed til rapportering og analyse. Med henvisning til *figur 4* kan de forskellige områder beskrives som følger:
+Områderne repræsenterer forskellige tilstande af rejsen fra data til *<u>datasæt</u>* og dermed til rapportering og analyse. Med henvisning til *figur 4* kan de forskellige områder beskrives som følger:
 
 **Kildesystemer** er ethvert system, hvor data skal udtrækkes (batch) fra, eller hvor data sendes fra (streames).
 
-**Ingest området** er der, hvor data fra kildesystemerne placeres. Data opbevares i deres oprindelige format. Hvis dataene er "tabeldata", foretages der ingen ændringer i nogen rækker eller kolonner, ikke engang af selve dataformatet. Data gemmes i filer - normalt i komma separeret eller parquet eventuel i deres binære format - som for eksempel vil gælde video, billede eller lyd. *Ingest området* vil have en mappestruktur, der gør det nemt at identificere datakilden. Der sker ikke en opdatering eller overskrivning af eksisterende filer - hvilket betyder, at et nyt load vil oprette nye filer. Om dette load er et ”full load” eller der hentes ”ændringer siden sidst” afhænger af behov samt muligheder i de givne kilder.
+**ingest området (bronze)** er der, hvor data fra kildesystemerne placeres. Data opbevares i deres oprindelige format. Hvis dataene er "tabeldata", foretages der ingen ændringer i nogen rækker eller kolonner, ikke engang af selve dataformatet. Data gemmes i filer - normalt i komma separeret eller parquet eventuel i deres binære format - som for eksempel vil gælde video, billede eller lyd. *Ingest området* vil have en mappestruktur, der gør det nemt at identificere datakilden. Der sker ikke en opdatering eller overskrivning af eksisterende filer - hvilket betyder, at et nyt load vil oprette nye filer. Om dette load er et ”full load” eller der hentes ”ændringer siden sidst” afhænger af behov samt muligheder i de givne kilder.
 
 Over tid skal filer i *Ingest området* arkiveres eller slettes, hvis lovkrav kræver dette (såsom GDPR).
 
-I **transform området** hentes data fra *Ingest området* og ændres til et ”teknisk brugbart” format.
+I **transform området (sølv)** hentes data fra *Ingest området* og ændres til et ”teknisk brugbart” format.
 
 En opgave er derfor at transformere data således at de har det samme format – det kan for eksempel være at ”standardisere” de "vanskelige" datatyper, såsom datoer (f.eks. opdeling af tid fra datoen i en separat kolonne) og decimaltal ("." eller ",." som separatorer).
 
 De enkelte data elementer i *Transform området* er ”selvstændige objekter”. Det betyder, at de ikke har en blanding af data fra et eller flere kildesystemer, ikke forfines på en måde så den oprindelige information ikke er til stede og at der ikke laves en begrænsning i antallet af rækker eller kolonner. Man kan dog evt. overveje at adskille ”dårlige rækker” i et selvstændigt data objekt.  
 
-*Data* i *Transform området* forefindes således som "rene" objekter, der er praktiske at arbejde med, når de bruges til at danne *datasæt*.
+*<u>data</u>* i *Transform området* forefindes således som "rene" objekter, der er praktiske at arbejde med, når de bruges til at danne *<u>datasæt</u>*.
 
 En anden opgave er at sikre, at de forskellige data, vi ønsker at have tilgængelige på dette område, let kan sammenføjes, hvilket betyder, at det enkelte dataobjekt har de "referencenøgler", der er nødvendige for at kunne forbinde med andre dataobjekter.
 
-I **publish området** skabes de *datasæt*, der er nødvendige for at opfylde de forskellige forretningsbehov, der har behov for data fra dataplatformen. Her anvendes modeller som for eksempel stjerneskemaer og leverance af disse *datasæt* sker oftest via data marts (relations databaser).
+I **publish området (guld)** skabes de *<u>datasæt</u>*, der er nødvendige for at opfylde de forskellige forretningsbehov, der har behov for data fra dataplatformen. Her anvendes modeller som for eksempel stjerneskemaer og leverance af disse *<u>datasæt</u>* sker oftest via data marts (relations databaser).
 
-*Publish området* er det sted, hvor slutbrugerne af dataplatformen får adgang til de *datasæt* de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
+*Publish området* er det sted, hvor slutbrugerne af dataplatformen får adgang til de *<u>datasæt</u>* de skal bruge og ved hjælp af de værktøjer, de finder mest egnede.
 
 >[!NOTE]
 >Dette paradigme er i dag nok bedre kendt som *"medallion data architecture"*, hvor *bronze* er *ingest området*, *sølv* er >*transform* og *guld* er *publish*. *Medallion* arkitekturen indeholder ikke et *consume område*. Dette dokument vil bruge begreberne *ingest*, *transform*, *publish*, og *consume* da det afspejler hvad de kunder der er inspiration til dette dokument oftest bruger.
@@ -257,9 +257,9 @@ Vi vil anse databehandling i realtid som et særligt tilfælde og undersøge det
 
 Realtid kommer i forskellige varianter, i dette dokument vil vi bruge følgende termer
 
-- Realtid – *data*, der leveres umiddelbart efter afhentning.
-- Næsten realtid – *data*, der er "forsinket" på grund af kommunikation eller behandling.
-- Dynamiske data – *data*, der opdateres og kræver opmærksomhed.
+- Realtid – *<u>data</u>*, der leveres umiddelbart efter afhentning.
+- Næsten realtid – *<u>data</u>*, der er "forsinket" på grund af kommunikation eller behandling.
+- Dynamiske data – *<u>data</u>*, der opdateres og kræver opmærksomhed.
 
 Dataplatformsmetoden i dette dokument er **ikke** egnet til realtidssituationen, men den fungerer godt til nær realtid og dynamiske data. Dynamiske data – som er baseret på hændelser – behandles på samme måde som nær realtid data i dataplatformen.
 
@@ -273,7 +273,7 @@ For at illustrere dette kan man forestille sig et tog, der er forsinket. Systeme
 
 *Figur 5*
 
-Disse *data* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
+Disse *<u>data</u>* gemmes dog **også** i dataplatformen, hvor der er noget tid, men ikke meget, til at generere et forslag til alternative ruter for de enkelte passagerer, der venter på det forsinkede tog. Disse oplysninger kan derefter sendes til en app på deres smartphones.
 
 ## Endnu et særligt tilfælde - ChatGPT/CoPilot
 
@@ -303,7 +303,7 @@ Azure AI Search er et eksempel på en sådan "database", der giver indekserings-
 
 Gennem kode og andre komponenter kan man designe en omfattende RAG-løsning, der inkluderer alle elementerne til generativ AI over dit proprietære indhold.
 
-På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til, så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer *datasæt* med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes efter brug.
+På baggrund af ovenstående skal vi sikre, at de data, vi leverer til de skabte løsninger, passer præcis til det, brugeren har adgang til, så jordforbindelsen og dermed vektordatabasen kun indeholder dette. Dette kan gøres via publiceringslaget, da dette lag repræsenterer *<u>datasæt</u>* med det nøjagtige indhold. Så opgaven er at "indlæse" de vektordatabaser, der bruges - og sørge for, at disse stoppes/fjernes efter brug.
 
 ## Og et tredje special-tilfælde – Agentic AI / Agents
 
@@ -373,7 +373,7 @@ Rollebaseret adgangskontrol – også kendt som RBAC. Dette styrer adgangen til 
 
 **Krypteringsbaseret adgangskontrol** - dette er ikke rigtig adgangskontrol, fordi datalagringen vil være tilgængelig, men man kan kun læse / bruge dataene, hvis man har nøglen til dekryptering. Så det kan (bør) være en del af dit forsvar.
 
-**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i *publish rområdet*. Denne tilgang bruger det aspekt af *publish området*, at et *datasæt* kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet *datasæt*, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
+**Sletningsbaseret adgangskontrol** – denne tilgang er kun muligt i *publish rområdet*. Denne tilgang bruger det aspekt af *publish området*, at et *<u>datasæt</u>* kun "lever så længe det bruges", i dette tilfælde "... bliver brugt korrekt". Fordi denne tilgang kræver evnen til at kunne genskabe et givet *<u>datasæt</u>*, kan dette også bruges som en forsvarsmekanisme. Så hvis et angreb realiseres, er den nemmeste måde at stoppe dette på blot at fjerne ressourcen under angreb, hvis der er risiko for tab af data.
 
 ## DataOps
 
@@ -445,13 +445,13 @@ Figur 10 viser et – forenklet- eksempel på en sådan arbejdsgang.
 
 *Figur 10*
 
-I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i *datasæt* for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
+I forbindelse med den løbende udvikling og test har man ofte brug for at kunne håndtere data i ikke-produktionsmiljøer. Man har sandsynligvis ikke tilladelse til eller ønsker ikke at bruge produktionsdata i disse miljøer. Til testformål kan man også introducere defekte data i *<u>datasæt</u>* for at kunne håndtere eventuelle scenarier i forbindelse med undtagelser.
 
 ## En praktisk tilgang
 
 Baseret på diskussionerne i dette dokument viser *figur 11*, hvordan dette kunne se ud i "det virkelige liv". Til venstre i denne figur ser man kildesystemerne, der ejes af "nogen", normalt kendt som system-ejerne. Disse system-ejere er ansvarlige for at sikre, at dataplatformen har adgang til de rigtige systemer. Så på figuren har vi 3 systemer kaldet App 1, App 2 og App 3, og de ejes hver især af en systemejer hvis navn er System ejer 1 til 3.
 
-I midten finder vi dataplatformen med områderne *ingest*, *transform* og *publish*. I området *ingest* ser man, at data hentes "en-til-en" fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. På højre side af figuren ses, hvad der kræves af slutbrugerne i *publish området*. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige *datasæt* kaldet Data produkt A er en ligetil proces.
+I midten finder vi dataplatformen med områderne *ingest*, *transform* og *publish*. I området *ingest* ser man, at data hentes "en-til-en" fra de forskellige app 1 til 3. Derefter har vi en transformationsproces, der forfiner disse rå data til en brugbare tilstand. På højre side af figuren ses, hvad der kræves af slutbrugerne i *publish området*. Den første bruger, der kaldes Data-bruger 1, har brug for data, der kun kommer fra App 1, så det nødvendige *<u>datasæt</u>* kaldet Data produkt A er en ligetil proces.
 
 Data-brugeren 2 har brug for data, der kommer fra både App 1 og 2, men data, der findes i App 3, skal frasorteres dette datasæt, så i dette tilfælde er processen lidt mere kompliceret, men fordi *transform området* repræsenterer et område, hvor data let kan kombinere (og også udelukkes), er fundamentet for at gøre dette på plads, derfor gøres det ret nemt.
 
@@ -463,7 +463,7 @@ Det samme gælder Data produkt C, som repræsenterer data fra App 2 eksklusive d
 
 Dette repræsenterer også, hvordan dataplatformen skal være i stand til at understøtte forretningsbehovene hurtigt og problemfrit.
 
-Så den samlede tilgang **hvis et *datasæt* ikke er tilgængelig i dag, bliver det klar til i morgen** kan da understøttes.
+Så den samlede tilgang **hvis et *<u>datasæt</u>* ikke er tilgængelig i dag, bliver det klar til i morgen** kan da understøttes.
 
 ## Eksempel på en implementering
 

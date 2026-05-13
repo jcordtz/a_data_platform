@@ -9,7 +9,7 @@
 
 ## Roller
 
-Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og *datasæt* i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.
+Dataplatformen ligger op til at bruge roller som en mekanisme til at kontrollere adgangen til data og *<u>datasæt</u>* i platformen. Disse roller bruges til at give de rigtige ansvarsområder til personer, der arbejder med platformen.
 
 Hvordan rollerne er forbundet med de enkelte personer og on nogle af disse har mere end én rolle, er op til den enkelte virksomhed/institution samt det givne behov og tilgængelige ressourcer.
 

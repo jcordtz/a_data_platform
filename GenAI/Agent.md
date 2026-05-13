@@ -25,8 +25,8 @@ It is difficult to put into a standard ERP/CRM system or into a traditional data
 datamart/"one-version of the truth" setup.
 
 So the idea arose that instead of trying to get all kind of crisis in to a standard setup, what
-if each element (in this context read *dataset*) had it is own agent. Each of these agents should
-then provide a description of what this *dataset* contains ("columns"), (maybe) a description per column, what is the *key* and how can this *dataset* be combined with other *datasets*.
+if each element (in this context read *<u>dataset</u>*) had it is own agent. Each of these agents should
+then provide a description of what this *<u>dataset</u>* contains ("columns"), (maybe) a description per column, what is the *key* and how can this *<u>dataset</u>* be combined with other *<u>dataset</u>*.
 
 In this section we will call these agents *table-connected agents*.
 
@@ -34,7 +34,7 @@ In this section we will call these agents *table-connected agents*.
 
 Table-connected agents have these characteristics:
 
-* **Automated entities** that perform operations on a single, designated *dataset*.
+* **Automated entities** that perform operations on a single, designated *<u>dataset</u>*.
 * **Event-driven** so that they only provide content if appropriate.
 * **Governed** meaning that the individual agent ensures that the requester can get a response.
 * **Data Quality** for the individual agent is handled by the agent itself.

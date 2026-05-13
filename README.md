@@ -69,7 +69,7 @@ This "piece" of data is most likely being used in different ways. Here is outlin
 2. **Analytics** in this situation the data becomes mores active as they will be used by the end-user to work further and get answers to new questions. This is most likely done using a BI tool like PowerBI.
 3. **AI/ML/GenAI** here the data is used for "simulations/predictions". And programming takes place, both programming using code as well as no-code/low-code tools. The programming is in most case done using Python and the tools you would meet here covers products like Visual Studio/Eclipse over Azure AI Foundry to CoPilot Studio. And the more you use no-code tools the more the language changes from Python to natural language ("ChatGPT talk").
 4. **Shareable** when you have data that you find interesting you most likely wants to be able share those. In most case this needs to be a controlled operation so that we are sure that the receiving part is correct reflecting the politics we should have covering this.
-5. **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *data* and *datasets*.
+5. **Access Control** is the simple fact that we need to control who sees what. This is in this document covered by the topics *<u>data</u>* and *<u>dataset</u>*.
 6. **Compliance/Governance** covers the ability to document who is accessing what and ensuring this stays within our defined politics.
 7. **Self-Service** being the "Nirvana" of handling data. The means that the end-users can request access to and - maybe - creation of new datasets handled automatically by the data platform.
 8. **Sources** covers which and how data is brought into the data platform. See figure 2.
@@ -102,7 +102,7 @@ Any combination of these are "correct", the important part is that it is documen
 
 The vision of the data platform described in this document is to have a platform where **Governance** and **Compliance** are the main drivers for providing access to data.
 
-Hence the concept of a self consistent *dataset* is a key element of this approach.
+Hence the concept of a self consistent *<u>dataset</u>* is a key element of this approach.
 
 Also to provide a platform that can cover "what ever comes" and provide a situation where you can actually say *if it is not in the platform today, it will be there tomorrow*.
 
@@ -126,26 +126,26 @@ Agility - The focus is on minimum viable product (MVP) and ongoing feedback to p
 9. **Reuse** - Solutions should be designed for reuse. The architecture should include templates for solution designs that speed up time-to-market and ensure standardization.
 10. **Feedback** - The architecture should be continuously adjusted and improved based on feedback from the usage of the data platform.
 
-## *Data* and *Datasets*
+## *<u>data</u>* and *<u>dataset</u>*
 
-The concepts of *data* and *datasets* are **core components** of the data platform.
+The concepts of *<u>data</u>* and *<u>dataset</u>* are **core components** of the data platform.
 
-A very important aspect of especially *data* but also to some degree *datasets* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling is the overall aspect of this.
+A very important aspect of especially *<u>data</u>* but also to some degree *<u>dataset</u>* is that a given object must be able to be handled, maintained and secured by itself, that is not through any technology component like a database, hence **file** handling is the overall aspect of this.
 
-When the term *data* is used, it refers to a single data object like a file or table that contains only the *data* for that given object. For example, a source table like customers or invoices.
+When the term *<u>data</u>* is used, it refers to a single data object like a file or table that contains only the *<u>data</u>* for that given object. For example, a source table like customers or invoices.
 
-On the other hand, when the term *dataset* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
+On the other hand, when the term *<u>dataset</u>* is used, it implies a collection of tables or files that are connected to each other. This could be a data mart setup with customer, product and time dimensions and a sales fact, also known as a star schema.
 
-The *dataset* is the key component of the data platform, and it has some specific characteristics:
+The *<u>dataset</u>* is the key component of the data platform, and it has some specific characteristics:
 
-- The *dataset* is self-sufficient, meaning it does not depend on any other sources. It contains all the information needed.
+- The *<u>dataset</u>* is self-sufficient, meaning it does not depend on any other sources. It contains all the information needed.
 - Only the columns/rows that are relevant for the task being supported are included.
-- A *dataset* is not versioned and does not support concepts such as "slowly changing dimension tables." If a new version of a *dataset* is needed, a new *dataset* is created. A simple naming convention (e.g., à la dimensionX_v2) can be used to establish a paradigm that resembles version control.
-- A *dataset* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
-- A *dataset* should have two more groups associated with it, one for creating the content and another for read-only access.
-- Access to a *dataset* is granted by adding individuals to the group(s) depending on the task they need to perform.
-- A *dataset* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based.
-- A *dataset* can be provided within the appropriate technology for the task in question – like a relational database or a Kafka queue.
+- A *<u>dataset</u>* is not versioned and does not support concepts such as "slowly changing dimension tables." If a new version of a *<u>dataset</u>* is needed, a new *<u>dataset</u>* is created. A simple naming convention (e.g., à la dimensionX_v2) can be used to establish a paradigm that resembles version control.
+- A *<u>dataset</u>* belongs to a group and not to specific individuals - in an Azure setup, the owner would be a group with an Entra ID.
+- A *<u>dataset</u>* should have two more groups associated with it, one for creating the content and another for read-only access.
+- Access to a *<u>dataset</u>* is granted by adding individuals to the group(s) depending on the task they need to perform.
+- A *<u>dataset</u>* is not tied to a specific technology like a relational database. It is stored as files, often csv or parquet based.
+- A *<u>dataset</u>* can be provided within the appropriate technology for the task in question – like a relational database or a Kafka queue.
 
 ## Cloud aspects
 
@@ -169,7 +169,7 @@ This also translates to the way you ask for *things* in a cloud - ask how you ca
 
 A key aspect of the cloud is that "everything is software". This means that when the need is - let's say - for a new Linux server, the various components that the server uses - like disks, network cards etc. - these components are generated by sending commands to the cloud infrastructure. So, we rely on software to "produce" these components.
 
-This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a *dataset* into this database using code.
+This is known as infrastructure as code (IaC). In the data platform, this is used to create a relational database and load a *<u>dataset</u>* into this database using code.
 
 This model also raises a discussion around which elements in the underlying infrastructure the cloud provider as well as the customer is responsible for in the different "silos" of on-prem, IaaS, PaaS and SaaS. This is discussed further in [Cloud Environments](DataOps/Cloud-env.md)
 
@@ -177,35 +177,32 @@ The operations of this model - known as Data Operations, or DataOps - is further
 
 ## Logical architecture
 
-The data platform arranges *data* and *datasets* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach can comply with the "rules" of the paradigm as mentioned previously.
+The data platform arranges *<u>data</u>* and *<u>dataset</u>* in different areas according to the logical architecture as shown on Figure 2. This is to ensure that the approach can comply with the "rules" of the paradigm as mentioned previously.
 
 ![Figure 4](images/slides/Slide11.png)
 
 *Figure 4*
 
-The areas represent different states of the journey from *data* to *datasets* and thereby to reporting and analytics.
+The areas represent different states of the journey from *<u>data</u>* to *<u>dataset</u>* and thereby to reporting and analytics.
 
 Referring to *Figure 4* the characteristics of the different areas are as follows:
 
-**Source systems** are any system where *data* must be extracted from (batch) or where *data* is sent from (streamed).
+**Source systems** are any system where *<u>data</u>* must be extracted from (batch) or where *<u>data</u>* is sent from (streamed).
 
-The **ingest area** is where *data* from the source systems arrives. *Data* is kept with its original content. If the *data* is "table" data, no changes are made to any rows or columns, not even the format of the data. *Data* is stored in files - usually csv or parquet or in their binary format - like for videos, pictures, or sound. The *ingest area* should have a directory structure that makes it easy to identify the source of the data.
+The **ingest area (bronze)** is where *<u>data</u>* from the source systems arrives. *<u>data</u>* is kept with its original content. If the *<u>data</u>* is "table" data, no changes are made to any rows or columns, not even the format of the data. *<u>data</u>* is stored in files - usually csv or parquet or in their binary format - like for videos, pictures, or sound. The *ingest area* should have a directory structure that makes it easy to identify the source of the data.
 
 Also, there is no updating or overwriting of existing files - meaning that a new load creates new files. Over time, files in the *ingest area* should be archived or deleted if legal requirements demand this (such as GDPR).
 
-*Data* is technically modified to comply with usable standards in the **transform area**. The *data* objects in this area are independent. This means that they do not have a mix of *data* from the source system, are not changed to be a golden record and do not restrict the number of rows or columns. They are "clean" objects that are convenient to work with when used for creating *datasets*.
+*<u>data</u>* is technically modified to comply with usable standards in the **transform area (silver)**. The *<u>data</u>* objects in this area are independent. This means that they do not have a mix of *<u>data</u>* from the source system, are not changed to be a golden record and do not restrict the number of rows or columns. They are "clean" objects that are convenient to work with when used for creating *<u>dataset</u>*.
 
-From a technical perspective, the main task for transforming *data* is to make sure they have the same format for some of the "difficult" *data* types, such as dates (e.g. splitting time from the date into a separate column) and decimal number ("." or "," as separators). The second main task is to ensure that the different *data* we want to have available in this area are easily joinable, meaning that the individual *data* object has the "reference keys" needed to be able to join with other *data* objects.
+From a technical perspective, the main task for transforming *<u>data</u>* is to make sure they have the same format for some of the "difficult" *<u>data</u>* types, such as dates (e.g. splitting time from the date into a separate column) and decimal number ("." or "," as separators). The second main task is to ensure that the different *<u>data</u>* we want to have available in this area are easily joinable, meaning that the individual *<u>data</u>* object has the "reference keys" needed to be able to join with other *<u>data</u>* objects.
 
-In the **publish area**, we create the *datasets* that are needed to meet the various business needs that require *data* from the data platform. We will apply techniques like star schemas and deliver these *datasets*  in what are commonly called *data* marts.
+In the **publish area (gold)**, we create the *<u>dataset</u>* that are needed to meet the various business needs that require *<u>data</u>* from the data platform. We will apply techniques like star schemas and deliver these *<u>dataset</u>*  in what are commonly called *<u>data</u>* marts.
 
-The **consume area** is where the end users of the data platform will access the *datasets* from the *publish area* using the tools they find most suitable.
+The **consume area** is where the end users of the data platform will access the *<u>dataset</u>* from the *publish area* using the tools they find most suitable.
 
 >[!Note]
->The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the *ingest area*, *silver* is
->*transform* and *gold* is *publish*. The *medallion architecture* does not reflect on the *consume area*. This document will primarily use the
->terms *ingest*, *transform*, *publish*, and *consume* as this reflects what has been used at the customers that is the inspiration for
->this document. And it also reflects better the purpose of the different areas in the context of this document.
+>The paradigm described above is today also known as the *"Medallion data architecture"*, where *bronze* is the *ingest area*, *silver* is *transform* and *gold* is *publish*. The *medallion architecture* does not reflect on the *consume area*. This document will often use the terms *ingest*, *transform*, *publish*, and *consume* as this reflects what has been used at the customers that is the inspiration for this document. And it also reflects better the purpose of the different areas in the context of this document.
 
 ### Data platform and the Data Mesh paradigm
 
@@ -246,13 +243,13 @@ We will approach Real Time data processing as a particular case and examine it f
 
 Real Time comes in different flavours, in this document we will use the following terms
 
-- Real Time – *data* that is delivered immediately after collection.
-- Near Real Time – *data* that is “delayed” due to communication or processing.
-- Dynamic data – *data* that is updated and needs attention.
+- Real Time – *<u>data</u>* that is delivered immediately after collection.
+- Near Real Time – *<u>data</u>* that is “delayed” due to communication or processing.
+- Dynamic data – *<u>data</u>* that is updated and needs attention.
 
 The data platform method in this document is **not** suitable for the Real Time situation, but it works well for Near Real Time and Dynamic Data. Dynamic data – which is based on events – is processed in the same manner as Near Real Time data in the data platform.
 
-The general approach is that any or all real time *data* is also kept in the *ingest area* for more processing. This enables the data platform to have features that can support a Real Time process where appropriate, but also to manage all knowledge that can be generated over time from the Real Time situations. This can then help to avoid an undesired event from occurring - such as a train delay.
+The general approach is that any or all real time *<u>data</u>* is also kept in the *ingest area* for more processing. This enables the data platform to have features that can support a Real Time process where appropriate, but also to manage all knowledge that can be generated over time from the Real Time situations. This can then help to avoid an undesired event from occurring - such as a train delay.
 
 Or give more detailed information about a goal event in a football match and then being able to change odds rapidly based on the historical data available in the data platform.
 
@@ -262,7 +259,7 @@ To illustrate this, imagine a train that is delayed. The system that displays th
 
 *Figure 5*
 
-However, this *data* is **also** stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones.
+However, this *<u>data</u>* is **also** stored in the data platform, where there is some time, but not much, to generate a suggestion for alternative routes for the individual passengers who are waiting for the delayed train. This information can then be sent to an app on their smartphones.
 
 ## Another *special* case - ChatGPT/CoPilot
 
@@ -328,7 +325,7 @@ In this section, we will explore how to use the six environments for implementin
 
 ## Data Policies
 
-To control the *data* policies, we need to understand which environment we are working in. This document uses 5 environment types in the discussing of the processes.
+To control the *<u>data</u>* policies, we need to understand which environment we are working in. This document uses 5 environment types in the discussing of the processes.
 
 1. Sandbox – environment used to test functionality in each service. These environments do NOT contain any business/company data.
 2. Project rooms - These environments are used for establishing environments containing tools and data used to fulfill a development task.
@@ -340,9 +337,9 @@ As mentioned you can find projects handling the establishment of such environmen
 
 ## Data and security
 
-Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle. By implementing strong *data* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
+Data security is a crucial aspect of any organization's operations. It involves protecting sensitive information from unauthorized access, corruption, or theft throughout its entire lifecycle. By implementing strong *<u>data</u>* security measures, organizations can help protect their valuable assets, meet relevant compliance requirements, and maintain customer trust in the usage of data.
 
-Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *data* to keep data safe and recover it faster. The goal of data security is to make your data resilient against any kind of misuse that being attacks, errors etc.
+Data security is important because it helps organizations guard against cyber attacks, insider threats, and human error, all of which can lead to data breaches. The four key issues in data security are confidentiality, integrity, availability, and compliance. As data is increasingly the target of attackers, organizations need security at the point of *<u>data</u>* to keep data safe and recover it faster. The goal of data security is to make your data resilient against any kind of misuse that being attacks, errors etc.
 
 In summary, data security is essential for maintaining the confidentiality, integrity, and availability of an organization's data. It helps protect valuable assets, meet compliance requirements, and maintain customer trust.
 
@@ -363,9 +360,9 @@ In *Figure 8* you will find several ways to protect data which are available in 
 
 **Identity Based Access Control** – covers the capability that a given resource can be assigned an identity (becoming "a human"). And then you make sure that access to a given storage account is only provided to this "human" and hence you need to use this application to get to the data.
 
-**Encryption Based Access Control** – this not really Access Control, because the *data* storage will be accessible, but I can only read/use the *data* if I have the Key for decryption. So, it can(should) be part of your defense.
+**Encryption Based Access Control** – this not really Access Control, because the *<u>data</u>* storage will be accessible, but I can only read/use the *<u>data</u>* if I have the Key for decryption. So, it can(should) be part of your defense.
 
-**Removal Based Access Control** – this approach is only feasible in the *publish area*. This approach utilizes the aspect of the *publish area* that a *dataset* store only "lives as long as being used", in this case "...being used correctly". Because this approach requires the ability to be able to recreate a given *dataset* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *dataset* loss.
+**Removal Based Access Control** – this approach is only feasible in the *publish area*. This approach utilizes the aspect of the *publish area* that a *<u>dataset</u>* store only "lives as long as being used", in this case "...being used correctly". Because this approach requires the ability to be able to recreate a given *<u>dataset</u>* store, this can also be used as a defense mechanism. So, if an attack is realized the easiest way to stop this is to simply remove the resource under attack if there is a risk of *<u>dataset</u>* loss.
 
 ## Data Operations
 
@@ -449,7 +446,7 @@ On the left in this figure, you see the source system which is owned by "someone
 
 In the middle we find the data platform with the *Ingest*, *Transform* and *publish area*. In the *ingest area* you see that data is taken one-to-one from the different App 1 to 3. Then we have a transform process that refines these raw data into their usable state.
 
-Then on the right side of the figure we see what is required by the end-users in the *consume area*. The first user called data User 1 needs *data* that only comes from App 1, so the *dataset* needed called *data* Product A is a straightforward process.
+Then on the right side of the figure we see what is required by the end-users in the *consume area*. The first user called data User 1 needs *<u>data</u>* that only comes from App 1, so the *<u>dataset</u>* needed called *<u>data</u>* Product A is a straightforward process.
 
 The Data User 2 needs data that comes from both App 1 and 2, but data present in App 3 most be excluded from that dataset, so in this case the process is a little more complicated, but because the *transform area* represents an area where easily can combine (and also exclude) data the fundamentals for doing this is in place, hence it be done rather smoothly.
 

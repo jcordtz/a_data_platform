@@ -66,7 +66,7 @@ Dieses "Stück" Daten wird höchstwahrscheinlich auf unterschiedliche Weise verw
 2. **Analytics** In dieser Situation werden die Daten aktiver, da sie vom Endbenutzer verwendet werden, um weiter zu arbeiten und Antworten auf neue Fragen zu erhalten. Dies geschieht höchstwahrscheinlich mit einem BI-Tool wie PowerBI.
 3. **AI/ML/GenAI** hier werden die Daten für "Simulationen/Vorhersagen" verwendet. Und es wird programmiert, sowohl mit Code als auch mit No-Code/Low-Code-Tools. Die Programmierung erfolgt in den meisten Fällen mit Python und die Tools, die Sie hier treffen würden, decken Produkte wie Visual Studio/Eclipse über Azure AI Foundry bis hin zu CoPilot Studio ab. Und je mehr Sie No-Code-Tools verwenden, desto mehr ändert sich die Sprache von Python zu natürlicher Sprache ("ChatGPT-Gespräch").
 4. **Teilbar** Wenn Sie Daten haben, die Sie interessant finden, möchten Sie diese höchstwahrscheinlich teilen können. In den meisten Fällen muss dies eine kontrollierte Operation sein, damit wir sicher sind, dass der empfangende Teil korrekt ist und die Politik widerspiegelt, die wir darüber haben sollten.
-5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *Daten* und *Datensätze* behandelt.
+5. **Zugriffskontrolle** ist die einfache Tatsache, dass wir kontrollieren müssen, wer was sieht. Dies wird in diesem Dokument in den Themen *<u>Daten</u>* und *Datensätze* behandelt.
 6. **Compliance/Governance** umfasst die Möglichkeit, zu dokumentieren, wer auf was zugreift, und sicherzustellen, dass dies innerhalb unserer definierten Richtlinien bleibt.
 7. **Self-Service** ist das "Nirwana" des Datenumgangs. Das bedeutet, dass der Endbenutzer den Zugriff auf und - vieleicht - die Erstellung neuer Datensätze automatisch von der Datenplattform abgewickelt wird.
 8. **Quellen** beschreibt, wie und welche Daten in die Datenplattform gebracht werden. Siehe nächste Abbildung.
@@ -129,24 +129,24 @@ Dieses übergeordnete Paradigma soll sicherstellen, dass eine Datenplattform die
 
 10. **Feedback** - Die Architektur muss basierend auf dem Feedback aus der Nutzung der Datenplattform kontinuierlich angepasst und verbessert werden.
 
-## *Daten* und *Datensatz*
+## *<u>Daten</u>* und *<u>Datensatz</u>*
 
-Die Konzepte *data* und *dataset* sind die "Kernkomponenten" der Datenplattform.
+Die Konzepte *<u>data</u>* und *<u>dataset</u>* sind die "Kernkomponenten" der Datenplattform.
 
-Ein sehr wichtiger Aspekt insbesondere von *Daten*, aber auch bis zu einem gewissen Grad *Datensätze* ist, dass ein gegebenes Objekt in der Lage sein muss, von sich selbst gehandhabt, gepflegt und gesichert zu werden, d.h. nicht durch eine Technologiekomponente wie eine Datenbank, daher ist die **file-handhabung** der Gesamtaspekt davon.
+Ein sehr wichtiger Aspekt insbesondere von *<u>Daten</u>*, aber auch bis zu einem gewissen Grad *Datensätze* ist, dass ein gegebenes Objekt in der Lage sein muss, von sich selbst gehandhabt, gepflegt und gesichert zu werden, d.h. nicht durch eine Technologiekomponente wie eine Datenbank, daher ist die **file-handhabung** der Gesamtaspekt davon.
 
-Wenn der Begriff *data* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
+Wenn der Begriff *<u>data</u>* verwendet wird, bezieht er sich auf ein einzelnes Datenobjekt, z. B. eine Tabelle oder Datei, die nur die Daten eines bestimmten Objekts enthält. Dies kann z. B. eine Quelltabelle wie Debitorenbuchhaltung oder Rechnungen sein.
 
-Wenn hingegen der Begriff *Datensatz* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt. Der *Datensatz* ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
+Wenn hingegen der Begriff *<u>Datensatz</u>* verwendet wird, bedeutet dies eine Sammlung von Tabellen oder Dateien, die miteinander verbunden sind. Das kann zum Beispiel ein Data Mart mit Kunden-, Produkt- und Zeitdimensionen sowie Verkaufszahlen sein, auch Sternkarte genannt. Der *<u>Datensatz</u>* ist die Schlüsselkomponente der Datenplattform und weist einige spezifische Merkmale auf:
 
-- Der *Datensatz* ist in sich geschlossen, d. h. er ist nicht von anderen Quellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
-- Nur die Spalten/Zeilen, die für die ausgeführte Aufgabe relevant sind, sind im *Datensatz* vorhanden.
-- Ein *Datensatz* ist nicht versioniert und unterstützt keine Konzepte wie „Slowly Changing Dimension Tables“. Wenn eine neue Version eines Datensatzes benötigt wird, wird ein neuer *Datensatz* erstellt. Durch eine einfache Namenskonvention (z. B. à la dimensionX_v2) kann ein Paradigma geschaffen werden, das einer Versionsverwaltung ähnelt.
-- Ein *Datensatz* gehört zu einer Gruppe und nicht zu bestimmten Personen – daher ist der Besitzer in einer Azure-Konfiguration eine Gruppe mit einer Entra ID.
-- Einem *Datensatz* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
-- Der Zugriff auf einen *Datensatz* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
-- Ein *Datensatz* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das *dataset* wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien.
-- Ein *Datensatz* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank order ein Kafka Queue sein.
+- Der *<u>Datensatz</u>* ist in sich geschlossen, d. h. er ist nicht von anderen Quellen abhängig. Es enthält alle Daten, die zur Unterstützung der anstehenden Aufgabe benötigt werden.
+- Nur die Spalten/Zeilen, die für die ausgeführte Aufgabe relevant sind, sind im *<u>Datensatz</u>* vorhanden.
+- Ein *<u>Datensatz</u>* ist nicht versioniert und unterstützt keine Konzepte wie „Slowly Changing Dimension Tables“. Wenn eine neue Version eines Datensatzes benötigt wird, wird ein neuer *<u>Datensatz</u>* erstellt. Durch eine einfache Namenskonvention (z. B. à la dimensionX_v2) kann ein Paradigma geschaffen werden, das einer Versionsverwaltung ähnelt.
+- Ein *<u>Datensatz</u>* gehört zu einer Gruppe und nicht zu bestimmten Personen – daher ist der Besitzer in einer Azure-Konfiguration eine Gruppe mit einer Entra ID.
+- Einem *<u>Datensatz</u>* sollten zwei zusätzliche Gruppen zugeordnet sein, eine für die Erstellung des Inhalts und eine andere mit Lesezugriff auf Daten.
+- Der Zugriff auf einen *<u>Datensatz</u>* wird gewährt, indem Personen zu der/den Gruppe(n) hinzugefügt werden, je nachdem, welche Aufgabe sie ausführen müssen.
+- Ein *<u>Datensatz</u>* ist nicht an eine bestimmte Technologie wie eine relationale Datenbank gebunden. Das *<u>dataset</u>* wird als Dateien gespeichert, häufig als durch Kommas getrennte Dateien (csv) oder Parquet-Dateien.
+- Ein *<u>Datensatz</u>* kann über die Technologie bereitgestellt werden, die am besten zu der jeweiligen Aufgabe passt - das kann dann eine Beziehungsdatenbank order ein Kafka Queue sein.
 
 ## Cloud-Zugang
 
@@ -174,7 +174,7 @@ Im Kapitel "Beispiele für Implementierungen" werden verschiedene Möglichkeiten
 
 Ein weiterer wichtiger Aspekt der Cloud ist, dass "alles Software ist". Das bedeutet, dass beim Erstellen eines neuen Servers beispielsweise die verschiedenen Komponenten, die der Server verwendet - wie Festplatten, Netzwerkkarten usw. - durch Senden von Befehlen an die Cloud-Infrastruktur generiert werden. Wir können also Software verwenden, um diese Komponenten herzustellen.
 
-Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten *Datensatz* mithilfe von Code in diese Datenbank zu laden.
+Dies wird als Infrastructure as Code (IaC) bezeichnet. In der beschriebenen Datenplattform wird dies beispielsweise verwendet, um eine relationale Datenbank zu erstellen und dann einen bestimmten *<u>Datensatz</u>* mithilfe von Code in diese Datenbank zu laden.
 
 Dieses Modell wirft auch eine Diskussion darüber auf, für welche Elemente in der zugrunde liegenden Infrastruktur sowohl der Cloud-Anbieter als auch der Kunde in den verschiedenen "Silos" von On-Prem, IaaS, PaaS und SaaS verantwortlich sind. Dies wird in  Abschnitt [Cloud Environments](DataOps/Cloud-env-de.md) näher erläutert.
 
@@ -183,7 +183,7 @@ Die Vorgänge dieses Modells - bekannt als Datenoperationen oder DataOps - werde
 
 ## Logische Architektur
 
-Die Datenplattform ordnet *Daten* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. 
+Die Datenplattform ordnet *<u>Daten</u>* und *Datensätze* in verschiedenen Regionen gemäß einer logischen Architektur an, wie in *Abbildung* 2 dargestellt. 
 
 Damit soll sichergestellt werden, dass wir uns an die "Regeln" des Paradigmas halten können, wie bereits erwähnt.
 
@@ -195,27 +195,27 @@ Die Bereiche repräsentieren verschiedene Zustände der Reise von Daten zu Daten
 
 **Quellsysteme** sind alle Systeme, aus denen Daten extrahiert (batch) oder von denen Daten gesendet (streaming) werden sollen.
 
-Der **Aufnahmebereich** ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parquet möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der *Aufnahmebereich* verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
+Der **Aufnahmebereich (Bronze)** ist der Ort, an dem Daten aus den Quellsystemen abgelegt werden. Die Daten werden in ihrem ursprünglichen Format gespeichert. Wenn es sich bei den Daten um "Tabellendaten" handelt, werden keine Änderungen an Zeilen oder Spalten vorgenommen, nicht einmal am Datenformat selbst. Die Daten werden in Dateien gespeichert - in der Regel durch Kommas getrennt oder Parquet möglicherweise in ihrem Binärformat - die beispielsweise für Video, Bild oder Audio gelten würden. Der *Aufnahmebereich* verfügt über eine Ordnerstruktur, die die Identifizierung der Datenquelle erleichtert. Es gibt keine Aktualisierung oder Überschreibung bestehender Dateien - was bedeutet, dass bei einem neuen Laden neue Dateien erstellt werden. Ob es sich bei dieser Last um eine "Volllast" oder "Änderungen seit dem letzten Mal" handelt, hängt von den Bedürfnissen und Möglichkeiten der jeweiligen Quellen ab.
 
 Im Laufe der Zeit müssen Dateien im *Aufnahmebereich* archiviert oder gelöscht werden, wenn dies gesetzlich vorgeschrieben ist (z. B. DSGVO).
 
-Im Bereich **Transformieren** werden Daten aus dem Bereich *Aufnahmebereich* abgerufen und in ein "technisch nutzbares" Format geändert.
+Im Bereich **Transformieren (Silber)** werden Daten aus dem Bereich *Aufnahmebereich* abgerufen und in ein "technisch nutzbares" Format geändert.
 
 Eine Aufgabe besteht daher darin, Daten so zu transformieren, dass sie das gleiche Format haben – zum Beispiel könnte es sein, die "schwierigen" Datentypen wie Datumsangaben (z. B. das Teilen der Uhrzeit vom Datum in eine separate Spalte) und Dezimalzahlen ("." oder ",." als Trennzeichen) zu "standardisieren".
 
 
 Die einzelnen Datenelemente im Bereich *Transformieren* sind "unabhängige Objekte". Das bedeutet, dass sie keinen Mix aus Daten aus einem oder mehreren Quellsystemen haben, nicht so verfeinert werden, dass die ursprünglichen Informationen nicht vorhanden sind, und dass keine Begrenzung in der Anzahl der Zeilen oder Spalten vorgenommen wird. Sie können jedoch in Betracht ziehen, "fehlerhafte Zeilen" in ein separates Datenobjekt zu trennen.  
 
-*Daten* im Bereich *Transformieren* existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
+*<u>Daten</u>* im Bereich *Transformieren* existieren also als "reine" Objekte, mit denen man bequem arbeiten kann, wenn man sie zur Bildung von *Datensätzen* verwendet.
 
 Eine weitere Aufgabe besteht darin, sicherzustellen, dass die verschiedenen Daten, die wir in diesem Bereich zur Verfügung haben möchten, einfach zusammengeführt werden können, was bedeutet, dass jedes Datenobjekt über die "Referenzschlüssel" verfügt, die erforderlich sind, um sich mit anderen Datenobjekten verbinden zu können.
 
-Im Bereich **veröffentlichen** werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
+Im Bereich **veröffentlichen (Gold)** werden die *Datensätze* erstellt, die benötigt werden, um die verschiedenen Geschäftsanforderungen zu erfüllen, die Daten von der Datenplattform benötigen. Hier werden Modelle wie Sternschemata verwendet, und die Bereitstellung dieser Datensätze erfolgt meist über Data Marts (relationale Datenbanken).
 
 Im Bereich **Verbrauchen** können die Endbenutzer der Datenplattform auf die benötigten Datensätze zugreifen und die Tools verwenden, die sie für am besten geeignet halten.
 
 >[!Note]
->Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der *Autnahmebereich*, *Silber* *Transformieren* und *Gold* *Veröffentlichen* ist. Die Medaillonarchitektur reflektiert nicht den *Verbrauchenbereich*. In diesem Dokument werden die Begriffe *Aufnahme*, *Transformieren*, *Veröffentlichen* und *Verbrauchen* verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
+>Das oben beschriebene Paradigma ist heute auch als *"Medaillon-Datenarchitektur"* bekannt, wobei *Bronze* der *Autnahmebereich*, *Silber* *Transformieren* und *Gold* *Veröffentlichen* ist. Die Medaillonarchitektur reflektiert nicht den *Verbrauchenbereich*. In diesem Dokument werden die Begriffe *Aufnahme*, *Transformieren*, *Veröffentlichen* und *Verbrauchen* zum meisten verwendet, da dies die Verwendung bei den Kunden widerspiegelt, die die Inspiration für dieses Dokument sind.
 
 ### Datenplattform und das Data-Mesh-Paradigma
 
@@ -253,13 +253,13 @@ Wir werden uns der Echtzeit-Datenverarbeitung als Einzelfall nähern und sie aus
 
 Real Time gibt es in verschiedenen Varianten, in diesem Dokument werden wir die folgenden Begriffe verwenden
 
-- Echtzeit – *Daten*, die sofort nach der Abholung geliefert werden.
-- Nahezu in Echtzeit – *Daten*, die aufgrund von Kommunikation oder Verarbeitung "verzögert" werden.
-- Dynamische Daten – *Daten*, die aktualisiert werden und Aufmerksamkeit benötigen.
+- Echtzeit – *<u>Daten</u>*, die sofort nach der Abholung geliefert werden.
+- Nahezu in Echtzeit – *<u>Daten</u>*, die aufgrund von Kommunikation oder Verarbeitung "verzögert" werden.
+- Dynamische Daten – *<u>Daten</u>*, die aktualisiert werden und Aufmerksamkeit benötigen.
 
 Die Datenplattformmethode in diesem Dokument ist **nicht** für die Echtzeitsituation geeignet, aber sie funktioniert gut für nahezu Echtzeit- und dynamische Daten. Dynamische Daten, die auf Ereignissen basieren, werden auf die gleiche Weise verarbeitet wie Near-Real-Time-Daten in der Datenplattform.
 
-Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*Daten* auch im *Aufnahmebereich* für eine weitere Verarbeitung gespeichert werden. Dies ermöglicht es der Datenplattform, über Funktionen zu verfügen, die gegebenenfalls einen Echtzeitprozess unterstützen können, aber auch das gesamte Wissen zu verwalten, das im Laufe der Zeit aus den Echtzeitsituationen generiert werden kann. Dies kann dann dazu beitragen, das Eintreten eines unerwünschten Ereignisses – wie z. B. eine Zugverspätung – zu vermeiden.
+Der allgemeine Ansatz besteht darin, dass einige oder alle Echtzeit-*<u>Daten</u>* auch im *Aufnahmebereich* für eine weitere Verarbeitung gespeichert werden. Dies ermöglicht es der Datenplattform, über Funktionen zu verfügen, die gegebenenfalls einen Echtzeitprozess unterstützen können, aber auch das gesamte Wissen zu verwalten, das im Laufe der Zeit aus den Echtzeitsituationen generiert werden kann. Dies kann dann dazu beitragen, das Eintreten eines unerwünschten Ereignisses – wie z. B. eine Zugverspätung – zu vermeiden.
 
 Oder geben Sie detailliertere Informationen über ein Torereignis in einem Fußballspiel und können Sie dann die Quoten auf der Grundlage der auf der Datenplattform verfügbaren historischen Daten schnell ändern.
 
@@ -269,7 +269,7 @@ Um dies zu veranschaulichen, stellen Sie sich einen Zug vor, der Verspätung hat
 
 *Abbildung 5*
 
-Diese *Daten* werden aber **auch** in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. 
+Diese *<u>Daten</u>* werden aber **auch** in der Datenplattform gespeichert, wo zwar etwas Zeit, aber nicht viel ist, um für die einzelnen Fahrgäste, die auf den verspäteten Zug warten, einen Vorschlag für alternative Routen zu generieren. Diese Informationen können dann an eine App auf dem Smartphone gesendet werden. 
 
 ## Ein weiterer Sonderfall - ChatGPT/CoPilot
 
@@ -436,9 +436,9 @@ Im Zusammenhang mit der laufenden Entwicklung und dem Testen müssen Sie häufig
 
 Basierend auf den Diskussionen in diesem Dokument zeigt *Abbildung 11*, wie dies im "wirklichen Leben" aussehen könnte. Links neben dieser Abbildung befinden sich die Quellsysteme, die "jemandem" gehören, der normalerweise als Systembesitzer bezeichnet wird. Diese Systembesitzer sind dafür verantwortlich, dass die Datenplattform Zugriff auf die richtigen Systeme hat. In der Abbildung haben wir also 3 Systeme namens App 1, App 2 und App 3, und sie gehören jeweils einem Systembesitzer mit dem Namen Systembesitzer 1 bis 3. 
 
-In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche *dataset* mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
+In der Mitte befindet sich die Datenplattform mit dem Bereich Ingest, Transform und Verbrauchen. Im Aufnahmebereich sehen Sie, dass Daten eins zu eins aus den verschiedenen Apps 1 bis 3 übernommen werden. Dann haben wir einen Transformationsprozess, der diese Rohdaten in einen nutzbaren Zustand bringt. Auf der rechten Seite der Abbildung sehen Sie, was von den Endbenutzern im Veröffentlichungsbereich verlangt wird. Der erste Benutzer, Datenbenutzer 1 genannt, benötigt Daten, die nur aus App 1 stammen, sodass das erforderliche *<u>dataset</u>* mit dem Namen Datenprodukt A ein unkomplizierter Prozess ist. 
 
-Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem *Datensatz* herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
+Datenbenutzer 2 benötigt Daten, die sowohl aus App 1 als auch aus App 2 stammen, aber die in App 3 gefundenen Daten müssen aus diesem *<u>Datensatz</u>* herausgefiltert werden, so dass der Prozess in diesem Fall etwas komplizierter ist, aber da der Transformationsbereich einen Bereich darstellt, in dem Daten leicht kombiniert (und auch ausgeschlossen) werden können, ist die Grundlage dafür vorhanden.  Daher ist es recht einfach.
 
 Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darstellt.
 
@@ -448,7 +448,7 @@ Gleiches gilt für Datenprodukt C, das Daten aus App 2 ohne Daten in App 3 darst
 
 Dies zeigt auch, wie die Datenplattform in der Lage sein sollte, die Geschäftsanforderungen schnell und nahtlos zu unterstützen.
 
-Der Gesamtansatz **Wenn ein *Datensatz* heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
+Der Gesamtansatz **Wenn ein *<u>Datensatz</u>* heute nicht verfügbar ist, wird er für morgen bereit sein** dann unterstütz werden.
 
 ## Beispiel für eine Implementierungen
 

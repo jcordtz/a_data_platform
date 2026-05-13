@@ -15,7 +15,7 @@ En dataplatform er en arkitektur, der konsoliderer data fra flere kilder, hvilke
 • Oprettelse af nyt indhold (tekst, billeder, lyd, kode) fra eksisterende data.
 • Forbedring af automatisering i dataregistrering, migrering og transformation.
 • Understøttelse af avancerede use cases som forudsigende analyser, samtalegrænseflader og intelligente agenter.
-Generative AI-modeller (f.eks. LLM'er) er afhængige af massive *datasæt* af høj kvalitet og kræver robust infrastruktur til træning, inferens og styring.
+Generative AI-modeller (f.eks. LLM'er) er afhængige af massive *<u>datasæt</u>* af høj kvalitet og kræver robust infrastruktur til træning, inferens og styring.
 
 ## Hvorfor kombinere dataplatforme og generativ AI?
 

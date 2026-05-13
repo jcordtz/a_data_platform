@@ -7,7 +7,7 @@
 [![de](https://img.shields.io/badge/lang-de-yellow.svg)](SupportingDataServices-de.md)
 [![main](https://img.shields.io/badge/main-document-green.svg)](../README-da.md#understøttende-datatjenester)
 
-[Datakatalog](./DataCatalog-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og *datasæt* der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
+[Datakatalog](./DataCatalog-da.md) – en "katalogdatabase", hvor vi registrerer og forklarer, hvilke data og *<u>datasæt</u>* der er tilgængelige i dataplatformen. Dette vil også omfatte elementer som ejerskab, retningslinjer for brug osv.
 
 [Fælles datamodel](./CommonDataModel-da.md) – Især for **publish** området kan eksisterende branche-datamodeller være nyttige/relevante. 
 

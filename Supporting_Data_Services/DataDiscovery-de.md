@@ -17,7 +17,7 @@ Die *Data Discovery* bietet einen dynamischen und iterativen Prozess, der die Er
 
 Data Discovery ist der Prozess der Erkennung von Elementen wie Ausreißern, Mustern und Trends in Daten, die höchstwahrscheinlich aus mehreren Quellen stammen.
 
-Es ermöglicht Benutzern, visuell durch Datenbeziehungen zu navigieren und fortschrittliche Analysen anzuwenden, um Geschäftsentscheidungen und Leistung zu optimieren. Durch die Vereinfachung komplexer *Daten* in übersichtliche, einfach zu bedienende *Datensätze* fungiert die *Data Discovery* effektiv als möglicher Enabler für datengesteuerte Aktionen.
+Es ermöglicht Benutzern, visuell durch Datenbeziehungen zu navigieren und fortschrittliche Analysen anzuwenden, um Geschäftsentscheidungen und Leistung zu optimieren. Durch die Vereinfachung komplexer *<u>Daten</u>* in übersichtliche, einfach zu bedienende *Datensätze* fungiert die *Data Discovery* effektiv als möglicher Enabler für datengesteuerte Aktionen.
 
 Data Discovery sollte nicht als Reporting-Funktion betrachtet werden, da wir mit Data Discovery das "Unbekannte" suchen, während Reportings den täglichen Prozess unterstützen, der gleich sein muss und sich nur langsam über "lange Zeit" ändert.
 
