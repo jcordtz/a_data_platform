@@ -9,15 +9,14 @@
 
 **content created using AI, no human read through yet**
 
-# Securing and Managing Data in Microsoft Azure: An Integrated Approach
-
 ## Introduction  
 
 As organizations increasingly rely on cloud platforms to store and process critical data, ensuring that this data is protected has become a central concern. Microsoft Azure addresses this challenge by offering a comprehensive set of services and mechanisms designed to store, secure, and control access to data. Rather than relying on a single security layer, Azure adopts a holistic strategy that combines storage capabilities, encryption, identity management, and monitoring into a unified framework. This integrated approach enables organizations to safeguard their data throughout its entire lifecycle.
 
+[Figure 1](../../images/slides/)
 ## Data Storage Foundations in Azure  
 
-At the foundation of Azure’s data strategy lies a broad range of storage services tailored to different needs. Structured data is commonly stored in services such as Azure SQL Database or other managed relational offerings, while semi-structured and unstructured data can be stored in Azure Cosmos DB or Azure Storage accounts. These storage accounts support multiple modalities, including Blob Storage for object storage, Data Lake Storage for analytics workloads, and file-based storage for shared access scenarios.
+At the foundation of Azure’s data strategy lies a broad range of storage services tailored to different needs. Structured data is commonly stored in services such as Azure SQL Database or other managed relational offerings, while semi-structured and unstructured data can be stored in services like Azure Cosmos DB or Azure Storage accounts. These storage accounts support multiple modalities, including Blob Storage for object storage, Data Lake Storage for analytics workloads, and file-based storage for shared access scenarios.
 
 Designed for scalability and resilience, these services provide high durability and support advanced replication options, ensuring that data remains available even in the event of infrastructure failures. This strong foundation allows organizations to build data platforms that are both flexible and reliable.
 
@@ -37,7 +36,7 @@ In addition, Azure secures data in transit by encrypting communications between 
 
 For highly sensitive workloads, Azure also provides protection for data in use. Technologies such as confidential computing enable secure processing by isolating data within protected environments, even during computation.
 
-Together, these mechanisms ensure that data remains protected regardless of its state—stored, transferred, or processed.
+Together, these mechanisms ensure that data remains protected regardless of its state being stored, transferred, or processed.
 
 ## Managing Keys and Secrets  
 
@@ -49,7 +48,7 @@ By using Key Vault, organizations can separate keys from the data they protect, 
 
 While encryption protects data from unauthorized visibility, controlling who can access that data is equally important. Azure provides a comprehensive identity and access management framework through Microsoft Entra ID.
 
-This platform enables authentication and authorization, ensuring that users and applications are properly verified before gaining access to resources. Features such as single sign-on simplify access management, while multi-factor authentication adds an additional layer of security.
+This platform enables authentication and authorization, ensuring that users, ai-agents and applications are properly verified before gaining access to resources. Features such as single sign-on simplify access management, while multi-factor authentication adds an additional layer of security.
 
 Access permissions are governed through Role-Based Access Control (RBAC), which allows administrators to assign precise permissions at different levels of the environment. By following the principle of least privilege, organizations can ensure that users only have the access they need to perform their tasks, reducing the risk of misuse.
 
@@ -59,7 +58,7 @@ Modern applications also benefit from managed identities, which allow secure aut
 
 ## Network Protection and Isolation  
 
-Another essential dimension of data security in Azure is network protection. Azure allows organizations to define secure network boundaries using virtual networks, firewalls, and private endpoints.
+Another dimension of data security in Azure is network protection. Azure allows organizations to define secure network boundaries using virtual networks, firewalls, and private endpoints.
 
 By restricting access to trusted networks or specific IP addresses, organizations can significantly reduce exposure to external threats. For example, database services can be configured to accept requests only from approved sources, ensuring that data is not accessible from untrusted environments.
 

@@ -45,10 +45,10 @@ Udover at dække hovedemnet om, hvordan man opretter en dataplatform og de direk
 ||[Self-service](./DataOps/Self-service-da.md)|[Generativ AI](./GenAI/GenAI-da.md)|[Data Agenter](./GenAI/Agent-da.md)|
 ||[Data markedsplads](./GenAI/Marketplace-da.md)|[Storage & Security](./Development/Storage/DataStorage-da.md)||
 |Projekt|[Projekt roller](./Operations/project-roles-da.md)|[Bruger roller](./Operations/user-roles-da.md)||
-|Operationel|[Resilience](./Operations/Operations-da.md)|[Data-operationer](./DataOps/DataOps-da.md)|[Cloud-miljøer](./DataOps/Cloud-env-da.md)|
-||[Load og perfomance](./DataOps/Dataloads-da.md)|[Supportende services](./Supporting_Data_Services/SupportingDataServices-da.md)||
-|Governance|[Sikkerhed](./Security/Security-da.md)|[Lovgivning](./Security/Legislation-da.md)|[Exit-strategi](./Security/Exit-and-risc-strategies-da.md)|
-||[Risiko vurdering](./Security/Exit-and-risc-strategies-da.md)|[Navne standarder](./DataModelling/NamingStandard-da.md)|[Meta data håndtering](./DataOps/Meta-management-da.md)|
+|Operations|[Operations/Resilience](./Operations/Operations-da.md)|[Data-operations](./DataOps/DataOps-da.md)|[Cloud-environments](./DataOps/Cloud-env-da.md)|
+||[Loading & Perfomance](./DataOps/Dataloads-da.md)|[Supporting services](./Supporting_Data_Services/SupportingDataServices-da.md)|[Naming Standards](./DataModelling/NamingStandard-da.md)|
+|Governance|[Security](./Security/Security-da.md)|[Legislation](./Security/Legislation-da.md)|[Exit-strategy](./Security/Exit-and-risc-strategies-da.md)|
+||[Risk-assessment](./Security/Exit-and-risc-strategies-da.md)|[Meta data handling](./DataOps/Meta-management-da.md)|[Soverignity](./Security/Soverignity-da.md)|||
 
 ## Baggrund
 
